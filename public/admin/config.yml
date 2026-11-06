@@ -1,0 +1,177 @@
+backend:
+  name: github
+  repo: storytold/craft-wiki
+  branch: main
+media_folder: public/assets/uploads
+public_folder: /assets/uploads
+collections:
+  - name: artcraft-studio
+    label: ArtCraft Studio
+    folder: src/content/docs/apps/artcraft-studio
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: photocraft
+    label: PhotoCraft
+    folder: src/content/docs/apps/photocraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: vectorcraft
+    label: VectorCraft
+    folder: src/content/docs/apps/vectorcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: filmcraft
+    label: FilmCraft
+    folder: src/content/docs/apps/filmcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: lightcraft
+    label: LightCraft
+    folder: src/content/docs/apps/lightcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: pdfcraft
+    label: PdfCraft
+    folder: src/content/docs/apps/pdfcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: effectcraft
+    label: EffectCraft
+    folder: src/content/docs/apps/effectcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: designcraft
+    label: DesignCraft
+    folder: src/content/docs/apps/designcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: figcraft
+    label: FigCraft
+    folder: src/content/docs/apps/figcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: texturecraft
+    label: TextureCraft
+    folder: src/content/docs/apps/texturecraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: materialcraft
+    label: MaterialCraft
+    folder: src/content/docs/apps/materialcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: wordcraft
+    label: WordCraft
+    folder: src/content/docs/apps/wordcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: soundcraft
+    label: SoundCraft
+    folder: src/content/docs/apps/soundcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: deckcraft
+    label: DeckCraft
+    folder: src/content/docs/apps/deckcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: cadcraft
+    label: CADCraft
+    folder: src/content/docs/apps/cadcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: gridcraft
+    label: GridCraft
+    folder: src/content/docs/apps/gridcraft
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: craft-anything
+    label: Craft Anything
+    folder: src/content/docs/apps/craft-anything
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }

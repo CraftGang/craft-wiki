@@ -2,6 +2,13 @@
   "name": "craft-wiki",
   "private": true,
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "dev": "astro dev",
+    "build": "node scripts/prepare-cms.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.10",
+    "@sveltia/cms": "^0.261.0",
+    "astro": "^7.4.7"
   }
 }

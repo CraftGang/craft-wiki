@@ -2,3 +2,6 @@
 Thumbs.db
 
 dist/
+node_modules/
+.astro/
+public/admin/vendor/
