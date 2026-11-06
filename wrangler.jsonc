@@ -1,8 +1,16 @@
 {
   "name": "craft-wiki",
   "compatibility_date": "2026-11-06",
+  "main": "worker/index.js",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": {
+    "DISCORD_CLIENT_ID": "1568360917090181254",
+    "DISCORD_GUILD_ID": "1359579021108842617",
+    "DISCORD_ROLE_ID": "1559142504920653834"
   },
   "previews": {}
 }

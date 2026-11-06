@@ -9,7 +9,7 @@ Many app guides are currently scaffolds. Their content should be reviewed and ex
 1. Contributors edit Markdown files in this repository, either directly or through the visual editor.
 2. Astro and Starlight turn those files into a static site in `dist/`. The build also bundles the Sveltia editor into the site.
 3. A push to `main` runs a GitHub Actions workflow that calls a Cloudflare deploy hook.
-4. Cloudflare Workers Builds checks out the repository, runs the build, and deploys the generated files as static assets. The Worker serves the public site and editor; it does not need a server-side app or database.
+4. Cloudflare Workers Builds checks out the repository, runs the build, and deploys the generated files as static assets. The Worker serves the public site and editor and handles Discord sign-in; it does not need a database.
 
 The [Cloudflare hook workflow](.github/workflows/deploy.yml) succeeding means Cloudflare accepted the hook request. Check the Worker's build history separately to confirm that the build and deployment succeeded.
 
@@ -29,7 +29,8 @@ public/edit/index.html        Editor sign-in guidance
 public/admin/index.html       Sveltia CMS entry point
 public/admin/config.yml       GitHub backend and app collections
 scripts/prepare-cms.mjs       Copies the installed CMS bundle into public assets
-wrangler.jsonc                Cloudflare Worker static-asset configuration
+wrangler.jsonc                Cloudflare Worker configuration
+worker/index.js               Discord sign-in and the editor's GitHub route
 .github/workflows/deploy.yml   GitHub Actions deploy-hook trigger
 ```
 
@@ -96,9 +97,29 @@ The custom sidebar uses the `guides` list in `src/data/apps.mjs` for its links. 
 
 The header's **Edit wiki** link opens `/edit/`, which explains sign-in and links to `/admin/`. Sveltia CMS is a browser-based visual editor for the app collections in `public/admin/config.yml`. Choose an app, select a page, edit its title, description, and body, then save. The editor uses GitHub as its backend and the configured branch is `main`.
 
+### Discord sign-in
+
+Anyone with the **Senior Contributor** role in the ArtCraft Discord server can edit the wiki. In `/admin/` they choose **Sign In with GitHub**, a label Sveltia fixes; the button opens Discord. They need no GitHub account or token.
+
+[`worker/index.js`](worker/index.js) handles this:
+
+1. `/api/auth` signs the person in with Discord and checks the role in `DISCORD_ROLE_ID`. It issues a signed session that lasts 8 hours, so someone who loses the role keeps access until it expires.
+2. `/api/github/` is the editor's GitHub API. Sessions use the Worker's `GITHUB_TOKEN`, which never reaches the browser. They can read the repository and can commit only to `src/content/docs/apps/` and `public/assets/uploads/` on `main`. Each commit body names the Discord user, because the commit itself belongs to the token's GitHub account.
+3. GitHub tokens from maintainers and contributors pass through this route unchanged and are not stored.
+
+The Discord application is ArtCraft FredBot. Its OAuth2 settings need the redirect `https://craft.wiki/api/auth/callback`. The bot itself does not need to run. The IDs are in `wrangler.jsonc`, and these Worker secrets are set in Cloudflare, never in this repository:
+
+| Secret | Value |
+| --- | --- |
+| `DISCORD_CLIENT_SECRET` | The application's OAuth2 client secret |
+| `GITHUB_TOKEN` | A fine-grained token for `storytold/craft-wiki` with **Contents: Read and write** |
+| `SESSION_SECRET` | A long random value. Changing it signs everyone out |
+
+Until they are set, the button reports that sign-in is not configured and token sign-in keeps working. Run the Worker's tests with `node --test worker/`.
+
 ### GitHub access and token
 
-The editor currently uses **token authentication only**. Maintainers with write access to `storytold/craft-wiki` can use a fine-grained personal access token:
+Maintainers with write access to `storytold/craft-wiki` can use a fine-grained personal access token:
 
 1. In GitHub, create a fine-grained personal access token owned by the appropriate account or organization.
 2. Under repository access, choose **Only select repositories** and select **`storytold/craft-wiki`**. No other repository is required.
@@ -107,7 +128,7 @@ The editor currently uses **token authentication only**. Maintainers with write 
 
 Community contributors without write access can use a classic personal access token with the `public_repo` scope for this public repository. This scope covers public repositories accessible to that GitHub account, including the contributor's fork; it cannot be restricted to `storytold/craft-wiki` alone. The editor prompts contributors to create or reuse a fork. See [Sveltia's open-authoring documentation](https://sveltiacms.app/en/docs/workflows/open) for current requirements.
 
-Sveltia stores its sign-in token in the browser's local storage and communicates directly with GitHub. See [Sveltia's GitHub backend documentation](https://sveltiacms.app/en/docs/backends/github) for current token and authentication details.
+Sveltia stores its sign-in token in the browser's local storage and reaches GitHub through the Worker's `/api/github/` route. See [Sveltia's GitHub backend documentation](https://sveltiacms.app/en/docs/backends/github) for current token and authentication details.
 
 ### Open authoring and review
 
@@ -117,7 +138,7 @@ For contributors without write access, Sveltia creates or reuses their fork and 
 
 The public repository allows forks. If a contributor's fork has become stale and the CMS cannot synchronize workflow files, they can sync the fork on GitHub before trying again. The configuration deliberately does not request the broad `workflow` scope.
 
-GitHub OAuth is not currently configured: the editor's sign-in method is explicitly restricted to tokens to avoid the default Netlify OAuth endpoint. For a conventional GitHub sign-in button, deploy and configure a [Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth) Worker, register a GitHub OAuth application, and update the CMS backend configuration. Keep the OAuth client secret in Cloudflare, not in this repository.
+GitHub OAuth is not configured: the editor's sign-in button goes to Discord through this Worker.
 
 ### What can be edited visually
 
@@ -136,7 +157,7 @@ The site uses Astro Starlight with custom components configured in `astro.config
 
 ## Cloudflare deployment
 
-The current site uses **Cloudflare Workers static assets**. `wrangler.jsonc` names the Worker `craft-wiki` and points its assets directory at `./dist`. The Cloudflare build settings should use:
+The current site uses **Cloudflare Workers static assets** with a small Worker for `/api/*`. `wrangler.jsonc` names the Worker `craft-wiki`, points its assets directory at `./dist`, and sets `worker/index.js` as its entry point. The Cloudflare build settings should use:
 
 - **Production branch:** `main`
 - **Root directory:** repository root (leave blank)
