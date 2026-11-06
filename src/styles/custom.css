@@ -1,7 +1,65 @@
-:root { --sl-color-accent-low: #252a3b; --sl-color-accent: #9bb4ff; --sl-color-accent-high: #e0e8ff; }
-:root[data-theme='light'] { --sl-color-accent-low: #e9efff; --sl-color-accent: #385db9; --sl-color-accent-high: #192b5a; }
-.sl-markdown-content img[src^='/assets/apps/'] { width: 72px; height: 72px; object-fit: contain; }
-.app-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1rem; margin-block: 2rem; }
-.app-tile { display: flex; align-items: center; gap: .8rem; border: 1px solid var(--sl-color-gray-5); border-radius: .65rem; padding: 1rem; color: var(--sl-color-text); text-decoration: none; background: var(--sl-color-bg-nav); }
-.app-tile:hover { border-color: var(--sl-color-accent); color: var(--sl-color-accent); }
-.app-tile img { width: 42px !important; height: 42px !important; object-fit: contain; }
+@import '@fontsource-variable/archivo';
+@import '@fontsource/instrument-serif/400-italic.css';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/geist-mono';
+
+:root {
+  --sl-font: 'Inter Variable', sans-serif;
+  --sl-font-system: 'Inter Variable', sans-serif;
+  --sl-font-mono: 'Geist Mono Variable', monospace;
+  --sl-nav-height: 62px;
+  --sl-sidebar-width: 272px;
+  --sl-content-width: 930px;
+  --sl-color-accent-low: #292e3d;
+  --sl-color-accent: #b9cbff;
+  --sl-color-accent-high: #e0e8ff;
+  --sl-color-bg: #111217;
+  --sl-color-bg-nav: #111217;
+  --sl-color-bg-sidebar: #111217;
+  --sl-color-hairline-shade: #30323b;
+}
+:root[data-theme='dark'] { color-scheme: dark; }
+.wiki-header { display:flex; align-items:center; justify-content:space-between; height:100%; width:100%; padding:0 16px; }
+.wiki-brand { color:#f4f3f0; font:800 20px 'Archivo Variable', sans-serif; letter-spacing:-.045em; text-decoration:none; }
+.wiki-brand span { color:#b9cbff; font-weight:400; }
+.wiki-header-links { display:flex; gap:24px; font-size:13px; color:#a4a6b2; }
+.wiki-header-links a { color:inherit; text-decoration:none; }
+.wiki-header-links a:hover { color:#f4f3f0; }
+.wiki-sidebar-inner { width:100%; padding-bottom:24px; }
+.wiki-search-label { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+#wiki-app-search { width:100%; padding:12px 14px; background:#1a1b22; border:1px solid #30323b; border-radius:6px; color:#f4f3f0; font:14px 'Inter Variable', sans-serif; }
+.wiki-home-link { display:block; margin:24px 0 26px; padding:8px 10px; font-size:14px; color:#a4a6b2; text-decoration:none; }
+.wiki-home-link.active { background:#292e3d; color:#b9cbff; }
+.wiki-sidebar-label, .wiki-eyebrow { color:#b9cbff; font:600 11px/1.5 'Geist Mono Variable', monospace; letter-spacing:.14em; }
+.wiki-sidebar-label { padding:0 10px; color:#858895; margin-bottom:12px; }
+.wiki-app-group summary { display:flex; align-items:center; gap:10px; padding:8px 10px; cursor:pointer; list-style:none; font-size:14px; border-radius:5px; }
+.wiki-app-group summary::-webkit-details-marker { display:none; }
+.wiki-app-group summary:hover, .wiki-guide-links a:hover { background:#1b1c24; }
+.wiki-app-group summary img { width:25px; height:25px; object-fit:contain; }
+.wiki-app-group summary span:nth-child(2) { flex:1; }
+.wiki-chevron { color:#a4a6b2; transition:transform .15s; }
+.wiki-app-group[open] .wiki-chevron { transform:rotate(180deg); }
+.wiki-guide-links { padding:2px 0 8px 29px; }
+.wiki-guide-links a { display:block; padding:7px 12px; border-left:1px solid #30323b; font-size:13px; color:#a4a6b2; text-decoration:none; }
+.wiki-guide-links a[aria-current='page'] { color:#b9cbff; background:#292e3d; }
+#wiki-no-results { font-size:13px; color:#a4a6b2; padding:10px; }
+.wiki-home { padding:36px 0 70px; }
+.wiki-home > .wiki-eyebrow { margin:0 0 20px; }
+.sl-markdown-content .wiki-home h1 { margin:0 0 24px; padding:0; border:0; font:750 clamp(44px,5.2vw,76px)/1.02 'Archivo Variable', sans-serif; letter-spacing:-.055em; color:#f4f3f0; }
+.wiki-home h1 em { font:italic 400 1em/1 'Instrument Serif', Georgia, serif; color:#b9cbff; }
+.wiki-intro { max-width:670px; color:#a4a6b2; font-size:18px; line-height:1.7; }
+.wiki-section-heading { margin:95px 0 24px; display:flex; align-items:end; justify-content:space-between; border-bottom:1px solid #30323b; padding-bottom:16px; scroll-margin-top:80px; }
+.wiki-section-heading .wiki-eyebrow { margin:0 0 12px; }
+.sl-markdown-content .wiki-section-heading h2 { margin:0; padding:0; border:0; font:650 28px 'Archivo Variable', sans-serif; letter-spacing:-.04em; }
+.wiki-section-heading > span, .app-index { font:11px 'Geist Mono Variable', monospace; color:#858895; }
+.app-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:12px; margin:0; }
+.sl-markdown-content a.app-tile { min-height:180px; border:1px solid #30323b; background:#1a1b22; border-radius:8px; padding:18px; display:grid; grid-template-columns:48px 1fr auto; align-content:start; align-items:center; gap:12px; text-decoration:none; color:#f4f3f0; transition:border-color .15s,transform .15s; }
+.sl-markdown-content a.app-tile:hover { border-color:#b9cbff; transform:translateY(-2px); }
+.app-index { grid-column:1/-1; margin-bottom:18px; }
+.sl-markdown-content .app-tile img { width:48px; height:48px; object-fit:contain; margin:0; }
+.app-tile strong { font-size:14px; letter-spacing:-.02em; }
+.app-arrow { color:#b9cbff; }
+.app-caption { grid-column:2/-1; font-size:12px; line-height:1.4; color:#a4a6b2; }
+.sl-markdown-content img[src^='/assets/apps/'] { width:72px; height:72px; object-fit:contain; }
+@media (min-width:50rem) { .sidebar-pane { border-inline-end:1px solid #30323b; } .wiki-home { padding-top:52px; } }
+@media (max-width:49.99rem) { .wiki-header { padding:0; } .wiki-header-links { gap:12px; font-size:12px; } .wiki-header-links a:nth-child(2) { display:none; } .wiki-home { padding-top:12px; } .wiki-section-heading { margin-top:65px; } .app-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .sl-markdown-content a.app-tile { min-height:160px; grid-template-columns:36px 1fr auto; padding:14px; gap:8px; } .sl-markdown-content .app-tile img { width:36px; height:36px; } .app-tile strong { font-size:12px; } }

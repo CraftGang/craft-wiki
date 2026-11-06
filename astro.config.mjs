@@ -15,6 +15,7 @@ export default defineConfig({
   integrations: [starlight({
     title: 'Craft Wiki',
     customCss: ['./src/styles/custom.css'],
+    components: { Header: './src/components/WikiHeader.astro', Sidebar: './src/components/WikiSidebar.astro', PageTitle: './src/components/WikiPageTitle.astro', ThemeProvider: './src/components/WikiThemeProvider.astro' },
     sidebar: [
       { label: 'Home', link: '/' },
       { label: 'Edit wiki', link: '/admin/' },

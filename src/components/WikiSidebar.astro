@@ -1,0 +1,36 @@
+---
+import { apps, guides } from '../data/apps.mjs';
+const pathname = Astro.url.pathname;
+---
+<div class="wiki-sidebar-inner">
+  <label class="wiki-search-label" for="wiki-app-search">Find an app</label>
+  <input id="wiki-app-search" type="search" placeholder="Search apps..." autocomplete="off" />
+  <a href="/" class:list={['wiki-home-link', { active: pathname === '/' }]}>All documentation</a>
+  <p class="wiki-sidebar-label">APPS</p>
+  <div id="wiki-app-list">
+    {apps.map(([slug, name, ext = 'webp']) => (
+      <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
+        <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
+        <div class="wiki-guide-links">
+          {guides.map(([guide, label]) => <a href={`/apps/${slug}/${guide}/`} aria-current={pathname === `/apps/${slug}/${guide}/` ? 'page' : undefined}>{label}</a>)}
+        </div>
+      </details>
+    ))}
+  </div>
+  <p id="wiki-no-results" hidden>No apps found.</p>
+</div>
+<script>
+  const search = document.querySelector<HTMLInputElement>('#wiki-app-search');
+  const groups = document.querySelectorAll<HTMLElement>('.wiki-app-group');
+  const noResults = document.querySelector<HTMLElement>('#wiki-no-results');
+  search?.addEventListener('input', () => {
+    const query = search.value.trim().toLowerCase();
+    let visible = 0;
+    groups.forEach((group) => {
+      const matches = (group.dataset.name ?? '').includes(query);
+      group.hidden = !matches;
+      if (matches) visible++;
+    });
+    if (noResults) noResults.hidden = visible > 0;
+  });
+</script>
