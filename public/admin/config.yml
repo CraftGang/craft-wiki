@@ -2,6 +2,7 @@ backend:
   name: github
   repo: storytold/craft-wiki
   branch: main
+  auth_methods: [token]
 media_folder: public/assets/uploads
 public_folder: /assets/uploads
 collections:
