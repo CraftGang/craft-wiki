@@ -99,7 +99,9 @@ The header's **Edit wiki** link opens `/edit/`, which explains sign-in and links
 
 ### Discord sign-in
 
-Anyone with the **Senior Contributor** role in the ArtCraft Discord server can edit the wiki. In `/admin/` they choose **Sign In with GitHub**, a label Sveltia fixes; the button opens Discord. They need no GitHub account or token.
+Anyone with the **Senior Contributor** role in the ArtCraft Discord server can edit the wiki. In `/admin/` they choose **Sign In Using Discord**. They need no GitHub account or token.
+
+The CMS hardcodes its sign-in labels and offers no option to rename them, so `scripts/prepare-cms.mjs` rewrites both in the generated bundle: the top button reads **Sign In Using Discord** and starts the Worker's Discord sign-in, and the lower one reads **Sign In Using GitHub Access Token**. The build fails if a bundle update drops either label.
 
 [`worker/index.js`](worker/index.js) handles this:
 
@@ -124,7 +126,7 @@ Maintainers with write access to `storytold/craft-wiki` can use a fine-grained p
 1. In GitHub, create a fine-grained personal access token owned by the appropriate account or organization.
 2. Under repository access, choose **Only select repositories** and select **`storytold/craft-wiki`**. No other repository is required.
 3. Set repository permission **Contents** to **Read and write**. GitHub adds read-only Metadata access automatically. The organization may need to approve the token.
-4. Open `/admin/`, choose **Sign in with token**, and provide the token in the editor. Do not commit tokens to the repository.
+4. Open `/admin/`, choose **Sign In Using GitHub Access Token**, and provide the token in the editor. Do not commit tokens to the repository.
 
 Community contributors without write access can use a classic personal access token with the `public_repo` scope for this public repository. This scope covers public repositories accessible to that GitHub account, including the contributor's fork; it cannot be restricted to `storytold/craft-wiki` alone. The editor prompts contributors to create or reuse a fork. See [Sveltia's open-authoring documentation](https://sveltiacms.app/en/docs/workflows/open) for current requirements.
 
@@ -138,7 +140,7 @@ For contributors without write access, Sveltia creates or reuses their fork and 
 
 The public repository allows forks. If a contributor's fork has become stale and the CMS cannot synchronize workflow files, they can sync the fork on GitHub before trying again. The configuration deliberately does not request the broad `workflow` scope.
 
-GitHub OAuth is not configured: the editor's sign-in button goes to Discord through this Worker.
+GitHub OAuth is not configured: the editor's top sign-in button goes to Discord through this Worker.
 
 ### What can be edited visually
 
