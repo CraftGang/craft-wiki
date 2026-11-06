@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Craft Wiki</title>
+  <style>
+    :root{color-scheme:dark}body{margin:0;background:#111217;color:#f4f3f0;font:16px/1.65 system-ui,sans-serif}main{max-width:44rem;margin:8vh auto;padding:0 1.5rem}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;letter-spacing:-.04em}h2{margin-top:2rem}p,li{color:#c4c5ce}a{color:#b9cbff}code{background:#252630;padding:.15rem .35rem;border-radius:.25rem}.button{display:inline-block;padding:.7rem 1rem;background:#b9cbff;color:#111217;text-decoration:none;font-weight:650;border-radius:.4rem}.note{border:1px solid #343641;padding:1rem 1.25rem;border-radius:.5rem;background:#1a1b22}.note p{margin:.3rem 0}
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="/">← Craft Wiki</a></p>
+    <h1>Edit Craft Wiki</h1>
+    <p>Use the visual editor to update guides for ArtCraft and the Craft Apps.</p>
+    <div class="note">
+      <p><strong>GitHub token access</strong></p>
+      <p>Your fine-grained personal access token needs access only to <strong>storytold/craft-wiki</strong>, with repository permission <strong>Contents: Read and write</strong>. Your GitHub account must also have write access to that repository.</p>
+      <p>The editor currently saves directly to <code>main</code>. It does not create a pull request or grant repository access. Contributors without write access can propose changes through a GitHub fork and pull request.</p>
+    </div>
+    <h2>Sign in</h2>
+    <ol>
+      <li>Open the visual editor and choose <strong>Sign in with token</strong>.</li>
+      <li>Follow its GitHub token link. Under repository access, select <strong>Only select repositories</strong> and choose <strong>storytold/craft-wiki</strong>.</li>
+      <li>Set <strong>Contents</strong> to <strong>Read and write</strong>, generate the token, and paste it into the editor. Your organization may need to approve the token.</li>
+    </ol>
+    <p><a class="button" href="/admin/">Open visual editor</a></p>
+    <p>Changes saved in the editor commit to the repository and trigger a deployment. <a href="https://github.com/storytold/craft-wiki">View the repository ↗</a></p>
+  </main>
+</body>
+</html>
