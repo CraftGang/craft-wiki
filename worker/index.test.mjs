@@ -96,8 +96,13 @@ test('sign-in only succeeds with the editor role', async (t) => {
     });
     return (await worker.fetch(callback, env)).text();
   };
-  assert.match(await run(['3']), /authorization:github:success/);
-  assert.match(await run(['9']), /authorization:github:error/);
+  const page = await run(['3']);
+  assert.match(page, /authorization:github:success/);
+  assert.match(page, /sveltia-cms\.user/);
+  assert.match(page, /Signing you in/);
+  const refused = await run(['9']);
+  assert.match(refused, /authorization:github:error/);
+  assert.match(refused, /<p>Your Discord account does not have the wiki editor role\.<\/p>/);
   const forged = new Request('https://craft.wiki/api/auth/callback?code=c&state=s', {
     headers: { Cookie: 'cw_auth_state=other' },
   });

@@ -103,7 +103,7 @@ Anyone with the **Senior Contributor** role in the ArtCraft Discord server can e
 
 [`worker/index.js`](worker/index.js) handles this:
 
-1. `/api/auth` signs the person in with Discord and checks the role in `DISCORD_ROLE_ID`. It issues a signed session that lasts 8 hours, so someone who loses the role keeps access until it expires.
+1. `/api/auth` signs the person in with Discord and checks the role in `DISCORD_ROLE_ID`. It issues a signed session that lasts 8 hours, so someone who loses the role keeps access until it expires. Discord may finish in a new tab, for example after handing off to its desktop app, so the page then saves the session itself and opens `/admin/`.
 2. `/api/github/` is the editor's GitHub API. Sessions use the Worker's `GITHUB_TOKEN`, which never reaches the browser. They can read the repository and can commit only to `src/content/docs/apps/` and `public/assets/uploads/` on `main`. Each commit body names the Discord user, because the commit itself belongs to the token's GitHub account.
 3. GitHub tokens from maintainers and contributors pass through this route unchanged and are not stored.
 
@@ -115,7 +115,7 @@ The Discord application is ArtCraft FredBot. Its OAuth2 settings need the redire
 | `GITHUB_TOKEN` | A fine-grained token for `storytold/craft-wiki` with **Contents: Read and write** |
 | `SESSION_SECRET` | A long random value. Changing it signs everyone out |
 
-Until they are set, the button reports that sign-in is not configured and token sign-in keeps working. Run the Worker's tests with `node --test worker/`.
+Until they are set, the button reports that sign-in is not configured and token sign-in keeps working. Run the Worker's tests with `node --test worker/index.test.mjs`.
 
 ### GitHub access and token
 

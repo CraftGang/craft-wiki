@@ -51,17 +51,36 @@ const json = (data, status = 200) =>
     headers: { 'Content-Type': 'application/json', 'Cache-Control': 'private, no-store' },
   });
 
-// Sveltia waits for this exchange with the sign-in popup.
+const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
+
+// Sveltia waits for this exchange with the sign-in popup. Discord can finish in
+// a tab with no opener, for example after handing off to its desktop app, so
+// without a reply the session is saved where Sveltia looks for it on load.
 const popupResult = (origin, outcome, content) => {
   const message = `authorization:github:${outcome}:${JSON.stringify({ provider: 'github', ...content })}`;
   const script = `
-    window.addEventListener('message', ({ data, origin }) => {
-      if (data === 'authorizing:github' && origin === ${JSON.stringify(origin)}) {
-        window.opener?.postMessage(${JSON.stringify(message).replace(/</g, '\\u003c')}, origin);
+    const origin = ${safeJson(origin)};
+    const message = ${safeJson(message)};
+    const token = ${safeJson(content.token ?? null)};
+    let answered = false;
+    const finish = () => {
+      if (answered) return;
+      answered = true;
+      if (!token) return;
+      localStorage.setItem('sveltia-cms.user', JSON.stringify({ backendName: 'github', token }));
+      location.replace('/admin/');
+    };
+    window.addEventListener('message', (event) => {
+      if (event.data === 'authorizing:github' && event.origin === origin) {
+        answered = true;
+        window.opener?.postMessage(message, origin);
       }
     });
-    window.opener?.postMessage('authorizing:github', ${JSON.stringify(origin)});`;
-  return new Response(`<!doctype html><meta charset="utf-8"><title>Craft Wiki sign-in</title><script>${script}</script>`, {
+    window.opener?.postMessage('authorizing:github', origin);
+    setTimeout(finish, window.opener ? 1500 : 0);`;
+  const text = outcome === 'success' ? 'Signing you in to Craft Wiki...' : content.error;
+  const html = `<!doctype html><meta charset="utf-8"><title>Craft Wiki sign-in</title><p>${text}</p><p><a href="/admin/">Back to the editor</a></p><script>${script}</script>`;
+  return new Response(html, {
     headers: {
       'Content-Type': 'text/html; charset=utf-8',
       'Cache-Control': 'no-store',
