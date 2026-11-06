@@ -1,4 +1,4 @@
-import { cp, mkdir, readdir, rm, writeFile } from 'node:fs/promises';
+import { access, cp, mkdir, rm, writeFile } from 'node:fs/promises';
 
 const apps = [
   ['artcraft-studio', 'ArtCraft Studio', 'png'], ['photocraft', 'PhotoCraft'],
@@ -44,6 +44,12 @@ function guidePage(app, guide, label) {
 await rm('dist', { recursive: true, force: true });
 await mkdir('dist', { recursive: true });
 await cp('site', 'dist', { recursive: true });
+// A TileDocs export is a complete static site. Publish it unchanged when present.
+const hasTileDocsExport = await access('site/index.html').then(() => true, () => false);
+if (hasTileDocsExport) {
+  console.log('Publishing the static site from site/.');
+  process.exit(0);
+}
 await cp('assets', 'dist/assets', { recursive: true });
 await writeFile('dist/index.html', layout('Home', home()));
 for (const app of apps) {
