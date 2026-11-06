@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Edit Craft Wiki</title>
   <style>
-    :root{color-scheme:dark}body{margin:0;background:#111217;color:#f4f3f0;font:16px/1.65 system-ui,sans-serif}main{max-width:44rem;margin:8vh auto;padding:0 1.5rem}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;letter-spacing:-.04em}h2{margin-top:2rem}p,li{color:#c4c5ce}a{color:#b9cbff}code{background:#252630;padding:.15rem .35rem;border-radius:.25rem}.button{display:inline-block;padding:.7rem 1rem;background:#b9cbff;color:#111217;text-decoration:none;font-weight:650;border-radius:.4rem}.note{border:1px solid #343641;padding:1rem 1.25rem;border-radius:.5rem;background:#1a1b22}.note p{margin:.3rem 0}
+    :root{color-scheme:dark}body{margin:0;background:#111217;color:#f4f3f0;font:16px/1.65 system-ui,sans-serif}main{max-width:44rem;margin:8vh auto;padding:0 1.5rem}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;letter-spacing:-.04em}h2{margin-top:2rem}p,li{color:#c4c5ce}a{color:#b9cbff}code{background:#252630;padding:.15rem .35rem;border-radius:.25rem}.button{display:inline-block;padding:.7rem 1rem;background:#b9cbff;color:#111217;text-decoration:none;font-weight:650;border-radius:.4rem}.note{margin-top:1rem;border:1px solid #343641;padding:1rem 1.25rem;border-radius:.5rem;background:#1a1b22}.note p{margin:.3rem 0}
   </style>
 </head>
 <body>
@@ -14,13 +14,17 @@
     <h1>Edit Craft Wiki</h1>
     <p>Use the visual editor to update guides for ArtCraft and the Craft Apps.</p>
     <div class="note">
+      <p><strong>Senior Contributors</strong></p>
+      <p>Open the visual editor and choose <strong>Sign In with GitHub</strong>. The button opens Discord, not GitHub: sign in there and no token is needed. Your edits save directly to the wiki.</p>
+    </div>
+    <div class="note">
       <p><strong>GitHub token access</strong></p>
       <p>Maintainers with write access can use a fine-grained token limited to <strong>storytold/craft-wiki</strong>, with <strong>Contents: Read and write</strong>.</p>
       <p>Community contributors without write access can use a classic token with <strong>public_repo</strong> access. That scope covers all public repositories the account can access, including the contributor's fork; it cannot be restricted to this repository.</p>
     </div>
     <h2>Sign in</h2>
     <ol>
-      <li>Open the visual editor and choose <strong>Sign in with token</strong>.</li>
+      <li>Without the Senior Contributor role, open the visual editor and choose <strong>Sign In Using Access Token</strong>.</li>
       <li>Use the token instructions above for your access level. Maintainers may need organization approval for a fine-grained token. Contributors can <a href="https://github.com/settings/tokens/new?scopes=public_repo&amp;description=Craft%20Wiki">create a classic token with public_repo</a>.</li>
       <li>Paste your token into the editor. If you do not have write access, accept the prompt to create or reuse your fork.</li>
       <li>Save your changes, then choose <strong>Send for Review</strong> to open a pull request. Maintainers with write access save directly to <code>main</code>.</li>
