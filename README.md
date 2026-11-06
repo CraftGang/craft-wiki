@@ -181,6 +181,10 @@ If Cloudflare's own Git integration also triggers production builds on every pus
 - If `/admin/` fails to load, check that the build copied `public/admin/vendor/` and that `dist/admin/index.html`, `dist/admin/config.yml`, and the CMS bundle exist.
 - If editor sign-in fails, check the token type and scope, and any organization approval. Maintainers need repository write access; contributors instead need permission to create a fork. If saving fails after a successful login, check branch protection, fork synchronization, and the build history.
 
+## Safe Browsing status
+
+Chrome's warning comes from Google's Safe Browsing verdict for `craft.wiki`, and a partial listing (status 3) only covers some pages, so the site can look fine while the sign-in URLs warn. `npm run check:safebrowsing` prints the verdict and exits non-zero when the site is listed; `.github/workflows/safebrowsing.yml` runs it daily and on demand from **Actions → Check Safe Browsing status**. When it fails, open **Security issues** in Search Console for the sample URLs and request a review there: the listing clears only after Google reviews it.
+
 ## TileDocs
 
 The current site is built with Starlight and Sveltia CMS. It is not generated from a TileDocs project. The visual editor saves the Markdown files in this repository; there is no TileDocs export step in the current build.

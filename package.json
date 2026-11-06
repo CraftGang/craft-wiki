@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/prepare-cms.mjs && astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "check:safebrowsing": "node scripts/check-safebrowsing.mjs craft.wiki"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.10",

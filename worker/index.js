@@ -53,6 +53,9 @@ const json = (data, status = 200) =>
 
 const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
 
+const escapeHtml = (value) =>
+  String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+
 // Sveltia waits for this exchange with the sign-in popup. Discord can finish in
 // a tab with no opener, for example after handing off to its desktop app, so
 // without a reply the session is saved where Sveltia looks for it on load.
@@ -78,12 +81,49 @@ const popupResult = (origin, outcome, content) => {
     });
     window.opener?.postMessage('authorizing:github', origin);
     setTimeout(finish, window.opener ? 1500 : 0);`;
-  const text = outcome === 'success' ? 'Signing you in to Craft Wiki...' : content.error;
-  const html = `<!doctype html><meta charset="utf-8"><title>Craft Wiki sign-in</title><p>${text}</p><p><a href="/admin/">Back to the editor</a></p><script>${script}</script>`;
+  // A bare "sign-in" page on a domain that doesn't own the credentials reads as phishing to
+  // Safe Browsing's classifier, so the page names the site, explains what happened, and says where
+  // the password prompt belongs. The response carries a CSP and the usual framing/referrer headers.
+  const nonce = base64url(crypto.getRandomValues(new Uint8Array(16)));
+  const detail = outcome === 'success' ? 'Signing you in to Craft Wiki...' : content.error;
+  const html = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Craft Wiki sign-in</title>
+<style nonce="${nonce}">
+:root{color-scheme:dark}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#111217;color:#f4f3f0;font:16px/1.65 system-ui,sans-serif}
+main{width:100%;max-width:30rem;margin:0 1.5rem;padding:2rem 1.75rem;border:1px solid #343641;border-radius:.75rem;background:#1a1b22}
+.brand{margin:0 0 1.25rem;color:#b9cbff;font-size:.75rem;font-weight:650;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0 0 .75rem;font-size:1.55rem;line-height:1.2;letter-spacing:-.02em}
+p{margin:0 0 1rem;color:#c4c5ce}
+.links{margin:1.5rem 0 0;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;font-size:.95rem}
+a{color:#b9cbff}
+.button{padding:.55rem .9rem;border-radius:.4rem;background:#b9cbff;color:#111217;font-weight:650;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<p class="brand">Craft Wiki</p>
+<h1>${outcome === 'success' ? 'Signed in with Discord' : 'Sign-in did not complete'}</h1>
+<p>${escapeHtml(detail)}</p>
+<p>Craft Wiki signs wiki editors in through Discord to check the editor role. It never asks for a Discord password: any password prompt belongs to discord.com.</p>
+<p class="links"><a class="button" href="/admin/">Continue to the editor</a><a href="/">Back to the wiki</a></p>
+</main>
+<script nonce="${nonce}">${script}</script>
+</body>
+</html>`;
   return new Response(html, {
     headers: {
       'Content-Type': 'text/html; charset=utf-8',
       'Cache-Control': 'no-store',
+      'Content-Security-Policy': `default-src 'none'; script-src 'nonce-${nonce}'; style-src 'nonce-${nonce}'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`,
+      'X-Frame-Options': 'DENY',
+      'Referrer-Policy': 'no-referrer',
+      'X-Content-Type-Options': 'nosniff',
+      'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
       'Set-Cookie': `${STATE_COOKIE}=; Path=/api/auth; Max-Age=0; HttpOnly; Secure; SameSite=Lax`,
     },
   });
