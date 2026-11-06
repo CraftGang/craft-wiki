@@ -15,17 +15,18 @@
     <p>Use the visual editor to update guides for ArtCraft and the Craft Apps.</p>
     <div class="note">
       <p><strong>GitHub token access</strong></p>
-      <p>Your fine-grained personal access token needs access only to <strong>storytold/craft-wiki</strong>, with repository permission <strong>Contents: Read and write</strong>. Your GitHub account must also have write access to that repository.</p>
-      <p>The editor currently saves directly to <code>main</code>. It does not create a pull request or grant repository access. Contributors without write access can propose changes through a GitHub fork and pull request.</p>
+      <p>Maintainers with write access can use a fine-grained token limited to <strong>storytold/craft-wiki</strong>, with <strong>Contents: Read and write</strong>.</p>
+      <p>Community contributors without write access can use a classic token with <strong>public_repo</strong> access. That scope covers all public repositories the account can access, including the contributor's fork; it cannot be restricted to this repository.</p>
     </div>
     <h2>Sign in</h2>
     <ol>
       <li>Open the visual editor and choose <strong>Sign in with token</strong>.</li>
-      <li>Follow its GitHub token link. Under repository access, select <strong>Only select repositories</strong> and choose <strong>storytold/craft-wiki</strong>.</li>
-      <li>Set <strong>Contents</strong> to <strong>Read and write</strong>, generate the token, and paste it into the editor. Your organization may need to approve the token.</li>
+      <li>Use the token instructions above for your access level. Maintainers may need organization approval for a fine-grained token. Contributors can <a href="https://github.com/settings/tokens/new?scopes=public_repo&amp;description=Craft%20Wiki">create a classic token with public_repo</a>.</li>
+      <li>Paste your token into the editor. If you do not have write access, accept the prompt to create or reuse your fork.</li>
+      <li>Save your changes, then choose <strong>Send for Review</strong> to open a pull request. Maintainers with write access save directly to <code>main</code>.</li>
     </ol>
     <p><a class="button" href="/admin/">Open visual editor</a></p>
-    <p>Changes saved in the editor commit to the repository and trigger a deployment. <a href="https://github.com/storytold/craft-wiki">View the repository ↗</a></p>
+    <p>After a maintainer merges a contribution, the update deploys from <code>main</code>. <a href="https://github.com/storytold/craft-wiki">View the repository ↗</a></p>
   </main>
 </body>
 </html>

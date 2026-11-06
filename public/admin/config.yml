@@ -3,12 +3,16 @@ backend:
   repo: storytold/craft-wiki
   branch: main
   auth_methods: [token]
+  auth_scope: public_repo
+  open_authoring: true
+publish_mode: editorial_workflow
 media_folder: public/assets/uploads
 public_folder: /assets/uploads
 collections:
   - name: artcraft-studio
     label: ArtCraft Studio
     folder: src/content/docs/apps/artcraft-studio
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -19,6 +23,7 @@ collections:
   - name: photocraft
     label: PhotoCraft
     folder: src/content/docs/apps/photocraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -29,6 +34,7 @@ collections:
   - name: vectorcraft
     label: VectorCraft
     folder: src/content/docs/apps/vectorcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -39,6 +45,7 @@ collections:
   - name: filmcraft
     label: FilmCraft
     folder: src/content/docs/apps/filmcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -49,6 +56,7 @@ collections:
   - name: lightcraft
     label: LightCraft
     folder: src/content/docs/apps/lightcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -59,6 +67,7 @@ collections:
   - name: pdfcraft
     label: PdfCraft
     folder: src/content/docs/apps/pdfcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -69,6 +78,7 @@ collections:
   - name: effectcraft
     label: EffectCraft
     folder: src/content/docs/apps/effectcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -79,6 +89,7 @@ collections:
   - name: designcraft
     label: DesignCraft
     folder: src/content/docs/apps/designcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -89,6 +100,7 @@ collections:
   - name: figcraft
     label: FigCraft
     folder: src/content/docs/apps/figcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -99,6 +111,7 @@ collections:
   - name: texturecraft
     label: TextureCraft
     folder: src/content/docs/apps/texturecraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -109,6 +122,7 @@ collections:
   - name: materialcraft
     label: MaterialCraft
     folder: src/content/docs/apps/materialcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -119,6 +133,7 @@ collections:
   - name: wordcraft
     label: WordCraft
     folder: src/content/docs/apps/wordcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -129,6 +144,7 @@ collections:
   - name: soundcraft
     label: SoundCraft
     folder: src/content/docs/apps/soundcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -139,6 +155,7 @@ collections:
   - name: deckcraft
     label: DeckCraft
     folder: src/content/docs/apps/deckcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -149,6 +166,7 @@ collections:
   - name: cadcraft
     label: CADCraft
     folder: src/content/docs/apps/cadcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -159,6 +177,7 @@ collections:
   - name: gridcraft
     label: GridCraft
     folder: src/content/docs/apps/gridcraft
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter
@@ -169,6 +188,7 @@ collections:
   - name: craft-anything
     label: Craft Anything
     folder: src/content/docs/apps/craft-anything
+    publish_mode: simple
     create: true
     extension: md
     format: frontmatter

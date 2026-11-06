@@ -98,16 +98,24 @@ The header's **Edit wiki** link opens `/edit/`, which explains sign-in and links
 
 ### GitHub access and token
 
-The editor currently uses **token authentication only**. Each editor needs a GitHub account with write access to `storytold/craft-wiki`. For a fine-grained personal access token:
+The editor currently uses **token authentication only**. Maintainers with write access to `storytold/craft-wiki` can use a fine-grained personal access token:
 
 1. In GitHub, create a fine-grained personal access token owned by the appropriate account or organization.
 2. Under repository access, choose **Only select repositories** and select **`storytold/craft-wiki`**. No other repository is required.
 3. Set repository permission **Contents** to **Read and write**. GitHub adds read-only Metadata access automatically. The organization may need to approve the token.
 4. Open `/admin/`, choose **Sign in with token**, and provide the token in the editor. Do not commit tokens to the repository.
 
+Community contributors without write access can use a classic personal access token with the `public_repo` scope for this public repository. This scope covers public repositories accessible to that GitHub account, including the contributor's fork; it cannot be restricted to `storytold/craft-wiki` alone. The editor prompts contributors to create or reuse a fork. See [Sveltia's open-authoring documentation](https://sveltiacms.app/en/docs/workflows/open) for current requirements.
+
 Sveltia stores its sign-in token in the browser's local storage and communicates directly with GitHub. See [Sveltia's GitHub backend documentation](https://sveltiacms.app/en/docs/backends/github) for current token and authentication details.
 
-The current configuration uses the simple workflow: saving an entry commits directly to `main`. **It does not open a pull request or give someone repository access.** Contributors without write access can fork the public repository and open a GitHub pull request. If the branch is protected against direct writes, users who cannot push will not be able to save through this simple workflow. A pull-request-based editorial or open-authoring workflow would require a separate configuration change and appropriate permissions.
+### Open authoring and review
+
+Open authoring is enabled in the backend, with `editorial_workflow` as the top-level publish mode. The app collections opt into `simple` mode for maintainers, so people with write access still save directly to `main`. A protected branch can prevent direct saves for users who cannot push to it.
+
+For contributors without write access, Sveltia creates or reuses their fork and saves each draft on a branch there. Saving a draft alone does not open a pull request: choose **Send for Review** or move the entry to **In Review** to create a PR against `main`. Maintainers review and merge that PR on GitHub; merging triggers the normal deployment. Contributors do not need write access to `storytold/craft-wiki`, and a draft does not go live until it is merged.
+
+The public repository allows forks. If a contributor's fork has become stale and the CMS cannot synchronize workflow files, they can sync the fork on GitHub before trying again. The configuration deliberately does not request the broad `workflow` scope.
 
 GitHub OAuth is not currently configured: the editor's sign-in method is explicitly restricted to tokens to avoid the default Netlify OAuth endpoint. For a conventional GitHub sign-in button, deploy and configure a [Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth) Worker, register a GitHub OAuth application, and update the CMS backend configuration. Keep the OAuth client secret in Cloudflare, not in this repository.
 
@@ -148,7 +156,7 @@ If Cloudflare's own Git integration also triggers production builds on every pus
 - If the hook succeeds but the site is unchanged, inspect **Workers & Pages → craft-wiki → Deployments → View Build History**. Confirm the build used the intended `main` commit and completed successfully.
 - If the old site remains visible, check the Worker/domain routing and the currently deployed version. The GitHub Actions result alone does not confirm which Cloudflare version is live.
 - If `/admin/` fails to load, check that the build copied `public/admin/vendor/` and that `dist/admin/index.html`, `dist/admin/config.yml`, and the CMS bundle exist.
-- If editor sign-in fails, confirm repository write access, token scope and any organization approval. If saving fails after a successful login, check branch protection and the build history.
+- If editor sign-in fails, check the token type and scope, and any organization approval. Maintainers need repository write access; contributors instead need permission to create a fork. If saving fails after a successful login, check branch protection, fork synchronization, and the build history.
 
 ## TileDocs
 
