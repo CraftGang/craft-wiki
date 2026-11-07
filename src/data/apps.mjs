@@ -39,3 +39,25 @@ export const extraGuides = {
 };
 // ponytail: assumes Troubleshooting is the last shared guide.
 export const guidesFor = (slug) => [...guides.slice(0, -1), ...(extraGuides[slug] ?? []), guides.at(-1)];
+// Pages the sidebar nests under one of an app's guides, keyed by app slug and then by guide slug.
+export const childGuides = {
+  vectorcraft: {
+    workflows: [
+      ['set-up-documents-and-artboards', 'Set up a document and artboards'],
+      ['draw-and-transform-shapes', 'Draw and transform shapes'],
+      ['draw-and-edit-paths', 'Draw and edit paths'],
+      ['fill-stroke-and-color', 'Fill, stroke and color'],
+      ['add-and-style-type', 'Add and style type'],
+      ['arrange-group-and-align', 'Arrange, group and align'],
+      ['combine-and-cut-shapes', 'Combine and cut shapes'],
+      ['apply-effects-and-appearance', 'Apply effects and appearance'],
+      ['organize-with-layers-and-symbols', 'Organize with layers and symbols'],
+      ['trace-an-image', 'Trace an image'],
+      ['export-for-screens-and-the-web', 'Export for screens and the web'],
+      ['open-and-save-files', 'Open and save files'],
+      ['print-your-artwork', 'Print your artwork'],
+      ['automate-vectorcraft', 'Automate VectorCraft'],
+    ],
+  },
+};
+export const childGuidesFor = (slug, guide) => childGuides[slug]?.[guide] ?? [];
