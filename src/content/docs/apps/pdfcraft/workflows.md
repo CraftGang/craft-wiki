@@ -1,9 +1,97 @@
 ---
 title: Workflows
-description: Workflows for PdfCraft.
+description: Reading, comments, editing, protecting, redacting, converting, compressing and OCR in PdfCraft.
+sidebar:
+  order: 3
 ---
 
-This guide for PdfCraft is being written. In the meantime, these resources can help:
+PdfCraft groups its tools in the **All tools** panel on the left: **Export a PDF**, **Fill & Sign**, **Edit a PDF**, **Create a PDF**, **Combine files**, **Organize pages**, **Add comments**, **Scan & OCR**, **Protect a PDF**, **Redact a PDF**, **Compress a PDF**, **Prepare a form** and more under **View more**. Pick one and its tools appear above the page. The same commands are in the menus under **Menu**. If you can't find a command, press **Ctrl+K** (**⌘K** on a Mac) and type its name.
 
-- [PdfCraft product page](https://getartcraft.com/apps/pdfcraft)
-- [PdfCraft on GitHub](https://github.com/storytold/pdfcraft)
+## Read
+
+- **View › Page display** switches between **Single page** and **Two-page view**, and turns **Continuous scrolling** on or off.
+- **View › Zoom** has **Actual size** (**Ctrl+1**), **Fit to width** (**Ctrl+2**), **Zoom to page level** (**Ctrl+0**) and more. **Ctrl++** and **Ctrl+−** zoom in and out.
+- **View › Full screen mode** (**Ctrl+L**) fills the screen with the page. **Read mode** hides the tools.
+- **F4** shows or hides the side panel, and **Shift+F4** the tools panel. **View › Side panels** opens **Comments**, **Bookmarks**, **Pages**, **Fields**, **Layers**, **Attachments** or **Signatures**.
+- **View › Display theme** chooses light, dark, or your system's setting. The moon button at the top right switches too.
+
+![PdfCraft with the dark theme: the menus, tools panel and Comments panel are dark, and the page in the middle shows a code listing and a fractal picture](/assets/uploads/pdfcraft/dark.webp)
+
+## Find text
+
+**Ctrl+F** finds text in the document. **Ctrl+G** and **Ctrl+Shift+G** go to the next and previous match. **Edit › Advanced search…** (**Ctrl+Shift+F**) has more options.
+
+## Comment
+
+Choose **Add comments** to add a **Sticky note**, highlight, underline, strike through or squiggly-underline text, add a **Text box**, draw freehand, or draw a rectangle, oval, line or arrow. Every comment is listed in the **Comments** panel, by page. Click one to go to it, or reply to it there.
+
+**Add a stamp** puts a stamp on the page from the stamp palette. **Flatten comments** makes comments part of the page, so they can no longer be changed.
+
+## Edit
+
+Choose **Edit a PDF**:
+
+- **Edit text & images** changes text and pictures already on the page. This works best on simple pages. It's still weak on complex layouts and on right-to-left and Chinese, Japanese or Korean text.
+- **Text** and **Image** add new text and pictures.
+- **Header and footer**, **Watermark** and **Background** add, update or remove them on every page.
+- **Link** adds or edits links. **Bates numbering** numbers the pages for legal work. **Attach file** attaches a file to the PDF.
+
+## Protect and redact
+
+- **Protect a PDF › Protect with password** sets a password to open the document, or one to change it, and chooses what people can do: print, change pages, copy text and so on. The password is applied when you save.
+- **Remove hidden information** lists things in the file you can't see on the page, such as metadata, so you can pick what to remove.
+- **Redact a PDF** blacks out text, pictures or whole pages. Mark what to remove with **Redact text and images**, or use **Find text and redact** to mark every match, then choose **Apply redactions**. **Sanitize document** removes everything hidden: metadata, attachments, comments, hidden text and layers, bookmarks, links and scripts. Form fields are flattened, so their values stay visible. Save afterwards: saving rewrites the whole file, so nothing removed stays in it.
+
+:::caution
+Applied redactions remove the text, pictures and drawings under the marks for good, along with comments and form fields that overlap them. Redaction can't find text inside pictures: recognise the text with OCR first. Keep a copy of the original.
+:::
+
+## Convert
+
+- **File › Export** saves the PDF as **Word**, **PowerPoint**, **RTF**, **HTML**, plain text, or each page as a picture. **Export all images…** saves every picture in the document. The layout of Word exports isn't kept well yet.
+- **File › Create** makes a PDF from another file, several files, pictures or the clipboard, or a **New blank PDF**.
+- **Compress a PDF › Reduce file size** makes a smaller copy. **Advanced optimization** chooses what to shrink.
+
+## Recognise scanned text
+
+A scanned page is a picture of words, so you can't search or copy it. Choose **Scan & OCR › In this file** to recognise the text, or **In multiple files** for several PDFs at once. Pick the language, the pages and whether to straighten or clean up the pages, then press **Run OCR**.
+
+PdfCraft shows the words it found, coloured by how sure it is. Go through the uncertain ones with **Next uncertain** (**F8**), click a word to correct it, then press **Accept** to add the text to the PDF, or **Reject** to leave it out. OCR works best on Latin-script languages.
+
+![The OCR screen: settings and the Run OCR, Accept and Reject buttons along the top, a scanned page in the middle with each word boxed in green or red by confidence, and the recognised words listed on the right](/assets/uploads/pdfcraft/ocr-verify.webp)
+
+## More tools
+
+**View more** in the tools panel also has **Measure objects** (distance, perimeter and area), **Compare files**, **Use guided actions** (the **Action Wizard**), **Prepare for accessibility** (with **Check for accessibility** and tagging tools), and **Apply PDF standards › Save as PDF/A** for archiving.
+
+## Print
+
+**File › Print…** (**Ctrl+P**) prints the document. You can choose to print just the document, or the document with its comments or stamps.
+
+## Preferences
+
+Choose **Edit › Preferences…** (**Ctrl+,**). Among other things, you can change the **Interface language**, the **Interface size**, which side the tools panel and side panels are on, the **Default page display**, whether PdfCraft reopens the files you had open last time, and whether it checks for updates when it starts.
+
+## Keyboard shortcuts
+
+On a Mac, use **⌘** in place of **Ctrl**. **Help › Keyboard shortcuts** lists them all.
+
+| Shortcut | What it does |
+| --- | --- |
+| **Ctrl+O** | Open |
+| **Ctrl+S**, **Ctrl+Shift+S** | Save, save as |
+| **Ctrl+W** | Close the file |
+| **Ctrl+P** | Print |
+| **Ctrl+D** | Document properties |
+| **Ctrl+Z**, **Ctrl+Shift+Z** | Undo, redo |
+| **Ctrl+F**, **Ctrl+Shift+F** | Find, advanced search |
+| **Ctrl+G**, **Ctrl+Shift+G** | Next match, previous match |
+| **Ctrl+K** | Find tools and commands |
+| **Ctrl+Shift+N** | Go to page |
+| **Ctrl+1**, **Ctrl+2**, **Ctrl+0** | Actual size, fit to width, whole page |
+| **Ctrl++**, **Ctrl+−** | Zoom in, zoom out |
+| **Ctrl+[**, **Ctrl+]** | Previous view, next view |
+| **Ctrl+B** | New bookmark |
+| **Ctrl+L** | Full screen |
+| **F4**, **Shift+F4** | Side panel, tools panel |
+| **Ctrl+,** | Preferences |

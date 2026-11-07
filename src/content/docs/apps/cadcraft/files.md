@@ -1,0 +1,54 @@
+---
+title: DWG and DXF files
+description: Open, save and export DWG and DXF drawings in CADCraft, and what is kept when you do.
+sidebar:
+  order: 4
+---
+
+CADCraft's own format is DXF. It also opens and saves DWG, so you can work with drawings from other CAD programs.
+
+## Open a drawing
+
+Choose **File › Open...** (**Ctrl+O**) and pick a file. CADCraft opens:
+
+| Format | Versions |
+| --- | --- |
+| DXF | R12 and later, text (ASCII) or binary. Binary DXF must be R13 or later |
+| DWG | 2000 and later |
+| DWT | Drawing templates |
+| SVG | Shapes, paths, groups and Inkscape layers become CADCraft objects. Text, fills and images are left out |
+
+To start a new drawing from a template, choose **File › New from Template...**.
+
+## Save a drawing
+
+**File › Save** (**Ctrl+S**) saves in the drawing's own format: a drawing you opened as DWG is saved as DWG. A new drawing is saved as DXF unless you change it.
+
+**File › Save As** (**Ctrl+Shift+S**) saves in another format. CADCraft saves DXF and DWG in versions 2000, 2004, 2007, 2010, 2013 and 2018. To set the format and version for new drawings, use **Tools › Options › Open and Save**, or **File › Default Save Format**.
+
+When you save over a file, CADCraft keeps the old one as a `.bak` backup copy. To turn this off, clear **Create backup copy with each save** in **Tools › Options › Open and Save**.
+
+:::caution[Saving can drop objects]
+CADCraft doesn't yet understand everything other CAD programs put in a drawing. Objects it doesn't model, such as 3D solids, are kept when you save as DXF, but some are lost when you save as DWG or as a newer DXF version. Before **File › Save** would remove something from the file, CADCraft asks you: choose **Save Anyway**, **Save As...** to keep the original file as it is, or **Cancel**. Always keep the original of a drawing someone sent you.
+:::
+
+## Export and plot
+
+| To get | Choose |
+| --- | --- |
+| A PDF | **File › Export to PDF...**, or **File › Print...** to set up the plot first |
+| An SVG or PNG image | **File › Save As**, then pick **SVG** or **PNG** |
+
+PDFs keep the drawing as vector lines, with layers you can turn on and off in a PDF reader, and can hold several sheets in one file.
+
+## Fonts
+
+CADCraft draws text with the TrueType and OpenType fonts (`.ttf`, `.otf`, `.ttc`) installed on your computer. To use a new font, install it in your system's font folder, then restart CADCraft.
+
+CADCraft can't read SHX fonts yet. Text in an SHX style is drawn with CADCraft's own drafting font instead, so it may be a slightly different size from the original.
+
+## Limits
+
+- DWG files are converted on the way in and out, so very large DWG drawings can be slow to open.
+- CADCraft can't yet import PDFs, or open DGN or DWF files.
+- The web version opens and saves DXF only, not DWG.
