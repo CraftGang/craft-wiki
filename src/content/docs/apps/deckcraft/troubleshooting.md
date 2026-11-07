@@ -41,6 +41,14 @@ Check your system's sound output first. On Linux, make sure ALSA (`libasound`) i
 
 Open DeckCraft again. While it runs, it keeps a copy of every presentation with unsaved changes (AutoRecover). After a crash, the next start opens those copies again and says so in the status bar. Save them to keep them. You can also choose **File › Open › Recover Unsaved Presentations**.
 
+## Print opens a PDF, or nothing happens
+
+That's how DeckCraft prints: it opens a PDF in your PDF viewer, and you print from there. Printing straight to a printer is requested in [#607](https://github.com/storytold/deckcraft/issues/607).
+
+If no viewer opens, install a PDF viewer and try again. On Linux, a viewer sometimes doesn't open even when one is installed ([#1734](https://github.com/storytold/deckcraft/issues/1734)). Use **File › Export › Create PDF Document** and open the file yourself.
+
+If **Print** is dimmed, check the slide range, or select **Print Hidden Slides** if every slide in it is hidden.
+
 ## A presentation doesn't look as it does in another app
 
 DeckCraft is in alpha. Some layouts, effects or fonts in .pptx files from other apps may come out differently. Keep the original file, and save your work as .deckcraft to keep everything DeckCraft supports. Please [report the presentation](https://github.com/storytold/deckcraft/issues) if you can share it: real files are how we find these problems.

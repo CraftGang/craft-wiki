@@ -24,7 +24,7 @@ CADCraft is in pre-alpha. Many commands work, but some options are still missing
 - **Layers and properties**: a Layers palette, the Layer Properties Manager, and a Properties palette for editing selected objects.
 - **Annotation**: dimensions, dimension styles, leaders, multileaders and tables.
 - **Hatches and blocks**: pattern, solid and gradient fills, blocks with attributes.
-- **Layouts**: paper-space sheets with viewports at a chosen scale, plotted to PDF.
+- **Layouts**: paper-space sheets with viewports at a chosen scale, plotted to PDF, PNG or SVG files.
 - **Constraints**: geometric and dimensional constraints that hold when you edit.
 - **Automation**: scripts, LISP routines, a command-line tool and an MCP server for AI agents.
 - **Interface**: light and dark themes, and an interface in 19 languages.

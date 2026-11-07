@@ -72,7 +72,45 @@ PdfCraft shows the words it found, coloured by how sure it is. Go through the un
 
 ## Print
 
-**File › Print…** (**Ctrl+P**) prints the document. You can choose to print just the document, or the document with its comments or stamps.
+1. Choose **File › Print…** (**Ctrl+P**).
+2. Pick a **Printer**, or **Save as PDF** to get a print-ready file instead.
+3. Choose the pages and how they fit on the paper (see below). The preview on the right shows each sheet.
+4. Press **Print**.
+
+If a document's security settings don't allow printing, PdfCraft won't print it. See [I can't print this document](/apps/pdfcraft/troubleshooting/#i-cant-print-this-document).
+
+### Printer and paper
+
+- **Copies** goes up to 999. **Collate** keeps each copy in order, and **Print in grayscale** drops the color.
+- **Two-sided** can flip on the long or short edge.
+- **Paper** includes US Letter, Legal, Tabloid, A0 to A6, ARCH and ANSI sizes, a 4 x 6 in label and a #10 envelope. PdfCraft remembers your last choice.
+- **Match page at 100%** picks the standard paper that fits the page and prints it at full size.
+- **Properties…** opens the printer's own settings, such as the paper tray.
+
+### Pages
+
+Print **All** pages, the **Current page**, or a range under **Pages**, such as `1-5`. If you selected pages before opening Print, **Selected pages** is offered too. **More options** can limit the print to odd or even pages, or print in reverse order.
+
+### Fit pages on paper
+
+| Tab | What it does |
+| --- | --- |
+| **Size** | **Fit** the page to the paper, print at **Actual size**, shrink only pages that are too big, or set a **Custom scale**. |
+| **Poster** | Prints one page across several sheets, with an overlap and cut marks, so you can tape them together. |
+| **Multiple** | Puts 2, 4, 6, 9 or 16 pages on one sheet. **Cut and stack** orders them so you can cut the sheets and stack the piles in page order. |
+| **Booklet** | Prints sheets that fold into a booklet, bound on the left or right. |
+| **Label** | Fits each page onto one label, such as a 4 x 6 in shipping label. |
+
+**Orientation** can be portrait, landscape or automatic.
+
+For scale drawings, use **Actual size**. **Fit** leaves a small margin, so it prints slightly smaller than 100%.
+
+### Comments, forms and other options
+
+- **Comments & Forms** chooses whether to print the document alone, with markups or stamps, or only the form fields.
+- **Advanced › Print as image** sends each page as a picture, at 150, 300 or 600 dpi. Try it when a printer leaves out text, shading or transparency.
+
+In the web version, **Printer** offers your browser's print dialog instead of a list of printers.
 
 ## Preferences
 

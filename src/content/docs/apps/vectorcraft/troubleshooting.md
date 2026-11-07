@@ -121,6 +121,22 @@ VectorCraft saves recovery copies of changed documents every two minutes by defa
 
 ![The Preferences dialog on the File Handling page over a dusk harbor poster titled Harbor Lights, with Data Recovery showing Automatically Save Recovery Data on, Every (minutes) set to 2, an empty Folder field with a Choose… button, and Turn off Data Recovery for complex documents off](/assets/uploads/vectorcraft/prefs-data-recovery.webp)
 
+## Printing fails or the page comes out wrong
+
+- **Check the job first.** In **File › Print…**, look at the preview and at **Summary**, which lists your changes and warns about art bigger than the page.
+- **Wrong page size, or art cut off.** Check **Media** and **Scaling** in **General**, and **Unprintable margin** in **Advanced**.
+- **Not sure what's going to the printer?** Choose **PDF File** under **Printer** and look at the PDF. If you print that PDF, turn off "fit to page" in your PDF viewer.
+- **Changes in the printer's own settings are ignored.** VectorCraft doesn't read them back. Set the paper in the Print dialog.
+
+Known problems, not fixed yet:
+
+- Printing can fail with "Interface not compatible (0x80004005)" ([#5987](https://github.com/storytold/vectorcraft/issues/5987)).
+- Paper sizes and settings from the printer driver aren't picked up ([#5642](https://github.com/storytold/vectorcraft/issues/5642)).
+- Prints can come out slightly smaller than set ([#5520](https://github.com/storytold/vectorcraft/issues/5520)).
+- Large-format printers with only a PCL driver print the wrong page size ([#5339](https://github.com/storytold/vectorcraft/issues/5339)).
+
+See [Print your artwork](/apps/vectorcraft/print-your-artwork/#choose-a-printer).
+
 ## The web version is slow or won't start
 
 The web version uses the graphics card through WebGPU, which browsers only allow on secure pages. Open it from an `https://` address, or from `localhost`. Over plain `http://` elsewhere it falls back to slower WebGL2 graphics, and the clipboard doesn't work.

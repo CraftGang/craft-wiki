@@ -44,6 +44,19 @@ GridCraft can open a workbook that needs a password to open, but saves it withou
 - **VBA macros** from Excel are kept when you save as .xlsm, but GridCraft doesn't run them. It runs its own kind of macro: see [Record and run macros](/apps/gridcraft/workflows/#record-and-run-macros).
 - **Macros and scripts that came with a workbook** you opened ask before they run, because someone else made the file. Choose to run them only if you trust where the file came from.
 
+## Printing doesn't work as I expect
+
+- **Print is dimmed.** Pick a printer under **Printer** on **File › Print**. If yours isn't listed, add it in your system settings and choose **Refresh printers**.
+- **"No printers found."** GridCraft only sees printers your system knows about. Add one in your system settings, or save a PDF with **File › Export › Create PDF** and print that.
+- **No orientation or paper size on the print screen.** They're on the **Page Layout** tab ([#2359](https://github.com/storytold/gridcraft/issues/2359)).
+- **Extra blank pages.** Empty cells with formatting can stretch the printed area ([#3367](https://github.com/storytold/gridcraft/issues/3367)). Set a **Print Area** on the **Page Layout** tab to print only what you need.
+
+Known problems, not fixed yet:
+
+- You can't print a page range ([#3098](https://github.com/storytold/gridcraft/issues/3098)) or only the selection ([#2351](https://github.com/storytold/gridcraft/issues/2351)), and **Create PDF** has no page range either ([#3016](https://github.com/storytold/gridcraft/issues/3016)).
+- The preview can miss borders, centering and merged-cell alignment ([#3059](https://github.com/storytold/gridcraft/issues/3059)).
+- Thai, Czech and Korean text can print as "?" ([#1416](https://github.com/storytold/gridcraft/issues/1416), [#2241](https://github.com/storytold/gridcraft/issues/2241), [#2875](https://github.com/storytold/gridcraft/issues/2875)).
+
 ## A workbook doesn't look as it does in another app
 
 GridCraft is in alpha. Some workbooks may not open exactly as they look elsewhere. If you need an exact copy, keep the original file. Please [report the workbook](https://github.com/storytold/gridcraft/issues) if you can share it: real files are how we find these problems.

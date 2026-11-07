@@ -65,6 +65,18 @@ Template layers never print, whatever **Print Layers** is set to. A layer with *
 The printed area is the artboard together with its bleed and marks. When that area is larger than the printable area of the paper, **Summary** shows a warning. Choose larger paper, or set **Scaling** to **Fit to Page** to size the art so it fits with its marks.
 :::
 
+## Choose a printer
+
+Pick a printer under **Printer**. **PDF File** saves the job as a PDF instead, so you can print it later or check exactly what would print.
+
+**Setup…** opens your system's printer settings: the printer's own settings on Windows, **Print & Scan** on macOS, and `system-config-printer` or the CUPS web page on Linux. VectorCraft doesn't read changes made there, so choose the paper in the Print dialog.
+
+VectorCraft sends the whole job to your system as one PDF. In the web version, printing goes through the browser's print dialog.
+
+:::note
+If your system can't print, **Print** saves the job as a PDF and tells you in the status bar.
+:::
+
 ## Print separations
 
 The **Output** section chooses between one color page and one page per ink.
@@ -74,6 +86,17 @@ The **Output** section chooses between one color page and one page per ink.
 3. Set **Image** to **Positive** or **Negative**.
 4. With separations, turn on **Convert All Spot Colors to Process** to print spot colors on the process inks instead of their own pages.
 5. With separations, the **Document Ink Options** list shows each ink. Turn single inks on or off and set their frequency and angle.
+
+## Graphics, color and advanced options
+
+Most jobs print fine with the defaults. Change these when a printer has trouble or colors look wrong.
+
+- **Graphics › Download** sets how much of each font goes to the printer: **None**, **Subset** (the default) or **Complete**.
+- **Color Management › Printer profile** converts colors to the printer's profile. Pick a **Rendering intent**, and turn on **Preserve CMYK Numbers** to print CMYK colors exactly as they are.
+- **Advanced › Unprintable margin** is the edge your printer can't reach. The preview shows it as a dashed line.
+- **Advanced › Print as Bitmap** prints each page as one image, at the document's raster effects resolution.
+- **Advanced › Overprints** can preserve, discard or simulate overprints.
+- **Advanced › Preset** flattens transparency before printing, for printers that can't handle it.
 
 ## Set graphics options
 

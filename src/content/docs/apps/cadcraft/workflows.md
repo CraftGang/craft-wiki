@@ -86,12 +86,71 @@ Model space is where you draw, at full size. A layout is a sheet of paper with o
 1. Click a layout tab, such as **Layout1**, on the status bar. **+** adds a new one.
 2. Type `mview` (or `mv`) and drag a rectangle to add a viewport.
 3. Double-click inside a viewport to work in model space through it. Click **PAPER** or **MODEL** on the status bar to switch between the two.
-4. **File › Page Setup Manager...** sets the paper size and plot settings for the layout.
+4. **File › Page Setup Manager...** sets the paper size and plot settings for the layout. See [Print](#print).
 5. **File › Print...** (**Ctrl+P**) opens the Plot dialog. **File › Export to PDF...** saves a PDF straight away.
 
+## Print
+
+In CAD, printing is called plotting. **File › Print...** (**Ctrl+P**, **⌘P** on a Mac) opens the **Plot** dialog.
+
 :::note
-CADCraft plots to PDF files. It can't send a drawing to a printer yet: print the PDF instead.
+CADCraft plots to a file. It can't send a drawing to a printer yet ([#2849](https://github.com/storytold/cadcraft/issues/2849)), so plot to a PDF and print that from a PDF viewer.
 :::
+
+### Plot a drawing
+
+1. Open the layout you want to plot, or stay in model space.
+2. Choose **File › Print...**.
+3. Pick a **Printer/plotter**, a **Paper size** and the other options below.
+4. Click **Preview** to check the sheet, then **Close** to go back.
+5. Click **OK** and choose where to save the file.
+
+The file is named after the drawing and the layout, such as `Drawing-Layout1.pdf`, and its type follows the device you picked.
+
+**File › Export to PDF...** skips the dialog and plots the current page setup straight to a PDF.
+
+### Plot options
+
+| Option | What it does |
+| --- | --- |
+| **Printer/plotter** | **CADCraft PDF**, **CADCraft PNG** or **CADCraft SVG** writes that file type. **None** writes a PDF on any standard paper size. Devices you make in the Plotter Manager are listed too. |
+| **Paper size** | The sizes the device offers. |
+| **Orientation** | **Portrait** or **Landscape**. |
+| **Plot area** | A layout always plots the whole sheet. In model space, choose **Extents**, **Display**, **Limits** or **Window**. |
+| **Fit to paper** | Scales the drawing to fill the sheet. |
+| **Scale** | Model space only. Type a ratio such as `1:50`. Turn off **Fit to paper** first. |
+| **Center the plot** | Model space only. Turn it off to place the drawing with **X offset (mm)** and **Y offset (mm)** instead. |
+| **Plot object lineweights**, **Plot transparency** | Keep lineweights and transparency on paper. |
+| **Plot style table** | Changes how colors and lines print (see [Plot styles](#plot-styles)). **None** prints the colors as they are. |
+
+To plot part of model space, set **Plot area** to **Window**, click **Window <** and pick two corners in the drawing.
+
+In a layout, **Apply to Layout** keeps your choices for next time.
+
+### Page Setup Manager
+
+**File › Page Setup Manager...** saves plot settings for each layout, so **Ctrl+P** starts from them. Pick a layout in the list and change its settings. Changes are saved as you make them. This is also where you set **Scale** and **Center the plot** for a layout.
+
+### Plot styles
+
+A plot style table changes how objects print: their color, grayscale, screening, linetype and lineweight. The built-in tables are `default.ctb`, `monochrome.ctb` (everything prints black), `grayscale.ctb`, `default.stb` and `monochrome.stb`.
+
+- **Color-dependent** (`.ctb`) tables style objects by their color.
+- **Named** (`.stb`) tables style objects by a plot style name. Set it with **Format › Plot Style...**, or on the layer.
+
+To make your own, open **File › Plot Styles...**, pick a table and choose **Copy**, **New CTB** or **New STB**. Then edit each style's **Color**, **Grayscale**, **Screening**, **Linetype** and **Lineweight**. **Use for this layout** applies the table to the open layout, and **Display plot styles** shows the result on screen.
+
+Plot style tables are saved in the drawing. CADCraft can't read AutoCAD's `.ctb`, `.stb` or `.pc3` files yet ([#2752](https://github.com/storytold/cadcraft/issues/2752)).
+
+### Plotter Manager
+
+**File › Plotter Manager...** runs at the command line. Choose **New** to make a device that writes PDF, PNG or SVG, then **Paper** to add custom paper sizes to it, in millimeters. `?` lists your devices and **Delete** removes one. The built-in devices can't be changed.
+
+Your devices are saved in the `plotters` folder: `%APPDATA%\CADCraft\plotters` on Windows, `~/Library/Application Support/CADCraft/plotters` on a Mac and `~/.config/cadcraft/plotters` on Linux.
+
+### Plot every sheet at once
+
+**File › Batch Publish...** plots model space and every layout, each to its own PDF. Name the set, such as `set.pdf`, and the files are called `set-<sheet>.pdf`.
 
 ## Measure
 

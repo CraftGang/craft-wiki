@@ -37,7 +37,10 @@ CADCraft doesn't yet understand everything other CAD programs put in a drawing. 
 | To get | Choose |
 | --- | --- |
 | A PDF | **File › Export to PDF...**, or **File › Print...** to set up the plot first |
-| An SVG or PNG image | **File › Save As**, then pick **SVG** or **PNG** |
+| An SVG or PNG image | **File › Export...**, then save the file as `.svg` or `.png` |
+| Every sheet as its own PDF | **File › Batch Publish...** |
+
+See [Print](/apps/cadcraft/workflows/#print) for paper sizes, scale and plot styles.
 
 PDFs keep the drawing as vector lines, with layers you can turn on and off in a PDF reader, and can hold several sheets in one file.
 
