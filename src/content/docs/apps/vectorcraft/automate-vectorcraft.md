@@ -95,7 +95,7 @@ In **Batch…**, set **Play:** to **Folder** or **Data Sets**. For **Folder**, c
 |---|---|
 | Windows (MSI) | `%LOCALAPPDATA%\Programs\ArtCraft\VectorCraft\vectorcraft-cli.exe` for the default install. The installer does not add it to `PATH`. |
 | Linux (deb, rpm) | `/usr/bin/vectorcraft-cli` |
-| macOS | The separate `vectorcraft-cli-<version>-macos-<arch>.zip` release download. The `.app` holds only the desktop app. |
+| macOS | The separate `vectorcraft-cli-<version>-macos-universal.zip` release download. The `.app` holds only the desktop app. |
 
 | Command | What it does |
 |---|---|

@@ -35,7 +35,7 @@ Very large DWG files can take a while to open, because CADCraft converts them fi
 
 ## Text looks different from the original
 
-CADCraft can't read SHX fonts yet, so text in an SHX style is drawn with CADCraft's own drafting font. If text in Chinese, Japanese, Korean or Arabic doesn't show properly, install a font that has those characters, such as Noto Sans CJK or Noto Sans Arabic, and restart CADCraft. See [Fonts](/apps/cadcraft/files/#fonts).
+CADCraft reads SHX fonts only when their `.shx` files are in the drawing's folder, so text in an SHX style whose font it can't find is drawn with CADCraft's own drafting font. If text in Chinese, Japanese, Korean or Arabic doesn't show properly, install a font that has those characters, such as Noto Sans CJK or Noto Sans Arabic, and restart CADCraft. See [Fonts](/apps/cadcraft/files/#fonts).
 
 ## Something disappeared after saving
 
@@ -51,7 +51,7 @@ Over the drawing, CADCraft hides the system cursor and draws its own crosshair, 
 
 ## A 3D tool does nothing
 
-CADCraft draws in 2D only for now. The tools on the **Modeling** tab of **Tool Sets**, and the 3D views and orbit, are not available yet.
+CADCraft draws in 2D only for now. Most tools on the **Modeling** tab of **Tool Sets**, and the 3D views and orbit, are not available yet.
 
 ## Find the log
 

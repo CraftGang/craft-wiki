@@ -20,7 +20,7 @@ The quickest way to install is [ArtCraft Launcher](https://github.com/storytold/
 
 ## Your first part
 
-1. Launch SolidCraft and choose **New Part** from the start screen.
+1. Launch SolidCraft and choose **New design** from the start screen.
 2. Click **Create Sketch** in the toolbar and select the XY ground plane.
 3. Use the **Rectangle** tool to draw a rectangle starting from the origin point.
 4. Press `D` to place dimension constraints: set the width to `60mm` and height to `40mm`. Press `Esc` when the sketch is fully constrained (lines will turn dark/black).

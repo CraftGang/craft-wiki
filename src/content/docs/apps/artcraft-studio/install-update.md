@@ -1,6 +1,6 @@
 ---
 title: Install and update
-description: Download ArtCraft Studio for Windows or macOS, and keep it up to date.
+description: Download ArtCraft Studio for Windows, macOS or Linux, and keep it up to date.
 sidebar:
   order: 2
 ---
@@ -25,7 +25,7 @@ Download `ArtCraft_<ver>_universal.dmg`, open it, and drag **ArtCraft** to Appli
 
 ### Linux
 
-There is no ready-made Linux build. You can [build it from source](https://github.com/storytold/artcraft/blob/main/_docs/dev_setup.md).
+Download `artcraft-<ver>-linux-x86_64.AppImage` and run it, or install `artcraft-<ver>-linux-x86_64.deb` (Debian, Ubuntu), `.rpm` (Fedora, RHEL, openSUSE), `.pkg.tar.zst` (Arch Linux) or `.flatpak`. There is also a `.tar.gz` to unpack anywhere. Every format also has an ARM64 build (`aarch64` in place of `x86_64`). RISC-V (`riscv64`) has a `.deb`, an `.rpm` and a tarball.
 
 ## Update
 

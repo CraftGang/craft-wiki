@@ -39,9 +39,10 @@ Download `wordcraft-<ver>-macos-universal.dmg`, open it, and drag **WordCraft** 
 | Flatpak | `wordcraft-<ver>-linux-x86_64.flatpak` | Install with `flatpak install --user <file>` |
 | Debian, Ubuntu | `wordcraft-<ver>-linux-x86_64.deb` | |
 | Fedora, RHEL, openSUSE | `wordcraft-<ver>-linux-x86_64.rpm` | |
+| Arch Linux | `wordcraft-<ver>-linux-x86_64.pkg.tar.zst` | Install with `sudo pacman -U <file>` |
 | Tarball | `wordcraft-<ver>-linux-x86_64.tar.gz` | Unpack anywhere |
 
-Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There is a RISC-V tarball too, for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
+Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are RISC-V builds too: a `.deb`, a `.rpm` and a tarball (`riscv64`), for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
 
 **Arch Linux:** community members maintain AUR packages. `wordcraft-bin` is the quickest, for example `yay -S wordcraft-bin`. `wordcraft` builds the latest release from source, and `wordcraft-git` builds the newest unreleased code.
 
@@ -51,7 +52,7 @@ Community packages are not maintained by the WordCraft team.
 
 ### FreeBSD
 
-Download `wordcraft-<ver>-freebsd-x86_64.tar.gz` and unpack it.
+Download `wordcraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64`) and unpack it.
 
 ### In a browser
 
@@ -59,7 +60,7 @@ Download `wordcraft-<ver>-freebsd-x86_64.tar.gz` and unpack it.
 
 ## Update
 
-WordCraft checks for updates when it starts, and tells you when one is out. To check yourself, choose **Help › Check for Updates**. Your settings are kept outside the app's folder, so updating keeps them.
+WordCraft checks for updates when it starts, and tells you when one is out. To check yourself, choose **Help › Check for Updates…**. Your settings are kept outside the app's folder, so updating keeps them.
 
 - **ArtCraft Launcher**: tells you about new versions and updates WordCraft for you.
 - **Installer, DMG, `.deb`, `.rpm`**: install the new version over the old one, or update through the [Linux repositories](https://getartcraft.com/linux).

@@ -7,10 +7,10 @@ sidebar:
 
 ## See every page at once
 
-Choose **Organize pages** in the tools panel. Every page of the document appears as a thumbnail, with the page tools in a toolbar above. **Close** at the top right goes back to the document.
+Choose **Organize pages** in the tools panel. Every page of the document appears as a thumbnail, with the page tools in the panel on the left. **Close** at the top right goes back to the document.
 
 - Click a page to select it. **Ctrl**-click (**⌘**-click on a Mac) adds pages one at a time, and **Shift**-click selects a run of pages.
-- Use the toolbar to rotate the selected pages either way, delete them, insert pages, extract them to a new document, or split the document.
+- Use the panel's **Page options** to rotate the selected pages either way, delete them, insert pages, extract them to a new document, or split the document.
 
 ![The Organize pages view: the pages of a 13-page document as thumbnails, three of them selected and outlined in blue, with "3 pages selected" and the page tools in the toolbar above](/assets/uploads/pdfcraft/organize.webp)
 
@@ -32,7 +32,7 @@ Every change can be undone with **Ctrl+Z** (**⌘Z**), even after you save. Noth
 
 **Edit › Pages › Split document…** divides the document into several files:
 
-- **By number of pages**: set **Pages per file**. With 1, every page becomes its own file.
+- **Number of pages**: set **Pages per file**. With 1, every page becomes its own file.
 - **Before each selected page**: select the first page of each part in **Organize pages** first.
 
 The dialog tells you how many files it will make. Press **Split** to make them.

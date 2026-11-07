@@ -71,7 +71,7 @@ Then use `gridcraft-cli mcp --connect 7979` as the assistant's command. It finds
 `gridcraft-cli` also works on its own, without an assistant:
 
 ```bash
-gridcraft-cli convert book.xlsx data.csv --sheet Sales   # convert to xlsx, csv, tsv, json or html
+gridcraft-cli convert book.xlsx data.csv --sheet Sales   # convert to xlsx, csv, tsv, json, html or pdf
 gridcraft-cli cat book.xlsx --range A1:F20               # print cells as a table
 gridcraft-cli eval '=PMT(5%/12,360,-300000)'             # work out a formula
 ```

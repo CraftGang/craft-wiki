@@ -11,7 +11,7 @@ If you encounter bugs or want to report issues with SolidCraft, please file a ti
 
 ### Sketch is over-constrained
 
-- **Symptom**: SolidCraft displays an error saying "Conflicting constraints detected" or highlights conflicting geometry in red.
+- **Symptom**: SolidCraft draws the failing constraints, and the geometry they hold, in the conflict color.
 - **Fix**: Check recent dimensions or geometric constraints (like perpendicularity or symmetry). Remove redundant constraints until degrees of freedom match the geometry. Fully defined sketches will turn dark/black without errors.
 
 ### Broken timeline features (Yellow or Red in timeline)
@@ -26,7 +26,6 @@ If you encounter bugs or want to report issues with SolidCraft, please file a ti
 - **Fix**:
   - Ensure your graphics drivers support Vulkan or OpenGL 4.1+.
   - On Linux with Flatpak, ensure your Flatpak runtime matches your host GPU drivers (`flatpak update`).
-  - You can launch SolidCraft with software fallback rendering: `solidcraft --fallback-renderer`.
 
 ### Getting Help
 

@@ -11,7 +11,7 @@ On a Mac, use **⌘** in place of **Ctrl**, and **Option** in place of **Alt**.
 
 EffectCraft's panels follow After Effects: **Project**, **Composition**, **Timeline**, **Effect Controls**, **Effects & Presets**, **Properties**, **Preview**, **Character**, **Paragraph**, **Align**, **Info**, **Audio** and the **Render Queue**, among others. Open any of them from the **Window** menu.
 
-The workspace buttons at the top right (**Default**, **Animation**, **Standard**, **Small Screen** and more) rearrange the panels for different jobs.
+The workspace buttons at the top right (**Default**, **Review**, **Standard**, **Small Screen** and more) rearrange the panels for different jobs.
 
 ## Import footage
 

@@ -49,11 +49,11 @@ The command-line tool, `cadcraft-cli`, is a separate download: `cadcraft-cli-<ve
 | Fedora, RHEL, openSUSE | `cadcraft-<ver>-linux-x86_64.rpm` | |
 | Tarball | `cadcraft-<ver>-linux-x86_64.tar.gz` | Unpack anywhere |
 
-Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There is a RISC-V tarball too, for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
+Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are RISC-V `.deb`, `.rpm` and tarball builds too, for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
 
 ### FreeBSD
 
-Download `cadcraft-<ver>-freebsd-x86_64.tar.gz` and unpack it.
+Download `cadcraft-<ver>-freebsd-x86_64.tar.gz`, or `cadcraft-<ver>-freebsd-aarch64.tar.gz` for ARM64, and unpack it. The ARM64 build can't open or save DWG files yet (use DXF).
 
 ### In a browser
 

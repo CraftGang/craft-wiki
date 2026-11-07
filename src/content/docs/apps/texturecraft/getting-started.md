@@ -40,7 +40,7 @@ Choose **File › New project...** (**Ctrl+N**, or **⌘N** on a Mac). In the **
 4. Leave **UV tiles (UDIM)** on **Automatic (from the mesh UVs)** unless you know your model needs it.
 5. Give the project a **Name** and choose **Create**.
 
-Each material in your model becomes a **texture set**, listed in the **Texture Set List**.
+Each material in your model becomes a **texture set**, listed in the **Texture Sets** panel.
 
 ## 5. Bake mesh maps
 

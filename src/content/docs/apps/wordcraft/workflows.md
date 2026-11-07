@@ -5,7 +5,7 @@ sidebar:
   order: 3
 ---
 
-WordCraft's ribbon groups its tools into tabs: **Home**, **Insert**, **Design**, **Layout**, **References**, **Mailings**, **Review** and **View**. If you can't find a command, type its name into **Search commands and help**.
+WordCraft's ribbon groups its tools into tabs: **Home**, **Insert**, **Draw**, **Design**, **Layout**, **References**, **Mailings**, **Review**, **View**, **Developer**, **Zotero** and **Help**. If you can't find a command, type its name into **Search commands and help**.
 
 ## Format with styles
 

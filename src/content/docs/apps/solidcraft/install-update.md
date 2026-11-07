@@ -21,38 +21,40 @@ SolidCraft is available for Linux, macOS, and Windows, as well as in the browser
 
 ### Flatpak (Recommended)
 
-SolidCraft is packaged as a Flatpak on Flathub:
+SolidCraft has its own Flatpak repository. Add it, and Flathub for the runtime:
 
 ```bash
-flatpak install flathub io.tangencylabs.solidcraft
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists solidcraft https://docs.solidcraft.io/flatpak/solidcraft.flatpakrepo
+flatpak install --user solidcraft io.tangencylabs.solidcraft
 flatpak run io.tangencylabs.solidcraft
 ```
 
 To update via Flatpak:
 
 ```bash
-flatpak update io.tangencylabs.solidcraft
+flatpak update --user
 ```
 
 ### AppImage
 
 Standalone AppImages for x86_64 and AArch64 Linux are provided on the [GitHub Releases](https://github.com/bherbruck/solidcraft/releases) page:
 
-1. Download `SolidCraft-x86_64.AppImage`.
-2. Make it executable: `chmod +x SolidCraft-x86_64.AppImage`.
+1. Download `solidcraft-<ver>-linux-x86_64.AppImage` (`<ver>` is the version number).
+2. Make it executable: `chmod +x solidcraft-<ver>-linux-x86_64.AppImage`.
 3. Run it directly or integrate it with your desktop environment.
 
 ### Snap
 
 ```bash
-sudo snap install solidcraft --classic
+sudo snap install solidcraft
 ```
 
 ## macOS
 
 Download the disk image (`.dmg`) from the [latest release](https://github.com/bherbruck/solidcraft/releases/latest):
 
-1. Open `SolidCraft-macos-universal.dmg`.
+1. Open `solidcraft-<ver>-macos-universal.dmg`.
 2. Drag **SolidCraft.app** to your `Applications` folder.
 3. The bundled `solidcraft-cli` binary can be linked into your `$PATH` from the application bundle or downloaded separately.
 

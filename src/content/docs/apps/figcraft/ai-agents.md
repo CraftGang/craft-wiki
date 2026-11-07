@@ -87,7 +87,7 @@ These flags don't go with `--attach`. To limit an assistant working in the app, 
 
 ```bash
 figcraft-cli render landing.figcraft -o landing.png --scale 2   # render a page as an image
-figcraft-cli export landing.figcraft -o out/ --format svg       # export the layers' export settings
+figcraft-cli export landing.figcraft -o out/ --format svg       # export each top-level frame
 figcraft-cli convert design.fig design.figcraft                 # convert by file extension
 figcraft-cli commands --filter autoLayout                       # list commands and their parameters
 ```

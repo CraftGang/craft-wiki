@@ -55,7 +55,7 @@ This works on adjustment layers too, so you can limit an adjustment to one area.
 
 ![Vermeer's Girl with a Pearl Earring with an elliptical selection around her face. A Hue/Saturation 1 layer with Saturation at -100 has a mask that leaves the face in colour and turns the rest of the painting grey](/assets/uploads/photocraft/masks.webp)
 
-**Layer › Layer Mask** also has **Reveal All** and **Hide All** (to paint the mask yourself), **Delete**, **Apply**, and **Enable Layer Mask** to switch the mask on and off.
+**Layer › Layer Mask** also has **Reveal All** and **Hide All** (to paint the mask yourself), **Delete**, **Apply**, and **Disable Layer Mask** (**Enable Layer Mask** while it is off) to switch the mask on and off.
 
 ## Add and edit text
 

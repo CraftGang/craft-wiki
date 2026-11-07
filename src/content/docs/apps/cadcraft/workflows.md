@@ -90,7 +90,7 @@ Model space is where you draw, at full size. A layout is a sheet of paper with o
 5. **File › Print...** (**Ctrl+P**) opens the Plot dialog. **File › Export to PDF...** saves a PDF straight away.
 
 :::note
-CADCraft plots to PDF files. It can't send a drawing to a printer yet: print the PDF instead.
+CADCraft plots to PDF, PNG and SVG files. It can't send a drawing to a printer yet: print the PDF instead.
 :::
 
 ## Measure
@@ -106,7 +106,7 @@ CADCraft plots to PDF files. It can't send a drawing to a printer yet: print the
 
 ## Keyboard shortcuts
 
-On a Mac, use **⌘** in place of **Ctrl**. To change shortcuts, choose **Tools › Customize › Keyboard Shortcuts...**.
+On a Mac, use **⌘** in place of **Ctrl**.
 
 | Shortcut | What it does |
 | --- | --- |
