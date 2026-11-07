@@ -2,8 +2,6 @@
 
 Craft Wiki is the documentation site for ArtCraft Studio and the Craft Apps, published at [craft.wiki](https://craft.wiki). The site is generated as static HTML and edited in GitHub or through a self-hosted Sveltia CMS interface.
 
-Many app guides are currently scaffolds. Their content should be reviewed and expanded before being treated as complete product documentation.
-
 ## How it fits together
 
 1. Contributors edit Markdown files in this repository, either directly or through the visual editor.
@@ -184,7 +182,3 @@ If Cloudflare's own Git integration also triggers production builds on every pus
 ## Safe Browsing status
 
 Chrome's warning comes from Google's Safe Browsing verdict for `craft.wiki`, and a partial listing (status 3) only covers some pages, so the site can look fine while the sign-in URLs warn. `npm run check:safebrowsing` prints the verdict and exits non-zero when the site is listed; `.github/workflows/safebrowsing.yml` runs it daily and on demand from **Actions → Check Safe Browsing status**. When it fails, open **Security issues** in Search Console for the sample URLs and request a review there: the listing clears only after Google reviews it.
-
-## TileDocs
-
-The current site is built with Starlight and Sveltia CMS. It is not generated from a TileDocs project. The visual editor saves the Markdown files in this repository; there is no TileDocs export step in the current build.
