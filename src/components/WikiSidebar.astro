@@ -1,5 +1,5 @@
 ---
-import { apps, guides } from '../data/apps.mjs';
+import { apps, guidesFor } from '../data/apps.mjs';
 const pathname = Astro.url.pathname;
 ---
 <div class="wiki-sidebar-inner">
@@ -12,7 +12,7 @@ const pathname = Astro.url.pathname;
       <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
         <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
         <div class="wiki-guide-links">
-          {guides.map(([guide, label]) => <a href={`/apps/${slug}/${guide}/`} aria-current={pathname === `/apps/${slug}/${guide}/` ? 'page' : undefined}>{label}</a>)}
+          {guidesFor(slug).map(([guide, label]) => <a href={`/apps/${slug}/${guide}/`} aria-current={pathname === `/apps/${slug}/${guide}/` ? 'page' : undefined}>{label}</a>)}
         </div>
       </details>
     ))}
