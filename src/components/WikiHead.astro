@@ -1,0 +1,17 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro';
+import { componentEmbed, previewForEntry, previewImageUrl, serializeComponentEmbed } from '../lib/discordPreview.mjs';
+
+const preview = previewForEntry(Astro.locals.starlightRoute.entry);
+const imageUrl = previewImageUrl(preview);
+const embed = serializeComponentEmbed(componentEmbed(preview, Astro.url.pathname));
+---
+
+<Default />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:alt" content={`${preview.appName}: ${preview.pageTitle}`} />
+<meta name="theme-color" content={preview.color} />
+<script id="discord:component-embed" type="application/json" set:html={embed} />
