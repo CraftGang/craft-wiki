@@ -4,249 +4,64 @@ description: Guides for ArtCraft and the Craft Apps.
 tableOfContents: false
 ---
 
+import WikiAppCard from '../../components/WikiAppCard.astro';
+import WikiAppShowcase from '../../components/WikiAppShowcase.astro';
+
 <div className="wiki-home">
-  <p className="wiki-eyebrow">ARTCRAFT / KNOWLEDGE BASE</p>
-  <h1 id="_top">Make something<br /><em>worth sharing.</em></h1>
-  <p className="wiki-intro">Find your way around ArtCraft and the Craft Apps. Choose an app to explore its guides, workflows, and support resources.</p>
+  <section className="wiki-hero" aria-labelledby="_top">
+    <div className="wiki-hero-body">
+      <div className="wiki-hero-copy">
+        <h1 id="_top">Make something<br /><em>worth sharing.</em></h1>
+        <p className="wiki-intro">Find your way around ArtCraft and the Craft Apps. Choose an app to explore its guides, workflows, and support resources.</p>
+      </div>
+      <WikiAppShowcase />
+    </div>
+  </section>
   <div className="wiki-section-heading" id="apps"><div><p className="wiki-eyebrow">THE CRAFT APPS</p><h2>Find your app</h2></div><span>17 APPS</span></div>
 
   <div className="app-categories">
     <section className="app-category">
-      <div className="app-category-heading">
-        <h3>AI and generative media</h3>
-        <span className="app-category-count">1 APP</span>
-      </div>
+      <div className="app-category-heading"><h3>AI and generative media</h3><span className="app-category-count">1 APP</span></div>
+      <div className="app-grid"><WikiAppCard slug="artcraft-studio" /></div>
+    </section>
+    <section className="app-category">
+      <div className="app-category-heading"><h3>Graphics and design</h3><span className="app-category-count">7 APPS</span></div>
       <div className="app-grid">
-        <a className="app-tile" href="/apps/artcraft-studio/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/artcraft-studio.svg" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>ArtCraft Studio <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Generative images &amp; video</span>
-          </div>
-        </a>
+        <WikiAppCard slug="photocraft" />
+        <WikiAppCard slug="vectorcraft" />
+        <WikiAppCard slug="lightcraft" />
+        <WikiAppCard slug="designcraft" />
+        <WikiAppCard slug="figcraft" />
+        <WikiAppCard slug="texturecraft" />
+        <WikiAppCard slug="materialcraft" />
       </div>
     </section>
-
     <section className="app-category">
-      <div className="app-category-heading">
-        <h3>Graphics and design</h3>
-        <span className="app-category-count">7 APPS</span>
-      </div>
-      <div className="app-grid">
-        <a className="app-tile" href="/apps/photocraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/photocraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>PhotoCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Image editor</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/vectorcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/vectorcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>VectorCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Vector illustration</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/lightcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/lightcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>LightCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Photo library &amp; raw developer</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/designcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/designcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>DesignCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Page layout &amp; publishing</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/figcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/figcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>FigCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Interface design</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/texturecraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/texturecraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>TextureCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">3D texture painting</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/materialcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/materialcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>MaterialCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Procedural materials</span>
-          </div>
-        </a>
-      </div>
+      <div className="app-category-heading"><h3>Video and effects</h3><span className="app-category-count">2 APPS</span></div>
+      <div className="app-grid"><WikiAppCard slug="filmcraft" /><WikiAppCard slug="effectcraft" /></div>
     </section>
-
     <section className="app-category">
-      <div className="app-category-heading">
-        <h3>Video and effects</h3>
-        <span className="app-category-count">2 APPS</span>
-      </div>
-      <div className="app-grid">
-        <a className="app-tile" href="/apps/filmcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/filmcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>FilmCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Video editor</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/effectcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/effectcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>EffectCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Motion graphics &amp; VFX</span>
-          </div>
-        </a>
-      </div>
+      <div className="app-category-heading"><h3>Audio</h3><span className="app-category-count">1 APP</span></div>
+      <div className="app-grid"><WikiAppCard slug="soundcraft" /></div>
     </section>
-
     <section className="app-category">
-      <div className="app-category-heading">
-        <h3>Audio</h3>
-        <span className="app-category-count">1 APP</span>
-      </div>
-      <div className="app-grid">
-        <a className="app-tile" href="/apps/soundcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/soundcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>SoundCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Digital audio workstation</span>
-          </div>
-        </a>
-      </div>
+      <div className="app-category-heading"><h3>CAD and drafting</h3><span className="app-category-count">1 APP</span></div>
+      <div className="app-grid"><WikiAppCard slug="cadcraft" /></div>
     </section>
-
     <section className="app-category">
-      <div className="app-category-heading">
-        <h3>CAD and drafting</h3>
-        <span className="app-category-count">1 APP</span>
-      </div>
-      <div className="app-grid">
-        <a className="app-tile" href="/apps/cadcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/cadcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>CADCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Computer-aided design &amp; drafting</span>
-          </div>
-        </a>
-      </div>
+      <div className="app-category-heading"><h3>Office</h3><span className="app-category-count">4 APPS</span></div>
+      <div className="app-grid"><WikiAppCard slug="wordcraft" /><WikiAppCard slug="gridcraft" /><WikiAppCard slug="deckcraft" /><WikiAppCard slug="pdfcraft" /></div>
     </section>
-
     <section className="app-category">
-      <div className="app-category-heading">
-        <h3>Office</h3>
-        <span className="app-category-count">4 APPS</span>
-      </div>
-      <div className="app-grid">
-        <a className="app-tile" href="/apps/wordcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/wordcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>WordCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Word processing</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/gridcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/gridcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>GridCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Spreadsheets &amp; data analysis</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/deckcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/deckcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>DeckCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Presentations &amp; slide shows</span>
-          </div>
-        </a>
-        <a className="app-tile" href="/apps/pdfcraft/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/pdfcraft.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>PdfCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">PDF workbench</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section className="app-category">
-      <div className="app-category-heading">
-        <h3>Developer tools</h3>
-        <span className="app-category-count">1 APP</span>
-      </div>
-      <div className="app-grid">
-        <a className="app-tile" href="/apps/craft-anything/overview/">
-          <div className="app-tile-header">
-            <img src="/assets/apps/craft-anything.webp" alt="" />
-          </div>
-          <div className="app-tile-body">
-            <strong>Craft Anything <span className="app-arrow" aria-hidden="true">↗</span></strong>
-            <span className="app-caption">Software exploration &amp; creation</span>
-          </div>
-        </a>
-      </div>
+      <div className="app-category-heading"><h3>Developer tools</h3><span className="app-category-count">1 APP</span></div>
+      <div className="app-grid"><WikiAppCard slug="craft-anything" /></div>
     </section>
   </div>
 
   <div className="wiki-section-heading" id="third-party-apps">
-    <div>
-      <p className="wiki-eyebrow">COMMUNITY &amp; ECOSYSTEM</p>
-      <h2>Third-Party Apps</h2>
-    </div>
+    <div><p className="wiki-eyebrow">COMMUNITY &amp; ECOSYSTEM</p><h2>Third-Party Apps</h2></div>
     <span>1 APP</span>
   </div>
   <p className="wiki-thirdparty-intro">Third-party and community applications built for the Craft ecosystem. These apps are independently maintained by their respective creators.</p>
-
-  <div className="app-grid">
-    <a className="app-tile" href="/apps/solidcraft/overview/">
-      <div className="app-tile-header">
-        <img src="/assets/apps/solidcraft.png" alt="" />
-        <span className="app-badge-thirdparty">Third party</span>
-      </div>
-      <div className="app-tile-body">
-        <strong>SolidCraft <span className="app-arrow" aria-hidden="true">↗</span></strong>
-        <span className="app-caption">Independent parametric 3D CAD</span>
-      </div>
-    </a>
-  </div>
+  <div className="app-grid"><WikiAppCard slug="solidcraft" /></div>
 </div>

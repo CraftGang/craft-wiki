@@ -47,7 +47,19 @@ The status bar shows the language of the text with **(no dictionary)** when Word
 
 ## A document doesn't look as it does in another app
 
-WordCraft is in alpha. Some layouts may break onto pages differently, and charts and SmartArt aren't kept when you save yet. If you need an exact copy, keep the original file. Please [report the document](https://github.com/storytold/wordcraft/issues) if you can share it: real files are how we find these problems.
+WordCraft is in alpha. Some layouts may break onto pages differently, and some chart types (stock, bubble, surface, pie of pie, 3-D) show a placeholder. Charts from Word are kept when you save, but stay read-only. If you need an exact copy, keep the original file. Please [report the document](https://github.com/storytold/wordcraft/issues) if you can share it: real files are how we find these problems.
+
+## I can't print, or my printer isn't listed
+
+- **No printers found.** Add the printer in your system settings, then press **Refresh printers** on **File › Print**. Meanwhile, **Save these pages as PDF…** gives you a file to print from any PDF viewer.
+- **Stuck on "Submitting print job…".** A sleeping or network printer can hold the job. Press **Cancel printing**, wake the printer and try again. If the job already reached your system's print queue, cancel it there.
+
+Known problems, not fixed yet:
+
+- On Windows, the printer list can stay empty while a network printer is in power save ([#5710](https://github.com/storytold/wordcraft/issues/5710)).
+- Some Windows network printers fail with "Failed to parse print capabilities" ([#5413](https://github.com/storytold/wordcraft/issues/5413)).
+- On Windows, printing can fail with "No such interface supported (0x80040003)" ([#5174](https://github.com/storytold/wordcraft/issues/5174)).
+- On macOS, manual two-sided printing doesn't pause for you to flip the pages ([#5769](https://github.com/storytold/wordcraft/issues/5769)).
 
 ## WordCraft closed and I lost my work
 

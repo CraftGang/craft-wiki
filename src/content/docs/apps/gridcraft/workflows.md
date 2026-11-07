@@ -88,9 +88,24 @@ On the **Page Layout** tab, set **Margins**, orientation, paper **Size**, the **
 
 ![The Household Budget in Page Break Preview: the print area is outlined in blue, a dashed line splits it into Page 1 and Page 2, and the area outside it is greyed out](/assets/uploads/gridcraft/page-break.webp)
 
-To print, choose **File › Print** and pick a printer. **Page Setup…** there has every page option, and **Fit Sheet on One Page** shrinks the sheet to fit. After that, **Ctrl+P** prints straight to the printer you chose.
+### Print
 
-**File › Export** makes a PDF of the sheet, or saves the active sheet as a CSV file or the workbook as a web page. These are copies: your workbook keeps its own .xlsx file.
+1. Choose **File › Print** (**Ctrl+P**).
+2. Pick your printer under **Printer**. If you just plugged it in, choose **Refresh printers**.
+3. Set **Copies**, **Two-sided printing** and **Grayscale** if you need them.
+4. Choose **Print Active Sheets** or **Print Entire Workbook**.
+5. To squeeze each sheet onto one page, select **Fit Sheet on One Page**.
+6. Check the preview, then choose **Print**.
+
+**Print** stays dimmed until a printer is selected. The preview is simplified, so small details such as borders can look a little different on paper.
+
+**Page Setup…** on the print screen sets the margins and the **Page order**. Orientation, paper **Size**, **Print Area** and printed **Gridlines** and **Headings** are on the **Page Layout** tab, and header and footer text is in **Insert › Header & Footer**.
+
+You can't print a page range or only the selection yet. See [Printing doesn't work as I expect](/apps/gridcraft/troubleshooting/#printing-doesnt-work-as-i-expect).
+
+### Export
+
+**File › Export › Create PDF** saves the active sheet as a PDF with its page layout. **File › Export** also saves the active sheet as CSV, or the workbook as a web page. These are copies: your workbook stays an .xlsx file.
 
 ## Record and run macros
 

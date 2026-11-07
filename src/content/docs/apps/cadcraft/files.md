@@ -24,7 +24,7 @@ To start a new drawing from a template, choose **File › New from Template...**
 
 **File › Save** (**Ctrl+S**) saves in the drawing's own format: a drawing you opened as DWG is saved as DWG. A new drawing is saved as DXF unless you change it.
 
-**File › Save As...** (**Ctrl+Shift+S**) saves in another format. CADCraft saves DXF and DWG in versions 2000, 2004, 2007, 2010, 2013 and 2018. To set the format and version for new drawings, use **Tools › Options › Open and Save**, or **File › Default Save Format**.
+**File › Save As** (**Ctrl+Shift+S**) saves in another format. CADCraft saves DXF and DWG in versions 2000, 2004, 2007, 2010, 2013 and 2018. To set the format and version for new drawings, use **Tools › Options › Open and Save**, or **File › Default Save Format**.
 
 When you save over a file, CADCraft keeps the old one as a `.bak` backup copy. To turn this off, clear **Create backup copy with each save** in **Tools › Options › Open and Save**.
 
@@ -37,7 +37,10 @@ CADCraft doesn't yet understand everything other CAD programs put in a drawing. 
 | To get | Choose |
 | --- | --- |
 | A PDF | **File › Export to PDF...**, or **File › Print...** to set up the plot first |
-| An SVG or PNG image | **File › Save As...**, then pick **SVG** or **PNG** |
+| An SVG or PNG image | **File › Export...**, then save the file as `.svg` or `.png` |
+| Every sheet as its own PDF | **File › Batch Publish...** |
+
+See [Print](/apps/cadcraft/workflows/#print) for paper sizes, scale and plot styles.
 
 PDFs keep the drawing as vector lines, with layers you can turn on and off in a PDF reader, and can hold several sheets in one file.
 
@@ -45,7 +48,7 @@ PDFs keep the drawing as vector lines, with layers you can turn on and off in a 
 
 CADCraft draws text with the TrueType and OpenType fonts (`.ttf`, `.otf`, `.ttc`) installed on your computer. To use a new font, install it in your system's font folder, then restart CADCraft.
 
-CADCraft reads SHX fonts, including big fonts, when their `.shx` files are in the drawing's folder; none come with CADCraft. Text in an SHX style whose font isn't found is drawn with CADCraft's own drafting font instead, so it may be a slightly different size from the original.
+CADCraft can't read SHX fonts yet. Text in an SHX style is drawn with CADCraft's own drafting font instead, so it may be a slightly different size from the original.
 
 ## Limits
 

@@ -10,7 +10,7 @@ sidebar:
 WordCraft is a word processor for writing and designing documents. If you have used a modern word processor, it will feel familiar: the ribbon, styles, tables, track changes, references and mail merge are all there. It opens and saves .docx files, and runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]
-WordCraft is in alpha. Most features are in place, but some documents may not look exactly as they do in other apps, and charts and SmartArt don't yet survive being saved. Keep a copy of important files, and tell us what breaks on [GitHub](https://github.com/storytold/wordcraft/issues) or [Discord](https://discord.gg/artcraft).
+WordCraft is in alpha. Most features are in place, but some documents may not look exactly as they do in other apps, and charts from Word stay read-only (they are kept when you save, but you can't edit them yet). Keep a copy of important files, and tell us what breaks on [GitHub](https://github.com/storytold/wordcraft/issues) or [Discord](https://discord.gg/artcraft).
 :::
 
 ![WordCraft with the Home tab of the ribbon open over a two-page document. The Navigation pane on the left lists the document's headings, and the Styles gallery shows live previews of Normal, Heading 1, Title and Subtitle](/assets/uploads/wordcraft/hero.webp)

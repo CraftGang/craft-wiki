@@ -82,6 +82,7 @@ WordCraft uses the shortcuts you'd expect from a word processor. On a Mac, use *
 | --- | --- |
 | **Ctrl+B**, **Ctrl+I**, **Ctrl+U** | Bold, italic, underline |
 | **Ctrl+S** | Save |
+| **Ctrl+P** | Open **File › Print** |
 | **Ctrl+F** | Search in the Navigation pane |
 | **Ctrl+Z** | Undo |
 | **Ctrl+Y** or **Ctrl+Shift+Z** | Redo |
@@ -91,9 +92,34 @@ WordCraft uses the shortcuts you'd expect from a word processor. On a Mac, use *
 | **Enter** in a list | Continue the list |
 | **Tab** in a list | Indent the item one level |
 
+## Print
+
+1. Choose **File › Print** (**Ctrl+P**, **⌘P** on a Mac).
+2. Pick your printer under **Printer**. If it isn't listed, press **Refresh printers**.
+3. Set the options below. The preview on the right shows each sheet.
+4. Press **Print**.
+
+To get a file instead, press **Save these pages as PDF…**. In the web version, **Print** opens your browser's print dialog.
+
+| Option | Choices |
+| --- | --- |
+| **Copies** | Up to 999. **Collate copies** keeps each copy in order. |
+| **Pages** | **All pages**, **Current page**, **Selected pages** or **Custom range**, such as `1-3, 5`. You can also print only odd or even pages. |
+| **Two-sided printing** | One-sided, or two-sided on the long or short edge. |
+| **Grayscale** | Prints without color. |
+| **Orientation** | Automatic, **Portrait** or **Landscape**. |
+| **Pages per sheet** | 1, 2, 4, 6, 9 or 16, or a booklet bound on the left or right. For a booklet, print two-sided on the short edge. |
+| **Scale to paper size** | Fits every page onto the paper you pick, without changing the document. |
+
+A line under the options shows how many pages will print, and turns red if a range isn't valid. **Print Markup** prints comments and tracked changes beside the pages.
+
+Two more settings are in **File › Options › Display**: **Print the page color** and **Update fields before printing**. Both are off by default.
+
+If printing fails, see [I can't print, or my printer isn't listed](/apps/wordcraft/troubleshooting/#i-cant-print-or-my-printer-isnt-listed).
+
 ## Open and save other formats
 
-**File › Open** opens .docx, .doc (Word 97–2003), .odt, .rtf, .html, .md, .tex and .txt. **File › Save As** saves in any of these except .doc. **File › Export** makes a PDF.
+**File › Open** opens .docx, .doc (Word 97–2003), .odt, .rtf, .html, .md, .tex and .txt. **File › Save As** saves in any of these except .doc. **File › Export** saves a copy as a PDF, .docx, .odt, .rtf, .html, .md, .tex, .txt or a page image (.png), among others.
 
 Converting between formats can lose some formatting. To share a document that must look the same everywhere, export a PDF.
 

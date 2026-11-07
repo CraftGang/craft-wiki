@@ -7,7 +7,7 @@ sidebar:
 
 ## The window doesn't open
 
-If FigCraft's graphics fail as the window opens, it starts again by itself with another graphics system: on Windows, Direct3D 12, then Vulkan, then OpenGL. If none of them works, it shows a message that names what it tried. Updating your graphics driver often helps.
+If FigCraft's graphics fail as the window opens, it starts again by itself with another graphics system: on Windows, it first tries Direct3D 12 and OpenGL together (whichever has a real graphics card wins), then Vulkan, then OpenGL. If none of them works, it shows a message that names what it tried. Updating your graphics driver often helps.
 
 To choose the graphics system yourself, set `WGPU_BACKEND` before starting FigCraft. On Windows, from a Command Prompt in the folder that contains `figcraft.exe`:
 

@@ -1,0 +1,26 @@
+---
+import { appVisuals, homeAppOrder, wordmark } from '../data/appVisuals.mjs';
+const { slug } = Astro.props;
+const app = appVisuals[slug];
+if (!app) throw new Error(`Missing app visual for ${slug}`);
+const { before, accent, after } = wordmark(app.name);
+const isStudio = slug === 'artcraft-studio';
+const position = homeAppOrder.indexOf(slug);
+if (position < 0) throw new Error(`Missing home order for ${slug}`);
+const number = String(position).padStart(2, '0');
+const icon = `/assets/apps/${slug}.${app.icon ?? 'webp'}`;
+const style = `--app-color:${app.color};--app-ink-light:${app.inkLight ?? app.color};--app-ink-dark:${app.inkDark ?? app.color}`;
+---
+<a class:list={['app-tile', { 'app-tile-studio': isStudio }]} href={`/apps/${slug}/overview/`} style={style} aria-label={`${app.name}: ${app.caption}`}>
+  <div class="app-tile-meta"><span class="app-tile-number">{number}</span><span>{app.type}</span></div>
+  <div class:list={['app-tile-media', { 'app-tile-media-empty': !app.hero }]}>
+    {app.hero ? <img class="app-tile-hero" src={`/assets/uploads/${slug}/${app.hero}`} alt="" loading="lazy" /> : <img class="app-tile-fallback" src={icon} alt="" loading="lazy" />}
+  </div>
+  <div class="app-tile-content">
+    {!isStudio && <img class="app-tile-icon" src={icon} alt="" loading="lazy" />}
+    {isStudio
+      ? <><strong class="app-tile-name app-tile-studio-name"><img src={icon} alt="" />RTCRAFT</strong><span class="app-tile-studio-label">STUDIO</span></>
+      : <strong class="app-tile-name">{before}<span>{accent}</span>{after}</strong>}
+    <span class="app-caption">{app.caption}</span>
+  </div>
+</a>

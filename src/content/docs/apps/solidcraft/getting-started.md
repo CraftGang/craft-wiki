@@ -20,10 +20,10 @@ The quickest way to install is [ArtCraft Launcher](https://github.com/storytold/
 
 ## Your first part
 
-1. Launch SolidCraft and choose **New design** from the start screen.
+1. Launch SolidCraft and choose **New Design** from the start page.
 2. Click **Create Sketch** in the toolbar and select the XY ground plane.
 3. Use the **Rectangle** tool to draw a rectangle starting from the origin point.
-4. Press `D` to place dimension constraints: set the width to `60mm` and height to `40mm`. Press `Esc` when the sketch is fully constrained (lines will turn dark/black).
+4. Press `D` to place dimension constraints: set the width to `60mm` and height to `40mm`. The top-left corner of the view shows how constrained the sketch is.
 5. Click **Finish Sketch** in the top right.
 6. Select **Extrude** from the solid toolbar, select the rectangular profile, and enter `15mm` for distance. Click **OK**.
 7. In the timeline at the bottom, right-click your extrude feature and choose **Edit Feature** at any time to alter dimensions.

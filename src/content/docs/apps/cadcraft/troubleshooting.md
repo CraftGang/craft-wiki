@@ -49,6 +49,22 @@ On a Wayland desktop, CADCraft runs through XWayland by default, because that's 
 
 Over the drawing, CADCraft hides the system cursor and draws its own crosshair, so magnifiers and screen recorders can lose track of it. Choose **View › Accessibility › Show System Cursor** to keep a small system cursor visible in the middle of the crosshair.
 
+## My printer isn't in the list
+
+CADCraft can only plot to files for now: PDF, PNG or SVG ([#2849](https://github.com/storytold/cadcraft/issues/2849)). Plot to a PDF, then print the PDF from any PDF viewer. See [Print](/apps/cadcraft/workflows/#print).
+
+## Export to PDF doesn't ask for a paper size
+
+**File › Export to PDF...** uses the current page setup. To choose the paper, scale or plot style, use **File › Print...** instead, or set them for a layout in **File › Page Setup Manager...**.
+
+## I can't use my AutoCAD plot styles (.ctb)
+
+CADCraft can't read AutoCAD's `.ctb`, `.stb` or `.pc3` files yet ([#2752](https://github.com/storytold/cadcraft/issues/2752)). Use a built-in table such as `monochrome.ctb`, or make your own in **File › Plot Styles...**. See [Plot styles](/apps/cadcraft/workflows/#plot-styles).
+
+## The plot is the wrong size or scale
+
+In **File › Print...**, turn off **Fit to paper**, then type the **Scale** you want, such as `1:50`. If a layout from another CAD program ignores its page setup, that's a known problem ([#2493](https://github.com/storytold/cadcraft/issues/2493)).
+
 ## A 3D tool does nothing
 
 CADCraft draws in 2D only for now. Most tools on the **Modeling** tab of **Tool Sets**, and the 3D views and orbit, are not available yet.

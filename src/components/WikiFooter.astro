@@ -3,9 +3,17 @@ import Default from '@astrojs/starlight/components/Footer.astro';
 ---
 <Default />
 <nav class="wiki-footer" aria-label="Site information">
-  <span>© {new Date().getFullYear()} ArtCraft</span>
-  <a href="/about/">About</a>
-  <a href="/contact/">Contact</a>
-  <a href="/terms/">Terms</a>
-  <a href="/privacy/">Privacy</a>
+  <div class="wiki-footer-main">
+    <div class="wiki-footer-brand">
+      <img src="/assets/apps/artcraft-studio.svg" alt="ArtCraft" />
+      <p>Guides for ArtCraft Studio and every Craft App.</p>
+    </div>
+    <div class="wiki-footer-links">
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/terms/">Terms</a>
+      <a href="/privacy/">Privacy</a>
+    </div>
+  </div>
+  <div class="wiki-footer-bottom"><span>© {new Date().getFullYear()} ARTCRAFT</span><span>FREE AND OPEN SOURCE</span></div>
 </nav>

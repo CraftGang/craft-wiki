@@ -31,5 +31,5 @@ SolidCraft is an open-source parametric 3D CAD application written in Rust. Sket
 ## Project links
 
 - [Official SolidCraft Documentation](https://docs.solidcraft.io/)
-- [SolidCraft on GitHub](https://github.com/bherbruck/solidcraft)
-- [Issue Tracker](https://github.com/bherbruck/solidcraft/issues)
+- [SolidCraft on GitHub](https://github.com/tangency-labs/solidcraft)
+- [Issue Tracker](https://github.com/tangency-labs/solidcraft/issues)

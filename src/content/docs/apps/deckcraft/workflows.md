@@ -79,9 +79,30 @@ On the **View** tab: **Normal**, **Outline View**, **Slide Sorter**, **Notes Pag
 - **File › Export › Create PDF Document** makes a PDF of the slides. **Create Handouts** puts several slides on each page.
 - **File › Export › Change File Type** saves as .pptx, .deckcraft, an outline (.txt or .rtf), or the current slide as a PNG or JPEG picture.
 - The **Export** button in the Quick Access Toolbar at the top left also makes PNG pictures of every slide, notes pages as a PDF, or an **Animated GIF** of the whole deck.
-- **File › Print** (**Ctrl+P**) prints slides, notes pages or handouts.
+- **File › Print** (**Ctrl+P**) prints slides, notes pages or handouts. See [Print](#print).
 
 Converting between formats can lose some formatting. To share a presentation that must look the same everywhere, export a PDF.
+
+### Print
+
+DeckCraft prints through a PDF: it makes the PDF and opens it in your PDF viewer, where you pick the printer. So you need a PDF viewer installed. In the web version, the PDF downloads instead.
+
+1. Choose **File › Print** (**Ctrl+P**).
+2. Choose which slides and a layout (see below). The preview on the right updates as you go.
+3. Press **Print**, then print from your PDF viewer.
+
+| Setting | Choices |
+| --- | --- |
+| Slides | **Print All Slides**, **Print Current Slide**, or **Custom Range**. For a range, type slide numbers in **Slides:**, such as `1-3, 5`. |
+| Layout | **Full Page Slides** (one slide per page), **Notes Pages** (each slide with its speaker notes), or **Handouts** with 1, 2, 3, 4, 6 or 9 slides per page. Three per page adds lines for notes. |
+| Paper size and orientation | Letter, A4, Legal or A3, portrait or landscape. For notes pages and handouts only. |
+| **Print Hidden Slides** | Includes slides you hid. |
+| **Frame Slides** | Draws a thin border around each slide. |
+| **Edit Header & Footer** | Opens the header and footer settings. |
+
+If **Print** is dimmed, there's nothing to print: the range isn't valid, or every slide in it is hidden.
+
+To save handouts or a PDF without printing, use **File › Export › Create Handouts** or **Create PDF Document**.
 
 ## Preferences
 

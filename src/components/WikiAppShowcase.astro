@@ -1,0 +1,21 @@
+---
+import { appVisuals } from '../data/appVisuals.mjs';
+
+// The sixteen Craft Apps shown in the ArtCraft lineup. ArtCraft Studio has its
+// own category below, so it is not repeated in this compact icon grid.
+const slugs = [
+  'photocraft', 'vectorcraft', 'filmcraft', 'lightcraft',
+  'pdfcraft', 'effectcraft', 'designcraft', 'figcraft',
+  'texturecraft', 'materialcraft', 'wordcraft', 'soundcraft',
+  'deckcraft', 'cadcraft', 'gridcraft', 'craft-anything',
+];
+---
+<nav class="wiki-app-showcase" aria-label="Craft Apps">
+  {slugs.map((slug) => {
+    const app = appVisuals[slug];
+    return <a href={`/apps/${slug}/overview/`} title={app.name}>
+      <img src={`/assets/apps/${slug}.webp`} alt="" loading="lazy" />
+      <span>{app.name}</span>
+    </a>;
+  })}
+</nav>

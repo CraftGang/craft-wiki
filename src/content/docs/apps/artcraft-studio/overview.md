@@ -21,7 +21,7 @@ ArtCraft Studio needs an internet connection and an ArtCraft account. The AI mod
 - **3D**: turn an image into a 3D object or a 3D world.
 - **Image Editor**: a 2D canvas with shapes, images, brush, mask and eraser tools, to compose a picture before you generate from it.
 - **3D Stage**: place characters, objects, sets and a skybox in 3D, pose them, set the camera, and capture a still or a video.
-- **Edit tools**: inpainting, background removal and a video frame extractor.
+- **Edit tools**: inpainting, background removal and a video frame extractor. Image and video watermark removal are marked **SOON** and can't be used yet.
 - **My Library**: everything you generate or upload, in one place.
 
 ## Models and accounts
@@ -36,8 +36,10 @@ Everything you make is kept in **My Library**. When you download a result, it go
 
 ## What you need
 
-- Windows (64-bit), macOS (Apple silicon or Intel), or Linux (64-bit Intel or AMD, ARM64 or RISC-V).
+- Windows (64-bit), macOS (Apple silicon or Intel), or Linux (x86_64, aarch64 or riscv64).
 - An internet connection and an ArtCraft account.
+
+Linux packages (AppImage, .deb, .rpm, Arch, Flatpak and a tarball) are on the [releases page](https://github.com/storytold/artcraft/releases/latest).
 
 ## Guides
 

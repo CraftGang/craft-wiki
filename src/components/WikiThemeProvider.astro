@@ -1,3 +1,7 @@
 <script is:inline>
-  document.documentElement.dataset.theme = 'dark';
+  let wikiTheme = 'dark';
+  try {
+    if (localStorage.getItem('wiki-theme') === 'light') wikiTheme = 'light';
+  } catch { /* Private browsing can block storage. */ }
+  document.documentElement.dataset.theme = wikiTheme;
 </script>

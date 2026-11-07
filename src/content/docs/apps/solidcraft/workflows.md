@@ -18,7 +18,7 @@ SolidCraft provides tools for mechanical modeling, 3D printing preparation, shee
 
 ## 3D Printing & Fabrication
 
-- **Exporting for slicing**: Select any body or assembly component, right-click, and choose **Save As Mesh**. SolidCraft supports **3MF** (recommended for multi-body metadata and high resolution), binary **STL**, and **OBJ**.
+- **Exporting for slicing**: Select a body and choose **File › Export STL…** or **File › Export 3MF…** (also **Save As Mesh** on the Insert tab's Files panel and in the body's right-click menu). To send bodies straight to a slicer, use **File › Send to Slicer**.
 - **Tolerance Checking**: Use the **Section Analysis** tool to inspect internal clearances and wall thicknesses before printing.
 
 ## Multi-Body and Assemblies
@@ -29,5 +29,5 @@ SolidCraft provides tools for mechanical modeling, 3D printing preparation, shee
 ## Automation and AI Agents (MCP)
 
 Every UI action in SolidCraft corresponds to an internal command. SolidCraft features:
-- **CLI Mode**: Run `solidcraft-cli run design.sc --out output.step` for headless conversions.
+- **CLI Mode**: Run `solidcraft-cli run bracket.json --out bracket.step` to build a JSON design and export it without the app.
 - **Model Context Protocol (MCP) Server**: Exposes CAD creation and parameter modification tools to AI coding agents and LLMs. Run `solidcraft-cli mcp` to connect your AI assistant directly to SolidCraft's CAD engine.
