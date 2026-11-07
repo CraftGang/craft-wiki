@@ -1,8 +1,41 @@
 <header class="wiki-header">
   <a class="wiki-brand" href="/">Craft <span>Wiki</span></a>
   <nav aria-label="Main navigation" class="wiki-header-links">
-    <a href="/#apps">Browse apps</a>
-    <a href="https://getartcraft.com">ArtCraft ↗</a>
-    <a href="/edit/">Edit wiki ↗</a>
+    <a class="wiki-header-link wiki-header-browse" href="/#apps">Browse apps</a>
+    <a class="wiki-header-icon wiki-header-discord" href="https://discord.gg/artcraft" aria-label="ArtCraft on Discord" title="ArtCraft on Discord">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.7 5.1a18.1 18.1 0 0 0-4.5-1.4l-.6 1.2a16.6 16.6 0 0 0-5.2 0l-.6-1.2a18.1 18.1 0 0 0-4.5 1.4C1.4 9.3.6 13.4 1 17.5a18.2 18.2 0 0 0 5.5 2.8l1.2-2a11.6 11.6 0 0 1-1.8-.9l.4-.3a13 13 0 0 0 11.4 0l.4.3a11.6 11.6 0 0 1-1.8.9l1.2 2a18.2 18.2 0 0 0 5.5-2.8c.5-4.8-.8-8.9-3.3-12.4ZM8.6 15.1c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm6.8 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z"/>
+      </svg>
+    </a>
+    <button class="wiki-header-icon wiki-theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+      <svg class="wiki-icon-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+      </svg>
+      <svg class="wiki-icon-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.9 13a9 9 0 0 1-9.9-9.9A9 9 0 1 0 20.9 13Z"/>
+      </svg>
+    </button>
+    <a class="wiki-header-link wiki-header-edit" href="/edit/">Edit wiki</a>
+    <a class="wiki-header-cta" href="https://getartcraft.com">ArtCraft</a>
   </nav>
 </header>
+
+<script is:inline>
+  const themeToggle = document.querySelector('.wiki-theme-toggle');
+  if (themeToggle) {
+    const updateThemeLabel = () => {
+      const nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      themeToggle.setAttribute('aria-label', `Switch to ${nextTheme} theme`);
+      themeToggle.setAttribute('title', `Switch to ${nextTheme} theme`);
+    };
+
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      document.documentElement.dataset.theme = nextTheme;
+      try { localStorage.setItem('wiki-theme', nextTheme); } catch { /* Private browsing can block storage. */ }
+      updateThemeLabel();
+    });
+    updateThemeLabel();
+  }
+</script>
