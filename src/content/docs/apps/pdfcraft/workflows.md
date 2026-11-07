@@ -46,7 +46,7 @@ Choose **Edit a PDF**:
 Applied redactions remove the text, pictures and drawings under the marks for good, along with comments and form fields that overlap them. Redaction can't find text inside pictures: recognise the text with OCR first. Keep a copy of the original.
 :::
 
-:::warning
+:::danger
 
 PdfCraft is still very much in alpha. For now you should use other tools for redaction of sensitive material prior to sharing/distribution of documents. 
 
