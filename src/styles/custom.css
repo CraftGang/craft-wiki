@@ -33,6 +33,8 @@
 .wiki-sidebar-label, .wiki-eyebrow { color:#b9cbff; font:600 11px/1.5 'Geist Mono Variable', monospace; letter-spacing:.14em; }
 .wiki-sidebar-label { padding:0 10px; color:#858895; margin-bottom:12px; }
 .wiki-sidebar-label:not(:first-of-type) { margin-top:24px; }
+.wiki-sidebar-category { padding:0 10px; margin:14px 0 2px; color:#858895; font-size:12px; font-weight:500; }
+.wiki-sidebar-category:first-child { margin-top:0; }
 .wiki-app-group summary { display:flex; align-items:center; gap:10px; padding:8px 10px; cursor:pointer; list-style:none; font-size:14px; border-radius:5px; }
 .wiki-app-group summary::-webkit-details-marker { display:none; }
 .wiki-app-group summary:hover, .wiki-guide-links a:hover { background:#1b1c24; }

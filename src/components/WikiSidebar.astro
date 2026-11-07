@@ -1,19 +1,27 @@
 ---
-import { apps, thirdPartyApps } from '../data/apps.mjs';
+import { apps, appCategories, thirdPartyApps } from '../data/apps.mjs';
 import WikiGuideLinks from './WikiGuideLinks.astro';
 const pathname = Astro.url.pathname;
+const appBySlug = Object.fromEntries(apps.map((app) => [app[0], app]));
 ---
 <div class="wiki-sidebar-inner">
   <label class="wiki-search-label" for="wiki-app-search">Find an app</label>
   <input id="wiki-app-search" type="search" placeholder="Search apps..." autocomplete="off" />
   <a href="/" class:list={['wiki-home-link', { active: pathname === '/' }]}>All documentation</a>
   <p class="wiki-sidebar-label">OFFICIAL APPS</p>
-  <div id="wiki-app-list">
-    {apps.map(([slug, name, ext = 'webp']) => (
-      <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
-        <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
-        <WikiGuideLinks slug={slug} />
-      </details>
+  <div class="wiki-official-apps">
+    {appCategories.map(([category, slugs]) => (
+      <>
+        <p class="wiki-sidebar-category">{category}</p>
+        <div class="wiki-app-list">
+          {slugs.map((slug) => appBySlug[slug]).map(([slug, name, ext = 'webp']) => (
+            <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
+              <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
+              <WikiGuideLinks slug={slug} />
+            </details>
+          ))}
+        </div>
+      </>
     ))}
   </div>
   <p class="wiki-sidebar-label">THIRD-PARTY APPS</p>
@@ -30,7 +38,7 @@ const pathname = Astro.url.pathname;
 <script>
   const search = document.querySelector<HTMLInputElement>('#wiki-app-search');
   const groups = document.querySelectorAll<HTMLElement>('.wiki-app-group');
-  const labels = document.querySelectorAll<HTMLElement>('.wiki-sidebar-label');
+  const labels = document.querySelectorAll<HTMLElement>('.wiki-sidebar-label, .wiki-sidebar-category');
   const noResults = document.querySelector<HTMLElement>('#wiki-no-results');
   search?.addEventListener('input', () => {
     const query = search.value.trim().toLowerCase();
