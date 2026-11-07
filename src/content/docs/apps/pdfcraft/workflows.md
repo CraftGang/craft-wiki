@@ -46,6 +46,12 @@ Choose **Edit a PDF**:
 Applied redactions remove the text, pictures and drawings under the marks for good, along with comments and form fields that overlap them. Redaction can't find text inside pictures: recognise the text with OCR first. Keep a copy of the original.
 :::
 
+:::warning
+
+PdfCraft is still very much in alpha. For now you should use other tools for redaction of sensitive material prior to sharing/distribution of documents. 
+
+:::
+
 ## Convert
 
 - **File › Export** saves the PDF as **Word**, **PowerPoint**, **RTF**, **HTML**, plain text, or each page as a picture. **Export all images…** saves every picture in the document. The layout of Word exports isn't kept well yet.
