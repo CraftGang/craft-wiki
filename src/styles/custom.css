@@ -32,6 +32,7 @@
 .wiki-home-link.active { background:#292e3d; color:#b9cbff; }
 .wiki-sidebar-label, .wiki-eyebrow { color:#b9cbff; font:600 11px/1.5 'Geist Mono Variable', monospace; letter-spacing:.14em; }
 .wiki-sidebar-label { padding:0 10px; color:#858895; margin-bottom:12px; }
+.wiki-sidebar-label:not(:first-of-type) { margin-top:24px; }
 .wiki-app-group summary { display:flex; align-items:center; gap:10px; padding:8px 10px; cursor:pointer; list-style:none; font-size:14px; border-radius:5px; }
 .wiki-app-group summary::-webkit-details-marker { display:none; }
 .wiki-app-group summary:hover, .wiki-guide-links a:hover { background:#1b1c24; }
@@ -64,6 +65,8 @@
 .sl-markdown-content .app-tile img { width:44px; height:44px; object-fit:contain; margin:0; border-radius:6px; transition:transform .18s ease; }
 .sl-markdown-content a.app-tile:hover img { transform:scale(1.04); }
 .app-tile .app-index { font:600 11px/1 'Geist Mono Variable', monospace; color:#858895; letter-spacing:.08em; padding:3px 6px; background:#20222b; border:1px solid #303340; border-radius:4px; }
+.app-tile .app-badge-thirdparty { font:600 10px/1 'Geist Mono Variable', monospace; color:#b9cbff; text-transform:uppercase; letter-spacing:.08em; padding:3px 7px; background:#202636; border:1px solid #39476b; border-radius:4px; }
+.wiki-thirdparty-intro { max-width:670px; color:#a4a6b2; font-size:15px; line-height:1.6; margin:-8px 0 20px; }
 .app-tile-body { display:flex; flex-direction:column; gap:4px; }
 .app-tile strong { font:650 15px/1.25 'Archivo Variable', sans-serif; letter-spacing:-.025em; color:#f4f3f0; display:inline-flex; align-items:center; justify-content:space-between; }
 .app-tile .app-arrow { color:#858895; font-size:13px; line-height:1; transition:transform .18s ease,color .18s ease; margin-left:6px; }

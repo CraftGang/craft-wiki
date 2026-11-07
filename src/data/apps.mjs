@@ -6,6 +6,12 @@ export const apps = [
   ['wordcraft', 'WordCraft'], ['soundcraft', 'SoundCraft'], ['deckcraft', 'DeckCraft'],
   ['cadcraft', 'CADCraft'], ['gridcraft', 'GridCraft'], ['craft-anything', 'Craft Anything'],
 ];
+
+export const thirdPartyApps = [
+  ['solidcraft', 'SolidCraft', 'png'],
+];
+
+export const allApps = [...apps, ...thirdPartyApps];
 export const guides = [
   ['overview', 'Overview'], ['getting-started', 'Getting started'],
   ['install-update', 'Install and update'], ['workflows', 'Workflows'],

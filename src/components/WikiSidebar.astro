@@ -1,14 +1,25 @@
 ---
-import { apps, guidesFor } from '../data/apps.mjs';
+import { apps, thirdPartyApps, guidesFor } from '../data/apps.mjs';
 const pathname = Astro.url.pathname;
 ---
 <div class="wiki-sidebar-inner">
   <label class="wiki-search-label" for="wiki-app-search">Find an app</label>
   <input id="wiki-app-search" type="search" placeholder="Search apps..." autocomplete="off" />
   <a href="/" class:list={['wiki-home-link', { active: pathname === '/' }]}>All documentation</a>
-  <p class="wiki-sidebar-label">APPS</p>
+  <p class="wiki-sidebar-label">OFFICIAL APPS</p>
   <div id="wiki-app-list">
     {apps.map(([slug, name, ext = 'webp']) => (
+      <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
+        <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
+        <div class="wiki-guide-links">
+          {guidesFor(slug).map(([guide, label]) => <a href={`/apps/${slug}/${guide}/`} aria-current={pathname === `/apps/${slug}/${guide}/` ? 'page' : undefined}>{label}</a>)}
+        </div>
+      </details>
+    ))}
+  </div>
+  <p class="wiki-sidebar-label">THIRD-PARTY APPS</p>
+  <div id="wiki-thirdparty-app-list">
+    {thirdPartyApps.map(([slug, name, ext = 'webp']) => (
       <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
         <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
         <div class="wiki-guide-links">
@@ -22,6 +33,7 @@ const pathname = Astro.url.pathname;
 <script>
   const search = document.querySelector<HTMLInputElement>('#wiki-app-search');
   const groups = document.querySelectorAll<HTMLElement>('.wiki-app-group');
+  const labels = document.querySelectorAll<HTMLElement>('.wiki-sidebar-label');
   const noResults = document.querySelector<HTMLElement>('#wiki-no-results');
   search?.addEventListener('input', () => {
     const query = search.value.trim().toLowerCase();
@@ -30,6 +42,13 @@ const pathname = Astro.url.pathname;
       const matches = (group.dataset.name ?? '').includes(query);
       group.hidden = !matches;
       if (matches) visible++;
+    });
+    labels.forEach((label) => {
+      const list = label.nextElementSibling;
+      if (list) {
+        const hasVisible = !!list.querySelector('.wiki-app-group:not([hidden])');
+        label.hidden = !hasVisible;
+      }
     });
     if (noResults) noResults.hidden = visible > 0;
   });

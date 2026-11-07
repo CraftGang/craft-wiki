@@ -199,3 +199,14 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
       - { label: Body, name: body, widget: markdown }
+  - name: solidcraft
+    label: SolidCraft (Third-Party)
+    folder: src/content/docs/apps/solidcraft
+    publish_mode: simple
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
