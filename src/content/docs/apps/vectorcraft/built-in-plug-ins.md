@@ -26,7 +26,7 @@ Choose **Object → Plug-ins**. Each built-in plug-in has its own submenu:
 | **Smart Pen** | The Smart Pen tool and its panel | [Cut, join and refine paths](/apps/vectorcraft/cut-join-and-refine-paths/#draw-with-the-smart-pen) |
 | **Type Tools** | Text Tweaker… and Release Type on a Path… | [Work with styles and long text](/apps/vectorcraft/work-with-styles-and-long-text/#tweak-single-letters-with-text-tweaker) |
 
-![The Object menu open on Plug-ins, which lists the twelve plug-in submenus from 3D Box to Type Tools above No filter plug-ins installed. The Arrange Tools submenu is open beside it, over a night-blue sheet of selected badges](/assets/uploads/vectorcraft/plugins-menu.webp)
+![The Object menu is open on Plug-ins, which lists the twelve plug-in submenus from 3D Box to Type Tools, then No filter plug-ins installed, Install Plug-in… and Reload Plug-ins. The Arrange Tools submenu is open beside it with Swap Objects and Swap Objects and Sizes dimmed, over a night-violet sheet of selected star badges](/assets/uploads/vectorcraft/plugins-menu.webp)
 
 The plug-in tools (3D Box, Contour, Enclosing Lasso, Smart Pen and the Path Precision Tools) are not in the Tools panel at first, and none of them has a keyboard shortcut. Choose a tool from its submenu, or add it to the Tools panel from the All Tools drawer, as [Add the path plug-in tools to the Tools panel](/apps/vectorcraft/cut-join-and-refine-paths/#add-the-path-plug-in-tools-to-the-tools-panel) describes. To give a tool or command a shortcut, use **Edit → Keyboard Shortcuts…**.
 
@@ -121,7 +121,7 @@ When you change the document after a check, the panel shows **Changed since the 
 
 **Object → Plug-ins → Artwork Cleanup → Fix All Issues** fixes every kind of problem without opening the panel. It fixes the selection, or the whole document when nothing is selected. It checks and fixes again, up to three rounds in all, while a round still finds problems, and the whole run is one undo step.
 
-![The Artwork Cleanup panel docked beside the canvas after Check Document. It lists Empty Text 1, Stray Points 3 with that row picked, Unpainted Objects 1, Zero-Opacity Objects 1, Duplicate Objects 1 and Filled Open Paths 1, above the Show, Fix Selected and Fix All buttons. On the canvas, a violet skyline stands against a sky that fades from violet to coral behind a setting sun, and three street lamps glow over a teal bush and a coral bench on the curb](/assets/uploads/vectorcraft/health-check.webp)
+![The Artwork Cleanup panel docked at the top right after Check Document lists Empty Text 1, Stray Points 3 with that row picked, Unpainted Objects 1, Zero-Opacity Objects 1, Duplicate Objects 1 and Filled Open Paths 1, above the Show, Fix Selected and Fix All buttons and the Text section. On the canvas, a lit apartment block and a violet skyline stand against a sky that fades from violet to coral behind a setting sun, and three street lamps glow over a teal bush and a coral bench on the blue curb](/assets/uploads/vectorcraft/health-check.webp)
 
 The check looks for these problems:
 
@@ -206,7 +206,7 @@ The **Create Swatch Legend** dialog previews the legend on the canvas and has th
 
 Each chip is filled with its swatch and labeled inside with the swatch's name and values, in black on light chips and white on dark ones. The legend starts at the top-left corner of the first artboard, inset by the gap, and is selected when you click **OK**.
 
-![The Create Swatch Legend dialog with Columns: 4, Size: 110 pt, Gap: 12 pt and Preview selected. At the top left of the artboard, the preview shows twelve chips of a dusk palette, from Night Ink to Mist Lavender, each labeled with its name and RGB values, and the Swatches panel at the right holds the same colors](/assets/uploads/vectorcraft/swatch-legend-preview.webp)
+![The Create Swatch Legend dialog with Columns: 4, Size: 110 pt, Gap: 12 pt and Preview selected, over a dusk harbor poster at 150% zoom. At the top left of the artboard, the preview shows twelve chips from Night Ink to Mist Lavender, each labeled with its name and RGB values in white on dark chips and black on light ones, and the Swatches panel at the right holds the same colors](/assets/uploads/vectorcraft/swatch-legend-preview.webp)
 
 ## Make compound shapes
 

@@ -106,7 +106,7 @@ Open VectorCraft again. If it kept copies of unsaved documents, the **Recover Do
 1. Click **Restore** to open them. Each one opens with **[Recovered]** after its name.
 2. Save each restored document to keep it.
 
-![VectorCraft with a restored document open: the tab reads Lighthouse Card [Recovered] with an asterisk for unsaved changes, and the artboard shows a lighthouse sending a beam across a dusk sky, a setting sun over a teal sea, and the title Lighthouse Card](/assets/uploads/vectorcraft/recover-documents.webp)
+![The Recover Documents dialog over a dusk harbor poster titled Harbor Lights, listing Harbor Lights and Lighthouse Card with the time of each recovery copy, and the Discard, Cancel and Restore buttons](/assets/uploads/vectorcraft/recover-documents.webp)
 
 **Discard** deletes the copies. **Cancel** keeps them, and the dialog asks again the next time VectorCraft starts.
 

@@ -43,7 +43,7 @@ At a **Scale** of `100%`, each inch of the artboard prints as an inch on paper. 
 
 With **Unprintable margin** set to zero, both modes make the same tiles. **Fit to Page** shrinks the whole artboard onto one sheet instead.
 
-![A wide night market banner with page outlines drawn over it and the page numbers 1, 2 and 3 in their corners, showing how the art splits across three pages, with the Print Tiling Tool active](/assets/uploads/vectorcraft/print-tiling.webp)
+![A 30 by 20 inch night market banner with View → Show Print Tiling on, split into nine landscape letter sheets in three rows of three. Each sheet shows the paper edge as a solid line, its printable area as a dashed line inside it and its number in the top-left corner, and neighboring sheets overlap.](/assets/uploads/vectorcraft/print-tiling.webp)
 
 ## Tiling options
 

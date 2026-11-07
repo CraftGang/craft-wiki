@@ -89,7 +89,7 @@ The Shape Builder tool (Shift+M) merges and deletes the regions that overlapping
 
 If you hold Shift when you press the mouse button, the drag draws a rectangle instead of a line. The regions the rectangle reaches are merged, or deleted if you also hold **Alt** (**Option** on macOS). Press Escape during a drag to cancel it.
 
-![Three overlapping circles, coral, yellow and blue, selected with the Shape Builder tool. A drag runs from the coral circle into the small region where all three overlap, and the three regions it has crossed (the coral circle, the overlap of coral and yellow, and the overlap of all three) are covered by a hatch pattern](/assets/uploads/vectorcraft/shape-builder.webp)
+![A cloud in a sunset sky built from three overlapping circles, coral, amber and pale peach, and a light coral rounded band across their lower halves, all four selected with the Shape Builder tool. A drag runs right from the coral circle through the amber circle into its overlap with the peach circle, then down into the band, with the pointer at its end; a hatch pattern covers each region it has crossed, while the right side of the peach circle and most of the band stay plain](/assets/uploads/vectorcraft/shape-builder.webp)
 
 Double-click the tool to open **Shape Builder Tool Options**. These options change how it works. They stay set when you switch tools, and VectorCraft saves them with its preferences.
 
@@ -128,7 +128,7 @@ A clipping mask shows the objects under it only where they fall inside its shape
 
 The top-most selected object becomes the clipping path, and it loses its own fill and stroke. The result is a clip group.
 
-<img src="/assets/uploads/vectorcraft/clipping-mask.webp" alt="A five-pointed star filled with sunset stripes from violet through coral to pale yellow on a night sky, made by clipping a set of striped rectangles with a star-shaped clipping mask" width="360" style="display: block; margin-inline: auto;" />
+<img src="/assets/uploads/vectorcraft/clipping-mask.webp" alt="A five-pointed star filled with stripes from violet through coral to pale yellow, over a sunset sky with teal hills, a lake and an amber crescent moon. The star's clip group is selected, the Layers panel shows it expanded with seven rectangles and the clipping path, and the Object menu's Clipping Mask submenu is open with the pointer on Edit Contents" width="360" style="display: block; margin-inline: auto;" />
 
 To work with a clip group, select it and use the other commands in **Object → Clipping Mask**:
 

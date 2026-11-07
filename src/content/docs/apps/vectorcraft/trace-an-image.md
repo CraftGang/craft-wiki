@@ -80,7 +80,7 @@ To keep your own settings, click the **Manage Presets** button next to the Prese
 
 The following screenshot shows the Image Trace panel with the 6 Colors preset and the Advanced section open.
 
-![The traced dusk landscape selected, next to the Image Trace panel set to the 6 Colors preset with its Advanced section open showing the Paths, Corners and Noise sliders, and Preview checked](/assets/uploads/vectorcraft/image-trace-panel.webp)
+![The traced dusk landscape selected, next to the Image Trace panel set to the 6 Colors preset with its Advanced section open showing the Paths, Corners and Noise sliders, the counts Paths 9, Anchors 139 and Colors 6, and Preview checked](/assets/uploads/vectorcraft/image-trace-panel.webp)
 
 1. Keep **Preview** checked at the bottom of the panel. Preview is on by default, and VectorCraft traces the selected object again each time you change a setting. A slider applies its value when you release it. With Preview off, your changes wait in the panel until you click **Trace** or turn Preview on again.
 2. Set **Mode** to Black and White, Grayscale, Color or Flat Logo. In Black and White mode, **Threshold** sets how dark a pixel must be to become black. In Color mode, **Palette** chooses where the colors come from: Limited, Full Tone, Automatic or Document Library.

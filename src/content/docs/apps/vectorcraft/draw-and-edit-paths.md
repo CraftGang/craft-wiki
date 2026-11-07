@@ -85,7 +85,7 @@ Two more tools in the Pencil tool's group change paths you have already drawn:
 
 Double-click the Pencil tool in the Tools panel to open **Pencil Tool Options**. VectorCraft keeps the options when you switch tools and saves them with your preferences.
 
-![Pencil Tool Options over a windy meadow at sunset with lavender wind curls, teal grass and amber flowers. Fidelity is 1.5 px on a slider from Accurate to Smooth, Fill new strokes is off, Alt key toggles to Smooth Tool and Keep selected are on, Close paths when ends are within is 15 px, Edit selected paths within is 12 px, and Live preview and Live curve fitting are on](/assets/uploads/vectorcraft/pencil-options.webp)
+![Pencil Tool Options over a windy meadow at sunset with lavender wind curls, teal grass and amber flowers. Fidelity is 1.5 px on a slider from Accurate to Smooth, Fill new strokes and Alt key toggles to Smooth Tool are off, Keep selected is on, Close paths when ends are within is 15 px, Edit selected paths within is 12 px, and Live preview and Live curve fitting are on](/assets/uploads/vectorcraft/pencil-options.webp)
 
 | Option | Default | What it does |
 |---|---|---|
@@ -128,7 +128,7 @@ With the Pencil tool, you can smooth without switching tools: turn on **Alt key 
 
 The following screenshot shows the anchor points and handles of a crescent selected with the Direct Selection tool.
 
-![A plum-to-magenta crescent moon and three amber stars over a night sky, with the Direct Selection tool dragging the upper handle of the crescent's left anchor point outward so the curve bulges. The Contextual Task Bar under the crescent offers Corner, Smooth, Simplify and Duplicate, and the Properties panel shows Convert in its Anchor Point section and Offset Path and Simplify under Quick Actions](/assets/uploads/vectorcraft/paths.webp)
+![A plum-to-magenta crescent moon and three amber stars over a night sky, where the Direct Selection tool has selected the crescent's left anchor point and the pointer drags the end of its upper handle up and out to the left, so the top of the outer curve bulges outward and the lower handle swings the other way. The Contextual Task Bar under the crescent offers Remove Anchor Points, Connect, Cut Path, Corner, Smooth and Duplicate, and the Properties panel shows the anchor point at X 520 px and Y 420 px, with Convert and Anchors rows in its Anchor Point section](/assets/uploads/vectorcraft/paths.webp)
 
 The Anchor Point tool (Shift+C) converts anchor points:
 

@@ -154,7 +154,7 @@ Choose **Window → Stroke** (**Ctrl+F10**, or **Cmd+F10** on macOS) to open the
 
 To change the weight of the selected strokes by one step, press **Ctrl+Alt+.** (**Cmd+Option+.** on macOS) to make them thicker and **Ctrl+Alt+,** (**Cmd+Option+,** on macOS) to make them thinner.
 
-![Five labeled strokes on a night sky: a light blue line with a butt cap, a coral line with a round cap, a dotted line of round dots like string lights, an amber line ending in an arrowhead, and a lavender line with a circle at one end and a triangle at the other. The arrow line is selected and the Stroke panel shows its weight, cap, corner and arrowhead settings](/assets/uploads/vectorcraft/stroke-styles.webp)
+![A dusk fairground with a string of round festival lights between two poles, a cyan fence rail with butt caps, a coral footpath with round caps, an amber signpost arrow and a lavender kite string with a circle and a triangle at its ends. The string of lights is selected, and the Stroke panel shows a 10 pt round-cap dashed line with a dash of 0 and a gap of 22](/assets/uploads/vectorcraft/stroke-styles.webp)
 
 :::tip
 A dash length of 0 with a round cap draws a row of dots.
@@ -182,7 +182,7 @@ Choose **Window → Gradient** (**Ctrl+F9**, or **Cmd+F9** on macOS) to open the
 
 To save the gradient as a swatch, choose **Add to Swatches** from the Gradient panel menu.
 
-![Three shapes on a night sky labeled Linear, Radial and Gradient on a stroke: a square with a linear sunset gradient, a circle with a radial sun gradient, and a thick ring whose stroke has a cyan-to-magenta gradient. The ring is selected and the Gradient panel shows the stroke's gradient with the along-stroke option chosen](/assets/uploads/vectorcraft/gradient-types.webp)
+![A Ferris wheel on teal hills under a violet-to-coral linear gradient sky, with a radial gradient sun behind it. The wheel's rim is selected, and the Gradient panel shows its thick stroke painted with a cyan-to-magenta gradient along the stroke](/assets/uploads/vectorcraft/gradient-types.webp)
 
 ### Edit a gradient on the canvas
 

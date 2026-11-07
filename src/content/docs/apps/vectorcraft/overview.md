@@ -13,7 +13,7 @@ VectorCraft is a vector illustration app. If you have used a professional vector
 VectorCraft is in alpha. Everyday illustration works, but some tools don't yet behave exactly as they do in other apps, and some menu items are listed but grayed out because they aren't built yet. Keep a copy of important files, and tell us what breaks on [GitHub](https://github.com/storytold/vectorcraft/issues) or [Discord](https://discord.gg/artcraft).
 :::
 
-![VectorCraft editing a synthwave poster called Neon Drive. The title text is selected, the Appearance panel shows its Outer Glow effect, and the Properties panel on the right shows its position, font and paragraph settings](/assets/uploads/vectorcraft/hero.webp)
+![VectorCraft editing a poster called Neon Drive, with a striped sun setting behind mountains over a road. The title text is selected with the Contextual Task Bar under it, the Appearance panel shows its Outer Glow effect, and the Properties panel on the right shows its position, font and paragraph settings](/assets/uploads/vectorcraft/hero.webp)
 
 ## What it does
 

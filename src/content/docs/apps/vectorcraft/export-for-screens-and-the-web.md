@@ -346,7 +346,7 @@ To write a smaller SVG, choose Minimal object IDs and a low Decimal value, and t
 - **Save…** keeps the settings and writes the files.
 - **Done** keeps the settings and does not write any files.
 
-![The Save for Web dialog on its Optimized view, showing the coral star badge as a PNG-8 image of 26.0K with 32 colors, the color table with 32 swatches, and an image size of 512 by 512 px](/assets/uploads/vectorcraft/save-for-web.webp)
+![The Save for Web dialog on its 2-Up view, with the 512 by 512 px badge artboard shown as the original and as a PNG-8 image of 26.0K with 32 colors that downloads in 4 seconds at 56.6 Kbps. The settings column shows the PNG-8 format, Selective reduction, 32 colors, Diffusion dither at 100% and the top of the color table](/assets/uploads/vectorcraft/save-for-web.webp)
 
 1. Make the artboard you want to export the active artboard.
 2. Choose **File → Export → Save for Web (Legacy)…**. The dialog opens on the 2-Up view at 100%, with the active artboard and the settings you used last. With more than one artboard, the **Artboard:** list under **Clip to Artboard** picks another one.

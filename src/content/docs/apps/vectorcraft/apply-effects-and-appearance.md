@@ -67,7 +67,7 @@ If you choose an effect that the object already has, VectorCraft asks whether to
 
 The following image shows the same star with six different live effects. Each star still has its original five-point path.
 
-![Six copies of the same coral star on a night sky, each labeled with its one live effect: a drop shadow, rounded corners, a zigzag edge, a bloated shape, an arc warp and a Gaussian blur. The zigzag star is selected and the Appearance panel lists its effect](/assets/uploads/vectorcraft/effects-gallery.webp)
+![Six copies of the same coral star in a dusk sky above teal hills and a harbor, each labeled with its one live effect: a drop shadow, rounded corners, a zigzag edge, a bloated shape, an arc warp and a Gaussian blur. The zigzag star is selected with its original five-point path showing, and the Appearance panel lists its stroke, fill, Zig Zag effect and opacity](/assets/uploads/vectorcraft/effects-gallery.webp)
 
 ### The Effect menu
 
@@ -172,13 +172,13 @@ Blends, repeats and envelopes stay live in the same way as effects: you can chan
 
 The following screenshot shows three ribbons made with blends. One blend is selected with its two key paths showing.
 
-![Three wide ribbons blending from yellow to pink and from teal to purple. One blend is selected with its two key paths showing, and the Layers panel lists the clip group, the blends and the background](/assets/uploads/vectorcraft/blends.webp)
+![Three wide ribbons blended across a dusk sky over a harbor: amber to coral, teal to violet, and coral to gold. The teal ribbon is selected with its two key paths showing, and the Layers panel lists the three blends in the Ribbons layer above the Hills and Sky layers](/assets/uploads/vectorcraft/blends.webp)
 
 ## Add 3D
 
 **Effect → 3D and Materials** has **Extrude & Bevel…**, **Revolve…**, **Inflate…** and **Rotate…**. **Revolve…** spins a profile around an axis, so the outline of half a vase becomes a whole vase. While the dialog is open, drag the rings on the canvas to turn the object, and use the **Lighting** tab to light it.
 
-![A still life of a vase, a bowl, a sphere and a bottle made with Revolve. The vase is selected, with rotation rings drawn over it, and the Revolve dialog shows its Rotation tab with the revolve angle, axis side, offset, cap and view settings](/assets/uploads/vectorcraft/revolve.webp)
+![A still life of a teal vase, a coral bowl, a lavender sphere and an amber bottle made with Revolve, on a navy table against a dusk sky. The vase is selected with rotation rings drawn over it, and the Revolve dialog shows its Rotation tab with the revolve angle, axis side, offset, cap and view settings](/assets/uploads/vectorcraft/revolve.webp)
 
 The other three commands work on the object's own outline:
 

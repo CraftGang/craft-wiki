@@ -243,7 +243,7 @@ The Contour tool grows or shrinks a live outline copy of a shape.
 
 While the tool is active, a Contour bar above the selection shows the distance, the corner style (**Sharp**, **Round** or **Square**) and **Bake**. The contour is a live Offset Path effect. **Bake**, or **Object → Expand Appearance**, turns it into plain paths.
 
-![An amber island in the bay at 200% zoom with a translucent cyan contour around it for shallow water. The Contour tool is part way through dragging the contour farther out, with the island's outline as a dashed guide, a +38.90 pt readout, and the Contour bar above showing 38.9 pt with Round chosen and Bake](/assets/uploads/vectorcraft/contour-tool.webp)
+![An amber island with a small palm and a coral hut in the dusk bay at 200% zoom, ringed by a translucent cyan contour for shallow water, with a smaller islet off to the right. The Contour tool is part way through dragging the contour farther out, with the island's outline as a dashed guide, a +38.90 pt readout, and the Contour bar above showing 38.9 pt with Round chosen and Bake](/assets/uploads/vectorcraft/contour-tool.webp)
 
 ## Related
 

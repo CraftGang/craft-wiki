@@ -23,7 +23,7 @@ VectorCraft has nine graph tools. They share one group in the Tools panel. The d
 | **Pie Graph** | | A circle divided into wedges |
 | **Radar Graph** | | Values on spokes around a center |
 
-![The lantern-sales scene with the Column Graph tool dragging out a graph on the empty cream card, the tool highlighted in the Advanced toolbar. The preview shows the sample data as black and gray columns for A to D with a Series 1 and Series 2 legend, and a readout at its lower-right corner gives W: 510.00 px and H: 242.00 px](/assets/uploads/vectorcraft/graph-tool-drag.webp)
+![The lantern-sales scene with the Column Graph tool dragging out a graph on the cream card below its heading, the tool highlighted in the Advanced toolbar. The preview shows the sample data as black and gray columns for A to D on a 0 to 8 axis with a Series 1 and Series 2 legend, and a readout at the graph's lower-right corner gives W: 510.00 px and H: 242.00 px](/assets/uploads/vectorcraft/graph-tool-drag.webp)
 
 1. Choose a graph tool.
 2. Drag on the canvas to draw the rectangle the graph fills. Hold Shift to make it square, or hold **Alt** (**Option** on macOS) to draw it out from the center. To type the size instead, click once: the **Graph** dialog opens with a **Width** of 200 and a **Height** of 150.

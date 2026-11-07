@@ -58,7 +58,7 @@ For exact values, double-click the tool in the Tools panel to open its options, 
 | **Brush Affects** | All on | Which parts of the path the tool moves: **Anchor Points**, **In Tangent Handles** and **Out Tangent Handles**. Scallop, Crystallize and Wrinkle only |
 | **Show Brush Size** | On | Shows the outline of the brush around the pointer |
 
-![The Wrinkle Tool Options dialog over the worked suns labeled Warp, Twirl and Crystallize. Width and Height are 200 px, Angle is 0°, Intensity is 50% and Use Pressure Pen is off. Horizontal is 0%, Vertical is 100%, Complexity is 1, Detail is 2, Anchor Points, In Tangent Handles and Out Tangent Handles are all on under Brush Affects, and Show Brush Size is on](/assets/uploads/vectorcraft/warp-tool-wrinkle-options.webp)
+![The Wrinkle Tool Options dialog over the worked suns labeled Warp, Twirl and Crystallize. Width and Height are 320 px, Angle is 0°, Intensity is 80% and Use Pressure Pen is off, the same as in Twirl Tool Options. Horizontal is 0%, Vertical is 100%, Complexity is 1, Detail is 2, Anchor Points, In Tangent Handles and Out Tangent Handles are all on under Brush Affects, and Show Brush Size is on](/assets/uploads/vectorcraft/warp-tool-wrinkle-options.webp)
 
 ## Push and twist shapes
 
@@ -96,7 +96,7 @@ Puppet Warp builds a mesh of triangles over the selected artwork. You pin the pa
 4. Drag a pin. The art bends, and the other pins hold their places.
 5. To turn the art around a pin, select the pin, then hold **Alt** (**Option** on macOS) and drag near it, not on it. The pin keeps that angle afterward.
 
-![A teal heron standing in blue shallows under a violet to coral sky, selected with the Puppet Warp tool. The triangle mesh covers the heron, with pins on its body, tail, feet and head, and the head pin is being dragged down so that the neck curves. The status bar shows the Puppet Warp tool's hints](/assets/uploads/vectorcraft/puppet-warp.webp)
+![A teal heron standing in blue shallows under a violet to coral sky, with the Puppet Warp tool part way through a drag of the selected pin on its head, down and to the left. The triangle mesh bends the neck into a deep curve while the pins on the body, tail and feet hold their places, and the status bar shows the Puppet Warp tool's hints](/assets/uploads/vectorcraft/puppet-warp.webp)
 
 Shift-click pins to select more than one, and drag one of them to move them all. Press Delete or Backspace to remove the selected pins. Press Esc while you drag to put the art and the pins back where they were.
 
@@ -139,7 +139,7 @@ To bend artwork with a grid that you shape yourself:
 3. In **Envelope Mesh**, set **Rows** and **Columns**, from 1 to 50 each. The default is 4 by 4.
 4. Click **OK**.
 
-   ![The Envelope Mesh dialog with Rows and Columns at 4 and Preview on. Beside it, the selected NIGHT MARKET banner shows the 4 by 4 mesh over dusk sky](/assets/uploads/vectorcraft/envelope-mesh-dialog.webp)
+   ![The Envelope Mesh dialog with Rows and Columns at 4 and Preview on. Beside it, the selected NIGHT MARKET banner shows a 4 by 4 mesh, over dusk rooftops with lit windows and a coral sun](/assets/uploads/vectorcraft/envelope-mesh-dialog.webp)
 
 5. With the Direct Selection tool, drag the points of the mesh and their handles to bend the art. To add lines to the mesh, click inside it with the Mesh tool.
 
