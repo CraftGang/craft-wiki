@@ -45,7 +45,7 @@ VectorCraft is in alpha, and some things don't come across between apps:
 - **Affinity documents**: whatever VectorCraft couldn't bring in, such as adjustments, blurs and brushes, is listed in a warning when the file opens. VectorCraft can't save Affinity files.
 - **Photoshop files** open as one flattened picture, without their layers.
 
-If you need an exact copy, keep the original file. Please [report the file](https://github.com/storytold/vectorcraft/issues) if you can share it: real files are how we find these problems.
+[Open and save files](/apps/vectorcraft/open-and-save-files/) lists what VectorCraft opens and saves in each format. If you need an exact copy, keep the original file. Please [report the file](https://github.com/storytold/vectorcraft/issues) if you can share it: real files are how we find these problems.
 
 ## VectorCraft closed and I lost my work
 

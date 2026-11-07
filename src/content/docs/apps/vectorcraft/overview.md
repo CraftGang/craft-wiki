@@ -30,7 +30,7 @@ VectorCraft is in alpha. Everyday illustration works, but some tools don't yet b
 
 ## Your files
 
-VectorCraft saves its own `.vectorcraft` files. It also opens and saves SVG, PDF, PDF-compatible `.ai` and EPS. It opens Affinity documents (`.af`, `.afdesign` and `.afpub`), DXF, EMF and WMF drawings, and pictures such as PNG, JPEG, WebP, GIF, TIFF and BMP. Photoshop files (`.psd` and `.psb`) open as a single flattened picture. **File › Export** writes PNG, JPEG, WebP, PSD and other picture formats too.
+VectorCraft saves its own `.vectorcraft` files. It also opens and saves SVG, PDF, PDF-compatible `.ai` and EPS. It opens Affinity documents (`.af`, `.afdesign` and `.afpub`), DXF, EMF and WMF drawings, and pictures such as PNG, JPEG, WebP, GIF, TIFF and BMP. Photoshop files (`.psd` and `.psb`) open as a single flattened picture. **File › Export** writes PNG, JPEG, WebP, PSD and other picture formats too. [Open and save files](/apps/vectorcraft/open-and-save-files/) lists every format.
 
 Your files stay on your computer. VectorCraft doesn't need an account.
 

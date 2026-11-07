@@ -85,4 +85,4 @@ The server offers five ready-made prompts that your assistant may show as comman
 
 ## More detail
 
-The full list of tools, commands and options is in VectorCraft's [MCP documentation](https://github.com/storytold/vectorcraft/blob/main/docs/mcp.md) on GitHub.
+The full list of tools, commands and options is in VectorCraft's [MCP documentation](https://github.com/storytold/vectorcraft/blob/main/docs/mcp.md) on GitHub. [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/) covers the server's connection modes, running commands with `vectorcraft-cli`, and recording actions.
