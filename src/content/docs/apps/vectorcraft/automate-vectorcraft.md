@@ -1,11 +1,11 @@
 ---
 title: Automate VectorCraft
-description: Find and run any command by name, change keyboard shortcuts, record and replay actions, and run VectorCraft from the command line or an MCP client.
+description: Find and run any command by name, change keyboard shortcuts, record and replay actions, run an action on a folder of files, check a script before you run it, and run VectorCraft from the command line or an MCP client.
 sidebar:
   order: 23
 ---
 
-This guide shows you how to find any command by typing part of its name, give tools, commands and panels your own keyboard shortcuts, and record a series of steps as an action you can play again. It then covers `vectorcraft-cli`, which runs the same commands without opening a window, and the Model Context Protocol (MCP) server, which other programs use to control VectorCraft.
+This guide shows you how to find any command by typing part of its name, give tools, commands and panels your own keyboard shortcuts, record a series of steps as an action and play it on one document or on a whole folder of files, and check a script file before you run it. It then covers `vectorcraft-cli`, which runs the same commands without opening a window, and the Model Context Protocol (MCP) server, which other programs use to control VectorCraft.
 
 ## Find a command by name
 
@@ -39,6 +39,8 @@ When you change a shortcut, the **Set:** list shows **Custom**. The dialog also 
 :::note
 If the keys you press already belong to another entry, VectorCraft removes them from that entry and shows a message naming it.
 :::
+
+The [keyboard shortcuts](/apps/vectorcraft/keyboard-shortcuts/) reference lists every default shortcut.
 
 ## Record and play actions
 
@@ -77,7 +79,22 @@ The panel menu holds these commands:
 | **Save Actions…** | Saves the current set to a `.vcactions` file |
 | **Load Actions…** | Adds a saved set to the panel |
 
-In **Batch…**, set **Play:** to **Folder** or **Data Sets**. For **Folder**, choose a **Source Folder:** and select **Include All Subdirectories** to include its subfolders. Then choose one of the **Destination:** options:
+## Run an action on a folder of files
+
+**Batch…** plays an action on every file in a folder, or on every data set of the open document, and then saves, exports or closes each result.
+
+1. In the **Actions** panel, select the action. If the action has no steps, or every step is cleared, **Batch…** shows a message in the status bar and does not open.
+2. Choose **Batch…** from the panel menu. The dialog shows the action's name at the top.
+3. Set **Play:** to **Folder** or **Data Sets**.
+4. For **Folder**, type a **Source Folder:** or click **Choose…**, and select **Include All Subdirectories** to include its subfolders. For **Data Sets**, choose how the files are named in **File Name:**.
+5. Choose one of the **Destination:** options. For **Folder**, type a **Destination Folder:** or click **Choose…**.
+6. Select or clear the options under **Overrides**, and click **OK**.
+
+![The Batch dialog for the Badge action over a dusk scene with three star badges, with Play set to Folder, Source Folder C:\Art\badges, Include All Subdirectories cleared, Destination set to Folder, Destination Folder C:\Art\badges-out, and all four Overrides options selected. The Actions panel on the right shows the Badge action, with 3 steps, selected in the Studio set.](/assets/uploads/vectorcraft/action-batch.webp)
+
+When the batch ends, the status bar shows how many files or data sets were processed, for example "Batch: 3 processed", and how many failed. If the source holds more than 500 files or data sets, or if **Include All Subdirectories** finds a folder nested more than 8 levels deep, the batch stops with an error before it processes any file. The batch skips files whose names start with a dot and files VectorCraft cannot open.
+
+If you click **OK** with no **Source Folder:** or no **Destination Folder:**, or with **Data Sets** chosen and no document open, the status bar names what is missing and the dialog stays open. The batch also stops with an error, and the dialog stays open, when the folder holds no file VectorCraft can open or the document has no data sets.
 
 | Destination | What happens to each file |
 |---|---|
@@ -85,7 +102,61 @@ In **Batch…**, set **Play:** to **Folder** or **Data Sets**. For **Folder**, c
 | **Save and Close** | The file is saved over the source and closed |
 | **Folder** | The file is saved or exported into the **Destination Folder:** and closed |
 
-**Stop on Errors** stops the batch at the first file or data set that fails.
+With **Folder**, each file keeps its name and its format. With **Data Sets**, VectorCraft applies each data set in turn to the open document, and the document stays open. When **Destination:** is **Folder**, VectorCraft saves one `.vectorcraft` copy for each data set.
+
+| Option | Default | What it does |
+|---|---|---|
+| **Include All Subdirectories** | Off | Also plays the action on the files in the source folder's subfolders |
+| **File Name:** (Data Sets) | **File + Number** | **File + Number** names each file after the document with 001, 002 and so on; **File + Data Set Name** uses the document's name, an underscore and the data set's name; **Data Set Name** uses the data set's name. A name already used gets `-2`, `-3` and so on. |
+| **Override Action "Open" Commands** | On | Skips the Open steps recorded in the action. The other steps run on the file the batch opened. With **Data Sets**, Open steps are always skipped. |
+| **Override Action "Save" Commands** | On | The action's recorded Save steps write their files into the **Destination Folder:**, named after the source file |
+| **Override Action "Export" Commands** | On | The action's recorded Export steps write their files into the **Destination Folder:**, named after the source file, with the export format's extension |
+| **Stop on Errors** | On | Stops the batch at the first file or data set that fails |
+
+The Save and Export overrides apply only when **Destination:** is **Folder**.
+
+## Set action and playback options
+
+To rename the current set, choose **Set Options…** from the Actions panel menu, type a **Name:** and click **OK**. **New Set…** opens the same dialog with the name **Set 1**, or the next number that no set uses.
+
+To change an action, select it and choose **Action Options…**:
+
+| Option | What it does |
+|---|---|
+| **Name:** | Renames the action. **OK** is unavailable while the name is empty. |
+| **Function Key:** | **None**, or a key from F1 to F15 that plays the action, with **Ctrl** (**Cmd** on macOS) and **Shift** check boxes. The action's key takes priority over a command shortcut on the same keys. |
+| **Color:** | **None**, **Red**, **Yellow**, **Green**, **Blue** or **Violet**. VectorCraft saves the color with the action, and the Actions panel does not display it. |
+
+To set how fast actions play, choose **Playback Options…** from the panel menu, choose a speed and click **OK**:
+
+| Speed | What happens |
+|---|---|
+| **Accelerated** | The default. Every included step runs at once, as one step in the undo history. |
+| **Step by Step** | One step runs at a time, and the window is redrawn after each step. Each step is its own undo step. |
+| **Pause For** | VectorCraft waits the number of seconds you enter, from 1 to 60, between steps. Each step is its own undo step. The field starts at 1. |
+
+VectorCraft saves the playback speed with its preferences, and the speed stays set after a restart. An action that is already playing keeps the speed it started with, and while an action plays step by step or with pauses, VectorCraft does not start another one.
+
+## Check a script before you run it
+
+**Check Script…** reads a script file and reports what it does without running any of it.
+
+1. Choose **File → Scripts → Check Script…**.
+2. Choose a `.jsx`, `.jsxinc` or `.jsxbin` file. Opening one of these files with **File → Open…** shows the same report.
+3. Read the report, then click **Copy Report** to copy it to the clipboard as JSON, or **Close**.
+
+The report lists what the script needs, then these sections. A section appears only when the script has something to list in it.
+
+| Section | What it lists | Beside each entry |
+|---|---|---|
+| **Outside the document** | Whether the script writes, moves or deletes files, opens files in other apps, opens network connections, loads native code, sends messages to other apps, reads or sets environment variables, runs code the checker can't read, or changes the preferences of the app the script was written for | A count and the line numbers |
+| **Menu commands** | The menu commands the script runs, and how many command names the script builds as it runs | A count and the line numbers |
+| **Document model** | The document objects and properties the script uses | A count |
+| **Directives** | The script's `#` and `//@` directives | The line, or the file and line |
+| **Includes** | The files the script's `#include` lines name, and whether each one was checked | The line, or the file and line |
+| **Problems** | Strings, comments, regular expressions, template literals, XML literals or brackets left open; a closing bracket with no opening one; syntax newer than ES3; unknown directives; invalid UTF-8; mixed line endings; and nesting too deep to follow | The line, or the file and line |
+
+VectorCraft also checks the files that `#include` lines name, and reads them only from inside the script's folder. It checks up to 8 MiB in each file, 32 MiB in all and 64 included files. For a script file larger than 8 MiB, the report shows "Too large to check". An included file that VectorCraft skips because a limit was reached is listed under **Includes** as "Not read: a limit was reached". VectorCraft cannot read a compiled `.jsxbin` file. For one, the report shows "Compiled script: ask its author for the .jsx file".
 
 ## Run commands from the command line
 
@@ -167,6 +238,8 @@ A connected client can change, save and export your open documents. Without eith
 ## Related
 
 - [Workflows](/apps/vectorcraft/workflows/)
+- [Keyboard shortcuts](/apps/vectorcraft/keyboard-shortcuts/)
+- [Use the built-in plug-ins](/apps/vectorcraft/built-in-plug-ins/)
 - [Open and save files](/apps/vectorcraft/open-and-save-files/)
 - [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/)
 - [Apply effects and appearance](/apps/vectorcraft/apply-effects-and-appearance/)

@@ -75,6 +75,8 @@ A `.ai` file that VectorCraft wrote, and a PDF or SVG file saved with its preser
 Choosing a PDF standard under **Standard** turns off **Preserve editing capabilities** and clears any passwords.
 :::
 
+To check colors, overprints and transparency before you send a PDF to a print shop, see [Manage color and proof](/apps/vectorcraft/manage-color-and-proof/).
+
 ## Save a picture for office documents
 
 **File → Save for Office Documents…** saves one artboard as a PNG file that you can insert in a word processor document or a slide.
@@ -128,7 +130,7 @@ What you get depends on the file:
 - An EPS file from another program is read as PostScript. When its PostScript cannot be read, it opens as its preview image with a warning.
 
 :::note
-VectorCraft looks for linked images at the path saved in the document, then at the same relative path from the document's folder. A missing image shows its saved preview until you relink it with **Relink…** in the Links panel (**Window → Links**).
+VectorCraft looks for linked images at the path saved in the document, then at the same relative path from the document's folder. A missing image shows its saved preview until you relink it with **Relink…** in the Links panel (**Window → Links**). See [Work with placed images](/apps/vectorcraft/work-with-placed-images/).
 :::
 
 **File → Show in Folder** shows the active document's file in your system's file manager.
@@ -223,6 +225,7 @@ To change these shortcuts, choose **Edit → Keyboard Shortcuts…**.
 
 - [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/)
 - [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/)
+- [Work with placed images](/apps/vectorcraft/work-with-placed-images/)
 - [Trace an image](/apps/vectorcraft/trace-an-image/)
 - [Print your artwork](/apps/vectorcraft/print-your-artwork/)
 - [All VectorCraft workflows](/apps/vectorcraft/workflows/)

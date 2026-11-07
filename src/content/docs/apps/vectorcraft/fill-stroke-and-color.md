@@ -311,6 +311,8 @@ Select the art, then choose a command from **Edit → Edit Colors**:
 | **Invert Colors** | Replaces each color with its RGB inverse. |
 | **Saturate…** | Raises or lowers the saturation of the colors by a percentage from −100 to 100. |
 
+For overprinting, spot colors, color settings and soft proofing, see [Manage color and proof](/apps/vectorcraft/manage-color-and-proof/).
+
 ## Related
 
 - [Workflows](/apps/vectorcraft/workflows/)
@@ -318,4 +320,6 @@ Select the art, then choose a command from **Edit → Edit Colors**:
 - [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/)
 - [Add and style type](/apps/vectorcraft/add-and-style-type/)
 - [Apply effects and appearance](/apps/vectorcraft/apply-effects-and-appearance/)
+- [Paint with brushes](/apps/vectorcraft/paint-with-brushes/)
 - [Make patterns, blends and repeats](/apps/vectorcraft/make-patterns-blends-and-repeats/)
+- [Manage color and proof](/apps/vectorcraft/manage-color-and-proof/)

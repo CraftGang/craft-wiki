@@ -143,6 +143,9 @@ You can choose any of these from its group in the menu. To try several filters t
 The following screenshot shows the Effect Gallery beside a harbor illustration, with Watercolor added to the stack and previewed on the art.
 
 ![A harbor at dusk with a striped lighthouse, a light beam, a setting sun, teal hills and blue water, softened and grainy from the Watercolor preview. The Effect Gallery at the right shows the Artistic category with Watercolor selected, Brush Detail 3, Shadow Intensity 4 and Texture 3 under Settings, Watercolor as the one row under Applied Filters, and Preview turned on at the bottom](/assets/uploads/vectorcraft/effect-gallery.webp)
+
+To paint strokes with brushes instead of a filter, see [Paint with brushes](/apps/vectorcraft/paint-with-brushes/).
+
 ## Blend, repeat and distort objects
 
 Blends, repeats and envelopes stay live in the same way as effects: you can change the original objects at any time and the result updates.

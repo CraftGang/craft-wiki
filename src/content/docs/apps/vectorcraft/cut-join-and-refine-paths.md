@@ -91,7 +91,8 @@ To remove a tool, open the drawer and drag the tool from the Tools panel into th
 
 ![The All Tools drawer open beside the Tools panel, scrolled to its end. The Path Precision Tools heading lists Anchor Eraser Brush, Extend Path Tool, Measure & Inspect Tool, Parametric Shape Tool, Corner Tool, Slide Anchor Along Path and Shared Edge Merge Tool, followed by the Smart Pen, Enclosing Lasso, Contour and 3D Box headings](/assets/uploads/vectorcraft/path-plugins.webp)
 
-**Object → Plug-ins → Path Precision Tools** also opens two panels, the **Anchor Inspector** and **Parametric Shape**, and runs the path commands described below.
+**Object → Plug-ins → Path Precision Tools** also opens two panels, the **Anchor Inspector** and **Parametric Shape**, and runs the path commands described below. The Measure & Inspect Tool is described in [Measure and dimension](/apps/vectorcraft/measure-and-dimension/).
+
 ## Draw with the Smart Pen
 
 The Smart Pen tool draws paths and edits their points without switching tools. Choose it from **Object → Plug-ins → Smart Pen → Smart Pen Tool**, and open its panel from **Object → Plug-ins → Smart Pen → Smart Pen Panel**.
@@ -223,3 +224,5 @@ While the tool is active, a Contour bar above the selection shows the distance, 
 - [Workflows](/apps/vectorcraft/workflows/)
 - [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/)
 - [Combine and cut shapes](/apps/vectorcraft/combine-and-cut-shapes/)
+- [Built-in plug-ins](/apps/vectorcraft/built-in-plug-ins/)
+- [Customize the workspace](/apps/vectorcraft/customize-the-workspace/)

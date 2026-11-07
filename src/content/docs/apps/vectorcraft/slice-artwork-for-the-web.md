@@ -76,7 +76,7 @@ Both commands deselect the slices in every open document, and turning them off d
 
 ## Slices preferences
 
-The **Slices** page of **Edit → Preferences…** (**VectorCraft → Settings → Slices…** on macOS) has two settings.
+The **Slices** page of **Edit → Preferences…** (**VectorCraft → Settings → Slices…** on macOS) has two settings. See [Preferences](/apps/vectorcraft/preferences/) for the other pages.
 
 | Setting | What it sets | Default |
 |---|---|---|
@@ -172,4 +172,5 @@ To use functions from a script file, click the file-plus button at the bottom ri
 
 - [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/)
 - [Open and save files](/apps/vectorcraft/open-and-save-files/)
+- [Preferences](/apps/vectorcraft/preferences/)
 - [All VectorCraft workflows](/apps/vectorcraft/workflows/)

@@ -140,6 +140,7 @@ After Expand, the tracing settings no longer apply to the paths. Change the sett
 
 - [Workflows](/apps/vectorcraft/workflows/)
 - [Open and save files](/apps/vectorcraft/open-and-save-files/)
+- [Work with placed images](/apps/vectorcraft/work-with-placed-images/)
 - [Organize with layers and symbols](/apps/vectorcraft/organize-with-layers-and-symbols/)
 - [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/)
 - [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/)

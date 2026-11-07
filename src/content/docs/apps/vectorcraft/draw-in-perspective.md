@@ -160,3 +160,4 @@ The built-in presets cannot be edited or deleted. To start from one, select it a
 - [Workflows](/apps/vectorcraft/workflows/)
 - [Draw and transform shapes](/apps/vectorcraft/draw-and-transform-shapes/)
 - [Add and style type](/apps/vectorcraft/add-and-style-type/)
+- [Measure and dimension](/apps/vectorcraft/measure-and-dimension/)

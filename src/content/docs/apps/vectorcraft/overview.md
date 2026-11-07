@@ -49,7 +49,10 @@ Your files stay on your computer. VectorCraft doesn't need an account.
 - [Getting started](/apps/vectorcraft/getting-started/): draw, color and save your first illustration.
 - [Install and update](/apps/vectorcraft/install-update/): download VectorCraft for your system.
 - [Workflows](/apps/vectorcraft/workflows/): paths, live effects, type, artboards, tracing and exporting.
+- [Paint with brushes and variable widths](/apps/vectorcraft/paint-with-brushes/): paint with the five brush kinds and shape strokes with the Width tool.
+- [Make graphs and data-driven art](/apps/vectorcraft/make-graphs-and-data-driven-art/): draw graphs from a data table and fill a template from a CSV file.
 - [Slice artwork for the web](/apps/vectorcraft/slice-artwork-for-the-web/): cut a design into web images with slices.
+- [Use the built-in plug-ins](/apps/vectorcraft/built-in-plug-ins/): find the extra tools and commands under **Object → Plug-ins**.
 - [AI agents](/apps/vectorcraft/ai-agents/): let an AI assistant draw and edit in VectorCraft.
 - [Print a large poster](/apps/vectorcraft/print-tiling/): spread one drawing across several sheets of paper.
 - [Troubleshooting](/apps/vectorcraft/troubleshooting/): fix common problems.
