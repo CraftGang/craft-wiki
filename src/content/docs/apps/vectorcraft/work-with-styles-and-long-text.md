@@ -44,6 +44,8 @@ To change a style and every paragraph that uses it:
 1. Change the formatting of one paragraph that uses the style.
 2. With the caret in that paragraph, select the style in the panel and choose **Redefine Paragraph Style** from the panel menu. Text that has its own overrides keeps them.
 
+![A night market menu card with the caret in the dish name Scallion pancake, which has extra space above it. The Paragraph Styles panel shows Dish+ highlighted, and its panel menu is open with Redefine Paragraph Style under the pointer](/assets/uploads/vectorcraft/paragraph-style-overrides.webp)
+
 The panel menu holds these commands:
 
 | Command | What it does |
@@ -72,13 +74,19 @@ The OpenType panel (**Window → Type → OpenType**; **Ctrl+Alt+Shift+T**, or *
 
 Tracked text does not use ligatures, and the panel shows "Ligatures are off while the text is tracked." **Reset OpenType Features** in the panel menu turns every feature back to the default.
 
+![The price 5.50 in the right column of a night market menu card is selected with the Type tool. The OpenType panel shows Figure set to Proportional Oldstyle, Position set to Default Position, and Standard Ligatures and Contextual Alternates turned on](/assets/uploads/vectorcraft/opentype-panel.webp)
+
 The Glyphs panel (**Type → Glyphs** or **Window → Type → Glyphs**) shows every character in the font of the selected text.
 
 1. With the Type tool, click where the character should go.
 2. In the Glyphs panel, pick a group of characters from **Show**: **Entire Font**, **Basic Latin**, **Latin-1 Supplement**, **Latin Extended**, **Punctuation**, **Currency & Symbols** or **Greek & Cyrillic**.
 3. Double-click the character. It goes in at the caret. With type objects selected instead, it goes at the end of their text.
 
+![The letter g in the dish name Mango sticky rice is selected with the Type tool on a night market menu card. The Glyphs panel shows Basic Latin characters of Source Sans 3 Semibold, with the g highlighted in the grid](/assets/uploads/vectorcraft/glyphs-panel.webp)
+
 To swap a letter for an alternate form, select the letter with the Type tool and choose **Alternates for Current Selection** from **Show**. Double-click an alternate to replace the letter. The **−** and **+** buttons make the previews smaller or larger, and **Use the Selected Text's Font** in the panel menu returns the panel to the font of the selected text after you browse another font.
+
+![The Glyphs panel with Show set to Alternates for Current Selection lists three forms of the g selected in Mango sticky rice: the default g, a single-story g and a small capital G](/assets/uploads/vectorcraft/glyph-alternates.webp)
 
 ## Set tab stops
 
@@ -90,6 +98,8 @@ Tab stops line up text after a tab character, for example prices at the right ed
 4. With the stop selected, click an alignment button: **Left-Justified Tab**, **Center-Justified Tab**, **Right-Justified Tab** or **Decimal-Justified Tab**.
 5. Type the exact position in **X**, and the characters that fill the gap before the stop in **Leader**, for example a period and a space. A leader repeats up to eight characters.
 6. For a decimal tab, type the character to line up on in **Align On**. The default is a period.
+
+![The caret sits in the line crispy, soy dip of a night market menu card, where dot leaders run to prices at the right edge of the column. The Tabs panel shows the Right-Justified Tab button selected, X set to 400 px, a period in Leader and the stop at the right end of the ruler](/assets/uploads/vectorcraft/tabs-panel-leaders.webp)
 
 Stops are measured from the left edge of the text, or of the frame for area type. A stop lands on the nearest whole point. Hold Shift while you drag, or turn on **Snap to Unit** in the panel menu, to land on the ruler's ticks. Ctrl-drag a stop (Cmd-drag on macOS) to move every stop by the same distance. The ruler's indent markers set **First-line Left Indent** and **Left Indent**.
 
@@ -134,6 +144,8 @@ In VectorCraft 0.22.0, **Edit → Find Next** does not search. Choosing it from 
 | **Insert Whitespace Character** | **Em Space**, **En Space**, **Hair Space**, **Sixth Space**, **Thin Space**, **Nonbreaking Space**, **Figure Space**, **Punctuation Space**, **Third Space**, **Quarter Space** |
 | **Insert Break Character** | **Forced Line Break**, **Tab** |
 
+![The right column of a night market menu card is selected, and the Type menu is open with the Insert Whitespace Character submenu listing Em Space, En Space, Hair Space, Sixth Space, Thin Space, Nonbreaking Space, Figure Space, Punctuation Space, Third Space and Quarter Space](/assets/uploads/vectorcraft/insert-whitespace-menu.webp)
+
 These commands do not insert at the caret. The Glyphs panel does not list space characters, so you cannot place one of these spaces at the caret from there either.
 
 **Type → Insert Inline Symbol** places a symbol inside the text as one character, so it moves with the words around it:
@@ -160,6 +172,8 @@ The tate-chu-yoko commands set a short run, such as a two-digit number, upright 
 3. In the Character panel menu, choose **Tate-chu-yoko**. The characters stand side by side across one em of the column.
 4. To nudge the block, choose **Tate-chu-yoko Settings…** from the same menu. A positive **Up/Down** moves it up and a positive **Left/Right** moves it right, from -1296 to 1296 pt.
 
+![A lantern festival poster with the vertical banner OPEN 18 TO 24 down its left edge and the number 18 selected with the Type tool. The Character panel menu is open with Tate-chu-yoko checked and Tate-chu-yoko Settings… below it](/assets/uploads/vectorcraft/tate-chu-yoko-menu.webp)
+
 **Standard Vertical Roman Alignment** in the same menu sets Latin letters and digits upright, one below the other, instead of rotated. Tate-chu-yoko and Standard Vertical Roman Alignment do not change horizontal type.
 
 ## Fine-tune justification and hyphenation
@@ -180,6 +194,8 @@ To turn hyphenation on, turn on **Hyphenate** in the Paragraph panel, or press *
 | **Hyphenation Zone** | A line whose text already ends this close to the right edge moves the next word down instead of breaking it, from 0 to 1296 pt | 0 |
 | **Hyphenate Capitalized Words** | Allows breaks in words that start with a capital letter. Words in capitals only never break | On |
 
+![The Hyphenation dialog with Hyphenation on, Words Longer Than 5, After First 3, Before Last 3, Hyphen Limit 0, Hyphenation Zone 0 px and Hyphenate Capitalized Words on, open over a night market menu card whose selected left column is justified](/assets/uploads/vectorcraft/hyphenation-dialog.webp)
+
 The **Justification…** dialog sets spacing as a percentage. **Desired** applies to every line. **Minimum** and **Maximum** limit how far justified lines may go to fill the width. Minimum must not exceed Desired, and Desired must not exceed Maximum. While a row is out of order, the dialog shows the warning "Minimum must not exceed Desired, nor Desired Maximum." and **OK** is unavailable. Turn on **Preview** to see the spacing on the canvas while the dialog is open.
 
 | Option | What it sets | Range | Defaults (Minimum, Desired, Maximum) |
@@ -187,6 +203,8 @@ The **Justification…** dialog sets spacing as a percentage. **Desired** applie
 | **Word Spacing** | The space between words, as a share of the font's word space | 0% to 1000% | 80%, 100%, 133% |
 | **Letter Spacing** | Space added after each letter, as a share of a word space | -100% to 500% | 0%, 0%, 0% |
 | **Glyph Scaling** | The width of the letters | 50% to 200% | 100%, 100%, 100% |
+
+![The Justification dialog with Word Spacing set to 75%, 100% and 150%, Letter Spacing to 0%, 0% and 10%, Glyph Scaling to 100% in all three columns, Auto Leading to 120%, Single Word Justification to Full Justify and Preview on. The selected, justified left column of a night market menu card shows beside it](/assets/uploads/vectorcraft/justification-dialog.webp)
 
 The dialog also holds two single settings. **Auto Leading** sets the leading of characters set to Auto, as a share of the font size, from 0% to 500%. The default is 120%. **Single Word Justification** sets how a justified line that holds one word is set: **Full Justify** (the default), **Align left**, **Align center** or **Align right**.
 
@@ -200,6 +218,8 @@ Text Tweaker, part of the built-in Type Tools plug-in, changes one attribute let
 2. Choose **Object → Plug-ins → Type Tools → Text Tweaker…**.
 3. Set the options from the following table. Turn on **Preview** to see the change on the canvas.
 4. Click **OK**. The change is one undo step.
+
+![The Text Tweaker dialog with Attribute set to Baseline Shift, From 0 pt, To 14 pt, Shape set to Bow, and Skip Spaces and Preview on. Above it, the letters of the heading NIGHT MARKET MENU rise toward the middle of the line and drop again at both ends](/assets/uploads/vectorcraft/text-tweaker-baseline.webp)
 
 | Option | What it does |
 |---|---|
@@ -238,6 +258,8 @@ Release Type on a Path, also part of the Type Tools plug-in, turns type on a pat
 | **Mode** | What the command makes: **Text and Path** makes both, **Path Only** keeps only the path, and **Text Only** keeps only the point type | Text and Path |
 | **Keep Original** | Leaves the type on a path in place and puts the released objects just above it | Off |
 | **Preview** | Shows the result on the canvas while the dialog is open | Off |
+
+![The Release Type on a Path dialog with Mode set to Text and Path, Keep Original off and Preview on, over a lantern festival poster. Above the dialog, the title LANTERN FESTIVAL ON THE RIVER sits on one straight line, and the arc it was set on shows as a separate path](/assets/uploads/vectorcraft/release-type-on-path.webp)
 
 ## Other type commands
 

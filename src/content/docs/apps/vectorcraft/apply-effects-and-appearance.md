@@ -32,7 +32,11 @@ The buttons at the bottom of the panel act on the selected object or row:
 | **Duplicate Selected Item** | Copies the selected fill or stroke row with its effects, or the selected effect row |
 | **Delete Selected Item** | Removes the selected fill, stroke or effect row |
 
+![The Appearance panel for the selected FERRY sign, with the Add New Effect menu open below its buttons. Stylize is highlighted in the list of effect groups, and its submenu lists Round Corners, Scribble, Drop Shadow, Inner Glow, Outer Glow, Feather and Glowing Edges, with Drop Shadow highlighted](/assets/uploads/vectorcraft/appearance-add-effect-menu.webp)
+
 The panel menu has **Reduce to Basic Appearance**, which keeps one fill and one stroke and removes every effect.
+
+![The Appearance panel menu open beside the selected FERRY sign, with Reduce to Basic Appearance highlighted. The menu also lists Add New Fill, Add New Stroke, Duplicate Item, Remove Item, Clear Appearance, New Art Has Basic Appearance (checked), Hide Thumbnail, Redefine Graphic Style, Show All Hidden Attributes and Float Panel](/assets/uploads/vectorcraft/appearance-panel-menu.webp)
 
 :::tip
 Ctrl-click (Cmd-click on macOS) or Shift-click rows to select several fills and strokes, then click **Duplicate Selected Item** or **Delete Selected Item** once for all of them.
@@ -47,13 +51,19 @@ Effects in VectorCraft stay live. The object keeps its original path, and Vector
 3. Change the settings in the dialog. **Preview** is on when the dialog opens, so the canvas shows the result while you change the values.
 4. Press **OK**.
 
+![A teal FERRY sign selected over a lighthouse harbor at dusk, with a drop shadow previewed below and to the right of it. The Drop Shadow dialog shows Multiply mode, opacity 75, X and Y 14 px, blur 10 px, the color #000000 and Preview turned on](/assets/uploads/vectorcraft/drop-shadow-dialog.webp)
+
 To change an effect later, select the object and double-click the effect's row in the Appearance panel, or click its name. The dialog opens with the current values.
 
 To apply an effect to one fill or stroke only, click that row in the Appearance panel first, then choose the effect. Without a selected row, the effect applies to the whole object.
 
+![A sun badge in the harbor sky whose wide amber stroke is cut into zigzag rays. In the Appearance panel, the 34 pt amber stroke row is selected and expanded with Zig Zag listed under it, between the thin dark stroke above and the fill below](/assets/uploads/vectorcraft/effect-on-stroke.webp)
+
 :::note
 If you choose an effect that the object already has, VectorCraft asks whether to edit the applied effect or add another one. **Edit** opens the existing effect; **Add New** applies a second copy.
 :::
+
+![The prompt "Drop Shadow is already applied" with the buttons Add New, Cancel and Edit, over the selected FERRY sign](/assets/uploads/vectorcraft/effect-already-applied.webp)
 
 The following image shows the same star with six different live effects. Each star still has its original five-point path.
 
@@ -70,6 +80,8 @@ The top of the Effect menu has three commands:
 Under the **Vector Effects** heading, the menu lists 3D and Materials, Color Adjustments, Color Effects, Convert to Shape, Crop Marks, Distort & Transform, Path, Path Effects, Pathfinder, Rasterize…, Stylize, SVG Filters and Warp. Under the **Raster Effects** heading, it lists the Effect Gallery… and pixel-based groups such as Artistic, Blur and Sketch.
 
 The **Stylize** group under Vector Effects holds **Round Corners…**, **Scribble…**, **Drop Shadow…**, **Inner Glow…**, **Outer Glow…** and **Feather…**.
+
+![The Effect menu open over a harbor scene with a teal FERRY sign selected. Under Vector Effects, Stylize is highlighted and its submenu lists Round Corners, Scribble, Drop Shadow, Inner Glow, Outer Glow and Feather, with Drop Shadow highlighted](/assets/uploads/vectorcraft/effect-menu.webp)
 
 ### Vector effects at a glance
 
@@ -110,6 +122,8 @@ When you add one of these effects, its dialog opens with these values. After you
 :::note
 When you export a PDF or expand the appearance, VectorCraft draws Drop Shadow, Outer Glow, Feather and Gaussian Blur as images. **Effect → Document Raster Effects Settings…** sets the resolution they use: Screen (72 ppi), Medium (150 ppi), High (300 ppi), or Other for any value from 1 to 2400 ppi.
 :::
+
+![The Document Raster Effects Settings dialog with the Resolution list open on Screen (72 ppi), Medium (150 ppi), High (300 ppi) and Other. Below it are Color Model, Background, Anti-alias, Create Clipping Mask, Add 0 px Around Object and Preserve Spot Colors](/assets/uploads/vectorcraft/raster-effects-settings.webp)
 
 ## Apply raster effects with the Effect Gallery
 
@@ -172,6 +186,8 @@ The other three commands work on the object's own outline:
 - **Inflate…** rounds the shape outward, so its edges curve like the edges of a cushion.
 - **Rotate…** turns the flat art in 3D without adding depth. Every fill and stroke keeps its paint.
 
+![A lavender cloud over the harbor, rounded into a puffy 3D shape with rotation rings drawn over it. The Inflate dialog shows its Object tab with Depth 0.0 px, Twist 0.0°, Taper 100.0%, Cap Solid, Volume 50.0% and Both sides turned off](/assets/uploads/vectorcraft/inflate.webp)
+
 To extrude an object:
 
 1. Select the object, for example a line of type.
@@ -219,6 +235,8 @@ Extrude & Bevel and Inflate have three tabs: **Object**, **Rotation** and **Ligh
 - Raster effects such as shadows, glows and blurs become embedded images.
 - Hidden fills, strokes and effects are dropped.
 
+![The FERRY sign after Expand Appearance, with its yellow outer stroke and its dark shadow now separate objects. The selection box is larger than the sign because it includes the margin around the shadow image. The Layers panel shows the Sign layer holding a selected group of three paths and a Raster effect image](/assets/uploads/vectorcraft/expand-appearance.webp)
+
 :::caution
 After Expand Appearance, the effects are no longer live and you cannot change their settings in the Appearance panel. Keep a copy of the object, for example on a hidden layer, if you may need to edit the effects later.
 :::
@@ -238,6 +256,8 @@ The following image shows a style saved from one rectangle and applied to the ot
 ![Three teal buttons labeled Tickets, Map and Food under the heading Harbor Night Market, sharing the same strokes and shadow. The Food button is selected, and the Graphic Styles panel shows the new style as its last, highlighted thumbnail](/assets/uploads/vectorcraft/graphic-styles.webp)
 
 **Window → Graphic Style Libraries** opens the bundled sets of styles. The panel menu also has **Open Graphic Style Library** and **Save Graphic Style Library…**.
+
+![The Shadows and Glows library open below the Graphic Styles panel, beside the selected FERRY sign. It lists Soft Shadow, Hard Shadow, Lifted Card, Halo, Neon Tube, Inner Light, Ember, Feathered and Haze](/assets/uploads/vectorcraft/graphic-style-library.webp)
 
 :::tip
 If you click a style while nothing is selected, VectorCraft uses that style for the next object you draw.

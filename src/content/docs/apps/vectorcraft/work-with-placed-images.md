@@ -33,6 +33,8 @@ The panel menu, opened from the menu button at the top right of the panel, also 
 - **Sort by Name**, **Sort by Kind** and **Sort by Status** sort it. With no sort chosen, the list follows the stacking order, top first.
 - **No Thumbnails**, **Small Thumbnails**, **Medium Thumbnails** and **Large Thumbnails** set the thumbnail size. Medium is the default.
 
+![The dusk-bay-postcard document with the lantern-street.png image selected and the Links panel menu open. The menu lists Relink…, Relink to Folder…, Find in Folder…, Go To Link, Update Link, Edit Original, Embed Image(s), Unembed…, Placement Options… and Show in Folder, then the Select, Show, Sort and thumbnail options, with Show All, Medium Thumbnails and Show Link Info checked](/assets/uploads/vectorcraft/links-panel-menu.webp)
+
 ## Relink, update and embed images
 
 Select one or more rows in the Links panel, then choose a command from the panel menu. Relink…, Go To Link, Update Link, Edit Original and Break Link are also buttons at the bottom of the panel.
@@ -60,7 +62,11 @@ Each relink, update, embed and unembed is one undo step.
 | **Alignment** | Where the new art sits inside the old bounds. It does not apply to Bounds. |
 | **Clip to Bounding Box** | Clips a larger file to the old bounds. |
 
+![The Placement Options dialog over the dusk-bay-postcard document, with Preserve set to Bounds (Fit Proportionally), the center alignment point chosen and Clip to Bounding Box off. The selected lantern-street.png image shows its Linked File section in the Properties panel](/assets/uploads/vectorcraft/placement-options.webp)
+
 When one image is selected, the Properties panel and the Control bar show a **Linked File** or **Embedded Image** section. It has **Embed** and **Edit Original** for a linked image, or **Unembed…** for an embedded one, and **Replace…**, which swaps in another file that keeps its own aspect ratio inside the old bounds. On the Control bar, click the file name for **Replace…**, **Go To Link**, **Edit Original**, **Update Link** and **Placement Options…**.
+
+![The dusk-bay-postcard document with the lantern-street.png image selected. The Properties panel shows the Linked File section with the file name, RGB, PPI 154.3, and the Embed, Edit Original, Replace… and Links buttons](/assets/uploads/vectorcraft/linked-file-properties.webp)
 
 ## Fix missing links when a document opens
 
@@ -74,7 +80,11 @@ VectorCraft looks for each linked file at the path saved in the document, then a
    - **Cancel** closes the dialog and leaves this file and the other missing files linked as they are. Their images keep showing the saved preview.
 3. When more files are missing, the dialog shows **Apply to All**. With it on, **Replace…** looks for the other missing files by name in the folder of the file you picked, and **Ignore** ignores all of them. VectorCraft asks again about any file it does not find.
 
+![The Linked File Not Found dialog over the dusk-bay-postcard document, naming lantern-street.png and the path where VectorCraft looked for it, with Find in Folder…, Ignore, Cancel and Replace…. The lantern-street.png row in the Links panel has a red missing badge](/assets/uploads/vectorcraft/linked-file-not-found.webp)
+
 In **Find Linked Files**, each missing file lists the files found with its name, best match first. A match marked **Same file** has the size and contents saved with the link, and **Same size** has the size only. Choose a match for each file, or **Don't Relink**, and press **Relink**. VectorCraft chooses a match for you only when it finds a single file with that name, or a single match marked **Same file**. Press **Stop** to end a long search. When you open **Find Linked Files** from **Linked File Not Found**, VectorCraft asks again in **Linked File Not Found** about each file you leave at **Don't Relink** and each file that fails to relink. For a saved document, turn on **Copy into the document's folder** to copy each image's file next to the document before relinking. VectorCraft never replaces a file that is already there.
+
+![The Find Linked Files dialog for lantern-street.png. It lists two files with that name, the one in the archive folder marked Same file and chosen, then the one in the drafts folder, then Don't Relink. Below the list, the dialog reports 5 folders and 5 files searched, and Copy into the document's folder is off](/assets/uploads/vectorcraft/find-linked-files.webp)
 
 After the missing files, VectorCraft offers to update the linked files that changed since the document was saved. **Update Links** in **Edit → Preferences… → File Handling** on Windows and Linux, and in **VectorCraft → Settings → File Handling…** on macOS, sets what happens to a changed file:
 
@@ -86,12 +96,16 @@ After the missing files, VectorCraft offers to update the linked files that chan
 
 The same setting applies to files that another app changes while the document is open.
 
+![The File Handling page of Preferences over the dusk-bay-postcard document, with Update Links set to Ask When Modified under Files](/assets/uploads/vectorcraft/update-links-preference.webp)
+
 ## Edit an image in its own app
 
 1. Select a linked image.
 2. Choose **Edit → Edit Original**, or click **Edit Original** in the Links panel, the Properties panel or the Control bar.
 3. Edit and save the file in the app that opens.
 4. Return to VectorCraft. The Links panel marks the image as modified. VectorCraft then updates the image, asks you first, or waits for **Update Link**, as **Update Links** in Preferences is set.
+
+![The dusk-bay-postcard document with the hill-view.png image selected and an amber modified badge on its row in the Links panel. The Update Modified Links dialog says that 1 linked image changed on disk and asks whether to show the new version, with Cancel and OK](/assets/uploads/vectorcraft/update-modified-links.webp)
 
 Edit Original opens the file in the app your system uses for its file type. It opens only image and document files in formats VectorCraft reads. A placed VectorCraft document opens in a new tab in VectorCraft instead, and saving it there updates the placed copy. An embedded image has no file to open, and a missing file must be relinked first.
 
@@ -124,6 +138,8 @@ The dialog starts from the document's raster effects settings, which you set in 
 | **Color Model** | RGB (CMYK in a CMYK document), Grayscale or Bitmap |
 | **Ppi** | The resolution, from 1 to 2400 ppi; a new document starts at 72 |
 
+![The Rasterize dialog over the dusk-bay-postcard document, with the title Greetings from Dusk Bay selected. Add Around is 0, Anti Alias is type, Background is transparent, Clipping Mask is off, Color Model is RGB and Ppi is 300](/assets/uploads/vectorcraft/rasterize-dialog.webp)
+
 ## Turn an image into tiles or dots
 
 **Object → Create Object Mosaic…** turns an image into a grid of colored rectangles.
@@ -143,6 +159,8 @@ Each tile takes the average color of its part of the image. The tiles come in a 
 
 ![The Create Object Mosaic dialog over the hill-view image, with Columns 40, Rows 30, Spacing X 1 and Spacing Y 1, and Gray and Delete Raster off](/assets/uploads/vectorcraft/object-mosaic.webp)
 
+![The dusk-bay-postcard document at 180% after Create Object Mosaic with the settings above. Square tiles redraw the sun, hills and houses of the hill view in blocks over the hill-view.png image, which stays selected under them. The Layers panel shows the Object Mosaic group above hill-view.png in the Photos layer, and the Links panel still lists hill-view.png](/assets/uploads/vectorcraft/object-mosaic-result.webp)
+
 **Object → Vector Halftone…** redraws the selected objects (vectors, type or images) as vector dots sized by their tone. The canvas previews the result while the dialog is open.
 
 | Option | What it sets | Default |
@@ -158,6 +176,8 @@ Each tile takes the average color of its part of the image. The tiles come in a 
 | **Preview** | Turns the live preview on the canvas on or off | On |
 
 The result is one group with one path for each screen, made in one undo step.
+
+![The Vector Halftone dialog beside the hill-view-halftone document, with Shape Circle, Frequency 10 lpi, Angle 45°, Screens CMYK, Clip to Art and Preview on, and Invert and Keep Original off. The canvas previews the hill view on an off-white card as cyan, magenta, yellow and black dots that show the sun, hills and houses, and the Properties panel shows the previewed dots as a Group](/assets/uploads/vectorcraft/vector-halftone.webp)
 
 To trace an image into editable paths instead, select it and click **Image Trace** on the Control bar or in the Properties panel. [Trace an image](/apps/vectorcraft/trace-an-image/) covers the presets and options.
 

@@ -25,6 +25,8 @@ The box searches every command and tool, shows up to 14 matches, and shows each 
 4. Click the shortcut next to an entry, then press the new keys. Press Esc to cancel.
 5. Click **OK** to keep the changes, or **Cancel** to discard them.
 
+![The Keyboard Shortcuts dialog over a night market scene. The Tools tab is filtered by "selection", the Set list shows Custom, and Group Selection Tool is selected with its new shortcut, Shift+A.](/assets/uploads/vectorcraft/keyboard-shortcuts-custom.webp)
+
 When you change a shortcut, the **Set:** list shows **Custom**. The dialog also has these buttons:
 
 | Button | What it does |
@@ -53,6 +55,8 @@ An action is a list of recorded steps. Each step is a VectorCraft command with t
 5. Click **Stop Playing/Recording**.
 6. To play the action, select it in the panel and click **Play Current Selection**.
 
+![The New Action dialog over a night market scene with one lantern selected. The Name is Lantern Glow, the Action Set is Studio, the Function Key is F5 with Shift selected, and the Color is Yellow. The Actions panel on the right shows the Studio set below Default Actions.](/assets/uploads/vectorcraft/action-new-action-dialog.webp)
+
 ![The Actions panel beside the badge, with a set named Studio holding an action named Badge, expanded to show its three recorded steps, shape.ellipse, paint.setFill and paint.setStroke, each with its check box selected](/assets/uploads/vectorcraft/actions-panel.webp)
 
 Expand an action to see its steps. Each step has a check box: clear it to leave that step out when the action plays, and select it again to include it.
@@ -62,6 +66,8 @@ In **New Action** and **Action Options…**, the **Function Key:** list assigns 
 :::tip
 With the default **Accelerated** speed, the whole action plays as one step in the undo history, so one Undo reverses it. **Playback Options…** also offers **Step by Step** and **Pause For**, which play one step at a time and record each step as its own undo step.
 :::
+
+![The Actions panel menu open beside a strip of the night market scene, listing New Action, New Set, Duplicate, Delete, Set Options, Batch, Play Current Selection, Action Options, Playback Options, Save Actions, Load Actions and Float Panel](/assets/uploads/vectorcraft/actions-panel-menu.webp)
 
 The panel menu holds these commands:
 
@@ -127,6 +133,8 @@ To change an action, select it and choose **Action Options…**:
 | **Function Key:** | **None**, or a key from F1 to F15 that plays the action, with **Ctrl** (**Cmd** on macOS) and **Shift** check boxes. The action's key takes priority over a command shortcut on the same keys. |
 | **Color:** | **None**, **Red**, **Yellow**, **Green**, **Blue** or **Violet**. VectorCraft saves the color with the action, and the Actions panel does not display it. |
 
+![The Action Options dialog for the Lantern Glow action over the night market's lanterns, with the Name Lantern Glow, the Function Key F5 with Shift selected, and the Color Yellow](/assets/uploads/vectorcraft/action-options-dialog.webp)
+
 To set how fast actions play, choose **Playback Options…** from the panel menu, choose a speed and click **OK**:
 
 | Speed | What happens |
@@ -134,6 +142,8 @@ To set how fast actions play, choose **Playback Options…** from the panel menu
 | **Accelerated** | The default. Every included step runs at once, as one step in the undo history. |
 | **Step by Step** | One step runs at a time, and the window is redrawn after each step. Each step is its own undo step. |
 | **Pause For** | VectorCraft waits the number of seconds you enter, from 1 to 60, between steps. Each step is its own undo step. The field starts at 1. |
+
+![The Playback Options dialog over the night market's lanterns, with Pause For selected and 3 seconds entered](/assets/uploads/vectorcraft/action-playback-options.webp)
 
 VectorCraft saves the playback speed with its preferences, and the speed stays set after a restart. An action that is already playing keeps the speed it started with, and while an action plays step by step or with pauses, VectorCraft does not start another one.
 
@@ -144,6 +154,8 @@ VectorCraft saves the playback speed with its preferences, and the speed stays s
 1. Choose **File → Scripts → Check Script…**.
 2. Choose a `.jsx`, `.jsxinc` or `.jsxbin` file. Opening one of these files with **File → Open…** shows the same report.
 3. Read the report, then click **Copy Report** to copy it to the clipboard as JSON, or **Close**.
+
+![The Check Script report for lantern-labels.jsx. It lists what the script needs, then the Outside the document section with "Writes, moves or deletes files" on lines 19 and 20, the Menu commands section with group and selectall, and the Document model section, above the Copy Report and Close buttons.](/assets/uploads/vectorcraft/check-script-report.webp)
 
 The report lists what the script needs, then these sections. A section appears only when the script has something to list in it.
 

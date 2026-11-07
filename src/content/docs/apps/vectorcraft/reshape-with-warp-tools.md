@@ -30,6 +30,8 @@ The Warp tool and six more tools share a slot with the Width tool in the Tools p
 | **Crystallize** | Pushes the outline out into sharp spikes |
 | **Wrinkle** | Roughens the outline with small random folds |
 
+![The Width tool's slot open beside the Tools panel, listing the Width Tool (Shift+W), Warp Tool (Shift+R), Twirl Tool, Pucker Tool, Bloat Tool, Scallop Tool, Crystallize Tool and Wrinkle Tool, with the Twirl Tool marked as the current tool. Behind it, the worked suns labeled Twirl, Pucker, Bloat and Crystallize glow on a night sky](/assets/uploads/vectorcraft/warp-tools-slot.webp)
+
 Twirl, Pucker and Bloat keep changing the paths while you hold the brush still.
 
 ![Five coral suns with amber rays on a night sky over violet and teal hills, labeled Warp, Twirl, Pucker, Bloat and Crystallize, each with its result. The Twirl tool is part way through a stroke on the second sun, whose rays curl into a spiral inside the gray brush outline, and the status bar shows the Twirl tool's hints](/assets/uploads/vectorcraft/warp-tools.webp)
@@ -39,6 +41,8 @@ Twirl, Pucker and Bloat keep changing the paths while you hold the brush still.
 To resize the brush on the canvas, hold **Alt** (**Option** on macOS) and drag with the tool. The edge of the brush follows the pointer. Hold Shift as well to keep the brush's proportions. Press Esc before you release to put the size back.
 
 For exact values, double-click the tool in the Tools panel to open its options, for example **Twirl Tool Options**. The **Global Brush Dimensions** are shared by all seven tools, so a brush size that you set for one tool applies to the others too. The options stay as you set them when you switch tools or restart VectorCraft.
+
+![The Twirl Tool Options dialog over the worked suns labeled Warp, Twirl and Crystallize. Width and Height are 320 px, Angle is 0°, Intensity is 80% and Use Pressure Pen is off. Twirl Rate is 40°, Detail is 4, Simplify is on at 50, and Show Brush Size is on](/assets/uploads/vectorcraft/warp-tool-options.webp)
 
 | Option | Default | What it does |
 |---|---|---|
@@ -54,12 +58,16 @@ For exact values, double-click the tool in the Tools panel to open its options, 
 | **Brush Affects** | All on | Which parts of the path the tool moves: **Anchor Points**, **In Tangent Handles** and **Out Tangent Handles**. Scallop, Crystallize and Wrinkle only |
 | **Show Brush Size** | On | Shows the outline of the brush around the pointer |
 
+![The Wrinkle Tool Options dialog over the worked suns labeled Warp, Twirl and Crystallize. Width and Height are 200 px, Angle is 0°, Intensity is 50% and Use Pressure Pen is off. Horizontal is 0%, Vertical is 100%, Complexity is 1, Detail is 2, Anchor Points, In Tangent Handles and Out Tangent Handles are all on under Brush Affects, and Show Brush Size is on](/assets/uploads/vectorcraft/warp-tool-wrinkle-options.webp)
+
 ## Push and twist shapes
 
 1. Select the paths to change. With nothing selected, the tool changes every visible, unlocked path that the brush touches.
 2. Press Shift+R to choose the Warp tool, or choose another tool from the Width tool's slot in the Tools panel.
 3. Drag over the outline of a path. For Twirl, Pucker and Bloat, you can also click and hold.
 4. Release the mouse button.
+
+![A selected teal wave under a violet to coral dusk sky, with the Warp tool part way through a drag. The gray brush outline sits at the crest, which the stroke has pushed up into a peak that leans over to the right, and the status bar shows the Warp tool's hints](/assets/uploads/vectorcraft/warp-tool-push.webp)
 
 Each stroke is one step that **Ctrl+Z** (**Cmd+Z** on macOS) undoes. To cancel a stroke while you drag, press Esc.
 
@@ -73,6 +81,8 @@ The Reshape tool moves one point of a path, and the nearby part of the path foll
 2. Choose the Reshape tool. It shares a slot with the Scale tool in the Tools panel.
 3. Point to the place on the path that you want to move, and drag. VectorCraft adds an anchor point there unless one is already under the pointer.
 4. Release the mouse button.
+
+![Dusk mountains with a selected teal ridge in front of them and the Reshape tool part way through a drag. The middle hump of the ridge rises into a rounded peak, the anchor points farther along the ridge rise less, the ends of the ridge stay in place, and a readout next to the pointer shows dX 0 px and dY -200 px](/assets/uploads/vectorcraft/reshape-tool.webp)
 
 Anchor points close to the one you drag move almost as far, and points farther along the path move less. By default, the effect reaches along half the size of the path. Hold Shift to keep the drag at 45° steps, and press Esc before you release to cancel it. The Reshape tool works only on paths that are selected.
 
@@ -100,6 +110,8 @@ To see the Puppet Warp settings, choose **Window → Control**. The Control bar 
 | **Show Mesh** | Shows or hides the mesh. It is on by default |
 | **Select All Pins** | Selects every pin |
 
+![The heron with its neck bent by Puppet Warp, still selected with the Puppet Warp tool, and the Control bar across the top of the window showing Group, Expand at 3 px, Show Mesh on and the Select All Pins button. The mesh covers the heron, with pins on its head, body and tail, and the status bar shows the Puppet Warp tool's hints](/assets/uploads/vectorcraft/puppet-warp-control-bar.webp)
+
 ## Distort with an envelope
 
 An envelope is a shape that holds artwork and bends it to fit. The artwork stays editable inside the envelope, and it can include type. Envelope Distort has three ways to make an envelope.
@@ -126,7 +138,12 @@ To bend artwork with a grid that you shape yourself:
 2. Choose **Object → Envelope Distort → Make with Mesh…** (**Ctrl+Alt+M**, or **Cmd+Option+M** on macOS).
 3. In **Envelope Mesh**, set **Rows** and **Columns**, from 1 to 50 each. The default is 4 by 4.
 4. Click **OK**.
+
+   ![The Envelope Mesh dialog with Rows and Columns at 4 and Preview on. Beside it, the selected NIGHT MARKET banner shows the 4 by 4 mesh over dusk sky](/assets/uploads/vectorcraft/envelope-mesh-dialog.webp)
+
 5. With the Direct Selection tool, drag the points of the mesh and their handles to bend the art. To add lines to the mesh, click inside it with the Mesh tool.
+
+![The NIGHT MARKET banner in a 4 by 4 mesh envelope, selected with the Direct Selection tool over dusk rooftops. Mesh points arch the top and bottom edges, one point on the bottom edge is being dragged down with its handles showing, and a readout shows dX 15 px and dY 55 px. The status bar shows the Direct Selection tool's hints](/assets/uploads/vectorcraft/envelope-mesh-edit.webp)
 
 To fit artwork into the shape of a path:
 
@@ -134,9 +151,13 @@ To fit artwork into the shape of a path:
 2. Select the path and the artwork.
 3. Choose **Object → Envelope Distort → Make with Top Object** (**Ctrl+Alt+C**, or **Cmd+Option+C** on macOS). The front object must be a path or a compound path. It becomes the envelope, and the other selected objects are bent to fit inside it.
 
+![A koi pond at dusk with two copies of a panel of amber, coral, yellow and magenta stripes. On the left, a white koi outline lies in front of the panel. On the right, the panel has been made into a top object envelope: it is bent into the koi shape and selected](/assets/uploads/vectorcraft/envelope-top-object.webp)
+
 ## Edit, reset or remove an envelope
 
 Select the envelope with the Selection tool, then choose a command from **Object → Envelope Distort**. While an envelope is selected, **Reset with Warp…** and **Reset with Mesh…** take the place of the two Make commands in the menu, and their shortcuts open the Reset dialogs.
+
+![The Object menu open at Envelope Distort while a warp envelope is selected. The submenu lists Reset with Warp…, Reset with Mesh…, a dimmed Make with Top Object, Release, Envelope Options…, Expand and Edit Contents, next to the arched NIGHT MARKET banner](/assets/uploads/vectorcraft/envelope-distort-menu.webp)
 
 | Command | What it does |
 |---|---|
@@ -147,7 +168,11 @@ Select the envelope with the Selection tool, then choose a command from **Object
 | **Release** | Takes the artwork out of the envelope without the distortion, and keeps the envelope's shape as a separate object: a gray gradient mesh for a warp or mesh envelope, or the path for a top object envelope. The artwork keeps the envelope's opacity, blend mode and opacity mask |
 | **Expand** | Replaces the envelope with a group of the bent artwork as ordinary paths. Type becomes outlines |
 
+![The Reset Envelope Mesh dialog with Rows and Columns at 4, Maintain Envelope Shape on and Preview on. Beside it, the arched NIGHT MARKET banner shows the new mesh following the arc of the warp envelope](/assets/uploads/vectorcraft/envelope-reset-mesh.webp)
+
 **Envelope Options…** applies to the selected envelopes. With no envelope selected, it sets the options of the envelopes you make next.
+
+![The Envelope Options dialog with Anti-Alias on, Preserve Shape Using set to Clipping Mask, Fidelity at 50, Distort Appearance on, Distort Linear Gradients and Distort Pattern Fills off, and Preview on. Beside it, the NIGHT MARKET banner arches inside a selected warp envelope](/assets/uploads/vectorcraft/envelope-options.webp)
 
 | Option | Default | What it does |
 |---|---|---|
@@ -159,6 +184,8 @@ Select the envelope with the Selection tool, then choose a command from **Object
 | **Distort Pattern Fills** | Off | Bends pattern fills with the art. Available only with Distort Appearance |
 
 When the Control bar is shown (**Window → Control**) and an envelope is selected, it has buttons for **Edit Envelope** and **Edit Contents**, the warp's **Style**, **Horizontal** or **Vertical**, **Bend**, **H** and **V**, or the mesh's **Rows** and **Columns**. **Reset** flattens the warp or the mesh, and the last button opens **Envelope Options**.
+
+![The Control bar across the top of the window for a selected warp envelope, showing the Envelope label, the Edit Envelope and Edit Contents buttons, Style set to Arc, Horizontal selected, Bend at 40%, H and V at 0%, and the Reset and Envelope Options buttons. Below it, the NIGHT MARKET banner arches over dusk rooftops and a coral sun](/assets/uploads/vectorcraft/envelope-control-bar.webp)
 
 :::caution
 After **Expand**, the artwork no longer follows an envelope. To change the bend afterward, undo the expand or start again from a copy made before it.

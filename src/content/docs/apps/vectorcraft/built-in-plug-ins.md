@@ -26,6 +26,8 @@ Choose **Object → Plug-ins**. Each built-in plug-in has its own submenu:
 | **Smart Pen** | The Smart Pen tool and its panel | [Cut, join and refine paths](/apps/vectorcraft/cut-join-and-refine-paths/#draw-with-the-smart-pen) |
 | **Type Tools** | Text Tweaker… and Release Type on a Path… | [Work with styles and long text](/apps/vectorcraft/work-with-styles-and-long-text/#tweak-single-letters-with-text-tweaker) |
 
+![The Object menu open on Plug-ins, which lists the twelve plug-in submenus from 3D Box to Type Tools above No filter plug-ins installed. The Arrange Tools submenu is open beside it, over a night-blue sheet of selected badges](/assets/uploads/vectorcraft/plugins-menu.webp)
+
 The plug-in tools (3D Box, Contour, Enclosing Lasso, Smart Pen and the Path Precision Tools) are not in the Tools panel at first, and none of them has a keyboard shortcut. Choose a tool from its submenu, or add it to the Tools panel from the All Tools drawer, as [Add the path plug-in tools to the Tools panel](/apps/vectorcraft/cut-join-and-refine-paths/#add-the-path-plug-in-tools-to-the-tools-panel) describes. To give a tool or command a shortcut, use **Edit → Keyboard Shortcuts…**.
 
 Below the built-in submenus, **Object → Plug-ins** lists the filter plug-ins you have installed, or **No filter plug-ins installed** when there are none, then two commands:
@@ -90,6 +92,8 @@ In **Replace with Top Object…**, **Set Size of Each…** and **Sort Objects…
 | **Minimum:** and **Maximum:** | Set the range the opacities are picked from, from 0% to 100%. By default the range is 30% to 100%. **OK** is unavailable while **Minimum:** is above **Maximum:** |
 | **Seed:** | Sets the starting number of the random picks, from 0 to 999,999. The same seed gives the same result. The dialog shows a new seed after each change to the document, so running the command again gives a different result |
 
+![The Randomize Opacity dialog with Minimum: 30%, Maximum: 100%, Seed: 425 and Preview selected. Behind it, the selected badges on a night-blue sheet show different opacities, some faded and some solid](/assets/uploads/vectorcraft/randomize-opacity-dialog.webp)
+
 **Sort Objects…** sorts the objects by one attribute and gives them the values of another in that order. The first object in the order gets the smallest value. It has these options:
 
 | Option | What it does |
@@ -101,6 +105,8 @@ In **Replace with Top Object…**, **Set Size of Each…** and **Sort Objects…
 | **Scale Strokes & Effects** | Scales the stroke widths and effects with the objects. It is available only when **Apply To:** is **Width**, **Height** or **Area** |
 
 The dialog opens with **Apply To:** set to **Stacking Order**, so **Distribute Evenly** and **Scale Strokes & Effects** are both dimmed at first.
+
+![The Sort Objects dialog with Sort By: Area, Apply To: Y Position, Order: Small to Large, and Distribute Evenly and Preview selected. Behind it, the badges on a night-blue sheet are previewed with the smallest near the top and the largest near the bottom](/assets/uploads/vectorcraft/sort-objects-dialog.webp)
 
 ## Check and clean up a document
 
@@ -163,6 +169,8 @@ In the panel, Shift-click **Lines** to break type into paragraphs, and **Alt**-c
 
 In the Color Effects panel, choose an **Adjustment** (**Brightness/Contrast**, **Hue/Saturation**, **Levels**, **Temperature/Tint**, **Exposure**, **Desaturate** or **Invert Colors**) and set its values. Then click **Add as Effect** to add it as a live effect that you can edit later, or **Apply as Filter** to change the colors themselves. **Reset** returns the values to where they started. The **Inks** section opens **Duotone…** and **Print Ink Fixes…**.
 
+![The Color Effects panel docked at the top right with Adjustment set to Hue/Saturation, Hue at -35 and Saturation at 25, above the Add as Effect, Apply as Filter and Reset buttons. On the canvas, the selected sky behind a corner café and a violet skyline has turned from violet to deep blue, and the Properties panel lists the Hue/Saturation effect](/assets/uploads/vectorcraft/color-effects-panel.webp)
+
 ### Print Ink Fixes
 
 **Print Ink Fixes…** works only in a CMYK document. In an RGB document it does not run and reports an error; choose **File → Document Color Mode → CMYK Color** first. It changes the selection, or the whole document when nothing is selected. The dialog has these options:
@@ -176,9 +184,13 @@ In the Color Effects panel, choose an **Adjustment** (**Brightness/Contrast**, *
 | **Text Only** | Sets black overprint on type only. It is off by default |
 | **Fill** and **Stroke** | Choose whether the fixes change fills, strokes or both. Both are on by default |
 
+![The Print Ink Fixes dialog over a CMYK document of a corner café at dusk, with Ink Limit: 300 and Overprint Black: 100, and Exclude Pure Black, Remove White Overprint, Fill and Stroke selected. Text Only is cleared](/assets/uploads/vectorcraft/print-ink-fixes-dialog.webp)
+
 ### Find Nearest Swatch
 
 Select the objects first. In the **Find Nearest Swatch** dialog, choose a **Library:** (**Document Swatches** by default, or a color library or color book) and select **Fill**, **Stroke** or both (both by default). The dialog lists each color of the selection with its three closest swatches, closest first, and the ΔE difference of each. Click **Apply** to give each color its nearest swatch, as one undo step. A color that takes a global or spot swatch is linked to it, and a swatch from a library is added to the document's swatches first.
+
+![The Find Nearest Swatch dialog with Library: Document Swatches and both Fill and Stroke selected. It lists each selected color with its closest swatches, such as R=59 G=130 B=246 with Bright Blue at ΔE 2.9, over a corner café where the lit shop front, a bench, a bush and the blue curb are selected](/assets/uploads/vectorcraft/find-nearest-swatch-dialog.webp)
 
 ### Create Swatch Legend
 
@@ -194,12 +206,16 @@ The **Create Swatch Legend** dialog previews the legend on the canvas and has th
 
 Each chip is filled with its swatch and labeled inside with the swatch's name and values, in black on light chips and white on dark ones. The legend starts at the top-left corner of the first artboard, inset by the gap, and is selected when you click **OK**.
 
+![The Create Swatch Legend dialog with Columns: 4, Size: 110 pt, Gap: 12 pt and Preview selected. At the top left of the artboard, the preview shows twelve chips of a dusk palette, from Night Ink to Mist Lavender, each labeled with its name and RGB values, and the Swatches panel at the right holds the same colors](/assets/uploads/vectorcraft/swatch-legend-preview.webp)
+
 ## Make compound shapes
 
 A compound shape shows the combined area of its members, and you can still edit each member.
 
 1. Select two or more objects.
 2. Choose **Object → Plug-ins → Compound Shapes → Make Compound Shape**.
+
+![A lavender cloud made of three circles and a rounded rectangle, joined into one compound shape over a dusk skyline. The outlines of its members show inside it, the Properties panel reads Compound Shape, and the Pathfinder panel is open above it](/assets/uploads/vectorcraft/compound-shape-cloud.webp)
 
 To get the members back as they were, choose **Release Compound Shape**. To turn the compound shape into one path or compound path, choose **Expand Compound Shape**.
 
@@ -218,6 +234,8 @@ To get the members back as they were, choose **Release Compound Shape**. To turn
 | **New Symbols from Layers** | Makes one symbol from each layer's art, named after the layer. When two or more layers are selected in the Layers panel, only those layers are used. Empty layers are skipped |
 | **Convert Layers to Symbols** | Does the same and replaces each layer's art with an instance of its symbol. Locked layers are skipped |
 
+![The Document Tools submenu of Object → Plug-ins, which lists Save a Timestamped Copy, Export All Open Documents as PDF, Export All Open Documents as SVG, Batch Trace Folder, New Symbols from Layers and Convert Layers to Symbols. Several documents are open in tabs behind the menu](/assets/uploads/vectorcraft/document-tools-menu.webp)
+
 The status bar reports how many files were written or traced. After an export, it also names the first document that could not be written. For tracing one image with your own settings, see [Trace an image](/apps/vectorcraft/trace-an-image/).
 
 ## Draw boxes with the 3D Box tool
@@ -226,6 +244,8 @@ The status bar reports how many files were written or traced. After an export, i
 2. Drag on the canvas to draw the box. Hold Shift to draw it with equal width and height. Click without dragging to draw a box 100 pt wide and 100 pt high.
    - Hold Space while you drag to move the box.
 3. While you drag, press ↑ or ↓ to rotate the box 5° around its X axis, or ← or → to rotate it 5° around its Y axis. Press Esc to cancel.
+
+![The 3D Box tool drawing a teal crate on a quay at dusk, with W: 200.00 px and H: 180.00 px shown beside the pointer. Amber, coral and teal crates drawn with the tool stand to the left, and the Control bar shows X: 30°, Y: 30°, Angle: 0° and the Reset button](/assets/uploads/vectorcraft/3d-box-tool.webp)
 
 While the tool is active, the Control bar (**Window → Control**) shows its settings:
 

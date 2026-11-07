@@ -14,7 +14,11 @@ This page lists every setting in the Preferences dialog, page by page, with its 
 3. Change the settings. Fields that hold a length show it in the unit set on the **Units** page of the dialog, and they switch to a new unit as soon as you pick it there.
 4. Click **OK** to apply the changes, or **Cancel** to close the dialog without changing anything.
 
+![The Edit menu open over a harbor scene at dusk, with Preferences… highlighted at the bottom of the menu next to its shortcut Ctrl+K](/assets/uploads/vectorcraft/preferences-edit-menu.webp)
+
 The pages are General, Selection & Anchor Display, Type, Units, Guides & Grid, Smart Guides, Slices, Hyphenation, Plug-ins & Scratch Disks, User Interface, Performance, File Handling, Clipboard Handling, Appearance of Black and Devices.
+
+![The Preferences dialog open on the General page over a harbor illustration, with the page list on the left, Keyboard Increment 1 pt, Constrain Angle 0°, Corner Radius 12 pt and Paste Offset 10 pt, and Reset Preferences, Previous, Next, Cancel and OK along the bottom](/assets/uploads/vectorcraft/preferences-dialog-window.webp)
 
 Some settings depend on others or on the platform:
 
@@ -67,6 +71,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Transform** | Default | Default, Transform Object Only, Transform Pattern Only, Transform Both |
 | **Use Registration Point for Symbol** | Off | On or off |
 
+![The General page scrolled to its last options, with New Art Has Basic Appearance turned on under Appearance Panel, and Single Corner Radius on and Transform set to Default under Transform Panel](/assets/uploads/vectorcraft/preferences-general-panels.webp)
+
 - **Keyboard Increment** is the distance an arrow key moves the selection. With Shift, an arrow key moves it ten times as far. The arrow keys move along the axes that **Constrain Angle** sets.
 - **Constrain Angle** sets the angle that Shift-constrained drags start from. Shift limits a drag to 45° steps from that angle.
 - **Corner Radius** is the corner radius of the Rounded Rectangle tool.
@@ -103,6 +109,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Enable Rubber Band for: Pen Tool** | On | On or off |
 | **Enable Rubber Band for: Curvature Tool** | On | On or off |
 
+![The Selection & Anchor Display page with Tolerance 3 px, Snap to Point 2 px, the anchor Size slider at 3, Handles set to Solid and the corner widget angle at 177°](/assets/uploads/vectorcraft/preferences-selection-anchors.webp)
+
 - **Tolerance** is how close, in screen pixels, a click must be to a path or an anchor to select it.
 - While **Object Selection by Path Only** is on, a click inside a filled path does not select it. Only a click on the path does.
 - **Snap to Point** is how close, in screen pixels, an anchor or a guide must be to pull the pointer to it while **View → Snap to Point** is on.
@@ -137,6 +145,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Point Text** (under **Align to Glyph Bounds**) | Off | On or off |
 | **Area Text** (under **Align to Glyph Bounds**) | Off | On or off |
 
+![The Type page with Size/Leading 2 pt, Tracking 20 /1000 em and Baseline Shift 2 pt, both Language Options turned off, Font Preview Size set to Medium and Number of Recent Fonts set to 10](/assets/uploads/vectorcraft/preferences-type-page.webp)
+
 - **Size/Leading** and **Baseline Shift** are shown in the unit of the **Type** setting on the Units page.
 - **Size/Leading**, **Tracking** and **Baseline Shift** come first, with no heading. **Show East Asian Options** and **Show Indic Options** are under **Language Options**, and the settings from **Type Object Selection by Path Only** to **Additional Fonts Folder** are under **Options**.
 - While **Type Object Selection by Path Only** is on, you select type only on its type path: the baseline of point type, the frame of area type, or the path of type on a path.
@@ -157,6 +167,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Numbers Without Units Are Points** | On | On or off |
 | **Identify Objects By** | Object Name | Object Name, XML ID |
 
+![The Units page with General, Stroke, Type and East Asian Type all set to Points, Numbers Without Units Are Points dimmed, and Identify Objects By set to Object Name](/assets/uploads/vectorcraft/preferences-units-page.webp)
+
 - With a document open, **General** shows that document's units, and **OK** sets the document's units to the unit you choose.
 - **Stroke** sets the unit of stroke widths.
 - While **Numbers Without Units Are Points** is on, a number typed without a unit into a length field that uses picas is read as points.
@@ -175,6 +187,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Grids In Back** | On | On or off |
 | **Show Pixel Grid (Above 600% Zoom)** | On | On or off |
 | **Pattern Editing: Tile Edge Color** | #4f80ff | Any color |
+
+![The Guides & Grid page with the guide color #4affff, the grid color #c8c8c8, both styles set to Lines, Gridline every 72 pt, Subdivisions 8 and the tile edge color #4f80ff under Pattern Editing](/assets/uploads/vectorcraft/preferences-guides-grid-page.webp)
 
 - Each color setting has a color button, with the hex value beside it.
 - **Gridline every** and **Subdivisions** set the document grid. Open documents update when you click **OK**.
@@ -199,6 +213,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Snap to Tangent** | On | On or off |
 | **Snap to Perpendicular** | On | On or off |
 
+![The Smart Guides page with Smart Guides and every display option turned on, the guide color #ff3dfc, Angles set to 90° & 45° Angles and Snapping Tolerance 4 pt](/assets/uploads/vectorcraft/preferences-smart-guides-page.webp)
+
 - **Alignment Guides** shows the lines along the edges and centers that the artwork lines up with. While it is off, the artwork still snaps into line.
 - **Transform Tools** shows readouts while you scale, rotate and shear.
 - While **Construction Guides** is on, guide lines run through the point you draw from at the angles that **Angles** sets. A point you draw near one of those lines lands on it.
@@ -215,12 +231,16 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Show Slice Numbers** | On | On or off |
 | **Line Color** | #ff3f3f | Any color |
 
+![The Slices page with Show Slice Numbers turned on and the line color #ff3f3f](/assets/uploads/vectorcraft/preferences-slices-page.webp)
+
 ## Hyphenation
 
 | Setting | Default | Range or choices |
 |---|---|---|
 | **Default Language** | English: USA | English: USA, English: UK, German, German: Swiss, French, Italian, Spanish, Catalan, Portuguese, Dutch, Danish, Swedish, Finnish, Norwegian, Polish, Czech, Russian, Serbian: Cyrillic, Serbian: Latin, Croatian, Turkish, Japanese, Chinese, Hindi, Marathi, Gujarati, Bengali, Punjabi, Tamil, Telugu, Kannada, Malayalam, Odia, Urdu |
 | **Exceptions (comma separated)** | Empty | Words separated by commas |
+
+![The Hyphenation page with Default Language set to English: USA and an empty Exceptions (comma separated) field](/assets/uploads/vectorcraft/preferences-hyphenation-page.webp)
 
 - **Default Language** is the language that new type uses when its document's language is set to the default.
 - A change to **Exceptions** changes the line breaks of every text object.
@@ -232,6 +252,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Additional Plug-ins Folder** | Empty | A folder path |
 | **Scratch Disks: Primary** | Startup | Text |
 | **Scratch Disks: Secondary** | None | Text |
+
+![The Plug-ins & Scratch Disks page with an empty Additional Plug-ins Folder field beside its Choose… button, the primary scratch disk set to Startup and the secondary scratch disk set to None](/assets/uploads/vectorcraft/preferences-plugins-scratch-page.webp)
 
 - VectorCraft installs the plug-ins in the **Additional Plug-ins Folder**. Type the path or click **Choose…**. The web build has no **Choose…** button. If you pick a folder that VectorCraft cannot list, the status bar shows the reason and the setting keeps its earlier value.
 - When you click **OK**, VectorCraft checks a folder you typed here or in the Data Recovery **Folder** field. It does not check an empty field or a folder that the setting already holds. If VectorCraft cannot use the folder, the status bar shows the reason, no setting changes and the dialog stays open.
@@ -253,6 +275,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Scale Cursor Proportional to UI** | Off | On or off |
 | **Language** | Auto | Auto, English, Bahasa Indonesia, Bosanski, Català, Čeština, Dansk, Deutsch, Español, Français, Italiano, Magyar, Nederlands, Polski, Português (Brasil), Suomi, Svenska, Tiếng Việt, Türkçe, Ελληνικά, Български, Русский, Українська, हिन्दी, ქართული, 日本語, 简体中文, 繁體中文, 한국어 |
 
+![The User Interface page with Brightness set to Medium Dark, Color Scheme Modern, Accent Color Coral, Canvas Color Match User Interface Brightness, the Scale slider at 1.00 and Language set to Auto](/assets/uploads/vectorcraft/preferences-user-interface-page.webp)
+
 - **Accent Color** is the color of controls that are on, chosen or focused. The Classic color scheme uses neutral grays and a blue accent.
 - **Canvas Color** is the color of the canvas around the artboards. **Match User Interface Brightness** uses the color that goes with **Brightness**.
 - **Show Tool Group Labels** shows the group names in the toolbar.
@@ -272,6 +296,8 @@ To change the workspace, panels and toolbars, see [Customize the workspace](/app
 | **Real-time Drawing and Editing** | On | On or off |
 | **Render Threads (-1 = Automatic)** | -1 | -1 to 64 |
 | **Linux Display Server** | Automatic | Automatic, X11 (XWayland), X11 (XWayland) When a Pen Is Attached (Linux) |
+
+![The Performance page on Windows with GPU Performance and Animated Zoom turned on, Graphics Processor set to Automatic, History States 500, Real-time Drawing and Editing on and Render Threads -1](/assets/uploads/vectorcraft/preferences-performance-page.webp)
 
 - **GPU Performance**, **Animated Zoom** and **Graphics Processor** are under **GPU Performance**.
 - **Graphics Processor** chooses the graphics processor VectorCraft uses on a computer that has two. The change takes effect the next time VectorCraft starts.
@@ -300,6 +326,8 @@ For problems with the window or a drawing tablet, see [Troubleshooting](/apps/ve
 | **Mark Older Files as [Converted] When Opened** | On | On or off |
 | **Use Compression** | Off | On or off |
 
+![The File Handling page with background save and export turned on, recovery data saved every 2 minutes, an empty Folder field beside its Choose… button, Number of Recent Files to Display 20 and Update Links set to Ask When Modified](/assets/uploads/vectorcraft/preferences-file-handling-page.webp)
+
 - The four recovery settings are under **Data Recovery**. For **Folder**, type a path or click **Choose…**. VectorCraft accepts only a folder it can list and write to.
 - **Templates Folder** is the folder where **File → Save as Template…** and **File → New from Template…** start. When it is empty, they start in `Documents/VectorCraft Templates`.
 - While **Use System Defaults for Edit Original** is on, **Edit Original** in the Links panel opens a linked file in the system's default app for that file. While it is off, **Edit Original** opens a raster image in PhotoCraft where PhotoCraft is installed, and otherwise in the system's default app.
@@ -316,6 +344,8 @@ For problems with the window or a drawing tablet, see [Troubleshooting](/apps/ve
 | **Legacy vector clipboard** | Preserve Appearance and Overprints | Preserve Paths, Preserve Appearance and Overprints |
 | **When pasting text** | Keep Formatting | Keep Formatting, Keep Plain Text |
 
+![The Clipboard Handling page with Include SVG Code turned on and PDF and the legacy clipboard turned off under On Copy, and When pasting text set to Keep Formatting under On Paste](/assets/uploads/vectorcraft/preferences-clipboard-page.webp)
+
 - The first four settings are under **On Copy**, and **When pasting text** is under **On Paste**.
 - With **Keep Plain Text**, text you paste while typing takes the style at the text cursor.
 
@@ -326,12 +356,16 @@ For problems with the window or a drawing tablet, see [Troubleshooting](/apps/ve
 | **On Screen** | Display All Blacks Accurately | Display All Blacks Accurately, Display All Blacks as Rich Black |
 | **Printing / Exporting** | Output All Blacks Accurately | Output All Blacks Accurately, Output All Blacks as Rich Black |
 
+![The Appearance of Black page with On Screen set to Display All Blacks Accurately and Printing / Exporting set to Output All Blacks Accurately](/assets/uploads/vectorcraft/preferences-black-page.webp)
+
 ## Devices
 
 | Setting | Default | Range or choices |
 |---|---|---|
 | **Enable Touch Workspace** | On | On or off |
 | **Enable Touch Gestures** | On | On or off |
+
+![The Devices page with Enable Touch Workspace and Enable Touch Gestures turned on](/assets/uploads/vectorcraft/preferences-devices-page.webp)
 
 - While **Enable Touch Workspace** is on, VectorCraft switches to the Touch workspace on a touch screen.
 
@@ -340,6 +374,8 @@ For problems with the window or a drawing tablet, see [Troubleshooting](/apps/ve
 1. Open Preferences.
 2. Click **Reset Preferences** at the bottom left of the dialog. Every setting on every page returns to its default in the dialog.
 3. Click **OK** to apply the defaults, or **Cancel** to keep your settings.
+
+![The Reset Preferences button at the bottom left of the Preferences dialog, with its tool tip "Restore every preference to its default (applied on OK)"](/assets/uploads/vectorcraft/preferences-reset-button.webp)
 
 Reset Preferences also resets the Eyedropper Options, the Pathfinder Options, the Snap to Glyph options and the Perspective Grid Options. It does not change **Enable Contextual Task Bar**, **Snap to Grid** or **Smart Guides**. Your saved presets and libraries, such as PDF presets, print presets, gradient presets, saved color themes and document presets, are kept. With a document open, the reset sets the document's units to points, because **General** on the Units page returns to Points.
 

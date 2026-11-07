@@ -16,15 +16,23 @@ Three menu items are grayed out because they do not work yet, but they still sho
 3. Click the shortcut next to an entry, then press the new keys. Press Esc to cancel. If another entry already uses those keys, VectorCraft removes them from that entry and tells you which one.
 4. Click **OK** to keep the changes, or **Cancel** to discard them.
 
+![The Keyboard Shortcuts dialog on the Menu Commands tab with "layer" in the search box. It lists the Layers panel commands under Window, where New Layer has Ctrl+L and the others have no shortcut, over a lighthouse scene at dusk](/assets/uploads/vectorcraft/keyboard-shortcuts-menu-commands.webp)
+
 The **Set:** list offers **VectorCraft Defaults** and **Classic Defaults**. Both sets have the same shortcuts, the ones listed on this page. After you change a shortcut, the list shows **Custom**. **Clear** removes the selected entry's shortcut, **Use Default** gives it back its default, and **Reset to Defaults** returns every shortcut to the defaults. **Export…** saves your set as a `.json` file, and **Import…** reads one back. [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/) describes every button of the dialog.
 
+![The Keyboard Shortcuts dialog after P was pressed for the Smart Pen Tool. The Set list shows Custom, the Pen Tool now has no shortcut, and a red message under the list says P was already used by the Pen Tool and has been removed there](/assets/uploads/vectorcraft/keyboard-shortcuts-conflict.webp)
+
 To run a command without its shortcut, choose **Help → Search Commands…**, or press **Ctrl+Shift+/** (**Cmd+Shift+/** on macOS). Type part of a command's or a tool's name, then press Enter. The list shows each match's shortcut beside it.
+
+![Search Commands open over a harbor scene with a sailboat selected. The search box holds "paste", and the list shows Paste, Paste in Front, Paste in Back, Paste in Place and the other paste commands with their shortcuts, such as Ctrl+F and Ctrl+B](/assets/uploads/vectorcraft/keyboard-shortcuts-search-commands.webp)
 
 While you type text with the Type tool, only shortcuts that use Ctrl (Cmd on macOS) work. Tool keys, panel keys such as F7 and Shift+F7, and Tab do not. In that mode, **Ctrl+Shift+B** (**Cmd+Shift+B** on macOS) runs **Type → Bold** in place of **View → Hide Bounding Box**, and **Ctrl+Shift+I** (**Cmd+Shift+I** on macOS) runs **Type → Italic** in place of **View → Perspective Grid → Show Grid**.
 
 ## Tools
 
 Press a tool's key to select it. Tools that are not listed here have no default key, and you can give them one.
+
+![The Pen tool is selected in the toolbar, and its tooltip reads Pen Tool (P). A white gull is being drawn in the sky above a lighthouse and a sailboat, and the status bar shows the Pen tool's hints](/assets/uploads/vectorcraft/keyboard-shortcuts-tool-tooltip.webp)
 
 | Tool | Windows and Linux | macOS |
 |---|---|---|
@@ -206,6 +214,8 @@ While you edit horizontal text with the Type tool, these keys change the text:
 
 Add Ctrl (Cmd on macOS) to change the value by five steps. On macOS, press Option in place of Alt.
 
+![The title Harbor Lights is open in the Type tool with the word Lights selected and spaced out after Alt+Right Arrow. The Character panel floats beside the sailboat and shows a tracking of 60](/assets/uploads/vectorcraft/keyboard-shortcuts-type-tracking.webp)
+
 ## Select
 
 | Command | Windows and Linux | macOS |
@@ -227,6 +237,8 @@ Add Ctrl (Cmd on macOS) to change the value by five steps. On macOS, press Optio
 **Last Effect…** opens the dialog of the last effect you applied. The effects in the menu have no default shortcuts, and you can give any of them one in **Edit → Keyboard Shortcuts…**.
 
 ## View
+
+![The View menu open over a harbor scene with a selected sailboat. Each command shows its shortcut on the right, such as Ctrl+Y for Outline, Ctrl+0 for Fit Artboard in Window and Ctrl+Shift+B for Hide Bounding Box](/assets/uploads/vectorcraft/keyboard-shortcuts-view-menu.webp)
 
 | Command | Windows and Linux | macOS |
 |---|---|---|
@@ -267,6 +279,8 @@ While you edit text with the Type tool, **Ctrl+Shift+B** and **Ctrl+Shift+I** (*
 ## Window and panels
 
 Each of these keys shows its panel, or hides it when it is already showing.
+
+![F7 has brought the Layers panel forward, with the Lighthouse layer expanded, and Shift+F7 has opened the Align panel as a floating panel beside a selected sailboat](/assets/uploads/vectorcraft/keyboard-shortcuts-panel-keys.webp)
 
 | Panel | Windows and Linux | macOS |
 |---|---|---|
@@ -312,6 +326,8 @@ With objects selected, F8 opens Symbol Options for a new symbol. [Customize the 
 ### Shape tools
 
 These keys work while you drag with the Rectangle, Rounded Rectangle, Ellipse, Polygon, Star or Line Segment tool.
+
+![The Star tool part way through a drag in the sky. Up Arrow has raised the star to 11 points, the R1 and R2 readout shows the two radii, and the status bar shows the Star tool's hints](/assets/uploads/vectorcraft/keyboard-shortcuts-star-points.webp)
 
 | Keys | What they do |
 |---|---|

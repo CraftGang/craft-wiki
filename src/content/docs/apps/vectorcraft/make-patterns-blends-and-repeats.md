@@ -28,6 +28,8 @@ A pattern swatch repeats a tile of artwork to fill or stroke an object.
 
 To paint an object with the pattern, select the object and click the pattern swatch in the Swatches panel.
 
+![A night market stall in market-banner.vectorcraft at 90%, with a pointed banner and two cushions painted with the Lantern Leaf pattern of teal leaves and amber lanterns on dark indigo. The banner is selected, and the Swatches panel, set to show pattern swatches only, lists Lantern Leaf](/assets/uploads/vectorcraft/pattern-swatch-banner.webp)
+
 To make a pattern swatch without opening pattern editing mode, drag the selected art into the Swatches panel.
 
 ## Set up the tile in the Pattern Options panel
@@ -58,6 +60,8 @@ The panel's buttons and its menu have the same three commands as the bar above t
 
 To change the color of the tile edge and the swatch bounds, choose **Object → Pattern → Tile Edge Color…**, and choose a color from the **Color** list or click the color box to pick any color. The default is Light Blue. The same setting is **Tile Edge Color** in **Edit → Preferences… → Guides & Grid** on Windows and Linux, and in **VectorCraft → Settings → Guides & Grid…** on macOS, under **Pattern Editing**.
 
+![The Tile Edge Color dialog with Color set to Light Blue and a blue color box, over pattern editing mode. Beside it, the Lantern Leaf tile shows at full strength inside a light blue tile edge, with the dashed swatch bounds below it and dimmed copies all around](/assets/uploads/vectorcraft/pattern-tile-edge-color.webp)
+
 ## Edit a pattern later
 
 1. Select an object that is painted with the pattern.
@@ -66,6 +70,8 @@ To change the color of the tile edge and the swatch bounds, choose **Object → 
 4. Click **Done**, or press Esc.
 
 VectorCraft redraws every object painted with the pattern with the new tile. You can also open a pattern from the Pattern Options panel when nothing is being edited: choose the pattern from the list and click **Edit Pattern**.
+
+![The Pattern Options panel with no pattern being edited. It says that pattern options are available in pattern editing mode and shows Lantern Leaf in the pattern list next to an Edit Pattern button. On the canvas, the banner and cushions of a night market stall are painted with the pattern](/assets/uploads/vectorcraft/pattern-options-edit-pattern.webp)
 
 ## Repeat art radially, in a grid or as a mirror
 
@@ -88,6 +94,10 @@ A selected grid or mirror repeat also has controls on the canvas. Each drag of a
 - **Grid:** drag the handle below the grid to add or remove rows, the handle to the right to add or remove columns, and the handle past the corner to change both. Drag the short bars between the first columns or rows to change the spacing.
 - **Mirror:** drag the middle of the axis to move it, and drag an end of the axis to turn it.
 
+![A dusk tower in tower-windows.vectorcraft with a grid repeat of lit windows in five rows and four columns, selected with the Selection tool. Round handles sit below the grid, to its right and past its corner, two short spacing bars sit between the first window and its neighbors, and the Properties panel shows Grid Repeat](/assets/uploads/vectorcraft/repeat-grid-handles.webp)
+
+![A moth over a dusk skyline in dusk-moth.vectorcraft, made from one pair of pink and amber wings and a mirror repeat. The repeat is selected, and its vertical axis runs down the moth's body with a handle at each end and one in the middle. The Properties panel shows Mirror Repeat](/assets/uploads/vectorcraft/repeat-mirror-axis.webp)
+
 To change the art that a repeat copies, double-click the repeat with the Selection tool. The repeat opens in isolation mode, and you edit its source art. With one repeat selected, choosing another kind from **Object → Repeat** changes it to that kind.
 
 To take the art out of the repeat, select it and choose **Object → Repeat → Release**. You get the source art back without the copies. To keep the copies as ordinary objects instead, choose **Object → Expand**. Each repeat becomes a group of its copies.
@@ -102,6 +112,8 @@ Intertwine sets which object is drawn on top in each area where objects overlap,
 4. Click the area. The object drawn just below the top one comes to the front there. Click again to swap them back.
 5. To change several areas at once, drag a path around them. Hold Shift as you start the drag to draw a rectangle instead.
 6. Press Esc or Enter to go back to the tool you used before.
+
+![Two linked rings, teal and amber, in an Intertwine group over a dusk skyline in linked-rings.vectorcraft. The teal ring passes over the amber ring where they cross at the top and under it where they cross at the bottom, and the Intertwine tool outlines the bottom overlap area in red](/assets/uploads/vectorcraft/intertwine-rings.webp)
 
 Where three or more objects overlap, right-click the area and choose **Bring to Front**, **Bring Forward**, **Send Backward** or **Send to Back**. The command moves the object nearest to the pointer, in that area only.
 
@@ -124,7 +136,11 @@ The objects go onto the path in their order on the canvas, column by column from
 
 Press Esc during either drag to cancel it.
 
+![Seven paper lanterns in yellow, amber and coral attached to a wavy teal string above a night market in lantern-path.vectorcraft, each turned to follow the curve of the string. The Objects on Path group is selected with the Objects on Path tool, with a round handle beside the first lantern and a square handle past the last one, and the Properties panel shows the group's Pivot and Rotate](/assets/uploads/vectorcraft/objects-on-path-lanterns.webp)
+
 To set how the next objects attach, double-click the Objects on Path tool. In **Objects on Path Tool Options**, choose the **Pivot**, the point of each object that sits on the path (the center by default), and the **Rotate** angle, from −360° to 360° (0° by default). Click **Save**. **Reset** puts the center and 0° back. Groups you made earlier keep their settings.
+
+![The Objects on Path Tool Options dialog with the center point of the Pivot grid selected, Rotate set to 0°, a Reset button, and Cancel and Save buttons, over lanterns on a string at dusk](/assets/uploads/vectorcraft/objects-on-path-tool-options.webp)
 
 To keep the objects where they are and stop them following the path, choose **Object → Objects on Path → Expand**. The group becomes an ordinary group of the path and the objects.
 
@@ -171,6 +187,8 @@ The Blend panel (**Window → Blend**) has buttons for all of these commands and
 | **Shift** | Moves the color change toward one end of the blend, from −100% to 100%, without moving the steps |
 
 **Type** and **Ramp** are available only when a blend is selected and that blend has a replaced spine or uses **Align to Path**. **Shift** is available only when a blend is selected.
+
+![The Blend panel for a selected blend of lanterns that hangs along a curved string between two posts over a night market. The panel shows Spacing Specified Steps with 6, Orientation Align to Path, Type Ease In Out, Ramp 60.0% and Shift 20%, and the lanterns sit closer together near the ends of the string than in the middle](/assets/uploads/vectorcraft/blend-panel-easing.webp)
 
 ## Related
 

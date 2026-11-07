@@ -16,6 +16,8 @@ The Group Selection tool selects an object inside a group without ungrouping it,
 3. Click the same object again. The group that holds it is added to the selection.
 4. Keep clicking to add the next group up each time.
 
+![The night market scene at 150% zoom with the Group Selection tool chosen. After two clicks on the middle amber lantern, every part of the lantern's group, from the string to the tassel, shows cyan outlines and anchor points. The Properties panel reads 2 Objects](/assets/uploads/vectorcraft/group-selection.webp)
+
 Shift-click a selected object to deselect it.
 
 When you drag a marquee with the Group Selection tool, it selects the anchor points inside the marquee, as the Direct Selection tool does. Press E during the drag to select only the objects that lie entirely inside the marquee, each as a whole object. Press E again to return to selecting anchor points.
@@ -74,9 +76,13 @@ The Enclosing Lasso tool is a built-in plug-in. Like the Lasso, it draws a freeh
 2. Drag a loop around the objects.
 3. Release the mouse button.
 
+![The night market scene at 150% zoom with the Enclosing Lasso tool chosen. One amber lantern is selected, each of its parts outlined in cyan, and a second loop drawn with Shift held runs most of the way around the next amber lantern, from the string to the tassel. The Properties panel reads 8 Objects](/assets/uploads/vectorcraft/enclosing-lasso.webp)
+
 The tool measures each path without its stroke width or effects. Inside a group, it selects each fully enclosed object on its own. A compound path counts as one object. Hold Shift to add to the selection, or **Alt** (**Option** on macOS) to deselect the selected objects inside the loop. Press Esc during the drag to cancel.
 
 ## Use the Select menu
+
+![The Select menu open over the night market scene, listing All, All on Active Artboard, Deselect, Reselect, Inverse, Next Object Above and Next Object Below with their shortcuts, then Same, Object, Start Global Edit, Save Selection, Update Selection and Edit Selection, and the saved selections Lanterns and Amber Lanterns at the bottom](/assets/uploads/vectorcraft/select-menu.webp)
 
 | Command | Windows and Linux | macOS | What it does |
 |---|---|---|---|
@@ -93,6 +99,8 @@ Next Object Above and Next Object Below pass over hidden and locked objects. The
 ## Select objects of one kind
 
 The **Select → Object** submenu selects every object of one kind in the document. Hidden and locked objects are left out.
+
+![The night market scene with the Select menu open and its Object submenu showing All on Same Layers, Direction Handles, Brush Strokes, Bristle Brush Strokes, Clipping Masks, Slices, Stray Points, Open Paths, All Text Objects, Point Text Objects and Area Text Objects](/assets/uploads/vectorcraft/select-object-menu.webp)
 
 | Command | Selects |
 |---|---|
@@ -123,11 +131,15 @@ Global Edit finds the objects that have the same shape as the selected object, w
 3. Edit the selected object. Each match changes in proportion to its own size, so halving the height of a 100 pt object halves a 20 pt match to 10 pt.
 4. To finish, choose **Select → Stop Global Edit** or press Esc.
 
+![The night market scene at 110% zoom during Global Edit. The yellow body of one lantern is selected, the bodies of the other seven lanterns have thin cyan outlines as matches, and the Quick Actions section of the Properties panel shows Stop Global Edit](/assets/uploads/vectorcraft/global-edit.webp)
+
 To leave one of the highlighted objects out, Shift-click it with the Selection tool. Hidden and locked matches are not changed. Global Edit includes at most 10,000 objects.
 
 For a group, Global Edit finds the groups that hold the same kinds of objects in the same places. An edit to an object inside one group is made to the matching object in each of the others.
 
 The Global Edit Options narrow the search. Open them with the arrow beside **Start Global Edit** in the Quick Actions section of the Properties panel, or on the Control bar.
+
+![The Quick Actions section of the Properties panel with the Global Edit Options open below Start Global Edit. Appearance and Size are off, All Artboards and Include Objects On Canvas are on, and the Results line reads 8](/assets/uploads/vectorcraft/global-edit-options.webp)
 
 | Option | Default | What it does |
 |---|---|---|
@@ -153,6 +165,8 @@ The saved selections are listed by name at the bottom of the **Select** menu. Ch
 - To change what a saved selection holds, first choose it from the **Select** menu, change the selection, then choose **Select → Update Selection**.
 - To rename or delete saved selections, choose **Select → Edit Selection…**, pick a selection in the list, then change its **Name** or click **Delete**. Click **OK** to apply all the changes as one undo step.
 
+![The Edit Selection dialog over the night market scene. The Saved Selections list holds Lanterns and Amber Lantern Bodies, the second one is picked, and its Name field reads Amber Lantern Bodies above the Delete button](/assets/uploads/vectorcraft/edit-selection.webp)
+
 A document keeps up to 25 saved selections, with names up to 255 characters. Saving under a name that already exists replaces that saved selection. The Layers panel menu has the same commands under Save Selection.
 
 ## Select by artboard
@@ -167,6 +181,8 @@ The Select by Artboards plug-in selects the objects on, inside or outside the ar
    - Click **Select All** or **None**, or type in the search field to list only the artboards whose names contain the text.
 3. In **Select**, choose how the objects relate to the chosen artboards.
 4. Click **OK**.
+
+![The Select by Artboards dialog listing the artboards Poster, Flyer, Ticket, Badge and Banner with their sizes in pixels. Poster, Flyer and Badge are chosen, the line beside Select All and None reads Chosen: 3 of 5, and Select is set to Fully Inside. Below the dialog, the five artboards of the market-flyers document each show a dusk scene with lanterns and a setting sun](/assets/uploads/vectorcraft/select-by-artboards.webp)
 
 | Select | Selects the objects that |
 |---|---|

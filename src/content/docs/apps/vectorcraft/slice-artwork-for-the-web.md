@@ -35,6 +35,8 @@ To change slices after you draw them, select the **Slice Selection** tool. It ha
 - Double-click a slice to open **Slice Options**.
 - Press **Delete** to remove the selected slices. A user slice is deleted. An object slice is released, and its object stays.
 
+![The night-market banner with the Slice Selection tool active. User slice 08 around the Get Directions button is selected and shows eight blue handles, and its right edge is being dragged outward while a readout beside the pointer shows W 296.00 px and H 84.00 px](/assets/uploads/vectorcraft/slice-selection-tool.webp)
+
 ## Make slices from objects or guides
 
 - To slice one object, select it and choose **Object → Slice → Make**. Each selected object becomes an object slice that follows the object's bounds.
@@ -42,6 +44,8 @@ To change slices after you draw them, select the **Slice Selection** tool. It ha
 - To slice a layout along a grid, drag ruler guides where the cuts should be, then choose **Object → Slice → Create from Guides**. The guides cut the artboards into a grid of user slices: two vertical and two horizontal guides make nine slices. Create from Guides replaces the user slices that the document already has, and it stops with an error if the guides would make more than 1000 slices.
 
 Choose **Select → Object → Slices** to select every user and object slice in the document.
+
+![The night-market banner with the rulers showing and two vertical and two horizontal cyan ruler guides crossing it. After Create from Guides, the guides cut the banner into a grid of nine numbered red user slices, and the object slice on the Night Market Fridays title keeps its own outline inside the grid](/assets/uploads/vectorcraft/slices-from-guides.webp)
 
 ## Object → Slice commands
 
@@ -60,6 +64,8 @@ The **Object → Slice** commands act on the slices selected with the Slice Sele
 | **Slice Options…** | Opens the options of the selected slices. See [Set a slice's options](#set-a-slices-options). |
 | **Clip to Artboard** | When it is checked, slices are clipped to the artboards and auto slices fill the artboards. When it is unchecked, auto slices cover the art and the slices, including art outside the artboards. It is checked in a new document. |
 
+![The Object menu open over the sliced night-market banner, with its Slice submenu showing Make, Release, Create from Guides, Create from Selection, Duplicate Slice, Combine Slices, Divide Slices…, Delete All, Slice Options… and a checked Clip to Artboard. The button slice is selected with the Slice Selection tool, and Make and Create from Selection are dimmed](/assets/uploads/vectorcraft/slice-menu.webp)
+
 **Divide Slices…** opens with both directions checked, at 2 slices down and 2 slices across:
 
 - **Divide Horizontally Into** cuts the slice into rows. Type how many **slices down, evenly spaced** you want, or choose **per slice** and type a row height.
@@ -67,12 +73,16 @@ The **Object → Slice** commands act on the slices selected with the Slice Sele
 
 When you divide by size, the last row or column is smaller if the slice does not divide evenly. The size fields start at half the size of the first selected slice. One divide makes at most 1000 slices.
 
+![The Divide Slices dialog over the night-market banner, set to cut the selected lantern slice into columns only: Divide Horizontally Into is unchecked, and Divide Vertically Into is checked with 4 slices across, evenly spaced. The per slice fields show 52 px and 601 px](/assets/uploads/vectorcraft/divide-slices.webp)
+
 ## Hide and lock slices
 
 - **View → Hide Slices** hides the slice outlines and numbers on the canvas, and the command then reads **Show Slices**.
 - **View → Lock Slices** keeps the Slice Selection tool from selecting, moving or resizing slices. The menu shows a check mark while it is on.
 
 Both commands deselect the slices in every open document, and turning them off does not select the slices again. While slices are hidden or locked, no command selects a slice, but you can still select the object of an object slice as ordinary art. Both settings last for the current session and are not saved with the document.
+
+![The View menu open over the sliced night-market banner, with the pointer on Lock Slices, which has a check mark, just below Hide Slices](/assets/uploads/vectorcraft/slices-view-menu.webp)
 
 ## Slices preferences
 
@@ -84,6 +94,8 @@ The **Slices** page of **Edit → Preferences…** (**VectorCraft → Settings �
 | **Line Color** | The color of the slice outlines and number badges | Red (`#ff3f3f`) |
 
 User and object slices are outlined in the line color. Auto slices are drawn with a dimmer dashed line, and selected slices with a thicker line.
+
+![The Preferences dialog open on the Slices page, with Show Slice Numbers checked and a red Line Color swatch labeled #ff3f3f](/assets/uploads/vectorcraft/slices-preferences.webp)
 
 ## Set a slice's options
 
@@ -122,6 +134,8 @@ Save for Web (Legacy) saves one image for each slice, and it can write an HTML p
 |---|---|
 | **Slices:** | **All Slices** (the default) saves every slice, auto slices included. **Selected Slices** saves the slices you selected before you opened the dialog, and **No Slices** saves one image of the whole area. |
 | **Output:** | **Images Only** (the default) writes the images. **HTML and Images** also writes an HTML page, named after the file you save, that places each image at its position. |
+
+![The Save for Web dialog on the Optimized tab, showing the whole night-market banner as a 1200 by 400 px PNG-24 image. Under Image Size, Clip to Artboard is checked, Slices is set to All Slices and Output to HTML and Images, with the Preview in Browser, Done, Cancel and Save… buttons below](/assets/uploads/vectorcraft/save-for-web-slices.webp)
 
 Sliced output puts the images in an `images` folder next to the file you save. Each image is named after its slice. Characters other than letters, digits, `-`, `_` and `.` in a name become `-`. No Image and HTML Text slices do not get an image. In the HTML page, their cells hold the text instead. Each image in the page carries its slice's alt text, and an Image slice with a URL becomes a link with its target and message.
 
@@ -163,6 +177,8 @@ The SVG Interactivity panel sets the JavaScript that an object runs on an event 
 2. Choose **Window → SVG Interactivity**.
 3. Choose an event from **Event:**. The list has onfocusin, onfocusout, onactivate, onmousedown, onmouseup, onclick, onmouseover, onmousemove, onmouseout, onkeydown, onkeypress, onkeyup, onload, onerror, onabort, onunload, onzoom, onresize and onscroll.
 4. Type the code in **JavaScript:** and press **Enter**. The event and its code appear in the panel's list. Each change is one undo step.
+
+![The night-market banner with the Get Directions button selected and the SVG Interactivity panel docked under the Properties panel. The panel's list holds onmouseover: highlight(evt) and onclick: openMap('river-road'), the onclick row is highlighted, and the Event and JavaScript fields above it show onclick and openMap('river-road')](/assets/uploads/vectorcraft/svg-interactivity.webp)
 
 To change an event's code, click its row in the list, then edit the **JavaScript:** field and press **Enter**. Clearing the field and pressing **Enter** removes the event. The trash button at the bottom right of the panel (**Remove Selected Entry**) removes the event chosen in **Event:**, and **Clear Events** in the panel menu removes every event from the selected objects. When the selected objects have different events, the list is empty.
 

@@ -41,6 +41,8 @@ The Perspective Grid and Perspective Selection tools share a group that the defa
 
 Choosing a preset keeps art that is already on the grid attached, and keeps these four options as they were.
 
+![The View menu open over the street corner with its Perspective Grid submenu showing Hide Grid, Show Rulers, Snap to Grid (checked), Lock Grid, Lock Station Point, Define Grid, the three perspective type submenus and Save Grid as Preset. The Two Point Perspective submenu lists the [2P-Normal View], [2P-Low View] and [2P-High View] presets](/assets/uploads/vectorcraft/perspective-preset-menu.webp)
+
 ## Adjust the grid with the Perspective Grid tool
 
 Press **Shift+P** for the Perspective Grid tool. If the grid is hidden, the tool shows it. Drag the grid's handles:
@@ -60,6 +62,8 @@ Press **Esc** before you release the mouse button to put the grid back as it was
 ![A tall violet building on a street corner at dusk, its walls lined with lit and dark windows, drawn on a two-point perspective grid with blue, orange and green gridlines. The end of the right wall's base has been dragged to the right, so the orange right-plane grid and the green ground grid now reach past the building toward a street lamp](/assets/uploads/vectorcraft/perspective-grid-tool.webp)
 
 Double-click the tool's button in the toolbar to open **Perspective Grid Options**. **Show Active Plane Widget** turns the plane switching widget on or off, and **Widget Position** puts it in the **Top Left** (the default), **Top Right**, **Bottom Left** or **Bottom Right** corner of the document window.
+
+![The Perspective Grid Options dialog over the street corner, with Show Active Plane Widget selected and Widget Position set to Top Left. The Perspective Grid tool is highlighted in the Advanced toolbar on the left, and the plane switching cube sits in the top-left corner of the document window](/assets/uploads/vectorcraft/perspective-grid-options.webp)
 
 ## Define a grid by values
 
@@ -93,12 +97,18 @@ New shapes and art you drag onto the grid go on the active plane. The grid has a
 
 Each plane also has a diamond-shaped widget on the grid, in the plane's color. With either perspective tool, drag a plane's diamond to move that plane forward or back. Hold **Shift** to move the art on the plane with it, or **Alt** (**Option** on macOS) to move copies of that art. Double-click the diamond to open the plane's dialog (**Left Plane**, **Right Plane** or **Horizontal Plane**). Type a **Location** and choose **Do Not Move**, **Move All Objects** or **Copy All Objects**.
 
+![The street corner with the right plane's orange diamond being dragged with the Perspective Selection tool. The orange right-plane grid has moved out in front of the building's right wall, and the building's windows stay where they were](/assets/uploads/vectorcraft/perspective-move-plane.webp)
+
+![The Right Plane dialog over the building, with Location set to 0 px and Do Not Move selected above the Move All Objects and Copy All Objects choices](/assets/uploads/vectorcraft/perspective-plane-dialog.webp)
+
 ## Draw on a plane
 
 1. Show the grid and pick the active plane.
 2. Choose the Rectangle, Rounded Rectangle, Ellipse, Polygon, Star, Line Segment, Arc, Spiral, Rectangular Grid, Polar Grid or Flare tool.
 3. Drag on the canvas. The shape is drawn on the active plane, foreshortened toward its vanishing point. With **Snap to Grid** on, its corners snap to gridlines within a quarter of a cell.
 4. To draw at an exact size, click once and type the size in the tool's dialog. The shape keeps that size measured along the plane, starting where you clicked.
+
+![The Rectangle tool part way through a drag on the right wall of the street-corner building, with the right plane active. The amber rectangle leans toward the right vanishing point under the roofline, a label reads W: 212.34 px and H: 87.00 px, and the status bar lists the tool's keys](/assets/uploads/vectorcraft/perspective-draw-shape.webp)
 
 With no active plane (press **4**), the shape tools draw flat shapes.
 
@@ -118,6 +128,8 @@ Press **Shift+V** for the Perspective Selection tool, then drag art that is on t
 
 Press **Esc** before you release the mouse button to cancel a move or a scale. While you drag, a label shows how far the art moved along the plane (**dX** and **dY**), or **dZ** when it moves at right angles to the plane. **Object → Perspective → Move Plane to Match Object** moves the selected object's plane to where the object is and makes it the active plane.
 
+![A coral banner with amber bands being Alt-dragged along the building's right wall with the Perspective Selection tool. The original banner stays near the corner, the copy gets narrower as it moves toward the vanishing point, and a label reads dX: 346.48 px and dY: 0.00 px](/assets/uploads/vectorcraft/perspective-alt-copy.webp)
+
 ## Put flat art and type on a plane
 
 You can draw art and type flat and then put them on the grid.
@@ -134,6 +146,8 @@ Type and symbols on a plane stay type and symbols. To change the words of type o
 1. Select the type and choose **Object → Perspective → Edit Text**, or double-click the type with the Perspective Selection tool. The type is shown flat in isolation mode, and you edit it with the Type tool.
 2. Press **Esc**, or exit isolation mode, to put the type back in perspective.
 
+![The amber LANTERNS type shown flat in isolation mode above the building's left wall, with the word selected by the Type tool. The rest of the street corner is dimmed, the bar above the canvas shows Sign and LANTERNS, and the status bar reads Esc to exit editing](/assets/uploads/vectorcraft/perspective-edit-text.webp)
+
 VectorCraft does not put art on a plane if part of it would cross the plane's horizon.
 
 ## Release art from the grid
@@ -144,6 +158,8 @@ Select the art and choose **Object → Perspective → Release with Perspective*
 
 - To save the current grid, choose **View → Perspective Grid → Save Grid as Preset…**. Type a **Name** (the default is **Perspective Preset 1**, then 2, and so on) and click **OK**. In **Define Grid…**, **Save Preset…** does the same with the values in the dialog.
 - To manage presets, choose **Edit → Perspective Grid Presets…**. The dialog lists every preset and shows the selected preset's settings.
+
+![The Perspective Grid Presets dialog listing the built-in views and two saved presets, Street Corner and Rooftop Low, with Street Corner selected. Its settings read Two Point, Points, 1:1, a gridline every 53 pt, a 45.0° viewing angle, a 768 pt viewing distance, a 360 pt horizon height and 50% opacity, above the New…, Edit…, Delete, Import… and Export… buttons](/assets/uploads/vectorcraft/perspective-grid-presets.webp)
 
 | Button | What it does |
 |---|---|

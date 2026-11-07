@@ -18,6 +18,8 @@ Every object has a fill, which paints its inside, and a stroke, which paints its
 
 With nothing selected, the same steps set the paint for the next object you draw.
 
+![Three hot-air balloons over teal hills at sunset. The coral balloon in the middle is selected, its Stroke box sits in front of the Fill box at the bottom of the toolbar, and the Amber swatch of the Dusk color group is highlighted in the Swatches panel](/assets/uploads/vectorcraft/fill-stroke-boxes.webp)
+
 | Key | What it does |
 |---|---|
 | D | Sets a white fill and a 1 pt black stroke. Type gets a black fill and no stroke. |
@@ -38,6 +40,8 @@ Choose **Window → Color** (F6) to open the Color panel. The panel shows slider
 2. Drag a slider, type a value, or click the spectrum.
 3. To keep the color, choose **Create New Swatch…** from the panel menu.
 
+![The magenta balloon on the left is selected, and the Color panel below Properties shows its fill in RGB mode with R 192, G 38 and B 211, the hex value C026D3, the None, Black and White chips and the spectrum bar](/assets/uploads/vectorcraft/color-panel-rgb.webp)
+
 :::tip
 Alt-click (Option-click on macOS) the spectrum or a chip to paint the box that is not in front. In every mode except HSB and Grayscale, Shift-drag a slider to move the other sliders with it.
 :::
@@ -52,6 +56,8 @@ When the selected art uses a global or spot swatch, the Color panel shows that s
 
 Shift-click samples only the color under the pointer into the active Fill or Stroke box. On a gradient, Shift-click takes the gradient's color at that point. Alt-click (Option-click on macOS) copies the selection's attributes onto the object you click.
 
+![The Eyedropper Tool is selected over the balloon scene, and the Eyedropper Options dialog lists what the tool picks up and what it applies, with Appearance, Focal Fill, Focal Stroke, Character Style and Paragraph Style turned on in both columns. The status bar shows the tool's Click, Alt+Click and Shift+Click hints](/assets/uploads/vectorcraft/eyedropper-options.webp)
+
 ## Save and reuse swatches
 
 Choose **Window → Swatches** to open the Swatches panel. Clicking a swatch paints the active box, and Alt-click (Option-click on macOS) paints the other box.
@@ -60,6 +66,8 @@ Choose **Window → Swatches** to open the Swatches panel. Clicking a swatch pai
 2. Click the **New Swatch** button at the bottom of the panel, or choose **New Swatch…** from the panel menu.
 3. In the New Swatch dialog, type a **Swatch Name**, choose a **Color Type**, and turn on **Global** if you want the swatch to stay linked to your art.
 4. Click **OK**.
+
+![The New Swatch dialog over the balloon scene, with Sky Cyan typed as the Swatch Name, Process Color as the Color Type, Global turned on, and the RGB sliders at 103, 232 and 249](/assets/uploads/vectorcraft/new-swatch-dialog.webp)
 
 For a gradient, a pattern or a tint of a global color, the dialog asks only for a name.
 
@@ -114,6 +122,8 @@ A color theme is a set of five colors that you build on a color wheel and keep f
 3. Type a name in **Name**. Unnamed themes are saved as Theme 1, Theme 2 and so on.
 4. Click **Save theme to My Themes** at the bottom of the panel. To put the colors in the document as well, click **Add to Swatches**, which adds them to the Swatches panel as a color group.
 
+![The Color Themes panel on its Create tab, with the Analogous 2 rule built from the coral of the selected balloon. Five color chips sit under the color wheel and its Brightness slider, and Balloon Glow is typed in the Name field](/assets/uploads/vectorcraft/color-themes-create.webp)
+
 The **My Themes** tab lists the saved themes. Click a theme to select it, then use the buttons to edit it, add it to the Swatches panel or delete it. Double-click a theme to open it on the **Create** tab. **New theme from the current color** starts a new theme.
 
 ### Keep colors and art in a library
@@ -123,6 +133,8 @@ A library holds colors, gradients, patterns, character and paragraph styles, and
 1. Click **Create New Library**, or choose **Create New Library…** from the panel menu when a library already exists, and type a name.
 2. Select art, click **+** (**Add Content**) at the bottom of the panel, and choose what to add: **Graphic**, **Fill Color**, **Stroke Color**, **Fill Pattern**, **Stroke Pattern**, **Fill Gradient**, **Stroke Gradient**, **Character Style** or **Paragraph Style**. You can also drag art from the canvas or swatches from the Swatches panel onto the library.
 3. To use an item, select your art and click a color, gradient or pattern. It paints the active Fill or Stroke box. Click a style to apply it to the selected type. Drag a graphic onto the canvas, or double-click it, to place a copy.
+
+![The Libraries panel in list view shows a Sunset Flight library with six colors, a Dusk Sky gradient and three balloon graphics. The coral balloon is selected on the canvas, and the Add Content menu is open with Graphic, Fill Color, Stroke Color, Fill Pattern, Stroke Pattern, Fill Gradient, Stroke Gradient, Character Style and Paragraph Style](/assets/uploads/vectorcraft/libraries-add-content.webp)
 
 Type in the search field to filter the items by name, and click **New Group** to sort them into groups. The panel menu also has **Create New Library…**, **Rename Library…**, **Delete Library**, **New Group…**, **Import Library…** and **Export Library…**. Export saves the library as a `.vclibrary` file, and Import adds such a file as a new library.
 
@@ -201,6 +213,8 @@ A gradient mesh shades a shape smoothly between color points. Each mesh point ha
 2. Choose **Object → Create Gradient Mesh…**.
 3. Set the options and click **OK**.
 
+![The Create Gradient Mesh dialog over the selected coral balloon, with Appearance set to center, Cols set to 5, Highlight set to 60 and Rows set to 6](/assets/uploads/vectorcraft/create-gradient-mesh-dialog.webp)
+
 | Option | What it does |
 |---|---|
 | **Appearance** | Type `flat`, `center` or `edge`. The default is `flat`. `flat` keeps every point in the shape's fill color. `center` lightens the points toward white in the middle of the shape, and `edge` lightens them toward white at its edges. |
@@ -239,6 +253,8 @@ Choose **Window → Transparency** (**Ctrl+Shift+F10**, or **Cmd+Shift+F10** on 
 3. Choose a blend mode from the menu at the top left of the panel.
 
 When the Appearance panel has a fill or a stroke selected, the opacity and the blend mode apply to that fill or stroke only, and the mask and knockout options are unavailable.
+
+![Three searchlight beams in cyan, magenta and amber cross above a violet skyline and the words Festival of Lights, and they turn lighter where they overlap. The magenta beam is selected, and the Transparency panel shows the Screen blend mode at 75% opacity](/assets/uploads/vectorcraft/blend-modes-screen.webp)
 
 ### Blend modes
 
@@ -310,6 +326,8 @@ Select the art, then choose a command from **Edit → Edit Colors**:
 | **Convert to CMYK**, **Convert to Grayscale**, **Convert to RGB** | Converts the colors to that color model. |
 | **Invert Colors** | Replaces each color with its RGB inverse. |
 | **Saturate…** | Raises or lowers the saturation of the colors by a percentage from −100 to 100. |
+
+![The Recolor Artwork dialog lists the nine current colors of the three selected balloons next to their new colors. The purple and magenta rows are set to two teals, and with Preview on, the balloon on the left shows them](/assets/uploads/vectorcraft/recolor-artwork.webp)
 
 For overprinting, spot colors, color settings and soft proofing, see [Manage color and proof](/apps/vectorcraft/manage-color-and-proof/).
 

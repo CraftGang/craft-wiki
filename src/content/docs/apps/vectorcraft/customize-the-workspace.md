@@ -45,11 +45,15 @@ The dock runs down the right edge of the window. Its outer column holds the Prop
 - To collapse the dock to icons, click the double arrow at the top of the dock. Click it again to expand the outer column.
 - Press Tab to hide the panels, the Tools panel and the Control bar, and press Tab again to show them. Press Shift+Tab to hide or show only the panels.
 
+![The Harbor Lights festival poster on the canvas, with the dock rearranged into three groups: the Layers tab open at the top listing the Type, Lanterns, Harbor and Background layers, the Swatches and Color tabs docked below it with Swatches open, and the Brushes and Symbols group collapsed to its tabs at the bottom](/assets/uploads/vectorcraft/panel-groups.webp)
+
 ## Save your own workspace
 
 1. Arrange the bars, the Tools panel and the panels the way you want them.
 2. Choose **Window → Workspace → New Workspace…**.
 3. Type a name and click **OK**. VectorCraft suggests "Workspace 1", "Workspace 2" and so on.
+
+![The New Workspace dialog over the Harbor Lights poster, with Poster Layout typed in the Name field above the note that the dialog saves the current bars, toolbar and panel layout. Behind it, the dock holds the Layers tab, the Swatches and Color group and the collapsed Brushes and Symbols group](/assets/uploads/vectorcraft/new-workspace-dialog.webp)
 
 The new workspace appears in the Workspace menu below the built-in ones. You cannot use the name of a built-in workspace. If you use the name of one of your own workspaces, the new layout replaces it.
 
@@ -58,6 +62,8 @@ To rename or delete your workspaces, choose **Window → Workspace → Manage Wo
 1. Click one of your workspaces in the list. The built-in workspaces are dimmed and cannot be changed.
 2. To rename it, type the new name in the field and click **Rename**. To delete it, click **Delete**.
 3. Click **OK**.
+
+![The Manage Workspaces dialog listing the built-in workspaces from Essentials to Touch in dimmed text, followed by two saved workspaces, Poster Layout and Color Review. Color Review is selected, Color Proofing is typed in the name field, and the New, Rename and Delete buttons sit beside the field](/assets/uploads/vectorcraft/manage-workspaces-dialog.webp)
 
 If you delete the workspace you are using, VectorCraft switches to Essentials. To save the current layout as another workspace from the same dialog, type a name in the field and click **New**. You do not need to select a workspace first.
 
@@ -69,6 +75,8 @@ The Control bar runs across the top of the window under the menu bar. The Contex
 - Choose **Window → Contextual Task Bar** to show or hide the task bar.
 - To keep the task bar in one place, open its **More Options** menu and choose **Pin Bar Position**. Choose **Reset Bar Position** to put it back under the selection.
 - Choose **Window → Tools** to show or hide the Tools panel.
+
+![The Lanterns Sold title selected on a night market sales chart, with the Control bar across the top showing the type's fill, stroke, character and paragraph settings. The Contextual Task Bar under the title has its More Options menu open, listing Hide Bar, Pin Bar Position, Reset Bar Position and Show Properties Panel, with Pin Bar Position highlighted](/assets/uploads/vectorcraft/task-bar-options.webp)
 
 ## Show or hide edges and widgets on the canvas
 
@@ -84,6 +92,8 @@ The **View** menu has commands that hide or show the marks VectorCraft draws ove
 | **View → Hide Corner Widget** | The corner widgets at the corners of the selected paths |
 | **View → Show Live Paint Gaps** | The gaps in the selected Live Paint groups, in each group's gap preview color. The gaps show only while edges show |
 
+![The View menu open over a column graph of lanterns sold per night, with Hide Edges (Ctrl+H) highlighted. The graph is selected, so its bounding box and the anchor points of every bar show, and the lower part of the menu lists Hide Bounding Box, Show Transparency Grid, Hide Text Threads, Hide Gradient Annotator, Hide Corner Widget and Show Live Paint Gaps](/assets/uploads/vectorcraft/view-menu-edges.webp)
+
 ## Make your own toolbar
 
 The Tools panel comes in two layouts. Choose **Window → Toolbars → Advanced** to switch between the Basic and Advanced layouts, and **Window → Toolbars → Double Column** to show the tools in two columns.
@@ -95,6 +105,8 @@ The Tools panel comes in two layouts. Choose **Window → Toolbars → Advanced*
 3. To remove a tool, drag it from the Tools panel into the drawer.
 4. To show or hide the controls under the tools, click a button in the **Show** section at the foot of the drawer: **Fill and Stroke Controls**, **Coloring Controls**, **Draw Mode Controls** or **Screen Mode Controls**. VectorCraft saves these settings with the preferences.
 5. Press Esc or click outside the drawer to close it.
+
+![The All Tools drawer open beside the Tools panel over a dusk garden scene with a starry sky, hills and a coral picket fence. The tools already in the Tools panel are dimmed in the drawer, and the pointer rests on the second of the four Show buttons at the foot of the drawer, whose tooltip reads Coloring Controls](/assets/uploads/vectorcraft/tools-drawer-show.webp)
 
 The Show section appears only when you open the drawer from the Tools panel. A toolbar made with **New Toolbar…** has no Show section.
 
@@ -127,6 +139,8 @@ To see several documents or views at once, choose a command from **Window → Ar
 | **Float All in Windows** | Moves every document into a floating window of its own |
 | **Consolidate All Windows** | Puts every document back in the tab strip, so one document shows at a time |
 
+![Four panes tiled in the window: the heron scene at 32.81% in heron.vectorcraft:1, a close-up of the heron at 85% in heron.vectorcraft:2, the dusk garden scene, and the Harbor Lights poster. The heron.vectorcraft:2 pane is active and has an orange outline](/assets/uploads/vectorcraft/arrange-tile.webp)
+
 To dock one floating document again, drag its window onto the tab strip. VectorCraft does not save the window arrangement. Each document opens in the tab strip.
 
 ## Save and return to views
@@ -137,9 +151,13 @@ A saved view stores the position, zoom and rotation of the canvas in the documen
 2. Choose **View → New View…**. The dialog suggests the first free name of the form "View 1", "View 2" and so on. Type a name and click **OK**.
 3. To go back to the view later, choose its name at the bottom of the **View** menu.
 
+![The bottom of the View menu over a 160% close-up of the heron, with New View… and Edit Views… above three saved views: Whole Scene, Heron Close-up and Reeds and Sun. The pointer rests on Whole Scene](/assets/uploads/vectorcraft/saved-views-menu.webp)
+
 A document can have up to 25 saved views, each with a different name.
 
 To rename or delete views, choose **View → Edit Views…**. This command is available once the document has a saved view. Select a view, edit its name or click **Delete**, and click **OK**. All the renames and deletions you make in the dialog are one undo step, and **Cancel** leaves the views as they were.
+
+![The Edit Views dialog with Whole Scene, Heron Close-up and Reeds at Sunset in the Saved Views list. Reeds at Sunset is selected, the Name field shows the new name, and a Delete button sits below the field](/assets/uploads/vectorcraft/edit-views-dialog.webp)
 
 To set up and move between artboards, see [Set up documents and artboards](/apps/vectorcraft/set-up-documents-and-artboards/).
 
@@ -153,6 +171,8 @@ Choose **Window → Navigator**. The panel shows a thumbnail of the document wit
 - Type a zoom percentage in the field, drag the slider, or click the **Zoom Out** and **Zoom In** buttons on either side of the slider. The slider runs from 3.13% to 64,000%.
 - In the panel menu, choose **View Artboard Only** to fit the thumbnail to the artboards. Without it, the thumbnail also takes in artwork that lies outside them.
 - Choose **Panel Options…** in the panel menu to set the color of the view box (Light Red by default) and to turn on **Draw Dashed Lines as Solid Lines** for the thumbnail.
+
+![The Navigator Panel Options dialog over a dusk skyline zoomed to 150%, with Color set to Light Red and Draw Dashed Lines as Solid Lines turned off. The Navigator panel below Properties shows the whole skyline with a red box around the part on screen, and its zoom field reads 150%](/assets/uploads/vectorcraft/navigator-panel-options.webp)
 
 ### Rotate the view
 
@@ -194,6 +214,8 @@ Presentation Mode shows only the canvas, with no menu bar, tabs, panels, toolbar
 2. Press → or click to go to the next artboard. Press ← to go back.
 3. Press Esc to leave Presentation Mode.
 
+![The Harbor Lights festival poster in Presentation Mode, filling the screen on a dark background with no menu bar, tabs, panels, toolbars or status bar](/assets/uploads/vectorcraft/presentation-mode.webp)
+
 In Presentation Mode, other keys and the tools do not change the document.
 
 ## Step back with the History panel
@@ -202,6 +224,8 @@ Choose **Window → History**. The panel lists every step you have taken in the 
 
 1. Click a row to go back to that step. The steps after it stay in the list, dimmed.
 2. Click a dimmed row to go forward to it again.
+
+![The History panel below Properties listing Open, Group, Move, Fill Color and Fill Color, with the second Fill Color highlighted as the current state and the later Fill Color and Rotate rows dimmed. On the canvas, the small sailboat on the Harbor Lights poster is selected with a coral hull and the title is yellow](/assets/uploads/vectorcraft/history-panel.webp)
 
 If you make a change after going back, the new step replaces the dimmed steps. The panel menu also has these commands:
 

@@ -17,6 +17,8 @@ The color settings choose the RGB and CMYK working spaces that VectorCraft conve
 4. Under **Intent**, pick how colors convert between spaces: **Perceptual**, **Relative Colorimetric**, **Saturation** or **Absolute Colorimetric**.
 5. Leave **Use Black Point Compensation** on, or turn it off.
 
+![The Separations Preview panel beside the harbor festival poster, with the Intent list open under Color Settings. The list shows Perceptual, Relative Colorimetric, Saturation and Absolute Colorimetric, with Relative Colorimetric highlighted. RGB is set to sRGB IEC61966-2.1 and CMYK to VectorCraft Generic CMYK (SWOP-like)](/assets/uploads/vectorcraft/color-settings-intent.webp)
+
 | Setting | Built-in choices | Default |
 |---|---|---|
 | **RGB** | sRGB IEC61966-2.1, Wide Gamut RGB (1998 primaries), Display P3, ProPhoto RGB | sRGB IEC61966-2.1 |
@@ -28,10 +30,14 @@ To use the profile your print shop sends, press **Load Profile…** and pick the
 
 To check whether the colors in a document can be printed, press **Gamut Check**. It checks the selected objects, or the whole document when nothing is selected. The status bar shows how many colors are out of the CMYK gamut, or "All colors are within the CMYK gamut".
 
+![The lantern group selected on the harbor festival poster after a gamut check. The status bar reads "All colors are within the CMYK gamut", and the Separations Preview panel shows the Gamut Check button under Color Settings](/assets/uploads/vectorcraft/gamut-check-status.webp)
+
 ### Assign a profile to one document
 
 1. Open the document and choose **Edit → Assign Profile…**. The Separations Preview panel opens.
 2. In the **Color Settings** section, pick a CMYK profile under **Assign**. **Working CMYK (don't tag)** removes the tag.
+
+![The Assign list open at the bottom of the Color Settings section, showing Working CMYK (don't tag), VectorCraft Generic CMYK (SWOP-like) and Device CMYK (uncalibrated), next to the harbor festival poster](/assets/uploads/vectorcraft/assign-profile-list.webp)
 
 Assigning a profile keeps the color numbers of the art as they are. Only the way the colors display and convert changes. The assigned profile also becomes the CMYK working space.
 
@@ -66,6 +72,8 @@ By default, an object knocks out the inks under it, so only its own ink prints t
 3. Choose **Window → Attributes**.
 4. Turn on **Overprint Fill**, **Overprint Stroke** or both.
 
+![The Attributes panel with Overprint Fill checked for the selected HARBOR LIGHTS title. With Overprint Preview on, the coral title mixes with the violet sky behind it, and its letters show dark and faint inside the blue selection box](/assets/uploads/vectorcraft/overprint-fill-attributes.webp)
+
 ### Overprint black
 
 Overprint Black finds the black fills and strokes in the selection and sets them to overprint.
@@ -73,6 +81,8 @@ Overprint Black finds the black fills and strokes in the selection and sets them
 1. Select the art. In a group, the command changes the objects inside it. In type, it changes the characters.
 2. Choose **Edit → Edit Colors → Overprint Black…**.
 3. Set the options from the following table and press **OK**.
+
+![The Overprint Black dialog over the harbor festival poster, with Fill and Stroke checked, Percentage at 100, and Include Blacks with CMY, Include Spot Blacks and Remove unchecked](/assets/uploads/vectorcraft/overprint-black-dialog.webp)
 
 | Option | What it does | Default |
 |---|---|---|
@@ -107,6 +117,8 @@ A spot color prints with its own premixed ink on its own plate, instead of being
 3. Type a **Swatch Name**. The name becomes the plate name in Separations Preview and in printed separations.
 4. Pick the color and press **OK**.
 
+![The Swatch Options dialog for the Harbor Coral swatch, with Color Type set to Spot Color, Global checked and grayed out, Color Mode CMYK at 0, 65, 52 and 0 percent, and Preview checked. The selected HARBOR LIGHTS title uses the swatch, and the swatch is selected in the Swatches panel](/assets/uploads/vectorcraft/spot-color-swatch-options.webp)
+
 Ctrl-click (Cmd-click on macOS) **New Swatch** to open the dialog with **Spot Color** already chosen.
 
 A spot color is always global, so **Global** is checked and grayed out. Changing the swatch changes every object that uses it. Only solid colors can be spot colors.
@@ -115,6 +127,8 @@ Spot colors defined in Lab values can display and separate in two ways. Choose *
 
 - **Lab Values** shows and prints the color from its Lab definition. PDF files carry the Lab definition as the ink's alternate color. This is the default.
 - **CMYK Equivalents** shows and separates the color through the CMYK working space, as older documents did.
+
+![The Spot Colors dialog with Lab Values chosen under Lab Spot Colors and CMYK Equivalents below it, each with a one-line description](/assets/uploads/vectorcraft/spot-colors-lab-dialog.webp)
 
 To print spot colors with the process inks instead of their own plates, go to the Output section of the Print dialog, set **Mode** to Separations and turn on **Convert All Spot Colors to Process**. [Print your artwork](/apps/vectorcraft/print-your-artwork/) covers that section.
 
@@ -165,6 +179,8 @@ All three presets leave both outline options and **Preserve Alpha Transparency**
 4. Edit the name and options of a saved preset beside the list. Each change is saved as you make it.
 5. Press **Close**.
 
+![The Transparency Flattener Presets dialog with the built-in High Resolution, Medium Resolution and Low Resolution presets in brackets and a saved preset named Harbor Poster Print selected. Beside the list, the preset's name and options can be edited: Raster/Vector Balance 100, Line Art and Text Resolution 1200 ppi, Gradient and Mesh Resolution 300 ppi](/assets/uploads/vectorcraft/flattener-presets-dialog.webp)
+
 The built-in presets cannot be changed.
 
 ### Preview what flattening changes
@@ -175,6 +191,8 @@ The Flattener Preview panel shows which parts of the document flattening would c
 2. In the list next to **Refresh**, pick what to highlight. The following table lists the choices.
 3. Set **Overprints** to **Preserve**, **Simulate** or **Discard**, and pick a **Preset**. To change single options, choose **Show Options** from the panel menu.
 4. Press **Refresh** to preview the document as it is now. When the document or the settings change, the panel shows "Changed since the last Refresh."
+
+![The Flattener Preview panel with Transparent Objects chosen in the highlight list, Overprints set to Preserve and the Medium Resolution preset. The gray preview of the harbor festival poster shows the lantern glows in red, and the panel reads "1 object highlighted"](/assets/uploads/vectorcraft/flattener-preview-panel.webp)
 
 Click the preview to zoom in, Alt-click (Option-click on macOS) to zoom out, drag to pan, and double-click to fit. While a highlight is chosen, the panel shows how many objects or areas it highlights.
 
@@ -197,6 +215,8 @@ Trim marks show the printer where to cut the page.
 2. Choose **Object → Create Trim Marks**.
 
 VectorCraft draws one group of marks for each artboard, or one group around the selection, and you can undo them in one step. The marks are 0.3 pt lines in the [Registration] color, which prints on every plate. Roman marks start 9 pt from the edge and are 18 pt long.
+
+![The top-left corner of the harbor festival poster at 125% zoom with the new trim mark group selected. Two short marks sit just outside the artboard corner, and the Properties panel shows the group with a 0.3 pt stroke](/assets/uploads/vectorcraft/trim-marks-corner.webp)
 
 To draw Japanese marks instead, turn on **Use Japanese Crop Marks** in **Edit → Preferences… → General** (**Ctrl+K**) on Windows and Linux, and in **VectorCraft → Settings → General…** (**Cmd+K**) on macOS. Japanese marks add double lines at the trim and bleed edges, and center marks.
 

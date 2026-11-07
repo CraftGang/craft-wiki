@@ -38,12 +38,18 @@ The panel menu, which opens from the button at the top right of the Brushes pane
 - **Delete Brush** deletes the selected brushes, as the button at the bottom of the panel does.
 - **Select All Unused** selects the brushes that no stroke in the document uses.
 
+![The Brushes panel docked as a tab beside Properties, with its panel menu open over the dusk garden scene. The menu lists the New Brush commands, Duplicate Brush, Delete Brush, Remove Brush Stroke, Expand Brush Strokes, Brush Options, Select All Unused, the five Show commands with check marks, Thumbnail View (checked), List View, Open Brush Library and Save Brush Library](/assets/uploads/vectorcraft/brushes-panel-menu.webp)
+
 To select several brushes in the panel, Shift-click to select a range, or Ctrl-click (Cmd-click on macOS) to add or remove one brush. To change the order of the brushes, drag a brush to a new place among the brushes of its kind.
+
+![The Brushes panel in List View, docked as a tab beside Properties over the dusk garden scene. Each brush has a row with its preview and name, grouped by kind from 3 pt. Round to Coral Picket, and the Teal Vine row is highlighted because the selected vine uses that brush](/assets/uploads/vectorcraft/brushes-list-view.webp)
 
 ## Apply a brush to a path
 
 1. Select one or more paths.
 2. Click a brush in the Brushes panel. The brush is applied to the strokes of the selected paths. A path that has no stroke gets one in the current stroke color, or in black when the stroke is None.
+
+![Three swirls in the dusk garden sky, selected together (3 Objects in Properties), after the Leaves scatter brush was clicked in the Brushes panel. Each swirl is now drawn as a trail of green leaves, and the Leaves brush is highlighted in the Brushes panel docked below Properties](/assets/uploads/vectorcraft/brush-apply-leaves.webp)
 
 You can also drag a brush from the panel onto a path, whether or not it is selected.
 
@@ -70,6 +76,8 @@ To close the path, press **Alt** (**Option** on macOS) after the stroke begins, 
 
 Double-click the Paintbrush tool in the Tools panel to open **Paintbrush Tool Options**. The options stay as you set them when you switch tools.
 
+![Paintbrush Tool Options over the dusk garden scene, with the Fidelity slider at 1.5 px between Accurate and Smooth, Fill new strokes off, Keep selected on, Close paths when ends are within 15 px and Edit selected paths within 12 px](/assets/uploads/vectorcraft/paintbrush-tool-options.webp)
+
 | Option | Default | What it does |
 |---|---|---|
 | **Fidelity** | 1.5 px | How closely the path follows your drag. Drag the slider toward Accurate for a path that follows every movement, or toward Smooth for fewer anchor points and smoother curves. The field takes 0.01 to 100 px, measured on screen |
@@ -88,6 +96,8 @@ A scatter, art or pattern brush is made from artwork that you draw first.
 4. Choose **Scatter Brush**, **Art Brush** or **Pattern Brush** and click **OK**.
 5. In the Brush Options dialog that opens, type a name and set the options, then click **OK**.
 
+![A row of four amber and yellow lanterns drawn lying horizontally in the dusk garden sky and selected, with the New Brush dialog open beside it. Art Brush is chosen from Calligraphic Brush, Scatter Brush, Art Brush, Bristle Brush and Pattern Brush](/assets/uploads/vectorcraft/new-brush-dialog.webp)
+
 You can also drag the selected art from the canvas onto the list of brushes to open New Brush for it. The **New Art Brush from Selection**, **New Scatter Brush from Selection** and **New Pattern Brush from Selection** commands in the panel menu make the brush at once, without the dialog.
 
 A calligraphic or bristle brush needs no art. Choose **Calligraphic Brush** or **Bristle Brush** in New Brush to set its options before you make it, or choose **New Calligraphic Brush** or **New Bristle Brush** in the panel menu to make one with the default options. A new brush is named New Art Brush, New Scatter Brush and so on, with a number when the name is taken.
@@ -104,9 +114,15 @@ Double-click a brush in the Brushes panel to open its options. You can also sele
 
 **Calligraphic Brush Options** set the pen tip. **Angle** runs from −180° to 180°, **Roundness** from 0 to 100% and **Size** from 0 to 1296 pt. Each value can be **Fixed**, **Random**, **Pressure**, **Tilt**, **Bearing** or **Rotation**, with a **Variation** that sets how far it moves. Pressure, Tilt, Bearing and Rotation read a drawing tablet's pen.
 
+![Calligraphic Brush Options for the Signature Nib brush over the dusk garden scene, with a preview of the narrow oval tip and a sample stroke. Angle is 40°, Roundness 25% and Size 9 pt, each Fixed with a Variation of 0](/assets/uploads/vectorcraft/calligraphic-brush-options.webp)
+
 **Bristle Brush Options** set the **Shape** of the brush (Round Point, Flat Point, Round Blunt, Flat Blunt, Round Curve, Flat Curve, Round Angle, Flat Angle, Round Fan or Flat Fan) and its **Size** from 0.1 to 1296 pt. **Bristle Length** runs from 25 to 300%, and **Bristle Density**, **Bristle Thickness**, **Paint Opacity** and **Stiffness** run from 1 to 100%.
 
+![Bristle Brush Options for the Bristle Round brush over the dusk garden scene, with Shape set to Round Point, Size 6 px, Bristle Length 100%, Bristle Density 50%, Bristle Thickness 40%, Paint Opacity 75% and Stiffness 50%, above a preview stroke](/assets/uploads/vectorcraft/bristle-brush-options.webp)
+
 **Scatter Brush Options** set **Size** (1 to 10000%), **Spacing** (1 to 10000%), **Scatter** (−1000 to 1000%) and **Rotation** (−180° to 180°). Each has two values and a menu. With Fixed, the brush uses the first value; with Random, each copy gets a value between the two. **Rotation relative to** turns the copies with the **Page** or with the **Path**.
+
+![Scatter Brush Options for the Evening Stars brush, with Size 50% to 130%, Spacing 120% to 220%, Scatter -80% to 80% and Rotation -180° to 180°, all set to Random, and Rotation relative to Page. Colorization Method is Tints, and the preview shows black stars scattered along a stroke](/assets/uploads/vectorcraft/scatter-brush-options.webp)
 
 **Art Brush Options** have these settings:
 
@@ -122,6 +138,8 @@ Double-click a brush in the Brushes panel to open its options. You can also sele
 
 **Pattern Brush Options** set **Scale** (1 to 10000%) and **Spacing** (0 to 10000%), the five tiles (**Outer Corner Tile**, **Side Tile**, **Inner Corner Tile**, **Start Tile** and **End Tile**), **Flip Along** and **Flip Across**, and the **Fit**: **Stretch to fit**, **Add space to fit** or **Approximate path**. A tile can be the brush's original art, None, a pattern swatch from the document, or, for a corner, a tile made from the side tile (**Auto-Centered**, **Auto-Between**, **Auto-Sliced** or **Auto-Overlap**). A pattern brush needs a side tile.
 
+![Pattern Brush Options for the Coral Picket brush over the dusk garden scene, with Scale 100%, Spacing 0%, the picket as the Side Tile set to Original and None for the other four tiles. Flip Along and Flip Across are off, Fit is Stretch to fit, Colorization Method is Tints, and the preview shows the picket repeated along a curve](/assets/uploads/vectorcraft/pattern-brush-options.webp)
+
 Scatter, art and pattern brushes also have **Colorization**. Click **Tips** beside **Method** to see a sample of each method.
 
 | Method | What happens to the art's colors |
@@ -131,14 +149,22 @@ Scatter, art and pattern brushes also have **Colorization**. Click **Tips** besi
 | **Tints and Shades** | Black and white stay as they are. Dark colors become shades of the stroke color, and light colors become tints of it |
 | **Hue Shift** | The **Key Color** becomes the stroke color. The other colors shift their hue by the same amount and keep their saturation and brightness. Pick the key color from the art's colors, or with the eyedropper |
 
+![Scatter Brush Options for the Evening Stars brush with Colorization Tips open beside the Tips button. The tips show a sample of the stars on a blue stroke for each of None, Tints, Tints and Shades and Hue Shift, with a sentence on what each method does](/assets/uploads/vectorcraft/colorization-tips.webp)
+
 To delete brushes, select them in the panel and click **Delete Brush**. When no stroke uses them, VectorCraft asks whether to delete them. When strokes use them, click **Remove Strokes** to take the brushes off those strokes, which keep a plain stroke, and delete the brushes. Alt-click (Option-click on macOS) **Delete Brush** to delete brushes that no stroke uses without being asked.
+
+![The Delete Brush question over the dusk garden scene, after Delete Brush was chosen with the vine selected and the Teal Vine brush highlighted in the Brushes panel. The question says that strokes use the brushes and asks whether to take the brushes off those strokes and delete them, with Remove Strokes and Cancel buttons](/assets/uploads/vectorcraft/delete-brush-dialog.webp)
 
 ## Load and save brush libraries
 
 A brush library is a set of brushes that opens in its own panel. Libraries are read-only: to use a brush, you add it to the document's Brushes panel.
 
+![The Brush Libraries Menu open from its button at the bottom left of the Brushes panel, over the dusk garden scene. It lists Art Ribbons, Calligraphic Nibs, Pattern Borders and Scatter Shapes, then Other Library… and Save Brushes…](/assets/uploads/vectorcraft/brush-libraries-menu.webp)
+
 1. Choose **Window → Brush Libraries**, click **Brush Libraries Menu** at the bottom left of the Brushes panel, or choose **Open Brush Library** from the panel menu, and choose a library. VectorCraft has four: Art Ribbons, Calligraphic Nibs, Pattern Borders and Scatter Shapes.
 2. Click a brush in the library panel. The brush is added to the Brushes panel as the current brush, and it is applied to any selected paths.
+
+![The Art Ribbons library panel docked below the Brushes panel, after its Striped Ribbon brush was clicked with three swirls selected in the dusk garden sky. The swirls now draw as blue striped ribbons, and the added brush is highlighted in the Brushes panel](/assets/uploads/vectorcraft/brush-library-panel.webp)
 
 You can also drag a library brush onto a path to apply it, or onto the Brushes panel to add it. A brush that the document already has is not added twice, and a brush whose name is taken gets a number.
 
@@ -150,6 +176,8 @@ To save the document's brushes as a library:
 2. Choose **Save Brush Library…** from the panel menu, or **Window → Brush Libraries → Save Brushes…**.
 3. Type a **Name**, and under **Save To**, choose **User Defined Libraries** or **A File…**. Turn on **Selected Brushes Only** to save only the brushes you selected.
 4. Click **OK**.
+
+![The Save Brush Library dialog over the dusk garden scene, with the name Dusk Garden Brushes, Save To set to User Defined Libraries and Selected Brushes Only (4) turned on](/assets/uploads/vectorcraft/save-brush-library.webp)
 
 A library is saved as a `.vectorcraft` file that holds the brushes and everything their art uses, such as patterns, symbols and swatches. Libraries saved to User Defined Libraries are listed under **Window → Brush Libraries → User Defined**.
 
@@ -179,6 +207,8 @@ To type exact widths, double-click a stroke or a width point to open **Width Poi
 
 Click **Delete** in the dialog to remove the width point. Shift-double-click a width point to open the dialog with Adjust Adjoining Width Points turned on.
 
+![The Width tool on a blue river stroke across the dusk hills at 130% zoom, with Width Point Edit open for the widest width point. Side 1 and Side 2 are 12 pt with the link button on, Total Width is 24 pt and Adjust Adjoining Width Points is off, and the status bar shows the Width tool's hints](/assets/uploads/vectorcraft/width-point-edit.webp)
+
 ## Paint filled shapes with the Blob Brush
 
 The Blob Brush paints filled shapes instead of stroked paths. A shape that you paint over another shape with the same fill and no stroke merges with it, so you can build up one shape stroke by stroke.
@@ -186,6 +216,8 @@ The Blob Brush paints filled shapes instead of stroked paths. A shape that you p
 1. Set the stroke color to the color you want to paint with. The Blob Brush uses the stroke color, or the fill color when the stroke is None.
 2. Press Shift+B to choose the Blob Brush tool.
 3. Drag on the canvas. Press [ to make the tip 1 pt smaller or ] to make it 1 pt larger.
+
+![The Blob Brush part way through a stroke in a cloud study over the dusk sky, painting a curved band out from the side of a lavender cloud. The round tip outline sits under the pointer with an L: 204.28 px readout beside it, and a second lavender cloud floats at the left](/assets/uploads/vectorcraft/blob-brush-painting.webp)
 
 A new shape merges with the topmost touching path that has the same fill and no stroke, and with the touching paths next to it in the stacking order of the same group or layer. Hold Shift as you drag to keep the stroke on a horizontal or vertical line. Hold **Alt** (**Option** on macOS) as you press to smooth the selected paths instead.
 
@@ -201,12 +233,16 @@ Double-click the Blob Brush tool in the Tools panel to open **Blob Brush Tool Op
 | **Keep selected** | Off | Keeps the new or merged shape selected |
 | **Merge only with selection** | Off | Merges a new shape only with selected paths |
 
+![Blob Brush Tool Options over the cloud study, with Fidelity 1.5 pt, Angle 0°, Roundness 100% and a preview of the round tip, Size 10 pt Fixed, Variation 0 pt dimmed, and Keep selected and Merge only with selection off](/assets/uploads/vectorcraft/blob-brush-options.webp)
+
 ## Turn brush strokes into paths
 
 Expanding a brush stroke replaces it with the artwork that the brush draws, as ordinary objects that you can edit one by one.
 
 1. Select the paths that have brush strokes.
 2. Click **Expand Brush Strokes** at the bottom of the Brushes panel, or choose it from the panel menu.
+
+![The dusk garden after Expand Brush Strokes on the vine. The vine is now a selected group whose stem, leaves and berries each show their own anchor points, and the Layers panel shows the new group open in Layer 1](/assets/uploads/vectorcraft/expand-brush-strokes.webp)
 
 Expand Brush Strokes replaces each path with a group of the brush art. To undo it, press **Ctrl+Z** (**Cmd+Z** on macOS).
 

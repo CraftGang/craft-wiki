@@ -103,9 +103,13 @@ Both rows then hold numbers that you can change in the dialog. To go back to a c
 
 In a pie graph, three pie options replace **Legend**. **Pie Legend** chooses **No Legend**, **Standard Legend** or **Legends in Wedges**. **Pie Position** sizes several pies by their totals (**Ratio**), at one size (**Even**) or stacked one on another (**Stacked**). **Pie Sort** orders the wedges largest first in each pie (**All**), in the first pie's order (**First**) or in data order (**None**). Line, scatter and radar graphs also have **Filled Lines**, which draws each connecting line as a 3 pt band filled with the series color.
 
+![A selected pie graph on a cream card titled Share of lanterns sold, week 24, beside the Lantern Shades title in the night-market scene. The wedges run largest first from the top, amber Paper, coral Silk, teal Rice and violet Glass, with each series name written inside its own wedge](/assets/uploads/vectorcraft/graph-pie-wedges.webp)
+
 To change the color of a series, select one of its columns, bars or markers with the Group Selection tool and set its fill. The graph keeps that color when it is drawn again, for example after you apply new data. The same applies to the labels: a font, size or color change to all of a label's text is kept.
 
 To combine two graph types, for example columns with a line, select the series you want to change with the Group Selection tool, then choose **Object → Graph → Type…** and pick the type for those series. The **Value Axis** setting then puts those series on the left or right axis. Column, stacked column, line and area series can be mixed, and so can bar and stacked bar series.
+
+![The whole lantern-sales artboard, with the Lanterns Sold title and the lit stalls beside the graph card. The Silk series is changed to a line: amber Paper columns for Mon to Sun, and a Silk line with a square marker on each day running across them. The Group Selection tool is active, the Silk line, its markers and its legend swatch are selected, and the Properties panel reads 9 Objects](/assets/uploads/vectorcraft/graph-combined-types.webp)
 
 ## Use your own art for columns and markers
 
@@ -117,6 +121,8 @@ A graph design is a piece of art that a graph draws in place of its plain column
 2. Select the art and choose **Object → Graph → Design…**.
 3. Click **New Design**. The design appears in the list as New Design.
 4. To rename it, type a name in **Name:** and click **Rename**. Graphs that use the design keep using it.
+
+![The Graph Design dialog over the lantern-sales scene, with new crescent moon art selected beside the Lanterns Sold title. The list holds Lantern, Silk Lantern and Star, Lantern is picked and drawn in the preview box, Name: reads Lantern, and the New Design, Rename, Delete Design, Paste Design and Select Unused buttons sit below the preview](/assets/uploads/vectorcraft/graph-design-dialog.webp)
 
 | Button | What it does |
 |---|---|
@@ -142,6 +148,8 @@ A graph design is a piece of art that a graph draws in place of its plain column
 | **Sliding** | The part of the design above a horizontal guide line is scaled with the column's width, and the part below it stretches to fill the rest. In a bar graph, use a vertical guide line |
 
 4. Click **OK**.
+
+![The whole lantern-sales artboard after both series get a design, with the Lanterns Sold title and the stalls beside the graph card. Each Paper column is a stack of amber lanterns, one for every 10, with the top lantern cut off where the value ends, and each Silk column is a single coral lantern stretched to the column's height. The Silk lanterns are selected with the Group Selection tool, and the legend shows a small lantern for Paper](/assets/uploads/vectorcraft/graph-column-designs.webp)
 
 To show each column's value in the design, add type to the design that holds `%` followed by two digits, for example `%31`. The first digit is the smallest number of places before the decimal point, and the second is the number of places after it. The graph replaces the `%` and the two digits with the value.
 
@@ -172,6 +180,8 @@ Choose **Window → Variables** to open the Variables panel. The **Data Set** li
 
 To define a variable that no object uses yet, click **New Variable…**, type a **Name** and choose its **Kind**.
 
+![The New Variable dialog above the stall badge, with stallHours typed in Name and Text chosen in Kind. The badge below it reads Lantern Lane beside a coral lantern and a round logo, and the docked Variables panel lists stallName, stallIcon and stallLogo and the data sets Row 1, Row 2 and the active Row 3](/assets/uploads/vectorcraft/variables-new-variable.webp)
+
 | Command | Where | What it does |
 |---|---|---|
 | **Unbind Variable** | Button and panel menu | Removes every variable from the selected objects. The variables stay in the list |
@@ -193,11 +203,15 @@ A data set is one row of values, one value for each variable. When you choose a 
 3. Change the text, image, graph data or visibility for the next version, and click **Capture Data Set** again.
 4. To step through the data sets, use the arrows beside the **Data Set** list, choose a name from the list, or click a row in **Data Sets**. The arrows wrap around from the last data set to the first.
 
+![The stall badge with data set Row 1 applied: the name reads Noodle Nook, the lantern icon is hidden and the logo has an amber ring. In the Variables panel, the Data Set list shows Row 1, Row 1 is the active row in Data Sets, and Row 2 and Row 3 are in italics](/assets/uploads/vectorcraft/variables-data-sets.webp)
+
 A data set name in italics holds values that differ from what the art shows now. To save your edits into the current data set, click **Update Data Set**. The panel menu also has **New Data Set…**, **Edit Data Set…**, **Rename Data Set…** and **Delete Data Set**, which deletes only the current data set.
 
 ### Import and export data sets as CSV
 
 Choose **Import Data Sets…** in the panel menu and pick a comma- or tab-separated file (`.csv`, `.tsv` or `.txt`). The import replaces every data set in the document.
+
+![The Variables panel menu open beside the stall badge. It lists the variable commands, then Capture Data Set, Update Data Set, New Data Set…, Edit Data Set…, Rename Data Set… and Delete Data Set, then Import Data Sets…, Export Data Sets…, Load Variable Library… and Save Variable Library…, then Select Bound Object, Select All Bound Objects and Float Panel](/assets/uploads/vectorcraft/variables-panel-menu.webp)
 
 - The first row names one variable in each column. Upper and lower case do not matter.
 - Each following row becomes a data set, named Data Set 1, Data Set 2 and so on in file order.
@@ -224,6 +238,8 @@ To write every version to its own file, record an action, then play it once for 
 3. Set **Play:** to **Data Sets**. The batch applies every data set of the open document in turn.
 4. Choose a **File Name:**. **File + Number** names the files after the document with 001, 002 and so on added, **File + Data Set Name** adds the data set name to the document name, and **Data Set Name** uses the data set name alone.
 5. Set **Destination:** to **Folder**, choose the **Destination Folder:** and click **OK**. VectorCraft writes a copy for each data set and keeps the document open.
+
+![The Batch dialog for the Export Badge action over the stall badge, with Play: set to Data Sets, File Name: set to File + Data Set Name, Destination: set to Folder and a folder typed in Destination Folder:. The docked Actions panel lists the Default Actions set and a Stall Badges set holding Export Badge](/assets/uploads/vectorcraft/batch-data-sets.webp)
 
 ## Save and load a variable library
 

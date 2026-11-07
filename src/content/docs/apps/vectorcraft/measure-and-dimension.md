@@ -44,6 +44,8 @@ The Info panel does not show the Measure tool's result, which appears only besid
 
 Choose **Hide Options** from the panel menu to hide D and A, and **Show Options** to show them again.
 
+![The Info panel docked beside Properties, Layers and Libraries while the Lantern Bracket title is selected on the drawing. It shows X, Y, W, H, D and A in millimeters, a fill of R 255, G 210 and B 122 with no stroke, and Source Serif 4 Regular at 28 pt with a tracking of 0](/assets/uploads/vectorcraft/info-panel-type.webp)
+
 ## Add a linear dimension
 
 The Dimension tool draws dimensions that are linked to the art they measure. Each dimension is a group of ordinary paths and type. The Layers panel lists it under its value, for example **Dimension · 218.7 mm**.
@@ -83,9 +85,13 @@ To dimension a circle or an arc:
 
 A click on a circle or an arc places its radius dimension at once.
 
+![The Dimension tool with Radial chosen in the floating Dimension Tool bar, and a new 26.8 mm diameter dimension across the scroll ring between the arm and the brace. A 25.8° angular dimension marks the corner between the brace and the arm, and the Properties panel's Dimension section shows the new dimension's settings with Apply to All and Set as Default](/assets/uploads/vectorcraft/dimension-radial.webp)
+
 ## Set units, precision and style
 
 Double-click the Dimension tool, or click **Tool Options…** in the Dimension Tool bar, to open **Dimension Tool Options**. **Save** sets the style of the dimensions you draw next. Dimensions you already placed keep their style. **Reset** restores the defaults, and the line under the options shows the label that 1 inch on the page would get. VectorCraft keeps the tool's kind and style with its preferences.
+
+![The Dimension Tool Options dialog set to Millimeters, precision 1 and scale 1:1, with 1 pt dimension lines and filled arrows, 0.75 pt extension lines with a 4 pt offset and a 6 pt extension, and the value in Inter Semi Bold at 13 pt, away from the line and centered. The line under the options reads Preview (1 inch on the page): 25.4 mm](/assets/uploads/vectorcraft/dimension-tool-options.webp)
 
 | Option | Default | What it does |
 |---|---|---|
@@ -131,7 +137,11 @@ The **Measure & Inspect Tool** measures a drag as the Measure tool does, with D,
 
 Readouts use the document's units. The tool does not draw anything into the document.
 
+![The Measure & Inspect tool on the lantern bracket. A measurement from the scroll ring's center to the top of the brace reads D 108.92 mm, Angle 10.1°, dX 107.24 mm and dY -19.05 mm, and the pointer over the hook reads Open path with 3 anchors, its segment and path lengths, area, tangent, a straight radius, anchor 2 as a corner at 180.0° and its Out handle of 7.06 mm at -90.0°](/assets/uploads/vectorcraft/measure-inspect.webp)
+
 The **Anchor Inspector** panel edits anchor points with typed values. Select anchor points with the Direct Selection tool (A). The panel shows how many are selected, and the **X** and **Y** position of the first one. **In** and **Out** set the length and angle of its handles. The panel also has **Make Smooth**, **Make Corner**, **Equalize Handles**, **Remove Points, Keep Shape**, **Add Points** and **Close Path**. [Cut, join and refine paths](/apps/vectorcraft/cut-join-and-refine-paths/#edit-points-in-the-anchor-inspector) describes these.
+
+![The Anchor Inspector panel docked beside Properties, Layers and Libraries, with one anchor point of the hook selected with the Direct Selection tool. The panel shows its X and Y position, an In handle of 0 mm, an Out handle of 7.0556 mm at -90°, and the Make Smooth, Make Corner, Equalize Handles, Remove Points, Keep Shape, Add Points and Close Path buttons](/assets/uploads/vectorcraft/anchor-inspector-hook.webp)
 
 ## List what a document holds with Document Info
 

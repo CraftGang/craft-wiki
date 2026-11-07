@@ -32,6 +32,8 @@ The other save commands are on the same menu:
 | **Save for Office Documents…** | Saves one artboard as a PNG picture for office documents and slides. |
 | **Revert** | Discards the changes since the last save and reloads the saved file in the same tab. VectorCraft asks first. |
 
+![The File menu open over the harbor drawing, with Save As… highlighted among Save, Save a Copy…, Save as Template…, Save as PDF…, Save for Office Documents… and Revert, and the shortcuts of Save, Save As…, Save a Copy… and Revert](/assets/uploads/vectorcraft/file-menu-save-commands.webp)
+
 :::caution
 When a format cannot hold everything in the document, the save finishes with a warning that lists the content the file does not hold. Before you save over a file that did not open completely, VectorCraft asks whether to replace it.
 :::
@@ -62,6 +64,8 @@ Save As writes these formats: VectorCraft, VectorCraft Template, PDF, SVG, SVG C
 A `.ai` file that VectorCraft wrote, and a PDF or SVG file saved with its preserve editing option on, reopens in VectorCraft as the full VectorCraft document it carries. If the file was changed in another program since, VectorCraft opens its artwork instead, and the first warning gives the reason.
 :::
 
+![The SVG Options dialog over the harbor drawing, with SVG Profile set to SVG 1.1, Styling to Internal CSS, Images to Embed, Object IDs to Layer Names and Decimal to 3, and Responsive and Preserve Editing Capabilities turned on](/assets/uploads/vectorcraft/svg-options-preserve-editing.webp)
+
 ### Save a PDF
 
 1. Choose **File → Save as PDF…**.
@@ -84,6 +88,8 @@ To check colors, overprints and transparency before you send a PDF to a print sh
 1. Choose **File → Save for Office Documents…**.
 2. Set the options from the following table. **Size** shows the width and height of the picture in pixels.
 3. Press **Save…**, then choose a name and a location for the PNG file.
+
+![The Save for Office Documents dialog over the harbor drawing, with Resolution set to Medium (150 ppi), Artboard set to Artboard 1, Size 3333 × 2083 px, and Transparent Background turned off](/assets/uploads/vectorcraft/save-for-office-dialog.webp)
 
 | Option | What it does | When the dialog opens |
 |---|---|---|
@@ -122,6 +128,8 @@ PDF and PNG files that VectorCraft writes carry the File Info, and so do SVG fil
 2. Pick a file in any format that has Yes in the Open column of the format table.
 3. To open a file you used recently, choose it from **File → Open Recent Files**. **Clear Recent Files** at the end of that submenu empties the list.
 
+![The File menu open with the Open Recent Files submenu showing harbor-lights.vectorcraft and night-market.vectorcraft, and Clear Recent Files at the end of the submenu](/assets/uploads/vectorcraft/open-recent-files.webp)
+
 What you get depends on the file:
 
 - A PDF opens with one artboard per page.
@@ -149,11 +157,15 @@ When a document uses fonts that are not installed, the Missing Fonts dialog open
 
 To use another font instead, press **Find Fonts**. It opens **Type → Find Font…** with the first missing font selected. Pick a replacement font, then press **Change** to change it in the selected objects or **Change All** to change it everywhere in the document. **Close** closes the dialog without changing the document. Later, **Find in Folder…** in the Find Font dialog asks for a folder and opens the Missing Fonts dialog with that folder's search results.
 
+![The Find Font dialog over the night market drawing, with Shippori Mincho Regular marked missing among the two fonts in the document, Replace With Font From set to Document, and Source Serif 4 Regular selected as the replacement above the Change and Change All buttons. The tagline Riverside · Since 2019, set in the missing font, is highlighted on the canvas.](/assets/uploads/vectorcraft/find-font-replace-missing.webp)
+
 ## Recover work after a crash
 
 VectorCraft keeps recovery copies of documents that have unsaved changes. By default it writes them every 2 minutes in the background, and the status bar shows each copy it saves. Saving, reverting or closing a document removes its copy.
 
 When VectorCraft starts after it did not quit normally, the **Recover Documents** dialog lists the documents that had unsaved changes and the time of each copy.
+
+![The Recover Documents dialog over the harbor drawing, listing harbor-lights.vectorcraft and night-market.vectorcraft with the time of each recovery copy in UTC, and the Discard, Cancel and Restore buttons](/assets/uploads/vectorcraft/recover-documents-dialog.webp)
 
 1. Press **Restore**. Each document opens in its own tab with **[Recovered]** after its name, as a document that has not been saved.
 2. Save each restored document to keep it. Save asks for a name and a location.
@@ -169,11 +181,15 @@ The recovery settings are under **Data Recovery** in **Edit → Preferences… �
 | **Folder** | The folder that holds the copies | The folder VectorCraft sets |
 | **Turn off Data Recovery for complex documents** | Skips the copies of documents with more than 20,000 objects | Off |
 
+![The File Handling section of Preferences, with Automatically Save Recovery Data turned on, Every (minutes) set to 2, an empty Folder field with a Choose… button, and Turn off Data Recovery for complex documents turned off under Data Recovery](/assets/uploads/vectorcraft/preferences-data-recovery.webp)
+
 If VectorCraft keeps closing unexpectedly, [Troubleshooting](/apps/vectorcraft/troubleshooting/) shows where to find the log to send with a report.
 
 ## Place a file instead of opening it
 
 **File → Place…** (**Ctrl+Shift+P**, or **Cmd+Shift+P** on macOS) brings a file into the open document instead of opening it in a new tab.
+
+![The Place dialog over the night market drawing, listing harbor-sunset.png and lantern-string.png with the size, resolution and color mode of each, with Link turned on, Template turned off and Replace unavailable](/assets/uploads/vectorcraft/place-dialog.webp)
 
 1. Choose **File → Place…** and pick one or more files.
 2. In the Place dialog, turn on any of the options:
@@ -183,7 +199,11 @@ If VectorCraft keeps closing unexpectedly, [Troubleshooting](/apps/vectorcraft/t
 3. Press **Place**. A single file is placed in the center of the view.
 4. With several files, the pointer is loaded with them one at a time. Click on the canvas to place the current file at 100%, or drag to set its size. The arrow keys switch between files, and Esc skips one.
 
+![The night market drawing with the pointer loaded for placing: a thumbnail of the harbor picture, the first of the two files, and a badge with the number 2](/assets/uploads/vectorcraft/place-loaded-cursor.webp)
+
 Place reads raster images, SVG, PDF and `.ai` pages, EPS, DXF, EMF, WMF and other VectorCraft documents. Text files (`.txt`, `.rtf`, `.docx` and `.doc`) are placed as area type. Raster images are placed at 100% of their physical size, using the resolution the file declares, or 72 ppi when it declares none. A PDF with several pages opens the Place PDF dialog first, where you pick the page.
+
+![The Place PDF dialog over the night market drawing, with a preview of page 1 of 3 showing the harbor drawing, the page number box with its arrows, and Crop To set to Crop](/assets/uploads/vectorcraft/place-pdf-dialog.webp)
 
 ## Package a document for someone else
 
@@ -194,6 +214,8 @@ Place reads raster images, SVG, PDF and `.ai` pages, EPS, DXF, EMF, WMF and othe
 3. Choose the options: **Copy Links**, **Collect Links in a Separate Folder**, **Relink Linked Files to the Document**, **Copy Fonts Used in the Document** and **Create Report**.
 4. Press **Package**.
 
+![The Package dialog over the night market drawing, with Location C:/Art/Print Jobs, Folder Name night-market Folder, and all five options turned on](/assets/uploads/vectorcraft/package-dialog.webp)
+
 :::caution
 Package does not copy fonts whose license does not allow embedding.
 :::
@@ -201,6 +223,8 @@ Package does not copy fonts whose license does not allow embedding.
 ## Close documents
 
 **File → Close** (**Ctrl+W**, or **Cmd+W** on macOS) closes the active document, and **File → Close All** (**Ctrl+Alt+W**, or **Cmd+Option+W** on macOS) closes every open document. If a document has unsaved changes, VectorCraft asks whether to save them first.
+
+![The prompt that asks whether to save the changes made to harbor-lights.vectorcraft, with the Don't Save, Cancel and Save buttons, over the harbor drawing whose tab shows an asterisk for unsaved changes](/assets/uploads/vectorcraft/close-unsaved-changes.webp)
 
 ## File shortcuts
 

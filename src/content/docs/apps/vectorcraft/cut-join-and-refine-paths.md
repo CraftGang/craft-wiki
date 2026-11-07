@@ -36,6 +36,8 @@ Double-click the Eraser tool in the Tools panel to open **Eraser Tool Options**:
 | **Size** | Fixed, 10 pt | Sets the tip's width, from 0.1 pt to 1000 pt. Choose **Pressure** to let pen pressure change it |
 | **Variation** | 0 pt | With **Pressure**, the tip is Size minus Variation wide at the lightest pressure and Size plus Variation at the heaviest |
 
+![The Eraser Tool Options dialog over the dusk harbor, with Angle at 0°, Roundness at 100%, Size set to Fixed at 10 pt and Variation dimmed at 0 pt](/assets/uploads/vectorcraft/eraser-tool-options.webp)
+
 ## Cut with Mirror & Cut, Line Cut and Rectangle Cut
 
 The three cutting tools share the Eraser tool's group. Each one cuts the selected paths and compound paths, including paths inside groups, and does nothing when nothing is selected. The cut shows while you drag and becomes one undo step when you release. Press Esc during the drag to cancel it.
@@ -46,10 +48,14 @@ The three cutting tools share the Eraser tool's group. Each one cuts the selecte
 | **Line Cut** | Draws the cut line. Hold Shift for 45° steps | Splits the paths along the line, extended across the art. A filled shape becomes a piece on each side, with its holes kept, and an open path splits where it crosses the line |
 | **Rectangle Cut** | Draws a rectangle. Hold Shift for a square, or **Alt** (**Option** on macOS) to draw from the center | Cuts the paths to the rectangle's outline. It does not make a clipping mask. Art wholly outside the rectangle is deleted |
 
+![The Line Cut tool part way through a drag in the dusk harbor at 110% zoom. A dashed blue cut line runs from the upper left down across both hills and out over the dark water, and the preview splits both selected hills along it, outlined in red, with Properties showing 4 Objects](/assets/uploads/vectorcraft/line-cut.webp)
+
 Mirror & Cut has two options in the Control bar (**Window → Control**):
 
 - **Axis**: **Free**, the default, draws the axis with the drag. With **Vertical** or **Horizontal**, the axis follows the pointer, and a click places it.
 - **Keep**: **Left**, **Right**, **Top** or **Bottom** names the side that is kept. **Left** is the default. When the axis runs across, Left means Top and Right means Bottom. Hold **Alt** (**Option** on macOS) as you release to keep the other side.
+
+![Two coral channel buoys in the harbor at 130% zoom, with the Control bar showing Axis set to Free and Keep set to Left. The Mirror & Cut tool is part way through dragging a dashed axis down the middle of the selected left buoy, and the preview shows its left half and amber pennant reflected onto the right, while the unselected buoy beside it keeps its lopsided right side and single pennant](/assets/uploads/vectorcraft/mirror-and-cut.webp)
 
 ## Join open ends with the Join tool
 
@@ -58,6 +64,8 @@ Mirror & Cut has two options in the Control bar (**Window → Control**):
 3. When two open paths cross and their ends stick out past the crossing, drag over those ends. The Join tool trims them and joins the paths where they cross.
 
 The Join tool works on the selected paths, or on every path near the drag when nothing is selected. To join selected ends without dragging, use **Object → Path → Join**.
+
+![An amber mooring line in two selected pieces runs from the headland toward a sailboat, at 200% zoom. The Join tool is part way through a blue zigzag drag across the gap between the two loose ends](/assets/uploads/vectorcraft/join-tool.webp)
 
 ## Sketch shapes with the Shaper tool
 
@@ -104,6 +112,8 @@ To draw:
 3. Press Tab to switch the segment into the point you are placing, or the last one you drew, between straight and curved.
 4. Click the first point to close the path, or click an end of another open path to join the two. Press Enter or Esc to leave the path open.
 
+![A sailboat at sunset at 150% zoom, with its mainsail part way drawn with the Smart Pen tool: two straight sides and a curved edge rising to the top of the mast, and a readout of distance and angle beside the pointer. The Smart Pen panel is open with Next Segment set to Straight](/assets/uploads/vectorcraft/smart-pen.webp)
+
 To edit a path with the same tool:
 
 | Action | Result |
@@ -127,6 +137,8 @@ Choose these tools from **Object → Plug-ins → Path Precision Tools**, or add
 - **Slide Anchor Along Path**: drag an anchor point to move it along the curve it sits on. VectorCraft refits the two segments beside it to the outline they had before. Hold Shift to stop where the path's direction is a multiple of 45°. The ends of an open path do not slide.
 - **Anchor Eraser Brush**: paint over selected paths to remove the anchor points under the brush that can go without changing the outline by more than the **Tolerance**. VectorCraft refits the handles of the anchor points beside them. Hold **Alt** (**Option** on macOS) to remove every anchor point under the brush that can go, whatever the Tolerance, or **Ctrl** (**Cmd** on macOS) to delete them without refitting the curve. Press [ or ] to resize the brush. Double-click the tool to set **Size** (1 to 2500 px, default 20), **Tolerance** (1 to 100, default 10) and **Pressure**.
 
+![A fishing rod over the end of a pier at 220% zoom. The Extend Path Tool is part way through dragging the end of the lavender fishing line down toward a coral float, and a readout beside it shows the line's new length and the change](/assets/uploads/vectorcraft/extend-path-tool.webp)
+
 ### Round corners with the Corner Tool
 
 The **Corner Tool** menu item chooses the tool and opens the Anchor Inspector panel, whose **Corners** section has the tool's **Radius** (10 pt to start) and **Corner** kind. With a path or some of its anchor points selected, **Apply to Selected Anchors** rounds the selected corners with that radius and kind, and **Set Corners…** opens the dialog described below. Both buttons are dimmed when the selection has no corners.
@@ -134,6 +146,8 @@ The **Corner Tool** menu item chooses the tool and opens the Anchor Inspector pa
 1. Point at an anchor point that can take a corner, and click to round it with the tool's radius and kind. Drag instead to size the corner. Hold Shift to keep the radius to whole units.
 2. To change a corner, click the marker at its center to select it, then drag the marker. Drag it to 0, or double-click it, to remove the corner.
 3. To round every anchor point in an area, hold **Alt** (**Option** on macOS) and drag a marquee around them.
+
+![An amber boathouse on a teal hill at 280% zoom, its two eave corners already rounded. The Corner Tool is part way through a drag at the roof's peak, which rounds it with a readout of the radius, and the Anchor Inspector panel shows the Corners section with Radius 10 px, Corner set to Round, Apply to Selected Anchors and Set Corners](/assets/uploads/vectorcraft/corner-tool.webp)
 
 To round many anchor points at once, select a path or its anchor points and choose **Object → Plug-ins → Path Precision Tools → Set Corners…**:
 
@@ -146,6 +160,8 @@ To round many anchor points at once, select a path or its anchor points and choo
 
 The canvas previews the corners while the dialog is open.
 
+![The Set Corners dialog with Radius 12 px, Corner set to Round, Anchors set to All Anchors, Angle 0° to 180° and Preview on. Beside it, the selected amber boathouse shows every corner of its outline rounded in the preview](/assets/uploads/vectorcraft/set-corners.webp)
+
 ### Edit points in the Anchor Inspector
 
 Open the panel from **Object → Plug-ins → Path Precision Tools → Anchor Inspector**, and direct-select anchor points to edit them:
@@ -154,6 +170,8 @@ Open the panel from **Object → Plug-ins → Path Precision Tools → Anchor In
 - **Make Smooth**, **Make Corner**, **Equalize Handles** and **Remove Points, Keep Shape** change the selected points.
 - **Add Points** adds the number of points you set (1 to 100) to each selected segment.
 - **Close Path** closes an open path with **Keep Handles**, **Straight** or **Smooth**.
+
+![A sailboat at sunset at 150% zoom with the Direct Selection tool, and the lower outer corner of the amber jib direct-selected. The Anchor Inspector panel shows Anchors selected: 1, with X 1104.5 px, Y 725 px and In and Out handle lengths of 0 px](/assets/uploads/vectorcraft/anchor-inspector.webp)
 
 ## Split paths where they cross, and divide them into dashes
 
@@ -175,6 +193,8 @@ Select the paths, then choose a command from **Object → Plug-ins → Path Prec
 | **Fit to Corners and Ends** | Off | Stretches or squeezes the pieces so each run between corners and ends starts and ends on a whole dash |
 | **Remove Gaps** | On | Leaves the gaps empty. When it is off, the gaps become pieces too. Available when **Gap** is more than 0 |
 
+![The Divide into Dashes dialog with Dash 24 px, Gap 12 px, Fit to Corners and Ends off, Remove Gaps on and Preview on. Below it, a selected cyan ferry route across the bay shows as separate dashes in the preview](/assets/uploads/vectorcraft/divide-into-dashes.webp)
+
 The pieces keep the path's appearance and stay selected. When you have direct-selected some segments, only those segments are divided.
 
 ## Merge shared edges
@@ -186,6 +206,8 @@ The **Shared Edge Merge Tool** cleans up the edge between two shapes that touch,
 3. Click to replace both stretches with one edge, halfway between them. Hold Shift to follow the upper path, or **Alt** (**Option** on macOS) to follow the lower one.
 
 Where the two paths do not yet share anchor points at the ends of the edge, a click makes one: nearby anchor points meet halfway, and a path that lacks one gets an anchor point to match. In the **Shared Edges** section, **Diameter** sets the brush size (0.25 pt to 200 pt, default 20 pt) and **Coincidence** sets how close two anchor points must be to count as shared (0 pt to 3 pt, default 0.002 pt). **Keep Shared Points Together** moves shared points together when you slide one.
+
+![An amber field and a coral field on a teal hill at 300% zoom, with a thin gap of hill showing between their curved edges. The Shared Edge Merge Tool's round brush is over the gap, the two stretches of outline are highlighted in blue and the merged edge runs between them in red, and the Anchor Inspector panel shows the Shared Edges section with Diameter 20 pt and Coincidence 0.002 pt](/assets/uploads/vectorcraft/shared-edge-merge.webp)
 
 ## Draw parametric shapes
 
@@ -209,6 +231,8 @@ Click a parametric shape with the tool to show its handles for the center, size,
 
 To turn existing shapes into parametric ones, select plain closed rectangles, ellipses or regular polygons and choose **Convert to Parametric Shape** from the same submenu, or click the button at the bottom of the panel.
 
+![Coral starfish in the shallow water of the harbor at 180% zoom. The Parametric Shape Tool is part way through dragging out a new five-pointed star with a readout of its size and angle, and the Parametric Shape panel shows Shape set to Star, Count 5, the width, height and rotation, Inner Radius 50% and Corner Radius 0 px](/assets/uploads/vectorcraft/parametric-shape.webp)
+
 ## Outline areas with the Contour tool
 
 The Contour tool grows or shrinks a live outline copy of a shape.
@@ -218,6 +242,8 @@ The Contour tool grows or shrinks a live outline copy of a shape.
 3. Drag again on a selected contour to change its distance. The tool shows the shape's earlier outline as a dashed guide.
 
 While the tool is active, a Contour bar above the selection shows the distance, the corner style (**Sharp**, **Round** or **Square**) and **Bake**. The contour is a live Offset Path effect. **Bake**, or **Object → Expand Appearance**, turns it into plain paths.
+
+![An amber island in the bay at 200% zoom with a translucent cyan contour around it for shallow water. The Contour tool is part way through dragging the contour farther out, with the island's outline as a dashed guide, a +38.90 pt readout, and the Contour bar above showing 38.9 pt with Round chosen and Bake](/assets/uploads/vectorcraft/contour-tool.webp)
 
 ## Related
 
