@@ -19,14 +19,14 @@ Some menu items are grayed out. Those features are not built yet; they are liste
 
 | Guide | What it covers |
 |---|---|
-| [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/) | New Document presets, artboards, units, bleed, color mode and moving around the canvas |
+| [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/) | New Document presets, artboards and their options, units, bleed, color mode, moving around the canvas, and rulers, guides and grids |
 | [Open and save files](/apps/vectorcraft/open-and-save-files/) | The VectorCraft format, Save As formats, opening other files and placing them |
 
 ### Draw and edit
 
 | Guide | What it covers |
 |---|---|
-| [Draw and transform shapes](/apps/vectorcraft/draw-and-transform-shapes/) | Shape tools, live corners, selecting, moving, rotating, scaling and repeating a transform |
+| [Draw and transform shapes](/apps/vectorcraft/draw-and-transform-shapes/) | Shape, line, arc, spiral, grid and flare tools, live corners, the Transform panel, and moving, rotating, reflecting, scaling, shearing and repeating a transform |
 | [Select artwork](/apps/vectorcraft/select-artwork/) | The Group Selection, Lasso and Magic Wand tools, the **Select** menu, Global Edit and saved selections |
 | [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/) | The Pen, Curvature, Pencil, Paintbrush and Blob Brush tools, anchor editing and the **Object → Path** commands |
 | [Paint with brushes and variable widths](/apps/vectorcraft/paint-with-brushes/) | Brush kinds, the Brushes panel, brush libraries, your own brushes, the Width tool and the Blob Brush |
@@ -42,14 +42,14 @@ Some menu items are grayed out. Those features are not built yet; they are liste
 | Guide | What it covers |
 |---|---|
 | [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/) | Fill and stroke, swatches, the Stroke panel, gradients, gradient meshes, patterns and recoloring |
-| [Add and style type](/apps/vectorcraft/add-and-style-type/) | Point type, area type, type on a path, threading and the Character and Paragraph panels |
+| [Add and style type](/apps/vectorcraft/add-and-style-type/) | Point type, area type, type on a path, threading, the Character and Paragraph panels and the Type menu |
 | [Work with styles and long text](/apps/vectorcraft/work-with-styles-and-long-text/) | Paragraph and character styles, OpenType features and glyphs, tabs, text wrap and Find and Replace |
 
 ### Organize and combine
 
 | Guide | What it covers |
 |---|---|
-| [Arrange, group and align](/apps/vectorcraft/arrange-group-and-align/) | Stacking order, groups, lock and hide, selecting similar objects and the Align panel |
+| [Arrange, group and align](/apps/vectorcraft/arrange-group-and-align/) | Stacking order, groups and isolation mode, lock and hide, selecting similar objects, and aligning with the Align panel and the Object menu |
 | [Combine and cut shapes](/apps/vectorcraft/combine-and-cut-shapes/) | Pathfinder, Shape Builder, compound paths, clipping masks and Live Paint |
 | [Organize with layers and symbols](/apps/vectorcraft/organize-with-layers-and-symbols/) | Layers, sublayers, template layers and reusable symbols |
 

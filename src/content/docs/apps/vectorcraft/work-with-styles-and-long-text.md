@@ -160,7 +160,7 @@ The symbol is drawn as tall as the font size, centered on the capital letters. B
 
 In vertical type, each line runs from top to bottom.
 
-1. In the toolbar, choose the Vertical Type tool from the Type tool's group, or the Vertical Area Type tool or the Vertical Type on a Path tool from the Area Type tool's group.
+1. In the toolbar, choose the Vertical Type tool, the Vertical Area Type tool or the Vertical Type on a Path tool from the Type tool's group.
 2. Click or drag on the artboard and type, as with the horizontal tools.
 
 To turn type you already made, select it and choose **Type → Type Orientation → Vertical**. **Type → Type Orientation → Horizontal** turns it back.
