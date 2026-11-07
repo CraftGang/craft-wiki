@@ -1,5 +1,6 @@
 ---
-import { apps, thirdPartyApps, guidesFor } from '../data/apps.mjs';
+import { apps, thirdPartyApps } from '../data/apps.mjs';
+import WikiGuideLinks from './WikiGuideLinks.astro';
 const pathname = Astro.url.pathname;
 ---
 <div class="wiki-sidebar-inner">
@@ -11,9 +12,7 @@ const pathname = Astro.url.pathname;
     {apps.map(([slug, name, ext = 'webp']) => (
       <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
         <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
-        <div class="wiki-guide-links">
-          {guidesFor(slug).map(([guide, label]) => <a href={`/apps/${slug}/${guide}/`} aria-current={pathname === `/apps/${slug}/${guide}/` ? 'page' : undefined}>{label}</a>)}
-        </div>
+        <WikiGuideLinks slug={slug} />
       </details>
     ))}
   </div>
@@ -22,9 +21,7 @@ const pathname = Astro.url.pathname;
     {thirdPartyApps.map(([slug, name, ext = 'webp']) => (
       <details class="wiki-app-group" data-name={name.toLowerCase()} open={pathname.startsWith(`/apps/${slug}/`)}>
         <summary><img src={`/assets/apps/${slug}.${ext}`} alt="" /><span>{name}</span><span class="wiki-chevron" aria-hidden="true">⌄</span></summary>
-        <div class="wiki-guide-links">
-          {guidesFor(slug).map(([guide, label]) => <a href={`/apps/${slug}/${guide}/`} aria-current={pathname === `/apps/${slug}/${guide}/` ? 'page' : undefined}>{label}</a>)}
-        </div>
+        <WikiGuideLinks slug={slug} />
       </details>
     ))}
   </div>

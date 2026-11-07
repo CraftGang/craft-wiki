@@ -2,7 +2,7 @@
 title: Troubleshooting
 description: Fix common problems with VectorCraft, and find its log when something goes wrong.
 sidebar:
-  order: 6
+  order: 32
 ---
 
 ## The window doesn't open, or stays black

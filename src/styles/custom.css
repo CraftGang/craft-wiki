@@ -43,6 +43,13 @@
 .wiki-guide-links { padding:2px 0 8px 29px; }
 .wiki-guide-links a { display:block; padding:7px 12px; border-left:1px solid #30323b; font-size:13px; color:#a4a6b2; text-decoration:none; }
 .wiki-guide-links a[aria-current='page'] { color:#b9cbff; background:#292e3d; }
+.wiki-guide-parent { position:relative; }
+.wiki-guide-parent > a { padding-right:40px; }
+.wiki-guide-group > summary { position:absolute; top:0; right:0; padding:7px 12px; font-size:13px; }
+.wiki-guide-chevron { color:#a4a6b2; display:inline-block; transition:transform .15s; }
+.wiki-guide-group[open] .wiki-guide-chevron { transform:rotate(180deg); }
+.wiki-guide-children { padding:2px 0 4px 12px; }
+.wiki-guide-children a { line-height:1.45; }
 #wiki-no-results { font-size:13px; color:#a4a6b2; padding:10px; }
 .wiki-home { padding:36px 0 70px; }
 .wiki-home > .wiki-eyebrow { margin:0 0 20px; }

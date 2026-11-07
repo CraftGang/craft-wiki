@@ -2,7 +2,7 @@
 title: Print a large poster
 description: Print a poster, sign or sewing pattern across several sheets of paper with VectorCraft's tiled printing.
 sidebar:
-  order: 5
+  order: 31
 ---
 
 Tiled printing spreads a drawing that is bigger than your paper across several sheets of A4, Letter or any other size. VectorCraft divides the drawing into numbered tiles at the scale you choose. An overlap repeats a strip of the drawing on neighbouring sheets, so you can line them up when you stick them together.
