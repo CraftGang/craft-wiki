@@ -13,7 +13,7 @@ A path is a line made of segments. Each segment runs between two anchor points. 
 
 A smooth anchor point has two handles that stay in line, so the path passes through it without a bend. A corner anchor point has no handles, or handles that move on their own, so the path changes direction there. The following image shows a path with a smooth anchor point in the middle and a corner anchor point at each end.
 
-![A curved path with three anchor points, the middle one smooth with two direction handles, labeled to show the anchor point, the direction handle and the segment](/assets/uploads/vectorcraft/path-anatomy.png)
+![A curved ridge line over a sunset sky with three anchor points. The middle point is smooth, with two direction handles in line, and labels point to an anchor point, a direction handle and a segment](/assets/uploads/vectorcraft/path-anatomy.webp)
 
 ## Path tools
 
@@ -43,7 +43,7 @@ The Add Anchor Point, Delete Anchor Point and Anchor Point tools are in the Pen 
 
 While you draw, a preview of the next segment follows the pointer. When you click the last anchor point you placed, the Pen tool removes its outgoing handle, so the next segment leaves that point as a corner.
 
-![The Pen tool part way through a path: a corner anchor, a smooth anchor with its handles pulled out, and the preview of the next segment](/assets/uploads/vectorcraft/pen-drawing.png)
+![The Pen tool part way through a mountain ridge over a sunset: a corner anchor, a smooth anchor with its handles pulled out, and the preview of the next segment following the pointer with its distance and angle readout. The status bar shows the Pen tool's hints](/assets/uploads/vectorcraft/pen-drawing.webp)
 
 :::tip
 When a path is selected and you are not drawing one, the Pen tool adds an anchor point where you click one of its segments and deletes an anchor point you click. Hold Shift to start a new path instead. To turn this off, open **Edit → Preferences…**, choose General and turn on **Disable Auto Add/Delete**.
@@ -135,7 +135,7 @@ Select one or more paths, then choose a command from **Object → Path**. Clean 
 
 Offset Path… places the new path above the original. The dialog has **Offset**, **Joins** and **Miter Limit** fields. The following image shows, from left to right, a stroked path, the same path after Outline Stroke, and a path with a rounded offset path sent behind it.
 
-![Three stars: a plain stroked outline, the same star after Outline Stroke turned its stroke into a filled shape, and a star with a rounded offset path drawn behind it](/assets/uploads/vectorcraft/offset-and-outline.png)
+![Three stars on a night sky, labeled Stroked path, Outline Stroke and Offset Path: a plain amber stroked outline, the same star after Outline Stroke turned its stroke into a filled shape, selected so its new anchor points show, and a coral star with a rounded purple offset path behind it](/assets/uploads/vectorcraft/offset-and-outline.webp)
 
 :::caution
 Outline Stroke replaces the stroke with a filled shape. To change the stroke weight afterward, undo the command or start again from a copy of the original path.

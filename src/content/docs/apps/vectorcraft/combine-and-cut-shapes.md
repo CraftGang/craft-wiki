@@ -17,7 +17,7 @@ This page shows how to make new shapes from shapes that overlap. You combine and
 
 Divide and Outline work on a single object. Every other operation needs two or more objects, or a group, and its button stays dimmed until the selection has them. The following image shows the same teal square and coral circle after each of the ten Pathfinder operations.
 
-![A grid of ten results from the same overlapping square and circle, one for each Pathfinder operation, labeled Unite, Minus Front, Intersect, Exclude, Divide, Trim, Merge, Crop, Outline and Minus Back](/assets/uploads/vectorcraft/pathfinder-grid.png)
+![A grid of ten results from the same teal square and coral circle, one for each Pathfinder operation, labeled Unite, Minus Front, Intersect, Exclude, Divide, Trim, Merge, Crop, Outline and Minus Back. The Divide result is selected and the Pathfinder panel is open](/assets/uploads/vectorcraft/pathfinder-grid.webp)
 
 The operations treat the selection as a stack, from the back-most object to the front-most one.
 
@@ -60,7 +60,7 @@ The Shape Builder tool (Shift+M) merges and deletes the regions that overlapping
 
 If you hold Shift when you press the mouse button, the drag draws a rectangle instead of a line. The regions the rectangle reaches are merged, or deleted if you also hold **Alt** (**Option** on macOS). Press Escape during a drag to cancel it.
 
-![Three overlapping circles, coral, yellow and blue, selected with the Shape Builder tool; the small region where all three overlap is covered by a hatch pattern](/assets/uploads/vectorcraft/shape-builder.png)
+![Three overlapping circles, coral, yellow and blue, selected with the Shape Builder tool. A drag runs from the coral circle into the small region where all three overlap, and the three regions it has crossed (the coral circle, the overlap of coral and yellow, and the overlap of all three) are covered by a hatch pattern](/assets/uploads/vectorcraft/shape-builder.webp)
 
 Double-click the tool to open **Shape Builder Tool Options**. These options change how it works:
 
@@ -91,7 +91,7 @@ A clipping mask shows the objects under it only where they fall inside its shape
 
 The top-most selected object becomes the clipping path, and it loses its own fill and stroke. The result is a clip group.
 
-<img src="/assets/uploads/vectorcraft/clipping-mask.png" alt="A five-pointed star filled with coral and yellow stripes, made by clipping a set of striped rectangles with a star-shaped clipping mask" width="360" style="display: block; margin-inline: auto;" />
+<img src="/assets/uploads/vectorcraft/clipping-mask.webp" alt="A five-pointed star filled with sunset stripes from violet through coral to pale yellow on a night sky, made by clipping a set of striped rectangles with a star-shaped clipping mask" width="360" style="display: block; margin-inline: auto;" />
 
 To work with a clip group, select it and use the other commands in **Object → Clipping Mask**:
 

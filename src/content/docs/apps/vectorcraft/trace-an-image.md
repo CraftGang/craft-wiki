@@ -7,7 +7,7 @@ sidebar:
 
 This guide shows how to place a raster image, such as a scan, a sketch or a flat-color logo, and trace it into paths you can edit. You pick a preset, adjust the tracing while the preview updates, and then expand the result into ordinary paths. The following image is the one traced in this guide, a flat-color landscape saved as a PNG file.
 
-![A small flat-color landscape image with a blue sky, a yellow sun, two green hills and a dark blue hill, used as the image to trace](/assets/uploads/vectorcraft/trace-source.png)
+![A small flat-color landscape at dusk with a violet sky, a coral band at the horizon, a yellow sun, two teal hills and a dark indigo hill in front, used as the image to trace](/assets/uploads/vectorcraft/trace-source.webp)
 
 ## Place the image
 
@@ -78,7 +78,7 @@ To keep your own settings, click the **Manage Presets** button next to the Prese
 
 The following screenshot shows the Image Trace panel with the 6 Colors preset and the Advanced section open.
 
-![The Image Trace panel set to the 6 Colors preset with its Paths, Corners and Noise sliders, next to the traced landscape](/assets/uploads/vectorcraft/image-trace-panel.png)
+![The traced dusk landscape selected, next to the Image Trace panel set to the 6 Colors preset with its Advanced section open showing the Paths, Corners and Noise sliders, and Preview checked](/assets/uploads/vectorcraft/image-trace-panel.webp)
 
 1. Keep **Preview** checked at the bottom of the panel. Preview is on by default, and VectorCraft traces the selected object again each time you change a setting. With Preview off, click **Trace** to apply your changes.
 2. Set **Mode** to Black and White, Grayscale, Color or Flat Logo. In Black and White mode, **Threshold** sets how dark a pixel must be to become black. In Color mode, **Palette** chooses where the colors come from: Limited, Full Tone, Automatic or Document Library.
@@ -118,7 +118,7 @@ The **View** list in the Image Trace panel and on the Control bar changes how th
 
 To compare the tracing with the original for a moment, press and hold the eye button next to the View list. The source image shows until you release the button.
 
-![The traced landscape shown two ways: filled in color as the tracing result, and as thin outlines of the traced paths](/assets/uploads/vectorcraft/trace-views.png)
+![The traced landscape shown two ways under the heading One tracing, two views: on the left filled in color, labeled Tracing Result, and on the right as thin outlines of the traced paths, labeled Outlines and selected, with the Image Trace panel's View list set to Outlines](/assets/uploads/vectorcraft/trace-views.webp)
 
 :::note
 The view changes only what you see on screen. Export, printing and Expand always use the tracing result.

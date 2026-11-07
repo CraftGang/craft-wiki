@@ -20,7 +20,7 @@ Shortcuts are written for Windows and Linux first, then macOS. **Edit → Keyboa
    - With the Polygon or Star tool, press **Up Arrow** or **Down Arrow** to add or remove sides or points.
 4. To draw a shape at an exact size, click once without dragging. The tool's dialog opens. Type the values and click **OK**.
 
-![A row of six shapes drawn with the shape tools, a square, a rounded square, a circle, a hexagon, a five-pointed star and a straight line, each labeled with the tool that drew it](/assets/uploads/vectorcraft/shape-tools.png)
+![Six shapes in a row on a night sky, each labeled with the tool that drew it: a teal square (Rectangle), a coral rounded square (Rounded Rectangle), a sun-colored circle (Ellipse), a purple hexagon (Polygon), an amber star (Star) and a light blue line (Line). The Star tool is part way through dragging out the star with its two radii showing, and the status bar shows its keys](/assets/uploads/vectorcraft/shape-tools.webp)
 
 | Tool | Key | A drag draws | Keys while dragging |
 |---|---|---|---|
@@ -55,7 +55,7 @@ The **Transform** panel (**Window → Transform**, or **Shift+F8**) shows the pr
 | Ellipse | **Ellipse Properties** | **Pie Start Angle**, **Pie End Angle** and the **Invert Pie** button |
 | Polygon | **Polygon Properties** | **Sides**, **Angle**, **Corner**, **Corner Radius**, **Radius**, **Side Length** and the **Make Sides Equal** button |
 
-![A selected rectangle showing its round corner widgets inside each corner, next to the Transform panel with Rectangle Properties and the Corner Radius field](/assets/uploads/vectorcraft/live-corners.png)
+![A sunset postcard rectangle selected with its corner widgets showing inside each corner while one is dragged to round all four corners to a 48 px radius. The Transform panel shows Rectangle Properties with the Corner Radius field](/assets/uploads/vectorcraft/live-corners.webp)
 
 :::note
 Stars and paths drawn with the Pen tool are not live shapes. To round their corners, select them with the Direct Selection tool (A), which shows a corner widget at each corner anchor.
@@ -117,7 +117,7 @@ To make a rosette from one shape:
 3. Set the angle to 30°, select **Copy (make a transformed copy)**, and click **OK**. A rotated copy appears and is selected.
 4. Press **Ctrl+D** (**Cmd+D** on macOS) ten times. Each press adds one more rotated copy. After the tenth press, the rosette has twelve petals.
 
-<img src="/assets/uploads/vectorcraft/transform-again.png" alt="A rosette of twelve overlapping petals made from one ellipse, rotated and copied once and then repeated with Transform Again" width="360" style="display: block; margin-inline: auto;" />
+<img src="/assets/uploads/vectorcraft/transform-again.webp" alt="A rosette of twelve overlapping coral-to-magenta petals on a dark indigo square, made from one ellipse that was rotated and copied once and then repeated with Transform Again" width="360" style="display: block; margin-inline: auto;" />
 
 :::caution
 Transform Again repeats the last transform on whatever is selected now. If you change the selection between presses, the transform applies to the new selection.

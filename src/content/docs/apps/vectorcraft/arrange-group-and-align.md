@@ -11,7 +11,7 @@ This guide shows how to change which of several overlapping objects sits in fron
 
 Overlapping objects are drawn in stacking order. An object higher in the order covers the objects below it. In the following image, the square labeled Front is highest in the stacking order and covers the other two.
 
-![Three overlapping rounded squares stacked from back to front, each labeled with its place in the stacking order](/assets/uploads/vectorcraft/stacking-order.png)
+![Three overlapping rounded squares labeled Back, Middle and Front, with Front covering the other two. The Middle square is selected and the Object → Arrange submenu is open with Bring Forward highlighted](/assets/uploads/vectorcraft/stacking-order.webp)
 
 1. Select one or more objects with the Selection tool (V).
 2. Choose **Object → Arrange**, or right-click the selection and choose Arrange.
@@ -97,9 +97,9 @@ The Align panel lines objects up along an edge or center line and spaces them ev
 
 In the following image, Vertical Align Center lines the circles up, and Horizontal Distribute Center spaces their centers evenly.
 
-![Four circles of different sizes scattered on the left, and the same four on the right lined up on their centers and spaced evenly](/assets/uploads/vectorcraft/align-before-after.png)
+![Two halves labeled Before and After: four glowing lantern circles of different sizes scattered on the left, and the same four on the right lined up on their centers and spaced evenly along a string](/assets/uploads/vectorcraft/align-before-after.webp)
 
-![The Align panel with its Align Objects, Distribute Objects and Distribute Spacing buttons and the Align To choice, next to four selected circles](/assets/uploads/vectorcraft/align-panel.png)
+![Four selected lantern circles on a night sky next to the Align panel, which shows its Align Objects, Distribute Objects and Distribute Spacing buttons and the Align To choice, with the pointer on Vertical Align Center](/assets/uploads/vectorcraft/align-panel.webp)
 
 The panel has four sections:
 

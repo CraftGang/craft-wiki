@@ -15,7 +15,7 @@ This page shows how to start a new document from a preset or your own size, then
 4. Under **PRESET DETAILS**, change the name, **Width**, **Height**, units, **Orientation** and number of **Artboards** as needed.
 5. Click **Create**.
 
-![The New Document dialog with the Print category open, a grid of blank document preset cards with Letter chosen on the left, and the Preset Details column with Width, Height, units, Orientation, Artboards, Bleed and Background Contents on the right](/assets/uploads/vectorcraft/new-document-dialog.png)
+![The New Document dialog over a set of sunset postcards, with the Art & Illustration category open and its blank document preset cards, Postcard first. Preset Details on the right shows the name Dusk Postcard, 432 pt by 288 pt, landscape orientation, 6 artboards and a 9 pt bleed on every side](/assets/uploads/vectorcraft/new-document-dialog.webp)
 
 **Recent** lists the sizes you used last. To keep a size of your own, click **Save Preset** beside the name, type a **Preset Name** and click **Save**. The preset then appears under **Saved**.
 
@@ -52,7 +52,7 @@ An artboard is a page inside the document. A document can hold many artboards of
 
 While the Artboard tool is active, the Control bar shows **Move Artwork with Artboard** (on by default) and **Scale Artwork with Artboard** (off by default). Hold **Alt** (**Option** on macOS) while you drag an artboard to move a copy of it.
 
-![Six artboards in a three-by-two grid, each holding a colored rounded rectangle, with the Artboard tool active and the Artboards panel listing the six artboards by name](/assets/uploads/vectorcraft/artboards-grid.png)
+![Six postcard artboards in a three-by-two grid, each holding a small sunset or night scene. The Artboard tool is resizing the Lanterns artboard, the Control bar shows Move Artwork with Artboard turned on, and the Artboards panel lists the six artboards by name with Lanterns highlighted](/assets/uploads/vectorcraft/artboards-grid.webp)
 
 ### Use the Artboards panel
 
@@ -93,7 +93,7 @@ Choose **File → Document Setup…** (**Ctrl+Alt+P**, or **Cmd+Option+P** on ma
 | **Transparency** | **Grid Size** and **Grid Colors** | Set the checkerboard that shows behind transparent areas. |
 | **Transparency** | **Simulate Colored Paper** | Draws the artboards in the paper color, which is the first of the two grid colors. |
 
-![The General tab of the Document Setup dialog with the Units menu, Top, Bottom, Left and Right bleed fields, and the Edit Artboards button](/assets/uploads/vectorcraft/document-setup.png)
+![The General tab of the Document Setup dialog over the postcard artboards, with Units set to Points, a 9 pt bleed in the Top, Bottom, Left and Right fields, and the Edit Artboards button](/assets/uploads/vectorcraft/document-setup.webp)
 
 ## Choose the color mode
 

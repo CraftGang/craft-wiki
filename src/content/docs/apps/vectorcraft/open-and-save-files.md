@@ -11,7 +11,7 @@ This guide covers the File menu commands that move work in and out of VectorCraf
 
 When no document is open, VectorCraft shows the Home screen. **New file** opens the New Document dialog, **Open** opens a file, **Recent Files** lists the files you opened last, and **Quickly start a new file** makes a document from a preset such as Letter, A4 or Web 1920×1080 in one click. The **Home** button (the house icon before the menus in the application bar) shows the Home screen over open documents, and choosing a document tab returns to that document.
 
-![The Home screen with the New file and Open buttons and the new file presets, shown when no document is open](/assets/uploads/vectorcraft/home-screen.png)
+![The Home screen, shown when no document is open, with the New file and Open buttons, Recent Files listing five drawings by name with their folder, and the Quickly start a new file presets](/assets/uploads/vectorcraft/home-screen.webp)
 
 ## Save a document
 
@@ -68,7 +68,7 @@ A `.ai` file that VectorCraft wrote, and a PDF or SVG file saved with its preser
 3. Under **Artboards**, choose **All** or enter a **Range**.
 4. Press **Save PDF**.
 
-![The Save PDF dialog with its Preset and Standard lists and the General section, where Preserve editing capabilities is turned on](/assets/uploads/vectorcraft/save-pdf-dialog.png)
+![The Save PDF dialog over a sunset city drawing, with its Preset and Standard lists, the list of sections, and the General section, where Preserve editing capabilities is turned on and Artboards is set to All](/assets/uploads/vectorcraft/save-pdf-dialog.webp)
 
 :::note
 Choosing a PDF standard under **Standard** turns off **Preserve editing capabilities** and clears any passwords.

@@ -7,7 +7,7 @@ sidebar:
 
 This guide takes you through a first project in about 15 minutes. You make a square badge with a background, a circle, a star, a wavy line and a line of type, save it as a VectorCraft file and export it as a PNG and an SVG. The following image shows the badge you make in this guide, as exported to PNG.
 
-<img src="/assets/uploads/vectorcraft/gs-badge.png" alt="The finished badge: a dark indigo square with an amber circle, a white star outlined in orange, the word Hello! in bold indigo letters and a light blue wavy line below the circle" width="360" style="display: block; margin-inline: auto;" />
+<img src="/assets/uploads/vectorcraft/gs-badge.webp" alt="The finished badge: a dark indigo square holding a large amber circle, a white star outlined in orange red, the word Hello! in bold indigo letters, and a light blue wavy line below the circle" width="360" style="display: block; margin-inline: auto;" />
 
 ## 1. Install VectorCraft
 
@@ -19,7 +19,7 @@ Open VectorCraft. With no document open, it shows the Home screen. **New file** 
 
 The window has the same layout on every platform. The following screenshot shows the badge from this guide with the wavy line selected, and numbers the main areas of the window to match the list after it.
 
-![The VectorCraft window with ten numbered markers: 1 on the menu bar, 2 on the Control bar, 3 on the document tab, 4 on the Tools panel, 5 on the artboard, 6 on the Contextual Task Bar, 7 on the column of panel icons, 8 on the panel dock showing the Properties panel, 9 on the hint line and 10 on the status bar](/assets/uploads/vectorcraft/gs-window-tour.png)
+![The VectorCraft window editing the badge, with the wave selected and ten numbered markers: 1 on the menu bar, 2 on the Control bar, 3 on the document tab, 4 on the Tools panel, 5 on the artboard, 6 on the Contextual Task Bar under the wave, 7 on the column of panel icons, 8 on the panel dock showing the Properties panel, 9 on the hint line and 10 on the status bar](/assets/uploads/vectorcraft/gs-window-tour.webp)
 
 1. **Menu bar**: holds the File, Edit, Object, Type, Select, Effect, View, Window and Help menus. The search button and the **Essentials** workspace menu are at its right end.
 2. **Control bar**: shows the fill, stroke, stroke weight, opacity and alignment of the selection. The Essentials workspace hides it; choose **Window → Control** to show it.
@@ -45,7 +45,7 @@ The new document opens with one 1080 × 1080 px artboard. Double-clicking a pres
 
 The following screenshot shows New Document the first time it opens, on the Print tab with the Letter card selected. After you create a document, New Document opens on the Recent tab.
 
-![The New Document window on the Print tab with the Letter card selected; Preset Details shows Untitled-1, 612 pt by 792 pt in Points, portrait orientation, 1 artboard, 0 pt bleed on every side, Transparent background contents, and Advanced Options set to CMYK Color, High (300 ppi) and Default](/assets/uploads/vectorcraft/gs-new-document.png)
+![The New Document window over a sunset city drawing, open on the Print tab with the Letter card selected. Preset Details shows Untitled-1, 612 pt by 792 pt in Points, portrait orientation, 1 artboard, 0 pt bleed on every side and Transparent background contents, and Advanced Options shows CMYK Color, High (300 ppi) and Default](/assets/uploads/vectorcraft/gs-new-document.webp)
 
 The tabs across the top are **Recent**, **Saved**, **Mobile**, **Web**, **Print**, **Film & Video**, **Art & Illustration**, **Branding** and **Social**. Choosing a card fills in **Preset Details**. The defaults in the following table are those of the Letter card on the Print tab.
 
@@ -83,7 +83,7 @@ New objects get a white fill and a 1 pt black stroke until you change them. The 
 
 The following screenshot shows the shapes and the pen path before any color is added.
 
-![Four shapes with a white fill and a thin black stroke on the 1080 by 1080 artboard: a large square, a circle inside it, a star inside the circle and a wavy pen path below the circle, selected and showing its anchor points; the hint line reads Click to add a corner point, Drag to add a smooth point, Click the first point to close, Enter to finish](/assets/uploads/vectorcraft/gs-shapes-and-path.png)
+![The badge's square, circle and star drawn with a white fill and a thin black stroke on the 1080 by 1080 artboard, and the Pen tool part way through the wave below the circle: a corner point, a smooth point at the crest, a smooth point in the trough with its handles, and the preview of the last segment with its distance and angle readout. The hint line reads Click to add a corner point, Drag to add a smooth point, Click the first point to close, Enter to finish](/assets/uploads/vectorcraft/gs-shapes-and-path.webp)
 
 :::note
 Clicking the first point of a path with the Pen tool closes it. [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/) covers the Pen, Curvature and Pencil tools in detail.
@@ -102,7 +102,7 @@ Each object has a fill (the inside) and a stroke (the outline). The Fill and Str
 5. Color the other objects the same way. In the example, the circle has an Amber fill and no stroke, and the star has a White fill and an Orange Red stroke.
 6. Select the wave, set its fill to **[None]** and its stroke to Cyan, and type a stroke weight of `14` in the **Stroke** field of the Properties panel.
 
-![The badge with color: an indigo square, an amber circle, a white star with an orange stroke and a light blue wave; the star is selected, the Swatches panel is open beside the dock with its Recent Colors row and swatch tiles, and the Contextual Task Bar shows Edit Path, Offset Path, Simplify and Duplicate](/assets/uploads/vectorcraft/gs-color.png)
+![The badge with color: an indigo square, an amber circle, a white star with an orange red stroke and a light blue wave. The star is selected, the Swatches panel is open beside the dock with Cyan, Orange Red, White, Amber and Indigo in its Recent Colors row, and the Contextual Task Bar shows Edit Path, Offset Path, Simplify and Duplicate](/assets/uploads/vectorcraft/gs-color.webp)
 
 You can also color a selected object from the **Appearance** section of the Properties panel: click the **Fill** or **Stroke** swatch there and pick a color.
 
@@ -122,7 +122,7 @@ You can also color a selected object from the **Appearance** section of the Prop
 4. In the **Character** section of the Properties panel, choose a bold style and a size of `110 pt`, and set the fill to the same indigo as the background.
 5. Drag the type to center it under the star.
 
-![The word Hello! in bold indigo letters inside the amber circle, selected; the Properties panel shows Transform, Character with Source Sans 3 Bold at 110 pt, Paragraph, Appearance and Align sections, and the Contextual Task Bar offers Create Outlines and Convert To Area Type](/assets/uploads/vectorcraft/gs-type.png)
+![The word Hello! in bold indigo letters inside the amber circle, selected. The Properties panel shows Transform, Character set to Source Sans 3 Bold at 110 pt, Paragraph, Appearance and Align, and the Contextual Task Bar offers Create Outlines and Convert To Area Type](/assets/uploads/vectorcraft/gs-type.webp)
 
 :::tip
 Dragging with the Type tool, instead of clicking, draws a frame for area type that wraps inside it. [Add and style type](/apps/vectorcraft/add-and-style-type/) covers area type, type on a path and the Character and Paragraph panels.
@@ -136,7 +136,7 @@ Objects stack in the order you draw them, so the last object drawn is in front. 
 2. Choose **Object → Group** (**Ctrl+G**, or **Cmd+G** on macOS). The three objects now move and scale together.
 3. Choose the **Layers** tab in the panel dock. **Layer 1** lists the group, the wave and the rectangle.
 
-![The badge with the circle, star and type selected as one group; the Layers tab of the panel dock lists Layer 1 with Group, Path and Rectangle rows, each with a thumbnail and a visibility eye](/assets/uploads/vectorcraft/gs-group-layers.png)
+![The badge with the circle, star and type selected as one group. The Layers tab of the panel dock lists Layer 1 with Group, Path and Rectangle rows, each with a thumbnail and a visibility eye, and the Group row is highlighted](/assets/uploads/vectorcraft/gs-group-layers.webp)
 
 To change the stacking order, select an object and choose a command from **Object → Arrange**:
 
@@ -165,7 +165,7 @@ VectorCraft keeps recovery copies of unsaved work in the background. If it close
 3. Press **Export…**, choose a folder and a file name, and save.
 4. In **PNG Options**, check the settings and press **Export**.
 
-![The Export As dialog with Format set to PNG, Use Artboards turned on with All selected, a note that each artboard is written to its own file named after the document and the artboard, and the Cancel and Export… buttons](/assets/uploads/vectorcraft/gs-export-as.png)
+![The Export As dialog over the badge, with Format set to PNG, Use Artboards turned on with All selected, a note that each artboard is written to its own file named after the document and the artboard, and the Cancel and Export… buttons](/assets/uploads/vectorcraft/gs-export-as.webp)
 
 | PNG option | Default | What it sets |
 |---|---|---|

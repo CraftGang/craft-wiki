@@ -62,7 +62,7 @@ Choose **Window → Swatches** to open the Swatches panel. Clicking a swatch pai
 
 For a gradient, a pattern or a tint of a global color, the dialog asks only for a name.
 
-![The Swatches panel with a new color group of five global swatches, next to five squares painted with them](/assets/uploads/vectorcraft/swatches-panel.png)
+![A skyline at sunset whose five buildings are each painted with a different global swatch. The amber building is selected, and the Swatches panel lists the new Dusk color group of five global swatches, Dusk Violet, Plum, Magenta, Sunset Coral and Amber, with Amber highlighted](/assets/uploads/vectorcraft/swatches-panel.webp)
 
 Art painted with a global swatch stays linked to it. When you edit the swatch with **Swatch Options…**, every object that uses it changes color. To group colors, click **New Color Group** at the bottom of the panel.
 
@@ -88,7 +88,7 @@ Choose **Window → Stroke** (**Ctrl+F10**, or **Cmd+F10** on macOS) to open the
 
 To change the weight of the selected strokes by one step, press **Ctrl+Alt+.** (**Cmd+Option+.** on macOS) to make them thicker and **Ctrl+Alt+,** (**Cmd+Option+,** on macOS) to make them thinner.
 
-![Five horizontal strokes showing a butt cap, a round cap, a dashed line with round dashes, a line ending in an arrowhead, and a line with a circle at one end and a triangle at the other](/assets/uploads/vectorcraft/stroke-styles.png)
+![Five labeled strokes on a night sky: a light blue line with a butt cap, a coral line with a round cap, a dotted line of round dots like string lights, an amber line ending in an arrowhead, and a lavender line with a circle at one end and a triangle at the other. The arrow line is selected and the Stroke panel shows its weight, cap, corner and arrowhead settings](/assets/uploads/vectorcraft/stroke-styles.webp)
 
 :::tip
 A dash length of 0 with a round cap draws a row of dots.
@@ -116,7 +116,7 @@ Choose **Window → Gradient** (**Ctrl+F9**, or **Cmd+F9** on macOS) to open the
 
 To save the gradient as a swatch, choose **Add to Swatches** from the Gradient panel menu.
 
-![A square with a linear gradient, a circle with a radial gradient, and a thick ring whose stroke has a gradient](/assets/uploads/vectorcraft/gradient-types.png)
+![Three shapes on a night sky labeled Linear, Radial and Gradient on a stroke: a square with a linear sunset gradient, a circle with a radial sun gradient, and a thick ring whose stroke has a cyan-to-magenta gradient. The ring is selected and the Gradient panel shows the stroke's gradient with the along-stroke option chosen](/assets/uploads/vectorcraft/gradient-types.webp)
 
 ### Edit a gradient on the canvas
 
@@ -131,7 +131,7 @@ Press G to choose the Gradient Tool. Drag across the selected objects to set whe
 
 Hold Shift while you drag a handle to keep the gradient at 45° steps. On a radial gradient, a dashed ellipse shows its extent, and you drag the dot on it to change the aspect ratio.
 
-![A rounded rectangle filled with a coral-to-yellow linear gradient, with the Gradient tool's annotator bar across it and the Gradient panel showing the two color stops](/assets/uploads/vectorcraft/gradient-tool.png)
+![A rounded rectangle with a violet-to-coral-to-yellow gradient behind a teal hill and the words Golden Hour. The Gradient tool's annotator bar runs down it from the start handle at the top to the end handle at the bottom, and the Gradient panel shows the three color stops with the middle coral stop selected at 55%](/assets/uploads/vectorcraft/gradient-tool.webp)
 
 :::note
 **View → Hide Gradient Annotator** hides the bar while you work with the Gradient Tool.

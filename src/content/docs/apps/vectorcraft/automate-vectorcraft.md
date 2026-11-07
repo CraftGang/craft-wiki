@@ -15,7 +15,7 @@ This guide shows you how to find any command by typing part of its name, give to
 
 The box searches every command and tool, shows up to 14 matches, and shows each match's keyboard shortcut beside it. Choosing a tool selects it, and choosing a command runs it.
 
-![The Search Commands box with "align" typed in, listing matches such as Window → Align → Align and Align left with its keyboard shortcut](/assets/uploads/vectorcraft/search-commands.png)
+![The Search Commands box with "align" typed in over four selected lanterns, listing matches such as Window → Align → Align, which is highlighted, and Align left with its keyboard shortcut](/assets/uploads/vectorcraft/search-commands.webp)
 
 ## Change keyboard shortcuts
 
@@ -51,7 +51,7 @@ An action is a list of recorded steps. Each step is a VectorCraft command with t
 5. Click **Stop Playing/Recording**.
 6. To play the action, select it in the panel and click **Play Current Selection**.
 
-![The Actions panel with a set named Studio holding an action named Badge, expanded to show its three recorded steps](/assets/uploads/vectorcraft/actions-panel.png)
+![The Actions panel beside the badge, with a set named Studio holding an action named Badge, expanded to show its three recorded steps, shape.ellipse, paint.setFill and paint.setStroke, each with its check box selected](/assets/uploads/vectorcraft/actions-panel.webp)
 
 Expand an action to see its steps. Each step has a check box: clear it to leave that step out when the action plays, and select it again to include it.
 
@@ -108,7 +108,7 @@ Each `--params` applies to the `--cmd` just before it. `run` prints one line of 
 
 The star in the following image was drawn, filled and exported by one `vectorcraft-cli run` command.
 
-<img src="/assets/uploads/vectorcraft/cli-star.png" alt="A yellow five-pointed star on a white artboard, drawn and exported entirely by the command-line tool" width="360" style="display: block; margin-inline: auto;" />
+<img src="/assets/uploads/vectorcraft/cli-star.webp" alt="An amber five-pointed star on a dark indigo background, drawn, filled and exported entirely by one command-line run" width="360" style="display: block; margin-inline: auto;" />
 
 A steps file for `--commands` holds a JSON array of steps, or one step per line. Each step is an object with `command`, the command's id, and optional `params`. A steps file can hold up to 64 MiB and 100,000 steps.
 

@@ -7,7 +7,7 @@ sidebar:
 
 This guide shows how to add the three kinds of type in VectorCraft, flow one story through several frames, and set the font, size, spacing and alignment of the text. It ends with turning letters into paths for artwork that no longer needs to be edited as text. The following image shows one example of each kind of type in one document.
 
-![Three kinds of type: a large serif headline set as point type, a paragraph wrapping inside a rectangular frame, and a line of text running along a curved path](/assets/uploads/vectorcraft/type-kinds.png)
+![A sunset poster with the three kinds of type: the headline Golden Hour set as point type, a paragraph wrapping inside a rectangular frame, and the line OPEN UNTIL MIDNIGHT running along an arc over the sun. The line on the arc is selected](/assets/uploads/vectorcraft/type-kinds.webp)
 
 ## Kinds of type
 
@@ -59,7 +59,7 @@ Threaded text is one story that flows through several frames in order. Area type
 
 VectorCraft threads the objects in stacking order. Closed paths in the selection become area-type frames. Text that does not fit in one frame continues in the next. The following image shows one story flowing through two frames, with the thread line joining them.
 
-![Two side-by-side text frames with sample text flowing from the first into the second, joined by a thread line from the first frame's out port to the second frame's in port](/assets/uploads/vectorcraft/threaded-text.png)
+![A night market flyer with striped awnings, string lights and two side-by-side text frames. One story flows from the first frame into the second, and a thread line joins the first frame's out port to the second frame's in port](/assets/uploads/vectorcraft/threaded-text.webp)
 
 You can also thread from a single frame with the Selection tool:
 
@@ -80,7 +80,7 @@ To undo threading:
 
 The Character panel (**Window → Type → Character**; **Ctrl+T**, or **Cmd+T** on macOS) styles the selected type objects, or the characters you selected with the Type tool. Select a type object first; with nothing selected, the panel shows "Select a text object to edit its character attributes." The following screenshot shows the panel with the point type headline selected.
 
-![The Character panel set to Source Serif 4 Regular at 54 pt with 64.8 pt leading, followed by the kerning, tracking, scale, baseline shift and rotation fields, the row of style buttons and the Language menu](/assets/uploads/vectorcraft/character-panel.png)
+![The Character panel beside the selected headline Golden Hour on a sunset poster, set to Source Serif 4 Regular at 54 pt with 64.8 pt leading, followed by the kerning, tracking, scale, baseline shift and rotation fields, the row of style buttons and the Language menu](/assets/uploads/vectorcraft/character-panel.webp)
 
 The panel holds these controls. Hover over the symbol beside a field to see the field's name.
 

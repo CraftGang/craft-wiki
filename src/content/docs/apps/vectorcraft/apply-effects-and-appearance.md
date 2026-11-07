@@ -19,7 +19,7 @@ An object in VectorCraft can have more than one fill and stroke, and live effect
 
 The following screenshot shows a teal badge with a thin dark stroke, a wide yellow stroke behind it and a drop shadow, as the Appearance panel lists them.
 
-![A rounded rectangle with two strokes and a drop shadow, next to the Appearance panel listing its two strokes, its fill, the Drop Shadow effect and its opacity](/assets/uploads/vectorcraft/appearance-panel.png)
+![A teal badge reading OPEN LATE with a thin dark stroke, a wide yellow stroke behind it and a drop shadow. It is selected, and the Appearance panel lists its two strokes, its fill, the Drop Shadow effect and its opacity](/assets/uploads/vectorcraft/appearance-panel.webp)
 
 The buttons at the bottom of the panel act on the selected object or row:
 
@@ -57,7 +57,7 @@ If you choose an effect that the object already has, VectorCraft asks whether to
 
 The following image shows the same star with six different live effects. Each star still has its original five-point path.
 
-![Six copies of the same coral star, each with one live effect: a drop shadow, rounded corners, a zigzag edge, a bloated shape, an arc warp and a Gaussian blur](/assets/uploads/vectorcraft/effects-gallery.png)
+![Six copies of the same coral star on a night sky, each labeled with its one live effect: a drop shadow, rounded corners, a zigzag edge, a bloated shape, an arc warp and a Gaussian blur. The zigzag star is selected and the Appearance panel lists its effect](/assets/uploads/vectorcraft/effects-gallery.webp)
 
 ### The Effect menu
 
@@ -134,7 +134,7 @@ An object that you apply a style to stays linked to that style. Alt-click a styl
 
 The following image shows a style saved from one rectangle and applied to the other two.
 
-![Three rounded rectangles sharing the same strokes and shadow, with the Graphic Styles panel showing the new style as the last thumbnail](/assets/uploads/vectorcraft/graphic-styles.png)
+![Three teal buttons labeled Tickets, Map and Food under the heading Harbor Night Market, sharing the same strokes and shadow. The Food button is selected, and the Graphic Styles panel shows the new style as its last, highlighted thumbnail](/assets/uploads/vectorcraft/graphic-styles.webp)
 
 **Window → Graphic Style Libraries** opens the bundled sets of styles. The panel menu also has **Open Graphic Style Library** and **Save Graphic Style Library…**.
 

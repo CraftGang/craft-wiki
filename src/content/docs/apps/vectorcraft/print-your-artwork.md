@@ -21,7 +21,7 @@ VectorCraft saves the print settings with the document, and the dialog opens wit
 To move the art on the paper, drag it in the preview. The dialog stores the new position as the **Placement** X and Y offset. Dragging does not move the art while a tiling choice is on.
 :::
 
-![The Print dialog on its General section, with the Copies, Artboards, Media and Orientation settings beside a preview of a poster on a letter page](/assets/uploads/vectorcraft/print-general.png)
+![The Print dialog on its General section, with the Copies, Artboards, Media and Orientation settings beside a preview of a harbor poster at sunset on a letter page](/assets/uploads/vectorcraft/print-general.webp)
 
 ## Choose what prints
 
@@ -57,7 +57,7 @@ Template layers never print, whatever **Print Layers** is set to. A layer with *
 3. Choose a **Printer mark type** (Roman or Japanese), a **Trim mark weight** (0.125 pt, 0.25 pt or 0.5 pt) and an **Offset** from the artboard edge. The defaults are Roman, 0.25 pt and 6 pt.
 4. Under **Bleeds**, leave **Use document bleed settings** on to print the bleed set for the document, or turn it off and type **Top**, **Bottom**, **Left** and **Right** values.
 
-![The Marks and Bleed section of the Print dialog with all four printer's marks turned on, Roman marks at 0.25 pt and a 6 pt offset, and Use document bleed settings turned off with a 9 pt bleed on every side](/assets/uploads/vectorcraft/print-marks.png)
+![The Marks and Bleed section of the Print dialog with all four printer's marks turned on, Roman marks at 0.25 pt and a 6 pt offset, and Use document bleed settings turned off with a 9 pt bleed on every side. The preview shows the harbor poster with its marks](/assets/uploads/vectorcraft/print-marks.webp)
 
 :::caution
 The printed area is the artboard together with its bleed and marks. When that area is larger than the printable area of the paper, **Summary** shows a warning. Choose larger paper, or set **Scaling** to **Fit to Page** to size the art so it fits with its marks.
@@ -90,7 +90,7 @@ When the art is larger than the paper, scale it down or split it across several 
 
 [Print a large poster](/apps/vectorcraft/print-tiling/) covers the two tiling choices step by step: the **Overlap** and **Tile Range** settings, how the tiles are numbered, **View → Show Print Tiling** and the **Print Tiling Tool**.
 
-![A wide banner artboard with dashed page outlines drawn over it and the page numbers 1, 2 and 3 in their corners, showing how the art splits across several pages](/assets/uploads/vectorcraft/print-tiling.png)
+![A wide night market banner with page outlines drawn over it and the page numbers 1, 2 and 3 in their corners, showing how the art splits across three pages, with the Print Tiling Tool active](/assets/uploads/vectorcraft/print-tiling.webp)
 
 When you drag with the **Print Tiling Tool**, the pointer sets the top-left corner of the first page's printable area and snaps to the artboard's edges. Double-clicking the tool's icon in the toolbar also puts the pages back where the **Placement** setting puts them.
 

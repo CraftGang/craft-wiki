@@ -11,7 +11,7 @@ This guide shows how to sort a drawing into layers and sublayers, hide and lock 
 
 Open the panel with **Window → Layers** (F7). The panel lists layers at the top level, with their sublayers, groups and objects inside them.
 
-![The Layers panel with three layers named Type, Artwork and Background, the Artwork layer expanded to show its three shapes and the Background layer locked, next to a simple poster](/assets/uploads/vectorcraft/layers-panel.png)
+![A harbor poster at sunset with the Layers panel listing three layers named Type, Artwork and Background. The Artwork layer is expanded to show its lighthouse, sea and sun, the lighthouse is selected, and the Background layer is locked](/assets/uploads/vectorcraft/layers-panel.webp)
 
 1. Click **Create New Layer** at the bottom of the panel, or press **Ctrl+L** (**Cmd+L** on macOS). The new layer goes directly above the current layer. Ctrl-click (Cmd-click on macOS) the button to put the new layer above every other layer, or Alt-click (Option-click on macOS) it to set the layer's options first.
 2. Click a layer's row to make it the current layer. New art you draw goes into the current layer.
@@ -76,7 +76,7 @@ The panel menu holds commands that work on whole layers. Most of them act on the
 
 A symbol is art stored once in the document. Each copy of it on the canvas is an instance, and every instance changes when you edit the symbol. Open the panel with **Window → Symbols** (**Ctrl+Shift+F11**, or **Cmd+Shift+F11** on macOS).
 
-![Seven leaf shapes of different sizes and angles, all instances of one symbol, with the Symbols panel showing the leaf symbol's thumbnail](/assets/uploads/vectorcraft/symbols-panel.png)
+![Seven teal leaves of different sizes and angles along a branch with two glowing lanterns, all instances of one symbol. One leaf is selected, and the Symbols panel shows the leaf symbol's thumbnail](/assets/uploads/vectorcraft/symbols-panel.webp)
 
 1. Select the art you want to reuse.
 2. Click **New Symbol** at the bottom of the Symbols panel. In **Symbol Options**, enter a name and click **OK**. The art is saved as a symbol, and the selection on the canvas becomes its first instance. You can also drag selected art onto the panel.
@@ -100,7 +100,7 @@ A symbol is art stored once in the document. Each copy of it on the canvas is an
 2. Change the art. Each change appears in every instance of the symbol.
 3. Click **Exit Symbol Editing Mode** on the Control bar to return to the document.
 
-![The same group of leaf symbols shown twice: teal on the left, and on the right every leaf turned yellow after the symbol was edited once](/assets/uploads/vectorcraft/symbol-update.png)
+![The same branch of leaf symbols shown twice, labeled Before and After: teal on the left, and on the right every leaf turned yellow after the symbol was edited once](/assets/uploads/vectorcraft/symbol-update.webp)
 
 :::tip
 To change one instance without changing the others, select it and click **Break Link to Symbol**. The instance becomes ordinary art that you can edit on its own.

@@ -33,7 +33,7 @@ All of these commands are in the **File** menu.
 9. Check the line under the lists, which shows how many items are selected and how many files the export will write.
 10. Choose **Export Artboard**. On the Assets tab the button reads **Export Asset**.
 
-![The Export for Screens dialog with three artboards named Icon, Badge and Splash selected, and format rows for PNG at 1x, PNG at 2x and SVG](/assets/uploads/vectorcraft/export-for-screens.png)
+![The Export for Screens dialog with three artboards named Icon, Badge and Splash selected, format rows for PNG at 1x, PNG at 2x with the @2x suffix and SVG, and a line saying how many files the export will write](/assets/uploads/vectorcraft/export-for-screens.webp)
 
 ### Scales, suffixes and file names
 
@@ -79,7 +79,7 @@ An asset is a piece of art that Export for Screens exports on its own, cropped t
 5. Set the format rows under **Export Settings**. The panel shares its rows with Export for Screens.
 6. Choose **Export** to write the selected assets (or all of them when none is selected) to a folder you pick. With assets selected, the button reads **Export N Selected**. The Export for Screens button in the panel opens the dialog on its **Assets** tab instead.
 
-![The Asset Export panel showing three collected assets with thumbnails and their names](/assets/uploads/vectorcraft/asset-export.png)
+![A sunset city drawing with the Asset Export panel showing three collected assets, Sun, Crescent and Lantern, as thumbnails with their names. Lantern is selected and the button reads Export 1 Selected](/assets/uploads/vectorcraft/asset-export.webp)
 
 You can also drag art from the canvas into the Asset Export panel, or select it and click **+**. Each object becomes its own asset. Hold **Alt** (**Option** on macOS) to make one asset of all of them.
 
@@ -130,7 +130,7 @@ Embed Fonts and Fewer \<tspan\> Elements are unavailable when Font is set to Con
 
 Choose **Show Code** to see the SVG markup the current settings write, and **Hide Code** to close it.
 
-![The SVG Options dialog with styling, font, image, object ID and decimal settings, and the code preview showing the SVG markup](/assets/uploads/vectorcraft/svg-options.png)
+![The SVG Options dialog over the badge, with styling, font, image, object ID and decimal settings, Minimal object IDs, 2 decimals and Minify turned on, and the code preview showing the SVG markup](/assets/uploads/vectorcraft/svg-options.webp)
 
 :::tip
 To write a smaller SVG, choose Minimal object IDs and a low Decimal value, and turn on Minify. Check the result with Show Code before you export.
