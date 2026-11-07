@@ -4,8 +4,16 @@ description: How to install and keep SolidCraft up to date on Linux, macOS, and 
 ---
 
 :::note[Third-Party Application]
-SolidCraft is independently distributed by Tangency Labs. ArtCraft Launcher does not distribute third-party applications.
+SolidCraft is an independent open-source CAD application maintained by Tangency Labs and the SolidCraft contributors.
 :::
+
+## With ArtCraft Launcher
+
+[ArtCraft Launcher](https://github.com/storytold/craft-launcher) installs, updates and opens apps in the Craft ecosystem, SolidCraft included. It picks the right build for your system and processor, checks it against the release's SHA-256 checksums before installing it, and tells you when an update is out.
+
+Download it from its [latest release](https://github.com/storytold/craft-launcher/releases/latest), then press **Install** on SolidCraft's card.
+
+## By hand
 
 SolidCraft is available for Linux, macOS, and Windows, as well as in the browser and as a headless CLI.
 

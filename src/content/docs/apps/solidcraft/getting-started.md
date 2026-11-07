@@ -9,6 +9,8 @@ SolidCraft is an independent open-source CAD application maintained by Tangency 
 
 SolidCraft is built around parametric, timeline-based solid modeling. Instead of pushing and pulling geometry directly, you define 2D sketches with mathematical constraints and dimensions, then convert them into 3D features.
 
+The quickest way to install is [ArtCraft Launcher](https://github.com/storytold/craft-launcher/releases/latest): install it, then press **Install** on SolidCraft's card. To download SolidCraft on its own or through other package managers, see [Install and update](/apps/solidcraft/install-update/).
+
 ## Core concepts
 
 1. **Sketches**: A 2D drawing made on a plane or planar face. Lines, arcs, circles, and splines are locked down using geometric constraints (parallel, perpendicular, tangent) and numeric dimensions (distance, radius, angle).

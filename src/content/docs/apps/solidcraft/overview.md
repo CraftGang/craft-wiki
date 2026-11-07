@@ -24,7 +24,7 @@ SolidCraft is an open-source parametric 3D CAD application written in Rust. Sket
 ## Documentation guides
 
 - [Getting started](/apps/solidcraft/getting-started/) — Workspace layout, basic concepts, and creating your first parametric solid.
-- [Install and update](/apps/solidcraft/install-update/) — Installing via Flatpak, AppImage, Snap, or compiling from source.
+- [Install and update](/apps/solidcraft/install-update/) — Installing with ArtCraft Launcher, Flatpak, AppImage, or compiling from source.
 - [Workflows](/apps/solidcraft/workflows/) — Sketching, parametric modeling, assemblies, and automation with CLI/MCP.
 - [Troubleshooting](/apps/solidcraft/troubleshooting/) — Resolving constraint conflicts, broken timeline features, and display issues.
 
