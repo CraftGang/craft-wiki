@@ -145,5 +145,7 @@ Outline Stroke replaces the stroke with a filled shape. To change the stroke wei
 
 - [Workflows](/apps/vectorcraft/workflows/)
 - [Draw and transform shapes](/apps/vectorcraft/draw-and-transform-shapes/)
+- [Reshape with the warp tools](/apps/vectorcraft/reshape-with-warp-tools/)
+- [Cut, join and refine paths](/apps/vectorcraft/cut-join-and-refine-paths/)
 - [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/)
 - [Combine and cut shapes](/apps/vectorcraft/combine-and-cut-shapes/)

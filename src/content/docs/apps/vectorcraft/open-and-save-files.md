@@ -1,11 +1,11 @@
 ---
 title: Open and save files
-description: Save documents in the VectorCraft format, pick a format for sharing, open files from other programs and bring files into a document with Place.
+description: Save documents in the VectorCraft format, pick a format for sharing, save pictures for office documents, add file information, open files from other programs, recover work after a crash and bring files into a document with Place.
 sidebar:
   order: 21
 ---
 
-This guide covers the File menu commands that move work in and out of VectorCraft. It shows how to save in the VectorCraft format, choose a format for sharing, open files made in other programs, place files into an open document, and collect a document with its linked files for someone else.
+This guide covers the File menu commands that move work in and out of VectorCraft: saving in the VectorCraft format, choosing a format for sharing, saving a picture for office documents, adding file information, opening files made in other programs, recovering work after a crash, placing files into an open document, and collecting a document with its linked files for someone else.
 
 ## Start from the Home screen
 
@@ -29,6 +29,7 @@ The other save commands are on the same menu:
 | **Save a Copy…** | Writes a copy. The open document keeps its file name and its unsaved state. |
 | **Save as Template…** | Writes a template that opens as a new untitled document. The open document does not change. |
 | **Save as PDF…** | Opens the Save PDF dialog with its presets and settings. |
+| **Save for Office Documents…** | Saves one artboard as a PNG picture for office documents and slides. |
 | **Revert** | Discards the changes since the last save and reloads the saved file in the same tab. VectorCraft asks first. |
 
 :::caution
@@ -74,6 +75,45 @@ A `.ai` file that VectorCraft wrote, and a PDF or SVG file saved with its preser
 Choosing a PDF standard under **Standard** turns off **Preserve editing capabilities** and clears any passwords.
 :::
 
+## Save a picture for office documents
+
+**File → Save for Office Documents…** saves one artboard as a PNG file that you can insert in a word processor document or a slide.
+
+1. Choose **File → Save for Office Documents…**.
+2. Set the options from the following table. **Size** shows the width and height of the picture in pixels.
+3. Press **Save…**, then choose a name and a location for the PNG file.
+
+| Option | What it does | When the dialog opens |
+|---|---|---|
+| **Resolution** | **Screen (72 ppi)**, **Medium (150 ppi)** or **High (300 ppi)** | Medium (150 ppi) |
+| **Artboard** | The artboard to save. The list appears only when the document has more than one artboard. | The first artboard |
+| **Transparent Background** | Leaves the background transparent. When it is off, the picture has a white background. | Off |
+
+As with Export, the save ends with a warning when an image in the document could not be read or when type is drawn in a substitute font.
+
+## Add file information
+
+File Info stores a title, an author, keywords and copyright details in the document.
+
+1. Choose **File → File Info…** (**Ctrl+Alt+Shift+I**, or **Cmd+Option+Shift+I** on macOS).
+2. Fill in the fields from the following table.
+3. Press **OK**. The change is one step in the undo history.
+
+![The File Info dialog over the harbor festival poster, with Document Title Harbor Lights, Author Dusk Bay Print Shop, Author Title Poster design, a two-line description, a four-star rating, the keywords harbor, lantern festival, poster and summer, Copyright Status set to Copyrighted with a copyright notice and URL, and the created and modified dates in UTC](/assets/uploads/vectorcraft/file-info.webp)
+
+| Field | What it holds |
+|---|---|
+| **Document Title** | The document's title. It cannot be empty. |
+| **Author** and **Author Title** | Who made the document, and that person's role |
+| **Description** | A few lines about the document |
+| **Rating** | Zero to five stars. Click a star to set the rating, and click the same star again to clear it. |
+| **Keywords** | Type a keyword and press **Enter** or **Add**. Separate several keywords with commas. Each keyword is listed once, and the × on a keyword removes it. |
+| **Copyright Status** | **Unknown**, **Copyrighted** or **Public Domain** |
+| **Copyright Notice** and **Copyright Info URL** | The copyright line and a web address for it |
+| **Created** and **Modified** | The dates the document was created and last modified, in UTC. You cannot edit them. |
+
+PDF and PNG files that VectorCraft writes carry the File Info, and so do SVG files written with **Include Metadata** on. When you open a PDF or a `.ai` file, VectorCraft reads the file information the file carries.
+
 ## Open files
 
 1. Choose **File → Open…** (**Ctrl+O**, or **Cmd+O** on macOS).
@@ -92,6 +132,42 @@ VectorCraft looks for linked images at the path saved in the document, then at t
 :::
 
 **File → Show in Folder** shows the active document's file in your system's file manager.
+
+### Add or replace missing fonts
+
+When a document uses fonts that are not installed, the Missing Fonts dialog opens after the document opens, once any questions about missing linked images are answered. Each font in the list is marked **missing** when its family is not installed, or **substituted by** another style when the family is installed but the style is not. The text shows in another font until you add or replace the font. While **Highlight Substituted Fonts** is on in the Type section of Preferences, text set in a missing font is highlighted on the canvas.
+
+![The Missing Fonts dialog over the night market menu, with the tagline Riverside · Since 2019 highlighted above it. Shippori Mincho Regular is marked missing, with ShipporiMincho-Regular.ttf found and checked in the Fonts folder next to the document, and Source Serif 4 Bold is marked substituted by Regular and not found](/assets/uploads/vectorcraft/missing-fonts.webp)
+
+1. To look for the font files, press **Search Fonts Folder** or **Find in Folder…**:
+   - **Search Fonts Folder** searches the `Fonts` folder next to the document. It appears only when that folder exists, for example in a folder that **File → Package…** made.
+   - **Find in Folder…** asks for a folder and searches it and its subfolders.
+2. Under each font, the dialog lists the files it found and checks the first one. A font without a file shows **Not found**. Clear the check box of a file you do not want to add.
+3. Press **Add Fonts**. VectorCraft copies the checked files into its own Fonts folder, which the dialog names, and redraws the text set in those fonts. Copy only fonts you own or are licensed to install.
+
+To use another font instead, press **Find Fonts**. It opens **Type → Find Font…** with the first missing font selected. Pick a replacement font, then press **Change** to change it in the selected objects or **Change All** to change it everywhere in the document. **Close** closes the dialog without changing the document. Later, **Find in Folder…** in the Find Font dialog asks for a folder and opens the Missing Fonts dialog with that folder's search results.
+
+## Recover work after a crash
+
+VectorCraft keeps recovery copies of documents that have unsaved changes. By default it writes them every 2 minutes in the background, and the status bar shows each copy it saves. Saving, reverting or closing a document removes its copy.
+
+When VectorCraft starts after it did not quit normally, the **Recover Documents** dialog lists the documents that had unsaved changes and the time of each copy.
+
+1. Press **Restore**. Each document opens in its own tab with **[Recovered]** after its name, as a document that has not been saved.
+2. Save each restored document to keep it. Save asks for a name and a location.
+
+**Discard** deletes the copies. **Cancel** keeps them, and the dialog asks again the next time VectorCraft starts. The dialog does not list the copies of another VectorCraft that is still running.
+
+The recovery settings are under **Data Recovery** in **Edit → Preferences… → File Handling** on Windows and Linux, and in **VectorCraft → Settings → File Handling…** on macOS:
+
+| Setting | What it does | Default |
+|---|---|---|
+| **Automatically Save Recovery Data** | Turns recovery copies on or off | On |
+| **Every (minutes)** | How often VectorCraft writes the copies, from 1 to 60 minutes | 2 |
+| **Folder** | The folder that holds the copies | The folder VectorCraft sets |
+| **Turn off Data Recovery for complex documents** | Skips the copies of documents with more than 20,000 objects | Off |
+
+If VectorCraft keeps closing unexpectedly, [Troubleshooting](/apps/vectorcraft/troubleshooting/) shows where to find the log to send with a report.
 
 ## Place a file instead of opening it
 
@@ -137,6 +213,7 @@ Package does not copy fonts whose license does not allow embedding.
 | Revert | F12 | F12 |
 | Place… | Ctrl+Shift+P | Cmd+Shift+P |
 | Package… | Ctrl+Alt+Shift+P | Cmd+Option+Shift+P |
+| File Info… | Ctrl+Alt+Shift+I | Cmd+Option+Shift+I |
 | Close | Ctrl+W | Cmd+W |
 | Close All | Ctrl+Alt+W | Cmd+Option+W |
 

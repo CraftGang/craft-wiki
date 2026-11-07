@@ -145,7 +145,9 @@ Live Paint works with paths, compound paths and groups of them. If the selection
 
 - [Draw and transform shapes](/apps/vectorcraft/draw-and-transform-shapes/)
 - [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/)
+- [Cut, join and refine paths](/apps/vectorcraft/cut-join-and-refine-paths/)
 - [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/)
 - [Arrange, group and align](/apps/vectorcraft/arrange-group-and-align/)
+- [Make patterns, blends and repeats](/apps/vectorcraft/make-patterns-blends-and-repeats/)
 - [Apply effects and appearance](/apps/vectorcraft/apply-effects-and-appearance/)
 - [VectorCraft workflows](/apps/vectorcraft/workflows/)

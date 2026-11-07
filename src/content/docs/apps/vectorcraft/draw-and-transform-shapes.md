@@ -128,5 +128,7 @@ Transform Again repeats the last transform on whatever is selected now. If you c
 - [Workflows](/apps/vectorcraft/workflows/)
 - [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/)
 - [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/)
+- [Reshape with the warp tools](/apps/vectorcraft/reshape-with-warp-tools/)
 - [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/)
 - [Arrange, group and align](/apps/vectorcraft/arrange-group-and-align/)
+- [Draw in perspective](/apps/vectorcraft/draw-in-perspective/)

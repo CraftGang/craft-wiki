@@ -162,6 +162,7 @@ To change these shortcuts, choose **Edit → Keyboard Shortcuts…**.
 ## Related
 
 - [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/)
+- [Slice artwork for the web](/apps/vectorcraft/slice-artwork-for-the-web/)
 - [Open and save files](/apps/vectorcraft/open-and-save-files/)
 - [Print your artwork](/apps/vectorcraft/print-your-artwork/)
 - [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/)

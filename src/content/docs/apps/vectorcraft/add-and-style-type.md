@@ -168,3 +168,4 @@ To change these shortcuts, choose **Edit → Keyboard Shortcuts…**.
 - [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/)
 - [Apply effects and appearance](/apps/vectorcraft/apply-effects-and-appearance/)
 - [Organize with layers and symbols](/apps/vectorcraft/organize-with-layers-and-symbols/)
+- [Draw in perspective](/apps/vectorcraft/draw-in-perspective/)
