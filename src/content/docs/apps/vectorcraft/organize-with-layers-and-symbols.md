@@ -1,11 +1,11 @@
 ---
 title: Organize with layers and symbols
-description: Keep artwork in layers and sublayers, lock and hide them, trace over template layers, and reuse art as symbols.
+description: Keep artwork in layers and sublayers, find objects, lock and hide them, trace over template layers, reuse art as symbols, share symbol libraries and spray symbols.
 sidebar:
   order: 18
 ---
 
-This guide shows how to sort a drawing into layers and sublayers, hide and lock them while you work, and draw over a placed sketch on a template layer. It also shows how to turn art you repeat into a symbol, so that one edit changes every copy.
+This guide shows how to sort a drawing into layers and sublayers, find a layer or object, hide and lock them while you work, and draw over a placed sketch on a template layer. It also shows how to turn art you repeat into a symbol, so that one edit changes every copy, how to share symbols through libraries, and how to spray many copies of a symbol at once.
 
 ## Work in the Layers panel
 
@@ -28,6 +28,18 @@ Alt-click (Option-click on macOS) a layer's eye to hide every other layer, and A
 
 To send selected art to the current layer from the canvas, choose **Object → Arrange → Send to Current Layer**.
 
+## Find a layer or object
+
+In a document with many layers, the search field and the filter at the top of the Layers panel shorten the list.
+
+1. Type part of a name into the **Search All** field. The panel keeps the rows whose names contain that text, together with the layers and groups that hold them, and shows those rows open.
+2. To list only some kinds of rows, click **Filter** at the right of the search field. Under **By Object**, select **Paths**, **Shapes**, **Text**, **Images**, **Effects**, **Groups**, **Linked Files** or **Guides**. Under **By Layer**, select **Locked** or **Hidden**. A row stays when it matches the search text, one of the kinds you selected and one of the states you selected. A section with nothing selected keeps every row. The **Filter** button stays highlighted while a filter is on.
+3. To see every row again, clear the search field and click **Clear All** in the filter list.
+
+The search and the filter change only what the panel lists. They do not change the document, the rows you opened or the selection.
+
+You can also choose **Locate Object** from the panel menu to find the row of an object you selected on the canvas. When the search, the filter or **Show Layers Only** hides that row, the panel cannot show it and does not open any rows. To have the panel find each object you select on the canvas, turn on **Locate Selected Objects** in **Layers Panel Options**, described below.
+
 ## Set layer options
 
 Double-click a layer's thumbnail, or the empty part of its row, to open **Layer Options**. Double-clicking the name itself lets you rename the layer in place. You can also choose **Options for Selection…** from the panel menu.
@@ -44,6 +56,17 @@ Double-click a layer's thumbnail, or the empty part of its row, to open **Layer 
 | **Print** | Includes the layer when the document prints. |
 
 **Lock** and **Print** cannot be changed while **Template** is on. When you open **Layer Options** for a group or an object instead of a layer, the dialog shows only the name, **Show** and **Lock**.
+
+## Change how the Layers panel looks
+
+Choose **Panel Options…** from the Layers panel menu to open **Layers Panel Options**, set the options, and click **OK**. The panel keeps these settings for every document.
+
+| Option | What it does |
+|---|---|
+| **Show Layers Only** | Lists layers and sublayers only, without the groups and objects inside them. Off by default. |
+| **Locate Selected Objects** | When you select an object on the canvas or with a command, the panel opens the layers around it and scrolls to its row without highlighting the row. Off by default. |
+| **Row Size** | Sets the height of each row: **Small** (20 pt), **Medium** (26 pt) or **Large** (40 pt). Choose **Other** to enter a height from 12 to 100 pt. **Medium** is the default. |
+| **Thumbnails** | **Layers**, **Group** and **Object** show or hide the thumbnail on each kind of row. All three are on by default. |
 
 ## Trace over a template layer
 
@@ -79,20 +102,42 @@ A symbol is art stored once in the document. Each copy of it on the canvas is an
 ![Seven teal leaves of different sizes and angles along a branch with two glowing lanterns, all instances of one symbol. One leaf is selected, and the Symbols panel shows the leaf symbol's thumbnail](/assets/uploads/vectorcraft/symbols-panel.webp)
 
 1. Select the art you want to reuse.
-2. Click **New Symbol** at the bottom of the Symbols panel. In **Symbol Options**, enter a name and click **OK**. The art is saved as a symbol, and the selection on the canvas becomes its first instance. You can also drag selected art onto the panel.
+2. Click **New Symbol** at the bottom of the Symbols panel, or press **F8**. In **Symbol Options**, enter a name and click **OK**. The art is saved as a symbol, and the selection on the canvas becomes its first instance. You can also drag selected art onto the panel. Alt-click (Option-click on macOS) **New Symbol** to skip **Symbol Options** and make a dynamic symbol under the next free name, such as **New Symbol 2**.
 3. To place another instance, drag the symbol from the panel onto the canvas. The instance is centered where you drop it. **Place Symbol Instance** places one at the center of the artboard.
 4. Move, scale and rotate instances like any other object.
 
 | Action | Where |
 |---|---|
-| **New Symbol** | Symbols panel button, or **New Symbol…** in the panel menu |
+| **New Symbol** | Symbols panel button, **New Symbol…** in the panel menu, or **F8** |
 | **Place Symbol Instance** | Symbols panel button or panel menu, or drag a symbol onto the canvas |
 | **Edit Symbol** | Double-click an instance on the canvas or the symbol in the panel, or choose **Edit Symbol** in the panel menu |
 | **Redefine Symbol** | Panel menu: replaces the symbol's art with the selected art |
+| **Duplicate Symbol** | Panel menu: adds a copy of the symbol chosen in the panel, named after it with **copy** at the end |
+| **Delete Symbol** | Symbols panel button or panel menu: deletes the symbol chosen in the panel. VectorCraft asks before it deletes a symbol that has no instances; Alt-click (Option-click on macOS) the button to delete it without asking. For a symbol with instances, click **Expand Instances** to turn them into ordinary art, or **Delete Instances** to remove them. |
+| **Symbol Options…** | Panel menu: opens **Symbol Options** for the symbol chosen in the panel |
 | **Replace Symbol** | Panel menu, or the **Replace** menu on the Control bar while instances are selected |
 | **Break Link to Symbol** | Symbols panel button or panel menu: turns the selected instances into plain art |
+| **Reset Symbol Instance** | Panel menu: removes the appearance changes made to the selected instances of a dynamic symbol |
 | **Select All Instances** | Panel menu: selects every instance of the symbol chosen in the panel |
-| **Select All Unused** | Panel menu: selects the symbols that have no instances |
+| **Select All Unused** | Panel menu: selects the symbols that have no instances. **Delete Symbol** then deletes all of them after one question. |
+| **Thumbnail View**, **List View** | Panel menu: shows the symbols as thumbnails or as a list |
+
+## Set symbol options
+
+**Symbol Options** opens when you make a new symbol. To change the options of an existing symbol, click it in the Symbols panel and choose **Symbol Options…** from the panel menu.
+
+![The Symbol Options dialog over rounded plum, coral and teal buttons on a night sky. It shows the name Button, Export Type Graphic, Dynamic Symbol, the center registration point, and Enable Guides for 9-Slice Scaling turned on with Left 15%, Top 30%, Right 15% and Bottom 30%, while the wide Book a table button is selected behind it](/assets/uploads/vectorcraft/symbol-options.webp)
+
+| Option | What it does |
+|---|---|
+| **Name** | Sets the symbol's name. A new symbol starts with the next free name, such as **New Symbol** or **New Symbol 2**. The name cannot be empty. |
+| **Export Type** | Marks the symbol as a **Movie Clip** or a **Graphic**. A new symbol is a **Movie Clip**. |
+| **Symbol Type** | **Dynamic Symbol** lets each instance change the appearance of parts of the art and stay linked to the symbol. **Static Symbol** turns this off. A new symbol is dynamic. |
+| **Registration** | Sets the registration point to one of nine points on the art's bounding box. A new symbol uses the center. |
+| **Enable Guides for 9-Slice Scaling** | Adds two horizontal and two vertical guides that cut the symbol into nine parts. When you scale an instance, the corners keep their size, the top and bottom parts stretch only in width, the left and right parts stretch only in height, and the center stretches both ways. |
+| **Left**, **Top**, **Right**, **Bottom** | Set how far each guide sits from its own edge, as a percentage of the symbol's size, from 0 to 100. Each guide starts at 25%. |
+
+To move the 9-slice guides by hand, open the symbol in symbol editing mode. The guides show as dotted lines with any tool. With the Selection Tool, drag a guide to move it. A guide stays inside the art's bounding box and stops before the guide opposite it. Press **Esc** during the drag to put the guide back.
 
 ## Edit a symbol
 
@@ -100,17 +145,40 @@ A symbol is art stored once in the document. Each copy of it on the canvas is an
 2. Change the art. Each change appears in every instance of the symbol.
 3. Click **Exit Symbol Editing Mode** on the Control bar to return to the document.
 
-![The same branch of leaf symbols shown twice, labeled Before and After: teal on the left, and on the right every leaf turned yellow after the symbol was edited once](/assets/uploads/vectorcraft/symbol-update.webp)
+![All seven Leaf instances on the teal branch are yellow after the Leaf symbol was edited, and the selected instance shows its bounding box. The Control bar shows Symbol with Replace set to Leaf, and the Symbols panel shows the yellow Leaf thumbnail.](/assets/uploads/vectorcraft/symbol-update.webp)
 
 :::tip
 To change one instance without changing the others, select it and click **Break Link to Symbol**. The instance becomes ordinary art that you can edit on its own.
 :::
 
-**Window → Symbol Libraries** opens symbol libraries, including the built-in **Basic Shapes** library. **Save Symbols…** in the same submenu saves the document's symbols as a library of your own, and **Other Library…** opens a library file.
+## Load and save symbol libraries
+
+A symbol library is a set of symbols that you can add to any document. VectorCraft includes the **Basic Shapes** library, and you can save your own.
+
+To use a library:
+
+1. Choose **Window → Symbol Libraries**, then **Basic Shapes** or one of your libraries under **User Defined**. To use the symbols of another VectorCraft document, choose **Other Library…** and pick the file. You can also open a library with **Open Symbol Library** in the Symbols panel menu. The library opens in a panel of its own.
+2. Click a symbol in the library panel to add it to the document's Symbols panel. Or drag the symbol onto the canvas to add it and place an instance where you drop it.
+
+To save the document's symbols as a library:
+
+1. Choose **Save Symbol Library…** from the Symbols panel menu, or choose **Window → Symbol Libraries → Save Symbols…**.
+2. In **Save Symbol Library**, enter a **Name**. It starts as the document's name.
+3. Under **Save To**, choose **User Defined Libraries** to list the library under **Window → Symbol Libraries → User Defined**, or **A File…** to save a `.vectorcraft` file in a folder you choose.
+4. To save only the symbol you clicked in the Symbols panel, turn on **Selected Symbols Only**. The number after the option shows how many symbols it saves.
+5. Click **OK**.
 
 ## Spray and adjust symbols
 
-The Symbol Sprayer Tool (Shift+S) paints many instances of the symbol chosen in the Symbols panel as you drag. Alt-drag (Option-drag on macOS) with it to remove instances. The other symbolism tools are in the same tool group and change the instances under the brush.
+The Symbol Sprayer Tool (Shift+S) paints many instances of the symbol chosen in the Symbols panel as you drag, and removes instances of that symbol when you Alt-drag (Option-drag on macOS). The other symbolism tools are in the same tool group and change the instances under the brush.
+
+1. In the Symbols panel, click the symbol you want to spray.
+2. Select the Symbol Sprayer Tool (Shift+S).
+3. Drag across the canvas. Instances appear inside the brush circle as you drag, and the whole drag is one undo step. The instances go into a new group named **Symbol Set**.
+4. To add instances to a set you already sprayed, select the set with the Selection Tool, switch back to the Symbol Sprayer Tool, and drag again.
+5. To remove instances of the chosen symbol, Alt-drag (Option-drag on macOS) over them. With a set selected, the tool removes instances from that set only.
+
+![A night field with a moonrise and a drifting band of glowing firefly symbols. The Symbol Sprayer's brush circle sits at the end of the band, where the newly sprayed fireflies show their selection boxes, and the Symbols panel shows the Firefly symbol](/assets/uploads/vectorcraft/symbol-sprayer.webp)
 
 | Tool | What it does when you drag | With Alt (Option on macOS) |
 |---|---|---|
@@ -122,7 +190,15 @@ The Symbol Sprayer Tool (Shift+S) paints many instances of the symbol chosen in 
 | **Symbol Screener Tool** | Makes instances more transparent. | Makes them more opaque. |
 | **Symbol Styler Tool** | Applies a graphic style to instances. | Removes the style. |
 
-Double-click any symbolism tool to open **Symbolism Tools Options**, where **Diameter**, **Intensity** and **Symbol Set Density** set the brush that all eight tools share.
+Double-click any symbolism tool to open **Symbolism Tools Options**, where **Diameter**, **Intensity** and **Symbol Set Density** set the brush that all eight tools share. VectorCraft keeps the brush when you switch tools and saves it with your preferences.
+
+| Option | What it does |
+|---|---|
+| **Diameter** | Sets the width of the brush circle, in the document's units. The default is 80 pt. |
+| **Intensity** | Sets how strongly the Shifter, Scruncher, Sizer, Spinner, Stainer, Screener and Styler tools change the instances, from 1 to 10. The default is 5. |
+| **Symbol Set Density** | Sets how closely the Symbol Sprayer Tool packs the instances it adds, from 1 to 10. The default is 5. |
+
+While a symbolism tool is active, press **[** or **]** to make the brush smaller or larger, and **Shift+[** or **Shift+]** to lower or raise **Intensity**.
 
 ## Keyboard shortcuts
 
@@ -131,17 +207,23 @@ Double-click any symbolism tool to open **Symbolism Tools Options**, where **Dia
 | Layers panel | F7 | F7 |
 | Create a new layer | Ctrl+L | Cmd+L |
 | Symbols panel | Ctrl+Shift+F11 | Cmd+Shift+F11 |
+| New symbol from the selection | F8 | F8 |
 | Place a file | Ctrl+Shift+P | Cmd+Shift+P |
 | Hide or show template layers | Ctrl+Shift+W | Cmd+Shift+W |
 | Symbol Sprayer Tool | Shift+S | Shift+S |
+| Smaller or larger symbolism brush | [ or ] | [ or ] |
+| Lower or raise symbolism Intensity | Shift+[ or Shift+] | Shift+[ or Shift+] |
 
-**Edit → Keyboard Shortcuts…** changes them.
+**Edit → Keyboard Shortcuts…** changes every shortcut in this table except the bracket keys.
 
 ## Related
 
 - [Arrange, group and align](/apps/vectorcraft/arrange-group-and-align/)
+- [Select artwork](/apps/vectorcraft/select-artwork/)
+- [Draw and transform shapes](/apps/vectorcraft/draw-and-transform-shapes/)
 - [Combine and cut shapes](/apps/vectorcraft/combine-and-cut-shapes/)
 - [Apply effects and appearance](/apps/vectorcraft/apply-effects-and-appearance/)
 - [Trace an image](/apps/vectorcraft/trace-an-image/)
+- [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/)
 - [Print your artwork](/apps/vectorcraft/print-your-artwork/)
 - [All VectorCraft workflows](/apps/vectorcraft/workflows/)
