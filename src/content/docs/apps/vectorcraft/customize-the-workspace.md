@@ -53,7 +53,7 @@ The dock runs down the right edge of the window. Its outer column holds the Prop
 2. Choose **Window → Workspace → New Workspace…**.
 3. Type a name and click **OK**. VectorCraft suggests "Workspace 1", "Workspace 2" and so on.
 
-![The New Workspace dialog over the Harbor Lights poster, with Poster Layout typed in the Name field above the note that the dialog saves the current bars, toolbar and panel layout. Behind it, the dock holds the Layers tab, the Swatches and Color group and the collapsed Brushes and Symbols group](/assets/uploads/vectorcraft/new-workspace-dialog.webp)
+![The New Workspace dialog over the Harbor Lights poster, with Poster Layout typed in the Name field above the note that the dialog saves the current bars, toolbar and panel layout. The Cancel and OK buttons sit below an empty area of the dialog](/assets/uploads/vectorcraft/new-workspace-dialog.webp)
 
 The new workspace appears in the Workspace menu below the built-in ones. You cannot use the name of a built-in workspace. If you use the name of one of your own workspaces, the new layout replaces it.
 
