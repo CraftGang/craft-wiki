@@ -99,7 +99,7 @@ Tab stops line up text after a tab character, for example prices at the right ed
 5. Type the exact position in **X**, and the characters that fill the gap before the stop in **Leader**, for example a period and a space. A leader repeats up to eight characters.
 6. For a decimal tab, type the character to line up on in **Align On**. The default is a period.
 
-![The caret sits in the line crispy, soy dip of a night market menu card, where dot leaders run to prices at the right edge of the column. The Tabs panel shows the Right-Justified Tab button selected, X set to 400 px, a period in Leader and the stop at the right end of the ruler](/assets/uploads/vectorcraft/tabs-panel-leaders.webp)
+![The Tabs panel floats just above the right column of a night market menu, with its ruler running from 0 at the column's left edge past the selected right-justified stop at 400 px, which is highlighted in red directly over the right edge of the prices 8.75, 5.50, 4.50 and 6.00. The Right-Justified Tab button is on, X reads 400 px, Leader and Align On each hold a period, and the caret sits in the line crispy, soy dip, where dot leaders run to the price](/assets/uploads/vectorcraft/tabs-panel-leaders.webp)
 
 Stops are measured from the left edge of the text, or of the frame for area type. A stop lands on the nearest whole point. Hold Shift while you drag, or turn on **Snap to Unit** in the panel menu, to land on the ruler's ticks. Ctrl-drag a stop (Cmd-drag on macOS) to move every stop by the same distance. The ruler's indent markers set **First-line Left Indent** and **Left Indent**.
 

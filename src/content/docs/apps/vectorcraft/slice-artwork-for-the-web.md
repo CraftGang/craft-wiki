@@ -82,7 +82,7 @@ When you divide by size, the last row or column is smaller if the slice does not
 
 Both commands deselect the slices in every open document, and turning them off does not select the slices again. While slices are hidden or locked, no command selects a slice, but you can still select the object of an object slice as ordinary art. Both settings last for the current session and are not saved with the document.
 
-![The View menu open over the sliced night-market banner, with the pointer on Lock Slices, which has a check mark, just below Hide Slices](/assets/uploads/vectorcraft/slices-view-menu.webp)
+![The View menu open over the sliced night-market banner, with Lock Slices highlighted and checked just below Hide Slices](/assets/uploads/vectorcraft/slices-view-menu.webp)
 
 ## Slices preferences
 

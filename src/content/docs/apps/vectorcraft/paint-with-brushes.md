@@ -149,7 +149,7 @@ Scatter, art and pattern brushes also have **Colorization**. Click **Tips** besi
 | **Tints and Shades** | Black and white stay as they are. Dark colors become shades of the stroke color, and light colors become tints of it |
 | **Hue Shift** | The **Key Color** becomes the stroke color. The other colors shift their hue by the same amount and keep their saturation and brightness. Pick the key color from the art's colors, or with the eyedropper |
 
-![Scatter Brush Options for the Evening Stars brush with Colorization Tips open beside the Tips button. The tips show a sample of the stars on a blue stroke for each of None, Tints, Tints and Shades and Hue Shift, with a sentence on what each method does](/assets/uploads/vectorcraft/colorization-tips.webp)
+![Scatter Brush Options for the Evening Stars brush with Colorization Tips open below the Tips button. The tips show a sample of the stars on a blue stroke for each of None, Tints, Tints and Shades and Hue Shift, with a sentence on what each method does](/assets/uploads/vectorcraft/colorization-tips.webp)
 
 To delete brushes, select them in the panel and click **Delete Brush**. When no stroke uses them, VectorCraft asks whether to delete them. When strokes use them, click **Remove Strokes** to take the brushes off those strokes, which keep a plain stroke, and delete the brushes. Alt-click (Option-click on macOS) **Delete Brush** to delete brushes that no stroke uses without being asked.
 
@@ -242,7 +242,7 @@ Expanding a brush stroke replaces it with the artwork that the brush draws, as o
 1. Select the paths that have brush strokes.
 2. Click **Expand Brush Strokes** at the bottom of the Brushes panel, or choose it from the panel menu.
 
-![The dusk garden after Expand Brush Strokes on the vine. The vine is now a selected group whose stem, leaves and berries each show their own anchor points, and the Layers panel shows the new group open in Layer 1](/assets/uploads/vectorcraft/expand-brush-strokes.webp)
+![The dusk garden after Expand Brush Strokes on the vine. The vine is now a selected group whose stem, leaves and berries each show their own selection outline, and the Layers panel shows the new group open in Layer 1](/assets/uploads/vectorcraft/expand-brush-strokes.webp)
 
 Expand Brush Strokes replaces each path with a group of the brush art. To undo it, press **Ctrl+Z** (**Cmd+Z** on macOS).
 

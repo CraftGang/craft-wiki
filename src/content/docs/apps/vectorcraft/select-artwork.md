@@ -131,7 +131,7 @@ Global Edit finds the objects that have the same shape as the selected object, w
 3. Edit the selected object. Each match changes in proportion to its own size, so halving the height of a 100 pt object halves a 20 pt match to 10 pt.
 4. To finish, choose **Select → Stop Global Edit** or press Esc.
 
-![The night market scene at 110% zoom during Global Edit. The yellow body of one lantern is selected, the bodies of the other seven lanterns have thin cyan outlines as matches, and the Quick Actions section of the Properties panel shows Stop Global Edit](/assets/uploads/vectorcraft/global-edit.webp)
+![The night market scene at 150% zoom during Global Edit. The yellow body of one lantern is being dragged taller by its bottom handle to a height of 110 px, the bodies of the other lanterns stretch with it inside thin cyan outlines, and the Properties panel shows Stop Global Edit](/assets/uploads/vectorcraft/global-edit.webp)
 
 To leave one of the highlighted objects out, Shift-click it with the Selection tool. Hidden and locked matches are not changed. Global Edit includes at most 10,000 objects.
 
@@ -182,7 +182,7 @@ The Select by Artboards plug-in selects the objects on, inside or outside the ar
 3. In **Select**, choose how the objects relate to the chosen artboards.
 4. Click **OK**.
 
-![The Select by Artboards dialog listing the artboards Poster, Flyer, Ticket, Badge and Banner with their sizes in pixels. Poster, Flyer and Badge are chosen, the line beside Select All and None reads Chosen: 3 of 5, and Select is set to Fully Inside. Below the dialog, the five artboards of the market-flyers document each show a dusk scene with lanterns and a setting sun](/assets/uploads/vectorcraft/select-by-artboards.webp)
+![The Select by Artboards dialog listing the artboards Poster, Flyer, Ticket, Badge and Banner with their sizes in pixels. Poster, Flyer and Badge are chosen, the line beside Select All and None reads Chosen: 3 of 5, and Select is set to Fully Inside. Below the dialog, the five artboards, labeled 01 - Poster to 05 - Banner, each show a dusk scene with lanterns and a setting sun](/assets/uploads/vectorcraft/select-by-artboards.webp)
 
 | Select | Selects the objects that |
 |---|---|
