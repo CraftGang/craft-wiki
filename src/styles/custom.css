@@ -92,3 +92,40 @@
 .wiki-footer { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--sl-color-hairline); font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
 .wiki-footer a { color: inherit; text-decoration: none; }
 .wiki-footer a:hover { color: var(--sl-color-white); }
+
+/* Custom Scrollbar Styling (credit: Lamentomori) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, .25) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(154, 5, 5, 0.15) 100%);
+  border-radius: 10px;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(154, 5, 5, 0.75) 100%);
+}
+
+html:hover ::-webkit-scrollbar-thumb,
+body:hover ::-webkit-scrollbar-thumb,
+*:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+
+.scrolling ::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+
