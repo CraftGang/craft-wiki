@@ -95,7 +95,7 @@ Files from other apps open on a best-effort basis. Some layers or effects may no
 
 ## Plugins
 
-**Plugins › Manage plugins…** lists your plugins. To add one, choose **Import plugin from manifest…** and pick its `figcraft-plugin.json` file. Plugins run in a sandbox with no access to your files or the network, and each run is one undo step. **Plugins › Run last plugin** runs the last one again.
+**Plugins › Manage plugins…** lists your plugins. To add one, choose **Plugins › Development › Import plugin from manifest…** and pick its `figcraft-plugin.json` file. Plugins run in a sandbox with no access to your files or the network, and each run is one undo step. **Plugins › Run last plugin** runs the last one again.
 
 ## Change the look and language
 

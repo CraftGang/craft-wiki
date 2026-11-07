@@ -7,7 +7,7 @@ sidebar:
 
 ![ArtCraft Studio logo](/assets/apps/artcraft-studio.svg)
 
-ArtCraft Studio is a desktop app for making images, video, audio and 3D with AI models. You can start from a prompt, or build the scene first: lay out images on a 2D canvas, or pose characters, props and a camera on a 3D stage, then generate from that. It runs on Windows and macOS. It is open source (MIT or Apache-2.0), and made by the ArtCraft team.
+ArtCraft Studio is a desktop app for making images, video, audio and 3D with AI models. You can start from a prompt, or build the scene first: lay out images on a 2D canvas, or pose characters, props and a camera on a 3D stage, then generate from that. It runs on Windows, macOS and Linux. It is open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note
 ArtCraft Studio needs an internet connection and an ArtCraft account. The AI models run online, not on your computer. Generating with ArtCraft's models uses credits.
@@ -21,7 +21,7 @@ ArtCraft Studio needs an internet connection and an ArtCraft account. The AI mod
 - **3D**: turn an image into a 3D object or a 3D world.
 - **Image Editor**: a 2D canvas with shapes, images, brush, mask and eraser tools, to compose a picture before you generate from it.
 - **3D Stage**: place characters, objects, sets and a skybox in 3D, pose them, set the camera, and capture a still or a video.
-- **Edit tools**: inpainting, background removal, watermark removal and a video frame extractor.
+- **Edit tools**: inpainting, background removal and a video frame extractor. Image and video watermark removal are marked **SOON** and can't be used yet.
 - **My Library**: everything you generate or upload, in one place.
 
 ## Models and accounts
@@ -36,10 +36,10 @@ Everything you make is kept in **My Library**. When you download a result, it go
 
 ## What you need
 
-- Windows (64-bit) or macOS (Apple silicon or Intel).
+- Windows (64-bit), macOS (Apple silicon or Intel), or Linux (x86_64, aarch64 or riscv64).
 - An internet connection and an ArtCraft account.
 
-There is no ready-made Linux version. Linux users can build it from the source code.
+Linux packages (AppImage, .deb, .rpm, Arch, Flatpak and a tarball) are on the [releases page](https://github.com/storytold/artcraft/releases/latest).
 
 ## Guides
 

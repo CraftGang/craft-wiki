@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-The easiest way to get ArtCraft Studio is from the [ArtCraft website](https://getartcraft.com/), which has the stable releases for Windows and macOS.
+The easiest way to get ArtCraft Studio is from the [ArtCraft website](https://getartcraft.com/), which has the stable releases for Windows and macOS. Linux builds are on the [releases page](https://github.com/storytold/artcraft/releases/latest).
 
 :::note
 ArtCraft Launcher doesn't install ArtCraft Studio. It is for the other apps in the Craft App Suite.
@@ -25,7 +25,18 @@ Download `ArtCraft_<ver>_universal.dmg`, open it, and drag **ArtCraft** to Appli
 
 ### Linux
 
-There is no ready-made Linux build. You can [build it from source](https://github.com/storytold/artcraft/blob/main/_docs/dev_setup.md).
+Download a package for your system from the [latest release](https://github.com/storytold/artcraft/releases/latest). Every Linux build is for x86_64 and aarch64; riscv64 has a `.deb`, an `.rpm` and a tarball.
+
+| Format | File |
+|---|---|
+| AppImage (runs without installing) | `artcraft-<ver>-linux-<arch>.AppImage` |
+| Debian, Ubuntu | `artcraft-<ver>-linux-<arch>.deb` |
+| Fedora, RHEL, openSUSE | `artcraft-<ver>-linux-<arch>.rpm` |
+| Arch | `artcraft-<ver>-linux-<arch>.pkg.tar.zst` |
+| Flatpak | `artcraft-<ver>-linux-<arch>.flatpak` |
+| Tarball | `artcraft-<ver>-linux-<arch>.tar.gz` |
+
+You can also [build it from source](https://github.com/storytold/artcraft/blob/main/_docs/dev_setup.md).
 
 ## Update
 

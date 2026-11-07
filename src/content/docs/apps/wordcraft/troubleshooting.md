@@ -47,7 +47,7 @@ The status bar shows the language of the text with **(no dictionary)** when Word
 
 ## A document doesn't look as it does in another app
 
-WordCraft is in alpha. Some layouts may break onto pages differently, and charts and SmartArt aren't kept when you save yet. If you need an exact copy, keep the original file. Please [report the document](https://github.com/storytold/wordcraft/issues) if you can share it: real files are how we find these problems.
+WordCraft is in alpha. Some layouts may break onto pages differently, and some chart types (stock, bubble, surface, pie of pie, 3-D) show a placeholder. Charts from Word are kept when you save, but stay read-only. If you need an exact copy, keep the original file. Please [report the document](https://github.com/storytold/wordcraft/issues) if you can share it: real files are how we find these problems.
 
 ## I can't print, or my printer isn't listed
 

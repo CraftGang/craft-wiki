@@ -21,10 +21,12 @@ SolidCraft is available for Linux, macOS, and Windows, as well as in the browser
 
 ### Flatpak (Recommended)
 
-SolidCraft is packaged as a Flatpak on Flathub:
+SolidCraft has its own Flatpak repository; Flathub supplies the runtime it needs:
 
 ```bash
-flatpak install flathub io.tangencylabs.solidcraft
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists solidcraft https://docs.solidcraft.io/flatpak/solidcraft.flatpakrepo
+flatpak install --user solidcraft io.tangencylabs.solidcraft
 flatpak run io.tangencylabs.solidcraft
 ```
 
@@ -36,36 +38,36 @@ flatpak update io.tangencylabs.solidcraft
 
 ### AppImage
 
-Standalone AppImages for x86_64 and AArch64 Linux are provided on the [GitHub Releases](https://github.com/bherbruck/solidcraft/releases) page:
+Standalone AppImages for x86_64 and AArch64 Linux are provided on the [GitHub Releases](https://github.com/tangency-labs/solidcraft/releases) page:
 
-1. Download `SolidCraft-x86_64.AppImage`.
-2. Make it executable: `chmod +x SolidCraft-x86_64.AppImage`.
+1. Download `solidcraft-linux-x86_64.AppImage` (or `solidcraft-linux-aarch64.AppImage`).
+2. Make it executable: `chmod +x solidcraft-linux-x86_64.AppImage`.
 3. Run it directly or integrate it with your desktop environment.
 
 ### Snap
 
 ```bash
-sudo snap install solidcraft --classic
+sudo snap install solidcraft
 ```
 
 ## macOS
 
-Download the disk image (`.dmg`) from the [latest release](https://github.com/bherbruck/solidcraft/releases/latest):
+Download the disk image (`.dmg`) from the [latest release](https://github.com/tangency-labs/solidcraft/releases/latest):
 
-1. Open `SolidCraft-macos-universal.dmg`.
+1. Open `solidcraft-macos-universal.dmg`.
 2. Drag **SolidCraft.app** to your `Applications` folder.
 3. The bundled `solidcraft-cli` binary can be linked into your `$PATH` from the application bundle or downloaded separately.
 
 ## Windows
 
-Download the `.msi` installer or portable `.zip` from [GitHub Releases](https://github.com/bherbruck/solidcraft/releases/latest).
+Download the `.msi` installer or portable `.zip` from [GitHub Releases](https://github.com/tangency-labs/solidcraft/releases/latest).
 
 ## Building from source
 
 SolidCraft is written in Rust. You will need a recent Rust toolchain (`rustup`) and standard C/C++ build tools:
 
 ```bash
-git clone https://github.com/bherbruck/solidcraft.git
+git clone https://github.com/tangency-labs/solidcraft.git
 cd solidcraft
 cargo build --release
 ./target/release/solidcraft
