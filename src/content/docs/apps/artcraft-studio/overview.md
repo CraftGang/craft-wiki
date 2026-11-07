@@ -5,7 +5,7 @@ sidebar:
   order: 0
 ---
 
-![ArtCraft Studio logo](/assets/apps/artcraft-studio.png)
+![ArtCraft Studio logo](/assets/apps/artcraft-studio.svg)
 
 Explore the documentation for ArtCraft Studio. Choose a guide below, or visit the [product page](https://getartcraft.com/studio) to learn more.
 
