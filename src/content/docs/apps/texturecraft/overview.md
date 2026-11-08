@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![TextureCraft logo](/assets/apps/texturecraft.webp)
-
 TextureCraft is a 3D texture painting app. You load a 3D model, paint materials straight onto it in layers with masks, bake mesh maps, and export the textures for a game engine or another 3D app. If you have used a modern texture painting app, the layout will feel familiar: texture sets, a layer stack, smart materials, a tool shelf, and side-by-side 3D and 2D views. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[In active development]

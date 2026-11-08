@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![EffectCraft logo](/assets/apps/effectcraft.webp)
-
 EffectCraft is an app for animated titles, motion graphics and compositing. You build a composition from layers (solids, shapes, text, footage and other compositions), animate their properties with keyframes, add effects, and render the result as a video. If you have used After Effects, it will feel familiar: the panels, menus and shortcuts follow it. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]

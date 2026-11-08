@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![LightCraft logo](/assets/apps/lightcraft.webp)
-
 LightCraft is a photo library and raw developer. You import photos, sort them with ratings, flags and albums, and edit them without ever changing the original files. If you have used a photo library app such as Lightroom, it will feel familiar, and it can import your Lightroom Classic catalog. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 There is no account, no cloud, no telemetry and no subscription. Your photos and your library stay on your computer.

@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![VectorCraft logo](/assets/apps/vectorcraft.webp)
-
 VectorCraft is a vector illustration app. If you have used a professional vector editor before, it will feel familiar: the Pen, Direct Selection, Pathfinder, Smart Guides, and the Appearance, Swatches and Layers panels are all there, in the places and on the shortcuts you'd expect. It runs on Windows, macOS, Linux and FreeBSD, and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]

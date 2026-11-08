@@ -1,4 +1,4 @@
-<header class="wiki-header">
+<header class="wiki-header" transition:persist="wiki-header">
   <a class="wiki-brand" href="/">Craft <span>Wiki</span></a>
   <nav aria-label="Main navigation" class="wiki-header-links">
     <a class="wiki-header-link wiki-header-browse" href="/#apps">Browse apps</a>
@@ -21,7 +21,7 @@
   </nav>
 </header>
 
-<script is:inline>
+<script>
   const themeToggle = document.querySelector('.wiki-theme-toggle');
   if (themeToggle) {
     const updateThemeLabel = () => {

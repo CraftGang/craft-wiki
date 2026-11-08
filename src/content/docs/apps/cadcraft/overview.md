@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![CADCraft logo](/assets/apps/cadcraft.webp)
-
 CADCraft is a computer-aided design app for 2D drafting. If you have used a desktop CAD program, it will feel familiar: you type commands such as `LINE` or `CIRCLE` at the command line, click points, and use object snaps, layers, dimensions, hatches and blocks. It opens and saves DXF and DWG drawings, and runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::caution[Pre-alpha]

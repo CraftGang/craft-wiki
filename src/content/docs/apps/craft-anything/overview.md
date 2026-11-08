@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![Craft Anything logo](/assets/apps/craft-anything.webp)
-
 Craft Anything studies a website, a desktop or phone app, a game or a file with real inspection tools, then has a coding agent on your computer build your own version and checks it against the original. It is free and open source (MIT or Apache-2.0), written in Rust, and runs on Windows, macOS, Linux and FreeBSD.
 
 :::note[Early alpha]

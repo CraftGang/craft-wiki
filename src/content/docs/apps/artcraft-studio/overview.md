@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![ArtCraft Studio logo](/assets/apps/artcraft-studio.svg)
-
 ArtCraft Studio is a desktop app for making images, video, audio and 3D with AI models. You can start from a prompt, or build the scene first: lay out images on a 2D canvas, or pose characters, props and a camera on a 3D stage, then generate from that. It runs on Windows, macOS and Linux. It is open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note

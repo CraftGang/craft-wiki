@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![FilmCraft logo](/assets/apps/filmcraft.webp)
-
 FilmCraft is a non-linear video editor. If you have used a professional editor before, it will feel familiar: Source and Program monitors, bins, a multi-track timeline, workspaces and the usual editing keys are all there. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]
