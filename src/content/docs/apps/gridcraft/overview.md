@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![GridCraft logo](/assets/apps/gridcraft.webp)
-
 GridCraft is a spreadsheet app for working with numbers and data. If you have used a modern spreadsheet app, it will feel familiar: the ribbon, formula bar, Name Box, sheet tabs, tables, charts and pivot tables are all there. It opens and saves .xlsx files, and runs on Windows, macOS, Linux and FreeBSD. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]

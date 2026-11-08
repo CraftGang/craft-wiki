@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![MaterialCraft logo](/assets/apps/materialcraft.webp)
-
 MaterialCraft is a node-based material designer. You build a material by connecting nodes in a graph, watch it update in a 2D view and on a 3D model, and export its maps (base colour, normal, roughness, metallic, height and so on) for a game engine or a 3D app. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::caution[Early and changing fast]

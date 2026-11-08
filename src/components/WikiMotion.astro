@@ -1,0 +1,119 @@
+<script>
+  import type { TransitionBeforeSwapEvent } from 'astro:transitions/client';
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const targets = '.wiki-hero-copy, .wiki-app-showcase, .wiki-section-heading, .app-category-heading, .app-tile, .wiki-thirdparty-intro, .wiki-footer';
+  let observer: IntersectionObserver | undefined;
+  let setupId = 0;
+  let sidebarScroll = 0;
+
+  function disableMotion() {
+    observer?.disconnect();
+    delete document.documentElement.dataset.wikiMotion;
+  }
+
+  async function setupMotion() {
+    const id = ++setupId;
+    observer?.disconnect();
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) { disableMotion(); return; }
+    if (!document.documentElement.dataset.wikiMotion) return;
+    try {
+      await Promise.all([
+        document.fonts.load('400 16px "Inter Variable"'),
+        document.fonts.load('750 40px "Archivo Variable"'),
+        document.fonts.load('600 10px "Geist Mono Variable"'),
+        document.fonts.load('italic 400 40px "Instrument Serif"'),
+      ]);
+      await document.fonts.ready;
+    } catch { disableMotion(); return; }
+    if (id !== setupId || !document.documentElement.dataset.wikiMotion) return;
+    const navigation = document.documentElement.dataset.wikiMotion === 'navigation';
+    if (!document.querySelector('.wiki-home')) {
+      if (!navigation) document.documentElement.dataset.wikiMotion = 'active';
+      return;
+    }
+    try {
+      observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          observer?.unobserve(entry.target);
+          entry.target.classList.add('wiki-revealed');
+        });
+      }, { rootMargin: '0px 0px 40px 0px', threshold: 0.05 });
+      const elements = document.querySelectorAll<HTMLElement>(targets);
+      elements.forEach(element => {
+        const siblings = [...(element.parentElement?.children ?? [])];
+        const delay = element.classList.contains('app-tile') ? Math.min(siblings.indexOf(element), 3) * 60 : 0;
+        element.style.setProperty('--wiki-reveal-delay', delay + 'ms');
+      });
+      // Commit the hidden initial styles before starting any transition.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        elements.forEach(element => observer?.observe(element));
+        if (!navigation) document.documentElement.dataset.wikiMotion = 'active';
+      }));
+    } catch { disableMotion(); }
+  }
+
+  setupMotion();
+  document.addEventListener('astro:page-load', setupMotion);
+  document.addEventListener('astro:before-preparation', () => { document.documentElement.dataset.wikiLoading = ''; });
+  document.addEventListener('astro:before-swap', event => {
+    setupId++;
+    observer?.disconnect();
+    const incoming = (event as TransitionBeforeSwapEvent).newDocument.documentElement;
+    sidebarScroll = document.querySelector('.sidebar-pane')?.scrollTop ?? 0;
+    incoming.dataset.theme = document.documentElement.dataset.theme;
+    if (!reducedMotion.matches) incoming.dataset.wikiMotion = 'navigation';
+    else delete incoming.dataset.wikiMotion;
+  });
+  document.addEventListener('astro:after-swap', () => {
+    delete document.documentElement.dataset.wikiLoading;
+    const sidebar = document.querySelector('.sidebar-pane');
+    if (sidebar) sidebar.scrollTop = sidebarScroll;
+  });
+  document.addEventListener('focusin', event => {
+    if (!(event.target instanceof Element)) return;
+    const target = event.target.closest(targets);
+    target?.classList.add('wiki-reveal-immediate', 'wiki-revealed');
+  });
+  reducedMotion.addEventListener('change', disableMotion);
+  window.addEventListener('pageshow', event => { if (event.persisted) disableMotion(); });
+</script>
+
+<style is:global>
+  @media (prefers-reduced-motion: no-preference) {
+    html[data-wiki-motion]:not([data-wiki-motion='navigation']) .wiki-header {
+      animation: wiki-header-enter 1000ms cubic-bezier(.22,1,.36,1) both;
+    }
+    html[data-wiki-motion]:not([data-wiki-motion='navigation']) .wiki-sidebar-inner {
+      animation: wiki-sidebar-enter 1000ms cubic-bezier(.22,1,.36,1) both;
+    }
+    html[data-wiki-motion] .wiki-home :is(.wiki-hero-copy, .wiki-app-showcase, .wiki-section-heading, .app-category-heading, .app-tile, .wiki-thirdparty-intro),
+    html[data-wiki-motion] body:has(.wiki-home) .wiki-footer {
+      opacity: 0;
+      translate: 0 18px;
+      pointer-events: none;
+      transition: opacity 1000ms cubic-bezier(.22,1,.36,1) var(--wiki-reveal-delay, 0ms), translate 1000ms cubic-bezier(.22,1,.36,1) var(--wiki-reveal-delay, 0ms);
+    }
+    html[data-wiki-motion] .wiki-home .wiki-revealed,
+    html[data-wiki-motion] body:has(.wiki-home) .wiki-footer.wiki-revealed {
+      opacity: 1;
+      translate: 0 0;
+      pointer-events: auto;
+    }
+    html[data-wiki-motion] .wiki-home .wiki-reveal-immediate { transition: none; }
+    html[data-wiki-motion]:not([data-wiki-motion='navigation']) .main-pane > main:not(:has(.wiki-home)) {
+      animation: wiki-page-enter 1000ms cubic-bezier(.22,1,.36,1) both;
+    }
+    html[data-wiki-motion='pending'] .wiki-header,
+    html[data-wiki-motion='pending'] .wiki-sidebar-inner,
+    html[data-wiki-motion='pending'] .main-pane > main:not(:has(.wiki-home)) { animation-play-state: paused; }
+    html[data-wiki-motion='navigation'] .wiki-home :is(.wiki-hero-copy, .wiki-app-showcase) { opacity:1; translate:0 0; transition:none; pointer-events:auto; }
+  }
+  ::view-transition-old(root), ::view-transition-new(root) { animation:none; mix-blend-mode:normal; }
+  html[data-wiki-loading]::after { content:''; position:fixed; z-index:9999; top:0; left:0; width:100%; height:2px; background:var(--sl-color-accent); animation:wiki-navigation-loading 1s ease-in-out infinite; transform-origin:left; pointer-events:none; }
+  @keyframes wiki-page-enter { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes wiki-header-enter { from { opacity: 0; translate: 0 -6px; } to { opacity: 1; translate: 0 0; } }
+  @keyframes wiki-sidebar-enter { from { opacity: 0; translate: -8px 0; } to { opacity: 1; translate: 0 0; } }
+  @keyframes wiki-navigation-loading { from { transform:scaleX(.15); } to { transform:scaleX(1); } }
+  @media (prefers-reduced-motion: reduce) { html[data-wiki-loading]::after { animation:none; } }
+</style>

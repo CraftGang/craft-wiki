@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![WordCraft logo](/assets/apps/wordcraft.webp)
-
 WordCraft is a word processor for writing and designing documents. If you have used a modern word processor, it will feel familiar: the ribbon, styles, tables, track changes, references and mail merge are all there. It opens and saves .docx files, and runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]

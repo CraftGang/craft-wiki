@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![PdfCraft logo](/assets/apps/pdfcraft.webp)
-
 PdfCraft is an app for working with PDF files. You can read them, search them, add comments, reorder and combine pages, fill in and sign forms, and protect them with a password. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It works offline, with no account and no telemetry. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]

@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![DeckCraft logo](/assets/apps/deckcraft.webp)
-
 DeckCraft is an app for making presentations and giving slide shows. If you have used a modern presentation app, it will feel familiar: the ribbon, slide layouts, themes, transitions, animations and presenter view are all there. It opens and saves .pptx files, and runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]

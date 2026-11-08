@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![SoundCraft logo](/assets/apps/soundcraft.webp)
-
 SoundCraft is a digital audio workstation (DAW) for recording, editing and mixing audio. It follows the workflow audio engineers already know: an **Edit** window for arranging and editing, a **Mix** window for balancing, edit modes, tools, playlists and memory locations. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::caution[Pre-alpha]

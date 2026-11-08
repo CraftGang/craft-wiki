@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![DesignCraft logo](/assets/apps/designcraft.webp)
-
 DesignCraft is a page layout and publishing app, for magazines, brochures, books, posters and anything else made of pages. If you have used InDesign, it will feel familiar: the tools, menus, panels and most shortcuts are where you expect them. It runs on Windows, macOS, Linux and FreeBSD, and in a web browser. It is free and open source (MIT or Apache-2.0), with no subscription, licence server or telemetry, and is made by the ArtCraft team.
 
 :::caution[Pre-alpha]

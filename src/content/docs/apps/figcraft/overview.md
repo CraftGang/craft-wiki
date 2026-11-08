@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![FigCraft logo](/assets/apps/figcraft.webp)
-
 FigCraft is an app for designing interfaces: app screens, websites, dashboards and design systems. You lay out frames, build reusable components, wire screens together into a clickable prototype, and hand the result to developers. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]
