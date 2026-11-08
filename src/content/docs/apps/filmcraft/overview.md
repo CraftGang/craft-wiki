@@ -1,6 +1,6 @@
 ---
 title: FilmCraft
-description: An open-source, professional video editor for cutting, colour, effects, titles, captions and sound.
+description: An open-source, professional video editor for cutting, color, effects, titles, captions and sound.
 sidebar:
   order: 0
 ---
@@ -8,7 +8,7 @@ sidebar:
 FilmCraft is a non-linear video editor. If you have used a professional editor before, it will feel familiar: Source and Program monitors, bins, a multi-track timeline, workspaces and the usual editing keys are all there. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]
-FilmCraft is in alpha. Editing, trimming, colour, effects, titles, captions, mixing and export work, but expect rough edges, especially with large camera files and on Windows and Linux, which get less testing than macOS. Keep a copy of important projects and media, and tell us what breaks on [GitHub](https://github.com/storytold/filmcraft/issues) or [Discord](https://discord.gg/artcraft). Bug reports with real footage help most.
+FilmCraft is in alpha. Editing, trimming, color, effects, titles, captions, mixing and export work, but expect rough edges, especially with large camera files and on Windows and Linux, which get less testing than macOS. Keep a copy of important projects and media, and tell us what breaks on [GitHub](https://github.com/storytold/filmcraft/issues) or [Discord](https://discord.gg/artcraft). Bug reports with real footage help most.
 :::
 
 ![FilmCraft in the Color workspace with an Apollo 11 documentary open. Effect Controls is on the left, the Program monitor in the middle shows the Saturn V launch with a title and a subtitle, the Lumetri Color panel is on the right, and the Project panel, a multi-track timeline and loudness meters run along the bottom](/assets/uploads/filmcraft/hero.webp)
@@ -16,7 +16,7 @@ FilmCraft is in alpha. Editing, trimming, colour, effects, titles, captions, mix
 ## What it does
 
 - **Editing**: three-point editing with insert and overwrite, lift and extract, and ripple, roll, slip, slide, rate stretch and razor tools. Markers, nesting, multicam and unlimited undo.
-- **Colour**: the **Lumetri Color** panel, with Basic Correction, Creative looks, Curves, colour wheels, HSL Secondary and Vignette, plus waveform and vectorscope.
+- **Color**: the **Lumetri Color** panel, with Basic Correction, Creative looks, Curves, color wheels, HSL Secondary and Vignette, plus waveform and vectorscope.
 - **Effects and motion**: a library of video effects and transitions, position, scale, rotation and opacity on every clip, blend modes, and keyframes with value and velocity graphs.
 - **Audio**: clip effects such as EQ, filters, a limiter, reverb and noise reduction, the Audio Track Mixer and Audio Clip Mixer, automation, and loudness meters.
 - **Titles and captions**: type, shapes and graphics on the Program monitor, and caption tracks you can import and export as SRT, WebVTT or SCC, or burn into the picture.
@@ -37,13 +37,13 @@ Saving is crash-safe, auto-save keeps earlier versions, and FilmCraft offers to 
 - Windows (64-bit, ARM or 32-bit), macOS (Apple silicon or Intel), Linux or FreeBSD.
 - Or a modern web browser, for the web version.
 
-Hardware decoding is used on macOS and Windows, and for H.264 and HEVC on Linux. Some effects and colour grading still run on the processor, so large footage can be slow.
+Hardware decoding is used on macOS and Windows, and for H.264 and HEVC on Linux. Some effects and color grading still run on the processor, so large footage can be slow.
 
 ## Guides
 
 - [Getting started](/apps/filmcraft/getting-started/): open FilmCraft, cut a sequence and export it.
 - [Install and update](/apps/filmcraft/install-update/): download FilmCraft for your system.
-- [Workflows](/apps/filmcraft/workflows/): editing, trimming, colour, effects, audio, titles, export and interchange.
+- [Workflows](/apps/filmcraft/workflows/): editing, trimming, color, effects, audio, titles, export and interchange.
 - [AI agents](/apps/filmcraft/ai-agents/): let an AI assistant edit with FilmCraft.
 - [Troubleshooting](/apps/filmcraft/troubleshooting/): fix common problems.
 

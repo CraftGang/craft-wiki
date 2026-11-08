@@ -25,7 +25,7 @@ Every build is on GridCraft's [latest release](https://github.com/storytold/grid
 
 By default, the installer installs GridCraft for your account only and doesn't need administrator rights. To install it for everyone on the computer, choose **Everyone on this computer** on the first page; this asks for an administrator. You can only have one copy installed, so to switch between the two, uninstall first.
 
-The installer can also add a desktop shortcut. It's unticked unless you tick it. The installers and programs are code-signed.
+The installer can also add a desktop shortcut. It's off unless you select it. The installers and programs are code-signed.
 
 After installing, GridCraft appears in **Open with** for .xlsx, .xlsm, .csv and .tsv files. It doesn't make itself the default app for them; choose it in **Settings › Apps › Default apps** if you want it to be.
 

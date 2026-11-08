@@ -9,7 +9,7 @@ PhotoCraft's menus are **File**, **Edit**, **Image**, **Layer**, **Type**, **Sel
 
 In this guide, **Ctrl** is **⌘** on a Mac, and **Alt** is **Option**.
 
-## Adjust colours without changing your pixels
+## Adjust colors without changing your pixels
 
 An adjustment layer sits above your image and changes how it looks. Your original pixels stay as they were, so you can change or remove the adjustment at any time.
 
@@ -53,7 +53,7 @@ A mask hides part of a layer without erasing it.
 
 This works on adjustment layers too, so you can limit an adjustment to one area.
 
-![Vermeer's Girl with a Pearl Earring with an elliptical selection around her face. A Hue/Saturation 1 layer with Saturation at -100 has a mask that leaves the face in colour and turns the rest of the painting grey](/assets/uploads/photocraft/masks.webp)
+![Vermeer's Girl with a Pearl Earring with an elliptical selection around her face. A Hue/Saturation 1 layer with Saturation at -100 has a mask that leaves the face in color and turns the rest of the painting gray](/assets/uploads/photocraft/masks.webp)
 
 **Layer › Layer Mask** also has **Reveal All** and **Hide All** (to paint the mask yourself), **Delete**, **Apply**, and **Enable Layer Mask** to switch the mask on and off.
 
@@ -61,7 +61,7 @@ This works on adjustment layers too, so you can limit an adjustment to one area.
 
 1. Pick the **Horizontal Type Tool** (**T**).
 2. Click on the canvas for a single line of text, or drag a box for a paragraph.
-3. Type. Set the font, size, leading, tracking, alignment and colour in the options bar or the **Properties** panel.
+3. Type. Set the font, size, leading, tracking, alignment and color in the options bar or the **Properties** panel.
 
 ![A landscape with the headline SIERRA NEVADA being edited on the canvas, a byline below it and a paragraph of body text. The Properties panel shows the Character and Paragraph settings for the Georgia font](/assets/uploads/photocraft/type.webp)
 
@@ -73,9 +73,9 @@ The **Type** menu has **Convert to Paragraph Text** and **Convert to Point Text*
 
 1. Click the layer in the **Layers** panel.
 2. Choose **Layer › Layer Style**, then an effect: **Bevel & Emboss…**, **Stroke…**, **Inner Shadow…**, **Inner Glow…**, **Satin…**, **Color Overlay…**, **Gradient Overlay…**, **Pattern Overlay…**, **Outer Glow…** or **Drop Shadow…**.
-3. Adjust it in the **Layer Style** dialog and click **OK**. Tick more effects in the list on the left to combine them.
+3. Adjust it in the **Layer Style** dialog and click **OK**. Select more effects in the list on the left to combine them.
 
-![The Layer Style dialog over a poster with the word EARTHRISE in glowing letters. Stroke and Outer Glow are ticked, and the Outer Glow settings show the blend mode, opacity, colour, spread, size and range](/assets/uploads/photocraft/layer-styles.webp)
+![The Layer Style dialog over a poster with the word EARTHRISE in glowing letters. Stroke and Outer Glow are checked, and the Outer Glow settings show the blend mode, opacity, color, spread, size and range](/assets/uploads/photocraft/layer-styles.webp)
 
 Effects are listed under the layer in the **Layers** panel. **Layer › Layer Style** also has **Copy Layer Style**, **Paste Layer Style**, **Clear Layer Style** and **Hide All Effects**.
 
@@ -83,7 +83,7 @@ Effects are listed under the layer in the **Layers** panel. **Layer › Layer St
 
 The **Filter** menu has blurs, sharpening, noise, distortions such as **Twirl** and **Wave**, pixelate, stylise and render filters. Filter dialogs preview on the canvas as you change them. If there is a selection, the filter only changes the selected area.
 
-![The Twirl filter dialog with Angle set to 320 and Preview ticked. On Van Gogh's The Starry Night, the twirl shows live only inside a circular selection](/assets/uploads/photocraft/filters.webp)
+![The Twirl filter dialog with Angle set to 320 and Preview checked. On Van Gogh's The Starry Night, the twirl shows live only inside a circular selection](/assets/uploads/photocraft/filters.webp)
 
 To keep a filter editable, run it on a smart object. You can then change, hide or remove it later.
 

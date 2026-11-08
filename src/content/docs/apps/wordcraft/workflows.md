@@ -13,7 +13,7 @@ Styles keep a document consistent: change a style once and every paragraph using
 
 - Pick a style in the **Styles** gallery on the **Home** tab. Point at one to preview it.
 - Open the **Styles** pane to create a style, or to change one.
-- On the **Design** tab, choose a theme or style set to restyle the whole document at once. You can also set the page colour, add a page border or add a watermark there.
+- On the **Design** tab, choose a theme or style set to restyle the whole document at once. You can also set the page color, add a page border or add a watermark there.
 
 ![The Design tab showing style-set previews; the document is set in a serif theme with plum headings and a pale diagonal DRAFT watermark](/assets/uploads/wordcraft/design.webp)
 
@@ -24,7 +24,7 @@ Styles keep a document consistent: change a style once and every paragraph using
 On the **Insert** tab:
 
 - **Table**: drag across the grid to choose its size. You can then merge and split cells, apply a table style with banded rows, repeat the header row on every page, sort rows and add formulas.
-- **Pictures**: resize, crop, recolour, adjust brightness and contrast, or remove the background. Choose how text wraps around it: square, top and bottom, behind or in front of the text.
+- **Pictures**: resize, crop, recolor, adjust brightness and contrast, or remove the background. Choose how text wraps around it: square, top and bottom, behind or in front of the text.
 - **Shapes** and **text boxes** work the same way.
 
 ## Lay out pages
@@ -57,7 +57,7 @@ On the **Review** tab:
 - **Read Aloud** reads the document to you, skipping citations and the bibliography.
 - The **accessibility checker** finds things that make a document hard to read with assistive technology, such as pictures without alt text.
 
-![The Review tab with Track Changes on: an inserted word in colour and a deleted word struck through, with comment balloons in the margin](/assets/uploads/wordcraft/review.webp)
+![The Review tab with Track Changes on: an inserted word in color and a deleted word struck through, with comment balloons in the margin](/assets/uploads/wordcraft/review.webp)
 
 ## Send a mail merge
 

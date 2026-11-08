@@ -1,11 +1,11 @@
 ---
 title: AI agents
-description: Let Claude or another AI assistant read, organise, comment on and fill PDFs with PdfCraft, and script PdfCraft from the command line.
+description: Let Claude or another AI assistant read, organize, comment on and fill PDFs with PdfCraft, and script PdfCraft from the command line.
 sidebar:
   order: 6
 ---
 
-AI assistants that support the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) can use PdfCraft's tools: open PDFs, read their text, add comments, fill forms, organise pages and save the result. This is off unless you set it up. PdfCraft never starts it on its own, and it opens no network port.
+AI assistants that support the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) can use PdfCraft's tools: open PDFs, read their text, add comments, fill forms, organize pages and save the result. This is off unless you set it up. PdfCraft never starts it on its own, and it opens no network port.
 
 ## Get the command-line tool
 

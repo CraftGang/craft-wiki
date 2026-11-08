@@ -10,7 +10,7 @@ Each workflow below starts on **What do you want to make?** unless it says other
 1. Pick **A website** and type its address.
 2. Say what you want, for example "Recreate this website", and press **Start**.
 
-In Clean room, Craft Anything sees the site as a visitor would: screenshots, visible text, measured layout, colours, fonts and spacing, and menus it opens. Each check compares your version with the original at three screen widths and says how alike each page is. Ask for changes in the box at the bottom ("make the header blue", "add a contact form").
+In Clean room, Craft Anything sees the site as a visitor would: screenshots, visible text, measured layout, colors, fonts and spacing, and menus it opens. Each check compares your version with the original at three screen widths and says how alike each page is. Ask for changes in the box at the bottom ("make the header blue", "add a contact form").
 
 In Deep mode it also reads the site's JavaScript and watches its start page load. Studying a website needs a Chromium-based browser (Chrome, Edge, Brave) on your computer.
 
@@ -22,7 +22,7 @@ In Deep mode it also reads the site's JavaScript and watches its start page load
 
 Unity is the default. In Deep mode, a game made with Unreal or Godot is rebuilt with its own engine. Each check runs the game's own self-test.
 
-**Settings → Engines** gets the engines: it downloads Godot, Unity Hub or the Epic Games Launcher and checks each download. Signing in, licences and installing Unity or Unreal themselves happen in those vendors' apps. Unreal also needs Xcode on a Mac, or Visual Studio's C++ tools on Windows.
+**Settings → Engines** gets the engines: it downloads Godot, Unity Hub or the Epic Games Launcher and checks each download. Signing in, licenses and installing Unity or Unreal themselves happen in those vendors' apps. Unreal also needs Xcode on a Mac, or Visual Studio's C++ tools on Windows.
 
 To have a game's pictures and 3D models generated, turn on **Generate custom pictures and models** and **Add a fal.ai key**. They're paid from your own fal.ai account, within a budget per project ($5 unless you change it). With it off, the game is built without them.
 

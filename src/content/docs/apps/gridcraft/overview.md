@@ -16,10 +16,10 @@ GridCraft is in alpha. The everyday workflow works from start to finish, but som
 ## What it does
 
 - **Formulas**: hundreds of worksheet functions, including XLOOKUP, IFS, LET and LAMBDA. Dynamic-array formulas such as FILTER, SORT and UNIQUE spill their results into the cells around them.
-- **Formatting**: number formats, cell styles, borders, conditional formatting with data bars, colour scales and icons, and **Format as Table**.
+- **Formatting**: number formats, cell styles, borders, conditional formatting with data bars, color scales and icons, and **Format as Table**.
 - **Tables and data**: sort, filter, Flash Fill, Text to Columns, Remove Duplicates, data validation, grouping and subtotals.
 - **Charts**: column, bar, line, pie, area, scatter and more, with sparklines in cells.
-- **Pivot tables**: summarise a table by dragging fields between rows, columns, values and filters.
+- **Pivot tables**: summarize a table by dragging fields between rows, columns, values and filters.
 - **Pictures and shapes**: float a picture over the sheet, or place it inside a cell.
 - **Review**: comments and notes, spelling, and protecting sheets and workbooks.
 - **Printing**: Page Break Preview, print areas, print titles, printing and PDF export.

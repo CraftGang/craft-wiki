@@ -23,7 +23,7 @@ PhotoCraft is in early alpha. Much is in place, but it isn't ready to be your on
 - **Shapes and paths**: rectangles, ellipses, polygons, lines and the Pen tools.
 - **Painting and retouching**: brushes with pen pressure and tilt, healing and clone tools, dodge and burn.
 - **Filters**: blurs, sharpening, distortions, noise and more, with a live preview on the canvas.
-- **Colour**: RGB, Grayscale, CMYK and Lab documents at 8, 16 or 32 bits per channel, with colour profiles.
+- **Color**: RGB, Grayscale, CMYK and Lab documents at 8, 16 or 32 bits per channel, with color profiles.
 - **Automation**: record actions, run batches, or drive PhotoCraft from the command line or an [AI agent](/apps/photocraft/automation/).
 
 ## Your files

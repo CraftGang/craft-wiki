@@ -25,7 +25,7 @@ To skip it next time, clear **Show at startup**. **Help › Home screen...** bri
 Choose **File › New › Graph...** (**Ctrl+N**, or **⌘N** on a Mac). In the **New graph** window:
 
 1. Type a **Graph name**.
-2. Pick a **Template**. **Material outputs** is a good start: it adds outputs for base colour, normal, roughness, metallic, height and ambient occlusion, each fed by a flat colour.
+2. Pick a **Template**. **Material outputs** is a good start: it adds outputs for base color, normal, roughness, metallic, height and ambient occlusion, each fed by a flat color.
 3. Pick a **Size**, from 256 to 4096 pixels.
 4. Choose **Create**.
 

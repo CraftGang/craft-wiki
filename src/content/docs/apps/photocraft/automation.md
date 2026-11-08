@@ -26,7 +26,7 @@ Run `photocraft-cli --help` to see every subcommand, and `photocraft-cli <subcom
 | Subcommand | What it does |
 | --- | --- |
 | `convert` | Open one file and save it in another format |
-| `info` | Print a document's size, colour mode, depth and layers |
+| `info` | Print a document's size, color mode, depth and layers |
 | `run` | Open or create a document, run commands on it, and save the result |
 | `batch` | Apply a recorded action to every file in a folder |
 | `droplet` | Run a PhotoCraft droplet on files or folders |

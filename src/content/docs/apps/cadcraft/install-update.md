@@ -29,7 +29,7 @@ Only download CADCraft from [storytold/cadcraft](https://github.com/storytold/ca
 
 By default, the installer installs CADCraft for your account only and doesn't need administrator rights. To install it for everyone on the computer, choose **Everyone on this computer** on the first page; this asks for an administrator. You can only have one copy installed, so to switch between the two, uninstall first.
 
-The installer adds CADCraft to the Start menu. Tick **Create a desktop shortcut** if you want one too.
+The installer adds CADCraft to the Start menu. Select **Create a desktop shortcut** if you want one too.
 
 The installers and programs are code-signed.
 

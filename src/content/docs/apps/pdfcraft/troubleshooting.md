@@ -65,7 +65,7 @@ Open PdfCraft again. While it runs, it saves a copy of every document with unsav
 
 ## I can't edit the text in a PDF
 
-PdfCraft is in alpha, and editing the existing text of a PDF is one of its weakest areas, especially on complex layouts and in right-to-left and Chinese, Japanese or Korean text. If a PDF is a scan, there is no text to edit until you recognise it with **Scan & OCR**. To add text on top of a page instead, use **Edit a PDF › Text** or **Fill & Sign › Add text**.
+PdfCraft is in alpha, and editing the existing text of a PDF is one of its weakest areas, especially on complex layouts and in right-to-left and Chinese, Japanese or Korean text. If a PDF is a scan, there is no text to edit until you recognize it with **Scan & OCR**. To add text on top of a page instead, use **Edit a PDF › Text** or **Fill & Sign › Add text**.
 
 ## I can't change a document
 

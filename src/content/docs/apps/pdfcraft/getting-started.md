@@ -40,5 +40,5 @@ PdfCraft saves a copy of unsaved changes every minute. If it closes unexpectedly
 ## Next steps
 
 - [Workflows](/apps/pdfcraft/workflows/): comments, editing, protecting, converting and OCR.
-- [Organise pages](/apps/pdfcraft/organize-pages/): reorder, combine and split.
+- [Organize pages](/apps/pdfcraft/organize-pages/): reorder, combine and split.
 - [Forms and signing](/apps/pdfcraft/forms-and-signing/): fill in and sign forms.

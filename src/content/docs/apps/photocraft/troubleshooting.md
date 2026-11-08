@@ -37,13 +37,13 @@ On a Wayland desktop, files dropped on the window don't open yet. Use **File ›
 
 To drag and drop, run PhotoCraft through XWayland: set **Linux display server** to X11 in **Edit › Preferences › Performance…** and restart PhotoCraft. You can also start it once with `WAYLAND_DISPLAY= photocraft`.
 
-## The Windows taskbar turns black when PhotoCraft is maximised
+## The Windows taskbar turns black when PhotoCraft is maximized
 
-PhotoCraft draws its own title bar. If the taskbar turns black or disappears while PhotoCraft is maximised, update PhotoCraft first. If it still happens, turn on **System title bar** in **Edit › Preferences › Interface…** and restart PhotoCraft, so that Windows draws the title bar instead.
+PhotoCraft draws its own title bar. If the taskbar turns black or disappears while PhotoCraft is maximized, update PhotoCraft first. If it still happens, turn on **System title bar** in **Edit › Preferences › Interface…** and restart PhotoCraft, so that Windows draws the title bar instead.
 
 ## Canvas Size added a white border around my photo
 
-**Image › Canvas Size…** doesn't scale your photo. It adds space around it, and fills the new space with the **Canvas extension color**, which is your background colour (usually white) unless you change it. To add empty space, set **Canvas extension color:** to **Transparent**.
+**Image › Canvas Size…** doesn't scale your photo. It adds space around it, and fills the new space with the **Canvas extension color**, which is your background color (usually white) unless you change it. To add empty space, set **Canvas extension color:** to **Transparent**.
 
 This happens because a photo you open becomes a locked **Background** layer, which can't be transparent. To make the photo itself bigger or smaller, use **Image › Image Size…**.
 

@@ -24,9 +24,9 @@ Click **Open sample magazine** to see a finished layout. It has a cover, styled 
 Click **New file**, or choose **File › New Document…** (**Ctrl+N**).
 
 1. Pick a size on the **Print**, **Web** or **Mobile** tab, or type your own **Width** and **Height**.
-2. Set the number of **Pages**. Tick **Facing Pages** for left and right pages side by side, as in a magazine.
+2. Set the number of **Pages**. Select **Facing Pages** for left and right pages side by side, as in a magazine.
 3. Set **Columns**, **Column Gutter** and the **Margins**. Add **Bleed** if the document is going to a printer.
-4. Tick **Primary Text Frame** if you want a text frame that fills the margins on every page.
+4. Select **Primary Text Frame** if you want a text frame that fills the margins on every page.
 5. Click **Create**.
 
 To skip the dialog, click one of the size tiles under **Start a new document** on the start screen.
@@ -49,6 +49,6 @@ Choose **File › Export PDF…**, pick a **Preset**, click **OK** and choose wh
 
 ## Next steps
 
-- [Workflows](/apps/designcraft/workflows/): pages, threaded text, styles, colour and export.
+- [Workflows](/apps/designcraft/workflows/): pages, threaded text, styles, color and export.
 - [InDesign files](/apps/designcraft/indesign-files/): open an .idml or .indd file.
 - [Troubleshooting](/apps/designcraft/troubleshooting/): if the window doesn't open or something looks wrong.

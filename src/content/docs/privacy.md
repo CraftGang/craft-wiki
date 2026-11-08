@@ -27,13 +27,13 @@ You can sign out, or clear the site's data in your browser, at any time.
 
 ## Edit history is public
 
-The wiki's content lives in a public GitHub repository. When you save a change, its record includes your name: your Discord display name and username for Discord sign-in, or your GitHub account for GitHub sign-in. This history is public, and is kept to show who wrote what, as the content licence requires. Ask us if you need your name removed from a past edit, and we will do what we reasonably can. Removing content from Git history is not always possible.
+The wiki's content lives in a public GitHub repository. When you save a change, its record includes your name: your Discord display name and username for Discord sign-in, or your GitHub account for GitHub sign-in. This history is public, and is kept to show who wrote what, as the content license requires. Ask us if you need your name removed from a past edit, and we will do what we reasonably can. Removing content from Git history is not always possible.
 
 GitHub's handling of your data is covered by the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Discord's is covered by the [Discord Privacy Policy](https://discord.com/privacy).
 
 ## Do Not Track and Global Privacy Control
 
-The wiki does not track readers across sites, so there is nothing for Do Not Track or Global Privacy Control signals to turn off. We honour them anyway: we will never use them to identify you.
+The wiki does not track readers across sites, so there is nothing for Do Not Track or Global Privacy Control signals to turn off. We honor them anyway: we will never use them to identify you.
 
 ## Children
 

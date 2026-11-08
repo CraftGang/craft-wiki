@@ -48,9 +48,9 @@ No server is set for online sharing, so FigCraft can only share on your local ne
 
 ## Invite links open the browser, not FigCraft
 
-In **Preferences**, tick **Open invite links in FigCraft**. Or paste the link into **Join with a code** on the **Home** screen.
+In **Preferences**, select **Open invite links in FigCraft**. Or paste the link into **Join with a code** on the **Home** screen.
 
-## A command is greyed out or says "Dev Mode only inspects"
+## A command is grayed out or says "Dev Mode only inspects"
 
 Dev Mode lets you look but not edit. Press **Shift+D**, or choose **Design** in the toolbar's switcher, to edit again.
 

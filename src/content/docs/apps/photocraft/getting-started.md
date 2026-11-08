@@ -31,7 +31,7 @@ Every step is listed in the **History** panel. **Ctrl+Z** (**⌘Z**) undoes the 
 
 1. Pick the **Horizontal Type Tool** (press **T**).
 2. Click on the image and type.
-3. Change the font, size and colour in the options bar at the top, or in the **Properties** panel.
+3. Change the font, size and color in the options bar at the top, or in the **Properties** panel.
 
 The text stays editable. Click it again with the Type tool to change it.
 

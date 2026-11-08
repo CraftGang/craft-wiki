@@ -84,12 +84,12 @@ Select a graph and choose **Object → Graph → Type…**. The **Graph Type** d
 | **Edge To Edge** | Runs the lines of a line graph across the whole width of the graph | Off |
 | **Ticks** | The number of divisions on the value axis. 0 calculates them from the data | 0 |
 | **Axis Min**, **Axis Max** | Set together, they fix the value axis to that range, in **Ticks** divisions (5 when **Ticks** is 0). A graph without a fixed range shows null in both rows and calculates the range from the data | Not set |
-| **Tick Length**, **Tick Marks** | The length of the value-axis ticks (**None**, **Short** or **Full Width**) and the number of tick marks in each division | Short, 1 |
-| **Category Tick Length**, **Category Tick Marks** | The same settings for the category axis | None, 1 |
+| **Select Length**, **Select Marks** | The length of the value-axis ticks (**None**, **Short** or **Full Width**) and the number of select marks in each division | Short, 1 |
+| **Category Select Length**, **Category Select Marks** | The same settings for the category axis | None, 1 |
 | **Ticks Between Labels** | Puts the category ticks between the category labels | Off |
 | **Prefix**, **Suffix** | Text shown before and after each number on the value axis, for example `$` or `%` | Empty |
 | **Separate Scales**, **Right Ticks**, **Right Axis Min**, **Right Axis Max** | With the value axis on both sides, **Separate Scales** gives the series on the right axis their own scale, set with **Right Ticks**, **Right Axis Min** and **Right Axis Max** like the left one | Off, 0, Not set |
-| **Right Tick Length**, **Right Tick Marks**, **Right Prefix**, **Right Suffix** | The tick and number settings for the right value axis | Short, 1, Empty, Empty |
+| **Right Select Length**, **Right Select Marks**, **Right Prefix**, **Right Suffix** | The select and number settings for the right value axis | Short, 1, Empty, Empty |
 
 The dialog has no box to type in while **Axis Min** and **Axis Max** show null. To fix the range of such a graph, run the `graph.setType` command on the graph with `axisMin` and `axisMax`. The command changes the graph that is selected, so select it first. Save the document and close it, then run `vectorcraft-cli` on its file, as [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/#run-commands-from-the-command-line) describes:
 

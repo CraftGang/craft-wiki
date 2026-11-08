@@ -5,12 +5,12 @@ sidebar:
   order: 3
 ---
 
-SoundCraft has two main windows. The **Edit** window shows your tracks on a timeline, for arranging and editing. The **Mix** window shows them as channel strips, for balancing. Press **⌘=** to switch between them, or tick **Mix in Separate Window** in the **Window** menu to see both at once, for example one on each monitor.
+SoundCraft has two main windows. The **Edit** window shows your tracks on a timeline, for arranging and editing. The **Mix** window shows them as channel strips, for balancing. Press **⌘=** to switch between them, or select **Mix in Separate Window** in the **Window** menu to see both at once, for example one on each monitor.
 
 On a Mac, the shortcuts on this page use **⌘**. On Windows and Linux, use **Ctrl** in its place. **Setup › Keyboard Shortcuts** lists every shortcut.
 
 :::note
-SoundCraft is in pre-alpha. Menu items that aren't built yet are shown greyed out.
+SoundCraft is in pre-alpha. Menu items that aren't built yet are shown grayed out.
 :::
 
 ## Edit audio
@@ -58,7 +58,7 @@ SoundCraft compensates for plugin delay automatically. You can turn this off wit
 
 ## Use plugins
 
-The plugin menu has every built-in plugin under **Built-in**: EQs, a channel strip, a compressor and limiter, expander and gate, de-esser, maximiser, room and plate reverbs, delay, chorus, flanger, phaser, auto pan, saturation and more. Each plugin's window lets you save your own presets.
+The plugin menu has every built-in plugin under **Built-in**: EQs, a channel strip, a compressor and limiter, expander and gate, de-esser, maximizer, room and plate reverbs, delay, chorus, flanger, phaser, auto pan, saturation and more. Each plugin's window lets you save your own presets.
 
 It also lists your own plugins under **CLAP** and **VST3**, and **Audio Units** on a Mac, grouped by maker. SoundCraft looks for them in the standard plugin folders the first time you open each list.
 

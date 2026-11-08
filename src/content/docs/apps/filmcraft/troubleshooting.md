@@ -22,7 +22,7 @@ Avoid `"gl"`: it can bring the driver crash back. A laptop with an integrated an
 
 - Lower the playback quality: **View › Playback Resolution › 1/2** or **1/4**.
 - Render the slow parts: **Sequence › Render Effects In to Out** (**Enter**). The render bar above the timeline turns green where previews are ready.
-- Hardware decoding works on macOS and Windows, and for H.264 and HEVC on Linux. Colour grading, keys and export still run on the processor, so large or high-resolution footage is slower than in mature editors.
+- Hardware decoding works on macOS and Windows, and for H.264 and HEVC on Linux. Color grading, keys and export still run on the processor, so large or high-resolution footage is slower than in mature editors.
 
 ## H.265 or AV1 can't be chosen for export
 

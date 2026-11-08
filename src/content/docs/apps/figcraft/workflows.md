@@ -34,7 +34,7 @@ To use components in other files, publish this file as a library with **Librarie
 ## Use styles and variables
 
 - **Styles** save a fill, text, effect or layout grid setting under a name, so you can apply it again.
-- **Variables** hold a colour, number, text or true/false value. Open the **Variables** panel from the left rail to create them. A collection can have modes, such as Light and Dark, with a value for each.
+- **Variables** hold a color, number, text or true/false value. Open the **Variables** panel from the left rail to create them. A collection can have modes, such as Light and Dark, with a value for each.
 - Bind a variable to a fill, stroke, effect, layout grid or component property. Switch a frame's mode in the Design panel to see it in the other theme.
 
 ## Draw vectors

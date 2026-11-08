@@ -1,5 +1,5 @@
 ---
-title: Organise pages
+title: Organize pages
 description: Rotate, delete, insert, extract and reorder pages in PdfCraft, combine several files into one PDF, and split one PDF into several.
 sidebar:
   order: 4
@@ -26,7 +26,7 @@ Every change can be undone with **Ctrl+Z** (**⌘Z**), even after you save. Noth
 
 ## Extract pages
 
-**Edit › Pages › Extract pages…** copies the pages you choose into a new document. Tick **Delete pages after extracting** to move them out of the original instead, or **Extract pages as separate files** to make one file per page.
+**Edit › Pages › Extract pages…** copies the pages you choose into a new document. Select **Delete pages after extracting** to move them out of the original instead, or **Extract pages as separate files** to make one file per page.
 
 ## Split a document
 

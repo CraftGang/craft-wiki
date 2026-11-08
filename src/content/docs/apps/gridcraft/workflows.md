@@ -32,10 +32,10 @@ If you choose **Español** as the interface language, you type formulas in Spani
 
 On the **Home** tab:
 
-- Font, fill colour, borders, alignment, **Wrap Text** and **Merge & Center**.
+- Font, fill color, borders, alignment, **Wrap Text** and **Merge & Center**.
 - Number formats, such as currency, percentage and dates. **Ctrl+1** opens **Format Cells** for every option.
 - **Cell Styles** applies a ready-made look, such as a heading or a total.
-- **Conditional Formatting** colours cells by their values: **Highlight Cells Rules**, **Top/Bottom Rules**, **Data Bars**, **Color Scales** and **Icon Sets**. **Manage Rules…** lists and edits them.
+- **Conditional Formatting** colors cells by their values: **Highlight Cells Rules**, **Top/Bottom Rules**, **Data Bars**, **Color Scales** and **Icon Sets**. **Manage Rules…** lists and edits them.
 - **Format Painter** copies formatting from one place to another.
 
 ## Work with tables
@@ -51,7 +51,7 @@ On the **Data** tab:
 - **Sort** and **Filter**. **Ctrl+Shift+L** turns filter buttons on or off.
 - **Text to Columns** splits one column into several. **Flash Fill** (**Ctrl+E**) fills a column by following an example you type.
 - **Remove Duplicates** and **Data Validation**, which limits what can be typed in a cell, for example to a list.
-- **Group**, **Ungroup** and **Subtotal** to outline and summarise rows.
+- **Group**, **Ungroup** and **Subtotal** to outline and summarize rows.
 - **What-If Analysis**, **Forecast Sheet** and **Solver** for working out numbers.
 - **Get Data (Text/CSV)** brings in data from a text file.
 
@@ -59,13 +59,13 @@ On the **Data** tab:
 
 Select your data, then on the **Insert** tab choose **Recommended Charts**, or one of the chart buttons next to it. **Sparklines** draws a tiny chart inside a cell.
 
-When you select a chart, GridCraft outlines its source data on the sheet and opens the **Chart Design** tab. From there you can add chart elements, switch rows and columns, change the chart type, or open the **Format Pane** to change the title, legend, series and colours.
+When you select a chart, GridCraft outlines its source data on the sheet and opens the **Chart Design** tab. From there you can add chart elements, switch rows and columns, change the chart type, or open the **Format Pane** to change the title, legend, series and colors.
 
 ![The Quarterly Sales Dashboard with the column chart selected: its source data is outlined in the table, the Chart Design tab is open, and the Format Chart Area pane is on the right](/assets/uploads/gridcraft/format-chart.webp)
 
-## Summarise with a pivot table
+## Summarize with a pivot table
 
-Click in a table or range, then choose **Insert › PivotTable**. In the **PivotTable Fields** pane, tick the fields you want and move them between **Filters**, **Columns**, **Rows** and **Values**. Press **Refresh** after the source data changes. **Report Layout** changes how the table is laid out.
+Click in a table or range, then choose **Insert › PivotTable**. In the **PivotTable Fields** pane, select the fields you want and move them between **Filters**, **Columns**, **Rows** and **Values**. Press **Refresh** after the source data changes. **Report Layout** changes how the table is laid out.
 
 ![A pivot table summing revenue by region and product, with a Channel filter at the top and grand totals, next to the PivotTable Fields pane with Channel in Filters, Product in Columns, Region in Rows and Sum of Revenue in Values](/assets/uploads/gridcraft/pivot.webp)
 
@@ -86,7 +86,7 @@ On the **Page Layout** tab, set **Margins**, orientation, paper **Size**, the **
 
 **View › Page Break Preview** shows where each page starts and ends.
 
-![The Household Budget in Page Break Preview: the print area is outlined in blue, a dashed line splits it into Page 1 and Page 2, and the area outside it is greyed out](/assets/uploads/gridcraft/page-break.webp)
+![The Household Budget in Page Break Preview: the print area is outlined in blue, a dashed line splits it into Page 1 and Page 2, and the area outside it is grayed out](/assets/uploads/gridcraft/page-break.webp)
 
 ### Print
 

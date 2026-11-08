@@ -27,7 +27,7 @@ Open or close panels from the **Windows** menu. **Windows › Reset layout** put
 A package is one .sbs file. It can hold several graphs, plus the images they use.
 
 - **File › New › Graph...** adds a graph to the open package.
-- **File › New › Function Graph...** adds a function graph: a graph of maths operations, saved in the package.
+- **File › New › Function Graph...** adds a function graph: a graph of math operations, saved in the package.
 - **File › New › Empty package** starts again with an empty package.
 - **File › Open...** opens an .sbs package, or a .mcmat material.
 
@@ -61,7 +61,7 @@ A package is one .sbs file. It can hold several graphs, plus the images they use
 
 ## Use graph inputs and outputs
 
-- **Output** nodes are what the graph makes. Give each a usage, such as base colour, normal or roughness. The 3D View and the export use them.
+- **Output** nodes are what the graph makes. Give each a usage, such as base color, normal or roughness. The 3D View and the export use them.
 - **Input Color**, **Input Grayscale** and **Input Value** nodes are inputs of the graph. Use them to feed in an image or a value from outside.
 
 ## Write a function
@@ -81,7 +81,7 @@ An **FX-Map** node builds an image by placing and repeating shapes.
 
 ## Adjust levels
 
-Select a **Levels** node. **Properties** shows a histogram of the node's input, with the levels curve over it. Drag the handles under the histogram to set the input range and midtones, and the handles under the grey bar to set the output range. The sliders below give exact values.
+Select a **Levels** node. **Properties** shows a histogram of the node's input, with the levels curve over it. Drag the handles under the histogram to set the input range and midtones, and the handles under the gray bar to set the output range. The sliders below give exact values.
 
 ![The Levels editor in the properties panel: a histogram of the input with the levels curve over it, three input handles below it and two output handles under a black-to-white bar, with the exact sliders underneath. Screenshot from MaterialCraft 0.1](/assets/uploads/materialcraft/levels-editor.webp)
 
@@ -109,7 +109,7 @@ While you edit, previews are computed at a smaller size to stay fast. Change it 
 
 ## Preferences
 
-Choose **Edit › Preferences...** to set the language (English or Arabic), brightness, accent colour, interface scale, how often to autosave, the preview size while editing, node thumbnails, and how the 3D view pans.
+Choose **Edit › Preferences...** to set the language (English or Arabic), brightness, accent color, interface scale, how often to autosave, the preview size while editing, node thumbnails, and how the 3D view pans.
 
 **Help › Shortcuts list...** lists every shortcut.
 
