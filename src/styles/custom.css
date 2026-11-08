@@ -396,6 +396,7 @@ body:hover ::-webkit-scrollbar-thumb,
 :root[data-theme='light'] .wiki-footer { background:#fff; border-color:#dce0e6; }
 :root[data-theme='light'] .pagination-links a:hover,
 :root[data-theme='light'] .wiki-footer-links a:hover { background:#f0f2f5; }
+:root[data-theme='light'] .wiki-footer-links a:hover { color:#20232b; }
 :root[data-theme='light'] .pagination-links a .link-title { color:#20232b; }
 :root[data-theme='light'] .pagination-links a > span,
 :root[data-theme='light'] .wiki-footer-bottom { color:#697282; }
