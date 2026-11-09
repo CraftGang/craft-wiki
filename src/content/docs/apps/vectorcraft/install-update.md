@@ -120,10 +120,10 @@ In the web version, **Help → Check for Updates…** opens a **VectorCraft Upda
 
 ### Install the new version
 
-- **ArtCraft Launcher**: tells you about new versions and updates VectorCraft for you.
-- **Installer, DMG, `.deb`, `.rpm`, Arch package**: install the new version over the old one.
-- **AppImage**: run [AppImageUpdate](https://github.com/AppImageCommunity/AppImageUpdate) on it, or download the new one.
-- **Flatpak, tarball, portable zip**: download the new version and replace the old one. For the portable zip, keep the `VectorCraftData` folder to keep your settings.
+- ArtCraft Launcher: tells you about new versions and updates VectorCraft for you.
+- Installer, DMG, `.deb`, `.rpm`, Arch package: install the new version over the old one.
+- AppImage: run [AppImageUpdate](https://github.com/AppImageCommunity/AppImageUpdate) on it, or download the new one.
+- Flatpak, tarball, portable zip: download the new version and replace the old one. For the portable zip, keep the `VectorCraftData` folder to keep your settings.
 
 ## Start options
 
@@ -204,9 +204,9 @@ VectorCraft looks for its settings folder in this order:
 
 ## Uninstall
 
-- **Windows**: in **Settings → Apps**, find VectorCraft and choose **Uninstall**. For the portable zip, delete its folder.
-- **macOS**: move **VectorCraft** from Applications to the Trash.
-- **Linux**: remove the package with your package manager, run `flatpak uninstall ai.storyteller.vectorcraft` for the Flatpak, or delete the AppImage or the unpacked tarball.
+- Windows: in **Settings → Apps**, find VectorCraft and choose **Uninstall**. For the portable zip, delete its folder.
+- macOS: move **VectorCraft** from Applications to the Trash.
+- Linux: remove the package with your package manager, run `flatpak uninstall ai.storyteller.vectorcraft` for the Flatpak, or delete the AppImage or the unpacked tarball.
 
 Your drawings are not touched. Settings stay in VectorCraft's settings folder (see [Where VectorCraft keeps its settings](#where-vectorcraft-keeps-its-settings) or [Find the log](/apps/vectorcraft/troubleshooting/#find-the-log) for where it is); delete that folder to remove them too.
 

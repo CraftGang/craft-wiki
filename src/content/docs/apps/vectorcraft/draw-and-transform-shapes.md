@@ -127,7 +127,7 @@ The **Spiral** dialog draws a spiral centered on the click:
 
 Click once with a grid tool to open the **Rectangular Grid** or **Polar Grid** dialog, which draws a grid at the point you clicked. Double-click the tool in the toolbar to open **Rectangular Grid Tool Options** or **Polar Grid Tool Options**, which sets the values the tool uses next without drawing. Both dialogs start with a reference point locator that chooses which point of the grid goes on the click.
 
-**Rectangular Grid Tool Options:**
+**Rectangular Grid Tool Options**:
 
 | Option | Default | What it does |
 |---|---|---|
@@ -139,7 +139,7 @@ Click once with a grid tool to open the **Rectangular Grid** or **Polar Grid** d
 | **Use Outside Rectangle As Frame** | On | On draws the outside as one rectangle, off draws its four sides as separate lines |
 | **Fill Grid** | Off | Gives the grid the current fill |
 
-**Polar Grid Tool Options:**
+**Polar Grid Tool Options**:
 
 | Option | Default | What it does |
 |---|---|---|

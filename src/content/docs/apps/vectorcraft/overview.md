@@ -15,37 +15,37 @@ VectorCraft is in alpha. Everyday illustration works, but some tools don't yet b
 
 ## What it does
 
-- **Drawing**: the Pen, Curvature and Pencil tools, shapes, the Paintbrush and Blob Brush, and the Shaper tool.
-- **Brushes and widths**: calligraphic, scatter, art, pattern and bristle brushes from the Brushes panel and brush libraries, and the Width tool (**Shift+W**), which changes a stroke's width along its path.
-- **Reshaping**: the Warp (**Shift+R**), Twirl, Pucker, Bloat, Scallop, Crystallize and Wrinkle tools reshape paths as you drag over them.
-- **Editing paths**: Direct Selection, anchor point tools, Join, Simplify, Offset Path and Outline Stroke.
-- **Combining shapes**: Pathfinder and the Shape Builder tool.
-- **Paint**: swatches, gradients, gradient meshes, patterns, Live Paint and Recolor Artwork.
-- **Live effects**: blends, Repeat (radial, grid and mirror), Envelope Distort, drop shadows and glows, and 3D effects such as Revolve and Extrude & Bevel. They stay editable until you expand them.
-- **Type**: point, area and path type, threaded text frames, character and paragraph styles, OpenType features and vertical type.
-- **Layout and drawing aids**: several artboards in one document, guides, grids and the Dimension tool.
-- **Perspective drawing**: **View → Perspective Grid → Show Grid** shows the grid, and the **One Point Perspective**, **Two Point Perspective** and **Three Point Perspective** submenus under **View → Perspective Grid** choose its type. The Perspective Grid Tool (**Shift+P**) adjusts the grid, and the Perspective Selection Tool (**Shift+V**) moves art along its planes.
-- **Symbols**: the **Symbols** panel stores art that you place many times, and every placed copy changes when you edit the symbol. The Symbol Sprayer Tool (**Shift+S**) and the Shifter, Scruncher, Sizer, Spinner, Stainer, Screener and Styler tools spray and adjust many copies at once.
-- **Graphs**: nine graph types (column, stacked column, bar, stacked bar, line, area, scatter, pie and radar) drawn from a data table.
-- **Variables and data sets**: variables hold the text, images, visibility and graph data of one template, and each data set fills the template with one row's values. You can import data sets from a CSV file.
-- **Web slices**: cut a design into slices and save each one as a separate image with **File → Export → Save for Web (Legacy)…**.
-- **Tracing**: Image Trace turns a picture into vector shapes.
-- **Output**: Export for Screens, PDF with print presets, printing (including posters tiled across several sheets) and Package.
+- Drawing: the Pen, Curvature and Pencil tools, shapes, the Paintbrush and Blob Brush, and the Shaper tool.
+- Brushes and widths: calligraphic, scatter, art, pattern and bristle brushes from the Brushes panel and brush libraries, and the Width tool (**Shift+W**), which changes a stroke's width along its path.
+- Reshaping: the Warp (**Shift+R**), Twirl, Pucker, Bloat, Scallop, Crystallize and Wrinkle tools reshape paths as you drag over them.
+- Editing paths: Direct Selection, anchor point tools, Join, Simplify, Offset Path and Outline Stroke.
+- Combining shapes: Pathfinder and the Shape Builder tool.
+- Paint: swatches, gradients, gradient meshes, patterns, Live Paint and Recolor Artwork.
+- Live effects: blends, Repeat (radial, grid and mirror), Envelope Distort, drop shadows and glows, and 3D effects such as Revolve and Extrude & Bevel. They stay editable until you expand them.
+- Type: point, area and path type, threaded text frames, character and paragraph styles, OpenType features and vertical type.
+- Layout and drawing aids: several artboards in one document, guides, grids and the Dimension tool.
+- Perspective drawing: **View → Perspective Grid → Show Grid** shows the grid, and the **One Point Perspective**, **Two Point Perspective** and **Three Point Perspective** submenus under **View → Perspective Grid** choose its type. The Perspective Grid Tool (**Shift+P**) adjusts the grid, and the Perspective Selection Tool (**Shift+V**) moves art along its planes.
+- Symbols: the **Symbols** panel stores art that you place many times, and every placed copy changes when you edit the symbol. The Symbol Sprayer Tool (**Shift+S**) and the Shifter, Scruncher, Sizer, Spinner, Stainer, Screener and Styler tools spray and adjust many copies at once.
+- Graphs: nine graph types (column, stacked column, bar, stacked bar, line, area, scatter, pie and radar) drawn from a data table.
+- Variables and data sets: variables hold the text, images, visibility and graph data of one template, and each data set fills the template with one row's values. You can import data sets from a CSV file.
+- Web slices: cut a design into slices and save each one as a separate image with **File → Export → Save for Web (Legacy)…**.
+- Tracing: Image Trace turns a picture into vector shapes.
+- Output: Export for Screens, PDF with print presets, printing (including posters tiled across several sheets) and Package.
 - **Contextual Task Bar**: a bar under the selection shows buttons for the likely next steps, such as **Ungroup**, **Isolate** and **Duplicate** for a group. Turn it on or off with **Window → Contextual Task Bar**.
 - **Search Commands**: **Help → Search Commands…** (**Ctrl+Shift+/**, or **Cmd+Shift+/** on macOS) finds any command or tool by name.
-- **Command-line tool**: `vectorcraft-cli` converts files between formats, runs commands on a document without opening a window, and runs the Model Context Protocol (MCP) server that AI agents connect to.
-- **Interface**: dark and light themes, workspaces and 28 languages.
+- Command-line tool: `vectorcraft-cli` converts files between formats, runs commands on a document without opening a window, and runs the Model Context Protocol (MCP) server that AI agents connect to.
+- Interface: dark and light themes, workspaces and 28 languages.
 
 ## Basic ideas
 
 ![The Harbor at Dusk poster in VectorCraft: a striped lighthouse on a dark rock, two purple sailboats and amber reflections on teal water under a violet-to-coral sky with the headline Harbor Lights. The Lighthouse group is selected with its bounding box, the Contextual Task Bar under it offers Ungroup, Isolate and Duplicate, and the Layers panel lists the Type, Harbor and Background layers with Harbor open to show two Sailboat groups and the Lighthouse group](/assets/uploads/vectorcraft/overview-illustration.webp)
 
-- **Paths, anchor points and segments**: every shape, line and letter outline is a path. A path runs through anchor points, and the segments between them are straight or curved. The Pen Tool (**P**) places anchor points, and the Direct Selection Tool (**A**) moves one anchor point or one segment. [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/) covers both.
-- **Fill and stroke**: the fill paints the inside of a path, and the stroke paints its outline. **X** switches which of the two you are editing, **Shift+X** swaps their colors, and **D** sets a white fill and a 1 pt black stroke. [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/) covers colors, gradients and patterns.
-- **Objects, groups and layers**: each path, text frame or placed image is an object. **Object → Group** (**Ctrl+G**, or **Cmd+G** on macOS) joins objects so that they move and scale together, and **Object → Ungroup** (**Ctrl+Shift+G**, or **Cmd+Shift+G** on macOS) separates them again. Layers hold groups and objects in a stacking order, and a layer can hold sublayers. The **Layers** panel (**Window → Layers**) shows them all. [Organize with layers and symbols](/apps/vectorcraft/organize-with-layers-and-symbols/) covers layers, sublayers and symbols.
-- **Artboards and the canvas**: an artboard is a page of the document, and one document can hold several artboards. The canvas is the work area around them, and you can keep art there while you work. The Artboard Tool (**Shift+O**) and the **Artboards** panel (**Window → Artboards**) add and arrange artboards. [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/) covers sizes, presets and bleed.
-- **Live effects and the Appearance panel**: an effect such as a drop shadow changes how an object looks but leaves its path as it is. The **Appearance** panel (**Window → Appearance**) lists an object's fills, strokes and effects, and you can edit or remove each one later. **Object → Expand Appearance** turns the effects into ordinary objects. [Apply effects and appearance](/apps/vectorcraft/apply-effects-and-appearance/) covers every effect.
-- **CMYK and RGB**: a document uses CMYK Color for print or RGB Color for screens. You choose the color mode under **Advanced Options** in the New Document window, and **File → Document Color Mode** changes it later and converts the document's colors. The document tab shows the mode, for example **(RGB/Preview)**. [Manage color and proof for print](/apps/vectorcraft/manage-color-and-proof/) covers color settings and proofing.
+- Paths, anchor points and segments: every shape, line and letter outline is a path. A path runs through anchor points, and the segments between them are straight or curved. The Pen Tool (**P**) places anchor points, and the Direct Selection Tool (**A**) moves one anchor point or one segment. [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/) covers both.
+- Fill and stroke: the fill paints the inside of a path, and the stroke paints its outline. **X** switches which of the two you are editing, **Shift+X** swaps their colors, and **D** sets a white fill and a 1 pt black stroke. [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/) covers colors, gradients and patterns.
+- Objects, groups and layers: each path, text frame or placed image is an object. **Object → Group** (**Ctrl+G**, or **Cmd+G** on macOS) joins objects so that they move and scale together, and **Object → Ungroup** (**Ctrl+Shift+G**, or **Cmd+Shift+G** on macOS) separates them again. Layers hold groups and objects in a stacking order, and a layer can hold sublayers. The **Layers** panel (**Window → Layers**) shows them all. [Organize with layers and symbols](/apps/vectorcraft/organize-with-layers-and-symbols/) covers layers, sublayers and symbols.
+- Artboards and the canvas: an artboard is a page of the document, and one document can hold several artboards. The canvas is the work area around them, and you can keep art there while you work. The Artboard Tool (**Shift+O**) and the **Artboards** panel (**Window → Artboards**) add and arrange artboards. [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/) covers sizes, presets and bleed.
+- Live effects and the Appearance panel: an effect such as a drop shadow changes how an object looks but leaves its path as it is. The **Appearance** panel (**Window → Appearance**) lists an object's fills, strokes and effects, and you can edit or remove each one later. **Object → Expand Appearance** turns the effects into ordinary objects. [Apply effects and appearance](/apps/vectorcraft/apply-effects-and-appearance/) covers every effect.
+- CMYK and RGB: a document uses CMYK Color for print or RGB Color for screens. You choose the color mode under **Advanced Options** in the New Document window, and **File → Document Color Mode** changes it later and converts the document's colors. The document tab shows the mode, for example **(RGB/Preview)**. [Manage color and proof for print](/apps/vectorcraft/manage-color-and-proof/) covers color settings and proofing.
 
 ## Your files
 
@@ -69,6 +69,7 @@ The **Help** menu links to the ArtCraft community and to VectorCraft's pages:
 | **VectorCraft on getartcraft.com** | Opens VectorCraft's page on the ArtCraft website |
 | **VectorCraft on GitHub** | Opens VectorCraft's GitHub repository, with its issues and releases |
 | **Search Commands…** | Finds a command or tool by name (**Ctrl+Shift+/**, or **Cmd+Shift+/** on macOS) |
+| **Safe Mode…** | Lists the plug-ins VectorCraft has disabled, with **Enable on Re-launch** beside each one |
 | **Check for Updates…** | Checks for a newer version of VectorCraft |
 | **About VectorCraft** | Shows the version number, the community links, the licenses, the contributors and the models |
 

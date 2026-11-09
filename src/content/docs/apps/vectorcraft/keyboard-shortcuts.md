@@ -18,7 +18,7 @@ Three menu items are grayed out because they do not work yet, but they still sho
 
 ![The Keyboard Shortcuts dialog on the Menu Commands tab with "layer" in the search box. It lists the matching commands from the Object, Select and Window menus, and New Layer shows Ctrl+L, over a lighthouse scene at dusk](/assets/uploads/vectorcraft/keyboard-shortcuts-menu-commands.webp)
 
-The **Set:** list offers **VectorCraft Defaults** and **Classic Defaults**. Both sets have the same shortcuts, the ones listed on this page. After you change a shortcut, the list shows **Custom**. **Clear** removes the selected entry's shortcut, **Use Default** gives it back its default, and **Reset to Defaults** returns every shortcut to the defaults. **Export…** saves your set as a `.json` file, and **Import…** reads one back. [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/) describes every button of the dialog.
+The **Set** list offers **VectorCraft Defaults** and **Classic Defaults**. Both sets have the same shortcuts, the ones listed on this page. After you change a shortcut, the list shows **Custom**. **Clear** removes the selected entry's shortcut, **Use Default** gives it back its default, and **Reset to Defaults** returns every shortcut to the defaults. **Export…** saves your set as a `.json` file, and **Import…** reads one back. [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/) describes every button of the dialog.
 
 ![The Keyboard Shortcuts dialog after P was pressed for the Smart Pen Tool. The Set list shows Custom, the Pen Tool now has no shortcut, and a red message under the list says P was already used by the Pen Tool and has been removed there](/assets/uploads/vectorcraft/keyboard-shortcuts-conflict.webp)
 

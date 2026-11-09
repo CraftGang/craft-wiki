@@ -105,8 +105,8 @@ Double-click the tool to open **Shape Builder Tool Options**. These options chan
 | **Pick Color From** | Artwork | With **Artwork**, a merged shape takes the look of the object where the drag starts. With **Color Swatches**, it takes the current fill, and the Left and Right arrow keys step the current fill through the document's color swatches. |
 | **Cursor Swatch Preview** | Off | With **Color Swatches**, shows the current fill and the swatches before and after it as small chips above the pointer. You can turn it on only when **Pick Color From** is **Color Swatches**. |
 | **Selection** | Freeform | With **Freeform**, a drag touches the regions the pointer passes over. With **Straight Line**, it touches the regions that the straight line from where the drag started to the pointer crosses. |
-| **Highlight: Fill** | On | Shades the regions under the pointer or touched by the drag. |
-| **Highlight: Stroke When Editable** | On | With **In Merge Mode, Clicking Stroke Splits the Path** on, draws the part of the stroke that a click would split off in the highlight color. |
+| **Highlight** → **Fill** | On | Shades the regions under the pointer or touched by the drag. |
+| **Highlight** → **Stroke When Editable** | On | With **In Merge Mode, Clicking Stroke Splits the Path** on, draws the part of the stroke that a click would split off in the highlight color. |
 | **Color** | Red | The color of the stroke highlight. Pick a layer color from the list, or click the color button for any other color. You can change it only while **Stroke When Editable** is on. |
 
 ## Make a compound path

@@ -85,12 +85,12 @@ Select a graph and choose **Object → Graph → Type…**. The **Graph Type** d
 | **Edge To Edge** | Runs the lines of a line graph across the whole width of the graph | Off |
 | **Ticks** | The number of divisions on the value axis. 0 calculates them from the data | 0 |
 | **Axis Min**, **Axis Max** | Set together, they fix the value axis to that range, in **Ticks** divisions (5 when **Ticks** is 0). A graph without a fixed range shows null in both rows and calculates the range from the data | Not set |
-| **Select Length**, **Select Marks** | The length of the value-axis ticks (**None**, **Short** or **Full Width**) and the number of select marks in each division | Short, 1 |
-| **Category Select Length**, **Category Select Marks** | The same settings for the category axis | None, 1 |
+| **Tick Length**, **Tick Marks** | The length of the value-axis ticks (**None**, **Short** or **Full Width**) and the number of tick marks in each division | Short, 1 |
+| **Category Tick Length**, **Category Tick Marks** | The same settings for the category axis | None, 1 |
 | **Ticks Between Labels** | Puts the category ticks between the category labels | Off |
 | **Prefix**, **Suffix** | Text shown before and after each number on the value axis, for example `$` or `%` | Empty |
 | **Separate Scales**, **Right Ticks**, **Right Axis Min**, **Right Axis Max** | With the value axis on both sides, **Separate Scales** gives the series on the right axis their own scale, set with **Right Ticks**, **Right Axis Min** and **Right Axis Max** like the left one | Off, 0, Not set |
-| **Right Select Length**, **Right Select Marks**, **Right Prefix**, **Right Suffix** | The select and number settings for the right value axis | Short, 1, Empty, Empty |
+| **Right Tick Length**, **Right Tick Marks**, **Right Prefix**, **Right Suffix** | The tick and number settings for the right value axis | Short, 1, Empty, Empty |
 
 The dialog has no box to type in while **Axis Min** and **Axis Max** show null. To fix the range of such a graph, run the `graph.setType` command on the graph with `axisMin` and `axisMax`. The command changes the graph that is selected, so select it first. Save the document and close it, then run `vectorcraft-cli` on its file, as [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/#run-commands-from-the-command-line) describes:
 
@@ -121,14 +121,14 @@ A graph design is a piece of art that a graph draws in place of its plain column
 1. Draw the art. To set the area the design fills, put a rectangle behind the art. That backmost object becomes the design's frame.
 2. Select the art and choose **Object → Graph → Design…**.
 3. Click **New Design**. The design appears in the list as New Design.
-4. To rename it, type a name in **Name:** and click **Rename**. Graphs that use the design keep using it.
+4. To rename it, type a name in **Name** and click **Rename**. Graphs that use the design keep using it.
 
 ![The Graph Design dialog over the lantern-sales scene, with new crescent moon art selected beside the Lanterns Sold title. The list holds Lantern, Silk Lantern and Star, Lantern is picked and drawn in the preview box, Name: reads Lantern, and the New Design, Rename, Delete Design, Paste Design and Select Unused buttons sit below the preview](/assets/uploads/vectorcraft/graph-design-dialog.webp)
 
 | Button | What it does |
 |---|---|
 | **New Design** | Makes the selected art a design |
-| **Rename** | Gives the selected design the name typed in **Name:** |
+| **Rename** | Gives the selected design the name typed in **Name** |
 | **Delete Design** | Deletes the selected designs. Graphs that used them go back to their plain columns or markers |
 | **Paste Design** | Puts a copy of the selected design's art into the document, selected, so you can edit it and save it as a new design |
 | **Select Unused** | Selects the designs that no graph uses |
@@ -236,9 +236,9 @@ To write every version to its own file, record an action, then play it once for 
 
 1. In the Actions panel, record the steps that each version needs, for example an export. [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/#record-and-play-actions) covers recording.
 2. Select the action and choose **Batch…** in the Actions panel menu.
-3. Set **Play:** to **Data Sets**. The batch applies every data set of the open document in turn.
-4. Choose a **File Name:**. **File + Number** names the files after the document with 001, 002 and so on added, **File + Data Set Name** adds the data set name to the document name, and **Data Set Name** uses the data set name alone.
-5. Set **Destination:** to **Folder**, choose the **Destination Folder:** and click **OK**. VectorCraft writes a copy for each data set and keeps the document open.
+3. Set **Play** to **Data Sets**. The batch applies every data set of the open document in turn.
+4. Choose a **File Name**. **File + Number** names the files after the document with 001, 002 and so on added, **File + Data Set Name** adds the data set name to the document name, and **Data Set Name** uses the data set name alone.
+5. Set **Destination** to **Folder**, choose the **Destination Folder** and click **OK**. VectorCraft writes a copy for each data set and keeps the document open.
 
 ![The Batch dialog for the Export Badge action over the stall badge, with Play: set to Data Sets, File Name: set to File + Data Set Name, Destination: set to Folder and a folder typed in Destination Folder:. The docked Actions panel lists the Default Actions set and a Stall Badges set holding Export Badge](/assets/uploads/vectorcraft/batch-data-sets.webp)
 

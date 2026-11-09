@@ -52,7 +52,7 @@ Every panel is on the **Window** menu. To find any command by name, choose **Hel
 
 1. Choose **File → New…** (**Ctrl+N**, or **Cmd+N** on macOS), or press **New file** on the Home screen.
 2. In the New Document window, choose the **Social** tab and then the **Social Square Post 1080×1080** card.
-3. In the name field at the top of **Preset Details**, type `Badge`.
+3. In the name field at the top of **PRESET DETAILS**, type `Badge`.
 4. Press **Create**.
 
 The new document opens with one 1080 × 1080 px artboard. Double-clicking a preset card also creates the document.
@@ -61,7 +61,7 @@ The following screenshot shows New Document the first time it opens, on the Prin
 
 ![The New Document window over the badge from this guide, open on the Print tab with the Letter card selected. Preset Details shows Untitled-1, 612 pt by 792 pt in Points, portrait orientation, 1 artboard, 0 pt bleed on every side and Transparent background contents, and Advanced Options shows CMYK Color, High (300 ppi) and Default](/assets/uploads/vectorcraft/gs-new-document.webp)
 
-The tabs across the top are **Recent**, **Saved**, **Mobile**, **Web**, **Print**, **Film & Video**, **Art & Illustration**, **Branding** and **Social**. Choosing a card fills in **Preset Details**. The defaults in the following table are those of the Letter card on the Print tab.
+The tabs across the top are **Recent**, **Saved**, **Mobile**, **Web**, **Print**, **Film & Video**, **Art & Illustration**, **Branding** and **Social**. Choosing a card fills in **PRESET DETAILS**. The defaults in the following table are those of the Letter card on the Print tab.
 
 | Option | Default | What it sets |
 |---|---|---|
@@ -126,11 +126,11 @@ Clicking the first point of a path with the Pen tool closes it. [Draw and edit p
 
 To look at a part of the artwork more closely, or to see all of it again, change the view:
 
-- **Pan**: hold Space and drag, with any tool. You can also choose the **Hand Tool** (H) and drag.
-- **Zoom with the Zoom tool**: choose the **Zoom Tool** (Z). Click to zoom in, and **Alt+click** (**Option+click** on macOS) to zoom out. With **Animated Zoom** and **GPU Performance** on in **Preferences → Performance** (both are on by default), drag right or left to zoom in or out, or hold the mouse button to keep zooming. With either one off, drag across an area to zoom into it.
-- **Zoom with the keyboard**: **View → Zoom In** is **Ctrl+=** (**Cmd+=** on macOS), and **View → Zoom Out** is **Ctrl+-** (**Cmd+-** on macOS).
-- **Fit the artboard**: **View → Fit Artboard in Window** (**Ctrl+0**, or **Cmd+0** on macOS) shows the whole artboard. **View → Fit All in Window** (**Ctrl+Alt+0**, or **Cmd+Option+0** on macOS) shows every artboard, and **View → Actual Size** (**Ctrl+1**, or **Cmd+1** on macOS) shows the artwork at 100%.
-- **Use the status bar**: choose a zoom level, **Fit on Screen** or **Fit All** from the zoom list at the left end of the status bar. The artboard navigator beside it has First, Previous, Next and Last buttons and a list of the artboards by number and name. Choosing an artboard there fits it in the window.
+- Pan: hold Space and drag, with any tool. You can also choose the **Hand Tool** (H) and drag.
+- Zoom with the Zoom tool: choose the **Zoom Tool** (Z). Click to zoom in, and **Alt+click** (**Option+click** on macOS) to zoom out. With **Animated Zoom** and **GPU Performance** on in **Preferences → Performance** (both are on by default), drag right or left to zoom in or out, or hold the mouse button to keep zooming. With either one off, drag across an area to zoom into it.
+- Zoom with the keyboard: **View → Zoom In** is **Ctrl+=** (**Cmd+=** on macOS), and **View → Zoom Out** is **Ctrl+-** (**Cmd+-** on macOS).
+- Fit the artboard: **View → Fit Artboard in Window** (**Ctrl+0**, or **Cmd+0** on macOS) shows the whole artboard. **View → Fit All in Window** (**Ctrl+Alt+0**, or **Cmd+Option+0** on macOS) shows every artboard, and **View → Actual Size** (**Ctrl+1**, or **Cmd+1** on macOS) shows the artwork at 100%.
+- Use the status bar: choose a zoom level, **Fit on Screen** or **Fit All** from the zoom list at the left end of the status bar. The artboard navigator beside it has First, Previous, Next and Last buttons and a list of the artboards by number and name. Choosing an artboard there fits it in the window.
 
 [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/) covers rulers, guides and the other view options.
 
@@ -262,7 +262,7 @@ When the active tool has no hints of its own, the hint line shows the shortcut t
 | **Type Tool** | T | T |
 | **Hand Tool** (or hold Space) | H | H |
 | **Zoom Tool** | Z | Z |
-| **New document** | Ctrl+N | Cmd+N |
+| **New…** | Ctrl+N | Cmd+N |
 | **Place** | Ctrl+Shift+P | Cmd+Shift+P |
 | **Save** | Ctrl+S | Cmd+S |
 | **Undo** (Redo adds Shift) | Ctrl+Z | Cmd+Z |
@@ -294,13 +294,4 @@ Each step of this guide has a guide of its own:
 | 10. Export a PNG and 11. Export an SVG | [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/) |
 | Find any command | [Automate VectorCraft](/apps/vectorcraft/automate-vectorcraft/) |
 
-- [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/): presets, several artboards, units, bleed and moving around the canvas.
-- [Draw and transform shapes](/apps/vectorcraft/draw-and-transform-shapes/): the other shape tools, live corners, rotating and scaling.
-- [Draw and edit paths](/apps/vectorcraft/draw-and-edit-paths/): the Pen, Curvature and Pencil tools and anchor editing.
-- [Fill, stroke and color](/apps/vectorcraft/fill-stroke-and-color/): swatches, the Stroke panel, gradients and opacity.
-- [Add and style type](/apps/vectorcraft/add-and-style-type/): area type, type on a path and the type panels.
-- [Arrange, group and align](/apps/vectorcraft/arrange-group-and-align/): stacking order, groups and the Align panel.
-- [Open and save files](/apps/vectorcraft/open-and-save-files/): formats, placing files and recovering work.
-- [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/): PNG, SVG and Export for Screens.
-- [Workflows](/apps/vectorcraft/workflows/): every task guide.
-- [Troubleshooting](/apps/vectorcraft/troubleshooting/): what to do if the window does not open or something looks wrong.
+[Workflows](/apps/vectorcraft/workflows/) lists every task guide, and [Troubleshooting](/apps/vectorcraft/troubleshooting/) covers what to do if the window does not open or something looks wrong.

@@ -14,8 +14,8 @@ A style is a named set of attributes. When you change a style, every paragraph o
 
 | Kind | What it holds | Panel |
 |---|---|---|
-| **Paragraph style** | Paragraph attributes: alignment, indents, space before and after, tab stops, lists, hyphenation, justification and the composer | **Window → Type → Paragraph Styles** |
-| **Character style** | Character attributes: font, size, leading, kerning, tracking, case, position, color and OpenType features | **Window → Type → Character Styles** |
+| Paragraph style | Paragraph attributes: alignment, indents, space before and after, tab stops, lists, hyphenation, justification and the composer | **Window → Type → Paragraph Styles** |
+| Character style | Character attributes: font, size, leading, kerning, tracking, case, position, color and OpenType features | **Window → Type → Character Styles** |
 
 A paragraph style does not hold a font or a color. To give headings or dish names their own font and color, save those as a character style and use it together with the paragraph style.
 
@@ -127,7 +127,7 @@ To stop the wrap, select the object and choose **Object → Text Wrap → Releas
 
 1. Choose **Edit → Find and Replace…**.
 2. Type the text to look for in **Find** and the new text in **Replace**.
-3. Turn on **Match Case** to match capital and lowercase letters exactly, and **Whole Word** to skip matches inside longer words. With **Whole Word** on, "noodle" does not match "noodles".
+3. Turn on **Match Case** to match capital and lowercase letters exactly, and **Whole Word** to skip matches inside longer words. With **Whole Word** on, "noodle" does not match "noodles."
 4. Click **OK**.
 
 VectorCraft replaces every match in every type object of the document in one step, which **Edit → Undo** reverses. It skips hidden or locked type, type on hidden or locked layers, and type on locked artboards. A match must lie inside text with one set of character attributes, so a word that changes font or color partway through is not found.

@@ -40,17 +40,31 @@ The **General** section sets the printer, the paper and which artboards print.
 | **Reverse Order** | On, off | Off |
 | **Artboards** | All, Range, Ignore Artboards | All |
 | **Skip Blank Artboards** | On, off | Off |
-| **Media Size** | Letter, Legal, Tabloid, A3 to A6, B4 and B5 (ISO), B4 to B6 (JIS), Japanese paper and envelope sizes, Custom | Letter |
+| **Size** (Media) | Letter, Legal, Tabloid, A3 to A6, B4 and B5 (ISO), B4 to B6 (JIS), Japanese paper and envelope sizes, Custom | Letter |
 | **Auto-Rotate** | On, off | On |
 | **Transverse** | On, off | Off |
 | **Print Layers** | Visible & Printable Layers, Visible Layers, All Layers | Visible & Printable Layers |
 | **Placement** | Any of nine reference points, plus an X and Y offset | Center |
 | **Scaling** | Do Not Scale, Fit to Page, Custom Scale, Tile Full Pages, Tile Imageable Areas | Do Not Scale |
+| **Copies per Sheet (as many as fit, in a grid)** | On, off. Not available with a tiling choice | Off |
+| **Gutter** | The space between copies on a sheet, from 0 to 720 pt | 0 pt |
 
-After you place the pages with the **Print Tiling Tool**, **Placement** is grayed out and the General section shows the note "The Print Tiling tool placed the pages." Dragging in the preview then moves where the pages start. Press **Reset** next to the note to use **Placement** again.
+**Placement** is grayed out while a tiling choice is on, and after you place the pages with the **Print Tiling Tool**. After the tool places them, the General section shows the note "The Print Tiling tool placed the pages." Unless a tiling choice is on, dragging in the preview then moves where the pages start. **Reset** next to the note discards the tool's position, and **Placement** is available again when **Scaling** is not a tiling choice.
 
 :::note
 Template layers never print, whatever **Print Layers** is set to. A layer with **Print** turned off in its Layer Options is left out by **Visible & Printable Layers**.
+:::
+
+## Choose a printer
+
+Pick a printer under **Printer**. **PDF File** saves the job as a PDF instead, so you can print it later or check exactly what would print.
+
+**Setup…** opens your system's printer settings: the printer's own settings on Windows, **Print & Scan** on macOS, and `system-config-printer` or the CUPS web page on Linux. VectorCraft doesn't read changes made there, so choose the paper in the Print dialog.
+
+VectorCraft sends the whole job to your system as one PDF. In the web version, printing goes through the browser's print dialog.
+
+:::note
+If your system can't print, **Print** saves the job as a PDF and tells you in the status bar.
 :::
 
 ## Add printer's marks and bleed
@@ -66,18 +80,6 @@ Template layers never print, whatever **Print Layers** is set to. A layer with *
 The printed area is the artboard together with its bleed and marks. When that area is larger than the printable area of the paper, **Summary** shows a warning. Choose larger paper, or set **Scaling** to **Fit to Page** to size the art so it fits with its marks.
 :::
 
-## Choose a printer
-
-Pick a printer under **Printer**. **PDF File** saves the job as a PDF instead, so you can print it later or check exactly what would print.
-
-**Setup…** opens your system's printer settings: the printer's own settings on Windows, **Print & Scan** on macOS, and `system-config-printer` or the CUPS web page on Linux. VectorCraft doesn't read changes made there, so choose the paper in the Print dialog.
-
-VectorCraft sends the whole job to your system as one PDF. In the web version, printing goes through the browser's print dialog.
-
-:::note
-If your system can't print, **Print** saves the job as a PDF and tells you in the status bar.
-:::
-
 ## Print separations
 
 The **Output** section chooses between one color page and one page per ink.
@@ -88,18 +90,9 @@ The **Output** section chooses between one color page and one page per ink.
 4. With separations, turn on **Convert All Spot Colors to Process** to print spot colors on the process inks instead of their own pages.
 5. With separations, the **Document Ink Options** list shows each ink. Turn single inks on or off and set their frequency and angle.
 
-## Graphics, color and advanced options
-
-Most jobs print fine with the defaults. Change these when a printer has trouble or colors look wrong.
-
-- **Graphics › Download** sets how much of each font goes to the printer: **None**, **Subset** (the default) or **Complete**.
-- **Color Management › Printer profile** converts colors to the printer's profile. Pick a **Rendering intent**, and turn on **Preserve CMYK Numbers** to print CMYK colors exactly as they are.
-- **Advanced › Unprintable margin** is the edge your printer can't reach. The preview shows it as a dashed line.
-- **Advanced › Print as Bitmap** prints each page as one image, at the document's raster effects resolution.
-- **Advanced › Overprints** can preserve, discard or simulate overprints.
-- **Advanced › Preset** flattens transparency before printing, for printers that can't handle it.
-
 ## Set graphics options
+
+Most jobs print fine with the default graphics, color and advanced settings. Change them when a printer has trouble or colors look wrong.
 
 The **Graphics** section holds the curve **Flatness** and font **Download** settings.
 
@@ -170,11 +163,7 @@ When the art is larger than the paper, scale it down or split it across several 
 
 ![A wide night market banner split across three page outlines while a drag with the Print Tiling Tool is in progress. The crosshair pointer sits at the top-left corner of the first page, just above and to the left of the artboard, and a readout beside it shows dX -32 pt and dY -10 pt](/assets/uploads/vectorcraft/print-tiling-drag.webp)
 
-When you drag with the **Print Tiling Tool**, the pointer sets the top-left corner of the first page's printable area and snaps to the artboard's edges. Double-clicking the tool's icon in the toolbar also puts the pages back where the **Placement** setting puts them.
-
-:::note
-**Placement** is grayed out while a tiling choice is on, and after the Print Tiling Tool places the pages. Press **Reset** next to the note in the General section to use **Placement** again.
-:::
+When you drag with the **Print Tiling Tool**, the pointer sets the top-left corner of the first page's printable area and snaps to the artboard's edges. Double-clicking the tool's button in the toolbar discards that position, as **Reset** does.
 
 ## Save print presets
 
@@ -209,7 +198,7 @@ The web version of VectorCraft prints through the browser.
 
 1. Choose **File → Print…** and set up the job as in the desktop app.
 2. Under **Printer**, keep **Default Printer**. The browser does not list its printers to VectorCraft, and **Setup…** is unavailable.
-3. Press **Print**. VectorCraft prepares the job as a PDF and opens the browser's print dialog, and the status bar shows "Printing “*document name*”: pick the printer in the browser's print dialog".
+3. Press **Print**. VectorCraft prepares the job as a PDF and opens the browser's print dialog, and the status bar shows "Printing “*document name*”: pick the printer in the browser's print dialog."
 4. Pick the printer in the browser's print dialog and print.
 
 To keep the job as a file instead, choose **PDF File** under **Printer**. The browser downloads the PDF.

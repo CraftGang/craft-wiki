@@ -102,21 +102,21 @@ User and object slices are outlined in the line color. Auto slices are drawn wit
 
 1. Select one or more slices with the Slice Selection tool.
 2. Choose **Object → Slice → Slice Options…**, or double-click a slice with the Slice Selection tool. The dialog shows the options of the first selected slice.
-3. Choose a **Slice Type:** and fill in its fields.
+3. Choose a **Slice Type** and fill in its fields.
 4. Click **OK**. The options apply to every selected slice, as one undo step.
 
 | Option | Slice type | What it sets |
 |---|---|---|
-| **Slice Type:** | All | **Image** saves the slice as an image. **No Image** saves an empty cell that shows the text you type. **HTML Text** shows the text of a type object as HTML. HTML Text is listed only for object slices of type objects. |
-| **Name:** | Image | The file name of the slice's image, without the extension. An empty name gives `<document>_<number>`, for example `night-market-banner_08`. |
-| **URL:** | Image | The address the image links to in the HTML page |
-| **Target:** | Image | The window or frame the link opens in: `_blank`, `_self`, `_parent`, `_top` or a frame name |
-| **Message:** | Image | Text written as the link's `title` attribute. It is used only when the slice has a URL. |
-| **Alt:** | Image | The image's alternative text, written as its `alt` attribute |
-| **Text Displayed in Cell:** | No Image | The text of the cell. HTML tags are allowed. |
-| **Horizontal:** | No Image, HTML Text | Default, Left, Center or Right |
-| **Vertical:** | No Image, HTML Text | Default, Top, Middle, Baseline or Bottom |
-| **Background:** | All | None, Matte, White, Black or Other, which adds a color button. The color fills the cell of a No Image or HTML Text slice. Matte uses the matte color set in Save for Web. |
+| **Slice Type** | All | **Image** saves the slice as an image. **No Image** saves an empty cell that shows the text you type. **HTML Text** shows the text of a type object as HTML. HTML Text is listed only for object slices of type objects. |
+| **Name** | Image | The file name of the slice's image, without the extension. An empty name gives `<document>_<number>`, for example `night-market-banner_08`. |
+| **URL** | Image | The address the image links to in the HTML page |
+| **Target** | Image | The window or frame the link opens in: `_blank`, `_self`, `_parent`, `_top` or a frame name |
+| **Message** | Image | Text written as the link's `title` attribute. It is used only when the slice has a URL. |
+| **Alt** | Image | The image's alternative text, written as its `alt` attribute |
+| **Text Displayed in Cell** | No Image | The text of the cell. HTML tags are allowed. |
+| **Horizontal** | No Image, HTML Text | Default, Left, Center or Right |
+| **Vertical** | No Image, HTML Text | Default, Top, Middle, Baseline or Bottom |
+| **Background** | All | None, Matte, White, Black or Other, which adds a color button. The color fills the cell of a No Image or HTML Text slice. Matte uses the matte color set in Save for Web. |
 
 ![The Slice Options dialog over the night-market banner, with Slice Type Image, Name get-directions, URL https://nightmarket.example/map, Target _blank, Message Directions to River Road, Alt Get directions to the market and Background None, with Cancel and OK buttons](/assets/uploads/vectorcraft/slice-options.webp)
 
@@ -126,22 +126,22 @@ Save for Web (Legacy) saves one image for each slice, and it can write an HTML p
 
 1. Choose **File → Export → Save for Web (Legacy)…** (**Ctrl+Alt+Shift+S**, or **Cmd+Option+Shift+S** on macOS).
 2. Set the format and its settings. [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/#compare-web-image-settings) describes them.
-3. Under **Image Size**, leave **Clip to Artboard** on to save the artboard. Turn it off to save the area of the visible art and the slices. When the document has more than one artboard, choose the one to save from **Artboard:**.
-4. Choose which slices to save from **Slices:**. The list appears only when the document has slices.
-5. Choose an **Output:**.
+3. Under **Image Size**, leave **Clip to Artboard** on to save the artboard. Turn it off to save the area of the visible art and the slices. When the document has more than one artboard, choose the one to save from **Artboard**.
+4. Choose which slices to save from **Slices**. The list appears only when the document has slices.
+5. Choose an **Output**.
 6. Click **Preview in Browser** to open the HTML page in your web browser, or **Save…** to write the files.
 
 | Setting | Choices |
 |---|---|
-| **Slices:** | **All Slices** (the default) saves every slice, auto slices included. **Selected Slices** saves the slices you selected before you opened the dialog, and **No Slices** saves one image of the whole area. |
-| **Output:** | **Images Only** (the default) writes the images. **HTML and Images** also writes an HTML page, named after the file you save, that places each image at its position. |
+| **Slices** | **All Slices** (the default) saves every slice, auto slices included. **Selected Slices** saves the slices you selected before you opened the dialog, and **No Slices** saves one image of the whole area. |
+| **Output** | **Images Only** (the default) writes the images. **HTML and Images** also writes an HTML page, named after the file you save, that places each image at its position. |
 
 ![The Save for Web dialog on the Optimized tab, showing the whole night-market banner as a 1200 by 400 px PNG-24 image. Under Image Size, Clip to Artboard is checked, Slices is set to All Slices and Output to HTML and Images, with the Preview in Browser, Done, Cancel and Save… buttons below](/assets/uploads/vectorcraft/save-for-web-slices.webp)
 
 Sliced output puts the images in an `images` folder next to the file you save. Each image is named after its slice. Characters other than letters, digits, `-`, `_` and `.` in a name become `-`. No Image and HTML Text slices do not get an image. In the HTML page, their cells hold the text instead. Each image in the page carries its slice's alt text, and an Image slice with a URL becomes a link with its target and message.
 
 :::caution
-With **Selected Slices** and no slice selected, Save stops with the message "no selected slice in the image: select slices, or save all of them".
+With **Selected Slices** and no slice selected, Save stops with the message "no selected slice in the image: select slices, or save all of them."
 :::
 
 To export one element of a design on its own instead of slicing it, select it and choose **File → Export Selection…**, which is also on the canvas right-click menu. VectorCraft collects the selection as one asset and opens **Export for Screens** on the **Assets** tab with that asset checked. Set the format rows and export it as [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/#collect-and-export-assets) describes.
@@ -164,7 +164,7 @@ The panel menu holds the copy and export commands, **Generate CSS**, and these e
 
 | Option | What it does | Default |
 |---|---|---|
-| **Units:** | The unit of lengths: px, pt, mm, cm or in | px |
+| **Units** | The unit of lengths: px, pt, mm, cm or in | px |
 | **Absolute Position** | Adds `position: absolute` with `left` and `top` measured from the top left corner of the object's artboard | Off |
 | **Width and Height** | Adds `width` and `height` | On |
 | **Unnamed Objects** | Writes rules for unnamed objects. When it is off, the panel lists only named objects and says how many it left out. | On |
@@ -176,14 +176,14 @@ The SVG Interactivity panel sets the JavaScript that an object runs on an event 
 
 1. Select the objects.
 2. Choose **Window → SVG Interactivity**.
-3. Choose an event from **Event:**. The list has onfocusin, onfocusout, onactivate, onmousedown, onmouseup, onclick, onmouseover, onmousemove, onmouseout, onkeydown, onkeypress, onkeyup, onload, onerror, onabort, onunload, onzoom, onresize and onscroll.
-4. Type the code in **JavaScript:** and press **Enter**. The event and its code appear in the panel's list. Each change is one undo step.
+3. Choose an event from **Event**. The list has onfocusin, onfocusout, onactivate, onmousedown, onmouseup, onclick, onmouseover, onmousemove, onmouseout, onkeydown, onkeypress, onkeyup, onload, onerror, onabort, onunload, onzoom, onresize and onscroll.
+4. Type the code in **JavaScript** and press **Enter**. The event and its code appear in the panel's list. Each change is one undo step.
 
 ![The night-market banner with the Get Directions button selected and the SVG Interactivity panel docked under the Properties panel. The panel's list holds onmouseover: highlight(evt) and onclick: openMap('river-road'), the onclick row is highlighted, and the Event and JavaScript fields above it show onclick and openMap('river-road')](/assets/uploads/vectorcraft/svg-interactivity.webp)
 
-To change an event's code, click its row in the list, then edit the **JavaScript:** field and press **Enter**. Clearing the field and pressing **Enter** removes the event. The trash button at the bottom right of the panel (**Remove Selected Entry**) removes the event chosen in **Event:**, and **Clear Events** in the panel menu removes every event from the selected objects. When the selected objects have different events, the list is empty.
+To change an event's code, click its row in the list, then edit the **JavaScript** field and press **Enter**. Clearing the field and pressing **Enter** removes the event. The trash button at the bottom right of the panel (**Remove Selected Entry**) removes the event chosen in **Event**, and **Clear Events** in the panel menu removes every event from the selected objects. When the selected objects have different events, the list is empty.
 
-To use functions from a script file, click the file-plus button at the bottom right of the panel, left of the trash button (**Link JavaScript Files…**). In the **JavaScript Files** dialog, type a path or URL in **File or URL:**, or click **Choose…** to pick a file, then click **Add**. Select a file in the list and click **Remove** to unlink it. Add and Remove take effect at once, and **Close** closes the dialog. A document can link up to 64 files, and SVG export writes a `<script>` element for each one.
+To use functions from a script file, click the file-plus button at the bottom right of the panel, left of the trash button (**Link JavaScript Files…**). In the **JavaScript Files** dialog, type a path or URL in **File or URL**, or click **Choose…** to pick a file, then click **Add**. Select a file in the list and click **Remove** to unlink it. Add and Remove take effect at once, and **Close** closes the dialog. A document can link up to 64 files, and SVG export writes a `<script>` element for each one.
 
 ## Related
 

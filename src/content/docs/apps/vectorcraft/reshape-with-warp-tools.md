@@ -131,7 +131,7 @@ To bend artwork into a preset shape:
 | **Style** | Arc | The shape of the warp: Arc, Arc Lower, Arc Upper, Arch, Bulge, Shell Lower, Shell Upper, Flag, Wave, Fish, Rise, Fisheye, Inflate, Squeeze or Twist |
 | **Horizontal** or **Vertical** | Horizontal | The direction the warp runs in |
 | **Bend** | 50% | How far the art bends, from −100% to 100%. Negative values bend it the other way |
-| **Distortion: Horizontal** and **Vertical** | 0% | Distorts the art further along each direction, from −100% to 100% |
+| **Distortion** → **Horizontal** and **Vertical** | 0% | Distorts the art further along each direction, from −100% to 100% |
 
 To bend artwork with a grid that you shape yourself:
 
