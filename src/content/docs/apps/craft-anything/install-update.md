@@ -1,6 +1,8 @@
 ---
 title: Install and update
 description: Download Craft Anything for Windows, macOS, Linux or FreeBSD, and keep it up to date.
+sidebar:
+  order: 2
 ---
 
 ## With ArtCraft Launcher

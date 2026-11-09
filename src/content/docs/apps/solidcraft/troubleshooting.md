@@ -1,6 +1,8 @@
 ---
 title: Troubleshooting
 description: Diagnosing and solving common problems in SolidCraft.
+sidebar:
+  order: 4
 ---
 
 :::note[Third-Party Application]

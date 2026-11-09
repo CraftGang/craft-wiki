@@ -55,14 +55,14 @@ TextureCraft autosaves your project to the `autosave` folder in its data folder,
 
 ## Known problems, not fixed yet
 
-- **TextureCraft can't open a material from MaterialCraft.** MaterialCraft writes .mcmat version 2, and TextureCraft reads only version 1. See [issue 317](https://github.com/storytold/texturecraft/issues/317).
-- **Nothing opens, with no message, on a PC with Intel HD or UHD 620 graphics.** The 3D view crashes at start. See [issue 303](https://github.com/storytold/texturecraft/issues/303) and [issue 202](https://github.com/storytold/texturecraft/issues/202).
-- **A project can be saved that then won't open.** Opening stops at 8 GiB of unpacked data, and saving doesn't check. See [issue 215](https://github.com/storytold/texturecraft/issues/215).
-- **Saving a large project is slow, and the file is big.** This shows up with 4K textures and UDIM tiles. See [issue 200](https://github.com/storytold/texturecraft/issues/200).
-- **Baking mesh maps is slow at high resolution**, and the viewport lags with a 4096 document resolution. See [issue 196](https://github.com/storytold/texturecraft/issues/196) and [issue 183](https://github.com/storytold/texturecraft/issues/183).
-- **A GLB's own textures aren't applied.** The model opens gray, with an empty paint layer. See [issue 294](https://github.com/storytold/texturecraft/issues/294).
-- **Some models get new UVs even though they have UVs**, and parts that share the same UV space paint only one part. See [issue 286](https://github.com/storytold/texturecraft/issues/286) and [issue 180](https://github.com/storytold/texturecraft/issues/180).
-- **An OBJ exported from DAZ Studio crashes TextureCraft.** See [issue 291](https://github.com/storytold/texturecraft/issues/291).
+- TextureCraft can't open a material from MaterialCraft. MaterialCraft writes .mcmat version 2, and TextureCraft reads only version 1. See [issue 317](https://github.com/storytold/texturecraft/issues/317).
+- Nothing opens, with no message, on a PC with Intel HD or UHD 620 graphics. The 3D view crashes at start. See [issue 303](https://github.com/storytold/texturecraft/issues/303) and [issue 202](https://github.com/storytold/texturecraft/issues/202).
+- A project can be saved that then won't open. Opening stops at 8 GiB of unpacked data, and saving doesn't check. See [issue 215](https://github.com/storytold/texturecraft/issues/215).
+- Saving a large project is slow, and the file is big. This shows up with 4K textures and UDIM tiles. See [issue 200](https://github.com/storytold/texturecraft/issues/200).
+- Baking mesh maps is slow at high resolution, and the viewport lags with a 4096 document resolution. See [issue 196](https://github.com/storytold/texturecraft/issues/196) and [issue 183](https://github.com/storytold/texturecraft/issues/183).
+- A GLB's own textures aren't applied. The model opens gray, with an empty paint layer. See [issue 294](https://github.com/storytold/texturecraft/issues/294).
+- Some models get new UVs even though they have UVs, and parts that share the same UV space paint only one part. See [issue 286](https://github.com/storytold/texturecraft/issues/286) and [issue 180](https://github.com/storytold/texturecraft/issues/180).
+- An OBJ exported from DAZ Studio crashes TextureCraft. See [issue 291](https://github.com/storytold/texturecraft/issues/291).
 
 ## Still stuck?
 
