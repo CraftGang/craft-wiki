@@ -1,6 +1,6 @@
 ---
 title: Workflows
-description: Pages, threaded text, styles, pictures, colour, tables and export in DesignCraft.
+description: Pages, threaded text, styles, pictures, color, tables and export in DesignCraft.
 sidebar:
   order: 3
 ---
@@ -71,9 +71,9 @@ To fit a picture to its frame, use **Object › Fitting**: **Fill Frame Proporti
 
 To map the styles in a Word or RTF file to your document's styles as it comes in, use **File › Place with Import Options…** (**Ctrl+Shift+D**).
 
-## Work with colour
+## Work with color
 
-**Window › Color › Swatches** lists the document's named colours. Add a swatch once, then use it everywhere, so a change to the swatch changes every object that uses it. Swatches can be RGB or CMYK colours, tints and gradients.
+**Window › Color › Swatches** lists the document's named colors. Add a swatch once, then use it everywhere, so a change to the swatch changes every object that uses it. Swatches can be RGB or CMYK colors, tints and gradients.
 
 ![A page titled Color, Ink & Paper on a plum background, with four swatch circles below, labelled Ink Plum, Sunset, C=100 M=0 Y=0 K=0 and Paper Warm](/assets/uploads/designcraft/swatches.webp)
 
