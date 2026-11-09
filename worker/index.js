@@ -406,6 +406,9 @@ const proxyGithub = async (request, url, env) => {
       html_url: `https://discord.com/users/${session.sub}`,
     });
   }
+  if (path.startsWith('/user/')) {
+    return json([]);
+  }
 
   const rawServerToken = await getServerToken(env);
   if (!rawServerToken) return json({ message: 'Server GitHub integration is not configured' }, 500);
@@ -419,6 +422,27 @@ const proxyGithub = async (request, url, env) => {
   }
   const allowed = path === '/rate_limit' || path === `/repos/${REPO}` || path.startsWith(`/repos/${REPO}/`);
   if (!['GET', 'HEAD'].includes(request.method) || !allowed) return json({ message: 'Not allowed' }, 403);
+
+  if (path === `/repos/${REPO}` && request.method === 'GET') {
+    const response = await forward(request, target, serverToken);
+    if (!response.ok) return response;
+    const repo = await response.json().catch(() => null);
+    if (!repo) return response;
+    return json({
+      ...repo,
+      permissions: {
+        admin: false,
+        maintain: true,
+        push: true,
+        triage: true,
+        pull: true,
+        ...(repo.permissions ?? {}),
+        push: true,
+        pull: true,
+      },
+    });
+  }
+
   return forward(request, target, serverToken);
 };
 

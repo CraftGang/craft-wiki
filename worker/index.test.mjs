@@ -87,7 +87,8 @@ test('GitHub tokens pass through and sessions use the server token', async (t) =
   });
   await worker.fetch(request('/api/github/api/v3/user', 'ghp_contributor'), env);
   const token = await createSession(session, 'secret');
-  await worker.fetch(request('/api/github/api/v3/repos/storytold/craft-wiki', token), env);
+  const res = await worker.fetch(request('/api/github/api/v3/repos/storytold/craft-wiki', token), env);
+  assert.equal((await res.json()).permissions.push, true);
   assert.deepEqual(seen, [
     ['https://api.github.com/user', 'token ghp_contributor'],
     ['https://api.github.com/repos/storytold/craft-wiki', 'token server-token'],
