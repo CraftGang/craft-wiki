@@ -3,6 +3,7 @@ title: Open and save files
 description: Save documents in the VectorCraft format, pick a format for sharing, save pictures for office documents, add file information, open files from other programs, recover work after a crash and bring files into a document with Place.
 sidebar:
   order: 21
+parent: workflows
 ---
 
 This guide covers the File menu commands that move work in and out of VectorCraft: saving in the VectorCraft format, choosing a format for sharing, saving a picture for office documents, adding file information, opening files made in other programs, recovering work after a crash, placing files into an open document, and collecting a document with its linked files for someone else.

@@ -3,6 +3,7 @@ title: Draw and edit paths
 description: Draw straight and curved paths with the Pen, Curvature and Pencil tools, then reshape them with Direct Selection and the Object → Path commands.
 sidebar:
   order: 12
+parent: workflows
 ---
 
 On this page you draw paths with the Pen, Curvature and Pencil tools and then change their shape. You move anchor points and handles with the Direct Selection tool, cut paths with the Scissors and Knife, and use the commands in the **Object → Path** menu. You can also draw with a pen tablet or on a touch screen.

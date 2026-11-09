@@ -1,22 +1,22 @@
 ---
-import { guidesFor, childGuidesFor } from '../data/apps.mjs';
+import { appSidebar } from '../lib/appSidebar.mjs';
 const { slug } = Astro.props;
 const pathname = Astro.url.pathname;
 const current = (page) => (pathname === `/apps/${slug}/${page}/` ? 'page' : undefined);
+const pages = await appSidebar(slug);
 ---
 <div class="wiki-guide-links">
-  {guidesFor(slug).map(([guide, label]) => {
-    const children = childGuidesFor(slug, guide);
+  {pages.map(({ slug: guide, label, children }) => {
     const link = <a href={`/apps/${slug}/${guide}/`} aria-current={current(guide)}>{label}</a>;
     if (!children.length) return link;
-    const open = !!current(guide) || children.some(([child]) => current(child));
+    const open = !!current(guide) || children.some((child) => current(child.slug));
     return (
       <div class="wiki-guide-parent">
         {link}
         <details class="wiki-guide-group" open={open}>
           <summary aria-label={`${label} pages`}><span class="wiki-guide-chevron" aria-hidden="true">⌄</span></summary>
           <div class="wiki-guide-children">
-            {children.map(([child, childLabel]) => <a href={`/apps/${slug}/${child}/`} aria-current={current(child)}>{childLabel}</a>)}
+            {children.map((child) => <a href={`/apps/${slug}/${child.slug}/`} aria-current={current(child.slug)}>{child.label}</a>)}
           </div>
         </details>
       </div>

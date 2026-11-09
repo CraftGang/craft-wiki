@@ -3,6 +3,7 @@ title: Apply effects and appearance
 description: Stack fills, strokes and live effects on one object, change them later in the Appearance panel, and save the look as a graphic style.
 sidebar:
   order: 17
+parent: workflows
 ---
 
 An object in VectorCraft can have more than one fill and stroke, and live effects such as shadows, rounded corners and warps. This guide shows how to build that stack in the Appearance panel, apply and edit effects from the Effect menu, and save the result as a graphic style that you can apply to other objects with one click.

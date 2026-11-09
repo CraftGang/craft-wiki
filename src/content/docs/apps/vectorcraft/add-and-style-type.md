@@ -3,6 +3,7 @@ title: Add and style type
 description: Make point type, area type and type on a path, flow text between frames, and set fonts, sizes and alignment.
 sidebar:
   order: 14
+parent: workflows
 ---
 
 This guide shows how to add the three kinds of type in VectorCraft, flow one story through several frames, and set the font, size, spacing and alignment of the text. It ends with turning letters into paths for artwork that no longer needs to be edited as text. The following image shows one example of each kind of type in one document.

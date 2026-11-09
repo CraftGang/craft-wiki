@@ -3,6 +3,7 @@ title: Use the built-in plug-ins
 description: Find the plug-ins under Object → Plug-ins, and use Arrange Tools, Artwork Cleanup, Color Effects, Compound Shapes, Document Tools and the 3D Box tool.
 sidebar:
   order: 22.9
+parent: workflows
 ---
 
 VectorCraft comes with twelve plug-ins that add tools, panels and commands. This page lists what each one does and where to find it, and covers the plug-ins that no other guide describes.

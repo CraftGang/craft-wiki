@@ -3,6 +3,7 @@ title: Draw and transform shapes
 description: Draw rectangles, ellipses, polygons, stars, lines, arcs, spirals, grids and flares, round their corners, and move, copy, rotate, scale, reflect, shear and repeat transforms.
 sidebar:
   order: 11
+parent: workflows
 ---
 
 This guide covers the shape, line, arc, spiral, grid and flare tools, live corners and live shapes, selecting, copying and pasting, and moving, rotating, reflecting, scaling and shearing objects with the tools, the **Transform** panel and the **Object → Transform** commands, including **Transform Each** and **Transform Again**.
