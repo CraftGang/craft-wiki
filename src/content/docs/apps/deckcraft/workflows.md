@@ -7,7 +7,7 @@ sidebar:
 
 DeckCraft's ribbon groups its tools into tabs: **Home**, **Insert**, **Draw**, **Design**, **Transitions**, **Animations**, **Slide Show**, **Record**, **Review** and **View**. More tabs appear when you select something, such as **Shape Format**, **Picture Format** or **Table Design**. If you can't find a command, press **Ctrl+Shift+P** (**⇧⌘P** on a Mac) and type its name.
 
-## Organise slides
+## Organize slides
 
 - **Home › New Slide** adds a slide; its arrow picks a layout. **Layout** changes the current slide's layout, and **Reset** puts its placeholders back.
 - **Home › Section** groups slides into named sections. Click a section's name in the thumbnails to fold it away.
@@ -138,7 +138,7 @@ On a Mac, use **⌘** in place of **Ctrl** and **⌥** in place of **Alt**.
 | **Ctrl+Z**, **Ctrl+Y** | Undo, redo |
 | **Ctrl+D** | Duplicate |
 | **Ctrl+B**, **Ctrl+I**, **Ctrl+U** | Bold, italic, underline |
-| **Ctrl+L**, **Ctrl+E**, **Ctrl+R**, **Ctrl+J** | Align left, centre, right, justify |
+| **Ctrl+L**, **Ctrl+E**, **Ctrl+R**, **Ctrl+J** | Align left, center, right, justify |
 | **Ctrl+Shift+.**, **Ctrl+Shift+,** | Bigger, smaller text |
 | **Ctrl+K** | Insert a link |
 | **Ctrl+Alt+G**, **Ctrl+Alt+Shift+G** | Group, ungroup |

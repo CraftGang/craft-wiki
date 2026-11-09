@@ -60,9 +60,9 @@ The public server is full ([#1402](https://github.com/storytold/figcraft/issues/
 
 ## Invite links open the browser, not FigCraft
 
-In **Preferences**, tick **Open invite links in FigCraft**. Or paste the link into **Join with a code** on the **Home** screen.
+In **Preferences**, select **Open invite links in FigCraft**. Or paste the link into **Join with a code** on the **Home** screen.
 
-## A command is greyed out or says "Dev Mode only inspects"
+## A command is grayed out or says "Dev Mode only inspects"
 
 Dev Mode lets you look but not edit. Press **Shift+D**, or choose **Design** in the toolbar's switcher, to edit again.
 

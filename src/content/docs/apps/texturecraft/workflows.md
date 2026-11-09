@@ -21,7 +21,7 @@ Open **Texture Set Settings** (next to **Layers**) to change the texture size of
 
 ## Build up layers
 
-The **Layers** panel works like the layer stack in an image editor, but every layer holds all the material channels at once: base colour, roughness, metallic, height, normal and more.
+The **Layers** panel works like the layer stack in an image editor, but every layer holds all the material channels at once: base color, roughness, metallic, height, normal and more.
 
 - **Add paint layer** for brush strokes, **Add fill layer** for a material that covers the whole texture set, or add a folder to group layers.
 - Each layer has a blend mode and an opacity for each channel. Use the menu at the top of the panel to pick the channel.
@@ -71,7 +71,7 @@ A quick mask protects part of the model while you paint. Press **Y** to turn it 
 | Clone | **6** | Hold **V** and click to set the source |
 | Path | **7** | Draw a path, then press **Enter** to paint along it, or fill it once it is closed |
 | Geometry mask | **8** | Click mesh parts to show or hide the selected layer on them |
-| Colour picker | **P** | |
+| Color picker | **P** | |
 
 Brush settings (size, flow, stroke opacity, spacing) are in the bar at the top. **Shift** and the mouse wheel change the brush size over the model. The bar also has symmetry, lazy mouse and a particle brush button: with it on, paint slides down the surface.
 
@@ -115,7 +115,7 @@ Open **Window › Views › Display Settings** to change how the model is lit an
 
 ## Bake mesh maps
 
-Choose **Mode › Bake Mesh Maps** (**F8**). Tick the texture sets on the left, then tick the maps you want under **Mesh map bakers**: normal, world space normal, ID, ambient occlusion, curvature, position, thickness, height, bent normals, opacity, colour map and world space direction. Click a baker to see its settings.
+Choose **Mode › Bake Mesh Maps** (**F8**). Select the texture sets on the left, then select the maps you want under **Mesh map bakers**: normal, world space normal, ID, ambient occlusion, curvature, position, thickness, height, bent normals, opacity, color map and world space direction. Click a baker to see its settings.
 
 To bake detail from a high-poly model, choose **Add High-Poly Meshes** in the common parameters. Choose **Bake Selected Textures** to start, and **Return to Painting Mode** when it's done.
 
@@ -125,7 +125,7 @@ Baking uses your graphics card when it can, and your processor otherwise. You ca
 
 Choose **File › Export Textures...** (**Ctrl+Shift+E**).
 
-![The Export textures window on its Settings tab: the texture sets ticked on the left, and the output directory, output template, file type, size, padding and normal map format on the right](/assets/uploads/texturecraft/export.webp)
+![The Export textures window on its Settings tab: the texture sets checked on the left, and the output directory, output template, file type, size, padding and normal map format on the right](/assets/uploads/texturecraft/export.webp)
 
 - **Settings**: pick the texture sets, the **Output directory**, the **Output template**, the **File type**, the **Size**, the **Padding** and the **Normal map format**.
 - **Output templates**: the built-in presets, and your own. A template says which channels go into which image, so you can pack, for example, roughness, metallic and ambient occlusion into one file.
@@ -157,7 +157,7 @@ Choose **Mode › Rendering (path traced)** (**F10**). TextureCraft traces light
 
 ![Rendering mode: the portable TV path traced at 256 samples with a denoiser, and the render settings in a card over the viewport](/assets/uploads/texturecraft/rendering.webp)
 
-Set **Samples** and **Bounces**, tick **Denoise** for a cleaner image, or tick **Render on the CPU** if your graphics card can't do it. **Save render...** saves the image as PNG. **Back to painting** returns to Painting mode.
+Set **Samples** and **Bounces**, select **Denoise** for a cleaner image, or select **Render on the CPU** if your graphics card can't do it. **Save render...** saves the image as PNG. **Back to painting** returns to Painting mode.
 
 ## Files and projects
 
@@ -177,7 +177,7 @@ If you change the model in your 3D app, choose **Edit › Reimport mesh** (**Ctr
 
 Choose **Edit › Settings...**:
 
-- **Interface**: language, interface scale, brightness (four levels from dark to light), accent colour, the title bar and the start window.
+- **Interface**: language, interface scale, brightness (four levels from dark to light), accent color, the title bar and the start window.
 - **Viewport**: the texture resolution of the viewport.
 - **Project**: how often to autosave.
 - **Folders**: the data folder for autosaves, smart materials, presets, templates and UI layouts. It's `Documents/TextureCraft` by default.

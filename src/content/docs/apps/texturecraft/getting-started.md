@@ -55,11 +55,11 @@ Each material in your model becomes a **texture set**, listed in the **Texture S
 Smart materials and smart masks use mesh maps (ambient occlusion, curvature and so on) to place wear and dirt. Bake them first:
 
 1. Choose **Mode › Bake Mesh Maps** (**F8**).
-2. Tick the texture sets and the maps you want.
+2. Select the texture sets and the maps you want.
 3. Choose **Bake Selected Textures**.
 4. Choose **Return to Painting Mode** when it's done.
 
-![Bake mode: the texture sets and the mesh map bakers ticked on the left, the common parameters below them, and the bake and return-to-painting buttons under the 3D view of the portable TV](/assets/uploads/texturecraft/bake.webp)
+![Bake mode: the texture sets and the mesh map bakers checked on the left, the common parameters below them, and the bake and return-to-painting buttons under the 3D view of the portable TV](/assets/uploads/texturecraft/bake.webp)
 
 ## 6. Add a material
 
@@ -78,7 +78,7 @@ Press **Ctrl+S** (**⌘S** on a Mac). TextureCraft saves a .tcraft project file.
 ## 9. Export your textures
 
 1. Choose **File › Export Textures...** (**Ctrl+Shift+E**).
-2. Tick the texture sets to export.
+2. Select the texture sets to export.
 3. Choose an **Output directory**.
 4. Pick an **Output template**, for example one for your game engine.
 5. Choose **Export**.

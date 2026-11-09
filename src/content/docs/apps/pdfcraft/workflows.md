@@ -43,7 +43,7 @@ Choose **Edit a PDF**:
 - **Redact a PDF** blacks out text, pictures or whole pages. Mark what to remove with **Redact text and images**, or use **Find text and redact** to mark every match, then choose **Apply redactions**. **Sanitize document** removes everything hidden: metadata, attachments, comments, hidden text and layers, bookmarks, links and scripts. Form fields are flattened, so their values stay visible. Save afterwards: saving rewrites the whole file, so nothing removed stays in it.
 
 :::caution
-Applied redactions remove the text, pictures and drawings under the marks for good, along with comments and form fields that overlap them. Redaction can't find text inside pictures: recognise the text with OCR first. Keep a copy of the original.
+Applied redactions remove the text, pictures and drawings under the marks for good, along with comments and form fields that overlap them. Redaction can't find text inside pictures: recognize the text with OCR first. Keep a copy of the original.
 :::
 
 :::danger
@@ -58,11 +58,11 @@ PdfCraft is still very much in alpha. For now you should use other tools for red
 - **File › Create** makes a PDF from another file, several files, pictures or the clipboard, or a **New blank PDF**.
 - **Compress a PDF › Reduce file size** makes a smaller copy. **Advanced optimization** chooses what to shrink.
 
-## Recognise scanned text
+## Recognize scanned text
 
-A scanned page is a picture of words, so you can't search or copy it. Choose **Scan & OCR › In this file** to recognise the text, or **In multiple files** for several PDFs at once. Pick the language, the pages and whether to straighten or clean up the pages, then press **Run OCR**.
+A scanned page is a picture of words, so you can't search or copy it. Choose **Scan & OCR › In this file** to recognize the text, or **In multiple files** for several PDFs at once. Pick the language, the pages and whether to straighten or clean up the pages, then press **Run OCR**.
 
-PdfCraft shows the words it found, coloured by how sure it is. Go through the uncertain ones with **Next uncertain** (**F8**), click a word to correct it, then press **Accept** to add the text to the PDF, or **Reject** to leave it out. OCR works best on Latin-script languages.
+PdfCraft shows the words it found, colored by how sure it is. Go through the uncertain ones with **Next uncertain** (**F8**), click a word to correct it, then press **Accept** to add the text to the PDF, or **Reject** to leave it out. OCR works best on Latin-script languages.
 
 To clean up a poor scan first, choose **Scan & OCR › Enhance scanned file**. It cleans the pictures in place, and the text, comments and links on the pages stay as they are. Pick the pages, then turn on what you need:
 
@@ -72,7 +72,7 @@ To clean up a poor scan first, choose **Scan & OCR › Enhance scanned file**. I
 
 Press **Enhance** to run it.
 
-![The OCR screen: settings and the Run OCR, Accept and Reject buttons along the top, a scanned page in the middle with each word boxed in green or red by confidence, and the recognised words listed on the right](/assets/uploads/pdfcraft/ocr-verify.webp)
+![The OCR screen: settings and the Run OCR, Accept and Reject buttons along the top, a scanned page in the middle with each word boxed in green or red by confidence, and the recognized words listed on the right](/assets/uploads/pdfcraft/ocr-verify.webp)
 
 ## More tools
 

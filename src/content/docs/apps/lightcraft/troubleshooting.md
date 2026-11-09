@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-description: Fix common LightCraft problems with raw files, colour and missing photos, and find the log for a bug report.
+description: Fix common LightCraft problems with raw files, color and missing photos, and find the log for a bug report.
 sidebar:
   order: 6
 ---

@@ -7,7 +7,7 @@ sidebar:
 
 ## Fill in a form
 
-When a PDF has form fields, a bar above the page says how many it has. Click **Highlight fields** to see where they are. Click a field and type, tick the boxes, or pick from the lists.
+When a PDF has form fields, a bar above the page says how many it has. Click **Highlight fields** to see where they are. Click a field and type, select the boxes, or pick from the lists.
 
 The **Fields** panel on the right lists every field and what's in it. **Edit › Clear form** empties them all.
 

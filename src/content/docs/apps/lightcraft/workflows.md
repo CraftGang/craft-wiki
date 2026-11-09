@@ -1,6 +1,6 @@
 ---
 title: Workflows
-description: Import, organise, cull, edit, mask, retouch and export photos in LightCraft.
+description: Import, organize, cull, edit, mask, retouch and export photos in LightCraft.
 sidebar:
   order: 3
 ---
@@ -24,7 +24,7 @@ Choose **File › Import Photos…** or **File › Import from Folder…**. In t
 
 To work on a folder without importing it, use **Local › Browse Folder…** in the sidebar.
 
-## Organise
+## Organize
 
 - **Albums** and **Folders**: **File › New Album…** (**Ctrl+N**) and **File › New Folder…**. Folders hold albums.
 - **Smart albums**: **File › New Smart Album…** fills an album by rules, such as rating or camera.
@@ -67,7 +67,7 @@ Open a photo in the **Detail View** and press **E** for the **Edit** panel.
 
 - **Auto** sets a starting point. **B&W** turns the photo black and white. **Reset** removes all edits.
 - **Light**: Exposure, Contrast, Highlights, Shadows, Whites and Blacks, plus the tone **Curve**.
-- **Color**: white balance, Vibrance, Saturation, the **Color Mixer** and colour grading wheels.
+- **Color**: white balance, Vibrance, Saturation, the **Color Mixer** and color grading wheels.
 - **Effects**: Texture, Clarity, Dehaze, Vignette and Grain.
 - **Detail**: sharpening and noise reduction. For raw photos, switch on **AI Denoise** and set its **Amount**. It needs nothing installed. You can add your own model in **Settings › AI Denoise**. Photos that aren't raw keep the normal noise reduction.
 - **Optics**: lens corrections, chromatic aberration and defringe.
@@ -88,10 +88,10 @@ Press **M** for **Masking**, and choose a mask under **Create New Mask**:
 
 - **Brush**: paint where the change should go.
 - **Linear** and **Radial** gradients: drag them onto the photo.
-- **Luminance** and **Color**: select by brightness or colour.
+- **Luminance** and **Color**: select by brightness or color.
 - **Subject**, **Sky** and **Background**: select them automatically.
 
-Then move the sliders below to change only the masked area. **Add** and **Subtract** combine masks, and **Invert** flips one. **O** shows the mask as a coloured overlay.
+Then move the sliders below to change only the masked area. **Add** and **Subtract** combine masks, and **Invert** flips one. **O** shows the mask as a colored overlay.
 
 ![The Masking panel with a linear Sky mask and a radial Sun glow mask. The radial gradient is drawn as a red ellipse around the sun over a lake, and its Temp and Exposure sliders are raised](/assets/uploads/lightcraft/masking.webp)
 
@@ -196,7 +196,7 @@ Select bracketed or overlapping photos and choose **Photo › Photo Merge › HD
 Select photos and choose **File › Export…**.
 
 1. Set **Format**: **JPEG**, **PNG**, **TIFF**, **PSD**, **WebP**, **AVIF**, **JPEG XL**, **DNG** or **Original files**. **Original files** copies the files unchanged, each with an XMP sidecar holding its edits.
-2. Leave **Full size** ticked, or choose **Resize to** a long edge, width, megapixels and so on.
+2. Leave **Full size** checked, or choose **Resize to** a long edge, width, megapixels and so on.
 3. Optionally set **Color space**, **Sharpen**, **Metadata**, **Remove location info** or a **Watermark**.
 4. Next to **Folder**, click **Choose…**. Set **File name** with tags such as `{name}-{seq}`, and **If file exists**.
 5. Click the export button at the bottom.

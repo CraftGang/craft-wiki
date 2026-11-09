@@ -22,7 +22,7 @@ The drafting aids are on the status bar, and each has a function key:
 
 | Key | Turns on or off |
 | --- | --- |
-| **F3** | Object snaps: endpoint, midpoint, centre, intersection, tangent, perpendicular and more |
+| **F3** | Object snaps: endpoint, midpoint, center, intersection, tangent, perpendicular and more |
 | **F7** | Grid |
 | **F8** | Ortho: lines only horizontal or vertical |
 | **F9** | Grid snap |
@@ -39,15 +39,15 @@ The **Modify** menu has **Move**, **Copy**, **Rotate**, **Scale**, **Mirror**, *
 - Select objects first and then start a command, or start the command and select when asked.
 - Drag from left to right to select objects entirely inside the window. Drag from right to left to also select objects the window crosses.
 - Click a selected object's grip to make it hot, then move the mouse. Press **Space** or **Enter** to switch between **STRETCH**, **MOVE**, **ROTATE**, **SCALE** and **MIRROR**.
-- **Modify › Match Properties** copies one object's layer, colour and other properties to others.
+- **Modify › Match Properties** copies one object's layer, color and other properties to others.
 - **Ctrl+Z** undoes. **Ctrl+Y** or **Ctrl+Shift+Z** redoes.
 
 ## Use layers and properties
 
-Layers group objects so you can show, hide, lock and colour them together.
+Layers group objects so you can show, hide, lock and color them together.
 
 - The **Layers** palette on the right sets the current layer and turns layers on or off, freezes and locks them.
-- **Format › Layers** opens the **Layer Properties Manager**, for creating layers and setting their colour, linetype, lineweight and whether they plot.
+- **Format › Layers** opens the **Layer Properties Manager**, for creating layers and setting their color, linetype, lineweight and whether they plot.
 - **Format › Layer Tools** has **Isolate Layer**, **Freeze Layer**, **Layer Off**, **Lock Layer**, **Layer Match**, **Previous Layer** and others.
 - The **Properties** palette (**Ctrl+1**) shows and edits whatever is selected.
 - To save which layers are on, frozen or locked, use the **Layer State** row of the **Layer Properties Manager**. Type a name under **New state name** and click **Save State**. Later, pick the state and click **Restore**, or **Delete** to remove it.
@@ -59,7 +59,7 @@ Layers group objects so you can show, hide, lock and colour them together.
 - **Dimension › Dimension Style...** sets arrowheads, text and units for dimensions.
 - **Draw › Table...** inserts a table.
 
-![A mounting bracket part drawing: a front view with bolt holes, red centre lines and cyan dimensions, a hatched section view, green notes and a title block](/assets/uploads/cadcraft/bracket.webp)
+![A mounting bracket part drawing: a front view with bolt holes, red center lines and cyan dimensions, a hatched section view, green notes and a title block](/assets/uploads/cadcraft/bracket.webp)
 
 ## Hatch areas
 

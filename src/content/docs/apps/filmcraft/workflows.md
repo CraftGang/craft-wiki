@@ -1,6 +1,6 @@
 ---
 title: Workflows
-description: Editing, trimming, colour, effects, audio, titles, captions, export and interchange in FilmCraft.
+description: Editing, trimming, color, effects, audio, titles, captions, export and interchange in FilmCraft.
 sidebar:
   order: 3
 ---
@@ -45,7 +45,7 @@ The track buttons at the left of the timeline choose which tracks the clip goes 
 | **Rate Stretch Tool** | **R** | Change a clip's speed by trimming it |
 | **Razor Tool** | **C** | Cut a clip in two |
 | **Slip Tool** | **Y** | Change which part of a clip is used, keeping its place |
-| **Slide Tool** | **U** | Move a clip between its neighbours |
+| **Slide Tool** | **U** | Move a clip between its neighbors |
 
 **Q** and **W** ripple-trim the start or end of a clip to the playhead. **Sequence › Add Edit** (**Ctrl+K**, or **⌘K** on a Mac) cuts the targeted tracks at the playhead. **Sequence › Trim Edit** (**Shift+T**) opens the trim monitor, which shows both sides of a cut.
 
@@ -53,7 +53,7 @@ Markers live on the **Markers** menu: **M** adds one, and **Shift+M** jumps to t
 
 To change any shortcut, choose **Edit › Keyboard Shortcuts…** (**Ctrl+Alt+K**, or **⌥⌘K** on a Mac). There are presets for FilmCraft's own keys and for the keys of other common editors.
 
-## Colour
+## Color
 
 Switch to the **Color** workspace. Select a clip on the timeline, then use the **Lumetri Color** panel. Its sections each have an on/off switch:
 
@@ -61,7 +61,7 @@ Switch to the **Color** workspace. Select a clip on the timeline, then use the *
 - **Creative**: built-in looks with an intensity control, plus faded film, sharpen and vibrance.
 - **Curves**: an RGB curve, and hue and saturation curves.
 - **Color Wheels & Match**: shadow, midtone and highlight wheels.
-- **HSL Secondary**: pick out one colour range and correct only that.
+- **HSL Secondary**: pick out one color range and correct only that.
 - **Vignette**: darken or lighten the edges of the frame.
 
 The **Lumetri Scopes** panel shows a waveform and a vectorscope of the graded picture.

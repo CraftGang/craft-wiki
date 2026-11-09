@@ -11,11 +11,11 @@ DeckCraft is an app for making presentations and giving slide shows. If you have
 DeckCraft is in alpha. Most features are in place, but some presentations from other apps may not look exactly the same. Keep a copy of important files, and tell us what breaks on [GitHub](https://github.com/storytold/deckcraft/issues) or [Discord](https://discord.gg/artcraft).
 :::
 
-![DeckCraft with the Home tab of the ribbon open. Thumbnails of the slides, grouped into Introduction and Science sections, run down the left, and the selected slide shows four coloured shapes joined by arrows, with a notes box below](/assets/uploads/deckcraft/editor.webp)
+![DeckCraft with the Home tab of the ribbon open. Thumbnails of the slides, grouped into Introduction and Science sections, run down the left, and the selected slide shows four colored shapes joined by arrows, with a notes box below](/assets/uploads/deckcraft/editor.webp)
 
 ## What it does
 
-- **Slides**: slide masters and layouts with placeholders, themes with colour and font schemes, sections, speaker notes, headers and footers, and custom slide sizes.
+- **Slides**: slide masters and layouts with placeholders, themes with color and font schemes, sections, speaker notes, headers and footers, and custom slide sizes.
 - **Shapes and drawing**: preset shapes with adjust handles, connectors that stay attached, freeform drawing, merging shapes, gradient, picture and pattern fills, shadows, glow, soft edges and reflections.
 - **Text**: font and paragraph formatting, bullets and numbering, columns, WordArt, links, and spelling checked as you type.
 - **Content**: pictures with cropping, tables, charts, SmartArt, icons, equations, audio and video.

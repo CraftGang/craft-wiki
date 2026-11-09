@@ -5,7 +5,7 @@ sidebar:
   order: 0
 ---
 
-MaterialCraft is a node-based material designer. You build a material by connecting nodes in a graph, watch it update in a 2D view and on a 3D model, and export its maps (base colour, normal, roughness, metallic, height and so on) for a game engine or a 3D app. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
+MaterialCraft is a node-based material designer. You build a material by connecting nodes in a graph, watch it update in a 2D view and on a 3D model, and export its maps (base color, normal, roughness, metallic, height and so on) for a game engine or a 3D app. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::caution[Early and changing fast]
 MaterialCraft is in active development. In version 0.2 its node library was rebuilt from basic building blocks, so the ready-made noises, patterns and sample materials of earlier versions are gone for now. Expect missing pieces, keep copies of your work, and tell us what breaks on [GitHub](https://github.com/storytold/materialcraft/issues) or [Discord](https://discord.gg/artcraft).

@@ -17,7 +17,7 @@ FigCraft is in early alpha. The core editor works end to end, but .fig files ope
 
 - **Layout**: frames, auto layout (rows, columns, wrap and grid), constraints and layout grids.
 - **Components**: main components and instances, variants, component properties and an **Assets** panel.
-- **Styles and variables**: colour, text, effect and grid styles; colour, number, text and true/false variables with modes such as Light and Dark.
+- **Styles and variables**: color, text, effect and grid styles; color, number, text and true/false variables with modes such as Light and Dark.
 - **Vectors**: the Pen and Pencil tools, vector editing, boolean groups and the shape builder.
 - **Paints and effects**: gradients, image fills, blend modes, shadows, blurs, noise, texture and glass.
 - **Text**: edited on the canvas, with mixed styles, lists, OpenType features and right-to-left text.

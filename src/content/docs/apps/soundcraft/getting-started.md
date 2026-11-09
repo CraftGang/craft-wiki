@@ -11,7 +11,7 @@ The quickest way is [ArtCraft Launcher](https://github.com/storytold/craft-launc
 
 ## 2. Play the demo song
 
-SoundCraft opens on an empty session called **Untitled**. To hear what it can do, choose **File › New**, tick **Start from the demo session**, and press **Create**. The demo song has drums, bass, a pad, keys and a lead, a reverb aux and a master fader. Every sound in it is synthesised by SoundCraft itself.
+SoundCraft opens on an empty session called **Untitled**. To hear what it can do, choose **File › New**, select **Start from the demo session**, and press **Create**. The demo song has drums, bass, a pad, keys and a lead, a reverb aux and a master fader. Every sound in it is synthesised by SoundCraft itself.
 
 Press **Space** to play and **Space** again to stop.
 
@@ -39,7 +39,7 @@ SoundCraft also keeps a copy of unsaved work in the background. If it closes une
 
 ## 6. Bounce your mix
 
-Choose **File › Bounce Mix** (**⌥⌘B**). Pick a file name, the **Format** (WAV, AIFF or FLAC) and the **Bit Depth** (16, 24 or 32-bit float). You can also tick **Normalize to -0.1 dBFS**, or **Dither (TPDF)** for 16- and 24-bit files. Press **Bounce**.
+Choose **File › Bounce Mix** (**⌥⌘B**). Pick a file name, the **Format** (WAV, AIFF or FLAC) and the **Bit Depth** (16, 24 or 32-bit float). You can also select **Normalize to -0.1 dBFS**, or **Dither (TPDF)** for 16- and 24-bit files. Press **Bounce**.
 
 SoundCraft bounces the edit selection, or the whole session when nothing is selected. When it's done, it shows the file's peak level and loudness in LUFS.
 

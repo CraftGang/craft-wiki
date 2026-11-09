@@ -18,4 +18,4 @@ If a guide is wrong or out of date, email us with the page address and what need
 - **Senior Contributors** in the ArtCraft Discord server can edit guides directly. Choose **Edit wiki** at the top of any page and sign in with Discord.
 - **Anyone with a GitHub account** can suggest changes. The editor saves your draft to your own copy of the repository and opens a pull request for ArtCraft to review.
 
-By contributing, you agree to the [Terms of use](/terms/), including the licence for contributions.
+By contributing, you agree to the [Terms of use](/terms/), including the license for contributions.

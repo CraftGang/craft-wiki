@@ -121,7 +121,7 @@ A placed picture is linked to its file on disk. **Window › Links** lists every
 
 **Window › Color › Swatches** lists the document's named colors. Add a swatch once, then use it everywhere, so a change to the swatch changes every object that uses it. Swatches can be RGB or CMYK colors, tints and gradients.
 
-![A page titled Color, Ink & Paper on a plum background, with four swatch circles below, labelled Ink Plum, Sunset, C=100 M=0 Y=0 K=0 and Paper Warm](/assets/uploads/designcraft/swatches.webp)
+![A page titled Color, Ink & Paper on a plum background, with four swatch circles below, labeled Ink Plum, Sunset, C=100 M=0 Y=0 K=0 and Paper Warm](/assets/uploads/designcraft/swatches.webp)
 
 Before you send a job to print, check it on screen with **View › Overprint Preview** and **View › Separations Preview**.
 

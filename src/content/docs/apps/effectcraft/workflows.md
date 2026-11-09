@@ -24,10 +24,10 @@ Photoshop, PDF and Illustrator files ask whether to import them as footage or as
 Numbered stills, such as `shot_0001.png`, `shot_0002.png` and so on, can import as one clip:
 
 1. Choose **File › Import › File...** and pick any one file of the run.
-2. In the **Import Image Sequence** window, tick the sequence option. It's named after the file type, for example **PNG Sequence**, and it's off by default.
+2. In the **Import Image Sequence** window, select the sequence option. It's named after the file type, for example **PNG Sequence**, and it's off by default.
 3. Set **Frame rate (fps)**, then confirm.
 
-If a frame is missing, EffectCraft shows colour bars for it. Add the missing file and choose **File › Reload Footage** (**Ctrl+Alt+L**).
+If a frame is missing, EffectCraft shows color bars for it. Add the missing file and choose **File › Reload Footage** (**Ctrl+Alt+L**).
 
 ### Change how footage is read
 
@@ -68,7 +68,7 @@ Change its settings in **Effect Controls** (**F3**).
 
 - **Effect › Last Effect** applies the effect you used last.
 - **Effect › Remove All** removes every effect from the selected layers.
-- In **Effects & Presets**, click the star beside an effect to add it to your favourites. Recently used effects are listed too.
+- In **Effects & Presets**, click the star beside an effect to add it to your favorites. Recently used effects are listed too.
 
 For drop shadows, glows and bevels, use **Layer › Layer Styles**. It has **Drop Shadow**, **Inner Shadow**, **Outer Glow**, **Inner Glow**, **Bevel and Emboss** and **Satin**, among others.
 
@@ -77,11 +77,11 @@ For drop shadows, glows and bevels, use **Layer › Layer Styles**. It has **Dro
 1. Select a composition and choose **Composition › Add to Render Queue** (**Ctrl+M**). You can also drag compositions onto the **Render Queue** panel (**Window › Render Queue**, **Ctrl+Alt+0**).
 2. Twirl the item open. Click **Output Module:** to choose the format, and the file name next to **Output To:** to choose where it goes.
 3. Click **Render Settings:** to render the work area only or the whole composition, at best or draft quality, or at full, half, third or quarter resolution.
-4. Make sure the item's **Render** box is ticked, then choose **Render**. **Stop** cancels.
+4. Make sure the item's **Render** box is checked, then choose **Render**. **Stop** cancels.
 
-Tick **Notify** to get a notification when the queue finishes.
+Select **Notify** to get a notification when the queue finishes.
 
-![The Render Queue panel with two compositions queued, EffectCraft Intro and 3D Showcase, each with its Render box ticked and the Render button at the top right](/assets/uploads/effectcraft/render-queue.webp)
+![The Render Queue panel with two compositions queued, EffectCraft Intro and 3D Showcase, each with its Render box checked and the Render button at the top right](/assets/uploads/effectcraft/render-queue.webp)
 
 ### Formats
 

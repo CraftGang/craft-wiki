@@ -28,7 +28,7 @@ To end it, open **Share** again and click **Stop sharing**. Everyone else is dis
 
 - Paste the code or link into **Join with a code** on the **Home** screen, or in the **Share** popover.
 - Or choose **File › Join live session…** from the main menu.
-- Invite links open FigCraft and join straight away. To turn this off, untick **Open invite links in FigCraft** in **Preferences**.
+- Invite links open FigCraft and join straight away. To turn this off, clear **Open invite links in FigCraft** in **Preferences**.
 
 People can also join from the web version of FigCraft in a browser.
 

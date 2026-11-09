@@ -19,7 +19,7 @@ Version 0.2 dropped the .mcraft format and changed the .mcmat format. Files made
 
 ## The 3D View is empty
 
-The 3D View shows the graph's **Output** nodes that have a usage, such as base colour or normal. Check that your outputs are connected and have a usage, then choose **Tools › View outputs in 3D view**.
+The 3D View shows the graph's **Output** nodes that have a usage, such as base color or normal. Check that your outputs are connected and have a usage, then choose **Tools › View outputs in 3D view**.
 
 ## Previews look soft or blocky
 

@@ -51,13 +51,13 @@ Two settings are related. **Edit › Preferences › Performance…** has the **
 
 If a small file still fails, report it. Choose **Help › System Info…**, click **Copy**, and add the text and the full message to your report. People report this error with small files since version 0.21.0, including on Flatpak installs. See [Known problems, not fixed yet](#known-problems-not-fixed-yet).
 
-## The Windows taskbar turns black when PhotoCraft is maximised
+## The Windows taskbar turns black when PhotoCraft is maximized
 
-PhotoCraft draws its own title bar. If the taskbar turns black or disappears while PhotoCraft is maximised, update PhotoCraft first. If it still happens, turn on **System title bar** in **Edit › Preferences › Interface…** and restart PhotoCraft, so that Windows draws the title bar instead.
+PhotoCraft draws its own title bar. If the taskbar turns black or disappears while PhotoCraft is maximized, update PhotoCraft first. If it still happens, turn on **System title bar** in **Edit › Preferences › Interface…** and restart PhotoCraft, so that Windows draws the title bar instead.
 
 ## Canvas Size added a white border around my photo
 
-**Image › Canvas Size…** doesn't scale your photo. It adds space around it, and fills the new space with the **Canvas extension color**, which is your background colour (usually white) unless you change it. To add empty space, set **Canvas extension color:** to **Transparent**.
+**Image › Canvas Size…** doesn't scale your photo. It adds space around it, and fills the new space with the **Canvas extension color**, which is your background color (usually white) unless you change it. To add empty space, set **Canvas extension color:** to **Transparent**.
 
 This happens because a photo you open becomes a locked **Background** layer, which can't be transparent. To make the photo itself bigger or smaller, use **Image › Image Size…**.
 
