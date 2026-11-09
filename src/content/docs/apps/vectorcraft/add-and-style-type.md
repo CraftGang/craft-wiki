@@ -14,9 +14,9 @@ This guide shows how to add the three kinds of type in VectorCraft, flow one sto
 
 | Kind | How to make it | What shapes it |
 |---|---|---|
-| **Point type** | Click with the Type tool and type. | Point type does not wrap. Each line ends where you press Enter. |
-| **Area type** | Drag a frame with the Type tool, or click the outline of a closed path. | The text wraps at the frame's edges. **Type → Area Type Options…** sets rows, columns, gutters and inset. |
-| **Type on a path** | Click the outline of an open path with the Type tool, or click any path with the Type on a Path tool. | The text follows the path. Drag the start, center and end brackets, or set options in **Type → Type on a Path → Type on a Path Options…**. |
+| Point type | Click with the Type tool and type. | Point type does not wrap. Each line ends where you press Enter. |
+| Area type | Drag a frame with the Type tool, or click the outline of a closed path. | The text wraps at the frame's edges. **Type → Area Type Options…** sets rows, columns, gutters and inset. |
+| Type on a path | Click the outline of an open path with the Type tool, or click any path with the Type on a Path tool. | The text follows the path. Drag the start, center and end brackets, or set options in **Type → Type on a Path → Type on a Path Options…**. |
 
 ## Choose a type tool
 

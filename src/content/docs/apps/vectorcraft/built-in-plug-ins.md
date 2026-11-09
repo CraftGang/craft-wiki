@@ -58,9 +58,9 @@ Select the objects, then choose a command from **Object → Plug-ins → Arrange
 
 | Option | What it does |
 |---|---|
-| **Layout:** | Sets the layout to **Grid by Row**, **Arrange by Row** or **Arrange by Column** |
-| **Columns:** | Sets the number of columns, from 1 to 10,000. It is available only for **Grid by Row**. By default it is the square root of the number of objects, rounded up |
-| **H Spacing:** and **V Spacing:** | Set the gaps between columns and between rows, from −1,000,000 pt to 1,000,000 pt. A negative gap makes the objects overlap. Both are 10 pt by default |
+| **Layout** | Sets the layout to **Grid by Row**, **Arrange by Row** or **Arrange by Column** |
+| **Columns** | Sets the number of columns, from 1 to 10,000. It is available only for **Grid by Row**. By default it is the square root of the number of objects, rounded up |
+| **H Spacing** and **V Spacing** | Set the gaps between columns and between rows, from −1,000,000 pt to 1,000,000 pt. A negative gap makes the objects overlap. Both are 10 pt by default |
 | **Center on Artboard** | Centers the grid on the artboard. When it is off, the grid starts at the top-left corner of the selection |
 
 The objects go into the grid in their stacking order, from the back, left to right and top to bottom. Each column is as wide as its widest object, each row is as tall as its tallest object, and each object is centered in its cell.
@@ -73,7 +73,7 @@ In **Replace with Top Object…**, **Set Size of Each…** and **Sort Objects…
 
 | Option | What it does |
 |---|---|
-| **Size:** | Sets the size of each copy: **Actual Size** (the default), **Bounds**, which scales the copy to the replaced object's width and height, or **Bounds (Fit Proportionally)**, which scales it in proportion to fit inside them |
+| **Size** | Sets the size of each copy: **Actual Size** (the default), **Bounds**, which scales the copy to the replaced object's width and height, or **Bounds (Fit Proportionally)**, which scales it in proportion to fit inside them |
 | **Keep Original** | Keeps the replaced objects under their copies. It is off by default |
 | **Scale Strokes & Effects** | Scales the stroke widths and effects of the copies with them |
 
@@ -81,8 +81,8 @@ In **Replace with Top Object…**, **Set Size of Each…** and **Sort Objects…
 
 | Option | What it does |
 |---|---|
-| **Width:** and **Height:** | Select one or both and type the size, from 0.001 pt to 1,000,000 pt. By default both are selected and show the size of the first selected object. **OK** is available only while at least one is selected |
-| **Constrain Width and Height Proportions** | Scales the other side in proportion. It is available only when exactly one of **Width:** and **Height:** is selected, and it is off by default |
+| **Width** and **Height** | Select one or both and type the size, from 0.001 pt to 1,000,000 pt. By default both are selected and show the size of the first selected object. **OK** is available only while at least one is selected |
+| **Constrain Width and Height Proportions** | Scales the other side in proportion. It is available only when exactly one of **Width** and **Height** is selected, and it is off by default |
 | **Reference Point** | Sets the point of each object that stays in place. It is the center by default |
 | **Scale Strokes & Effects** | Scales the stroke widths and effects with the objects |
 
@@ -90,8 +90,8 @@ In **Replace with Top Object…**, **Set Size of Each…** and **Sort Objects…
 
 | Option | What it does |
 |---|---|
-| **Minimum:** and **Maximum:** | Set the range the opacities are picked from, from 0% to 100%. By default the range is 30% to 100%. **OK** is unavailable while **Minimum:** is above **Maximum:** |
-| **Seed:** | Sets the starting number of the random picks, from 0 to 999,999. The same seed gives the same result. The dialog shows a new seed after each change to the document, so running the command again gives a different result |
+| **Minimum** and **Maximum** | Set the range the opacities are picked from, from 0% to 100%. By default the range is 30% to 100%. **OK** is unavailable while **Minimum** is above **Maximum** |
+| **Seed** | Sets the starting number of the random picks, from 0 to 999,999. The same seed gives the same result. The dialog shows a new seed after each change to the document, so running the command again gives a different result |
 
 ![The Randomize Opacity dialog with Minimum: 30%, Maximum: 100%, Seed: 425 and Preview selected. Behind it, the selected badges on a night-blue sheet show different opacities, some faded and some solid](/assets/uploads/vectorcraft/randomize-opacity-dialog.webp)
 
@@ -99,13 +99,13 @@ In **Replace with Top Object…**, **Set Size of Each…** and **Sort Objects…
 
 | Option | What it does |
 |---|---|
-| **Sort By:** | Sets the attribute that orders the objects: **Width**, **Height**, **Area**, **X Position** (the left edge), **Y Position** (the top edge), **Opacity** or **Stacking Order**. The default is **Area** |
-| **Apply To:** | Sets the attribute the objects get in that order, from the same list. The default is **Stacking Order**, so the smallest object goes to the back |
-| **Order:** | Sets the order to **Small to Large** (the default), **Large to Small** or **Random** |
-| **Distribute Evenly** | Spaces the values evenly from the smallest to the largest, instead of trading the values the objects have. It is available when **Apply To:** is not **Stacking Order**, and it is off by default |
-| **Scale Strokes & Effects** | Scales the stroke widths and effects with the objects. It is available only when **Apply To:** is **Width**, **Height** or **Area** |
+| **Sort By** | Sets the attribute that orders the objects: **Width**, **Height**, **Area**, **X Position** (the left edge), **Y Position** (the top edge), **Opacity** or **Stacking Order**. The default is **Area** |
+| **Apply To** | Sets the attribute the objects get in that order, from the same list. The default is **Stacking Order**, so the smallest object goes to the back |
+| **Order** | Sets the order to **Small to Large** (the default), **Large to Small** or **Random** |
+| **Distribute Evenly** | Spaces the values evenly from the smallest to the largest, instead of trading the values the objects have. It is available when **Apply To** is not **Stacking Order**, and it is off by default |
+| **Scale Strokes & Effects** | Scales the stroke widths and effects with the objects. It is available only when **Apply To** is **Width**, **Height** or **Area** |
 
-The dialog opens with **Apply To:** set to **Stacking Order**, so **Distribute Evenly** and **Scale Strokes & Effects** are both dimmed at first.
+The dialog opens with **Apply To** set to **Stacking Order**, so **Distribute Evenly** and **Scale Strokes & Effects** are both dimmed at first.
 
 ![The Sort Objects dialog with Sort By: Area, Apply To: Y Position, Order: Small to Large, and Distribute Evenly and Preview selected. Behind it, the badges on a night-blue sheet are previewed with the smallest near the top and the largest near the bottom](/assets/uploads/vectorcraft/sort-objects-dialog.webp)
 
@@ -116,7 +116,7 @@ The dialog opens with **Apply To:** set to **Stacking Order**, so **Distribute E
 1. Select the objects to check, or select nothing to check the whole document.
 2. In the Artwork Cleanup panel, click **Check Selection** or **Check Document**. The panel lists each kind of problem it found with a count, or shows **No issues found.** The check leaves out locked and hidden objects, so unlock and show any objects you want it to check.
 3. Click a row to pick it. **Ctrl**-click (**Cmd**-click on macOS) or Shift-click a row to add it to the picked rows, or to remove it.
-4. Click **Show** to select the objects of the one picked row, **Fix Selected** to fix the picked rows, or **Fix All** to fix every row. Each fix is one undo step. The panel then checks again and shows **Issues fixed:** with the number of problems it fixed.
+4. Click **Show** to select the objects of the one picked row, **Fix Selected** to fix the picked rows, or **Fix All** to fix every row. Each fix is one undo step. The panel then checks again and shows **Issues fixed** with the number of problems it fixed.
 
 When you change the document after a check, the panel shows **Changed since the last check.** Click **Check Selection** or **Check Document** again to update the list.
 
@@ -189,7 +189,7 @@ In the Color Effects panel, choose an **Adjustment** (**Brightness/Contrast**, *
 
 ### Find Nearest Swatch
 
-Select the objects first. In the **Find Nearest Swatch** dialog, choose a **Library:** (**Document Swatches** by default, or a color library or color book) and select **Fill**, **Stroke** or both (both by default). The dialog lists each color of the selection with its three closest swatches, closest first, and the ΔE difference of each. Click **Apply** to give each color its nearest swatch, as one undo step. A color that takes a global or spot swatch is linked to it, and a swatch from a library is added to the document's swatches first.
+Select the objects first. In the **Find Nearest Swatch** dialog, choose a **Library** (**Document Swatches** by default, or a color library or color book) and select **Fill**, **Stroke** or both (both by default). The dialog lists each color of the selection with its three closest swatches, closest first, and the ΔE difference of each. Click **Apply** to give each color its nearest swatch, as one undo step. A color that takes a global or spot swatch is linked to it, and a swatch from a library is added to the document's swatches first.
 
 ![The Find Nearest Swatch dialog with Library: Document Swatches and both Fill and Stroke selected. It lists each selected color with its closest swatches, such as R=59 G=130 B=246 with Bright Blue at ΔE 2.9, over a corner café where the lit shop front, a bench, a bush and the blue curb are selected](/assets/uploads/vectorcraft/find-nearest-swatch-dialog.webp)
 
@@ -199,10 +199,10 @@ The **Create Swatch Legend** dialog previews the legend on the canvas and has th
 
 | Option | What it does |
 |---|---|
-| **Columns:** | Sets the number of chips in each row, from 1 to 50. The default is 4 |
-| **Size:** | Sets the side of each square chip, from 8 pt to 1,000 pt. The default is 72 pt |
-| **Gap:** | Sets the space between chips, from 0 pt to 1,000 pt. The default is 12 pt |
-| **Show:** | Sets the color values each label shows: **HEX**, **RGB**, **CMYK**, **Lab** and **Grayscale**. When none is selected, as by default, each label shows the values of its swatch's own color model |
+| **Columns** | Sets the number of chips in each row, from 1 to 50. The default is 4 |
+| **Size** | Sets the side of each square chip, from 8 pt to 1,000 pt. The default is 72 pt |
+| **Gap** | Sets the space between chips, from 0 pt to 1,000 pt. The default is 12 pt |
+| **Show** | Sets the color values each label shows: **HEX**, **RGB**, **CMYK**, **Lab** and **Grayscale**. When none is selected, as by default, each label shows the values of its swatch's own color model |
 | **Selected Swatches Only** | Draws only the swatches selected in the Swatches panel. It shows only while some swatches are selected there |
 
 Each chip is filled with its swatch and labeled inside with the swatch's name and values, in black on light chips and white on dark ones. The legend starts at the top-left corner of the first artboard, inset by the gap, and is selected when you click **OK**.
@@ -253,9 +253,9 @@ While the tool is active, the Control bar (**Window → Control**) shows its set
 | Setting | What it does |
 |---|---|
 | Shape buttons | Switch the tool between **3D Box**, **Rectangle**, **Ellipse**, **Polygon**, **Star** and **Spiral** |
-| **X:**, **Y:** | Rotate the box around its X and Y axes, from −180° to 180°. Both are 30° by default |
-| **Angle:** | Rotates the box in the plane of the page, from −180° to 180°. The default is 0° |
-| **Link** buttons | Project the axis beside each button in parallel instead of in perspective while the button is on. By default only the button beside **Y:** is on |
+| **X**, **Y** | Rotate the box around its X and Y axes, from −180° to 180°. Both are 30° by default |
+| **Angle** | Rotates the box in the plane of the page, from −180° to 180°. The default is 0° |
+| **Link** buttons | Project the axis beside each button in parallel instead of in perspective while the button is on. By default only the button beside **Y** is on |
 | **Reset** | Returns the angles and the Link buttons to their defaults |
 
 With a box selected, the Control bar shows that box's values, and changing them changes the box.
