@@ -32,10 +32,11 @@ Download `anicraft-<ver>-macos-universal.dmg`, open it, and drag **AniCraft** in
 
 | Package Format    | Package File                               | Notes                                      |
 |-------------------|--------------------------------------------|--------------------------------------------|
-| AppImage          | `anicraft-<ver>-linux-x86_64.AppImage`     | Standalone executable across distributions |
+| AppImage          | `anicraft-<ver>-linux-x86_64.AppImage`     | Make executable with `chmod +x <file>` and run |
 | Flatpak           | `anicraft-<ver>-linux-x86_64.flatpak`      | Install with `flatpak install --user <file>`|
 | Debian / Ubuntu   | `anicraft-<ver>-linux-x86_64.deb`          | Install with `sudo apt install ./<file>`   |
-| Fedora / openSUSE | `anicraft-<ver>-linux-x86_64.rpm`          | Install with `sudo dnf install <file>`     |
+| Fedora            | `anicraft-<ver>-linux-x86_64.rpm`          | Install with `sudo dnf install <file>`     |
+| openSUSE          | `anicraft-<ver>-linux-x86_64.rpm`          | Install with `sudo zypper install ./<file>`|
 | Arch Linux        | `anicraft-<ver>-linux-x86_64.pkg.tar.zst`  | Install with `sudo pacman -U <file>`       |
 | Tarball           | `anicraft-<ver>-linux-x86_64.tar.gz`       | Extract and run                            |
 
@@ -47,7 +48,18 @@ Download `anicraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64`), extract 
 
 ### In a browser
 
-`anicraft-web-<ver>.zip` contains the complete client-side WebAssembly build. Host it on any static web server and open it in a modern browser.
+A web browser (WebAssembly) build of AniCraft is planned on the project roadmap (Milestone 8) and is currently in development. Pre-built web packages will be available once the web build is published.
+
+## Update
+
+AniCraft stores your preferences, custom shortcuts, and documents outside the application directory (under your user profile's standard configuration path), so updating keeps your settings and files intact:
+
+- **ArtCraft Launcher**: Notifies you of new versions and updates AniCraft automatically.
+- **Windows installer**: Run the new `.msi` installer; it updates the application in place.
+- **Windows portable & tarball**: Download the new archive and extract the updated files to your existing folder.
+- **macOS**: Drag the updated `AniCraft.app` from the new `.dmg` into your Applications folder and confirm replacing the old version.
+- **Linux packages**: Install the newer `.deb`, `.rpm`, or `.pkg.tar.zst` package through your package manager.
+- **AppImage**: Download the latest `.AppImage`, make it executable (`chmod +x`), and replace the earlier file.
 
 ## Build from source
 

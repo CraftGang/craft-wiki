@@ -7,7 +7,7 @@ sidebar:
 
 ## AniCraft doesn't start
 
-If AniCraft fails to launch, it usually means your graphics drivers need an update or your GPU lacks modern API support (Vulkan, Metal, or DirectX 12). A dialog box will display the error reason, and details are written to `errors.log`:
+If AniCraft fails to launch, it usually means your graphics drivers need an update or your GPU lacks modern API support (Vulkan, Metal, or DirectX 12). When the application can initialize, an error dialog displays the reason, and details are written to `errors.log`:
 
 | Operating System | Log Directory                               |
 |------------------|---------------------------------------------|
@@ -15,7 +15,15 @@ If AniCraft fails to launch, it usually means your graphics drivers need an upda
 | macOS            | `~/Library/Application Support/AniCraft/`   |
 | Linux / FreeBSD  | `~/.local/share/anicraft/`                  |
 
-Try updating your graphics drivers to the latest version. If running on older hardware or inside a virtual machine without GPU acceleration, you can also run the [browser version](/apps/anicraft/install-update/#in-a-browser).
+### Failures before launch (Linux / macOS)
+
+If launch fails before the application process starts, the system will prevent execution without writing an `errors.log` or displaying an application dialog:
+
+- **Check terminal output**: Launch the executable directly from a terminal (`./anicraft` or `./anicraft-cli`) to see the system error.
+- **Check execute permissions**: If you get a `Permission denied` error on Linux (especially with AppImages or extracted tarball binaries), mark the file executable using `chmod +x <file>`.
+- **macOS Gatekeeper**: If macOS reports that the app cannot be opened because the developer cannot be verified, right-click (or Control-click) `AniCraft.app` in Finder, choose **Open**, and confirm the prompt.
+
+Try updating your graphics drivers to the latest version if hardware initialization fails.
 
 ## It uses the integrated GPU instead of the dedicated card
 

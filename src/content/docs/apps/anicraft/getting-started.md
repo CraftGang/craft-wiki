@@ -41,10 +41,13 @@ The timeline sits below the stage:
 
 ## 5. Add a classic tween
 
-1. Right-click a frame range between two keyframes and choose **Create Classic Tween**.
-2. Select any frame inside the tween span.
-3. In the **Properties** panel, pick an easing preset (such as **Ease In/Out**) or adjust the custom Bézier easing curve.
-4. Press **Enter** or the **Spacebar** to play your animation on the stage.
+1. On frame 1, draw a shape on the stage.
+2. Select frame 24 on the timeline and press **F6** to insert a keyframe.
+3. With the **Selection** tool (**V**) or **Free Transform** tool (**Q**), move or scale the artwork on frame 24 to its new position or pose.
+4. Right-click any frame between the two keyframes and choose **Create Classic Tween**.
+5. Select any frame inside the tween span.
+6. In the **Properties** panel, pick an easing preset (such as **Ease In/Out**) or adjust the custom Bézier easing curve.
+7. Press **Enter** or the **Spacebar** to play your animation on the stage.
 
 ## 6. Export
 
