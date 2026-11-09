@@ -24,7 +24,7 @@ To look around before you make anything, open **Sample deck: Northern Lights**. 
 
 ## 4. Pick a theme
 
-On the **Design** tab, pick a theme to change the colors and fonts of every slide at once. **Colors** and **Fonts** change just one of them. **Slide Size** switches between **Widescreen (16:9)** and **Standard (4:3)**.
+On the **Design** tab, pick a theme to change the colors and fonts of every slide at once. **Colors** and **Fonts** change only one of them. **Slide Size** switches between **Widescreen (16:9)** and **Standard (4:3)**.
 
 ## 5. Present
 

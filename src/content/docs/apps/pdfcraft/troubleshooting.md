@@ -56,7 +56,7 @@ On the Print screen, open **Advanced** and turn on **Print as image**, at 300 or
 These aren't fixed yet:
 
 - On Windows, the printer list can stay on **Looking for printers…** ([#5020](https://github.com/storytold/pdfcraft/issues/5020)).
-- Some Windows drivers, such as TOSHIBA Universal PS3 and PaperCut Mobility Print, fail with "Failed to parse print capabilities" ([#6385](https://github.com/storytold/pdfcraft/issues/6385), [#6407](https://github.com/storytold/pdfcraft/issues/6407)).
+- Some Windows drivers, such as TOSHIBA Universal PS3 and PaperCut Mobility Print, fail with "Failed to parse print capabilities" ([#2430](https://github.com/storytold/pdfcraft/issues/2430), [#6407](https://github.com/storytold/pdfcraft/issues/6407)).
 - On a small or scaled screen, the Print screen can run past the edges ([#4455](https://github.com/storytold/pdfcraft/issues/4455), [#5317](https://github.com/storytold/pdfcraft/issues/5317)).
 
 ## PdfCraft closed and I lost my work
@@ -86,10 +86,9 @@ If a page stays blank or blurry, or shows wrong or overlapping characters, repor
 - A white window that then closes, on some PCs ([#6500](https://github.com/storytold/pdfcraft/issues/6500)).
 - A page made of one very large scanned image may not display ([#6494](https://github.com/storytold/pdfcraft/issues/6494)).
 - Some scanned pages look blurred in PdfCraft but not in other readers ([#6499](https://github.com/storytold/pdfcraft/issues/6499)).
-- Some PDFs show incorrect or overlapping characters ([#6340](https://github.com/storytold/pdfcraft/issues/6340), [#6449](https://github.com/storytold/pdfcraft/issues/6449), [#6330](https://github.com/storytold/pdfcraft/issues/6330)).
-- Two-page view of an Arabic PDF runs left to right instead of right to left ([#6478](https://github.com/storytold/pdfcraft/issues/6478)).
-- The `text` command can put Thai marks in the wrong order ([#6517](https://github.com/storytold/pdfcraft/issues/6517)).
-- Some files that other tools rewrote can't be saved with **Save As** ([#6401](https://github.com/storytold/pdfcraft/issues/6401)), and a file with an old kind of password protection opens but can't be saved ([#6397](https://github.com/storytold/pdfcraft/issues/6397)).
+- Some PDFs show incorrect or overlapping characters ([#6340](https://github.com/storytold/pdfcraft/issues/6340), [#6330](https://github.com/storytold/pdfcraft/issues/6330)).
+- Two-page view of an Arabic PDF runs left to right instead of right to left ([#2339](https://github.com/storytold/pdfcraft/issues/2339)).
+- Some files that other tools rewrote can't be saved with **Save As** ([#6401](https://github.com/storytold/pdfcraft/issues/6401)).
 - After a file is replaced on disk, PdfCraft can still show the old version ([#6484](https://github.com/storytold/pdfcraft/issues/6484)).
 
 ## Find the log

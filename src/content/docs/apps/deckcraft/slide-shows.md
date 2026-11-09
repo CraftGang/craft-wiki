@@ -48,6 +48,8 @@ On a Mac, use **⌘** in place of **Ctrl**.
 
 Choose **Slide Show › Rehearse Timings** and present as you would for real. DeckCraft records how long you spend on each slide. Then turn on **Use Timings** to have the show move on by itself.
 
+You can't record narration or camera video yet: **Record** and **Cameo** are dimmed. **From Beginning** and **From Current Slide** on the **Record** tab start a rehearsal. **Play Narrations** plays narration that's already in a file.
+
 ## Set up the show
 
 **Slide Show › Set Up Slide Show** chooses the show type (presented by a speaker, browsed in a window, or at a kiosk), which slides to show, whether to loop until **Esc**, and whether to use timings. **Custom Show** makes a named show from some of the slides, in your own order. **Hide Slide** leaves a slide out of the show without deleting it.

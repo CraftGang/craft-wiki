@@ -19,7 +19,7 @@ If that doesn't help, try `"dx12"` in place of `"vulkan"`.
 
 ## It quits with "Parent device is lost"
 
-If WordCraft closes right after its window appears and the log says **Parent device is lost**, start it with `WGPU_BACKEND` set to `"vulkan"`, as above. This avoids DirectX 12 altogether.
+If WordCraft closes right after its window appears and the log says "Parent device is lost", start it with `WGPU_BACKEND` set to `"vulkan"`, as above. This avoids DirectX 12 altogether.
 
 ## It's slow on an older Windows PC
 
