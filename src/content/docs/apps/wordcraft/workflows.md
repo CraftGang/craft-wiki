@@ -5,7 +5,7 @@ sidebar:
   order: 3
 ---
 
-WordCraft's ribbon groups its tools into tabs: **Home**, **Insert**, **Design**, **Layout**, **References**, **Mailings**, **Review** and **View**. If you can't find a command, type its name into **Search commands and help**.
+WordCraft's ribbon groups its tools into tabs: **Home**, **Insert**, **Draw**, **Design**, **Layout**, **References**, **Mailings**, **Review**, **View**, **Developer**, **Zotero** and **Help**. Other tabs appear when you select something they apply to, such as **Table Design** for a table. If you can't find a command, type its name into **Search commands and help**.
 
 ## Format with styles
 
@@ -59,6 +59,18 @@ On the **Review** tab:
 
 ![The Review tab with Track Changes on: an inserted word in colour and a deleted word struck through, with comment balloons in the margin](/assets/uploads/wordcraft/review.webp)
 
+## Write equations
+
+1. Place the cursor where the equation goes and press **Alt+=**, or choose **Insert › Equation**. The arrow under the button lists ready-made equations.
+2. Type the equation. The **Equation** tab opens with its symbols. The **…** button next to the symbol strip (**All symbol sets**) lists every set.
+3. Press **Esc**, or choose **Close Equation**, to go back to the text.
+
+## Protect a document
+
+- To set a password, choose **File › Info › Protect Document › Encrypt with Password…** and enter a password. Anyone opening the document must enter it, and WordCraft asks for it when you open the file. The same place has **Change Password…** and **Remove Password**. Only .docx, .docm, .dotx, .dotm, .odt and .ott files can have a password. WordCraft keeps no recovery copy of a password-protected document (see [Document recovery](/apps/wordcraft/recovery/)).
+- To restrict editing, **Review › Restrict Editing** opens a pane where you can limit formatting to certain styles, or allow only one kind of editing. Choose **Start Enforcing Protection** to turn it on. The password is optional: without one, anyone can turn the protection off.
+- For content controls, the **Developer** tab has check boxes, drop-down lists, date pickers, picture controls and repeating sections for building forms. **Design Mode** shows and edits the controls themselves.
+
 ## Send a mail merge
 
 On the **Mailings** tab, pick your recipient list (a CSV or spreadsheet file), then add merge fields, an address block and a greeting line. Preview the results, then finish to a new document. You can also print envelopes and labels.
@@ -67,10 +79,14 @@ On the **Mailings** tab, pick your recipient list (a CSV or spreadsheet file), t
 
 On the **View** tab:
 
-- **Read mode** for reading, **Focus** to hide everything but the text.
+- **Read mode** for reading, **Focus** to hide everything but the text, and **Immersive Reader**.
+- **Outline** and **Draft** views, and **Print Layout** and **Web Layout** to switch back.
 - **Navigation pane** to jump between headings, or to search the document.
 - **Zoom**, one or several pages side by side, rulers and gridlines.
-- **Dark mode**.
+- **Split**, **New Window**, **Arrange All** and **Switch Windows** to work in two places at once, or in several documents.
+- **Full Screen**, **Interface Theme** and **Dark mode**.
+
+Read mode replaces the ribbon with its own bar. Use it to set the **Column width**, **Text size** and **Line spacing**, and a **Page color** of **None**, **Sepia** or **Inverse**. These only change how you see the document, not the file.
 
 To change the interface language, choose **File › Options › Language**. By default, WordCraft follows your system's language.
 
@@ -84,6 +100,12 @@ WordCraft uses the shortcuts you'd expect from a word processor. On a Mac, use *
 | **Ctrl+S** | Save |
 | **Ctrl+P** | Open **File › Print** |
 | **Ctrl+F** | Search in the Navigation pane |
+| **Ctrl+H** | Find and replace (**Control+H** on a Mac) |
+| **F3** | Find next |
+| **F12** | Save As |
+| **Alt+=** | Insert an equation |
+| **Shift+F3** | Change case |
+| **Shift+F7** | Thesaurus |
 | **Ctrl+Z** | Undo |
 | **Ctrl+Y** or **Ctrl+Shift+Z** | Redo |
 | **F4** | Repeat the last action |
@@ -116,6 +138,18 @@ A line under the options shows how many pages will print, and turns red if a ran
 Two more settings are in **File › Options › Display**: **Print the page color** and **Update fields before printing**. Both are off by default.
 
 If printing fails, see [I can't print, or my printer isn't listed](/apps/wordcraft/troubleshooting/#i-cant-print-or-my-printer-isnt-listed).
+
+## Change settings
+
+**File › Options** has a page for each kind of setting. These are the ones people look for:
+
+- **General**: **Interface theme** and **Interface size**, **Dark page (white text on black)**, **Show the Start screen when WordCraft starts**, and the **User name** and **Initials** that go on your comments and tracked changes.
+- **Display**: **Show all formatting marks**, **Show rulers**, and the printing options described above.
+- **Save**: **AutoSave documents you have saved in WordCraft** writes your changes to the file a moment after you stop typing. It's not available in the web version. Under **Privacy for this document**, **Remove my name from comments, changes and file properties when saving** keeps your name out of the saved file, and your open document keeps it.
+- **Accessibility**: the **Speed** of Read Aloud, and **Skip citations & bibliography**.
+- **Advanced**: **Recent documents to show**, **Measurement units**, **Show KeyTips (Alt or F10)**, **Animate the caret**, and **Show alignment guides when moving pictures and shapes**. **Keyboard shortcuts** and **Ribbon and Quick Access Toolbar** each have a **Customize…** button, to change a shortcut or the ribbon's layout. **User templates** sets the folder for your own templates.
+
+For spelling and the dictionaries folder, see [Languages and spelling](/apps/wordcraft/languages/).
 
 ## Open and save other formats
 

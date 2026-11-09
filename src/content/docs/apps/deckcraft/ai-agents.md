@@ -94,4 +94,10 @@ deckcraft-cli info deck.pptx                              # what's in a presenta
 deckcraft-cli commands format.                            # list commands
 ```
 
+`render` has a few more options. `--slide 2` draws one slide (counting from 0, so `--slide 2` is the third). `--scale` sets pixels per point (2 by default, so a 960 by 540 point slide becomes 1920 by 1080 pixels). `--transparent` leaves the background out, and `--edit` draws what the editor shows, including placeholder prompts. `render-transition` draws frames of a slide transition:
+
+```bash
+deckcraft-cli render-transition deck.deckcraft --slide 1 --t 0.25,0.5,0.75 fade.png
+```
+
 For scripting DeckCraft's commands, run `deckcraft-cli help run`, or see the [developer documentation on GitHub](https://github.com/storytold/deckcraft/blob/main/docs/mcp.md).

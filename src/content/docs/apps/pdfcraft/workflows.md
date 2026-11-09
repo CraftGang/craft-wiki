@@ -38,7 +38,7 @@ Choose **Edit a PDF**:
 
 ## Protect and redact
 
-- **Protect a PDF › Protect with password** sets a password to open the document, or one to change it, and chooses what people can do: print, change pages, copy text and so on. The password is applied when you save.
+- **Protect a PDF › Protect with password** sets a password to open the document, or one to change it, and chooses what people can do: print, change pages, copy text and so on. The password is applied when you save. To open a PDF that has one, enter the password when PdfCraft asks for it.
 - **Remove hidden information** lists things in the file you can't see on the page, such as metadata, so you can pick what to remove.
 - **Redact a PDF** blacks out text, pictures or whole pages. Mark what to remove with **Redact text and images**, or use **Find text and redact** to mark every match, then choose **Apply redactions**. **Sanitize document** removes everything hidden: metadata, attachments, comments, hidden text and layers, bookmarks, links and scripts. Form fields are flattened, so their values stay visible. Save afterwards: saving rewrites the whole file, so nothing removed stays in it.
 
@@ -64,11 +64,28 @@ A scanned page is a picture of words, so you can't search or copy it. Choose **S
 
 PdfCraft shows the words it found, coloured by how sure it is. Go through the uncertain ones with **Next uncertain** (**F8**), click a word to correct it, then press **Accept** to add the text to the PDF, or **Reject** to leave it out. OCR works best on Latin-script languages.
 
+To clean up a poor scan first, choose **Scan & OCR › Enhance scanned file**. It cleans the pictures in place, and the text, comments and links on the pages stay as they are. Pick the pages, then turn on what you need:
+
+- **Background removal** turns a gray or yellowed paper background white and darkens faint strokes. Move the slider to 0 to switch it off.
+- **Edge shadow removal** lightens shadows along the edges, such as a book's gutter.
+- **Despeckle** removes dust and scanner noise. It's the only filter that black-and-white scans take.
+
+Press **Enhance** to run it.
+
 ![The OCR screen: settings and the Run OCR, Accept and Reject buttons along the top, a scanned page in the middle with each word boxed in green or red by confidence, and the recognised words listed on the right](/assets/uploads/pdfcraft/ocr-verify.webp)
 
 ## More tools
 
-**View more** in the tools panel also has **Measure objects** (distance, perimeter and area), **Compare files**, **Use guided actions** (the **Action Wizard**), **Prepare for accessibility** (with **Check for accessibility** and tagging tools), and **Apply PDF standards › Save as PDF/A** for archiving.
+**View more** in the tools panel also has **Measure objects** (distance, perimeter and area), **Compare files** (see below), **Use guided actions** (the **Action Wizard**), **Prepare for accessibility** (with **Check for accessibility** and tagging tools), and **Apply PDF standards › Save as PDF/A** for archiving.
+
+### Compare two versions of a file
+
+1. Open both files, the older one first.
+2. Switch to the newer file, then choose **Compare files › Select files to compare** in the tools panel.
+3. Under **Old file**, pick the older version. To check only some pages of the new file, enter them under **Pages**.
+4. Press **Compare**.
+
+PdfCraft compares the text word by word and shades the differences on the new file. The **Compare** panel lists them. **Side by side** shows both files, and **New file only** shows only the new one. **Mark as comments** turns the differences into comments, and **Report…** saves them.
 
 ## Print
 
@@ -114,7 +131,20 @@ In the web version, **Printer** offers your browser's print dialog instead of a 
 
 ## Preferences
 
-Choose **Edit › Preferences…** (**Ctrl+,**). Among other things, you can change the **Interface language**, the **Interface size**, which side the tools panel and side panels are on, the **Default page display**, whether PdfCraft reopens the files you had open last time, and whether it checks for updates when it starts.
+Choose **Edit › Preferences…** (**Ctrl+,**). The search box at the top finds a setting by name. These are the ones you are most likely to look for:
+
+- **Interface language**, **Interface size**, and which side the **Tools panel side** and **Navigation rail side** are on.
+- **Reopen the files that were open when PdfCraft last closed**, and **Restore the last view** to return to the page, zoom and page display a document had.
+- **Reload documents when their files change on disk**, for files another program rewrites.
+- **Recent files to keep** sets the length of the recent list. At 0 there is no list.
+- **Default workspace mode**, **Default page display**, **Default zoom** and **Show gaps between pages** set how PDFs open. Turn on **Always use my default zoom and page layout** to ignore the layout a PDF asks for.
+- **Units** for page sizes and margins, and **Scroll speed** for the mouse wheel and arrow keys. **Invert middle-button drag** reverses panning with the middle button.
+- **Name on new comments** is the author shown on your comments.
+- **Flatten Fill & Sign when saving** makes text, marks and signatures part of the page when you save.
+- **Show a notice when a document is secured** controls the bar that tells you a document has restrictions.
+- **Enable Acrobat JavaScript** is explained under [Forms and signing](/apps/pdfcraft/forms-and-signing/#calculated-fields-dont-update).
+
+**Animation effects** can follow your system or be turned on or off. If **Use system title bar** is there, it shows a basic title bar for the window buttons instead of the tab strip.
 
 ## Keyboard shortcuts
 
@@ -124,7 +154,7 @@ On a Mac, use **⌘** in place of **Ctrl**. **Help › Keyboard shortcuts** list
 | --- | --- |
 | **Ctrl+O** | Open |
 | **Ctrl+S**, **Ctrl+Shift+S** | Save, save as |
-| **Ctrl+W** | Close the file |
+| **Ctrl+W**, **Ctrl+Shift+W** | Close the file, close all files |
 | **Ctrl+P** | Print |
 | **Ctrl+D** | Document properties |
 | **Ctrl+Z**, **Ctrl+Shift+Z** | Undo, redo |
@@ -133,9 +163,11 @@ On a Mac, use **⌘** in place of **Ctrl**. **Help › Keyboard shortcuts** list
 | **Ctrl+K** | Find tools and commands |
 | **Ctrl+Shift+N** | Go to page |
 | **Ctrl+1**, **Ctrl+2**, **Ctrl+0** | Actual size, fit to width, whole page |
+| **Ctrl+3** | Fit visible |
 | **Ctrl++**, **Ctrl+−** | Zoom in, zoom out |
 | **Ctrl+[**, **Ctrl+]** | Previous view, next view |
 | **Ctrl+B** | New bookmark |
 | **Ctrl+L** | Full screen |
 | **F4**, **Shift+F4** | Side panel, tools panel |
+| **Ctrl+J** | JavaScript console |
 | **Ctrl+,** | Preferences |

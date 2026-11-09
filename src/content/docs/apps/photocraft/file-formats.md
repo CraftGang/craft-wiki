@@ -58,6 +58,8 @@ JPEG XL is saved lossless. JPEG, WebP and other 8-bit formats can't hold 16 or 3
 
 When you save over a JPEG you opened with **File › Save**, PhotoCraft keeps its quality. A WebP stays lossy or lossless, as it was.
 
+Camera raw files open in a Camera Raw window first. See [Open camera raw files](/apps/photocraft/workflows/#open-camera-raw-files).
+
 ## Brushes, swatches and other presets
 
 **File › Open…** also loads presets from other apps:
@@ -69,6 +71,7 @@ When you save over a JPEG you opened with **File › Save**, PhotoCraft keeps it
 | Layer styles | `.asl` |
 | Swatches | `.aco`, `.act`, `.ase` |
 | Keyboard shortcuts | `.kys` |
+| Actions | `.atn` (load them from the **Actions** panel menu) |
 
 ## In the file dialog
 

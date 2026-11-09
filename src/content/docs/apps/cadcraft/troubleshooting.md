@@ -15,7 +15,28 @@ $env:WGPU_BACKEND = "vulkan"
 Remove-Item Env:WGPU_BACKEND   # go back to the default for later launches
 ```
 
-Avoid setting it to `"gl"`: on some AMD drivers that brings the crash back.
+Avoid setting it to `"gl"` for this problem: on some AMD drivers that brings the crash back.
+
+## The drawing is blank, objects are invisible or the window is black
+
+These graphics problems have been reported:
+
+- The window is black, with no tools ([#2490](https://github.com/storytold/cadcraft/issues/2490)).
+- The window is transparent and glitchy on CachyOS ([#2448](https://github.com/storytold/cadcraft/issues/2448)).
+- Objects disappear as soon as you draw them, in Windows inside a VMware virtual machine ([#2622](https://github.com/storytold/cadcraft/issues/2622)).
+
+You can choose the graphics backend with the `WGPU_BACKEND` variable: `dx12`, `vulkan` or `gl`. In the VMware case, `gl` fixed it and `vulkan` didn't start at all. See [the first entry on this page](#the-window-doesnt-open-on-windows) for how to set it in PowerShell. Try the backends one at a time. If none of them helps, [report it](https://github.com/storytold/cadcraft/issues) with your log attached.
+
+## Updating on Windows fails
+
+A Windows installer message that says "This app is already installed for everyone", or `winget upgrade` failing with error `0x8a150049` (MSI error 1603), means the installed copy and the update are for different people. Update with the same choice as the copy you have:
+
+- If you installed it for everyone, run the new installer and choose **Everyone on this computer**, or run `msiexec /i <file>.msi ALLUSERS=1` from an elevated terminal.
+- If you installed it for your account only, choose **Only for me**.
+
+To change who it's installed for, uninstall first. See [Windows](/apps/cadcraft/install-update/#windows).
+
+This is a known problem when you update with `winget` ([#2847](https://github.com/storytold/cadcraft/issues/2847)).
 
 ## "Graphics error" appears
 
@@ -82,6 +103,17 @@ CADCraft writes a log you can attach to a bug report.
 The current log is `cadcraft.log`. The log from the run before is `cadcraft.1.log`, so if CADCraft crashed, attach that one too.
 
 The folder above `logs` is CADCraft's settings folder.
+
+## Known problems, not fixed yet
+
+These are open. We'll update this list when they're fixed.
+
+- You can't bring back the menu bar after you hide it ([#2272](https://github.com/storytold/cadcraft/issues/2272), [#2628](https://github.com/storytold/cadcraft/issues/2628)). The right-hand panel can't be closed on its own ([#2274](https://github.com/storytold/cadcraft/issues/2274)), and the Reference Manager can't be closed once it's open ([#2273](https://github.com/storytold/cadcraft/issues/2273)).
+- The Flatpak can't use a 3D mouse, because its sandbox has no access to the device ([#2713](https://github.com/storytold/cadcraft/issues/2713)).
+- On macOS, double-clicking a DWG file doesn't open it ([#2892](https://github.com/storytold/cadcraft/issues/2892)). Open it with **File › Open...** in CADCraft.
+- On KDE Plasma, the **Open** file dialog can appear behind the CADCraft window, so CADCraft looks frozen ([#2642](https://github.com/storytold/cadcraft/issues/2642)). Switch to the dialog from the taskbar.
+- On Linux, interface text can slowly turn into garbled symbols until you restart ([#2777](https://github.com/storytold/cadcraft/issues/2777)).
+- On Windows, updating from the launcher or the `.msi` can stop with "This installation package could not be opened" ([#2754](https://github.com/storytold/cadcraft/issues/2754)).
 
 ## Still stuck?
 

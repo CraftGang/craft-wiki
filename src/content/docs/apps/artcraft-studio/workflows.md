@@ -27,6 +27,41 @@ To change part of an existing image, use **Edit Image** on **Home**, or **Edit I
 
 Video takes longer than images. The task queue in the top bar shows what's still generating.
 
+## Make 3D from an image
+
+Two cards on **Home** start from pictures:
+
+- **Image to 3D Object** turns reference images into a textured 3D asset.
+- **Image to 3D World** turns mood boards into a world you can explore.
+
+Results go to **My Library**. Look for them under the **Mesh** and **Splat** tabs.
+
+## Generate new camera angles
+
+**Angles** (marked **NEW**) makes new views of a single photo.
+
+1. Choose **Angles**, then **Upload media** or **Pick from Library**.
+2. Set the view with the **Rotation**, **Tilt** and **Zoom** sliders, or drag the sphere next to them.
+3. Choose a model and click **Generate**.
+
+The results collect in the history at the right. Click **Download** to save the one you are looking at, or **Change Image** to start from another photo.
+
+## Collect references on a moodboard
+
+**Moodboard** (marked **BETA**) is a space for gathering ideas.
+
+1. Choose **Moodboard**.
+2. Drag images in, paste them, or use **Upload** or **From library**. **Add note** and **New section** add text and groups.
+3. Select images and choose **Use as reference**. They are added to the prompt of **Create Image**, and ArtCraft Studio switches to it.
+
+Only images can be used as references, not notes.
+
+## Edit video on a timeline
+
+**Video Editor** (marked **BETA**) assembles clips on a timeline. Drop media onto the timeline, move the playhead to preview, and use the panels on the right to change properties, animations and effects. Click **Export** when you're done.
+
+The editor is still being built, so save often. Its keyboard shortcuts are under the project menu, in **Shortcuts**.
+
 ## Compose on the 2D canvas
 
 The **Image Editor** is a canvas for building a picture before you generate from it.
@@ -51,7 +86,27 @@ The **3D Stage** lets you set up characters, props and a camera, then generate a
 - **Tab** switches between **Build** and **Record** mode. In **Record** mode, **C** captures a still and **R** records a video.
 - **Save Scene** keeps your scene. **Load a Saved Scene** opens it again.
 
-The **Shortcuts** button lists every key. You can switch to a **Blender-like** set of keys in **Settings › Keybinds**. On a Mac, use **⌘** where these pages say **Ctrl**.
+Other keys: **Space** switches to the camera's view, **X** switches between local and world space, **K** turns on pose mode for a character, **N** turns snapping on and off, **H** shows or hides the grid, and **Ctrl+D** duplicates the selected object.
+
+The **Shortcuts** button lists every key. On a Mac, use **⌘** where these pages say **Ctrl**.
+
+### Animate on the 3D Stage
+
+In **Build** mode, the timeline lets you move things over time. Press **Shift+T**, or use **Expand timeline**, to open it.
+
+1. Select an object.
+2. Move the playhead to a time, then click **Add keyframe at playhead** (or press **I**).
+3. Move or pose the object. Add more keyframes at other times.
+4. Press **Space** to play and pause. **←** and **→** step one frame, and **Home** and **End** jump to the start and the end. **Set timeline duration (seconds)** changes the length.
+
+To capture the animation as a video, switch to **Record** mode with **Tab**.
+
+### Choose a set of keys
+
+**Settings › Keybinds** has two sets:
+
+- **Gamer** is the default. **W**, **A**, **S** and **D** move the camera, and **T**, **R** and **G** move, rotate and scale.
+- **Blender-like** moves the camera with the numpad: **8** forward, **2** back, **4** left, **6** right, **9** up and **3** down. The digit row works as the numpad too. **G** grabs, **R** rotates and **S** scales, and **\\** switches between local and world space.
 
 ## My Library
 
@@ -59,7 +114,12 @@ The **Shortcuts** button lists every key. You can switch to a **Blender-like** s
 
 Click an item to view it. From there you can **Download** it, or take it further: **Recreate**, **Edit Image**, **Make Video**, **Remove BG**, **Make 3D**, **Make 3D World** or **Add to Scene**.
 
-Downloads go to your system's **Downloads** folder. In **Settings › Downloads** you can choose another folder, turn on **Auto Download**, or have ArtCraft Studio ask where to save each file.
+Downloads go to your system's **Downloads** folder. In **Settings › Downloads** you can:
+
+- Choose another folder with **Choose Directory**, or go back with **Use Default**.
+- Turn on **Auto Download** to save every generation as soon as it finishes.
+- Turn on **Ask location before download** to pick the folder for each file.
+- Choose how files are named under **Preferred download naming scheme**. **ArtCraft convention** names them like `{model}_{date}`. **Custom format** lets you build the name from `{model}`, `{date}`, `{YYYY}`, `{YY}`, `{MM}`, `{DD}`, `{HH}`, `{mm}`, `{SS}` and `{batch_index}`, then click **Save format**. The extension is added for you.
 
 ## Credits and plans
 
@@ -77,6 +137,17 @@ You can generate with your own Grok or Midjourney account.
 
 To remove the connection, click **Disconnect**. ArtCraft Studio doesn't ask for API keys: you sign in to the service itself.
 
+To switch to another ArtCraft account, click **Log Out** in the same **Accounts** section, then log in again.
+
 ## Settings
 
-Open **Settings** with the gear in the top bar. Its sections are **General**, **Downloads**, **Accounts**, **Plan & Credits**, **Appearance** (themes), **Keybinds**, **Alerts** and **About**.
+Open **Settings** with the gear in the top bar. Its sections are:
+
+- **General**: **Enter to generate**, **Group models by family** (turn it off to see one flat list of models), and **Keep shortcut cheatsheet open**.
+- **Downloads**: where and how files are saved. See [My Library](#my-library).
+- **Accounts**: your ArtCraft login and connected services.
+- **Plan & Credits**: your plan and balance.
+- **Appearance**: the themes **Default**, **Aurora** and **Sunset**.
+- **Keybinds**: the key sets described above.
+- **Alerts**: sounds for **Delete File Sound**, **Enqueue Success Sound**, **Enqueue Failure Sound**, **Generation Success Sound** and **Generation Failure Sound**.
+- **About**: your version, operating system, and the data and downloads folders.
