@@ -38,7 +38,7 @@ Smart selection runs on your computer. It needs no account and no internet conne
 
 Then refine the selection:
 
-- **Select › Inverse Selection** swaps what is and isn't selected.
+- **Select › Inverse** (**Ctrl+Shift+I**) swaps what is and isn't selected.
 - **Select › Modify** has **Border…**, **Smooth…**, **Expand…**, **Contract…** and **Feather…**. Feather softens the edge.
 - **Select › Select and Mask…** refines a difficult edge, such as hair.
 - **Select › Deselect** (**Ctrl+D**) removes the selection. **Select › Reselect** brings it back.
@@ -136,9 +136,9 @@ To preview how the image will look in another color space, choose **View › Pro
 
 ## Open camera raw files
 
-When you open a camera raw file with **File › Open…**, a Camera Raw window opens first. Adjust the photo there and click **Open**, or click **Cancel** to close the file again. To change this, open **Edit › Preferences › Camera Raw…**.
+When you open a camera raw file with **File › Open…**, a **RAW Develop** window opens first. Adjust the photo there and click **Open**, or click **Cancel** to close the file again. To change this, open **Edit › Preferences › RAW Defaults…**.
 
-You can also run the same controls on any layer with **Filter › Camera Raw Filter…** (**Ctrl+Shift+A**).
+You can also run the same controls on any layer with **Filter › RAW Develop Filter…** (**Ctrl+Shift+A**).
 
 ## Record and replay actions
 
@@ -220,7 +220,7 @@ PhotoCraft doesn't run Photoshop plug-ins, and it has no **Extensions** menu. It
 | **File Handling…** | Recovery saves and PSD options |
 | **Performance…** | **Rendering Mode**, memory use and the Linux display server |
 | **Scratch Disks…** | Where PhotoCraft puts the part of a big file that doesn't fit in memory |
-| **Camera Raw…** | How raw files open |
+| **RAW Defaults…** | How raw files open |
 | **Plugins…** | The folder of extra plug-ins |
 
 Others are **Workspace…**, **Tools…**, **History Log…**, **Export…**, **Cursors…**, **Transparency & Gamut…**, **Units & Rulers…**, **Guides, Grid & Slices…** and **Type…**.
