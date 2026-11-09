@@ -1,6 +1,16 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import worker, { checkGraphql, createSession, readSession } from './index.js';
+import worker, {
+  checkGraphql,
+  createGitHubAppJwt,
+  createSession,
+  getGitHubInstallationToken,
+  getServerToken,
+  importAppPrivateKey,
+  isConfigured,
+  readSession,
+  resetTokenCache,
+} from './index.js';
 
 const session = { sub: '42', login: 'ada', name: 'Ada', avatar: null };
 const env = {
@@ -111,4 +121,78 @@ test('sign-in only succeeds with the editor role', async (t) => {
 
 test('everything else is served from the static site', async () => {
   assert.equal(await (await worker.fetch(new Request('https://craft.wiki/apps/'), env)).text(), 'asset');
+});
+
+test('GitHub App JWT generation and installation token caching', async (t) => {
+  resetTokenCache();
+  const keyPair = await crypto.subtle.generateKey(
+    { name: 'RSASSA-PKCS1-v1_5', modulusLength: 2048, publicExponent: new Uint8Array([1, 0, 1]), hash: 'SHA-256' },
+    true,
+    ['sign', 'verify'],
+  );
+  const exportedPkcs8 = await crypto.subtle.exportKey('pkcs8', keyPair.privateKey);
+  const pem = `-----BEGIN PRIVATE KEY-----\n${Buffer.from(exportedPkcs8).toString('base64')}\n-----END PRIVATE KEY-----`;
+
+  // 1. Verify key import and JWT signing
+  const importedKey = await importAppPrivateKey(pem);
+  const jwt = await createGitHubAppJwt('5674369', importedKey, 1_000_000_000);
+  const [headerB64, payloadB64, sigB64] = jwt.split('.');
+  assert.ok(headerB64 && payloadB64 && sigB64);
+  const payload = JSON.parse(Buffer.from(payloadB64, 'base64url').toString('utf8'));
+  assert.equal(payload.iss, '5674369');
+  assert.equal(payload.iat, 1_000_000 - 60);
+  assert.equal(payload.exp, 1_000_000 + 600);
+
+  // Verify JWT signature using public key
+  const valid = await crypto.subtle.verify(
+    'RSASSA-PKCS1-v1_5',
+    keyPair.publicKey,
+    Buffer.from(sigB64, 'base64url'),
+    new TextEncoder().encode(`${headerB64}.${payloadB64}`),
+  );
+  assert.equal(valid, true);
+
+  // 2. Verify token fetching and caching
+  let fetchCount = 0;
+  t.mock.method(globalThis, 'fetch', async (url, init) => {
+    fetchCount += 1;
+    assert.match(String(url), /\/app\/installations\/180020940\/access_tokens$/);
+    assert.match(init.headers.Authorization, /^Bearer /);
+    return new Response(JSON.stringify({ token: 'ghs_cached_test_token', expires_at: new Date(Date.now() + 3600 * 1000).toISOString() }));
+  });
+
+  const appEnv = {
+    GITHUB_APP_ID: '5674369',
+    GITHUB_APP_INSTALLATION_ID: '180020940',
+    GITHUB_APP_PRIVATE_KEY: pem,
+    SESSION_SECRET: 'secret',
+    DISCORD_CLIENT_ID: '1',
+    DISCORD_CLIENT_SECRET: 'secret',
+    DISCORD_GUILD_ID: '2',
+    DISCORD_ROLE_ID: '3',
+  };
+
+  assert.equal(isConfigured(appEnv), true);
+  const token1 = await getServerToken(appEnv);
+  assert.equal(token1, 'ghs_cached_test_token');
+  assert.equal(fetchCount, 1);
+
+  // Second call within expiry should use cache
+  const token2 = await getServerToken(appEnv);
+  assert.equal(token2, 'ghs_cached_test_token');
+  assert.equal(fetchCount, 1);
+
+  // 3. Verify proxyGithub uses the installation token
+  const seenHeaders = [];
+  t.mock.method(globalThis, 'fetch', async (url, init) => {
+    seenHeaders.push([String(url), init?.headers?.get('Authorization')]);
+    return new Response('{}');
+  });
+
+  const userToken = await createSession(session, 'secret');
+  await worker.fetch(request('/api/github/api/v3/repos/storytold/craft-wiki', userToken), appEnv);
+  assert.deepEqual(seenHeaders, [
+    ['https://api.github.com/repos/storytold/craft-wiki', 'token ghs_cached_test_token'],
+  ]);
+  resetTokenCache();
 });

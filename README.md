@@ -104,7 +104,7 @@ The CMS hardcodes its sign-in labels and offers no option to rename them, so `sc
 [`worker/index.js`](worker/index.js) handles this:
 
 1. `/api/auth` signs the person in with Discord and checks the role in `DISCORD_ROLE_ID`. It issues a signed session that lasts 8 hours, so someone who loses the role keeps access until it expires. Discord may finish in a new tab, for example after handing off to its desktop app, so the page then saves the session itself and opens `/admin/`.
-2. `/api/github/` is the editor's GitHub API. Sessions use the Worker's `GITHUB_TOKEN`, which never reaches the browser. They can read the repository and can commit only to `src/content/docs/apps/` and `public/assets/uploads/` on `main`. Each commit body names the Discord user, because the commit itself belongs to the token's GitHub account.
+2. `/api/github/` is the editor's GitHub API. Sessions use an installation token from the Craft Wiki GitHub App (or legacy `GITHUB_TOKEN`), which never reaches the browser. They can read the repository and can commit only to `src/content/docs/apps/` and `public/assets/uploads/` on `main`. Each commit body names the Discord user, because the commit itself belongs to the GitHub App (`Craft Wiki[bot]`).
 3. GitHub tokens from maintainers and contributors pass through this route unchanged and are not stored.
 
 The Discord application is ArtCraft FredBot. Its OAuth2 settings need the redirect `https://craft.wiki/api/auth/callback`. The bot itself does not need to run. The IDs are in `wrangler.jsonc`, and these Worker secrets are set in Cloudflare, never in this repository:
@@ -112,8 +112,12 @@ The Discord application is ArtCraft FredBot. Its OAuth2 settings need the redire
 | Secret | Value |
 | --- | --- |
 | `DISCORD_CLIENT_SECRET` | The application's OAuth2 client secret |
-| `GITHUB_TOKEN` | A fine-grained token for `storytold/craft-wiki` with **Contents: Read and write** |
+| `GITHUB_APP_ID` | The Craft Wiki GitHub App ID |
+| `GITHUB_APP_INSTALLATION_ID` | The GitHub App installation ID on `storytold/craft-wiki` |
+| `GITHUB_APP_PRIVATE_KEY` | The GitHub App's private key PEM (PKCS#1 or PKCS#8) |
 | `SESSION_SECRET` | A long random value. Changing it signs everyone out |
+
+Setting `GITHUB_TOKEN` (fine-grained personal access token with **Contents: Read and write**) is also supported as a fallback if the GitHub App secrets are not set.
 
 Until they are set, the button reports that sign-in is not configured and token sign-in keeps working. Run the Worker's tests with `node --test worker/index.test.mjs`.
 
