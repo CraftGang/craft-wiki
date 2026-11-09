@@ -46,7 +46,7 @@ Download `designcraft-<ver>-macos-universal.dmg`, open it, and drag **DesignCraf
 
 Every format also has an ARM64 build (`aarch64` in place of `x86_64`). For RISC-V there is a `.deb`, an `.rpm` and a tarball, with `riscv64` in the name. The RISC-V build needs Ubuntu 24.04, or another system with glibc 2.39 or newer.
 
-**Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-gfx/designcraft-bin` and `media-gfx/designcraft`. It is not maintained by the DesignCraft team.
+**Gentoo**: the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-gfx/designcraft-bin` and `media-gfx/designcraft`. It is not maintained by the DesignCraft team.
 
 ### FreeBSD
 
