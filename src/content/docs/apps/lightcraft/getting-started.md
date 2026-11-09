@@ -11,7 +11,7 @@ The quickest way is [ArtCraft Launcher](https://github.com/storytold/craft-launc
 
 ## 2. Open LightCraft
 
-LightCraft opens your library, a folder at `Pictures/LightCraft Library` in your home folder. A new library starts with a few demo photos, so you can try things out straight away.
+LightCraft opens your library, a folder at `Pictures/LightCraft Library` in your home folder. A new library starts with a few demo photos, so you can try things out right away.
 
 The sidebar on the left lists **All Photos**, **Recently Added**, **Picks**, your **Albums**, **By Date** and **Recently Deleted**.
 

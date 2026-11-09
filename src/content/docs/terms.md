@@ -3,7 +3,7 @@ title: Terms of use
 description: The terms for using and contributing to Craft Wiki.
 ---
 
-_Last updated: 7 November 2026_
+_Last updated: November 7, 2026_
 
 These terms cover your use of craft.wiki ("the wiki"), which ArtCraft ("we", "us") runs. By using the wiki, you agree to them. If you do not agree, please do not use the wiki.
 
@@ -46,8 +46,8 @@ We respect copyright and respond to notices under the US Digital Millennium Copy
 2. a description of the copyrighted work you believe is infringed;
 3. the address of the page containing the material;
 4. your name, address, telephone number, and email address;
-5. a statement that you believe in good faith the use is not authorised by the copyright owner, its agent, or the law;
-6. a statement, under penalty of perjury, that the information in your notice is accurate and that you are the copyright owner or authorised to act for them.
+5. a statement that you believe in good faith the use is not authorized by the copyright owner, its agent, or the law;
+6. a statement, under penalty of perjury, that the information in your notice is accurate and that you are the copyright owner or authorized to act for them.
 
 If your contribution was removed and you believe that was a mistake, you may send a counter-notice to the same address. We may remove editing access from people who repeatedly infringe.
 

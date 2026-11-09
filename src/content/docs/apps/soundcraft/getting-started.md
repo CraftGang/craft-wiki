@@ -11,7 +11,7 @@ The quickest way is [ArtCraft Launcher](https://github.com/storytold/craft-launc
 
 ## 2. Play the demo song
 
-SoundCraft opens on an empty session called **Untitled**. To hear what it can do, choose **File › New**, select **Start from the demo session**, and press **Create**. The demo song has drums, bass, a pad, keys and a lead, a reverb aux and a master fader. Every sound in it is synthesised by SoundCraft itself.
+SoundCraft opens on an empty session called **Untitled**. To hear what it can do, choose **File › New**, select **Start from the demo session**, and press **Create**. The demo song has drums, bass, a pad, keys and a lead, a reverb aux and a master fader. Every sound in it is synthesized by SoundCraft itself.
 
 Press **Space** to play and **Space** again to stop.
 

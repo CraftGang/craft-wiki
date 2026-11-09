@@ -19,7 +19,7 @@ SoundCraft is in pre-alpha. Editing, mixing, bouncing, and saving and reopening 
 - **Mixing**: faders, pan, sends, busses, aux inputs, master faders, VCAs and folders, with automatic delay compensation for plugins.
 - **Automation**: volume, pan, mute, sends and plugin parameters, drawn by hand or recorded from the faders.
 - **Plugins**: EQs, dynamics, reverbs, delay, modulation and more, all built in. It also loads CLAP and VST3 plugins, and Audio Units on a Mac.
-- **Instruments and MIDI**: a subtractive synth, a drum synth and a sampler; a MIDI editor with a velocity lane, a score view, quantise and transpose; Standard MIDI File import and export.
+- **Instruments and MIDI**: a subtractive synth, a drum synth and a sampler; a MIDI editor with a velocity lane, a score view, quantize and transpose; Standard MIDI File import and export.
 - **Recording**: punch in, pre- and post-roll, loop recording, and input monitoring.
 - **Video**: a video track with thumbnails, and a **Video** window that follows the playhead.
 - **Bounce**: the mix to WAV, AIFF or FLAC, with the peak and loudness (LUFS) reported when it's done.

@@ -81,7 +81,7 @@ Effects are listed under the layer in the **Layers** panel. **Layer › Layer St
 
 ## Use filters
 
-The **Filter** menu has blurs, sharpening, noise, distortions such as **Twirl** and **Wave**, pixelate, stylise and render filters. Filter dialogs preview on the canvas as you change them. If there is a selection, the filter only changes the selected area.
+The **Filter** menu has blurs, sharpening, noise, distortions such as **Twirl** and **Wave**, pixelate, stylize and render filters. Filter dialogs preview on the canvas as you change them. If there is a selection, the filter only changes the selected area.
 
 ![The Twirl filter dialog with Angle set to 320 and Preview checked. On Van Gogh's The Starry Night, the twirl shows live only inside a circular selection](/assets/uploads/photocraft/filters.webp)
 
@@ -104,7 +104,7 @@ To change the size of the whole image, use **Image › Image Size…**. To add s
 
 ![The Export As dialog in the light theme over Klimt's The Kiss. Format is JPG at Quality 90 and Scale 50%, giving 1199 × 1200 px, and the preview reads JPG ≈ 684K](/assets/uploads/photocraft/export.webp)
 
-**File › Export › Quick Export as PNG** exports straight away, using the settings in **File › Export › Export Preferences…**.
+**File › Export › Quick Export as PNG** exports right away, using the settings in **File › Export › Export Preferences…**.
 
 To export one layer, use **Layer › Export As…** or **Layer › Quick Export as PNG**. With several layers or artboards selected, each one is exported as its own file.
 

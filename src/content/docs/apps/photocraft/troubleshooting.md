@@ -9,7 +9,7 @@ sidebar:
 
 PhotoCraft draws with your graphics card, so a graphics driver problem can stop it starting. Start it again: if the last start didn't finish, PhotoCraft picks a safer graphics mode by itself.
 
-- **Windows**: Vulkan, then DirectX 12, then the CPU. On Intel and Qualcomm graphics, PhotoCraft starts on DirectX 12 straight away.
+- **Windows**: Vulkan, then DirectX 12, then the CPU. On Intel and Qualcomm graphics, PhotoCraft starts on DirectX 12 right away.
 - **Linux**: Vulkan, then OpenGL, then the CPU.
 - **macOS**: Metal, then the CPU.
 

@@ -12,7 +12,7 @@ This page shows how to start a new document from a preset or your own size, then
 
 1. Choose **File → New…** (**Ctrl+N**, or **Cmd+N** on macOS). The **New Document** dialog opens.
 2. Pick a category along the top: **Recent**, **Saved**, **Mobile**, **Web**, **Print**, **Film & Video**, **Art & Illustration**, **Branding** or **Social**.
-3. Click a preset card. A double-click on a card creates the document straight away.
+3. Click a preset card. A double-click on a card creates the document right away.
 4. Under **PRESET DETAILS**, change the name, **Width**, **Height**, units, **Orientation** and number of **Artboards** as needed.
 5. Click **Create**.
 

@@ -112,7 +112,7 @@ An asset is a piece of art that Export for Screens exports on its own, cropped t
 1. Select the art you want to export.
 2. Choose **Object → Collect for Export → As Single Asset** to make one asset of the whole selection, or **As Multiple Assets** to make one asset per object. Each asset is named after its object, or Asset 1, Asset 2 and so on.
 3. Choose **Window → Asset Export** to see the document's assets as thumbnails with their names.
-4. In the panel, double-click an asset to rename it. Click to select assets, and hold **Shift** or **Ctrl** (**Cmd** on macOS) to add to the selection. The bin removes the selected assets from the panel, and their art stays in the document.
+4. In the panel, double-click an asset to rename it. Click to select assets, and hold **Shift** or **Ctrl** (**Cmd** on macOS) to add to the selection. The trash icon removes the selected assets from the panel, and their art stays in the document.
 5. Set the format rows under **Export Settings**. The panel shares its rows with Export for Screens.
 6. Choose **Export** to write the selected assets (or all of them when none is selected) to a folder you pick. With assets selected, the button reads **Export N Selected**. The Export for Screens button in the panel opens the dialog on its **Assets** tab instead.
 
@@ -367,7 +367,7 @@ The settings column has these options. The rows change with the format.
 
 | Option | Formats | Choices |
 |---|---|---|
-| **Preset:** | All | The built-in presets for GIF, JPEG, PNG-8 and PNG-24, then the presets you saved. It reads [Unnamed] when the settings match no preset. The disk button shows a **Name:** field with **Save**, and the bin deletes the saved preset that is shown. |
+| **Preset:** | All | The built-in presets for GIF, JPEG, PNG-8 and PNG-24, then the presets you saved. It reads [Unnamed] when the settings match no preset. The disk button shows a **Name:** field with **Save**, and the trash icon deletes the saved preset that is shown. |
 | **Format:** | All | GIF (the default), JPEG, PNG-8 or PNG-24 |
 | **Reduction:** | GIF, PNG-8 | Perceptual, Selective (the default), Adaptive, Web, Black & White or Grayscale |
 | **Colors:** | GIF, PNG-8 | 2 to 256 (default 128), from the list or typed |
