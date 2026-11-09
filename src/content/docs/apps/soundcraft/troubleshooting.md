@@ -72,6 +72,19 @@ The current log is `soundcraft.log`. The log from the run before is `soundcraft.
 
 The folder above `logs` is SoundCraft's settings folder. It also holds autosaves and your plugin presets. With the portable zip and a `portable.txt` file, it's the `SoundCraftData` folder next to the app.
 
+## Known problems, not fixed yet
+
+- Large sessions can run out of memory, because every audio file is loaded fully into RAM: [#1403](https://github.com/storytold/soundcraft/issues/1403).
+- Saving a session fails on Bazzite Linux: [#1405](https://github.com/storytold/soundcraft/issues/1405).
+- Opening a session fails on macOS: [#1340](https://github.com/storytold/soundcraft/issues/1340).
+- **Setup › Preferences** doesn't open for some people: [#1413](https://github.com/storytold/soundcraft/issues/1413).
+- No sound in the Linux snap: [#1366](https://github.com/storytold/soundcraft/issues/1366).
+- VST3 plugins aren't found and Audio Units don't open: [#1387](https://github.com/storytold/soundcraft/issues/1387).
+- CLAP plugins fail to load: [#1331](https://github.com/storytold/soundcraft/issues/1331).
+- A VST3 instrument can use every processor core after you stop playback on Windows: [#1358](https://github.com/storytold/soundcraft/issues/1358).
+- Time stretch does nothing: [#1404](https://github.com/storytold/soundcraft/issues/1404).
+- Playlists can't be soloed, and you can't move parts of one to the main playlist: [#1253](https://github.com/storytold/soundcraft/issues/1253).
+
 ## Still stuck?
 
 - Ask in the [ArtCraft Discord](https://discord.gg/artcraft).

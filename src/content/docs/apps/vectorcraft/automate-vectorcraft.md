@@ -3,6 +3,7 @@ title: Automate VectorCraft
 description: Find and run any command by name, change keyboard shortcuts, record and replay actions, run an action on a folder of files, check a script before you run it, and run VectorCraft from the command line or an MCP client.
 sidebar:
   order: 23
+parent: workflows
 ---
 
 This guide shows you how to find any command by typing part of its name, give tools, commands and panels your own keyboard shortcuts, record a series of steps as an action and play it on one document or on a whole folder of files, and check a script file before you run it. It then covers `vectorcraft-cli`, which runs the same commands without opening a window, and the Model Context Protocol (MCP) server, which other programs use to control VectorCraft.

@@ -48,5 +48,12 @@ To see which version you have, open **Settings** and choose **About**.
 
 - **Windows**: in **Settings › Apps**, find ArtCraft and choose **Uninstall**.
 - **macOS**: move **ArtCraft** from Applications to the Trash.
+- **Linux**: remove the package with your package manager. For the Flatpak, run `flatpak uninstall ai.artcraft.app`. For the AppImage or the tarball, delete the file or the unpacked folder.
 
 Your downloads are not touched. ArtCraft Studio keeps its own data in the `Artcraft` folder in your home folder; delete that folder to remove it too.
+
+That folder holds your assets, saved logins, downloads, settings and temporary files. It can grow large, and you can't move it yet. **Settings › About** shows where it is.
+
+## Check a download
+
+`SHA256SUMS.txt` on the release page lists a checksum for every file. If your antivirus flags a download, compare the file's checksum with that list. The Linux files and `SHA256SUMS.txt` also have signature files ending in `.asc`. To check the list with GnuPG, import `release-signing-key.asc`, then run `gpg --verify SHA256SUMS.txt.asc SHA256SUMS.txt`.

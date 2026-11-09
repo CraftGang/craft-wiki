@@ -13,6 +13,10 @@ The quickest way is [ArtCraft Launcher](https://github.com/storytold/craft-launc
 
 PdfCraft starts on its **Home** page, with recommended tools and your recent files. Click **Open file**, press **Ctrl+O** (**⌘O** on a Mac), or drop a PDF anywhere in the window. Each PDF opens in its own tab at the top. The house button at the top left brings Home back.
 
+If a PDF needs a password to open, PdfCraft asks for it first. Enter it and choose **Open**.
+
+To keep a folder at hand, such as where your scanner or a synced cloud drive saves PDFs, choose **File › Pin folder to Home…** and pick it. Home then lists that folder's newest PDFs.
+
 ## 3. Find your way around
 
 - The menus at the top left are **File**, **Edit**, **View**, **Sign**, **Window** and **Help**. On a Mac they are in the menu bar at the top of the screen.
@@ -40,5 +44,5 @@ PdfCraft saves a copy of unsaved changes every minute. If it closes unexpectedly
 ## Next steps
 
 - [Workflows](/apps/pdfcraft/workflows/): comments, editing, protecting, converting and OCR.
-- [Organise pages](/apps/pdfcraft/organize-pages/): reorder, combine and split.
+- [Organize pages](/apps/pdfcraft/organize-pages/): reorder, combine and split.
 - [Forms and signing](/apps/pdfcraft/forms-and-signing/): fill in and sign forms.

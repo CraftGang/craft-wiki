@@ -21,7 +21,7 @@ CADCraft opens with a new, empty drawing. Around it you'll find:
 To look around a finished drawing first, choose **Help › Open Sample Drawing**. The **Start** tab, next to your drawing's tab, also lets you open a drawing, start a new one or a new metric one, and reopen recent files.
 
 :::note
-New drawings use inches. To start in millimetres, choose **New (metric)** on the **Start** tab, or set **Units of new drawings** in **Tools › Options › Open and Save**.
+New drawings use inches. To start in millimeters, choose **New (metric)** on the **Start** tab, or set **Units of new drawings** in **Tools › Options › Open and Save**.
 :::
 
 ## 3. Draw at the command line
@@ -34,7 +34,7 @@ circle 5,2 1
 zoom e
 ```
 
-The first draws a closed triangle: it starts at 0,0, goes 10 units right, then 5 up, and `c` closes it. The second draws a circle with its centre at 5,2 and a radius of 1. `zoom e` zooms to fit the whole drawing.
+The first draws a closed triangle: it starts at 0,0, goes 10 units right, then 5 up, and `c` closes it. The second draws a circle with its center at 5,2 and a radius of 1. `zoom e` zooms to fit the whole drawing.
 
 A few things that work as CAD users expect:
 

@@ -9,6 +9,8 @@ backend:
   auth_scope: public_repo
   open_authoring: true
 publish_mode: editorial_workflow
+output:
+  omit_empty_optional_fields: true
 media_folder: public/assets/uploads
 public_folder: /assets/uploads
 collections:
@@ -22,6 +24,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: photocraft
     label: PhotoCraft
@@ -33,6 +37,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: vectorcraft
     label: VectorCraft
@@ -44,6 +50,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: filmcraft
     label: FilmCraft
@@ -55,6 +63,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: lightcraft
     label: LightCraft
@@ -66,6 +76,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: pdfcraft
     label: PdfCraft
@@ -77,6 +89,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: effectcraft
     label: EffectCraft
@@ -88,6 +102,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: designcraft
     label: DesignCraft
@@ -99,6 +115,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: figcraft
     label: FigCraft
@@ -110,6 +128,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: texturecraft
     label: TextureCraft
@@ -121,6 +141,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: materialcraft
     label: MaterialCraft
@@ -132,6 +154,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: wordcraft
     label: WordCraft
@@ -143,6 +167,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: soundcraft
     label: SoundCraft
@@ -154,6 +180,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: deckcraft
     label: DeckCraft
@@ -165,6 +193,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: cadcraft
     label: CADCraft
@@ -176,6 +206,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: gridcraft
     label: GridCraft
@@ -187,6 +219,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: craft-anything
     label: Craft Anything
@@ -198,6 +232,8 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
   - name: solidcraft
     label: SolidCraft (Third-Party)
@@ -209,4 +245,6 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }

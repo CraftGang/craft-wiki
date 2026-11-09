@@ -3,6 +3,7 @@ title: Fill, stroke and color
 description: Paint fills and strokes, find and save colors, style strokes, build gradients and meshes, and set opacity and blending.
 sidebar:
   order: 13
+parent: workflows
 ---
 
 On this page you paint the inside and the outline of your art, save the colors you use as swatches, and change how strokes look. You also find colors that go together, build linear, radial, freeform and mesh gradients, mask and blend art, and adjust the colors of finished artwork.

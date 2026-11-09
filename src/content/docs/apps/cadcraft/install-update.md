@@ -29,7 +29,17 @@ Only download CADCraft from [storytold/cadcraft](https://github.com/storytold/ca
 
 By default, the installer installs CADCraft for your account only and doesn't need administrator rights. To install it for everyone on the computer, choose **Everyone on this computer** on the first page; this asks for an administrator. You can only have one copy installed, so to switch between the two, uninstall first.
 
-The installer adds CADCraft to the Start menu. Tick **Create a desktop shortcut** if you want one too.
+The installer adds CADCraft to the Start menu. Select **Create a desktop shortcut** if you want one too.
+
+To install without any windows, run this from a terminal:
+
+```powershell
+msiexec /i cadcraft-<ver>-windows-x64.msi /qn DESKTOPSHORTCUT=1
+```
+
+A silent install is for your account only. Add `ALLUSERS=1` from an elevated terminal for an install for everyone. `DESKTOPSHORTCUT=1` adds the desktop shortcut.
+
+An update has to use the same choice as the copy that's already installed. If you installed for everyone, update with **Everyone on this computer** or `ALLUSERS=1`. If you get "This app is already installed for everyone", see [Updating on Windows fails](/apps/cadcraft/troubleshooting/#updating-on-windows-fails).
 
 The installers and programs are code-signed.
 
@@ -47,13 +57,22 @@ The command-line tool, `cadcraft-cli`, is a separate download: `cadcraft-cli-<ve
 | Flatpak | `cadcraft-<ver>-linux-x86_64.flatpak` | Install with `flatpak install --user <file>` |
 | Debian, Ubuntu | `cadcraft-<ver>-linux-x86_64.deb` | |
 | Fedora, RHEL, openSUSE | `cadcraft-<ver>-linux-x86_64.rpm` | |
+| Arch Linux | `cadcraft-<ver>-linux-x86_64.pkg.tar.zst` | |
 | Tarball | `cadcraft-<ver>-linux-x86_64.tar.gz` | Unpack anywhere |
 
-Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are RISC-V `.deb`, `.rpm` and tarball builds too, for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
+Every format also has an ARM64 build (`aarch64` in place of `x86_64`). RISC-V (`riscv64`) has a tarball, a `.deb` and an `.rpm`, for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
+
+The release also has `.zsync` files, which AppImageUpdate uses, and container image files (`.oci-manifest.json` and `.oci.sig`). You don't need them to install CADCraft.
+
+If you installed the Flatpak, run the command-line tool with `flatpak run --command=cadcraft-cli ai.storyteller.cadcraft`.
+
+#### Check the signatures
+
+Most Linux files have a signature file next to them: `.asc` for most, `.sig` for the Arch package. The release's `release-signing-key.asc` is the public key to check them with.
 
 ### FreeBSD
 
-Download `cadcraft-<ver>-freebsd-x86_64.tar.gz`, or `cadcraft-<ver>-freebsd-aarch64.tar.gz` for ARM64, and unpack it. The ARM64 build can't open or save DWG files yet (use DXF).
+Download `cadcraft-<ver>-freebsd-x86_64.tar.gz` (or `cadcraft-<ver>-freebsd-aarch64.tar.gz` for ARM64) and unpack it. The ARM64 build can't open or save DWG files yet (use DXF).
 
 ### In a browser
 

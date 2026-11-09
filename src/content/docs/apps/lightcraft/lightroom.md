@@ -17,12 +17,12 @@ LightCraft reads Lightroom Classic catalogs (`.lrcat` files) directly. You don't
 One **Edit › Undo** reverses the whole import.
 
 :::note
-If you always want catalogs added to the open library, tick **Don't ask again**. To be asked again, change it in **Settings › General**.
+If you always want catalogs added to the open library, select **Don't ask again**. To be asked again, change it in **Settings › General**.
 :::
 
 ## What comes across
 
-- Ratings, picks and rejects, and colour labels
+- Ratings, picks and rejects, and color labels
 - Keywords, including nested ones, and other metadata
 - Collections and collection sets, which become albums
 - Virtual copies

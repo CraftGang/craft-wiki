@@ -25,7 +25,9 @@ Every build is on GridCraft's [latest release](https://github.com/storytold/grid
 
 By default, the installer installs GridCraft for your account only and doesn't need administrator rights. To install it for everyone on the computer, choose **Everyone on this computer** on the first page; this asks for an administrator. You can only have one copy installed, so to switch between the two, uninstall first.
 
-The installer can also add a desktop shortcut. It's unticked unless you tick it. The installers and programs are code-signed.
+The installer can also add a desktop shortcut. It's off unless you select it. The installers and programs are code-signed.
+
+A silent install is for your account only. To install for everyone, add `ALLUSERS=1` to the `msiexec` command from an elevated terminal.
 
 After installing, GridCraft appears in **Open with** for .xlsx, .xlsm, .csv and .tsv files. It doesn't make itself the default app for them; choose it in **Settings › Apps › Default apps** if you want it to be.
 
@@ -48,9 +50,15 @@ GridCraft appears in **Open With** for spreadsheet files, without replacing the 
 
 Every format also has an ARM64 build (`aarch64` in place of `x86_64`). For RISC-V there are `riscv64` `.deb`, `.rpm` and tarball builds. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
 
+You can check a download's signature too. The release has `release-signing-key.asc`, the public key, and most files have a signature file next to them (`.asc`, or `.sig` for the Arch package).
+
 ### FreeBSD
 
 Download `gridcraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64` for ARM) and unpack it.
+
+### In a browser
+
+`gridcraft-web-<ver>.zip` is the web version. Unpack it onto a web server and open it in a modern browser.
 
 ## Update
 

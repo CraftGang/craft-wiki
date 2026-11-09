@@ -5,12 +5,10 @@ sidebar:
   order: 0
 ---
 
-![SoundCraft logo](/assets/apps/soundcraft.webp)
-
 SoundCraft is a digital audio workstation (DAW) for recording, editing and mixing audio. It follows the workflow audio engineers already know: an **Edit** window for arranging and editing, a **Mix** window for balancing, edit modes, tools, playlists and memory locations. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::caution[Pre-alpha]
-SoundCraft is in pre-alpha. Editing, mixing, bouncing, and saving and reopening sessions work end to end, but some things a studio relies on are still missing: recording MIDI from a keyboard or controller, and swapping sessions with other DAWs (AAF and OMF). Many menu items are shown but greyed out until they are built. Keep copies of important work, and tell us what breaks on [GitHub](https://github.com/storytold/soundcraft/issues) or [Discord](https://discord.gg/artcraft).
+SoundCraft is in pre-alpha. Editing, mixing, bouncing, and saving and reopening sessions work end to end, but some things a studio relies on are still missing: recording MIDI from a keyboard or controller, and swapping sessions with other DAWs (AAF and OMF). Many menu items are shown but grayed out until they are built. Keep copies of important work, and tell us what breaks on [GitHub](https://github.com/storytold/soundcraft/issues) or [Discord](https://discord.gg/artcraft).
 :::
 
 ![The Edit window playing the built-in demo song, Midnight Groove: Kick, Snare, Hats, Bass and Pad audio tracks, Keys and Lead instrument tracks with MIDI notes, a Verb aux and a master fader, with Intro, Verse and Chorus markers above them](/assets/uploads/soundcraft/edit.webp)

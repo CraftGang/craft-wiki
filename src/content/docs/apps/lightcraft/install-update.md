@@ -65,7 +65,9 @@ LightCraft checks for updates when it starts, and tells you when one is out. To 
 - **AppImage**: run [AppImageUpdate](https://github.com/AppImageCommunity/AppImageUpdate) on it, or download the new one.
 - **Flatpak, tarball, portable zip**: download the new version and replace the old one.
 
-Your library is kept outside the app's folder, so updating keeps it. If there is a `LightCraftData` folder beside a portable copy, it holds that copy's settings: keep it when you replace the program.
+Your library is kept outside the app's folder, so updating keeps it.
+
+The portable zip keeps its settings in your user folder, like the installed version, until you make it portable. To do that, create an empty file named `portable.txt` next to `lightcraft.exe`. LightCraft then keeps its settings in a `LightCraftData` folder beside the program, so you can carry it on a USB stick. Keep that folder when you replace the program.
 
 :::note
 After an update, photos that opened as **Preview only** don't change by themselves. Select them and choose **Photo › Reload from Disk**. See [Troubleshooting](/apps/lightcraft/troubleshooting/#a-raw-photo-opens-as-preview-only).

@@ -3,6 +3,7 @@ title: Work with placed images
 description: Track linked and embedded images in the Links panel, relink, update and embed them, fix missing links, crop images and turn art into pixels, tiles or halftone dots.
 sidebar:
   order: 19.5
+parent: workflows
 ---
 
 This guide covers the images in a document after you place them: the Links panel, relinking and embedding, missing links when a document opens, editing an image in its own app, cropping, rasterizing, and turning an image into tiles or halftone dots. To bring an image into a document, see [Open and save files](/apps/vectorcraft/open-and-save-files/).

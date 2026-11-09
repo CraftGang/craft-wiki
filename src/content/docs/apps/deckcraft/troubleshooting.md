@@ -49,6 +49,42 @@ If no viewer opens, install a PDF viewer and try again. On Linux, a viewer somet
 
 If **Print** is dimmed, check the slide range, or select **Print Hidden Slides** if every slide in it is hidden.
 
+## Spelling finds almost nothing
+
+DeckCraft doesn't come with a spelling dictionary. Without one, it finds only common misspellings, so you see few red underlines and **F7** reports little. It reads standard Hunspell dictionaries (an `.aff` and a `.dic` file, such as the ones LibreOffice uses). Put both files in one of these folders, then restart DeckCraft:
+
+| System | Folder |
+| --- | --- |
+| Windows | `%APPDATA%\DeckCraft\Dictionaries` |
+| macOS | `~/Library/Application Support/DeckCraft/Dictionaries`, or `~/Library/Spelling` |
+| Linux | `~/.local/share/deckcraft/dictionaries`, or `~/.local/share/hunspell` |
+
+On Linux, DeckCraft also finds dictionaries in `/usr/share/hunspell` and `/usr/share/myspell`. To use a different folder, set `DECKCRAFT_DICTIONARIES` to it. **Review › Language** marks every language that has a dictionary.
+
+## Copy and paste doesn't work
+
+Copying between DeckCraft windows, or pasting a picture from another app, doesn't always work. See [Known problems](#known-problems-not-fixed-yet).
+
+## My file has no extension, or other apps can't open it
+
+**Ctrl+S** on a new presentation saves DeckCraft's own .deckcraft format, which other apps can't open. To share a copy, choose **File › Export › Change File Type** and pick **PowerPoint Presentation (\*.pptx)**.
+
+If a file has no extension, add .pptx to its name. If a presentation disappeared, see [DeckCraft closed and I lost my work](#deckcraft-closed-and-i-lost-my-work).
+
+## Fonts look wrong or show as boxes
+
+If a font is missing, **Home › Replace Fonts…** swaps it for one you have. After you install a font while DeckCraft is open, open the font list on the **Home** tab and choose **Rescan Installed Fonts**, so DeckCraft sees it.
+
+## Known problems, not fixed yet
+
+- Pasting a picture on Windows 11 doesn't work for some people ([#1732](https://github.com/storytold/deckcraft/issues/1732)), and copying between windows can fail ([#1924](https://github.com/storytold/deckcraft/issues/1924)).
+- **Save As** to .pptx can write a file without an extension ([#1929](https://github.com/storytold/deckcraft/issues/1929)), and the Save As dialog may not let you change the file name ([#1826](https://github.com/storytold/deckcraft/issues/1826)).
+- A presentation can disappear, and the file that replaces it can load with only some of its slides ([#1910](https://github.com/storytold/deckcraft/issues/1910)).
+- Audio doesn't play in some files ([#1933](https://github.com/storytold/deckcraft/issues/1933)), or when you click an object ([#1676](https://github.com/storytold/deckcraft/issues/1676)). Video may not play smoothly in the slide show ([#1664](https://github.com/storytold/deckcraft/issues/1664)).
+- Full-screen playback can drop to about 2 frames per second ([#1908](https://github.com/storytold/deckcraft/issues/1908)), and transitions lag on slides with several GIFs ([#1657](https://github.com/storytold/deckcraft/issues/1657)).
+- On KDE Plasma, the taskbar can stay visible over the slide show while Presenter View is on ([#1715](https://github.com/storytold/deckcraft/issues/1715)), and the interface text can corrupt after you leave a .ppsx show on Wayland ([#1822](https://github.com/storytold/deckcraft/issues/1822)).
+- Wingdings symbols can be drawn as boxes ([#1916](https://github.com/storytold/deckcraft/issues/1916)), and Japanese fonts aren't kept when you import a .pptx ([#1727](https://github.com/storytold/deckcraft/issues/1727)).
+
 ## A presentation doesn't look as it does in another app
 
 DeckCraft is in alpha. Some layouts, effects or fonts in .pptx files from other apps may come out differently. Keep the original file, and save your work as .deckcraft to keep everything DeckCraft supports. Please [report the presentation](https://github.com/storytold/deckcraft/issues) if you can share it: real files are how we find these problems.

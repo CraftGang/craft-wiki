@@ -3,6 +3,7 @@ title: Draw in perspective
 description: Show a one-, two- or three-point perspective grid, adjust it, draw shapes on its planes, move flat art and type onto a plane, and save grid presets.
 sidebar:
   order: 18.3
+parent: workflows
 ---
 
 This guide covers the perspective grid: the **View → Perspective Grid** commands, the Perspective Grid tool that adjusts the grid, drawing on the grid's planes, the Perspective Selection tool that moves art along them, the **Object → Perspective** commands and grid presets.

@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![PhotoCraft logo](/assets/apps/photocraft.webp)
-
 PhotoCraft is an image editor for photos and artwork. It has layers, masks, adjustment layers, layer styles, type, vector shapes, brushes and filters, and it opens and saves layered PSD files. The menus, panels, tools and shortcuts are laid out the way most professional image editors lay them out, so if you have used one, you will find your way around. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Early alpha]
@@ -25,7 +23,7 @@ PhotoCraft is in early alpha. Much is in place, but it isn't ready to be your on
 - **Shapes and paths**: rectangles, ellipses, polygons, lines and the Pen tools.
 - **Painting and retouching**: brushes with pen pressure and tilt, healing and clone tools, dodge and burn.
 - **Filters**: blurs, sharpening, distortions, noise and more, with a live preview on the canvas.
-- **Colour**: RGB, Grayscale, CMYK and Lab documents at 8, 16 or 32 bits per channel, with colour profiles.
+- **Color**: RGB, Grayscale, CMYK and Lab documents at 8, 16 or 32 bits per channel, with color profiles.
 - **Automation**: record actions, run batches, or drive PhotoCraft from the command line or an [AI agent](/apps/photocraft/automation/).
 
 ## Your files

@@ -56,6 +56,11 @@ Download `filmcraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64` for ARM) 
 
 `filmcraft-web-<ver>.zip` is the web version. Unpack it onto any web server and open it in a modern browser.
 
+- **Server**: any static web server works. It must serve `.wasm` files as `application/wasm`.
+- **Browser**: FilmCraft uses WebGPU when your browser has it and falls back to WebGL2. In the fallback, frames are composited on the CPU, so playback is slower. If your browser supports WebCodecs, it decodes H.264, HEVC, VP9 and AV1 video in MP4 and MOV files for FilmCraft. Without it, FilmCraft uses its own decoders.
+- **Privacy**: nothing is uploaded. Files you open are read in place, and exports download through the browser.
+- **Crash recovery**: while you have unsaved changes, FilmCraft keeps a snapshot in the browser's private storage every 5 seconds, plus copies of imported media (files up to 4 GiB). The next time you open the page, it reopens that project. Clearing the site's data in your browser deletes it.
+
 ## Update
 
 FilmCraft checks for updates when it starts, and tells you when one is out. To check yourself, choose **Help › Check for Updates…**. Depending on how you installed it, FilmCraft either updates itself and restarts, or offers you the download.

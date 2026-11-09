@@ -15,11 +15,11 @@ You can read, share, and link to the wiki freely. Please do not try to disrupt t
 
 You must be at least 13 years old to edit the wiki or submit contributions.
 
-## Content licence
+## Content license
 
-Unless a page says otherwise, the text of the wiki is available under the [Creative Commons Attribution-ShareAlike 4.0 International licence](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0). You may copy and adapt it if you credit Craft Wiki, link to the licence, and share your changes under the same licence.
+Unless a page says otherwise, the text of the wiki is available under the [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0). You may copy and adapt it if you credit Craft Wiki, link to the license, and share your changes under the same license.
 
-This licence does not cover ArtCraft and Craft App names, logos, and app icons. They remain trademarks and property of ArtCraft and may not be used in ways that suggest our endorsement.
+This license does not cover ArtCraft and Craft App names, logos, and app icons. They remain trademarks and property of ArtCraft and may not be used in ways that suggest our endorsement.
 
 ## Contributions
 

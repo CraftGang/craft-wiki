@@ -29,6 +29,20 @@ Remove-Item Env:WGPU_POWER_PREF   # go back to the default for later launches
 
 On Linux or macOS, start it with `WGPU_POWER_PREF=high vectorcraft`. You can also set `WGPU_ADAPTER_NAME` to part of the graphics card's name, such as `nvidia` or `intel`. The [log](#find-the-log) lists the graphics processors VectorCraft found and the one it used.
 
+## VectorCraft feels slow with a big drawing
+
+Drawings with thousands of paths can make hovering, zooming and panning lag. These settings and views change how much VectorCraft has to draw:
+
+- **Outline view.** Press **Ctrl+Y** (**Cmd+Y** on macOS) to show only the outlines. Press it again to return to the full preview.
+- **Hide layers you don't need.** Hidden layers aren't drawn.
+- **Real-time Drawing and Editing.** Under **Edit → Preferences…** (**Ctrl+K**) › **Performance**, turn it off and VectorCraft stops redrawing the document while you drag. You see the pending shape until you let go.
+- **Animated Zoom.** Turn it off in the same place. It is dimmed while **GPU Performance** is off.
+- **Render Threads.** The number of threads that draw the canvas. -1 lets VectorCraft choose.
+- **Graphics Processor.** On a laptop with two graphics processors, check that VectorCraft uses the one you expect. See [The window doesn't open, or stays black](#the-window-doesnt-open-or-stays-black).
+- **History States.** Each open document keeps this many undo steps. A lower number uses less memory.
+
+[Preferences](/apps/vectorcraft/preferences/#performance) lists the defaults. Slowness on very large files is a known problem, and the tickets below track it.
+
 ## Files can't be dragged into the window on Linux
 
 On a Wayland desktop, dropping files on VectorCraft's window doesn't work yet. Use **File → Open** or **File → Place**, or copy the file in your file manager and paste it into the document.
@@ -186,6 +200,21 @@ With the Windows portable zip, the log is in the `VectorCraftData\logs` folder n
 The current log is `vectorcraft.log`. The log from the run before is `vectorcraft.1.log`, so if VectorCraft crashed, attach that one too.
 
 The folder above `logs` is VectorCraft's settings folder.
+
+## Known problems, not fixed yet
+
+- Hovering with the Selection tools is slow over thousands of small paths ([#5976](https://github.com/storytold/vectorcraft/issues/5976)).
+- Hovering over a background rectangle under dense artwork is slower in 0.22.0 than in 0.21.1 ([#5979](https://github.com/storytold/vectorcraft/issues/5979)).
+- A large file lags even with the discrete graphics processor selected ([#5961](https://github.com/storytold/vectorcraft/issues/5961)).
+- Performance drops in full screen on an old Mac ([#6039](https://github.com/storytold/vectorcraft/issues/6039)).
+- The screen can flicker when you zoom ([#5891](https://github.com/storytold/vectorcraft/issues/5891)).
+- On Windows, VectorCraft is missing from the **Open with** list ([#5740](https://github.com/storytold/vectorcraft/issues/5740)). Open the file with **File → Open** instead.
+- The Delete key can stop deleting the selection after an update ([#5870](https://github.com/storytold/vectorcraft/issues/5870)).
+- Files from other Craft apps, such as `.pcraft`, don't open ([#5444](https://github.com/storytold/vectorcraft/issues/5444)).
+- An Illustrator `.ai` file can open as a blank document ([#5769](https://github.com/storytold/vectorcraft/issues/5769)).
+- An EPS file can open as raster tiles instead of editable paths ([#5846](https://github.com/storytold/vectorcraft/issues/5846)).
+- On Windows, a desktop shortcut can appear after each update ([#5356](https://github.com/storytold/vectorcraft/issues/5356)).
+- On a laptop with Intel and NVIDIA graphics, the window can stay blank and close ([#5476](https://github.com/storytold/vectorcraft/issues/5476)).
 
 ## Still stuck?
 

@@ -66,6 +66,8 @@ claude mcp add texturecraft-app -- texturecraft-cli mcp --bridge 7878
 
 The assistant can then also take screenshots of the window and use the menus. The app opens and saves its own files in this mode.
 
+The control port needs a token, so other programs on your computer can't drive the app. TextureCraft writes one to a file in your temp folder, and `--bridge` reads it. To use your own token, set `TEXTURECRAFT_CONTROL_TOKEN` (16 to 1024 characters) before you start the app. If another program connects to the port, it must send the token first. You can also pass it to the bridge with `--token`.
+
 ## What to ask for
 
 For example:
@@ -86,3 +88,23 @@ texturecraft-cli render model.tcraft preview.png --samples 256
 ```
 
 `bake` saves the project in place. `render` with `--samples` path traces the image, as Rendering mode does; add `--cpu` to trace it on the processor.
+
+### More commands
+
+| Command | What it does |
+| --- | --- |
+| `info <input>` | Lists the texture sets, layers and materials |
+| `commands` | Lists every command an assistant can run. Narrow it with `--filter` |
+| `run <input> <command-id> [params]` | Runs one command. Add `-o out.tcraft` to save the result |
+| `batch <script.json>` | Runs a list of commands from a file |
+| `serve` | Takes commands as JSON lines, on stdio or on a local port |
+
+The input can be a project, a model file, or one of the built-in meshes: `builtin:material_ball`, `sphere`, `cube`, `rounded_cube`, `cylinder`, `torus`, `plane`, `crate` or `udim_plane`.
+
+A few options are worth knowing:
+
+- `new ... --sample` bakes and applies a smart material to every texture set, so you have something to look at.
+- `bake ... --maps` takes a list of the mesh maps to bake, separated by commas.
+- `render ... --view 2d` renders the flat UV view. `--camera` looks through a camera saved in the project, and `--yaw`, `--pitch` and `--bounces` set the angle and the light bounces.
+
+When a command takes a color, `[r, g, b]` is linear and `"#rrggbb"` is sRGB.

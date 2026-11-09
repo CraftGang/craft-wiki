@@ -65,11 +65,32 @@ Open PdfCraft again. While it runs, it saves a copy of every document with unsav
 
 ## I can't edit the text in a PDF
 
-PdfCraft is in alpha, and editing the existing text of a PDF is one of its weakest areas, especially on complex layouts and in right-to-left and Chinese, Japanese or Korean text. If a PDF is a scan, there is no text to edit until you recognise it with **Scan & OCR**. To add text on top of a page instead, use **Edit a PDF › Text** or **Fill & Sign › Add text**.
+PdfCraft is in alpha, and editing the existing text of a PDF is one of its weakest areas, especially on complex layouts and in right-to-left and Chinese, Japanese or Korean text. If a PDF is a scan, there is no text to edit until you recognize it with **Scan & OCR**. To add text on top of a page instead, use **Edit a PDF › Text** or **Fill & Sign › Add text**.
 
 ## I can't change a document
 
 If a PDF is secured, a notice above the page says so: its security settings limit what you can change. Choose **File › Protect › Enter permissions password…** if you know the password. **File › Protect › Security properties…** shows what the document allows.
+
+## Saving: the file shows old content or won't save
+
+- If another program changes the file while it's open in PdfCraft, turn on **Reload documents when their files change on disk** in **Edit › Preferences…**.
+- **Ctrl+Shift+S** saves a copy under another name, which keeps the original as it was.
+- Unsaved changes are copied every minute. See [PdfCraft closed and I lost my work](#pdfcraft-closed-and-i-lost-my-work).
+
+## A page looks wrong
+
+If a page stays blank or blurry, or shows wrong or overlapping characters, report it. Attach [the log](#find-the-log) and, if you can share it, the PDF. Say which page and what you see.
+
+## Known problems, not fixed yet
+
+- A white window that then closes, on some PCs ([#6500](https://github.com/storytold/pdfcraft/issues/6500)).
+- A page made of one very large scanned image may not display ([#6494](https://github.com/storytold/pdfcraft/issues/6494)).
+- Some scanned pages look blurred in PdfCraft but not in other readers ([#6499](https://github.com/storytold/pdfcraft/issues/6499)).
+- Some PDFs show incorrect or overlapping characters ([#6340](https://github.com/storytold/pdfcraft/issues/6340), [#6449](https://github.com/storytold/pdfcraft/issues/6449), [#6330](https://github.com/storytold/pdfcraft/issues/6330)).
+- Two-page view of an Arabic PDF runs left to right instead of right to left ([#6478](https://github.com/storytold/pdfcraft/issues/6478)).
+- The `text` command can put Thai marks in the wrong order ([#6517](https://github.com/storytold/pdfcraft/issues/6517)).
+- Some files that other tools rewrote can't be saved with **Save As** ([#6401](https://github.com/storytold/pdfcraft/issues/6401)), and a file with an old kind of password protection opens but can't be saved ([#6397](https://github.com/storytold/pdfcraft/issues/6397)).
+- After a file is replaced on disk, PdfCraft can still show the old version ([#6484](https://github.com/storytold/pdfcraft/issues/6484)).
 
 ## Find the log
 

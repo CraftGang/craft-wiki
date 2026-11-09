@@ -3,6 +3,7 @@ title: Measure and dimension
 description: Measure distances with the Measure tool, read positions and sizes in the Info panel, add linked length, angle and radius dimensions, inspect paths and anchor points, and list what a document holds.
 sidebar:
   order: 18.6
+parent: workflows
 ---
 
 This guide covers measuring artwork and adding dimensions to technical drawings: the Measure tool, the Info panel, the Dimension tool and its options, the Measure & Inspect tool and Anchor Inspector panel from the Path Precision Tools plug-in, and the Document Info panel.
@@ -100,7 +101,7 @@ Double-click the Dimension tool, or click **Tool Options…** in the Dimension T
 | **Scale** | 1:1 | Sets the drawing size to the real size. At 1:10, 1 unit on the page is labeled 10. Type a ratio from 1:1000000 to 1000000:1, or choose one from **Presets**, from 1:200 to 10:1 |
 | **Hide Units** | Off | Leaves the unit off the label |
 | **Line Weight**, **Line Type** (Dimension Lines) | 0.5 pt, Solid | Sets the dimension line's weight, from 0.1 pt to 100 pt, and type: **Solid**, **Dashed** or **Dotted**. The color button beside them sets its color, black by default |
-| **Arrow Style** | Filled | **Filled**, **Open**, **Tick** or **None** |
+| **Arrow Style** | Filled | **Filled**, **Open**, **Select** or **None** |
 | **Arrow Scale** | 100% | Sizes the arrowheads, from 1% to 1000% |
 | **Line Weight**, **Line Type** (Extension Lines) | 0.5 pt, Solid | Set the extension lines' weight, type and color in the same way |
 | **Offset** (Extension Lines) | 4 pt | Sets the gap between the art and the start of each extension line, from 0 pt to 10000 pt |

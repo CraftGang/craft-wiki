@@ -76,4 +76,28 @@ gridcraft-cli cat book.xlsx --range A1:F20               # print cells as a tabl
 gridcraft-cli eval '=PMT(5%/12,360,-300000)'             # work out a formula
 ```
 
+The main subcommands:
+
+| Subcommand | What it does |
+| --- | --- |
+| `info <file>` | Lists a workbook's sheets, used ranges, tables, charts and names. Add `--json` for JSON |
+| `convert <in> <out>` | Converts between formats. The output type comes from the file extension |
+| `cat <file>` | Prints cells as a table. `--range`, `--sheet`, `--formulas` and `--csv` change what is printed |
+| `eval <formula>` | Works out a formula, in English syntax. `--in` uses a workbook, with `--sheet` and `--cell` |
+| `run` | Opens a workbook, a sample or a blank one, runs commands with `--cmd 'id={json}'` or a `--script` file, and saves with `--out` |
+| `commands` | Lists every command and its parameters. `--search` filters the list |
+| `functions` | Lists every spreadsheet function. `--search` and `--category` filter the list |
+| `check <file or folder>` | Recalculates workbooks and compares the results with the values Excel saved in them |
+| `mcp` | Starts the MCP server for assistants |
+| `send <port> <method> [json]` | Sends one request to a running app that was started with `--control` |
+
+For example, to see what is in a workbook, and to add a total with `run`:
+
+```bash
+gridcraft-cli info book.xlsx
+gridcraft-cli run --in book.xlsx --cmd 'cell.set={"cell":"D2","input":"=B2*C2"}' --out book.xlsx
+```
+
+`gridcraft --sample budget` opens the desktop app with a sample workbook. The other samples are `sales` and `grades`.
+
 For scripting GridCraft's commands, see the [developer documentation on GitHub](https://github.com/storytold/gridcraft/blob/main/docs/mcp.md).

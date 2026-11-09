@@ -19,7 +19,7 @@ Version 0.2 dropped the .mcraft format and changed the .mcmat format. Files made
 
 ## The 3D View is empty
 
-The 3D View shows the graph's **Output** nodes that have a usage, such as base colour or normal. Check that your outputs are connected and have a usage, then choose **Tools › View outputs in 3D view**.
+The 3D View shows the graph's **Output** nodes that have a usage, such as base color or normal. Check that your outputs are connected and have a usage, then choose **Tools › View outputs in 3D view**.
 
 ## Previews look soft or blocky
 
@@ -27,11 +27,19 @@ While you edit, previews are computed at a smaller size to stay fast. Choose a l
 
 ## A node's thumbnail is out of date
 
-Choose **Tools › Compute nodes thumbnails**, or **Tools › Compute graph** to compute the whole graph again. **Tools › Clear cache** throws away every stored result, which can help if something still looks wrong.
+Choose **Tools › Compute nodes thumbnails**, or **Tools › Compute graph** to compute the whole graph again. **Tools › Clear nodes thumbnails** (**F5**) clears them. **Tools › Clear cache** throws away every stored result, which can help if something still looks wrong.
 
 ## MaterialCraft closed and I lost my work
 
 MaterialCraft autosaves the open package to `Documents/MaterialCraft/autosave`, as an .sbs file named after the package. Open it with **File › Open...**. To change how often it autosaves, choose **Edit › Preferences...**. 0 turns autosave off.
+
+## Known problems, not fixed yet
+
+- **TextureCraft can't open a material from MaterialCraft.** **File › Send to TextureCraft** and **File › Export material...** write .mcmat version 2, and TextureCraft reads only version 1. Follow [TextureCraft issue 317](https://github.com/storytold/texturecraft/issues/317).
+- **MaterialCraft can crash when opening an .sbs file on Linux with Wayland.** The reporter starts it on X11 instead: `WAYLAND_DISPLAY= materialcraft`. See [issue 93](https://github.com/storytold/materialcraft/issues/93).
+- **MaterialCraft crashes at start on a PC with Intel graphics.** The crash is in the Intel Vulkan driver, `igvk64.dll`. See [issue 28](https://github.com/storytold/materialcraft/issues/28).
+- **Claude Desktop can't load the MaterialCraft MCP server.** It drops the server and all its tools. See [issue 146](https://github.com/storytold/materialcraft/issues/146).
+- **Nodes have no F2 rename, and the color picker has no hex field yet.** See [issue 101](https://github.com/storytold/materialcraft/issues/101) and [issue 105](https://github.com/storytold/materialcraft/issues/105).
 
 ## Still stuck?
 

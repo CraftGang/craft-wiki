@@ -1,11 +1,11 @@
 ---
 title: AI agents
-description: Let Claude or another AI assistant read, organise, comment on and fill PDFs with PdfCraft, and script PdfCraft from the command line.
+description: Let Claude or another AI assistant read, organize, comment on and fill PDFs with PdfCraft, and script PdfCraft from the command line.
 sidebar:
   order: 6
 ---
 
-AI assistants that support the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) can use PdfCraft's tools: open PDFs, read their text, add comments, fill forms, organise pages and save the result. This is off unless you set it up. PdfCraft never starts it on its own, and it opens no network port.
+AI assistants that support the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) can use PdfCraft's tools: open PDFs, read their text, add comments, fill forms, organize pages and save the result. This is off unless you set it up. PdfCraft never starts it on its own, and it opens no network port.
 
 ## Get the command-line tool
 
@@ -77,5 +77,28 @@ pdfcraft-cli edit in.pdf --rotate 1,2:90 --delete 5 --out out.pdf
 pdfcraft-cli combine report.pdf appendix.pdf --out combined.pdf
 pdfcraft-cli tools                                              # every tool an assistant can use
 ```
+
+`render` draws a page as a picture (`.png`, `.jpg`, `.tif` or `.pam`), and `audit` looks for faux redactions, black boxes drawn over text that is still in the file:
+
+```bash
+pdfcraft-cli render paper.pdf --page 3 --dpi 150 --out page3.png
+pdfcraft-cli audit redacted.pdf                                 # fails if it finds any
+```
+
+### Process many files at once
+
+`batch` converts, recognizes and compresses whole folders, one file at a time. Name the steps with `--steps`, from `convert` (which must come first), `ocr` and `optimize`, and give a folder for the results with `--out-dir`:
+
+```bash
+pdfcraft-cli batch scans --root . --recursive --steps ocr,optimize --out-dir searchable
+```
+
+- Folders are read one level deep. Add `--recursive` to include subfolders.
+- It never replaces a file. If `book.pdf` exists in the output folder, the result is `book (2).pdf`. Your originals aren't touched.
+- `--ppi` and `--quality` set how far `optimize` shrinks pictures, which can lose detail. `--language` and `--ocr-all-pages` set `ocr`, which skips pages that already have text unless you add the second one. OCR needs its models installed.
+- If a file fails, the rest continue, unless you add `--stop-on-error`.
+- It prints a JSON report of every file. Save it outside the input folders, for example with `> report.json`.
+
+`batch` can't open PDFs that need a password, and `optimize` can't compress signed PDFs.
 
 For scripting, run `pdfcraft-cli help`, or see the [developer documentation on GitHub](https://github.com/storytold/pdfcraft/blob/main/docs/mcp.md).

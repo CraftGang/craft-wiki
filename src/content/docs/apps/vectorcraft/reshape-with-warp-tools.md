@@ -3,6 +3,7 @@ title: Reshape with the warp tools
 description: Push, twist, pucker and roughen paths with the Warp tool and its six companions, pull points with the Reshape tool, bend art around pins with Puppet Warp, and distort art and type with Envelope Distort.
 sidebar:
   order: 12.4
+parent: workflows
 ---
 
 This guide covers the seven brush tools that reshape paths as you drag over them, the Reshape tool, the Puppet Warp tool, and the **Object → Envelope Distort** commands, which bend artwork and type into a warp, a mesh or the shape of another path.

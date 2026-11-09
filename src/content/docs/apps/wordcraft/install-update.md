@@ -13,7 +13,7 @@ Download it from its [latest release](https://github.com/storytold/craft-launche
 
 ## By hand
 
-Every build is on WordCraft's [latest release](https://github.com/storytold/wordcraft/releases/latest) page; [all releases](https://github.com/storytold/wordcraft/releases) has earlier versions and their notes. In the file names below, `<ver>` is the version number. `SHA256SUMS.txt` lists a checksum for every file.
+Every build is on WordCraft's [latest release](https://github.com/storytold/wordcraft/releases/latest) page; [all releases](https://github.com/storytold/wordcraft/releases) has earlier versions and their notes. In the file names below, `<ver>` is the version number. `SHA256SUMS.txt` lists a checksum for every file. To check a download's signature, the release also has `.asc` signature files and the signing key, `release-signing-key.asc`.
 
 ### Windows
 
@@ -42,9 +42,9 @@ Download `wordcraft-<ver>-macos-universal.dmg`, open it, and drag **WordCraft** 
 | Arch Linux | `wordcraft-<ver>-linux-x86_64.pkg.tar.zst` | Install with `sudo pacman -U <file>` |
 | Tarball | `wordcraft-<ver>-linux-x86_64.tar.gz` | Unpack anywhere |
 
-Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are RISC-V builds too: a `.deb`, a `.rpm` and a tarball (`riscv64`), for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
+Every format also has an ARM64 build (`aarch64` in place of `x86_64`). RISC-V (`riscv64`) has a `.deb`, an `.rpm` and a tarball, for Ubuntu 24.04, Debian 13 and newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
 
-**Arch Linux:** community members maintain AUR packages. `wordcraft-bin` is the quickest, for example `yay -S wordcraft-bin`. `wordcraft` builds the latest release from source, and `wordcraft-git` builds the newest unreleased code.
+On Arch Linux, besides the `.pkg.tar.zst` above, community members maintain AUR packages. `wordcraft-bin` is the quickest, for example `yay -S wordcraft-bin`. `wordcraft` builds the latest release from source, and `wordcraft-git` builds the newest unreleased code.
 
 **Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `app-office/wordcraft-bin` and `app-office/wordcraft`.
 
@@ -52,7 +52,7 @@ Community packages are not maintained by the WordCraft team.
 
 ### FreeBSD
 
-Download `wordcraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64`) and unpack it.
+Download `wordcraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64` for ARM64) and unpack it.
 
 ### In a browser
 

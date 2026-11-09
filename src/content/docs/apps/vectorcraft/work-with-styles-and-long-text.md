@@ -3,6 +3,7 @@ title: Work with styles and long text
 description: Save formatting as paragraph and character styles, set OpenType features, glyphs and tab stops, wrap text around objects, find and replace words, set vertical type, and fine-tune hyphenation and justification.
 sidebar:
   order: 14.5
+parent: workflows
 ---
 
 This guide covers the tools for menus, brochures and other documents with a lot of text: paragraph and character styles, OpenType features and glyphs, tab stops, text wrap, find and replace, special spaces and breaks, vertical type, hyphenation and justification, and the Type Tools plug-in. [Add and style type](/apps/vectorcraft/add-and-style-type/) covers making type and setting its font, size and alignment.

@@ -5,15 +5,13 @@ sidebar:
   order: 0
 ---
 
-![CADCraft logo](/assets/apps/cadcraft.webp)
-
 CADCraft is a computer-aided design app for 2D drafting. If you have used a desktop CAD program, it will feel familiar: you type commands such as `LINE` or `CIRCLE` at the command line, click points, and use object snaps, layers, dimensions, hatches and blocks. It opens and saves DXF and DWG drawings, and runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::caution[Pre-alpha]
-CADCraft is in pre-alpha. Many commands work, but some options are still missing, and saving a drawing made in another program can drop objects CADCraft doesn't understand yet. It draws in 2D only: there is no 3D modelling yet. Keep a copy of important drawings, and tell us what breaks on [GitHub](https://github.com/storytold/cadcraft/issues) or [Discord](https://discord.gg/artcraft).
+CADCraft is in pre-alpha. Many commands work, but some options are still missing, and saving a drawing made in another program can drop objects CADCraft doesn't understand yet. It draws in 2D only: there is no 3D modeling yet. Keep a copy of important drawings, and tell us what breaks on [GitHub](https://github.com/storytold/cadcraft/issues) or [Discord](https://discord.gg/artcraft).
 :::
 
-![CADCraft with an apartment floor plan open: grey walls, door swings, furniture, yellow room names with areas, a room schedule table, a leader note and cyan dimensions. Tool Sets are on the left, Layers and Properties on the right, and the command line at the bottom](/assets/uploads/cadcraft/apartment.webp)
+![CADCraft with an apartment floor plan open: gray walls, door swings, furniture, yellow room names with areas, a room schedule table, a leader note and cyan dimensions. Tool Sets are on the left, Layers and Properties on the right, and the command line at the bottom](/assets/uploads/cadcraft/apartment.webp)
 
 ## What it does
 

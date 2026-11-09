@@ -28,7 +28,7 @@ To end it, open **Share** again and click **Stop sharing**. Everyone else is dis
 
 - Paste the code or link into **Join with a code** on the **Home** screen, or in the **Share** popover.
 - Or choose **File › Join live session…** from the main menu.
-- Invite links open FigCraft and join straight away. To turn this off, untick **Open invite links in FigCraft** in **Preferences**.
+- Invite links open FigCraft and join straight away. To turn this off, clear **Open invite links in FigCraft** in **Preferences**.
 
 People can also join from the web version of FigCraft in a browser.
 
@@ -46,12 +46,15 @@ People can also join from the web version of FigCraft in a browser.
 - The connection is encrypted, but the server stores the file unencrypted, and whoever runs the server can read it. Don't share confidential work through a server you don't trust.
 - The file stays on the server after you stop sharing. Remove it with **Share › Advanced › Remove from server…**, or from **Home › Online**. The public server deletes a file nobody has opened for 30 days.
 - The public server is offered as is, with no backups and no uptime promise.
+- The public server holds a limited number of files. When it is full, publishing fails with "the server keeps at most 1000 files", even for an empty project ([#1402](https://github.com/storytold/figcraft/issues/1402)). Use **Local network** instead, or run a server of your own.
 
 **Local network** involves no server. Your copy of FigCraft hosts the session and others connect to it directly, so it only lasts while your app stays open. It isn't encrypted either, so use it on networks you trust.
 
 ## Your online files
 
 **Home › Online** lists the files you've shared online. Open one to carry on, or remove it from the server.
+
+It lists only the files you published from this computer. A file you joined with a link isn't listed ([#1882](https://github.com/storytold/figcraft/issues/1882)), so keep the link. In the browser version of FigCraft, a file joined from a server of your own isn't remembered either, so paste the link each time ([#1881](https://github.com/storytold/figcraft/issues/1881)).
 
 ## Run your own server
 

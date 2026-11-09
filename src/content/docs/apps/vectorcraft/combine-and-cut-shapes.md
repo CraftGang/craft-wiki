@@ -3,6 +3,7 @@ title: Combine and cut shapes
 description: Build new shapes from overlapping ones with the Pathfinder panel and the Shape Builder tool, set their options, and use compound shapes, compound paths, clipping masks and Live Paint.
 sidebar:
   order: 16
+parent: workflows
 ---
 
 This page shows how to make new shapes from shapes that overlap. You combine and cut them with the Pathfinder panel or the Shape Builder tool, punch holes with compound paths, show art only inside a shape with a clipping mask, and color the regions of overlapping paths with Live Paint.

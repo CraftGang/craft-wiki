@@ -3,6 +3,7 @@ title: Make patterns, blends and repeats
 description: Turn artwork into a pattern swatch and edit its tile, repeat art in a circle, a grid or a mirror, weave objects over and under each other, place objects along a path, and blend between shapes.
 sidebar:
   order: 16.5
+parent: workflows
 ---
 
 This guide shows how to make a pattern swatch and edit its tile, repeat artwork radially, in a grid or as a mirror, weave objects with Intertwine, attach objects to a path, and blend one shape into another with the Blend tool. Patterns, repeats, Intertwine groups, objects on a path and blends all stay live: you can change their art and options after you make them.

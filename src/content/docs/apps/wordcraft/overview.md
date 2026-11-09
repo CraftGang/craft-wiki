@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![WordCraft logo](/assets/apps/wordcraft.webp)
-
 WordCraft is a word processor for writing and designing documents. If you have used a modern word processor, it will feel familiar: the ribbon, styles, tables, track changes, references and mail merge are all there. It opens and saves .docx files, and runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]
@@ -18,10 +16,10 @@ WordCraft is in alpha. Most features are in place, but some documents may not lo
 ## What it does
 
 - **Writing**: smart quotes, AutoCorrect, lists that format themselves as you type, find and replace.
-- **Formatting and styles**: fonts, colours, Format Painter, a live Styles gallery, themes and style sets.
+- **Formatting and styles**: fonts, colors, Format Painter, a live Styles gallery, themes and style sets.
 - **Tables**: merge and split cells, table styles, header rows that repeat on every page, sorting and formulas.
 - **Pages**: margins, columns, headers and footers, page numbers, watermarks, page borders, drop caps and hyphenation.
-- **Pictures and shapes**: crop, recolour, remove backgrounds, and wrap text around them.
+- **Pictures and shapes**: crop, recolor, remove backgrounds, and wrap text around them.
 - **References**: tables of contents, footnotes, citations and bibliographies (APA, MLA, Chicago, IEEE), captions and indexes. It also works with [Zotero](/apps/wordcraft/zotero/).
 - **Review**: spelling and grammar as you type, comments, track changes, comparing documents, and Read Aloud.
 - **Mailings**: mail merge from a spreadsheet, envelopes and labels.

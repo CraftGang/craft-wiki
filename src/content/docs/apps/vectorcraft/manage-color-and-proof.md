@@ -3,6 +3,7 @@ title: Manage color and proof for print
 description: Choose color settings and profiles, soft-proof colors on screen, check overprints and ink plates, use spot colors, flatten transparency and add trim marks before a print job.
 sidebar:
   order: 22.5
+parent: workflows
 ---
 
 This guide covers the steps that prepare artwork for a printer: the color settings and profiles, soft proofing on screen, overprinting, the ink plates, spot colors, transparency flattening and trim marks.

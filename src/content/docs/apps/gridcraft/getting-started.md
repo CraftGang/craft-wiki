@@ -15,13 +15,13 @@ GridCraft opens on a blank workbook called **Book1**. To open a file instead, pr
 
 To look around before typing anything, open a sample. Click **File**, then choose **Household Budget**, **Quarterly Sales Dashboard** or **Gradebook**. Each one uses formulas, formatting and charts you can take apart.
 
-![The Household Budget sample on the Home tab: a budget table with accounting number formats, red highlights for overspent rows, a colour scale on the % Used column, and a bar chart comparing budget with actual](/assets/uploads/gridcraft/budget.webp)
+![The Household Budget sample on the Home tab: a budget table with accounting number formats, red highlights for overspent rows, a color scale on the % Used column, and a bar chart comparing budget with actual](/assets/uploads/gridcraft/budget.webp)
 
 ## 3. Enter data and formulas
 
 Click a cell and type. Press **Enter** to move down, or **Tab** to move right.
 
-To add a formula, start with `=`, for example `=SUM(B2:B10)`. While you type a formula, click or drag across cells to put their references into it. Each reference gets its own colour in the cell and on the sheet.
+To add a formula, start with `=`, for example `=SUM(B2:B10)`. While you type a formula, click or drag across cells to put their references into it. Each reference gets its own color in the cell and on the sheet.
 
 A few things that work as you would expect:
 

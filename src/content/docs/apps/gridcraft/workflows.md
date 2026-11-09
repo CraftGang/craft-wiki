@@ -24,6 +24,12 @@ Dynamic-array formulas, such as `=SORT(A2:A20)` or `=UNIQUE(B2:B50)`, spill thei
 
 ![The Gradebook sample with the Formulas tab open, showing Insert Function, AutoSum, the function library, Name Manager and the formula auditing buttons, over a table of students with averages and letter grades](/assets/uploads/gridcraft/grades-formulas.webp)
 
+### Regional formats
+
+In every language but Spanish, you type formulas the English way: a comma between arguments and a period as the decimal point, as in `=ROUND(A1*0.29,2)`. A formula such as `=A1*0,29` shows an error.
+
+GridCraft doesn't follow your system's number and date settings yet, and has no setting to pick a comma for decimals or a period for thousands. Numbers such as `12,34` are stored as text, and a format like `1.000,00` isn't available ([#3461](https://github.com/storytold/gridcraft/issues/3461), [#3447](https://github.com/storytold/gridcraft/issues/3447), [#3384](https://github.com/storytold/gridcraft/issues/3384), [#3148](https://github.com/storytold/gridcraft/issues/3148)).
+
 :::note[Formulas in Spanish]
 If you choose **Español** as the interface language, you type formulas in Spanish too: `=SUMA(A1:A3)`, with a decimal comma and semicolons between arguments. Workbooks are still saved with standard English formulas, so they open the same everywhere. Every other language uses English function names.
 :::
@@ -32,10 +38,10 @@ If you choose **Español** as the interface language, you type formulas in Spani
 
 On the **Home** tab:
 
-- Font, fill colour, borders, alignment, **Wrap Text** and **Merge & Center**.
+- Font, fill color, borders, alignment, **Wrap Text** and **Merge & Center**.
 - Number formats, such as currency, percentage and dates. **Ctrl+1** opens **Format Cells** for every option.
 - **Cell Styles** applies a ready-made look, such as a heading or a total.
-- **Conditional Formatting** colours cells by their values: **Highlight Cells Rules**, **Top/Bottom Rules**, **Data Bars**, **Color Scales** and **Icon Sets**. **Manage Rules…** lists and edits them.
+- **Conditional Formatting** colors cells by their values: **Highlight Cells Rules**, **Top/Bottom Rules**, **Data Bars**, **Color Scales** and **Icon Sets**. **Manage Rules…** lists and edits them.
 - **Format Painter** copies formatting from one place to another.
 
 ## Work with tables
@@ -51,21 +57,26 @@ On the **Data** tab:
 - **Sort** and **Filter**. **Ctrl+Shift+L** turns filter buttons on or off.
 - **Text to Columns** splits one column into several. **Flash Fill** (**Ctrl+E**) fills a column by following an example you type.
 - **Remove Duplicates** and **Data Validation**, which limits what can be typed in a cell, for example to a list.
-- **Group**, **Ungroup** and **Subtotal** to outline and summarise rows.
+- **Advanced** filters a list with a **Criteria range** you write on the sheet. You can filter in place, or choose **Copy to** another place, and select **Unique rows only**.
+- **Group**, **Ungroup** and **Subtotal** to outline and summarize rows.
 - **What-If Analysis**, **Forecast Sheet** and **Solver** for working out numbers.
 - **Get Data (Text/CSV)** brings in data from a text file.
+
+### Data Analysis
+
+**Data › Data Analysis** has statistics tools that write a report into a new sheet, or to a cell you choose. Pick a tool, such as **Descriptive Statistics**, **Histogram**, **Regression**, **Correlation**, **Moving Average**, **Sampling**, **Random Number Generation** or a **t-Test**, then fill in its form. Select your data first and it's filled in as the **Input Range**. If the cells for the report already hold data, GridCraft asks before it replaces them. The report holds fixed values, so it doesn't change when your data does. Run the tool again to refresh it.
 
 ## Add charts and sparklines
 
 Select your data, then on the **Insert** tab choose **Recommended Charts**, or one of the chart buttons next to it. **Sparklines** draws a tiny chart inside a cell.
 
-When you select a chart, GridCraft outlines its source data on the sheet and opens the **Chart Design** tab. From there you can add chart elements, switch rows and columns, change the chart type, or open the **Format Pane** to change the title, legend, series and colours.
+When you select a chart, GridCraft outlines its source data on the sheet and opens the **Chart Design** tab. From there you can add chart elements, switch rows and columns, change the chart type, or open the **Format Pane** to change the title, legend, series and colors.
 
 ![The Quarterly Sales Dashboard with the column chart selected: its source data is outlined in the table, the Chart Design tab is open, and the Format Chart Area pane is on the right](/assets/uploads/gridcraft/format-chart.webp)
 
-## Summarise with a pivot table
+## Summarize with a pivot table
 
-Click in a table or range, then choose **Insert › PivotTable**. In the **PivotTable Fields** pane, tick the fields you want and move them between **Filters**, **Columns**, **Rows** and **Values**. Press **Refresh** after the source data changes. **Report Layout** changes how the table is laid out.
+Click in a table or range, then choose **Insert › PivotTable**. In the **PivotTable Fields** pane, select the fields you want and move them between **Filters**, **Columns**, **Rows** and **Values**. Press **Refresh** after the source data changes. **Report Layout** changes how the table is laid out.
 
 ![A pivot table summing revenue by region and product, with a Channel filter at the top and grand totals, next to the PivotTable Fields pane with Channel in Filters, Product in Columns, Region in Rows and Sum of Revenue in Values](/assets/uploads/gridcraft/pivot.webp)
 
@@ -78,7 +89,21 @@ On the **Insert** tab:
 - **Link** adds a hyperlink (**Ctrl+K**).
 - **Comment** starts a comment thread on a cell.
 
-On the **Review** tab you can add notes, go through comments, check spelling (**F7**), run the accessibility checker, and protect a sheet or the workbook's structure with an optional password.
+On the **Review** tab you can add notes, go through comments, check spelling (**F7**), run the accessibility checker, and protect a sheet or the workbook's structure with an optional password. **Allow Edit Ranges** lists ranges that stay editable when a sheet is protected, each with its own optional password. **Workbook Statistics** shows figures about the workbook.
+
+### Draw with ink
+
+The **Draw** tab is for freehand marks on a sheet. Choose **Pen Blue**, **Pen Black**, **Pen Red** or **Highlighter**, and draw. **Eraser** removes ink strokes. **Select Objects** selects and moves ink and shapes. **Ink to Shape** turns your last stroke into a shape.
+
+### Slicers, checkboxes and equations
+
+On the **Insert** tab:
+
+- **Slicer** adds buttons that filter a table.
+- **Checkbox** puts a checkbox in each selected cell.
+- **Button**, **Slider** and **Spin Button** draw a form control on the sheet. A slider and a spin button set a whole number in a cell you link. A new button asks what it should run: a macro or a command.
+- **Equation** opens an equation editor, and its arrow lists ready-made equations.
+- **Header & Footer** switches to the page layout view, where you type the header and footer in place.
 
 ## Print and export
 
@@ -86,7 +111,7 @@ On the **Page Layout** tab, set **Margins**, orientation, paper **Size**, the **
 
 **View › Page Break Preview** shows where each page starts and ends.
 
-![The Household Budget in Page Break Preview: the print area is outlined in blue, a dashed line splits it into Page 1 and Page 2, and the area outside it is greyed out](/assets/uploads/gridcraft/page-break.webp)
+![The Household Budget in Page Break Preview: the print area is outlined in blue, a dashed line splits it into Page 1 and Page 2, and the area outside it is grayed out](/assets/uploads/gridcraft/page-break.webp)
 
 ### Print
 
@@ -121,6 +146,8 @@ With **Use Relative References** on (the default), the macro works on whatever c
 
 A macro runs as a single step, so one **Ctrl+Z** undoes all of it. If a step fails, GridCraft puts the workbook back as it was. Before a macro writes over cells that already hold data, it asks whether to overwrite them or shift them down or right.
 
+A macro is a list of GridCraft steps, not VBA. A VBA project in an .xlsm file is kept when you save, but it never runs. You can record a macro, or choose **New Macro** or **Macros** to edit its steps. To run a macro from the sheet, draw a **Button** on the **Insert** tab and choose the macro when it asks what to run.
+
 :::caution
 GridCraft's macros are its own kind, not VBA. A workbook from Excel keeps its VBA macros when you save it as .xlsm, but GridCraft doesn't run them. Macros that came with a workbook you opened ask before they run.
 :::
@@ -138,7 +165,29 @@ On the **View** tab:
 - **Interface size** makes the whole window bigger or smaller.
 - **Interface language**. By default, GridCraft follows your system's language.
 
-More settings, such as AutoComplete and AutoSave, are in **File › Options**.
+More settings are in **File › Options**. See [The File view](#the-file-view).
+
+## The File view
+
+**File** opens a full-screen view with these pages:
+
+| Page | What it does |
+| --- | --- |
+| **Home**, **New**, **Open** | Start a workbook, or open one from your recent list |
+| **Info** | Shows the title, path and number of sheets, and lets you edit **Title**, **Subject**, **Author**, **Company**, **Keywords** and **Description**. **Protect Workbook** is here too |
+| **Save As** | Saves as **Excel Workbook (\*.xlsx)**, **CSV UTF-8 (Comma delimited) (\*.csv)**, **Web Page (\*.html)** or **PDF (\*.pdf)** |
+| **Print**, **Export** | See [Print and export](#print-and-export) |
+| **Options** | Settings, listed below |
+| **Account** | Version and platform, and **About GridCraft** |
+
+**Options** has:
+
+- **Show formula bar**, and **Highlight the active cell's row**.
+- **Enable AutoComplete for cell values**.
+- **Save .xlsx workbooks automatically after every change** (AutoSave).
+- For this workbook only: **Show horizontal scroll bar**, **Show vertical scroll bar** and **Show sheet tabs**.
+- **Display theme** and **Interface language**.
+- **Workbook calculation**: **Automatic**, **Automatic Except for Data Tables** or **Manual**. **Enable iterative calculation** lets a formula refer to itself, with a **Maximum Iterations** and **Maximum Change** you set. The calculation settings are saved with the workbook.
 
 ## Keyboard shortcuts
 

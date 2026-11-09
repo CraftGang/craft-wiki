@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![SolidCraft logo](/assets/apps/solidcraft.png)
-
 :::note[Third-Party Application]
 SolidCraft is an independent, community-developed application created and maintained by **Tangency Labs** and the SolidCraft contributors. It is not developed or officially maintained by ArtCraft, but is part of the broader Craft ecosystem.
 :::

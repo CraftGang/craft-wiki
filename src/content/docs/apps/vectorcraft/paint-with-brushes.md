@@ -3,6 +3,7 @@ title: Paint with brushes and variable widths
 description: Apply calligraphic, scatter, art, pattern and bristle brushes to paths, paint with the Paintbrush and Blob Brush, make and save your own brushes, and change a stroke's width with the Width tool.
 sidebar:
   order: 12.2
+parent: workflows
 ---
 
 This guide covers the Brushes panel and its five kinds of brushes, the Paintbrush and Blob Brush tools, brush libraries, and the Width tool, which makes a stroke wider or narrower at the points you choose.

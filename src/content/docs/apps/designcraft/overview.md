@@ -5,9 +5,7 @@ sidebar:
   order: 0
 ---
 
-![DesignCraft logo](/assets/apps/designcraft.webp)
-
-DesignCraft is a page layout and publishing app, for magazines, brochures, books, posters and anything else made of pages. If you have used InDesign, it will feel familiar: the tools, menus, panels and most shortcuts are where you expect them. It runs on Windows, macOS, Linux and FreeBSD, and in a web browser. It is free and open source (MIT or Apache-2.0), with no subscription, licence server or telemetry, and is made by the ArtCraft team.
+DesignCraft is a page layout and publishing app, for magazines, brochures, books, posters and anything else made of pages. If you have used InDesign, it will feel familiar: the tools, menus, panels and most shortcuts are where you expect them. It runs on Windows, macOS, Linux and FreeBSD, and in a web browser. It is free and open source (MIT or Apache-2.0), with no subscription, license server or telemetry, and is made by the ArtCraft team.
 
 :::caution[Pre-alpha]
 DesignCraft is in pre-alpha. A lot is in place, but expect gaps and bugs. Keep copies of important files, and tell us what breaks on [GitHub](https://github.com/storytold/designcraft/issues) or [Discord](https://discord.gg/artcraft).
@@ -20,7 +18,7 @@ DesignCraft is in pre-alpha. A lot is in place, but expect gaps and bugs. Keep c
 - **Pages**: spreads and facing pages, parent pages, margins and columns, guides, and a baseline grid.
 - **Text**: text frames that thread from one to the next, columns, text wrap, tabs, footnotes, lists and tables.
 - **Type**: paragraph and character styles, hyphenation, justification and optical margin alignment. Line breaks are the same on screen and in the PDF.
-- **Colour**: swatches, CMYK and RGB colours, tints and gradients, and separations and overprint previews.
+- **Color**: swatches, CMYK and RGB colors, tints and gradients, and separations and overprint previews.
 - **Pictures and shapes**: place images, PDFs and Illustrator files into frames, then fit, crop and wrap text around them.
 - **Long documents**: tables of contents, indexes, cross-references, books and data merge.
 - **AI assistants**: Claude and other assistants can lay out and edit documents. See [AI agents](/apps/designcraft/ai-agents/).
@@ -40,7 +38,7 @@ It exports PDF (including PDF/X-4 and PDF/A-2b), PNG, EPUB, HTML, PowerPoint (.p
 
 - [Getting started](/apps/designcraft/getting-started/): make and export your first layout.
 - [Install and update](/apps/designcraft/install-update/): download DesignCraft for your system.
-- [Workflows](/apps/designcraft/workflows/): pages, text, styles, pictures, colour and export.
+- [Workflows](/apps/designcraft/workflows/): pages, text, styles, pictures, color and export.
 - [InDesign files](/apps/designcraft/indesign-files/): open InDesign work and send it back.
 - [AI agents](/apps/designcraft/ai-agents/): let an AI assistant lay out documents.
 - [Troubleshooting](/apps/designcraft/troubleshooting/): fix common problems.

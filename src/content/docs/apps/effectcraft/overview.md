@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![EffectCraft logo](/assets/apps/effectcraft.webp)
-
 EffectCraft is an app for animated titles, motion graphics and compositing. You build a composition from layers (solids, shapes, text, footage and other compositions), animate their properties with keyframes, add effects, and render the result as a video. If you have used After Effects, it will feel familiar: the panels, menus and shortcuts follow it. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]
@@ -20,7 +18,7 @@ EffectCraft is in alpha. It has a wide set of features, but it isn't yet recomme
 - **Layers**: solids, shapes, text, footage, nested compositions, nulls, adjustment layers, cameras and lights, with parenting, track mattes and blend modes.
 - **Animation**: keyframes with easing, a Graph Editor, time remapping, markers, and expressions written in JavaScript, such as `wiggle` and `loopOut`.
 - **Shapes, masks and text**: shape layers with trim paths and repeaters, masks drawn with the pen, and text with animators.
-- **Effects**: over 300 built-in effects, from blurs and colour correction to particles and keying, plus the nine layer styles.
+- **Effects**: over 300 built-in effects, from blurs and color correction to particles and keying, plus the nine layer styles.
 - **3D**: 3D layers, cameras with depth of field, and lights with shadows.
 - **Tracking and roto**: motion tracking, Warp Stabilizer, a 3D camera tracker and Roto Brush.
 - **Render**: a Render Queue that writes H.264, HEVC, AV1, ProRes, WebM, image sequences, GIF and audio, with no extra software to install.

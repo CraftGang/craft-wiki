@@ -25,6 +25,17 @@ To load routines every time, put them in the `support` folder inside CADCraft's 
 
 A drawing's own folder is never searched, so an `acaddoc.lsp` that came with a downloaded drawing doesn't run.
 
+### Which startup file to use
+
+| File | When it loads |
+| --- | --- |
+| `acad.lsp` | Once per session, into the first drawing only. If you set the `ACADLSPASDOC` system variable to 1, into every drawing |
+| `acaddoc.lsp` | Into every drawing you open or create, including a new drawing from **QNEW** |
+
+If your routines vanish after you close the first drawing or start a new one, move the `(load ...)` line from `acad.lsp` to `acaddoc.lsp`. A routine defined in `acad.lsp` belongs to the first drawing and goes away with it.
+
+After both files, CADCraft runs `S::STARTUP` if you defined it. To load a file the first time you type one of its commands, add `(autoload "file" '("CMD1" "CMD2"))` to a startup file.
+
 :::note
 Not supported yet: Visual LISP ActiveX functions (`vlax-…`, `vla-…`), DCL dialogs, reactors, compiled `.fas` and `.vlx` files, and C++ or .NET plug-ins.
 :::
@@ -54,6 +65,29 @@ cadcraft-cli run drawing.dxf --script-file setup.scr --save out.dxf
 ```
 
 `cadcraft-cli --help` lists every option.
+
+## Launch options and environment variables
+
+`cadcraft --help` lists these too. You can give CADCraft files to open, and two options:
+
+| Option | What it does |
+| --- | --- |
+| `<file> ...` | Opens these drawings |
+| `--sample` | Opens the sample drawing |
+| `--control <port>` | Starts the control port (see [Let an AI agent draw](#let-an-ai-agent-draw)) |
+
+Set these environment variables before you start CADCraft. A blank value counts as not set, except for `CADCRAFT_CONFIG_DIR`.
+
+| Variable | What it does |
+| --- | --- |
+| `CADCRAFT_CONFIG_DIR` | The settings folder (logs, autosave, workspace, plotters). Set it to nothing to run with no settings folder |
+| `CADCRAFT_LOCALE` | The interface language, instead of your system's |
+| `CADCRAFT_VSYNC` | `1` presents with vsync, `0` without. The default is without on Linux and BSD |
+| `CADCRAFT_WAYLAND` | `1` keeps the native Wayland backend instead of XWayland |
+| `CADCRAFT_NO_NATIVE_MENU` | macOS: `1` keeps the menus inside the window |
+| `CADCRAFT_SYSTEM_CURSOR` | `1` uses the system cursor instead of the drawn crosshair |
+| `CADCRAFT_FONTALT` | The font that replaces a missing one. See [Fonts](/apps/cadcraft/files/#fonts) |
+| `CADCRAFT_FONTFALLBACK` | The fonts tried, in order, for characters a font lacks |
 
 ## Let an AI agent draw
 

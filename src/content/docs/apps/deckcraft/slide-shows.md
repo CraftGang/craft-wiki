@@ -46,7 +46,7 @@ On a Mac, use **⌘** in place of **Ctrl**.
 
 ## Rehearse your timings
 
-Choose **Slide Show › Rehearse Timings** and present as you would for real. DeckCraft records how long you spend on each slide. Then tick **Use Timings** to have the show move on by itself.
+Choose **Slide Show › Rehearse Timings** and present as you would for real. DeckCraft records how long you spend on each slide. Then turn on **Use Timings** to have the show move on by itself.
 
 ## Set up the show
 

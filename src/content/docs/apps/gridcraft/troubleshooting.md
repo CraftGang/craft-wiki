@@ -17,6 +17,16 @@ Remove-Item Env:WGPU_BACKEND   # go back to the default for later launches
 
 If that doesn't help, try `"dx12"` in place of `"vulkan"`.
 
+## Everything is tiny on a high-resolution screen
+
+On some Linux desktops with a high-resolution or scaled screen, GridCraft draws the whole window at half the size you expect ([#3140](https://github.com/storytold/gridcraft/issues/3140), [#3090](https://github.com/storytold/gridcraft/issues/3090)). Choose **View › Interface size** and pick a larger size, up to 200%. This scales the whole window, including the ribbon.
+
+For a fractional scale, one report found that starting GridCraft with `WINIT_X11_SCALE_FACTOR` set to your scale, such as `1.6`, draws it at the desktop's size.
+
+## GridCraft closes right after it starts on Linux
+
+On some ARM computers, such as a Raspberry Pi, GridCraft quits at once and the log ends with `WGPU error: Limit 'max_inter_stage_shader_variables' value 16 is better than allowed 15` ([#3029](https://github.com/storytold/gridcraft/issues/3029)). In one report, only software rendering worked, started with `LIBGL_ALWAYS_SOFTWARE=1 WGPU_BACKEND=gl gridcraft`. It's slow. Setting `WGPU_BACKEND=gl` alone failed on another limit. See [Find the log](#find-the-log).
+
 ## It's slow on an older Windows PC
 
 On some older graphics chips, DirectX 12 only offers a software renderer that draws everything on the processor. GridCraft normally switches to OpenGL by itself. If it is still slow, look for lines starting with `graphics:` in [the log](#find-the-log) to see which one it chose, and try setting `WGPU_BACKEND` to `"gl"` or `"dx12"`, as above.
@@ -24,6 +34,15 @@ On some older graphics chips, DirectX 12 only offers a software renderer that dr
 ## Files can't be dragged in on Linux
 
 On a Wayland desktop, GridCraft runs through XWayland by default, because that's the only way dragging files into the window works. If you have set `GRIDCRAFT_WAYLAND=1` to use native Wayland, dragging files in won't work; unset it, or use **File › Open** instead.
+
+## Fonts are missing, or text shows as ?????
+
+GridCraft doesn't come with fonts. It uses the fonts installed on your computer.
+
+- To use a font, install it in your system, then restart GridCraft. It looks for installed fonts once, when it starts.
+- Text in a script your installed fonts don't cover, such as Thai, Chinese, Malayalam, Vietnamese or Bangla, can show as `?????`. Install a font that has those characters, then restart.
+
+Known problems, not fixed yet: on Linux the font list can be empty or hold only a few fonts, and all text can be drawn in Liberation Sans ([#3153](https://github.com/storytold/gridcraft/issues/3153), [#3128](https://github.com/storytold/gridcraft/issues/3128)). Cell text can look rough, most in the dark theme ([#3465](https://github.com/storytold/gridcraft/issues/3465)). Installed Windows fonts can be missing from the list ([#3460](https://github.com/storytold/gridcraft/issues/3460)).
 
 ## I can't save an .xls, .xlsb or .ods file
 
@@ -34,6 +53,24 @@ GridCraft opens .xls, .xlsb and .ods files, but can't save in those formats. A w
 ## I saved as CSV and lost my formatting
 
 A CSV file holds only the values of one sheet. When you export to CSV, a web page or PDF, GridCraft writes a copy and keeps your workbook as it was, so save it as .xlsx as well. If you opened a CSV file and want to keep formulas, formatting or more than one sheet, use **File › Save As** and choose **Excel Workbook (\*.xlsx)**.
+
+## A big workbook opens with missing rows
+
+When a sheet holds more than 1,000,000 XML elements, GridCraft says the sheet is damaged and keeps only the rows it could read, for example "kept 83486 rows" ([#3361](https://github.com/storytold/gridcraft/issues/3361), [#3286](https://github.com/storytold/gridcraft/issues/3286)). The rest isn't loaded, so keep your original file and don't save over it.
+
+Some .xlsx files open as web page text instead of cells ([#3373](https://github.com/storytold/gridcraft/issues/3373)).
+
+Copying a range of more than 2,000,000 cells pastes only 2,000 rows into other apps. Pasting into GridCraft still gets all of it ([#3158](https://github.com/storytold/gridcraft/issues/3158)).
+
+## A formula that refers to another workbook doesn't work
+
+A reference to another file, such as `[Book1]Sheet1!A1`, doesn't read a workbook that's open in another window as live data, and a reference to a workbook you haven't saved is refused ([#3526](https://github.com/storytold/gridcraft/issues/3526), [#3292](https://github.com/storytold/gridcraft/issues/3292), [#3340](https://github.com/storytold/gridcraft/issues/3340)).
+
+## Saving and closing
+
+- "Save changes?" can appear after you saved, and clicking **Save** in it doesn't close GridCraft. Only **Don't Save** closes the window, so make sure your work is saved first ([#3489](https://github.com/storytold/gridcraft/issues/3489), [#3378](https://github.com/storytold/gridcraft/issues/3378)).
+- A new workbook isn't added to Recent when you save it. Only opening a file adds it ([#3519](https://github.com/storytold/gridcraft/issues/3519)).
+- Saving back to Google Drive does nothing. GridCraft says it saved, but writes nothing ([#3462](https://github.com/storytold/gridcraft/issues/3462)).
 
 ## A password-protected workbook saves without its password
 
@@ -60,6 +97,10 @@ Known problems, not fixed yet:
 ## A workbook doesn't look as it does in another app
 
 GridCraft is in alpha. Some workbooks may not open exactly as they look elsewhere. If you need an exact copy, keep the original file. Please [report the workbook](https://github.com/storytold/gridcraft/issues) if you can share it: real files are how we find these problems.
+
+## Updating on Windows fails with error 1603
+
+Only one copy of GridCraft can be installed, and an update has to use the same choice as that copy. If the installer says "This app is already installed for everyone", run it again and choose **Everyone on this computer**, or add `ALLUSERS=1` to `msiexec` from an elevated terminal. A stop with error 1603 can have this cause, but the reports don't always say ([#3137](https://github.com/storytold/gridcraft/issues/3137)). If you installed it for your account only, choose **Only for me**. To change who it's installed for, uninstall it first. See [Install and update](/apps/gridcraft/install-update/#windows).
 
 ## Find the log
 

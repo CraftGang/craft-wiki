@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![LightCraft logo](/assets/apps/lightcraft.webp)
-
 LightCraft is a photo library and raw developer. You import photos, sort them with ratings, flags and albums, and edit them without ever changing the original files. If you have used a photo library app such as Lightroom, it will feel familiar, and it can import your Lightroom Classic catalog. It runs on Windows, macOS, Linux, FreeBSD and in a web browser. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 There is no account, no cloud, no telemetry and no subscription. Your photos and your library stay on your computer.
@@ -20,9 +18,9 @@ LightCraft is in alpha. It works well for JPEG and DNG files and for most Sony, 
 ## What it does
 
 - **Library**: **All Photos**, **Recently Added**, **Picks**, **By Date**, albums inside folders, smart albums, stacks and **Recently Deleted**. Search by rating, flag, camera, date, keyword or person.
-- **Culling**: star ratings, pick and reject flags and colour labels from the keyboard, with **Compare** and **Survey** views.
-- **Editing**: exposure and tone, white balance, colour mixer, colour grading, tone curve, texture, clarity, dehaze, vignette, grain, black and white, sharpening and noise reduction.
-- **Masking**: brush, linear and radial gradients, and luminance, colour, sky, subject and background selections.
+- **Culling**: star ratings, pick and reject flags and color labels from the keyboard, with **Compare** and **Survey** views.
+- **Editing**: exposure and tone, white balance, color mixer, color grading, tone curve, texture, clarity, dehaze, vignette, grain, black and white, sharpening and noise reduction.
+- **Masking**: brush, linear and radial gradients, and luminance, color, sky, subject and background selections.
 - **Retouching**: remove, heal and clone spots, and red eye.
 - **Crop and geometry**: crop, straighten, flip, rotate and perspective correction.
 - **Presets and profiles**: 41 built-in presets, your own presets, and copying edits across many photos.

@@ -37,10 +37,10 @@ CADCraft doesn't yet understand everything other CAD programs put in a drawing. 
 | To get | Choose |
 | --- | --- |
 | A PDF | **File › Export to PDF...**, or **File › Print...** to set up the plot first |
-| An SVG or PNG image | **File › Export...**, then save the file as `.svg` or `.png` |
+| A DXF, DWG, SVG or PNG file | **File › Export...**, then give the file the extension you want: `.dxf`, `.dwg`, `.svg` or `.png` |
 | Every sheet as its own PDF | **File › Batch Publish...** |
 
-See [Print](/apps/cadcraft/workflows/#print) for paper sizes, scale and plot styles.
+See [Print](/apps/cadcraft/workflows/#print) for paper sizes, scale and plot styles. To add another drawing to the open one, see [Import another drawing](/apps/cadcraft/workflows/#import-another-drawing).
 
 PDFs keep the drawing as vector lines, with layers you can turn on and off in a PDF reader, and can hold several sheets in one file.
 
@@ -49,6 +49,21 @@ PDFs keep the drawing as vector lines, with layers you can turn on and off in a 
 CADCraft draws text with the TrueType and OpenType fonts (`.ttf`, `.otf`, `.ttc`) installed on your computer. To use a new font, install it in your system's font folder, then restart CADCraft.
 
 CADCraft can't read SHX fonts yet. Text in an SHX style is drawn with CADCraft's own drafting font instead, so it may be a slightly different size from the original.
+
+### Choose a replacement font
+
+Two settings change which fonts CADCraft falls back on. Set them with the `SETVAR` command, or for every session with an environment variable.
+
+| Setting | Environment variable | What it does |
+| --- | --- | --- |
+| `FONTALT` | `CADCRAFT_FONTALT` | The font used instead of one that can't be found, such as an SHX file. Give a file name or family name, for example `Noto Sans CJK TC`. Empty uses CADCraft's own drafting font |
+| `FONTFALLBACK` | `CADCRAFT_FONTFALLBACK` | Fonts tried first for characters the text's font doesn't have, separated by commas, for example `Noto Sans CJK TC, msjh.ttc` |
+
+A single `.` clears either one.
+
+### Right-to-left text
+
+Arabic, Persian, Urdu and Hebrew text is laid out right to left, and Arabic-script letters join correctly. CADCraft's own drafting font has no Arabic letters, so it draws them from an installed font that has them. To choose the font, install one such as [Vazirmatn](https://github.com/rastikerdar/vazirmatn), and either use it in the text style or set `FONTFALLBACK` to its name. Restart CADCraft after you install a font.
 
 ## Limits
 

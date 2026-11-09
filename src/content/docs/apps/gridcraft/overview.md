@@ -5,8 +5,6 @@ sidebar:
   order: 0
 ---
 
-![GridCraft logo](/assets/apps/gridcraft.webp)
-
 GridCraft is a spreadsheet app for working with numbers and data. If you have used a modern spreadsheet app, it will feel familiar: the ribbon, formula bar, Name Box, sheet tabs, tables, charts and pivot tables are all there. It opens and saves .xlsx files, and runs on Windows, macOS, Linux and FreeBSD. It is free and open source (MIT or Apache-2.0), and made by the ArtCraft team.
 
 :::note[Alpha]
@@ -18,10 +16,10 @@ GridCraft is in alpha. The everyday workflow works from start to finish, but som
 ## What it does
 
 - **Formulas**: hundreds of worksheet functions, including XLOOKUP, IFS, LET and LAMBDA. Dynamic-array formulas such as FILTER, SORT and UNIQUE spill their results into the cells around them.
-- **Formatting**: number formats, cell styles, borders, conditional formatting with data bars, colour scales and icons, and **Format as Table**.
+- **Formatting**: number formats, cell styles, borders, conditional formatting with data bars, color scales and icons, and **Format as Table**.
 - **Tables and data**: sort, filter, Flash Fill, Text to Columns, Remove Duplicates, data validation, grouping and subtotals.
 - **Charts**: column, bar, line, pie, area, scatter and more, with sparklines in cells.
-- **Pivot tables**: summarise a table by dragging fields between rows, columns, values and filters.
+- **Pivot tables**: summarize a table by dragging fields between rows, columns, values and filters.
 - **Pictures and shapes**: float a picture over the sheet, or place it inside a cell.
 - **Review**: comments and notes, spelling, and protecting sheets and workbooks.
 - **Printing**: Page Break Preview, print areas, print titles, printing and PDF export.

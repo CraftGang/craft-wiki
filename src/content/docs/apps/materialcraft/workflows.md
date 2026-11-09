@@ -27,7 +27,7 @@ Open or close panels from the **Windows** menu. **Windows › Reset layout** put
 A package is one .sbs file. It can hold several graphs, plus the images they use.
 
 - **File › New › Graph...** adds a graph to the open package.
-- **File › New › Function Graph...** adds a function graph: a graph of maths operations, saved in the package.
+- **File › New › Function Graph...** adds a function graph: a graph of math operations, saved in the package.
 - **File › New › Empty package** starts again with an empty package.
 - **File › Open...** opens an .sbs package, or a .mcmat material.
 
@@ -46,6 +46,8 @@ A package is one .sbs file. It can hold several graphs, plus the images they use
 | Pan | Middle-drag, or **Alt**+drag |
 | Frame everything, or the selection | **F** |
 | Duplicate | **Ctrl+D** |
+| Copy, cut, paste | **Ctrl+C**, **Ctrl+X**, **Ctrl+V** |
+| Select every node | **Ctrl+A** |
 | Delete | **Delete** |
 | Delete a node and join its wires back up | **Backspace** |
 | Turn the selected nodes off | **Shift+D** |
@@ -61,8 +63,20 @@ A package is one .sbs file. It can hold several graphs, plus the images they use
 
 ## Use graph inputs and outputs
 
-- **Output** nodes are what the graph makes. Give each a usage, such as base colour, normal or roughness. The 3D View and the export use them.
+- **Output** nodes are what the graph makes. Give each a usage, such as base color, normal or roughness. The 3D View and the export use them.
 - **Input Color**, **Input Grayscale** and **Input Value** nodes are inputs of the graph. Use them to feed in an image or a value from outside.
+
+### Expose a parameter as a graph input
+
+An exposed parameter becomes a slider or color on the graph itself, so you can tune the material without opening its nodes.
+
+1. Right-click a node's parameter in **Properties** and choose **Expose as graph input**.
+2. Clear the selection to show the graph's own **Properties**. The parameter is listed under **Input parameters**. This is also where you find **Random seed** and the graph's **Attributes**: category, description, author and tags.
+3. To keep a look, type a **Preset name** and choose **Save preset**. The **Presets** list applies it again later. **Delete preset** removes the one named in the field.
+
+To delete an input, use the **x** beside it. To feed an exposed input into another node's parameter, right-click that parameter and choose **Bind to input**.
+
+The command-line tool sets exposed inputs with `--set`, as shown in [Use it with an AI assistant](#use-it-with-an-ai-assistant).
 
 ## Write a function
 
@@ -81,7 +95,7 @@ An **FX-Map** node builds an image by placing and repeating shapes.
 
 ## Adjust levels
 
-Select a **Levels** node. **Properties** shows a histogram of the node's input, with the levels curve over it. Drag the handles under the histogram to set the input range and midtones, and the handles under the grey bar to set the output range. The sliders below give exact values.
+Select a **Levels** node. **Properties** shows a histogram of the node's input, with the levels curve over it. Drag the handles under the histogram to set the input range and midtones, and the handles under the gray bar to set the output range. The sliders below give exact values.
 
 ![The Levels editor in the properties panel: a histogram of the input with the levels curve over it, three input handles below it and two output handles under a black-to-white bar, with the exact sliders underneath. Screenshot from MaterialCraft 0.1](/assets/uploads/materialcraft/levels-editor.webp)
 
@@ -109,7 +123,7 @@ While you edit, previews are computed at a smaller size to stay fast. Change it 
 
 ## Preferences
 
-Choose **Edit › Preferences...** to set the language (English or Arabic), brightness, accent colour, interface scale, how often to autosave, the preview size while editing, node thumbnails, and how the 3D view pans.
+Choose **Edit › Preferences...** to set the language (English or Arabic), brightness, accent color, interface scale, how often to autosave, the preview size while editing, node thumbnails, and how the 3D view pans.
 
 **Help › Shortcuts list...** lists every shortcut.
 
@@ -130,3 +144,27 @@ materialcraft-cli new pbr my-material.sbs --size 2048
 materialcraft-cli export my-material.sbs textures --format png --depth 16
 materialcraft-cli render my-material.sbs preview.png --scene sphere
 ```
+
+### More commands
+
+| Command | What it does |
+| --- | --- |
+| `new <template> <out.sbs>` | Makes a package. The templates are `empty`, `pbr` and `atomics` |
+| `info <package>` | Lists the graphs, nodes and outputs |
+| `nodes` | Lists the node library. Narrow it with `--filter` or `--category` |
+| `cook <package>` | Computes a graph and reports the time and errors for each node |
+| `run <package> <command-id>` | Runs one command. Add `-o out.sbs` to save the result |
+| `batch <script.json>` | Runs a list of commands from a file |
+| `serve` | Takes commands as JSON lines, on stdio or on a local port |
+
+`cook`, `export` and `render` accept `--set` to give an exposed graph input a value first. Use JSON for the value:
+
+```bash
+materialcraft-cli export my-material.sbs textures --set roughness=0.4 --set tint="#aa7744"
+```
+
+`render` also takes `--scene` (`rounded_cube`, `cube`, `sphere`, `cylinder`, `plane`, `torus` or `material_ball`), `--tiling`, `--view 2d --node <id>` to render one node, and `--hq` for a finer, lit render. Where a command wants a package, `sample` stands for the built-in Atomic sample.
+
+### Connect to a running app
+
+The control port needs a token, so other programs on your computer can't drive the app. `materialcraft --control 7878` writes one to a file in your temp folder, and `materialcraft-cli mcp --bridge 7878` reads it. To use your own, set `MATERIALCRAFT_CONTROL_TOKEN` (16 to 1024 characters) before you start the app, or pass the token with `--token`.
