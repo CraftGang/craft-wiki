@@ -47,9 +47,7 @@ Applied redactions remove the text, pictures and drawings under the marks for go
 :::
 
 :::danger
-
-PdfCraft is still very much in alpha. For now you should use other tools for redaction of sensitive material prior to sharing/distribution of documents. 
-
+PdfCraft is in alpha. For now, use another tool to redact sensitive documents before you share them.
 :::
 
 ## Convert

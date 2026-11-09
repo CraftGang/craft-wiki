@@ -44,7 +44,7 @@ Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are
 
 The builds need glibc 2.35 or newer, as in Ubuntu 22.04 and later. If you install the tarball, see [It won't start on Linux](/apps/deckcraft/troubleshooting/#it-wont-start-on-linux) for the libraries it needs.
 
-**Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `app-office/deckcraft-bin`. It is not maintained by the DeckCraft team.
+**Gentoo**: the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `app-office/deckcraft-bin`. It is not maintained by the DeckCraft team.
 
 ### FreeBSD
 

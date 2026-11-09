@@ -89,8 +89,6 @@ If a font is missing, **Home › Replace Fonts…** swaps it for one you have. A
 
 DeckCraft is in alpha. Some layouts, effects or fonts in .pptx files from other apps may come out differently. Keep the original file, and save your work as .deckcraft to keep everything DeckCraft supports. Please [report the presentation](https://github.com/storytold/deckcraft/issues) if you can share it: real files are how we find these problems.
 
-If a font is missing, **Home › Replace Fonts…** swaps it for one you have.
-
 ## Find the log
 
 DeckCraft writes a log you can attach to a bug report. It records crashes, parts of a file it couldn't read, failed recovery saves and sound problems.

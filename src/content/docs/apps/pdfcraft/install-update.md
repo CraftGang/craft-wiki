@@ -48,7 +48,7 @@ Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are
 
 The builds need glibc 2.35 or newer, as in Ubuntu 22.04 and later. The RISC-V builds need glibc 2.39 or newer. To print, install CUPS's command-line tools (`cups-client` on Debian and Ubuntu); without them, PdfCraft can still save to PDF from the Print dialog.
 
-**Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `app-text/pdfcraft-bin`. It is not maintained by the PdfCraft team.
+**Gentoo**: the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `app-text/pdfcraft-bin`. It is not maintained by the PdfCraft team.
 
 ### FreeBSD
 
