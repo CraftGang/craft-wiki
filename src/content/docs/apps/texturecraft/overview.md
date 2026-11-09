@@ -11,7 +11,7 @@ TextureCraft is a 3D texture painting app. You load a 3D model, paint materials 
 TextureCraft is young and changes quickly. Most of a texture artist's daily workflow is in place, but some things are still missing, such as pen tilt, and pen pressure on macOS and Linux. Keep a copy of important projects, and tell us what breaks on [GitHub](https://github.com/storytold/texturecraft/issues) or [Discord](https://discord.gg/artcraft).
 :::
 
-![The TextureCraft workspace: the Assets shelf of materials on the left, a 3D view and a 2D UV view of a cream portable TV with a crayon flower doodle in the middle, and the Texture Set List, the Layers stack and the fill layer's properties on the right](/assets/uploads/texturecraft/workspace.webp)
+![The TextureCraft workspace: the Assets shelf of materials on the left, a 3D view and a 2D UV view of a cream portable TV with a crayon flower doodle in the middle, and the Texture Sets, the Layers stack and the fill layer's properties on the right](/assets/uploads/texturecraft/workspace.webp)
 
 ## What it does
 

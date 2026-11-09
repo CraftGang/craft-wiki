@@ -22,7 +22,7 @@ Many forms are just printed pages, with nowhere to type. Choose **Fill & Sign** 
 - **Date** adds today's date. **Edit › Preferences…** sets its format.
 - **Signature** and **Initials** add your signature or initials.
 
-The first time you add a signature, PdfCraft asks you to make one. **Type** your name, **Draw** it with the mouse or a pen, use an **Image** of it (a PNG or JPEG), or **Scan** it. PdfCraft remembers it for next time. **Sign › Fill & Sign** has the same tools, and the commands to change or remove your saved signature and initials.
+The first time you add a signature, PdfCraft asks you to make one. **Type** your name, **Draw** it with the mouse or a pen, use an **Image** of it (a PNG or JPEG), or **Scan** it. PdfCraft remembers it for next time. **Sign › Fill & Sign** has the same tools, and the **Sign** menu has the commands to change or remove your saved signature and initials.
 
 ## Sign with a digital ID
 

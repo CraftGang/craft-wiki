@@ -42,11 +42,11 @@ Not supported yet: Visual LISP ActiveX functions (`vlax-…`, `vla-…`), DCL di
 
 ## Change command aliases
 
-Choose **Tools › Customize › Edit Command Aliases (PGP)...** to add, change or remove aliases. **Import…** loads a `.pgp` alias file from another CAD program. Your aliases are kept after a restart.
+Choose **Tools › Customize › Edit Command Aliases (PGP)...** to add, change or remove aliases. Your aliases are kept after a restart.
 
 ## Use cadcraft-cli
 
-`cadcraft-cli` comes with the Windows and Linux packages. On macOS it is a separate download: see [Install and update](/apps/cadcraft/install-update/#macos). It has five subcommands:
+`cadcraft-cli` comes with the Windows, Linux and FreeBSD packages. On macOS it is a separate download: see [Install and update](/apps/cadcraft/install-update/#macos). Its main subcommands are:
 
 | Subcommand | What it does |
 | --- | --- |

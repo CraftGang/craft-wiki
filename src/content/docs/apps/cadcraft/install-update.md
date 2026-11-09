@@ -72,7 +72,7 @@ Most Linux files have a signature file next to them: `.asc` for most, `.sig` for
 
 ### FreeBSD
 
-Download `cadcraft-<ver>-freebsd-x86_64.tar.gz` (or `cadcraft-<ver>-freebsd-aarch64.tar.gz` for ARM64) and unpack it.
+Download `cadcraft-<ver>-freebsd-x86_64.tar.gz` (or `cadcraft-<ver>-freebsd-aarch64.tar.gz` for ARM64) and unpack it. The ARM64 build can't open or save DWG files yet (use DXF).
 
 ### In a browser
 

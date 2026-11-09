@@ -19,8 +19,8 @@ To keep a folder at hand, such as where your scanner or a synced cloud drive sav
 
 ## 3. Find your way around
 
-- **Menu** at the top left holds the **File**, **Edit**, **View**, **Sign**, **Window** and **Help** menus. On a Mac they are in the menu bar at the top of the screen.
-- **All tools**, **Edit**, **Convert** and **E-Sign**, next to it, change which tools the panel on the left shows.
+- The menus at the top left are **File**, **Edit**, **View**, **Sign**, **Window** and **Help**. On a Mac they are in the menu bar at the top of the screen.
+- **All tools**, **Edit**, **Convert** and **E-Sign**, next to them, change which tools the panel on the left shows.
 - The buttons down the right edge open side panels: comments, bookmarks, page thumbnails, form fields, layers and attachments.
 - The controls at the bottom right show the page number and change the zoom.
 - **Find tools and commands** at the top (**Ctrl+K**, **⌘K** on a Mac) finds any tool or command by name.

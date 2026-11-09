@@ -56,7 +56,7 @@ tar -xzf figcraft-<ver>-freebsd-x86_64.tar.gz --strip-components 1 -C /usr/local
 
 ### In a browser
 
-`figcraft-web-<ver>.zip` is the web version. Unpack it onto any web server and open it in a modern browser. It can't check for updates, and has no system fonts, so it uses the fonts built into FigCraft.
+`figcraft-web-<ver>.zip` is the web version. Unpack it onto any web server and open it in a modern browser. It can't check for updates. It uses the fonts built into FigCraft; in Chrome or Edge, **Use fonts installed on this computer…** in the font menu adds your computer's fonts.
 
 ### The collaboration server
 

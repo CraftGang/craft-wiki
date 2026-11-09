@@ -5,7 +5,7 @@ sidebar:
   order: 3
 ---
 
-PdfCraft groups its tools in the **All tools** panel on the left: **Export a PDF**, **Fill & Sign**, **Edit a PDF**, **Create a PDF**, **Combine files**, **Organize pages**, **Add comments**, **Scan & OCR**, **Protect a PDF**, **Redact a PDF**, **Compress a PDF**, **Prepare a form** and more under **View more**. Pick one and its tools appear above the page. The same commands are in the menus under **Menu**. If you can't find a command, press **Ctrl+K** (**⌘K** on a Mac) and type its name.
+PdfCraft groups its tools in the **All tools** panel on the left: **Export a PDF**, **Fill & Sign**, **Edit a PDF**, **Create a PDF**, **Combine files**, **Organize pages**, **Add comments**, **Scan & OCR**, **Protect a PDF**, **Redact a PDF**, **Compress a PDF**, **Prepare a form**, **Add a stamp**, **Use a certificate** and more under **View more**. Pick one and its tools appear in the panel. The same commands are in the menus at the top. If you can't find a command, press **Ctrl+K** (**⌘K** on a Mac) and type its name.
 
 ## Read
 
@@ -55,7 +55,7 @@ PdfCraft is still very much in alpha. For now you should use other tools for red
 ## Convert
 
 - **File › Export** saves the PDF as **Word**, **PowerPoint**, **RTF**, **HTML**, plain text, or each page as a picture. **Export all images…** saves every picture in the document. The layout of Word exports isn't kept well yet.
-- **File › Create** makes a PDF from another file, several files, pictures or the clipboard, or a **New blank PDF**.
+- **File › Create** makes a PDF from another file, several files, pictures or the clipboard. **File › New blank PDF** makes an empty one.
 - **Compress a PDF › Reduce file size** makes a smaller copy. **Advanced optimization** chooses what to shrink.
 
 ## Recognize scanned text

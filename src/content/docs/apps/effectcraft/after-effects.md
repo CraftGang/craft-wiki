@@ -41,7 +41,7 @@ These are open reports. Check the import report for your own project.
 
 The import keeps each footage item's path. If a file isn't at that path on your computer, the item shows as missing. Relink it with **File › Dependencies › Relink Missing Footage...**: see [Footage is missing or offline](/apps/effectcraft/troubleshooting/#footage-is-missing-or-offline).
 
-Fonts are matched by name. Fonts you don't have installed are listed.
+Fonts are matched by name. Text in a font you don't have installed keeps the font's name and is drawn with a fallback font. **File › Dependencies › Find Missing Fonts** counts the layers that use one.
 
 ## Export for After Effects
 

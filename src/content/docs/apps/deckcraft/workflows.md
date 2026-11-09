@@ -10,7 +10,7 @@ DeckCraft's ribbon groups its tools into tabs: **Home**, **Insert**, **Draw**, *
 ## Organize slides
 
 - **Home › New Slide** adds a slide; its arrow picks a layout. **Layout** changes the current slide's layout, and **Reset** puts its placeholders back.
-- **Home › Section** groups slides into named sections. Click a section's name in the thumbnails to fold it away.
+- **Home › Section** groups slides into named sections. In **Slide Sorter**, the arrow by a section's name folds it away.
 - Drag thumbnails to reorder slides. **View › Slide Sorter** shows them all at once, with each slide's transition.
 - **Slide Show › Hide Slide** keeps a slide in the file but skips it when you present.
 

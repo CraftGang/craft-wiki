@@ -37,7 +37,7 @@ A package is one .sbs file. It can hold several graphs, plus the images they use
 - Drag from an output port to an input port to connect two nodes.
 - Double-click a node to show it in the **2D View**.
 - Select nodes and choose **Tools › Create graph from selection** to turn them into a graph of their own.
-- Right-click the graph to add a comment, a frame around the selected nodes, or a navigation pin. **F2** and **Shift+F2** jump between pins.
+- Right-click the graph to add a comment, a frame, or a navigation pin. **F2** and **Shift+F2** jump between pins.
 - **Tools › Snap to grid** turns snapping on or off.
 
 | To | Do this |
@@ -82,7 +82,7 @@ The command-line tool sets exposed inputs with `--set`, as shown in [Use it with
 
 **Pixel Processor** computes every pixel of its image with a function. **Value Processor** computes one value with a function.
 
-Select the node, then choose **Edit function** in **Properties**. In the function editor you add operations, set constants, wire them up and pick the result.
+Select the node, then choose **Edit function graph...** in **Properties**. In the function editor you add operations, set constants, wire them up and pick the result.
 
 ## Make a pattern with an FX-Map
 

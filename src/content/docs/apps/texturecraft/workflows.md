@@ -15,9 +15,9 @@ On a Mac, use **⌘** in place of **Ctrl** in the shortcuts below.
 
 ## Work with texture sets
 
-Each material in your model is a texture set, listed in the **Texture Set List**. Click one to paint on it. The eye icon shows or hides it.
+Each material in your model is a texture set, listed in the **Texture Sets** panel. Click one to paint on it. The eye icon shows or hides it.
 
-Open **Texture Set Settings** (next to **Layers**) to change the texture size of a set, from 128 to 8192 pixels, or to add and remove channels. This is also where you set the **Normal map format** (OpenGL or DirectX) for the project.
+Open **Texture Set Settings** (next to **Layers**) to change the texture size of a set, from 256 to 8192 pixels, or to add and remove channels. This is also where you set the **Normal map format** (OpenGL or DirectX) for the project.
 
 ## Build up layers
 
@@ -115,7 +115,7 @@ Open **Window › Views › Display Settings** to change how the model is lit an
 
 ## Bake mesh maps
 
-Choose **Mode › Bake Mesh Maps** (**F8**). Select the texture sets on the left, then select the maps you want under **Mesh map bakers**: normal, world space normal, ID, ambient occlusion, curvature, position, thickness, height, bent normals, opacity, color map and world space direction. Click a baker to see its settings.
+Choose **Mode › Bake Mesh Maps** (**F8**). Select the texture sets on the left, then select the maps you want under **Mesh Map Bakers**: normal, world space normal, ID, ambient occlusion, curvature, position, thickness, height, bent normals, opacity, color map and world space direction. Click a baker to see its settings.
 
 To bake detail from a high-poly model, choose **Add High-Poly Meshes** in the common parameters. Choose **Bake Selected Textures** to start, and **Return to Painting Mode** when it's done.
 

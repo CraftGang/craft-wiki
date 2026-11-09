@@ -20,7 +20,7 @@ Live sessions are a preview. There are no accounts or teams yet: the code or lin
 3. Click **Start sharing**.
 4. FigCraft shows a join code. Click **Copy code** to send the code, or **Copy link** to send an invite link that opens FigCraft and joins.
 
-Below the code, choose what it lets people do: **Can edit**, **Can comment** or **Can view** online, or **Can edit** or **Can view** on the local network. On the local network, choose before you click **Start sharing**.
+Below the code, choose what it lets people do: **Can edit**, **Can comment** or **Can view**. On the local network, everyone who joins can edit.
 
 To end it, open **Share** again and click **Stop sharing**. Everyone else is disconnected and their codes stop working. They keep their own copy.
 

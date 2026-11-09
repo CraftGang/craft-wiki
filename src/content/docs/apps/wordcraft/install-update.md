@@ -60,7 +60,7 @@ Download `wordcraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64` for ARM64
 
 ## Update
 
-WordCraft checks for updates when it starts, and tells you when one is out. To check yourself, choose **Help › Check for Updates**. Your settings are kept outside the app's folder, so updating keeps them.
+WordCraft checks for updates when it starts, and tells you when one is out. To check yourself, choose **Help › Check for Updates…**. Your settings are kept outside the app's folder, so updating keeps them.
 
 - **ArtCraft Launcher**: tells you about new versions and updates WordCraft for you.
 - **Installer, DMG, `.deb`, `.rpm`**: install the new version over the old one, or update through the [Linux repositories](https://getartcraft.com/linux).

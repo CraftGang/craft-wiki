@@ -51,7 +51,7 @@ Type `offset 0.25`, then click the circle and click outside it. CADCraft draws a
 
 ## 5. Save
 
-Press **Ctrl+S** (**⌘S** on a Mac). A new drawing is saved as DXF unless you choose otherwise. To save as DWG, choose **File › Save As** and pick **Drawing (DWG)**, or change **Save new drawings as** in **Tools › Options › Open and Save**.
+Press **Ctrl+S** (**⌘S** on a Mac). A new drawing is saved as DXF unless you choose otherwise. To save as DWG, choose **File › Save As...** and pick **Drawing (DWG)**, or change **Save new drawings as** in **Tools › Options › Open and Save**.
 
 CADCraft also autosaves unsaved drawings every 10 minutes, so it can offer them back after a crash. See [Troubleshooting](/apps/cadcraft/troubleshooting/#cadcraft-closed-and-i-lost-my-work).
 

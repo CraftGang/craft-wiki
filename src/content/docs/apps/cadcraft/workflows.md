@@ -122,7 +122,7 @@ Model space is where you draw, at full size. A layout is a sheet of paper with o
 In CAD, printing is called plotting. **File › Print...** (**Ctrl+P**, **⌘P** on a Mac) opens the **Plot** dialog.
 
 :::note
-CADCraft plots to a file. It can't send a drawing to a printer yet ([#2849](https://github.com/storytold/cadcraft/issues/2849)), so plot to a PDF and print that from a PDF viewer.
+CADCraft plots to PDF, PNG and SVG files. It can't send a drawing to a printer yet ([#2849](https://github.com/storytold/cadcraft/issues/2849)), so plot to a PDF and print that from a PDF viewer.
 :::
 
 ### Plot a drawing
@@ -239,7 +239,7 @@ The Flatpak build can't reach the device ([#2713](https://github.com/storytold/c
 
 ## Keyboard shortcuts
 
-On a Mac, use **⌘** in place of **Ctrl**. To change shortcuts, choose **Tools › Customize › Keyboard Shortcuts...**.
+On a Mac, use **⌘** in place of **Ctrl**.
 
 | Shortcut | What it does |
 | --- | --- |
