@@ -97,10 +97,10 @@ Open **Window › Effects** to browse the library of video effects, audio effect
 
 Some things you may expect from other editors don't work yet:
 
-- You can't copy and paste keyframes ([#4241](https://github.com/storytold/filmcraft/issues/4241)).
+- You can't copy and paste keyframes ([#2582](https://github.com/storytold/filmcraft/issues/2582)).
 - Alt+drag doesn't duplicate a keyframe ([#4379](https://github.com/storytold/filmcraft/issues/4379)).
-- The **Delete** key deletes the clip, not the selected keyframe ([#4376](https://github.com/storytold/filmcraft/issues/4376)). Right-click the keyframe and choose **Clear** instead.
-- You can't reorder effects by dragging them in **Effect Controls** ([#4378](https://github.com/storytold/filmcraft/issues/4378)).
+- The **Delete** key deletes the clip, not the selected keyframe ([#1590](https://github.com/storytold/filmcraft/issues/1590)). Right-click the keyframe and choose **Clear** instead.
+- You can't reorder effects by dragging them in **Effect Controls** ([#1731](https://github.com/storytold/filmcraft/issues/1731)).
 
 ## Masks
 

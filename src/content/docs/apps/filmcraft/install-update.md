@@ -46,7 +46,7 @@ Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are
 
 The tarball's `install.sh` installs FilmCraft for your account in `~/.local`, without administrator rights. To install it for everyone, run `sudo ./install.sh --prefix /usr/local` instead.
 
-**Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-video/filmcraft-bin`. It is not maintained by the FilmCraft team, so report packaging problems there.
+Gentoo: the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-video/filmcraft-bin`. It is not maintained by the FilmCraft team, so report packaging problems there.
 
 ### FreeBSD
 

@@ -52,7 +52,7 @@ The first time you run the AppImage, it adds PhotoCraft's icon and menu entry un
 
 The Flatpak needs the freedesktop runtime from [Flathub](https://flathub.org/setup); `flatpak` offers to install it for you. Start it with `flatpak run ai.storyteller.photocraft`.
 
-**Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-gfx/photocraft-bin`. It is not maintained by the PhotoCraft team.
+Gentoo: the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-gfx/photocraft-bin`. It is not maintained by the PhotoCraft team.
 
 ### FreeBSD
 
@@ -94,7 +94,7 @@ Run `photocraft --help` to see them all.
 
 ## Update
 
-PhotoCraft checks for a new version when it starts, and tells you when one is out. Only public release information is requested; nothing about you or your documents is sent. To check yourself, choose **Help › Check for Updates…**. To stop the check at startup, turn off **Automatically Check for Updates** in **Edit › Preferences › Settings…** (on a Mac, **PhotoCraft › Settings**).
+PhotoCraft checks for a new version when it starts, and tells you when one is out. Only public release information is requested; nothing about you or your documents is sent. To check yourself, choose **Help › Check for Updates…**. To stop the check at startup, turn off **Automatically Check for Updates** in **Edit › Preferences › General…** (on a Mac, **PhotoCraft › Settings…**).
 
 - **ArtCraft Launcher**: tells you about new versions and updates PhotoCraft for you.
 - **Installer, DMG, `.deb`, `.rpm`, Arch package**: install the new version over the old one.

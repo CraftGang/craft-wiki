@@ -82,7 +82,7 @@ SoundCraft compensates for plugin delay automatically. You can turn this off wit
 - **Playlists**: the small arrow beside a track's name opens its playlist menu. **New...** starts an empty playlist, **Duplicate...** copies the current clips into a new one, and **Delete Unused...** removes all but the active playlist. Pick a playlist in the list below to switch to it. Each loop-recording take lands on its own playlist.
 - **Track › Split into Mono** turns a stereo or multichannel track into one mono track per channel.
 - **Track › Make Inactive** switches a track off without deleting it. In a tall track header, the **dyn** and **off** menu does the same.
-- **Track › Commit...** (**⌥⇧C**) renders the selected track, plug-ins included, into a new audio track named like **Kick.cm** right below it. It adds two seconds at the end so reverb tails aren't cut. The original track becomes inactive and hidden. **Track › Bounce...** does the same.
+- **Track › Commit...** (**⌥⇧C**) renders the selected track, plugins included, into a new audio track named like **Kick.cm** right below it. It adds two seconds at the end so reverb tails aren't cut. The original track becomes inactive and hidden. **Track › Bounce...** does the same.
 - **Track › Freeze** and the freeze button in the track header only mark the track. They don't render anything yet. Use **Commit...** instead.
 
 ## Use plugins
@@ -153,7 +153,7 @@ Choose **File › Import › Video** to add a movie on a video track, with thumb
 
 ## Bounce
 
-**File › Bounce Mix** (**⌥⌘B**) renders the mix to WAV, AIFF or FLAC. See [Getting started](/apps/soundcraft/getting-started/#6-bounce-your-mix) for the options. SoundCraft can't export MP3 or AAC yet ([#1373](https://github.com/storytold/soundcraft/issues/1373)).
+**File › Bounce Mix** (**⌥⌘B**) renders the mix to WAV, AIFF or FLAC. See [Getting started](/apps/soundcraft/getting-started/#6-bounce-your-mix) for the options. SoundCraft can't export MP3 or AAC yet ([#648](https://github.com/storytold/soundcraft/issues/648)).
 
 ## Check a session's audio
 
@@ -165,7 +165,7 @@ The **Window** menu opens more than the main windows:
 
 - **Undo History** lists your edits. **Clip List** lists the clips and audio files in the session.
 - **Metadata Inspector** shows the sample rate, bit depth, timecode rate and counts of tracks, clips and markers. You can write session comments there too.
-- **Disk Usage** and **System Usage** show how much memory the session's audio takes, the audio device, the number of plug-ins and how many undo steps you have.
+- **Disk Usage** and **System Usage** show how much memory the session's audio takes, the audio device, the number of plugins and how many undo steps you have.
 - **Task Manager** (**⌥'**) shows a running bounce and its progress.
 - **Color Palette** colors the selected tracks, or the selected clips with **Shift** held.
 - **MIDI Event List** (**⌥=**) lists the notes of the selected MIDI clip. You can change a note's velocity or delete it.
