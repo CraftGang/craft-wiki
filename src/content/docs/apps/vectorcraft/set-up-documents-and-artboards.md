@@ -3,6 +3,7 @@ title: Set up a document and artboards
 description: Start a document at the size you need, add and arrange its artboards, set units, bleed and color mode, and move around the canvas.
 sidebar:
   order: 10
+parent: workflows
 ---
 
 This page shows how to start a new document from a preset or your own size, then add, name and arrange its artboards. It also covers the document's units, bleed and color mode, and the tools and shortcuts you use to move around the canvas.

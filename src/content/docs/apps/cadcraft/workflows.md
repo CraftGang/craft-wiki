@@ -50,6 +50,7 @@ Layers group objects so you can show, hide, lock and color them together.
 - **Format › Layers** opens the **Layer Properties Manager**, for creating layers and setting their color, linetype, lineweight and whether they plot.
 - **Format › Layer Tools** has **Isolate Layer**, **Freeze Layer**, **Layer Off**, **Lock Layer**, **Layer Match**, **Previous Layer** and others.
 - The **Properties** palette (**Ctrl+1**) shows and edits whatever is selected.
+- To save which layers are on, frozen or locked, use the **Layer State** row of the **Layer Properties Manager**. Type a name under **New state name** and click **Save State**. Later, pick the state and click **Restore**, or **Delete** to remove it.
 
 ## Add text and dimensions
 
@@ -72,6 +73,33 @@ A block is a group of objects you can place again and again.
 - **Draw › Block › Define Attributes...** adds a field, such as a part number, that each copy can fill in differently.
 - **Insert › Block...** places a block.
 - **Tools › Block Editor** edits a block's definition.
+
+## Reference other drawings
+
+An external reference (xref) shows another DWG or DXF file inside your drawing without copying it. When the other file changes, your drawing shows the change after you reload it.
+
+1. Choose **Insert › DWG Reference...** and pick the file.
+2. Follow the prompts at the command line to place it.
+3. Choose **Window › Reference Manager** to see every reference.
+
+The Reference Manager lists each reference's **Status** and **Saved Path**. For the selected one you can **Reload**, **Unload**, **Detach**, **Bind** and **Open**. **Bind** turns it into a block of your drawing, and renames its layers to `NAME$0$LAYER`. **Insert** also makes it a block, but keeps the layer names. **Type** switches it between **Attach** and **Overlay**.
+
+CADCraft saves the path as a path relative to your drawing when the file is in the same folder or below it, so you can move the whole project folder. If a reference shows **Not Found**, fix its path in the **Saved Path** box and click **Apply**.
+
+**Tools › Open Xref** opens the file behind a reference so you can edit it.
+
+CADCraft can't show PDF, DWF or DGN files as underlays.
+
+## Find and select objects
+
+- **Edit › Quick Select...** selects objects by type and property. Set **Apply to** to the **Entire drawing** or the **Current selection**, then choose an **Object type**, a property, an operator and a value. Choose **Include in new selection set** or **Exclude from new selection set**. Select **Append to current selection set** to add to what's already selected.
+- **Edit › Find...** (**Ctrl+F**) finds text in the current space. **Find All** lists every match, **Select All** selects those objects, and **Replace** or **Replace All** changes the text. Use **Match case** and **Whole words** to narrow it.
+- **Tools › Group** turns selected objects into a group that you can select as one. **Tools › Ungroup** takes it apart.
+- **Tools › Count** counts blocks in the drawing.
+
+## Clean up a drawing
+
+Type `purge` to remove things the drawing doesn't use: blocks, layers, linetypes, text and dimension styles, groups, zero-length lines and empty text. It asks which type to remove and which names, and can ask you to confirm each one. Purge before you send a drawing to someone, to make the file smaller.
 
 ## Constrain geometry
 
@@ -152,6 +180,30 @@ Your devices are saved in the `plotters` folder: `%APPDATA%\CADCraft\plotters` o
 
 **File › Batch Publish...** plots model space and every layout, each to its own PDF. Name the set, such as `set.pdf`, and the files are called `set-<sheet>.pdf`.
 
+### Preview and sheet books
+
+**File › Plot Preview** shows the current layout as it will plot. Click **Print...** to go back to the Plot dialog, or **Close** to leave.
+
+**File › Sheet Books to PDF...** is for a model-space drawing that holds many sheets side by side, each inside a closed polyline frame 297 mm high. Frames in one row become the pages of one PDF, left to right, and each row becomes its own PDF. Each page uses the standard A-series paper its frame matches. Save the drawing first: the PDFs are written next to it.
+
+## Combine and compare drawings
+
+### Import another drawing
+
+**File › Import...** adds the objects of another DXF or DWG file to the open drawing. Pick the file. The objects arrive at the drawing's origin (0,0) at their original size, along with the layers, styles and blocks they use. Move them where you need them afterward.
+
+To open a file as its own drawing instead, use **File › Open...**.
+
+### Compare two drawings
+
+**Tools › Compare Drawings...** shows what changed between two versions of a drawing.
+
+1. Open one version of the drawing.
+2. Choose **Tools › Compare Drawings...**.
+3. At the command line, type the name of another open drawing, or the path to the other file.
+
+The command line reports how many objects are only in your drawing, only in the other one, changed, and the same. CADCraft marks the differences in the drawing. Use the **◀** and **▶** buttons that appear over it to jump to the previous and next change. Click **×** (**Close Comparison**) when you're done.
+
 ## Measure
 
 **Tools › Inquiry** has **Distance**, **Area**, **Radius**, **Angle**, **ID Point** and **List**. The answer appears on the command line. For quick sums, **Window › QuickCalc** opens a calculator.
@@ -161,7 +213,29 @@ Your devices are saved in the `plotters` folder: `%APPDATA%\CADCraft\plotters` o
 - **View › Interface Theme**: **Light**, **Dark** or **Use System Setting**.
 - **Edit › Interface Language**: choose one of 19 languages, or **Auto** to follow your system. Some languages need a font for their script installed on your computer.
 - The **Window** menu shows or hides **Tool Sets**, the **Command Line**, the **Status Bar** and the palettes. Drag a palette's header to move it. **Window › Reset Panel Layout** puts everything back.
-- **Tools › Options...** has the rest, such as the background color, crosshair size and what a right-click does.
+- **View › Accessibility › Animation Effects** turns interface animations on or off, or follows your system. **Show System Cursor** is in the same menu.
+- **Tools › Options...** has the rest. See [Options](#options).
+
+### Options
+
+**Tools › Options...** has six tabs. Changes apply at once and are kept for next time.
+
+| Tab | What you can set |
+| --- | --- |
+| **Display** | **Interface theme**, **Interface scale**, **Model background** and **Crosshair size** |
+| **Open and Save** | The default format and version, **Units of new drawings**, **Automatic save every**, **Create backup copy with each save** and **Automatic save file location** |
+| **Drafting** | **Object snap marker size** and **Object snap aperture**. **Drafting Settings...** opens the snap, grid, polar tracking and Dynamic Input settings |
+| **Selection** | **Pickbox size**, **Grip size**, **Hold Shift to add to the selection** and **Select using two clicks only** |
+| **User Preferences** | **Interface language**, and **Right-Click Customization...** for what a right-click does |
+| **Profiles** | **Reset to Defaults**, and **Copy as JSON** to copy your settings |
+
+If the interface looks too small on a high-resolution screen, raise **Interface scale** on the **Display** tab. Turn on **Select using two clicks only** to define each corner of a selection window with its own click instead of dragging.
+
+## Use a 3D mouse
+
+On Windows and Linux, CADCraft can use a 3Dconnexion 3D mouse. Choose **Tools › 3D Mouse...** to check that CADCraft found it. The window shows the connection status and has **Enable 3D mouse navigation**, **Pan sensitivity**, **Zoom sensitivity**, **Reverse zoom direction** and **Calibrate**. Move the cap sideways to pan, and push, pull or twist it to zoom. The left button zooms to extents. The right button calibrates.
+
+The Flatpak build can't reach the device ([#2713](https://github.com/storytold/cadcraft/issues/2713)).
 
 ## Keyboard shortcuts
 

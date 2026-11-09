@@ -14,6 +14,11 @@ Assistants talk to EffectCraft through its command-line tool, `effectcraft-cli`:
 - **Windows**: `effectcraft-cli.exe` is next to `effectcraft.exe` in the install folder, `%LOCALAPPDATA%\Programs\ArtCraft\EffectCraft` by default. It isn't on your `PATH`, so use its full path.
 - **macOS**: download `effectcraft-cli-<ver>-macos-universal.zip` from the [release page](https://github.com/storytold/effectcraft/releases/latest).
 - **Linux `.deb` and `.rpm`**: it's installed as `/usr/bin/effectcraft-cli`.
+- **Windows portable `.zip`**: `effectcraft-cli.exe` is in the same folder as `effectcraft.exe`.
+- **Linux `.tar.gz`**: it's in the `bin` folder inside the archive.
+- **Linux AppImage**: it's inside the file. Run `./effectcraft-<ver>-linux-x86_64.AppImage --appimage-extract` to unpack it. The tool is then `squashfs-root/usr/bin/effectcraft-cli`.
+- **Linux Flatpak**: run it with `flatpak run --command=effectcraft-cli ai.storyteller.effectcraft`. A Flatpak can only see your Pictures, Videos and Documents folders, plus any others you give it access to.
+- **FreeBSD `.tar.gz`**: it's in the `bin` folder inside the archive.
 
 ## Connect your assistant
 

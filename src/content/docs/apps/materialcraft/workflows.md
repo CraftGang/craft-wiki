@@ -46,6 +46,8 @@ A package is one .sbs file. It can hold several graphs, plus the images they use
 | Pan | Middle-drag, or **Alt**+drag |
 | Frame everything, or the selection | **F** |
 | Duplicate | **Ctrl+D** |
+| Copy, cut, paste | **Ctrl+C**, **Ctrl+X**, **Ctrl+V** |
+| Select every node | **Ctrl+A** |
 | Delete | **Delete** |
 | Delete a node and join its wires back up | **Backspace** |
 | Turn the selected nodes off | **Shift+D** |
@@ -63,6 +65,18 @@ A package is one .sbs file. It can hold several graphs, plus the images they use
 
 - **Output** nodes are what the graph makes. Give each a usage, such as base color, normal or roughness. The 3D View and the export use them.
 - **Input Color**, **Input Grayscale** and **Input Value** nodes are inputs of the graph. Use them to feed in an image or a value from outside.
+
+### Expose a parameter as a graph input
+
+An exposed parameter becomes a slider or color on the graph itself, so you can tune the material without opening its nodes.
+
+1. Right-click a node's parameter in **Properties** and choose **Expose as graph input**.
+2. Clear the selection to show the graph's own **Properties**. The parameter is listed under **Input parameters**. This is also where you find **Random seed** and the graph's **Attributes**: category, description, author and tags.
+3. To keep a look, type a **Preset name** and choose **Save preset**. The **Presets** list applies it again later. **Delete preset** removes the one named in the field.
+
+To delete an input, use the **x** beside it. To feed an exposed input into another node's parameter, right-click that parameter and choose **Bind to input**.
+
+The command-line tool sets exposed inputs with `--set`, as shown in [Use it with an AI assistant](#use-it-with-an-ai-assistant).
 
 ## Write a function
 
@@ -130,3 +144,27 @@ materialcraft-cli new pbr my-material.sbs --size 2048
 materialcraft-cli export my-material.sbs textures --format png --depth 16
 materialcraft-cli render my-material.sbs preview.png --scene sphere
 ```
+
+### More commands
+
+| Command | What it does |
+| --- | --- |
+| `new <template> <out.sbs>` | Makes a package. The templates are `empty`, `pbr` and `atomics` |
+| `info <package>` | Lists the graphs, nodes and outputs |
+| `nodes` | Lists the node library. Narrow it with `--filter` or `--category` |
+| `cook <package>` | Computes a graph and reports the time and errors for each node |
+| `run <package> <command-id>` | Runs one command. Add `-o out.sbs` to save the result |
+| `batch <script.json>` | Runs a list of commands from a file |
+| `serve` | Takes commands as JSON lines, on stdio or on a local port |
+
+`cook`, `export` and `render` accept `--set` to give an exposed graph input a value first. Use JSON for the value:
+
+```bash
+materialcraft-cli export my-material.sbs textures --set roughness=0.4 --set tint="#aa7744"
+```
+
+`render` also takes `--scene` (`rounded_cube`, `cube`, `sphere`, `cylinder`, `plane`, `torus` or `material_ball`), `--tiling`, `--view 2d --node <id>` to render one node, and `--hq` for a finer, lit render. Where a command wants a package, `sample` stands for the built-in Atomic sample.
+
+### Connect to a running app
+
+The control port needs a token, so other programs on your computer can't drive the app. `materialcraft --control 7878` writes one to a file in your temp folder, and `materialcraft-cli mcp --bridge 7878` reads it. To use your own, set `MATERIALCRAFT_CONTROL_TOKEN` (16 to 1024 characters) before you start the app, or pass the token with `--token`.

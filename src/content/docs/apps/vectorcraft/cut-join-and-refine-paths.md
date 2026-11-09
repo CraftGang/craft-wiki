@@ -3,6 +3,7 @@ title: Cut, join and refine paths
 description: Erase, cut, join and sketch paths with the Eraser, Join, cutting and Shaper tools, then refine anchor points, corners, crossings and dashes with the path plug-ins.
 sidebar:
   order: 12.6
+parent: workflows
 ---
 
 This guide covers the tools that cut and join paths beyond the Pen, Scissors and Knife: the Eraser, the Join tool, Mirror & Cut, Line Cut, Rectangle Cut and the Shaper tool. It also covers the path plug-ins under **Object → Plug-ins**: Path Precision Tools, Smart Pen and Contour.

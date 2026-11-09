@@ -15,6 +15,8 @@ WordCraft opens on the **File** tab's start page. From here you can start a blan
 
 ![The File tab start page with a greeting, thumbnails of the Blank document, Studio handbook, Letter, Résumé and Report templates, and a list of recent documents](/assets/uploads/wordcraft/backstage.webp)
 
+**More templates →** opens **File › New**, with a search box for templates. Your own templates are listed there under **Personal**. WordCraft shows the .dotx and .dotm files from your **User templates** folder, which you set in **File › Options › Advanced**. To add one, choose **File › Save As › Save as Word Template…**, which saves a .dotx into that folder.
+
 To look around before writing anything, open the **Studio handbook** template. It is a sample document that uses headings, lists, tables and a table of contents.
 
 ## 3. Write

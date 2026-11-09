@@ -3,6 +3,7 @@ title: Trace an image
 description: Place a raster image in a document and turn it into editable vector paths with Image Trace.
 sidebar:
   order: 19
+parent: workflows
 ---
 
 This guide shows how to place a raster image, such as a scan, a sketch or a flat-color logo, and trace it into paths you can edit. You pick a preset, adjust the tracing while the preview updates, save the settings you like as your own preset, and then expand the result into ordinary paths. The following image shows the picture traced in this guide, a flat-color landscape saved as a PNG file, placed in a document and selected.

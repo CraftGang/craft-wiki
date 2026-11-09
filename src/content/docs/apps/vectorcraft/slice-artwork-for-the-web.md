@@ -3,6 +3,7 @@ title: Slice artwork for the web
 description: Cut a design into slices with the Slice tools and the Object → Slice commands, give each slice a name, link and alt text, save the slices with an HTML page, and copy CSS and SVG event scripts for web pages.
 sidebar:
   order: 20.5
+parent: workflows
 ---
 
 This page shows how to cut a design into slices, set the name, link and alt text of each slice, save the slices as web images with an HTML page that places them, and use Export Selection…, the CSS Properties panel and the SVG Interactivity panel. For Export for Screens, Export As and the other settings of Save for Web (Legacy), see [Export for screens and the web](/apps/vectorcraft/export-for-screens-and-the-web/).

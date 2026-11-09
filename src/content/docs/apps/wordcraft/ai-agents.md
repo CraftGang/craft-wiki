@@ -128,4 +128,23 @@ wordcraft-cli convert report.docx report.pdf   # convert to docx, pdf, odt, rtf,
 wordcraft-cli text report.docx                 # print the text
 ```
 
+More commands:
+
+```bash
+wordcraft-cli info report.docx                      # pages, words and properties, as JSON
+wordcraft-cli inspect report.docx                   # the document's structure, as JSON
+wordcraft-cli render report.docx page2.png --page 2 # draw one page as a picture
+wordcraft-cli commands                              # every command WordCraft has (add --json for a list a script can read)
+```
+
+`convert` can do more than change the format. Add `--markup` for a PDF or picture with comments beside the pages and tracked changes shown, and `--update-fields` to refresh fields such as the table of contents before saving. It also writes `.xml` (Word XML) and `.json`.
+
+`run` applies commands to a file without opening a window, then saves the result:
+
+```bash
+wordcraft-cli run --file report.docx --cmd 'select.text={"text":"Membership"}' --cmd format.bold --save out.docx
+```
+
+This selects the word "Membership" and makes it bold. Each `--cmd` is a command from `wordcraft-cli commands` and its settings as JSON. Add `--author` to name who tracked changes and comments are by. `wordcraft-cli zotero` runs a Zotero command on a document while Zotero is open.
+
 For scripting WordCraft's commands, see the [developer documentation on GitHub](https://github.com/storytold/wordcraft/blob/main/docs/mcp.md).

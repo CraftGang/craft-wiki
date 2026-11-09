@@ -58,6 +58,23 @@ EffectCraft auto-saves your projects. Set it up on the **Project** page of **Edi
 
 After a crash, EffectCraft offers to open the latest auto-save. Turn this on or off with **Offer to Open the Latest Auto-Save After a Crash** on the **Startup & Repair** page.
 
+## No sound, or sound plays late
+
+Check these first:
+
+- **Composition › Preview › Audio** is on.
+- The **Audio** page of **Edit › Preferences** is set to the output you expect.
+
+If it still stays silent, add a note to [#3095](https://github.com/storytold/effectcraft/issues/3095) with your system and file type.
+
+## Known problems, not fixed yet
+
+- No sound from any file on some Windows PCs: [#3095](https://github.com/storytold/effectcraft/issues/3095), [#3033](https://github.com/storytold/effectcraft/issues/3033).
+- **Save As** fails with "File not found" on Windows, seen with a OneDrive folder: [#3016](https://github.com/storytold/effectcraft/issues/3016).
+- On Linux, **Tab** doesn't switch between composition tabs: [#3013](https://github.com/storytold/effectcraft/issues/3013).
+- On Linux, **Alt**-click on a stopwatch doesn't add an expression: [#3192](https://github.com/storytold/effectcraft/issues/3192).
+- On a Mac, the file dialog of **File › Import › After Effects Project...** can crash EffectCraft: [#3084](https://github.com/storytold/effectcraft/issues/3084).
+
 ## Get a log for a bug report
 
 Choose **Help › Enable Logging**, then do what caused the problem again. **Help › Reveal Logging File** shows where the log is.

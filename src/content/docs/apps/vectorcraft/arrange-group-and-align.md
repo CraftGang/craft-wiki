@@ -3,6 +3,7 @@ title: Arrange, group and align
 description: Change which object sits in front, group, lock and hide objects, select objects that share an attribute, and line objects up with the Align panel and the Object menu.
 sidebar:
   order: 15
+parent: workflows
 ---
 
 This guide shows how to change which of several overlapping objects sits in front, group objects so that they move together, and lock or hide the objects you are not working on. It then shows how to select objects that share an attribute and line objects up with the Align panel.

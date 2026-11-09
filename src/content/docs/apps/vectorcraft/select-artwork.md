@@ -3,6 +3,7 @@ title: Select artwork
 description: Select objects inside groups, draw a loop around anchor points, pick objects by color with the Magic Wand, and use the Select menu, Global Edit, saved selections and Select by Artboards.
 sidebar:
   order: 11.5
+parent: workflows
 ---
 
 This guide covers the ways to select artwork beyond a click or a marquee with the Selection tool: the Group Selection, Lasso, Magic Wand and Enclosing Lasso tools, the commands in the **Select** menu, Global Edit, saved selections and the Select by Artboards plug-in.

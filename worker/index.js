@@ -1,9 +1,10 @@
 // Serves the static wiki and adds two things under /api/:
 //   /api/auth             Discord sign-in for the editor. A member of the guild
 //                         who holds the editor role gets a short session.
-//   /api/github/...       The editor's GitHub API. Sessions use the server's
-//                         GitHub token, limited to wiki content. GitHub tokens
-//                         from contributors pass straight through.
+//   /api/github/...       The editor's GitHub API. Sessions use the GitHub App
+//                         installation token (or legacy server GITHUB_TOKEN),
+//                         limited to wiki content. GitHub tokens from contributors
+//                         pass straight through.
 
 const SESSION_PREFIX = 'cw1.';
 const SESSION_SECONDS = 8 * 60 * 60;
@@ -11,6 +12,14 @@ const STATE_COOKIE = 'cw_auth_state';
 const REPO = 'storytold/craft-wiki';
 const BRANCH = 'main';
 const EDITABLE = ['src/content/docs/apps/', 'public/assets/uploads/'];
+
+let cachedInstallationToken = null;
+let cachedInstallationTokenExpiresAt = 0;
+
+export const resetTokenCache = () => {
+  cachedInstallationToken = null;
+  cachedInstallationTokenExpiresAt = 0;
+};
 
 const encoder = new TextEncoder();
 
@@ -22,6 +31,107 @@ const base64url = (bytes) =>
 
 const fromBase64url = (text) =>
   Uint8Array.from(atob(text.replace(/-/g, '+').replace(/_/g, '/')), (c) => c.charCodeAt(0));
+
+const pkcs1ToPkcs8 = (pkcs1Bytes) => {
+  const algId = new Uint8Array([0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00]);
+  const encodeLength = (len) => {
+    if (len < 128) return [len];
+    const bytes = [];
+    let temp = len;
+    while (temp > 0) {
+      bytes.unshift(temp & 0xff);
+      temp >>= 8;
+    }
+    return [0x80 | bytes.length, ...bytes];
+  };
+  const octetHeader = [0x04, ...encodeLength(pkcs1Bytes.length)];
+  const totalInnerLen = 3 + algId.length + octetHeader.length + pkcs1Bytes.length;
+  const seqHeader = [0x30, ...encodeLength(totalInnerLen)];
+  const pkcs8 = new Uint8Array(seqHeader.length + 3 + algId.length + octetHeader.length + pkcs1Bytes.length);
+  let offset = 0;
+  pkcs8.set(seqHeader, offset);
+  offset += seqHeader.length;
+  pkcs8.set([0x02, 0x01, 0x00], offset);
+  offset += 3;
+  pkcs8.set(algId, offset);
+  offset += algId.length;
+  pkcs8.set(octetHeader, offset);
+  offset += octetHeader.length;
+  pkcs8.set(pkcs1Bytes, offset);
+  return pkcs8;
+};
+
+export const importAppPrivateKey = async (pem) => {
+  const isPkcs1 = pem.includes('BEGIN RSA PRIVATE KEY');
+  const b64 = pem.replace(/-----.*?-----|\s/g, '');
+  const raw = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
+  const pkcs8Bytes = isPkcs1 ? pkcs1ToPkcs8(raw) : raw;
+  return crypto.subtle.importKey(
+    'pkcs8',
+    pkcs8Bytes,
+    { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' },
+    false,
+    ['sign'],
+  );
+};
+
+export const createGitHubAppJwt = async (appId, privateKey, now = Date.now()) => {
+  const issuedAt = Math.floor(now / 1000);
+  const header = base64url(encoder.encode(JSON.stringify({ alg: 'RS256', typ: 'JWT' })));
+  const payload = base64url(
+    encoder.encode(
+      JSON.stringify({
+        iat: issuedAt - 60,
+        exp: issuedAt + 10 * 60,
+        iss: String(appId),
+      }),
+    ),
+  );
+  const signingInput = `${header}.${payload}`;
+  const signature = await crypto.subtle.sign('RSASSA-PKCS1-v1_5', privateKey, encoder.encode(signingInput));
+  return `${signingInput}.${base64url(signature)}`;
+};
+
+export const getGitHubInstallationToken = async (env, now = Date.now()) => {
+  if (cachedInstallationToken && cachedInstallationTokenExpiresAt > now + 60_000) {
+    return cachedInstallationToken;
+  }
+  const pem = env.GITHUB_APP_PRIVATE_KEY;
+  const appId = env.GITHUB_APP_ID || env.GITHUB_APP_CLIENT_ID;
+  const installationId = env.GITHUB_APP_INSTALLATION_ID;
+  if (!pem || !appId || !installationId) return null;
+
+  const key = await importAppPrivateKey(pem);
+  const jwt = await createGitHubAppJwt(appId, key, now);
+
+  const response = await fetch(`https://api.github.com/app/installations/${installationId}/access_tokens`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${jwt}`,
+      Accept: 'application/vnd.github+json',
+      'User-Agent': 'craft-wiki-editor',
+    },
+  });
+  if (!response.ok) return null;
+  const data = await response.json();
+  cachedInstallationToken = data.token;
+  cachedInstallationTokenExpiresAt = data.expires_at ? new Date(data.expires_at).getTime() : now + 50 * 60 * 1000;
+  return cachedInstallationToken;
+};
+
+export const getServerToken = async (env, now = Date.now()) => {
+  if (env.GITHUB_APP_PRIVATE_KEY && env.GITHUB_APP_INSTALLATION_ID && (env.GITHUB_APP_ID || env.GITHUB_APP_CLIENT_ID)) {
+    return getGitHubInstallationToken(env, now);
+  }
+  return env.GITHUB_TOKEN ?? null;
+};
+
+export const isConfigured = (env) =>
+  Boolean(
+    env.DISCORD_CLIENT_SECRET &&
+    env.SESSION_SECRET &&
+    (env.GITHUB_TOKEN || (env.GITHUB_APP_PRIVATE_KEY && env.GITHUB_APP_INSTALLATION_ID && (env.GITHUB_APP_ID || env.GITHUB_APP_CLIENT_ID)))
+  );
 
 const hmacKey = (secret, usage) =>
   crypto.subtle.importKey('raw', encoder.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, [usage]);
@@ -130,7 +240,7 @@ a{color:#b9cbff}
 };
 
 const startSignIn = (url, env) => {
-  if (!env.DISCORD_CLIENT_SECRET || !env.SESSION_SECRET || !env.GITHUB_TOKEN) {
+  if (!isConfigured(env)) {
     return popupResult(url.origin, 'error', { error: 'Discord sign-in is not configured yet.' });
   }
   const state = base64url(crypto.getRandomValues(new Uint8Array(24)));
@@ -285,14 +395,7 @@ const proxyGithub = async (request, url, env) => {
 
   const session = await readSession(token, env.SESSION_SECRET);
   if (!session) return json({ message: 'Bad credentials' }, 401);
-  const serverToken = `token ${env.GITHUB_TOKEN}`;
 
-  if (isGraphql) {
-    if (request.method !== 'POST') return json({ message: 'Method not allowed' }, 405);
-    const checked = checkGraphql(await request.json().catch(() => null), session);
-    if (checked.error) return json({ message: checked.error }, 403);
-    return forward(request, target, serverToken, JSON.stringify(checked.payload));
-  }
   if (path === '/user') {
     return json({
       id: session.sub,
@@ -303,8 +406,43 @@ const proxyGithub = async (request, url, env) => {
       html_url: `https://discord.com/users/${session.sub}`,
     });
   }
+  if (path.startsWith('/user/')) {
+    return json([]);
+  }
+
+  const rawServerToken = await getServerToken(env);
+  if (!rawServerToken) return json({ message: 'Server GitHub integration is not configured' }, 500);
+  const serverToken = `token ${rawServerToken}`;
+
+  if (isGraphql) {
+    if (request.method !== 'POST') return json({ message: 'Method not allowed' }, 405);
+    const checked = checkGraphql(await request.json().catch(() => null), session);
+    if (checked.error) return json({ message: checked.error }, 403);
+    return forward(request, target, serverToken, JSON.stringify(checked.payload));
+  }
   const allowed = path === '/rate_limit' || path === `/repos/${REPO}` || path.startsWith(`/repos/${REPO}/`);
   if (!['GET', 'HEAD'].includes(request.method) || !allowed) return json({ message: 'Not allowed' }, 403);
+
+  if (path === `/repos/${REPO}` && request.method === 'GET') {
+    const response = await forward(request, target, serverToken);
+    if (!response.ok) return response;
+    const repo = await response.json().catch(() => null);
+    if (!repo) return response;
+    return json({
+      ...repo,
+      permissions: {
+        admin: false,
+        maintain: true,
+        push: true,
+        triage: true,
+        pull: true,
+        ...(repo.permissions ?? {}),
+        push: true,
+        pull: true,
+      },
+    });
+  }
+
   return forward(request, target, serverToken);
 };
 

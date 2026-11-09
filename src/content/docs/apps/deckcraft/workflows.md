@@ -41,6 +41,22 @@ Select a shape and click **Format Pane** on the **Shape Format** tab for its fil
 
 **Home › Format** (Format Painter) copies formatting from one shape or piece of text to another.
 
+Also on the **Insert** tab:
+
+- **Photo Album…** lays pictures out as an album. Add pictures or text boxes (up to 48), choose a **Picture layout**, a **Frame shape** and an **Album theme**, and turn on **Captions under pictures** if you want them. To change an album later, use **Edit Photo Album…**.
+- **Zoom** adds a slide, section or summary zoom: a link that jumps to a slide or section.
+- **Action** adds an action button, and **Action Settings…** sets what a selected one does.
+- **Date & Time**, and **Header & Footer** for text that repeats on every slide.
+- **Table › Draw Table** draws a table with the mouse.
+
+## Copy and paste
+
+**Home › Paste** has more than one way to paste. **Paste and Match Formatting** takes the formatting of where you paste. **Paste Formatting** applies the formatting you picked up with Format Painter. **Paste Special…** lets you choose **Use Destination Theme**, **Keep Source Formatting**, **Picture (PNG)** or **Keep Text Only**.
+
+To bring slides in from another presentation, choose **Home › New Slide › Reuse Slides…**, or **Reuse Slides (Keep Source Formatting)…** to keep their look. Reusing slides needs the desktop app. To start a deck from an outline, choose **Home › New Slide › Slides from Outline…**.
+
+If copy and paste fails, see [Copy and paste doesn't work](/apps/deckcraft/troubleshooting/#copy-and-paste-doesnt-work).
+
 ## Draw with a pen
 
 The **Draw** tab has pens, a pencil, a highlighter and an eraser for writing on slides.
@@ -62,7 +78,8 @@ Select a shape or text box, then pick an effect on the **Animations** tab: entra
 
 On the **Review** tab:
 
-- **Spelling** (**F7**) checks the whole presentation. Misspelled words are also underlined as you type.
+- **Spelling** (**F7**) checks the whole presentation. Misspelled words are also underlined as you type. This needs a dictionary on your computer: see [Spelling finds nothing](/apps/deckcraft/troubleshooting/#spelling-finds-almost-nothing).
+- **Language** sets the language of the selected text or the whole presentation. The list marks the languages that have a dictionary. **Do not check spelling or grammar** turns checking off for that text.
 - **Thesaurus** (**Shift+F7**) suggests other words.
 - **New Comment** (**Ctrl+Alt+M**) adds a comment. **Show Comments** opens the comments pane.
 - **Compare** shows the differences from a revised copy of the presentation, slide by slide, so you can accept or reject each revised slide.
@@ -78,7 +95,7 @@ On the **View** tab: **Normal**, **Outline View**, **Slide Sorter**, **Notes Pag
 
 - **File › Export › Create PDF Document** makes a PDF of the slides. **Create Handouts** puts several slides on each page.
 - **File › Export › Change File Type** saves as .pptx, .deckcraft, an outline (.txt or .rtf), or the current slide as a PNG or JPEG picture.
-- The **Export** button in the Quick Access Toolbar at the top left also makes PNG pictures of every slide, notes pages as a PDF, or an **Animated GIF** of the whole deck.
+- The **Export** button in the Quick Access Toolbar at the top left also makes PNG pictures of every slide, notes pages as a PDF, or an **Animated GIF** of the whole deck. The dialog lets you choose a **Size**, from Small (640 px wide) to Extra Large (1920 px wide) or a **Custom width**. You can include hidden slides, and for PNG pictures leave the background out with **Transparent background**. For a GIF, also set the slide range under **From slide** and **To slide**, the **Seconds per slide**, and whether it should **Loop forever**.
 - **File › Print** (**Ctrl+P**) prints slides, notes pages or handouts. See [Print](#print).
 
 Converting between formats can lose some formatting. To share a presentation that must look the same everywhere, export a PDF.

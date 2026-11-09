@@ -18,6 +18,7 @@ export default defineConfig({
     // Starlight's default, /favicon.svg, isn't in public/, so every page linked a missing icon.
     favicon: '/assets/apps/artcraft-studio.svg',
     customCss: ['./src/styles/custom.css'],
+    routeMiddleware: './src/routeData.mjs',
     components: { Head: './src/components/WikiHead.astro', Header: './src/components/WikiHeader.astro', Sidebar: './src/components/WikiSidebar.astro', PageTitle: './src/components/WikiPageTitle.astro', ThemeProvider: './src/components/WikiThemeProvider.astro', Footer: './src/components/WikiFooter.astro' },
     sidebar: [
       { label: 'Home', link: '/' },

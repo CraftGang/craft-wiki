@@ -67,6 +67,31 @@ tar -xzf photocraft-<ver>-freebsd-x86_64.tar.gz --strip-components 1 -C /usr/loc
 
 `photocraft-web-<ver>.zip` is the web version. Unpack it onto any web server and open it in a modern browser.
 
+To update the web version, replace the whole folder on your server with the new one, not only some files. Then reload the page in your browser with a hard refresh (**Ctrl+Shift+R**, or **⌘+Shift+R** on a Mac), so it doesn't keep showing the old version from its cache.
+
+### Check a download
+
+`SHA256SUMS.txt` lists a checksum for every file. The Linux files also have signature files ending in `.asc`, and so does `SHA256SUMS.txt`. To check the checksum list with GnuPG, import `release-signing-key.asc` from the release, then check the signature:
+
+```bash
+gpg --import release-signing-key.asc
+gpg --verify SHA256SUMS.txt.asc SHA256SUMS.txt
+```
+
+You can ignore the other extra files on the release page: `*-symbols.zip` (debug symbols for Windows), `*.oci-manifest.json` and `*.oci.sig` (container images), and `*.zsync` (what AppImageUpdate uses to download only the changes).
+
+## Start-up options
+
+Most people never need these. You can start PhotoCraft with a file name, or several, to open them:
+
+- On Windows and Linux, files you open while PhotoCraft is running open as new tabs in the copy that is already running. Add `--new-instance` to start a separate copy instead.
+- `--safe-gpu` starts with the CPU renderer for that start. See [Troubleshooting](/apps/photocraft/troubleshooting/).
+- `--in-window-menus` keeps the menus inside the window instead of the menu bar on a Mac.
+- `--present-mode` (`fifo`, `autovsync` or `novsync`) and `--frame-latency` (1 to 3) change how frames reach your display.
+- Set `PHOTOCRAFT_CONFIG_DIR` to a folder to keep PhotoCraft's settings there.
+
+Run `photocraft --help` to see them all.
+
 ## Update
 
 PhotoCraft checks for a new version when it starts, and tells you when one is out. Only public release information is requested; nothing about you or your documents is sent. To check yourself, choose **Help › Check for Updates…**. To stop the check at startup, turn off **Automatically Check for Updates** in **Edit › Preferences › Settings…** (on a Mac, **PhotoCraft › Settings**).

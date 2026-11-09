@@ -108,9 +108,122 @@ To change the size of the whole image, use **Image › Image Size…**. To add s
 
 To export one layer, use **Layer › Export As…** or **Layer › Quick Export as PNG**. With several layers or artboards selected, each one is exported as its own file.
 
+## Print
+
+1. Choose **File › Print…** (**Ctrl+P**).
+2. Pick a printer under **Printer** and set **Copies**.
+3. Choose the **Paper** and **Orientation**, then position and size the image. **Scale to Fit Media** fills the page.
+4. Under **Color Management**, choose who handles color: **Printer Manages Colors**, **PhotoCraft Manages Colors** or **No Color Management**. If you choose **PhotoCraft Manages Colors** on Windows, turn off the printer's own color management in **Print Settings…**.
+5. Check the preview, then click **Print**.
+
+When the job is sent, the status bar says **Sent to** and the printer's name. **File › Print One Copy** (**Ctrl+Alt+Shift+P**) prints one copy with the settings of your last print. If you haven't printed yet, it opens the dialog.
+
+You can also drag the image on the preview to move it. **Printing Marks** adds crop and registration marks. To make a PDF instead of printing, use the **Save as PDF** box at the bottom of the dialog.
+
+On Linux, PhotoCraft prints through CUPS. If it can't find a printer there, it opens your system's print dialog instead. The Flatpak uses your computer's CUPS service.
+
+## Colors, modes and profiles
+
+**Image › Mode** changes how the image stores color: **Grayscale**, **RGB Color**, **CMYK Color**, **Lab Color**, **Indexed Color**, **Duotone**, **Bitmap** or **Multichannel**. Below those, **8 Bits/Channel**, **16 Bits/Channel** and **32 Bits/Channel** set the depth. Converting to a smaller mode, such as CMYK or Indexed Color, can change colors. Keep a copy of your RGB original.
+
+Color profiles tell PhotoCraft what the numbers in a file mean:
+
+- **Edit › Color Settings…** (**Ctrl+Shift+K**) sets your working color spaces and what PhotoCraft does when a file's profile differs from them.
+- **Edit › Assign Profile…** labels the document with a different profile without changing its pixels. Only profiles that fit the document's mode are offered.
+- **Edit › Convert to Profile…** changes the pixels so the picture looks the same in the new profile.
+
+To preview how the image will look in another color space, choose **View › Proof Setup**, pick a profile, then turn on **View › Proof Colors** (**Ctrl+Y**). **View › Gamut Warning** (**Ctrl+Shift+Y**) marks colors the proof profile can't reproduce. **Edit › Preferences › Transparency & Gamut…** sets how the warning looks.
+
+## Open camera raw files
+
+When you open a camera raw file with **File › Open…**, a Camera Raw window opens first. Adjust the photo there and click **Open**, or click **Cancel** to close the file again. To change this, open **Edit › Preferences › Camera Raw…**.
+
+You can also run the same controls on any layer with **Filter › Camera Raw Filter…** (**Ctrl+Shift+A**).
+
 ## Record and replay actions
 
-The **Actions** panel (**Window › Actions**, or **Alt+F9**) records a sequence of steps and plays it back. To run an action on a whole folder of images, use **File › Automate › Batch…**.
+The **Actions** panel (**Window › Actions**, or **Alt+F9**) records a sequence of steps and plays it back. Its menu loads and saves action sets in Photoshop's `.atn` format.
+
+### Batch processing
+
+1. Record the steps you want as an action.
+2. Select the action in the **Actions** panel, then choose **File › Automate › Batch…**.
+3. Choose the source folder, or the documents you have open. Turn on **Include All Subfolders** if you want the images inside folders too.
+4. Set where the results go. In **File Naming**, use tokens such as `{name}` and `{serial}` to name them. Leave it empty to keep the original names.
+5. Run it. **Stop on error** ends the batch at the first file that fails. **Error log** writes a text file of the files that failed.
+
+For example, `{name}_{serial}{ext}` writes `photo_001.png`, `photo_002.png` and so on. Add `{ext}` yourself: a template without it writes names with no extension.
+
+Other tools in the same area:
+
+- **File › Automate › Create Droplet…** saves the selected action as a droplet file. Record an action first. To run a droplet from a script, see [Automation and AI agents](/apps/photocraft/automation/).
+- **File › Scripts › Image Processor…** converts a folder of images to JPEG, PNG, PSD or TIFF, and can resize them, without recording an action.
+- **File › Automate › Fit Image…** fits the image inside a width and height you set.
+- **File › Automate › Contact Sheet II…** places a folder of images as thumbnails on one sheet.
+- **File › Export › Layers to Files…** and **File › Export › Artboards to Files…** save each layer or artboard as its own file.
+
+A recorded **Image Size** step doesn't resize batches correctly yet. See [Known problems, not fixed yet](/apps/photocraft/troubleshooting/#known-problems-not-fixed-yet).
+
+## File menu at a glance
+
+| Command | What it does |
+| --- | --- |
+| **Save a Copy…** | Save a copy and keep working in the current file |
+| **Revert** (**F12**) | Go back to the last saved version |
+| **Place Embedded…**, **Place Linked…** | Add a file to the document as a layer. Embedded keeps a copy inside the document; linked points to the original file |
+| **Export › Save for Web (Legacy)…** | The older export dialog |
+| **Package…** | Copy the document and the files it links to into one folder |
+| **File Info…** | Title, author, copyright and camera details |
+| **Close All**, **Close Others** | Close all documents, or all but this one |
+
+## Tools at a glance
+
+Press a tool's key to select it. Several tools share a key. Press **Shift** with the key to cycle through them.
+
+| Key | Tools |
+| --- | --- |
+| **V** | Move, Artboard |
+| **M** | Rectangular Marquee, Elliptical Marquee |
+| **L** | Lasso, Polygonal Lasso, Magnetic Lasso |
+| **W** | Quick Selection, Object Selection, Magic Wand |
+| **C** | Crop, Perspective Crop, Slice, Slice Select |
+| **K** | Frame |
+| **I** | Eyedropper, Color Sampler, Ruler, Note, Count |
+| **J** | Remove, Spot Healing Brush, Healing Brush, Patch, Content-Aware Move, Red Eye |
+| **B** | Brush, Pencil, Color Replacement, Mixer Brush |
+| **S** | Clone Stamp, Pattern Stamp |
+| **Y** | History Brush, Art History Brush |
+| **E** | Eraser, Background Eraser, Magic Eraser |
+| **G** | Gradient, Paint Bucket |
+| **O** | Dodge, Burn, Sponge |
+| **P** | Pen, Freeform Pen, Curvature Pen |
+| **T** | Horizontal Type, Vertical Type, and the two Type Mask tools |
+| **A** | Path Selection, Direct Selection |
+| **U** | Rectangle, Ellipse, Triangle, Polygon, Star, Line, Custom Shape |
+| **H**, **R**, **Z** | Hand, Rotate View, Zoom |
+
+Blur, Sharpen and Smudge, the Single Row and Single Column Marquee tools, and the Add Anchor Point, Delete Anchor Point and Convert Point tools have no key. Pick them from the toolbox. **Filter › Liquify…** (**Ctrl+Shift+X**) pushes pixels around.
+
+## Plug-ins
+
+PhotoCraft doesn't run Photoshop plug-ins, and it has no **Extensions** menu. It runs filters written as WebAssembly (`.wasm`) files, which work the same on every system. Installed plug-ins appear in **Filter › Plug-ins**; **Install Plug-in…** is in the same menu. To load a whole folder of them each time PhotoCraft starts, use **Edit › Preferences › Plugins…**.
+
+## Where to find a setting
+
+**Edit › Preferences** (on a Mac, **PhotoCraft › Settings**) has one page per area. Pages you may look for:
+
+| Page | What it holds |
+| --- | --- |
+| **General…** | General options, including update checks |
+| **AI Integrations…** | **Allow agent control** |
+| **Interface…** | Language, font size, scaling and the system title bar |
+| **File Handling…** | Recovery saves and PSD options |
+| **Performance…** | **Rendering Mode**, memory use and the Linux display server |
+| **Scratch Disks…** | Where PhotoCraft puts the part of a big file that doesn't fit in memory |
+| **Camera Raw…** | How raw files open |
+| **Plugins…** | The folder of extra plug-ins |
+
+Others are **Workspace…**, **Tools…**, **History Log…**, **Export…**, **Cursors…**, **Transparency & Gamut…**, **Units & Rulers…**, **Guides, Grid & Slices…** and **Type…**.
 
 ## Change how PhotoCraft looks
 

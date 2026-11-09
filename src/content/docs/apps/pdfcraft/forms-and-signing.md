@@ -48,3 +48,9 @@ Choose **Prepare a form**:
 ## Move form data in and out
 
 **Prepare a form** also has **Import data** and **Export data**, to fill a form from a data file or save what's in it. **Merge data files into spreadsheet…** (find it with **Ctrl+K**) gathers the answers from many filled-in copies of the same form.
+
+## Calculated fields don't update
+
+Some forms add up totals or check what you type with scripts. This depends on **Enable Acrobat JavaScript** in **Edit › Preferences…**, which runs scripts in a sandbox with no file or network access. With it off, Acrobat's standard format, validate and calculate functions still work, but other scripts don't.
+
+If a form's scripts hit an error, PdfCraft stops them and says so in the bar above the page. Totals and buttons then stop working. Choose **JavaScript Console** in that bar, or press **Ctrl+J** (**⌘J** on a Mac), to see the error. Include it when you [report a bug](https://github.com/storytold/pdfcraft/issues).

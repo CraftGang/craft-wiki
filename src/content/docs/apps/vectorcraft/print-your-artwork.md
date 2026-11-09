@@ -3,6 +3,7 @@ title: Print your artwork
 description: Print artboards at the right size, add printer's marks and bleed, set graphics, color management and advanced options, scale or tile large art, and save your print settings as presets.
 sidebar:
   order: 22
+parent: workflows
 ---
 
 This guide covers the Print dialog. It shows how to choose which artboards print and on what paper, add printer's marks and bleed, set the graphics, color management and advanced options, scale or tile art that is larger than the paper, and save the settings as a preset for the next job.

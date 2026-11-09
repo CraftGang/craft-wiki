@@ -3,6 +3,7 @@ title: Export for screens and the web
 description: Export artboards and collected assets at several sizes and formats in one pass, and write SVG and PNG files with the options you choose.
 sidebar:
   order: 20
+parent: workflows
 ---
 
 This page shows how to export every artboard of a document at several scales and formats at once, how to collect pieces of art as assets and export them on their own, and how to write single SVG and PNG files. It also covers the options of each export format, the pixel tools for small screen art and the Save for Web (Legacy) dialog.

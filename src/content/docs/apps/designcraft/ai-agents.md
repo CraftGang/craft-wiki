@@ -113,9 +113,11 @@ The folder limits above don't work together with `--connect`. A connected assist
 `designcraft-cli` also works on its own, without an assistant:
 
 ```bash
-designcraft-cli run --in brochure.designcraft --export brochure.pdf   # export to .pdf, .idml, .epub, .pptx or .png
+designcraft-cli run --in brochure.designcraft --export brochure.pdf   # export to .pdf, .png, .jpg, .idml, .epub, .pptx, .html, .rtf, .txt or .designcraft
 designcraft-cli run --sample --all-pages out/                          # render every page of the sample to PNG
 designcraft-cli commands                                               # list every command
 ```
+
+`designcraft-cli describe COMMAND` shows what one command takes. `designcraft-cli script FILE` runs a file of commands, one per line. Add `--save OUT` to save the document afterward, `--export OUT` to export it, and `--keep-going` to carry on after a command fails. `designcraft-cli validate-pdf FILE.pdf --standard x4` checks a PDF against PDF/X-4. Use `x1a` for PDF/X-1a.
 
 For scripting DesignCraft's commands, see the [developer documentation on GitHub](https://github.com/storytold/designcraft/blob/main/docs/mcp.md).

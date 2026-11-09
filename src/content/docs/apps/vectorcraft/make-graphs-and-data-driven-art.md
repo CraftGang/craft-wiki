@@ -3,6 +3,7 @@ title: Make graphs and data-driven art
 description: Draw column, bar, line, area, scatter, pie and radar graphs, edit their data, use your own art for columns and markers, and bind objects to variables to make one design per row of data.
 sidebar:
   order: 22.7
+parent: workflows
 ---
 
 This guide shows how to draw a graph from a table of numbers, change its type and options, and draw its columns and markers with your own art. It then covers the Variables panel, which binds text, images, graphs and visibility to variables so that one document can hold many versions of a design, one for each row of data.

@@ -27,10 +27,14 @@ DeckCraft is in alpha. Most features are in place, but some presentations from o
 
 DeckCraft opens and saves **.pptx** presentations. It also opens .potx templates and .ppsx shows, has its own **.deckcraft** format, and can start a presentation from an outline in a .txt or .md file. It exports PDFs (slides, notes pages or handouts), PNG and JPEG pictures, an animated GIF of the deck, and the outline as .txt or .rtf.
 
+DeckCraft can't open old binary PowerPoint files (.ppt, .pot and .pps), OpenDocument presentations (.odp), or presentations that need a password to open. In PowerPoint or LibreOffice, save a copy as .pptx first.
+
 ## What you need
 
 - Windows (64-bit, ARM or 32-bit), macOS (Apple silicon or Intel), Linux, or FreeBSD.
 - Or a modern web browser, for the web version.
+
+DeckCraft's menus and buttons are in English only for now. Slide text in other languages works.
 
 ## Guides
 

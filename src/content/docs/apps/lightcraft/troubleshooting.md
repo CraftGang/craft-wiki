@@ -38,9 +38,50 @@ If you moved or renamed photos outside LightCraft, the library can't find them. 
 
 On a Wayland desktop, LightCraft runs through XWayland when it can, because that's the only way dragging files into the window works. For sharper text with fractional scaling, start LightCraft with the environment variable `LIGHTCRAFT_WAYLAND=1`. Dragging files in won't work then.
 
+## Photos show colored patches, or nothing renders
+
+LightCraft draws photos with your graphics card. If photos show colored patches, or no edits show in the preview, you can check whether the card is the cause: turn off **Use the GPU for rendering** in **Settings › Performance** and compare. Include the result in your bug report.
+
+To choose the graphics system yourself, set `LIGHTCRAFT_GPU_BACKEND` before you start LightCraft to `dx12`, `vulkan`, `metal` or `auto`. Set it to `off`, or set `LIGHTCRAFT_GPU=0`, to draw on the processor only. In PowerShell, from the folder that contains `lightcraft.exe`:
+
+```powershell
+$env:LIGHTCRAFT_GPU_BACKEND = "vulkan"
+& .\lightcraft.exe
+Remove-Item Env:LIGHTCRAFT_GPU_BACKEND   # go back to the default for later launches
+```
+
+For a bug report, start LightCraft with `LIGHTCRAFT_LOG=debug` to put more detail in the log.
+
+## Install the AI mask model by hand
+
+**Object** and **Describe** masks need the SAM 3 model. If the download in LightCraft doesn't work, put the model in the folder `models/sam3` inside LightCraft's settings folder (see [Find the log](#find-the-log) for where that is). To use another folder, set `LIGHTCRAFT_SAM3_DIR` to it before you start LightCraft. To download from another site, set `LIGHTCRAFT_SAM3_MIRRORS` to one or more base addresses, separated by commas.
+
+## Import problems
+
+Imports from a network drive or NAS can be slow or fail, and a folder you browsed under **Local** can count as already imported. See [Known problems, not fixed yet](#known-problems-not-fixed-yet).
+
+## AI Denoise is not available for a photo
+
+AI Denoise works only on raw photos from cameras with a standard (Bayer) sensor.
+
 ## Does closing the window quit LightCraft?
 
 Yes, also on a Mac. Closing the main window quits LightCraft. If an import or export is still running, it asks first. Closing the **Second Window** only closes that window.
+
+## Known problems, not fixed yet
+
+These are open on the issue tracker. Add your details there if you run into one.
+
+- Importing from a NAS or network drive doesn't work for some people: [#3897](https://github.com/storytold/lightcraft/issues/3897). Moving photos to a network share is slow: [#3561](https://github.com/storytold/lightcraft/issues/3561).
+- Browsing a folder under **Local** makes its photos count as already in the library, which blocks a later import: [#3772](https://github.com/storytold/lightcraft/issues/3772).
+- Scanning CR2 files during import is slow: [#3786](https://github.com/storytold/lightcraft/issues/3786).
+- User presets from one library are saved into the next library you open: [#3891](https://github.com/storytold/lightcraft/issues/3891).
+- On macOS 26, every file dialog freezes the app: [#3735](https://github.com/storytold/lightcraft/issues/3735).
+- DNG files can't be opened from Finder: [#3595](https://github.com/storytold/lightcraft/issues/3595).
+- **Edit in Other Editor** fails for some photos: [#3617](https://github.com/storytold/lightcraft/issues/3617).
+- **Optics** can show the wrong lens profile status for photos added before lens support for their camera: [#3795](https://github.com/storytold/lightcraft/issues/3795), [#3764](https://github.com/storytold/lightcraft/issues/3764). Looking up lens profiles can hang: [#3784](https://github.com/storytold/lightcraft/issues/3784).
+- No preview or edits show for some photos: [#3723](https://github.com/storytold/lightcraft/issues/3723).
+- On Linux with a high-resolution display under XWayland, the interface is drawn too small, and there is no setting for its scale: [#3598](https://github.com/storytold/lightcraft/issues/3598).
 
 ## Find the log
 

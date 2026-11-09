@@ -3,6 +3,7 @@ title: Customize the workspace
 description: Switch between the built-in workspaces, arrange and save panel layouts, show or hide edges and on-canvas widgets, build your own toolbars, open more windows on a document, save views, rotate the canvas, present your artwork and step back through the History panel.
 sidebar:
   order: 22.8
+parent: workflows
 ---
 
 This guide covers how to set up the VectorCraft window: workspaces, panels, bars and toolbars, the edges and widgets drawn over the artwork, document windows, saved views, the Navigator panel, Rotate View, screen modes and Presentation Mode, and the History panel. The theme, accent color and language are set in [Preferences](/apps/vectorcraft/preferences/).

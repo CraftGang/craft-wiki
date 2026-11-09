@@ -3,6 +3,7 @@ title: Organize with layers and symbols
 description: Keep artwork in layers and sublayers, find objects, lock and hide them, trace over template layers, reuse art as symbols, share symbol libraries and spray symbols.
 sidebar:
   order: 18
+parent: workflows
 ---
 
 This guide shows how to sort a drawing into layers and sublayers, find a layer or object, hide and lock them while you work, and draw over a placed sketch on a template layer. It also shows how to turn art you repeat into a symbol, so that one edit changes every copy, how to share symbols through libraries, and how to spray many copies of a symbol at once.

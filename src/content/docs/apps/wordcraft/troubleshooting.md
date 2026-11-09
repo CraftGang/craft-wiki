@@ -61,6 +61,38 @@ Known problems, not fixed yet:
 - On Windows, printing can fail with "No such interface supported (0x80040003)" ([#5174](https://github.com/storytold/wordcraft/issues/5174)).
 - On macOS, manual two-sided printing doesn't pause for you to flip the pages ([#5769](https://github.com/storytold/wordcraft/issues/5769)).
 
+## Open or Save does nothing on Linux
+
+WordCraft opens the system's file dialog through `xdg-desktop-portal`. Install it with `xdg-desktop-portal-gtk` or `xdg-desktop-portal-kde`, then restart WordCraft.
+
+If the dialog still doesn't appear, choose **File › Open › Browse in WordCraft…**. It opens WordCraft's own file browser, which doesn't need the portal.
+
+## A document asks for fonts my computer doesn't have
+
+The status bar shows **1 font not installed** (or **n fonts not installed**) when a document uses fonts your computer lacks, such as Aptos. WordCraft draws that text in substitute fonts, so lines and pages can break in different places than in Word. Click the notice to see which fonts. Install them, then open the document again.
+
+## The window misbehaves on Linux
+
+**File › Options › Advanced › Linux display server** chooses the display server WordCraft uses. A change applies the next time WordCraft starts.
+
+If text or the interface turns into noise on older Intel graphics, start WordCraft from a terminal with OpenGL instead of Vulkan:
+
+```bash
+WGPU_BACKEND=gl wordcraft
+```
+
+## The window never appears, or WordCraft freezes on Windows
+
+Check the [log](#find-the-log) for lines starting with `graphics:`, and try another graphics system as described in [The window doesn't open on Windows](#the-window-doesnt-open-on-windows). If WordCraft closed while you had unsaved work, see [Document recovery](/apps/wordcraft/recovery/).
+
+## Known problems, not fixed yet
+
+- On Windows, WordCraft can freeze when you create or open a document ([#5801](https://github.com/storytold/wordcraft/issues/5801)).
+- On Windows, WordCraft can close while you work in a second document, and the unsaved work isn't recovered ([#5809](https://github.com/storytold/wordcraft/issues/5809)).
+- On some Linux desktops the file dialog doesn't open ([#5699](https://github.com/storytold/wordcraft/issues/5699)).
+- **File › Save As** has no **File name** field on the page. Set the name in the dialog that **Browse…** opens ([#5800](https://github.com/storytold/wordcraft/issues/5800)).
+- On Linux with Wayland, the window can't be resized on some systems ([#5886](https://github.com/storytold/wordcraft/issues/5886)), and its size isn't remembered ([#5751](https://github.com/storytold/wordcraft/issues/5751)).
+
 ## WordCraft closed and I lost my work
 
 Open WordCraft again. If it kept a copy of your unsaved work, it shows it under **File › Recover**. See [Document recovery](/apps/wordcraft/recovery/).
