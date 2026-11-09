@@ -1,6 +1,8 @@
 ---
 title: Getting started
 description: Get started with parametric 3D CAD modeling in SolidCraft.
+sidebar:
+  order: 1
 ---
 
 :::note[Third-Party Application]

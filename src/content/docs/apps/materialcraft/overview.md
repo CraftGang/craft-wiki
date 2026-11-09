@@ -19,7 +19,7 @@ MaterialCraft is in active development. In version 0.2 its node library was rebu
 
 - **Node graph**: connect nodes with wires, group them in frames, add comments and reroute dots. Press **Space** over the graph to search for a node.
 - **Building blocks**: blend, blur, levels, curves, gradient maps, HSL, warps, normal maps, transforms, text, SVG and bitmap images, and more.
-- **Functions**: Pixel Processor and Value Processor nodes run a small function graph you build yourself, for effects no other node gives you.
+- **Functions**: Pixel processor and Value processor nodes run a small function graph you build yourself, for effects no other node gives you.
 - **FX-Map**: a node for patterns made by repeating and splitting shapes.
 - **Live previews**: a 2D view of any node, and a 3D view of the whole material on a built-in shape or your own model.
 - **Export**: write every output of a graph as image files, in one go.

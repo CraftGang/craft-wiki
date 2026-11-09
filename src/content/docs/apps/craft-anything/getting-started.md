@@ -1,6 +1,8 @@
 ---
 title: Getting started
 description: Install Craft Anything, connect Claude Code and rebuild your first website.
+sidebar:
+  order: 1
 ---
 
 This guide takes you from installing Craft Anything to your own version of a small website, `example.com`, rebuilt in Clean room mode. Once it starts, the build runs on its own.

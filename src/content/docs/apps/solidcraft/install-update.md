@@ -1,6 +1,8 @@
 ---
 title: Install and update
 description: How to install and keep SolidCraft up to date on Linux, macOS, and Windows.
+sidebar:
+  order: 2
 ---
 
 :::note[Third-Party Application]

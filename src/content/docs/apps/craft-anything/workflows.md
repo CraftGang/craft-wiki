@@ -1,6 +1,8 @@
 ---
 title: Workflows
 description: Recreate websites, apps and games, work on your own project, study a program, and drive Craft Anything from the command line or an agent.
+sidebar:
+  order: 3
 ---
 
 Each workflow below starts on **What do you want to make?** unless it says otherwise. [Getting started](/apps/craft-anything/getting-started/) covers the project page itself.

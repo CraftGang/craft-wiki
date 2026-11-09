@@ -1,6 +1,8 @@
 ---
 title: Troubleshooting
 description: Fix common problems with Craft Anything, and find its log when something goes wrong.
+sidebar:
+  order: 4
 ---
 
 Start by running the check that comes with the app. It says whether the install, coding agents and engines are ready, and what's missing:
@@ -93,15 +95,15 @@ Installing packages runs their code on your computer, and npm runs install scrip
 
 ## Known problems, not fixed yet
 
-- **"Always for this project" asks again.** [Issue 807](https://github.com/storytold/craft-anything/issues/807) and [issue 851](https://github.com/storytold/craft-anything/issues/851).
-- **The build stays at "The builder is checking its work against the original…" or the plan never moves on.** [Issue 981](https://github.com/storytold/craft-anything/issues/981) and [issue 504](https://github.com/storytold/craft-anything/issues/504).
-- **A build stops with "The build stopped after two builder turns changed no files in app/."** Local models run through Ollama can also loop on tool calls. [Issue 1076](https://github.com/storytold/craft-anything/issues/1076) and [issue 417](https://github.com/storytold/craft-anything/issues/417).
-- **On Windows, Unity is reported as not installed although Unity Hub and an Editor are.** [Issue 1077](https://github.com/storytold/craft-anything/issues/1077).
-- **Ghidra's analysis can't be canceled from the app.** [Issue 948](https://github.com/storytold/craft-anything/issues/948).
-- **Craft Anything can leave hidden Brave browsers running, and then Brave won't open a window.** [Issue 810](https://github.com/storytold/craft-anything/issues/810).
-- **The `.deb` and the AppImage won't install on Zorin 17.** [Issue 967](https://github.com/storytold/craft-anything/issues/967).
-- **Craft Anything uses a lot of processor time on some computers.** [Issue 965](https://github.com/storytold/craft-anything/issues/965) and [issue 579](https://github.com/storytold/craft-anything/issues/579).
-- **Antigravity isn't detected on some Windows PCs.** [Issue 449](https://github.com/storytold/craft-anything/issues/449).
+- **Always for this project** doesn't stick for opening a website. [Issue 851](https://github.com/storytold/craft-anything/issues/851).
+- The build stays at "The builder is checking its work against the original…" or the plan never moves on. [Issue 981](https://github.com/storytold/craft-anything/issues/981) and [issue 504](https://github.com/storytold/craft-anything/issues/504).
+- A build stops with "The build stopped after two builder turns changed no files in app/." Local models run through Ollama can also loop on tool calls. [Issue 1076](https://github.com/storytold/craft-anything/issues/1076) and [issue 417](https://github.com/storytold/craft-anything/issues/417).
+- On Windows, Unity is reported as not installed although Unity Hub and an Editor are. [Issue 1077](https://github.com/storytold/craft-anything/issues/1077).
+- Ghidra's analysis can't be canceled from the app. [Issue 948](https://github.com/storytold/craft-anything/issues/948).
+- Craft Anything can leave hidden Brave browsers running, and then Brave won't open a window. [Issue 810](https://github.com/storytold/craft-anything/issues/810).
+- The `.deb` and the AppImage won't install on Zorin 17. [Issue 967](https://github.com/storytold/craft-anything/issues/967).
+- Craft Anything uses a lot of processor time on some computers. [Issue 965](https://github.com/storytold/craft-anything/issues/965) and [issue 579](https://github.com/storytold/craft-anything/issues/579).
+- Antigravity isn't detected on some Windows PCs. [Issue 62](https://github.com/storytold/craft-anything/issues/62).
 
 ## Find the log
 

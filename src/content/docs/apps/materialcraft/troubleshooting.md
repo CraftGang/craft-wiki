@@ -35,11 +35,11 @@ MaterialCraft autosaves the open package to `Documents/MaterialCraft/autosave`, 
 
 ## Known problems, not fixed yet
 
-- **TextureCraft can't open a material from MaterialCraft.** **File › Send to TextureCraft** and **File › Export material...** write .mcmat version 2, and TextureCraft reads only version 1. Follow [TextureCraft issue 317](https://github.com/storytold/texturecraft/issues/317).
-- **MaterialCraft can crash when opening an .sbs file on Linux with Wayland.** The reporter starts it on X11 instead: `WAYLAND_DISPLAY= materialcraft`. See [issue 93](https://github.com/storytold/materialcraft/issues/93).
-- **MaterialCraft crashes at start on a PC with Intel graphics.** The crash is in the Intel Vulkan driver, `igvk64.dll`. See [issue 28](https://github.com/storytold/materialcraft/issues/28).
-- **Claude Desktop can't load the MaterialCraft MCP server.** It drops the server and all its tools. See [issue 146](https://github.com/storytold/materialcraft/issues/146).
-- **Nodes have no F2 rename, and the color picker has no hex field yet.** See [issue 101](https://github.com/storytold/materialcraft/issues/101) and [issue 105](https://github.com/storytold/materialcraft/issues/105).
+- TextureCraft can't open a material from MaterialCraft. **File › Send to TextureCraft** and **File › Export material...** write .mcmat version 2, and TextureCraft reads only version 1. Follow [TextureCraft issue 317](https://github.com/storytold/texturecraft/issues/317).
+- MaterialCraft can crash when opening an .sbs file on Linux with Wayland. The reporter starts it on X11 instead: `WAYLAND_DISPLAY= materialcraft`. See [issue 93](https://github.com/storytold/materialcraft/issues/93).
+- MaterialCraft crashes at start on a PC with Intel graphics. The crash is in the Intel Vulkan driver, `igvk64.dll`. See [issue 28](https://github.com/storytold/materialcraft/issues/28).
+- Claude Desktop can't load the MaterialCraft MCP server. It drops the server and all its tools. See [issue 146](https://github.com/storytold/materialcraft/issues/146).
+- Nodes have no F2 rename, and the color picker has no hex field yet. See [issue 101](https://github.com/storytold/materialcraft/issues/101) and [issue 105](https://github.com/storytold/materialcraft/issues/105).
 
 ## Still stuck?
 

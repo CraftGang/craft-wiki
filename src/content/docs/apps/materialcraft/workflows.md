@@ -64,7 +64,7 @@ A package is one .sbs file. It can hold several graphs, plus the images they use
 ## Use graph inputs and outputs
 
 - **Output** nodes are what the graph makes. Give each a usage, such as base color, normal or roughness. The 3D View and the export use them.
-- **Input Color**, **Input Grayscale** and **Input Value** nodes are inputs of the graph. Use them to feed in an image or a value from outside.
+- **Input color**, **Input grayscale** and **Input value** nodes are inputs of the graph. Use them to feed in an image or a value from outside.
 
 ### Expose a parameter as a graph input
 
@@ -80,7 +80,7 @@ The command-line tool sets exposed inputs with `--set`, as shown in [Use it with
 
 ## Write a function
 
-**Pixel Processor** computes every pixel of its image with a function. **Value Processor** computes one value with a function.
+**Pixel processor** computes every pixel of its image with a function. **Value processor** computes one value with a function.
 
 Select the node, then choose **Edit function graph...** in **Properties**. In the function editor you add operations, set constants, wire them up and pick the result.
 
