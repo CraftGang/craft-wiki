@@ -11,8 +11,8 @@ VectorCraft has no AI of its own and doesn't connect to an AI service. You bring
 
 ## Two ways to work
 
-- **With the app open**: the assistant drives the VectorCraft window, and you watch the drawing change as it works.
-- **Without a window**: the assistant works on documents in the background. Everything works except things that need the window, such as screenshots of the interface and answering dialogs.
+- With the app open: the assistant drives the VectorCraft window, and you watch the drawing change as it works.
+- Without a window: the assistant works on documents in the background. Everything works except things that need the window, such as screenshots of the interface and answering dialogs.
 
 The MCP server tries to connect to a running VectorCraft when it starts. If it finds none, it works without a window.
 
@@ -215,17 +215,17 @@ The server offers five ready-made prompts that your assistant may show as comman
 
 ## If the assistant can't connect
 
-**The assistant says a tool needs the desktop app.** The MCP server is working without a window. Start VectorCraft with `--control 7979`, wait for the window, then restart the assistant.
+If the assistant says a tool needs the desktop app, the MCP server is working without a window. Start VectorCraft with `--control 7979`, wait for the window, then restart the assistant.
 
-**VectorCraft was already open.** On Windows and Linux, starting VectorCraft with `--control` while it is open opens a second window. The assistant works in that window, and the window you opened earlier doesn't listen for it. On macOS, quit VectorCraft first, then start it with `--control`.
+If VectorCraft was already open on Windows or Linux, starting it with `--control` opens a second window. The assistant works in that window, and the window you opened earlier doesn't listen for it. On macOS, quit VectorCraft first, then start it with `--control`.
 
-**The app runs on another port.** The MCP server only looks on port 7979. Add `--connect 127.0.0.1:<port>` after `mcp`, as in [Set the port and folders with environment variables](#set-the-port-and-folders-with-environment-variables). With `--connect`, the server exits with the message `cannot connect to` followed by the address when no app is listening there.
+The MCP server only looks on port 7979. If the app runs on another port, add `--connect 127.0.0.1:<port>` after `mcp`, as in [Set the port and folders with environment variables](#set-the-port-and-folders-with-environment-variables). With `--connect`, the server exits with the message `cannot connect to` followed by the address when no app is listening there.
 
-**Another program already uses the port.** VectorCraft still opens, but it doesn't listen on that port. Quit the other program, or start VectorCraft with a different port and give the same port to `--connect`.
+If another program already uses the port, VectorCraft still opens, but it doesn't listen on that port. Quit the other program, or start VectorCraft with a different port and give the same port to `--connect`.
 
-**You gave folders to the MCP server.** With `--automation-read-root` or `--automation-write-root`, the server always works without a window. To confine an assistant that drives the window, give the folders to the app instead.
+If you gave the MCP server `--automation-read-root` or `--automation-write-root`, it always works without a window. To confine an assistant that drives the window, give the folders to the app instead.
 
-**Check which mode the server is in.** When it starts, the server writes one line to its error output: `vectorcraft-cli: MCP server on stdio (remote 127.0.0.1:7979)` when it found the app, or `vectorcraft-cli: MCP server on stdio (headless)` when it works without a window. Your MCP client may show this line in its log for the server.
+To check which mode the server is in, read the one line it writes to its error output when it starts: `vectorcraft-cli: MCP server on stdio (remote 127.0.0.1:7979)` when it found the app, or `vectorcraft-cli: MCP server on stdio (headless)` when it works without a window. Your MCP client may show this line in its log for the server.
 
 ## More detail
 

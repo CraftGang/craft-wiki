@@ -48,7 +48,7 @@ PDFs keep the drawing as vector lines, with layers you can turn on and off in a 
 
 CADCraft draws text with the TrueType and OpenType fonts (`.ttf`, `.otf`, `.ttc`) installed on your computer. To use a new font, install it in your system's font folder, then restart CADCraft.
 
-CADCraft can't read SHX fonts yet. Text in an SHX style is drawn with CADCraft's own drafting font instead, so it may be a slightly different size from the original.
+CADCraft reads SHX fonts and big fonts when it can find the `.shx` file: next to the drawing, or in a folder named by the `CADCRAFT_SHXPATH` environment variable. It doesn't look in other CAD programs' folders. If the file isn't found, the text is drawn with CADCraft's own drafting font instead, so it may be a slightly different size from the original.
 
 ### Choose a replacement font
 

@@ -9,7 +9,7 @@ On a Mac, use **⌘** in place of **Ctrl**, and **Option** in place of **Alt**. 
 
 ## EffectCraft doesn't use my graphics card
 
-Choose **Help › System Compatibility Report...** and look at the **GPU:** and **Window graphics:** lines. If it says **GPU: none (CPU compositing)**, the graphics card compositor didn't start, and the reason is shown next to it. EffectCraft still works, but previews are slower.
+Choose **Help › System Compatibility Report...** and look at the **GPU** and **Window graphics** lines. If it says "GPU: none (CPU compositing)", the graphics card compositor didn't start, and the reason is shown next to it. EffectCraft still works, but previews are slower.
 
 The **Previews** page of **Edit › Preferences** has a **GPU Information...** button with more detail.
 

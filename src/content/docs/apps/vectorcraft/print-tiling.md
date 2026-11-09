@@ -11,7 +11,7 @@ Tiled printing spreads a drawing that is bigger than your paper across several s
 
 1. Open your drawing. For a full-size pattern, check that the drawing is the size you want before you print.
 2. Choose **File → Print…** (**Ctrl+P**, or **Cmd+P** on macOS). In **Printer**, choose your printer, or **PDF File** to save the tiled pages as a PDF.
-3. In **General**, under **Artboards**, choose **All**, or **Range:** to pick the artboards to print.
+3. In **General**, under **Artboards**, choose **All**, or **Range** to pick the artboards to print.
 4. Under **Media**, set **Size** to the paper in your printer, or choose **Custom** and enter its width and height.
 5. In **Advanced**, set **Unprintable margin** to allow for the edges your printer can't print on. VectorCraft uses one value for all four edges, and doesn't read it from the printer.
 6. Back in **General**, under **Options**, set **Scaling** to **Tile Imageable Areas** or **Tile Full Pages** (see below). Set **Scale** to `100%` in both boxes to keep the drawing's real size.
@@ -96,16 +96,16 @@ Lay the sheets out in order. Line up the repeated artwork in the overlaps, trim 
 ## Save the setup for next time
 
 - Choose **Done** to keep the settings with the document without printing. When you save the document, the settings and the grid position are saved in the file, and the Print dialog opens with them next time.
-- To use the same tiling for other documents, choose **Save Preset…** next to **Print Preset**, type a name in **Save as preset:** and choose **Save**. Pick the preset in **Print Preset** the next time you print.
+- To use the same tiling for other documents, choose **Save Preset…** next to **Print Preset**, type a name in **Save as preset** and choose **Save**. Pick the preset in **Print Preset** the next time you print.
 - To add, change, delete, import or export presets without opening the Print dialog, choose **Edit → Print Presets…**.
 
 ## If something goes wrong
 
-- **The drawing shrinks onto one sheet**: **Scaling** is set to **Fit to Page**. Choose a tile mode, and check both **Scale** boxes.
-- **Art is missing along the edges of sheets**: use **Tile Imageable Areas** with a larger **Unprintable margin**, or a bigger **Overlap**.
-- **No tiles show on the canvas**: choose **Done** in the **Print** dialog to keep the settings, then turn on **View → Show Print Tiling**. If the settings aren't valid, no tiles show; check **Summary** in the **Print** dialog.
-- **Summary reports an error about the overlap**: **Overlap** must be less than half the shorter side of a tile. Enter a smaller value.
-- **Too many or too few pages**: check **Artboards**, **Tile Range** and **Copies**. Under **Output**, use **Composite** for an ordinary poster.
+- The drawing shrinks onto one sheet: **Scaling** is set to **Fit to Page**. Choose a tile mode, and check both **Scale** boxes.
+- Art is missing along the edges of sheets: use **Tile Imageable Areas** with a larger **Unprintable margin**, or a bigger **Overlap**.
+- No tiles show on the canvas: choose **Done** in the **Print** dialog to keep the settings, then turn on **View → Show Print Tiling**. If the settings aren't valid, no tiles show; check **Summary** in the **Print** dialog.
+- Summary reports an error about the overlap: **Overlap** must be less than half the shorter side of a tile. Enter a smaller value.
+- Too many or too few pages: check **Artboards**, **Tile Range** and **Copies**. Under **Output**, use **Composite** for an ordinary poster.
 
 In the web version, printing goes through the browser's print dialog, and **PDF File** downloads the PDF.
 

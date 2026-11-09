@@ -51,7 +51,7 @@ The command-line tool is `effectcraft-cli-<ver>-macos-universal.zip`.
 
 Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are RISC-V builds too (`riscv64`) as a `.deb`, an `.rpm` and a tarball; they need Ubuntu 24.04, Debian 13 or newer. You can also install and update through the [ArtCraft Linux repositories](https://getartcraft.com/linux).
 
-**Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-video/effectcraft-bin`. It is not maintained by the EffectCraft team.
+Gentoo: the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `media-video/effectcraft-bin`. It is not maintained by the EffectCraft team.
 
 ### FreeBSD
 

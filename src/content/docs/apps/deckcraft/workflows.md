@@ -110,7 +110,7 @@ DeckCraft prints through a PDF: it makes the PDF and opens it in your PDF viewer
 
 | Setting | Choices |
 | --- | --- |
-| Slides | **Print All Slides**, **Print Current Slide**, or **Custom Range**. For a range, type slide numbers in **Slides:**, such as `1-3, 5`. |
+| Slides | **Print All Slides**, **Print Current Slide**, or **Custom Range**. For a range, type slide numbers in **Slides**, such as `1-3, 5`. |
 | Layout | **Full Page Slides** (one slide per page), **Notes Pages** (each slide with its speaker notes), or **Handouts** with 1, 2, 3, 4, 6 or 9 slides per page. Three per page adds lines for notes. |
 | Paper size and orientation | Letter, A4, Legal or A3, portrait or landscape. For notes pages and handouts only. |
 | **Print Hidden Slides** | Includes slides you hid. |

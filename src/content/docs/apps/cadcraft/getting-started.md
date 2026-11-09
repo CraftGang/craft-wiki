@@ -26,7 +26,7 @@ New drawings use inches. To start in millimeters, choose **New (metric)** on the
 
 ## 3. Draw at the command line
 
-Click in the command line, or just start typing. Try these, pressing **Enter** after each:
+Click in the command line, or start typing. Try these, pressing **Enter** after each:
 
 ```text
 line 0,0 @10,0 @0,5 c

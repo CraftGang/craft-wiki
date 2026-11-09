@@ -1,6 +1,8 @@
 ---
 title: Workflows
 description: Common workflows, assemblies, file formats, and automation in SolidCraft.
+sidebar:
+  order: 3
 ---
 
 :::note[Third-Party Application]
@@ -12,7 +14,7 @@ SolidCraft provides tools for mechanical modeling, 3D printing preparation, shee
 ## Parametric Modeling Workflow
 
 1. **Global Parameters**: Open **Change Parameters** to define project-wide variables before sketching (such as `thickness = 2.5mm`, `clearance = 0.2mm`).
-2. **Robust Referencing**: Always constrain new sketches to principal reference planes or stable datum features rather than generated fillet/chamfer edges to avoid downstream timeline breaks.
+2. **Stable references**: Always constrain new sketches to principal reference planes or stable datum features rather than generated fillet/chamfer edges to avoid downstream timeline breaks.
 3. **Timeline Scrubbing**: Drag the rollback bar along the timeline to insert new features or sketches at earlier stages in design history.
 4. **Patterning**: Use rectangular or circular patterns for repeated geometry like bolt patterns, vents, and cooling fins.
 
@@ -89,9 +91,10 @@ The SolidCraft guide has a page for most of these.
 
 ## Automation and AI Agents (MCP)
 
-Every UI action in SolidCraft corresponds to an internal command. SolidCraft features:
-- **CLI Mode**: Run `solidcraft-cli run bracket.json --out bracket.step` to build a JSON design and export it without the app.
-- **Model Context Protocol (MCP) Server**: Exposes CAD creation and parameter modification tools to AI coding agents and LLMs. Run `solidcraft-cli mcp` to connect your AI assistant directly to SolidCraft's CAD engine.
+Every action in SolidCraft is a command, so scripts and AI assistants can run them too.
+
+- From the command line: `solidcraft-cli run bracket.json --out bracket.step` builds a JSON design and exports it without the app.
+- From an AI assistant: `solidcraft-cli mcp` starts a Model Context Protocol (MCP) server with tools for creating CAD models and changing parameters.
 
 There are two ways to connect:
 

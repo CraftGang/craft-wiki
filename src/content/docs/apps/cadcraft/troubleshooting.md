@@ -56,7 +56,7 @@ Very large DWG files can take a while to open, because CADCraft converts them fi
 
 ## Text looks different from the original
 
-CADCraft reads SHX fonts only when their `.shx` files are in the drawing's folder, so text in an SHX style whose font it can't find is drawn with CADCraft's own drafting font. If text in Chinese, Japanese, Korean or Arabic doesn't show properly, install a font that has those characters, such as Noto Sans CJK or Noto Sans Arabic, and restart CADCraft. See [Fonts](/apps/cadcraft/files/#fonts).
+CADCraft reads SHX fonts only when their `.shx` files are in the drawing's folder or in a folder named by `CADCRAFT_SHXPATH`, so text in an SHX style whose font it can't find is drawn with CADCraft's own drafting font. If text in Chinese, Japanese, Korean or Arabic doesn't show properly, install a font that has those characters, such as Noto Sans CJK or Noto Sans Arabic, and restart CADCraft. See [Fonts](/apps/cadcraft/files/#fonts).
 
 ## Something disappeared after saving
 
@@ -72,7 +72,7 @@ Over the drawing, CADCraft hides the system cursor and draws its own crosshair, 
 
 ## My printer isn't in the list
 
-CADCraft can only plot to files for now: PDF, PNG or SVG ([#2849](https://github.com/storytold/cadcraft/issues/2849)). Plot to a PDF, then print the PDF from any PDF viewer. See [Print](/apps/cadcraft/workflows/#print).
+CADCraft can only plot to files for now: PDF, PNG or SVG ([#670](https://github.com/storytold/cadcraft/issues/670)). Plot to a PDF, then print the PDF from any PDF viewer. See [Print](/apps/cadcraft/workflows/#print).
 
 ## Export to PDF doesn't ask for a paper size
 
@@ -108,7 +108,7 @@ The folder above `logs` is CADCraft's settings folder.
 
 These are open. We'll update this list when they're fixed.
 
-- You can't bring back the menu bar after you hide it ([#2272](https://github.com/storytold/cadcraft/issues/2272), [#2628](https://github.com/storytold/cadcraft/issues/2628)). The right-hand panel can't be closed on its own ([#2274](https://github.com/storytold/cadcraft/issues/2274)), and the Reference Manager can't be closed once it's open ([#2273](https://github.com/storytold/cadcraft/issues/2273)).
+- You can't bring back the menu bar after you hide it ([#2272](https://github.com/storytold/cadcraft/issues/2272)). The right-hand panel can't be closed on its own ([#2274](https://github.com/storytold/cadcraft/issues/2274)), and the Reference Manager can't be closed once it's open ([#2273](https://github.com/storytold/cadcraft/issues/2273)).
 - The Flatpak can't use a 3D mouse, because its sandbox has no access to the device ([#2713](https://github.com/storytold/cadcraft/issues/2713)).
 - On macOS, double-clicking a DWG file doesn't open it ([#2892](https://github.com/storytold/cadcraft/issues/2892)). Open it with **File › Open...** in CADCraft.
 - On KDE Plasma, the **Open** file dialog can appear behind the CADCraft window, so CADCraft looks frozen ([#2642](https://github.com/storytold/cadcraft/issues/2642)). Switch to the dialog from the taskbar.

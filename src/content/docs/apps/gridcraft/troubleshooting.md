@@ -42,7 +42,7 @@ GridCraft doesn't come with fonts. It uses the fonts installed on your computer.
 - To use a font, install it in your system, then restart GridCraft. It looks for installed fonts once, when it starts.
 - Text in a script your installed fonts don't cover, such as Thai, Chinese, Malayalam, Vietnamese or Bangla, can show as `?????`. Install a font that has those characters, then restart.
 
-Known problems, not fixed yet: on Linux the font list can be empty or hold only a few fonts, and all text can be drawn in Liberation Sans ([#3153](https://github.com/storytold/gridcraft/issues/3153), [#3128](https://github.com/storytold/gridcraft/issues/3128)). Cell text can look rough, most in the dark theme ([#3465](https://github.com/storytold/gridcraft/issues/3465)). Installed Windows fonts can be missing from the list ([#3460](https://github.com/storytold/gridcraft/issues/3460)).
+Known problems, not fixed yet: on Linux the font list can be empty or hold only a few fonts, and all text can be drawn in Liberation Sans ([#793](https://github.com/storytold/gridcraft/issues/793), [#3128](https://github.com/storytold/gridcraft/issues/3128)). Cell text can look rough, most in the dark theme ([#3465](https://github.com/storytold/gridcraft/issues/3465)). Installed Windows fonts can be missing from the list ([#3460](https://github.com/storytold/gridcraft/issues/3460)).
 
 ## I can't save an .xls, .xlsb or .ods file
 
@@ -56,7 +56,7 @@ A CSV file holds only the values of one sheet. When you export to CSV, a web pag
 
 ## A big workbook opens with missing rows
 
-When a sheet holds more than 1,000,000 XML elements, GridCraft says the sheet is damaged and keeps only the rows it could read, for example "kept 83486 rows" ([#3361](https://github.com/storytold/gridcraft/issues/3361), [#3286](https://github.com/storytold/gridcraft/issues/3286)). The rest isn't loaded, so keep your original file and don't save over it.
+When a sheet holds more than 1,000,000 XML elements, GridCraft says the sheet is damaged and keeps only the rows it could read, for example "kept 83486 rows" ([#3286](https://github.com/storytold/gridcraft/issues/3286)). The rest isn't loaded, so keep your original file and don't save over it.
 
 Some .xlsx files open as web page text instead of cells ([#3373](https://github.com/storytold/gridcraft/issues/3373)).
 
@@ -64,11 +64,11 @@ Copying a range of more than 2,000,000 cells pastes only 2,000 rows into other a
 
 ## A formula that refers to another workbook doesn't work
 
-A reference to another file, such as `[Book1]Sheet1!A1`, doesn't read a workbook that's open in another window as live data, and a reference to a workbook you haven't saved is refused ([#3526](https://github.com/storytold/gridcraft/issues/3526), [#3292](https://github.com/storytold/gridcraft/issues/3292), [#3340](https://github.com/storytold/gridcraft/issues/3340)).
+A reference to another file, such as `[Book1]Sheet1!A1`, doesn't read a workbook that's open in another window as live data, and a reference to a workbook you haven't saved is refused ([#3292](https://github.com/storytold/gridcraft/issues/3292), [#3340](https://github.com/storytold/gridcraft/issues/3340)).
 
 ## Saving and closing
 
-- "Save changes?" can appear after you saved, and clicking **Save** in it doesn't close GridCraft. Only **Don't Save** closes the window, so make sure your work is saved first ([#3489](https://github.com/storytold/gridcraft/issues/3489), [#3378](https://github.com/storytold/gridcraft/issues/3378)).
+- With a CSV file, "Save changes?" can appear after you saved, and clicking **Save** in it doesn't close GridCraft. Only **Don't Save** closes the window, so make sure your work is saved first ([#2607](https://github.com/storytold/gridcraft/issues/2607)).
 - A new workbook isn't added to Recent when you save it. Only opening a file adds it ([#3519](https://github.com/storytold/gridcraft/issues/3519)).
 - Saving back to Google Drive does nothing. GridCraft says it saved, but writes nothing ([#3462](https://github.com/storytold/gridcraft/issues/3462)).
 

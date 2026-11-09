@@ -75,8 +75,8 @@ For drop shadows, glows and bevels, use **Layer › Layer Styles**. It has **Dro
 ## Render
 
 1. Select a composition and choose **Composition › Add to Render Queue** (**Ctrl+M**). You can also drag compositions onto the **Render Queue** panel (**Window › Render Queue**, **Ctrl+Alt+0**).
-2. Twirl the item open. Click **Output Module:** to choose the format, and the file name next to **Output To:** to choose where it goes.
-3. Click **Render Settings:** to render the work area only or the whole composition, at best or draft quality, or at full, half, third or quarter resolution.
+2. Twirl the item open. Click **Output Module** to choose the format, and the file name next to **Output To** to choose where it goes.
+3. Click **Render Settings** to render the work area only or the whole composition, at best or draft quality, or at full, half, third or quarter resolution.
 4. Make sure the item's **Render** box is checked, then choose **Render**. **Stop** cancels.
 
 Select **Notify** to get a notification when the queue finishes.
@@ -97,7 +97,7 @@ Select **Notify** to get a notification when the queue finishes.
 | Animated GIF | `.gif` |
 | WAV, AIFF | Audio only |
 
-To keep transparency, choose **Channels: RGB + Alpha** in the **Output Module:** menu. It's there for formats that can store it, such as ProRes and PNG Sequence. H.264, HEVC and AV1 can't.
+To keep transparency, choose **Channels: RGB + Alpha** in the **Output Module** menu. It's there for formats that can store it, such as ProRes and PNG Sequence. H.264, HEVC and AV1 can't.
 
 EffectCraft encodes everything itself. You don't need FFmpeg or any other software.
 

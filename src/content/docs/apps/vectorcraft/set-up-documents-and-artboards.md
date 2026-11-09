@@ -213,7 +213,7 @@ Rulers measure positions on the canvas. Guides are lines that art snaps to. The 
 
 ![A dusk mountain lake postcard named Front at 200%, with the rulers in inches counting from the artboard's top-left corner and the grid around the artboard. A vertical guide runs at the 0.5 in mark, a horizontal guide is being dragged down with a Y: 1.00 in readout beside it, and the status bar shows 200% with the navigator on 1 Front](/assets/uploads/vectorcraft/rulers-and-guides.webp)
 
-While you drag a guide out of a ruler, hold Shift to snap it to the ruler's select marks, or hold **Alt** (**Option** on macOS) to switch between a horizontal and a vertical guide. With the Artboard tool, the new guide belongs to the active artboard.
+While you drag a guide out of a ruler, hold Shift to snap it to the ruler's tick marks, or hold **Alt** (**Option** on macOS) to switch between a horizontal and a vertical guide. With the Artboard tool, the new guide belongs to the active artboard.
 
 With the Selection tool, click a guide to select it and drag it to move it. Hold **Alt** (**Option** on macOS) while you drag to move a copy. Drop a guide on its ruler to delete it.
 

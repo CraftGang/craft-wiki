@@ -26,17 +26,17 @@ All of these commands are in the **File** menu.
 1. Give each artboard the name you want its files to have. Export for Screens names each file after its artboard.
 2. Choose **File → Export → Export for Screens…** (**Ctrl+Alt+E**, or **Cmd+Option+E** on macOS). The dialog opens on the settings the document last exported with. If the Artboard tool is active, the dialog checks the artboards you selected with that tool.
 3. On the **Artboards** tab, check the artboards to export. **Grid View** and **List View** change how the thumbnails are shown, and **Clear Selection** unchecks them all.
-4. Under **Select:**, choose **All**, **Range:** (for example `1-3`), or **Full Document**. Full Document writes one file per format row for the whole document: a PDF row writes every artboard, and the other rows write the bounds of all visible art.
+4. Under **Select**, choose **All**, **Range** (for example `1-3`), or **Full Document**. Full Document writes one file per format row for the whole document: a PDF row writes every artboard, and the other rows write the bounds of all visible art.
 5. Turn on **Include Bleed** to grow each artboard by the document's bleed. **Include Artboard Fill** draws each artboard's background color behind its art. It is on by default.
-6. Under **Export to:**, choose a folder. **Open Location after Export** shows the files in your file manager when the export finishes. **Create Sub-folders** puts each row's files in a sub-folder named by **Scale** (for example `2x`) or by **Format** (for example `SVG`).
-7. Under **Formats:**, set each row's **Scale**, **Suffix** and **Format**. **+ Add Scale** adds a PNG row at the next whole factor above the largest factor so far, and the **Remove** button at the end of a row deletes it.
-8. Type a **Prefix:** to put the same text in front of every file name.
+6. Under **Export to**, choose a folder. **Open Location after Export** shows the files in your file manager when the export finishes. **Create Sub-folders** puts each row's files in a sub-folder named by **Scale** (for example `2x`) or by **Format** (for example `SVG`).
+7. Under **Formats**, set each row's **Scale**, **Suffix** and **Format**. **+ Add Scale** adds a PNG row at the next whole factor above the largest factor so far, and the **Remove** button at the end of a row deletes it.
+8. Type a **Prefix** to put the same text in front of every file name.
 9. Check the line under the lists, which shows how many items are selected and how many files the export will write.
 10. Choose **Export Artboard**. On the Assets tab the button reads **Export Asset**.
 
 ![The Export for Screens dialog with three artboards named Icon, Badge and Splash selected, format rows for PNG at 1x, PNG at 2x with the @2x suffix and SVG, and a line saying how many files the export will write](/assets/uploads/vectorcraft/export-for-screens.webp)
 
-In the web version of VectorCraft, the **Export to:** area reads "Your browser downloads the files (several as one .zip)." and the button reads **Download**. An export of one file downloads that file, and an export of several files downloads them as one `.zip` file.
+In the web version of VectorCraft, the **Export to** area reads "Your browser downloads the files (several as one .zip)." and the button reads **Download**. An export of one file downloads that file, and an export of several files downloads them as one `.zip` file.
 
 ### Scales, suffixes and file names
 
@@ -58,7 +58,7 @@ With these settings, an artboard named Icon and a 2x PNG row with sub-folders by
 The two platform buttons above the format rows replace the rows with a ready set and turn on sub-folders by scale. One set writes PNG at 1x, 2x and 3x. The other writes PNG at screen densities from 0.75x to 4x, each in its own density sub-folder.
 :::
 
-The **Format Settings** button (the gear) sets the options that apply to every row of one format, such as the JPEG method or SVG styling. The **Format Presets** menu saves the current rows and settings as a preset with **Save Preset…** and removes one with **Delete Preset**. When you export artboards with a PDF row, **Export PDFs As:** chooses **Single File** (every artboard as a page of one PDF) or **Multiple Files**.
+The **Format Settings** button (the gear) sets the options that apply to every row of one format, such as the JPEG method or SVG styling. The **Format Presets** menu saves the current rows and settings as a preset with **Save Preset…** and removes one with **Delete Preset**. When you export artboards with a PDF row, **Export PDFs As** chooses **Single File** (every artboard as a page of one PDF) or **Multiple Files**.
 
 The **Format** list offers these choices:
 
@@ -75,16 +75,16 @@ WebP rows write lossless WebP files. Lossy WebP is not available.
 
 ### Set the options for every row of a format
 
-1. In Export for Screens, choose the **Format Settings** button (the gear) at the right end of the **Formats:** line. The right side of the dialog shows the options of the first row's format.
-2. Choose another format from the **Format:** list if needed: **PNG**, **PNG 8**, **JPG**, **WebP**, **GIF**, **TIFF**, **SVG** or **PDF**.
+1. In Export for Screens, choose the **Format Settings** button (the gear) at the right end of the **Formats** line. The right side of the dialog shows the options of the first row's format.
+2. Choose another format from the **Format** list if needed: **PNG**, **PNG 8**, **JPG**, **WebP**, **GIF**, **TIFF**, **SVG** or **PDF**.
 3. Set the options. They apply to every row of that format.
 4. Choose **Done** to go back to the format rows.
 
-The raster formats show the same options as their Export As dialogs (see [Set the options for each format](#set-the-options-for-each-format)), without the JPEG quality, which each JPG row sets, and without the image map. SVG shows the SVG options. PDF shows a **PDF Preset:** list with **VectorCraft Default** and the PDF presets you saved.
+The raster formats show the same options as their Export As dialogs (see [Set the options for each format](#set-the-options-for-each-format)), without the JPEG quality, which each JPG row sets, and without the image map. SVG shows the SVG options. PDF shows a **PDF Preset** list with **VectorCraft Default** and the PDF presets you saved.
 
 ### Export PDFs as one file or several
 
-**Export PDFs As:** is available on the Artboards tab when at least one row writes PDF and **Select:** is not set to Full Document. **Multiple Files** (the default) writes one PDF per artboard. **Single File** writes one PDF for each PDF row, with every chosen artboard as a page, and the counter under the lists counts that PDF as one file.
+**Export PDFs As** is available on the Artboards tab when at least one row writes PDF and **Select** is not set to Full Document. **Multiple Files** (the default) writes one PDF per artboard. **Single File** writes one PDF for each PDF row, with every chosen artboard as a page, and the counter under the lists counts that PDF as one file.
 
 ## Save and reuse format presets
 
@@ -92,7 +92,7 @@ A format preset keeps the format rows, their Format Settings, the prefix, the su
 
 1. In Export for Screens, set up the format rows and their settings.
 2. Choose the **Format Presets** button (☰) beside the platform buttons, then **Save Preset…**.
-3. Type a name in the **Name:** field and choose **Save**. **Cancel** closes the field without saving. Saving under the name of a preset you saved before replaces it.
+3. Type a name in the **Name** field and choose **Save**. **Cancel** closes the field without saving. Saving under the name of a preset you saved before replaces it.
 4. To use a preset, open the **Format Presets** menu and choose its name. The dialog takes the preset's rows, settings, prefix, sub-folders and bleed and fill choices.
 5. To remove a saved preset, apply it, then choose **Delete Preset** in the same menu.
 
@@ -140,7 +140,7 @@ The Asset Export panel menu has these commands:
 | **Remove Selected Assets** | Removes the selected assets from the panel. Their art stays in the document. |
 | **Export for Screens…** | Opens Export for Screens on the Assets tab, with the selected assets checked (or all of them when none is selected) |
 | A preset name | Applies that format preset to the panel's export settings. The built-in presets come first, then the ones you saved. |
-| **Save As Preset…** | Shows a **Name:** field under Export Settings. Type a name and choose **Save** to save the panel's export settings as a preset. |
+| **Save As Preset…** | Shows a **Name** field under Export Settings. Type a name and choose **Save** to save the panel's export settings as a preset. |
 | **Save Changes** | Saves the panel's current export settings into the saved preset you applied last |
 | **Delete Preset** | Deletes the saved preset you applied last |
 | **Import Preset…** | Adds the presets of a `.vcexportpresets` file to your saved presets |
@@ -149,8 +149,8 @@ The Asset Export panel menu has these commands:
 ## Export one file with Export As
 
 1. Choose **File → Export → Export As…**.
-2. Pick a **Format:**.
-3. Turn on **Use Artboards** to write one file per artboard, named `<name>-<artboard>` with the format's extension, and choose **All** or a **Range:**. For a PDF, each artboard becomes a page. With Use Artboards off, the export covers the bounds of the visible art.
+2. Pick a **Format**.
+3. Turn on **Use Artboards** to write one file per artboard, named `<name>-<artboard>` with the format's extension, and choose **All** or a **Range**. For a PDF, each artboard becomes a page. With Use Artboards off, the export covers the bounds of the visible art.
 4. Choose **Export…** and pick the file name. The options dialog for the format follows, for example PNG Options or SVG Options.
 
 **Export As SVG…** goes straight to SVG Options, and **Export As PNG…** asks for the file and then opens PNG Options.
@@ -164,7 +164,7 @@ These formats are available from Export As:
 | Text | Text: the document's text, in stacking order from back to front |
 | Document | VectorCraft Template |
 
-The **Format:** list ends with **DWG (use DXF)**, which is unavailable: VectorCraft does not write DWG files, so export DXF instead. Formats added by installed exporter plug-ins come after the built-in formats. A plug-in writes the whole document, so **Use Artboards** is unavailable for its format.
+The **Format** list ends with **DWG (use DXF)**, which is unavailable: VectorCraft does not write DWG files, so export DXF instead. Formats added by installed exporter plug-ins come after the built-in formats. A plug-in writes the whole document, so **Use Artboards** is unavailable for its format.
 
 After you pick the file, this is what follows:
 
@@ -190,10 +190,10 @@ PNG, PNG-8, JPEG, WebP, GIF, TIFF, BMP, Targa and PSD start with these rows:
 
 | Option | Choices |
 |---|---|
-| **Resolution:** | Screen (72 ppi, the default), Medium (150 ppi), High (300 ppi), or Other, which shows a field for any value from 1 to 4608 ppi |
-| **Background Color:** | Transparent, White, Black, or Other, which shows a color button. It starts as White for JPEG and for documents with a white background, and as Transparent otherwise. |
-| **Anti-aliasing:** | None (hard edges), Art Optimized (smooth edges, the default) or Type Optimized (smooth edges with type snapped to the pixel grid for crisper small text) |
-| **Size:** | The width and height in pixels at the chosen resolution. The row shows when the export covers one artboard or the art's bounds. |
+| **Resolution** | Screen (72 ppi, the default), Medium (150 ppi), High (300 ppi), or Other, which shows a field for any value from 1 to 4608 ppi |
+| **Background Color** | Transparent, White, Black, or Other, which shows a color button. It starts as White for JPEG and for documents with a white background, and as Transparent otherwise. |
+| **Anti-aliasing** | None (hard edges), Art Optimized (smooth edges, the default) or Type Optimized (smooth edges with type snapped to the pixel grid for crisper small text) |
+| **Size** | The width and height in pixels at the chosen resolution. The row shows when the export covers one artboard or the art's bounds. |
 
 When the chosen options cannot keep transparency (JPEG, TIFF in CMYK or Grayscale, BMP below 32 bits, Targa at 24 bits, a flat PSD), the Background Color list starts at White, and transparent areas are written on white.
 
@@ -207,20 +207,20 @@ When the chosen options cannot keep transparency (JPEG, TIFF in CMYK or Grayscal
 
 | Option | Choices |
 |---|---|
-| **Color Model:** | RGB, CMYK or Grayscale. A CMYK document starts on CMYK. |
-| **Quality:** | A slider from 0 to 10, with Low, Medium, High or Maximum shown beside it. The default is 9 (Maximum). |
-| **Method:** | Baseline (Standard), the default, which every decoder reads; Baseline Optimized, for smaller files; or Progressive, which shows a **Scans:** field from 3 to 5 (default 3) |
-| **Image Map:** | None (the default), Client-side (.html) or Server-side (.map) |
+| **Color Model** | RGB, CMYK or Grayscale. A CMYK document starts on CMYK. |
+| **Quality** | A slider from 0 to 10, with Low, Medium, High or Maximum shown beside it. The default is 9 (Maximum). |
+| **Method** | Baseline (Standard), the default, which every decoder reads; Baseline Optimized, for smaller files; or Progressive, which shows a **Scans** field from 3 to 5 (default 3) |
+| **Image Map** | None (the default), Client-side (.html) or Server-side (.map) |
 | **Embed ICC Profile** | Embeds the color profile. On by default. |
 
 ### GIF and PNG-8 Options
 
 | Option | Choices |
 |---|---|
-| **Color Reduction:** | Perceptual, Selective (the default), Adaptive, Web, Black & White or Grayscale |
-| **Colors:** | 2, 4, 8, 16, 32, 64, 128 or 256 (the default), or type any number from 2 to 256 |
-| **Dither:** | No Dither, Diffusion (the default), Pattern or Noise. Any choice but No Dither shows an amount from 0% to 100% (default 100%). |
-| **Matte:** | None, White (the default), Black, or Other, which shows a color button |
+| **Color Reduction** | Perceptual, Selective (the default), Adaptive, Web, Black & White or Grayscale |
+| **Colors** | 2, 4, 8, 16, 32, 64, 128 or 256 (the default), or type any number from 2 to 256 |
+| **Dither** | No Dither, Diffusion (the default), Pattern or Noise. Any choice but No Dither shows an amount from 0% to 100% (default 100%). |
+| **Matte** | None, White (the default), Black, or Other, which shows a color button |
 | **Transparency** | Keeps transparent areas transparent. On by default. |
 | **Interlaced** | Writes an interlaced image. Off by default. |
 
@@ -232,8 +232,8 @@ WebP Options has the shared rows only. The line under them reads "Lossless (loss
 
 | Option | Choices |
 |---|---|
-| **Color Model:** | RGB (the default), CMYK or Grayscale. A CMYK document starts on CMYK. Only RGB keeps transparency. |
-| **Byte Order:** | Little-endian (II), the default, or Big-endian (MM) |
+| **Color Model** | RGB (the default), CMYK or Grayscale. A CMYK document starts on CMYK. Only RGB keeps transparency. |
+| **Byte Order** | Little-endian (II), the default, or Big-endian (MM) |
 | **LZW Compression** | Compresses the image without loss. On by default. |
 | **Embed ICC Profile** | Embeds the color profile. On by default. |
 
@@ -241,10 +241,10 @@ WebP Options has the shared rows only. The line under them reads "Lossless (loss
 
 | Option | Choices |
 |---|---|
-| **Color Model:** | RGB (the default) or Grayscale |
-| **File Format:** | Windows (the default) or OS/2 |
-| **Depth:** | 1, 4, 8, 16, 24 (the default) or 32 bit. OS/2 files take 1, 4, 8 or 24 bit. Only 32 bit keeps transparency. |
-| **Color Reduction:**, **Dither:** | Shown for an RGB image at 4 or 8 bit, with the same choices as GIF Options |
+| **Color Model** | RGB (the default) or Grayscale |
+| **File Format** | Windows (the default) or OS/2 |
+| **Depth** | 1, 4, 8, 16, 24 (the default) or 32 bit. OS/2 files take 1, 4, 8 or 24 bit. Only 32 bit keeps transparency. |
+| **Color Reduction**, **Dither** | Shown for an RGB image at 4 or 8 bit, with the same choices as GIF Options |
 | **Compress (RLE)** | Run-length compression. Available for Windows files at 4 or 8 bit. |
 | **Flip Row Order** | Writes the rows from top to bottom. Available for Windows files that are not compressed. |
 
@@ -252,14 +252,14 @@ WebP Options has the shared rows only. The line under them reads "Lossless (loss
 
 | Option | Choices |
 |---|---|
-| **Depth:** | 16, 24 (the default) or 32 bits/pixel. 16 and 32 bits/pixel keep transparency. |
+| **Depth** | 16, 24 (the default) or 32 bits/pixel. 16 and 32 bits/pixel keep transparency. |
 
 ### PSD Options
 
 | Option | Choices |
 |---|---|
-| **Color Model:** | RGB (the default), CMYK or Grayscale. A CMYK document starts on CMYK. |
-| **Options:** | **Flat Image** writes one flattened image. **Write Layers** (the default) writes the layers, which keep transparency. |
+| **Color Model** | RGB (the default), CMYK or Grayscale. A CMYK document starts on CMYK. |
+| **Options** | **Flat Image** writes one flattened image. **Write Layers** (the default) writes the layers, which keep transparency. |
 | **Maximum Editability** | Available with Write Layers. Off by default. |
 | **Include Hidden Layers** | Available with Write Layers. Off by default. |
 | **Embed ICC Profile** | Embeds the color profile. On by default. |
@@ -270,15 +270,15 @@ EPS Options remembers your choices for the next EPS export.
 
 | Option | Choices |
 |---|---|
-| **Preview** → **Format:** | None, TIFF (Black & White), or TIFF (8-bit Color), the default. The color preview can be **Transparent** (the default) or **Opaque**. |
-| **Transparency** → **Overprints:** | Preserve (the default) keeps overprinting objects overprinting on press. Discard makes them knock out like other art. |
-| **Transparency** → **Preset:** | The transparency flattener preset that flattens transparent art: High Resolution, Medium Resolution (the default), Low Resolution, or a preset you saved |
+| **Preview** → **Format** | None, TIFF (Black & White), or TIFF (8-bit Color), the default. The color preview can be **Transparent** (the default) or **Opaque**. |
+| **Transparency** → **Overprints** | Preserve (the default) keeps overprinting objects overprinting on press. Discard makes them knock out like other art. |
+| **Transparency** → **Preset** | The transparency flattener preset that flattens transparent art: High Resolution, Medium Resolution (the default), Low Resolution, or a preset you saved |
 | **Fonts** | **Embed Fonts (for other applications)** is always on and unavailable, because type is written as outlines |
 | **Include Linked Files** | Off by default |
 | **Include Document Thumbnails** | On by default |
 | **Include CMYK PostScript in RGB Files** | On by default |
 | **Compatible Gradient and Gradient Mesh Printing** | Off by default. When on, gradients are written as bands of color. |
-| **PostScript:** | Language Level 2 or Language Level 3 (the default). Level 2 writes gradients as bands of color. |
+| **PostScript** | Language Level 2 or Language Level 3 (the default). Level 2 writes gradients as bands of color. |
 
 ### DXF Options
 
@@ -286,11 +286,11 @@ DXF Options remembers your choices for the next DXF export.
 
 | Option | Choices |
 |---|---|
-| **Version:** | 2018 (the default), 2013–2017, 2010–2012, 2007–2009, 2004–2006, 2000–2002, R14, R13 or R12 |
-| **Scale:** | Sets how many DXF units 1 unit of the art becomes. Pick the unit (Millimeters by default) and type the number of DXF units (1 by default, from 0.000001 to 1000000). |
+| **Version** | 2018 (the default), 2013–2017, 2010–2012, 2007–2009, 2004–2006, 2000–2002, R14, R13 or R12 |
+| **Scale** | Sets how many DXF units 1 unit of the art becomes. Pick the unit (Millimeters by default) and type the number of DXF units (1 by default, from 0.000001 to 1000000). |
 | **Scale Lineweights** | Scales lineweights by the Scale value. When it is off, lineweights keep their printed width. Off by default. |
-| **Number of Colors:** | 8 Colors, 16 Colors, 256 Colors or True Colors (the default). True Colors needs version 2004 or later; earlier versions get the nearest of 256 colors. |
-| **Raster File Format:** | PNG (the default) or JPEG, for placed images |
+| **Number of Colors** | 8 Colors, 16 Colors, 256 Colors or True Colors (the default). True Colors needs version 2004 or later; earlier versions get the nearest of 256 colors. |
+| **Raster File Format** | PNG (the default) or JPEG, for placed images |
 | **Export Option** | **Preserve Appearance** (the default) turns type into outlines, and strokes that a CAD line cannot draw into filled shapes. **Maximize Editability** keeps type as text, and writes every stroke as a line with its lineweight and dashes. |
 | **Export Selected Art Only** | Exports only the selection. Available when art is selected. |
 | **Alter Paths for Appearance** | Writes a stroke that a CAD line cannot draw as the filled area it paints, for example a stroke wider than the widest lineweight. Off by default. |
@@ -300,8 +300,8 @@ DXF Options remembers your choices for the next DXF export.
 
 | Option | Choices |
 |---|---|
-| **Encoding:** | UTF-8 (the default) or UTF-16 (Unicode) |
-| **Line Endings:** | LF (macOS, Linux) or CRLF (Windows). The default matches your operating system. |
+| **Encoding** | UTF-8 (the default) or UTF-16 (Unicode) |
+| **Line Endings** | LF (macOS, Linux) or CRLF (Windows). The default matches your operating system. |
 | **Selection Only** | Writes only the text of the selected objects. Available when objects are selected. |
 
 ## Set SVG options
@@ -310,13 +310,13 @@ The SVG Options dialog opens from **Export As SVG…**, from Export As when the 
 
 | Option | Choices |
 |---|---|
-| **SVG Profile:** | SVG 1.1 or SVG Tiny 1.2 |
-| **Styling:** | Internal CSS (the default), Presentation Attributes, Style Attributes, or Style Attributes (Entity References) |
-| **Font:** | SVG keeps text as text; Convert To Outlines writes it as shapes |
-| **Images:** | Embed puts images inside the SVG; Link writes them as separate files |
-| **Object IDs:** | Layer Names, Minimal or Unique |
-| **Decimal:** | Digits after the decimal point, from 1 to 7 (default 3) |
-| **Encoding:** | Unicode (UTF-8), Unicode (UTF-16) or ISO 8859-1 |
+| **SVG Profile** | SVG 1.1 or SVG Tiny 1.2 |
+| **Styling** | Internal CSS (the default), Presentation Attributes, Style Attributes, or Style Attributes (Entity References) |
+| **Font** | SVG keeps text as text; Convert To Outlines writes it as shapes |
+| **Images** | Embed puts images inside the SVG; Link writes them as separate files |
+| **Object IDs** | Layer Names, Minimal or Unique |
+| **Decimal** | Digits after the decimal point, from 1 to 7 (default 3) |
+| **Encoding** | Unicode (UTF-8), Unicode (UTF-16) or ISO 8859-1 |
 | **Minify** | Writes the file without extra spaces and line breaks |
 | **Responsive** | On by default; leaves out the width and height so the SVG scales to its container |
 | **Embed Fonts (Glyphs Used)** | Puts the glyphs the text uses into the file |
@@ -350,8 +350,8 @@ To write a smaller SVG, choose Minimal object IDs and a low Decimal value, and t
 ![The Save for Web dialog on its 2-Up view, with the 512 by 512 px badge artboard shown as the original and as a PNG-8 image of 26.0K with 32 colors that downloads in 4 seconds at 56.6 Kbps. The settings column shows the PNG-8 format, Selective reduction, 32 colors, Diffusion dither at 100% and the top of the color table](/assets/uploads/vectorcraft/save-for-web.webp)
 
 1. Make the artboard you want to export the active artboard.
-2. Choose **File → Export → Save for Web (Legacy)…**. The dialog opens on the 2-Up view at 100%, with the active artboard and the settings you used last. With more than one artboard, the **Artboard:** list under **Clip to Artboard** picks another one.
-3. Pick a **Preset:**, or choose a **Format:** and set its options. The settings column scrolls when it is taller than the dialog.
+2. Choose **File → Export → Save for Web (Legacy)…**. The dialog opens on the 2-Up view at 100%, with the active artboard and the settings you used last. With more than one artboard, the **Artboard** list under **Clip to Artboard** picks another one.
+3. Pick a **Preset**, or choose a **Format** and set its options. The settings column scrolls when it is taller than the dialog.
 4. Compare the file size and download time under each preview. On the 4-Up view, the two extra panes show lighter versions of your settings, such as a lower JPEG quality or fewer colors. Click one to take its settings.
 5. Choose **Save…** and pick the file name. In the web version the button reads **Download**.
 
@@ -360,7 +360,7 @@ These controls sit under the preview:
 | Control | Choices |
 |---|---|
 | Zoom | Fit in View, 50%, 100% (the default), 200% or 400%. Drag a preview to move it. |
-| **Download:** | The connection speed that the download times assume, from 28.8 Kbps to 8 Mbps. The default is 56.6 Kbps. |
+| **Download** | The connection speed that the download times assume, from 28.8 Kbps to 8 Mbps. The default is 56.6 Kbps. |
 | **Preview in Browser** | Writes an HTML page with the image to a temporary folder and opens it in your browser. Available in the desktop app only. |
 
 The settings column has these options. The rows change with the format.
@@ -374,22 +374,22 @@ The settings column has these options. The rows change with the format.
 | **Dither:**, **Amount:** | GIF, PNG-8 | No Dither, Diffusion (the default), Pattern or Noise, with an amount from 0% to 100% (default 100%) |
 | **Transparency** | GIF, PNG-8, PNG-24 | Keeps transparent areas transparent. On by default. |
 | **Interlaced** | GIF, PNG-8, PNG-24 | Writes an interlaced image. Off by default. |
-| **Matte:** | All | None, White (the default), Black, or Other, which shows a color button |
-| **Web Snap:** | GIF, PNG-8 | 0% to 100% (default 0%) |
-| **Lossy:** | GIF | 0% to 100% (default 0%) |
-| **Quality:** | JPEG | Low (10), Medium (30), High (60, the default), Very High (80) or Maximum (100), with a slider for any value from 0 to 100 |
+| **Matte** | All | None, White (the default), Black, or Other, which shows a color button |
+| **Web Snap** | GIF, PNG-8 | 0% to 100% (default 0%) |
+| **Lossy** | GIF | 0% to 100% (default 0%) |
+| **Quality** | JPEG | Low (10), Medium (30), High (60, the default), Very High (80) or Maximum (100), with a slider for any value from 0 to 100 |
 | **Progressive** | JPEG | Off by default |
 | **Optimized** | JPEG | On by default |
 | **ICC Profile** | JPEG | Embeds the color profile. Off by default. |
 | **Convert to sRGB** | All | On by default |
-| **Metadata:** | All | None, Copyright (the default), Copyright and Contact Info, or All |
-| **Color Table** | GIF, PNG-8 | The image's colors as swatches. Select a swatch, then choose **Transparent** (or **Restore**), **Web Shift** (or **Unshift**) or **Lock** (or **Unlock**). **Order:** sorts the table: Unsorted, Sort by Hue, Sort by Luminance or Sort by Popularity. |
-| **Image Size** → **W:**, **H:** | All | The width and height in pixels. Changing one changes the other in proportion. |
-| **Percent:** | All | The size as a percentage of the art's size |
-| **Anti-aliasing:** | All | None, Art Optimized (the default) or Type Optimized |
-| **Clip to Artboard** | All | Exports the artboard's area. On by default. With more than one artboard, an **Artboard:** list picks which one. |
-| **Slices:** | All | All Slices, Selected Slices or No Slices. Shown when the document has slices. |
-| **Output:** | All | Images Only (the default) or HTML and Images |
+| **Metadata** | All | None, Copyright (the default), Copyright and Contact Info, or All |
+| **Color Table** | GIF, PNG-8 | The image's colors as swatches. Select a swatch, then choose **Transparent** (or **Restore**), **Web Shift** (or **Unshift**) or **Lock** (or **Unlock**). **Order** sorts the table: Unsorted, Sort by Hue, Sort by Luminance or Sort by Popularity. |
+| **Image Size** → **W**, **H** | All | The width and height in pixels. Changing one changes the other in proportion. |
+| **Percent** | All | The size as a percentage of the art's size |
+| **Anti-aliasing** | All | None, Art Optimized (the default) or Type Optimized |
+| **Clip to Artboard** | All | Exports the artboard's area. On by default. With more than one artboard, an **Artboard** list picks which one. |
+| **Slices** | All | All Slices, Selected Slices or No Slices. Shown when the document has slices. |
+| **Output** | All | Images Only (the default) or HTML and Images |
 
 For slices and their HTML output, see [Slice artwork for the web](/apps/vectorcraft/slice-artwork-for-the-web/).
 

@@ -39,7 +39,7 @@ The tab also has drop caps, automatic hyphenation and line numbers.
 
 On the **References** tab:
 
-- **Table of contents**: built from your headings. Update it after you change them.
+- **Table of Contents**: built from your headings. Update it after you change them.
 - **Footnotes** and **endnotes**.
 - **Citations and bibliography**: in APA, MLA, Chicago or IEEE style. If you keep your sources in Zotero, see [Zotero](/apps/wordcraft/zotero/).
 - **Captions**, a **table of figures**, **cross-references** and an **index**.
@@ -79,40 +79,16 @@ On the **Mailings** tab, pick your recipient list (a CSV or spreadsheet file), t
 
 On the **View** tab:
 
-- **Read mode** for reading, **Focus** to hide everything but the text, and **Immersive Reader**.
+- **Read Mode** for reading, **Focus** to hide everything but the text, and **Immersive Reader**.
 - **Outline** and **Draft** views, and **Print Layout** and **Web Layout** to switch back.
 - **Navigation pane** to jump between headings, or to search the document.
 - **Zoom**, one or several pages side by side, rulers and gridlines.
 - **Split**, **New Window**, **Arrange All** and **Switch Windows** to work in two places at once, or in several documents.
-- **Full Screen**, **Interface Theme** and **Dark mode**.
+- **Full Screen**, **Interface Theme** and **Dark Mode**.
 
 Read mode replaces the ribbon with its own bar. Use it to set the **Column width**, **Text size** and **Line spacing**, and a **Page color** of **None**, **Sepia** or **Inverse**. These only change how you see the document, not the file.
 
 To change the interface language, choose **File › Options › Language**. By default, WordCraft follows your system's language.
-
-## Keyboard shortcuts
-
-WordCraft uses the shortcuts you'd expect from a word processor. On a Mac, use **⌘** in place of **Ctrl**.
-
-| Shortcut | What it does |
-| --- | --- |
-| **Ctrl+B**, **Ctrl+I**, **Ctrl+U** | Bold, italic, underline |
-| **Ctrl+S** | Save |
-| **Ctrl+P** | Open **File › Print** |
-| **Ctrl+F** | Search in the Navigation pane |
-| **Ctrl+H** | Find and replace (**Control+H** on a Mac) |
-| **F3** | Find next |
-| **F12** | Save As |
-| **Alt+=** | Insert an equation |
-| **Shift+F3** | Change case |
-| **Shift+F7** | Thesaurus |
-| **Ctrl+Z** | Undo |
-| **Ctrl+Y** or **Ctrl+Shift+Z** | Redo |
-| **F4** | Repeat the last action |
-| **F7** | Check spelling and grammar |
-| **F8** | Extend the selection |
-| **Enter** in a list | Continue the list |
-| **Tab** in a list | Indent the item one level |
 
 ## Print
 
@@ -160,3 +136,27 @@ Converting between formats can lose some formatting. To share a document that mu
 ## Record a macro
 
 A macro records a sequence of steps and plays them back, so you can repeat a task in one go. Find **Record Macro** and **Macros** on the **View** tab.
+
+## Keyboard shortcuts
+
+WordCraft uses the shortcuts you'd expect from a word processor. On a Mac, use **⌘** in place of **Ctrl**.
+
+| Shortcut | What it does |
+| --- | --- |
+| **Ctrl+B**, **Ctrl+I**, **Ctrl+U** | Bold, italic, underline |
+| **Ctrl+S** | Save |
+| **Ctrl+P** | Open **File › Print** |
+| **Ctrl+F** | Search in the Navigation pane |
+| **Ctrl+H** | Find and replace (**Control+H** on a Mac) |
+| **F3** | Find next |
+| **F12** | Save As |
+| **Alt+=** | Insert an equation |
+| **Shift+F3** | Change case |
+| **Shift+F7** | Thesaurus |
+| **Ctrl+Z** | Undo |
+| **Ctrl+Y** or **Ctrl+Shift+Z** | Redo |
+| **F4** | Repeat the last action |
+| **F7** | Check spelling and grammar |
+| **F8** | Extend the selection |
+| **Enter** in a list | Continue the list |
+| **Tab** in a list | Indent the item one level |

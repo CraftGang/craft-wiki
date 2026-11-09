@@ -19,7 +19,7 @@ Don't try `"gl"`: on some AMD drivers, OpenGL is what crashes in the first place
 
 ## It quits with "Parent device is lost"
 
-Older versions could close at start with **Parent device is lost** in the log. Current versions avoid this, so [update](/apps/soundcraft/install-update/#update) first. If it still happens, start SoundCraft with `WGPU_BACKEND` set to `"vulkan"`, as above.
+Older versions could close at start with "Parent device is lost" in the log. Current versions avoid this, so [update](/apps/soundcraft/install-update/#update) first. If it still happens, start SoundCraft with `WGPU_BACKEND` set to `"vulkan"`, as above.
 
 ## There's no sound
 

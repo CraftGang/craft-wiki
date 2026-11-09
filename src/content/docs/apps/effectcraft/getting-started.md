@@ -57,8 +57,8 @@ Choose **File › Save** (**Ctrl+S**). EffectCraft saves an .ecproj project file
 ## 8. Render a video
 
 1. Select the composition and choose **Composition › Add to Render Queue** (**Ctrl+M**).
-2. In the **Render Queue**, twirl the item open. Click **Output Module:** to pick a format. H.264 (.mp4) is the default.
-3. Click the file name next to **Output To:** to choose where to save it.
+2. In the **Render Queue**, twirl the item open. Click **Output Module** to pick a format. H.264 (.mp4) is the default.
+3. Click the file name next to **Output To** to choose where to save it.
 4. Choose **Render**.
 
 ## Next steps

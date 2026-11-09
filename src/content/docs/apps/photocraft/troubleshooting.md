@@ -57,7 +57,7 @@ PhotoCraft draws its own title bar. If the taskbar turns black or disappears whi
 
 ## Canvas Size added a white border around my photo
 
-**Image › Canvas Size…** doesn't scale your photo. It adds space around it, and fills the new space with the **Canvas extension color**, which is your background color (usually white) unless you change it. To add empty space, set **Canvas extension color:** to **Transparent**.
+**Image › Canvas Size…** doesn't scale your photo. It adds space around it, and fills the new space with the **Canvas extension color**, which is your background color (usually white) unless you change it. To add empty space, set **Canvas extension color** to **Transparent**.
 
 This happens because a photo you open becomes a locked **Background** layer, which can't be transparent. To make the photo itself bigger or smaller, use **Image › Image Size…**.
 

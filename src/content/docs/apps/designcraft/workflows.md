@@ -18,7 +18,7 @@ DesignCraft's menus are **File**, **Edit**, **Layout**, **Type**, **Object**, **
 
 ## Tools
 
-The Tools panel holds more than the tools named above. Where a tool has a key, press it with the cursor outside a text frame.
+Besides the selection, type, frame and shape tools in [Keyboard shortcuts](#keyboard-shortcuts), the Tools panel holds these. Where a tool has a key, press it with the cursor outside a text frame.
 
 | Tool | Key | What it does |
 | --- | --- | --- |
@@ -146,7 +146,7 @@ Choose **Table › Insert Table…** (**Ctrl+Alt+Shift+T**) with the text cursor
 - **Type › Insert Footnote** adds a footnote at the cursor.
 - **Layout › Table of Contents…** builds a table of contents from your paragraph styles. **Layout › Update Table of Contents** refreshes it.
 - **Layout › Index** adds index entries and builds the index.
-- **Type › Insert Endnote** adds an endnote at the cursor. **Type › Document Endnote Options…** sets how endnotes look.
+- **Type › Insert Endnote** adds an endnote at the cursor. **Document Endnote Options…**, which sets how endnotes look, isn't on a menu: find it with **Quick Apply** (**Ctrl+Return**).
 - **Type › Hyperlinks & Cross-References** makes a **New Hyperlink…** from the selected text or frame, and **Insert Cross-Reference…** points to another place in the document. **Define Cross-Reference Format…** sets the wording.
 - **Type › Text Variables** holds values such as a chapter number or a running header. Use **Define Text Variable…** to make one, **Insert Variable** to put it in the text, and **Convert Variable to Text** to freeze it.
 - **Type › Bulleted & Numbered Lists › Define Lists…** sets up lists that keep their numbering across frames.
@@ -183,7 +183,7 @@ Click a line to select the object and go to its page. Fix the errors before you 
 
 ## Export a PDF
 
-Choose **File › Export PDF…**, pick a **Preset:**, click **OK** and choose where to save.
+Choose **File › Export PDF…**, pick a **Preset**, click **OK** and choose where to save.
 
 | Preset | Use it for | Standard | Crop and bleed marks |
 | --- | --- | --- | --- |
@@ -196,10 +196,10 @@ Choose **File › Export PDF…**, pick a **Preset:**, click **OK** and choose w
 
 You can change any setting after picking a preset, which switches it to **Custom**:
 
-- **General**: **Page Range:** (for example `1-3,5`) and **Spreads**.
+- **General**: **Page Range** (for example `1-3,5`) and **Spreads**.
 - **Compression**: **Compress images**.
 - **Marks and Bleeds**: **Include document bleed**, **Crop Marks**, **Bleed Marks** and **Page Information**.
-- **Advanced**: the **Standard:** and **Tagged PDF**.
+- **Advanced**: the **Standard** and **Tagged PDF**.
 
 DesignCraft remembers your settings for next time.
 
@@ -220,9 +220,12 @@ More on the **File** menu:
 - **Save a Copy…** saves under another name and leaves your open document as it is.
 - **Revert** goes back to the last saved version. It can't be undone.
 - **File Info…** sets the title, author and keywords stored in the file.
-- **Print…** (**Ctrl+P**) sends the document to a printer.
-- **File › New › Book** and **File › New › Library** start a book and a library of objects you reuse.
 - **Export › Export Selection as Snippet** saves the selected objects as a file you can place into another document.
+
+A few commands aren't on a menu. Find them with **Quick Apply** (**Ctrl+Return**):
+
+- **Print…** (**Ctrl+P**) sends the document to a printer.
+- **New Book** and **New Library** start a book and a library of objects you reuse.
 - **Import XML…** brings in XML. The tags it uses are in **Window › Utilities › Tags**, where **Load DTD…** loads a DTD.
 
 **File › Package…** (**Ctrl+Alt+Shift+P**) copies the document, its linked pictures and its fonts into one folder, to send to a printer or a colleague.
@@ -239,9 +242,9 @@ The other panels in **Window › Interactive** are **Bookmarks**, **Hyperlinks**
 
 ## Make a layout for another size
 
-To reuse a layout at a different size, such as a print page and a phone screen, choose **Layout › Create Alternate Layout…**. DesignCraft copies the pages and objects to the new size. **Layout › Duplicate Alternate Layout**, **Delete Alternate Layout** and **Alternate Layout Options…** manage them.
+To reuse a layout at a different size, such as a print page and a phone screen, choose **Layout › Create Alternate Layout…**. DesignCraft copies the pages and objects to the new size. **Layout › Alternate Layout Options…** changes one. **Duplicate Alternate Layout** and **Delete Alternate Layout** aren't on a menu: find them with **Quick Apply**.
 
-To control how objects follow the new size, use **Layout › Liquid Layout › Liquid Page Rule** and the **Liquid Layout** panel. **Object › Flex Layout › Convert to Flex Layout** turns a group or frame into a container that places the objects inside it and reflows them when you move or resize one.
+To control how objects follow the new size, use **Window › Interactive › Liquid Layout**, or find **Liquid Page Rule** with **Quick Apply**. **Object › Flex Layout › Convert to Flex Layout** turns a group or frame into a container that places the objects inside it and reflows them when you move or resize one.
 
 ## Keyboard shortcuts
 

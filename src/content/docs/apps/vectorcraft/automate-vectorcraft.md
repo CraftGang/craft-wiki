@@ -11,7 +11,7 @@ This guide shows you how to find any command by typing part of its name, give to
 ## Find a command by name
 
 1. Choose **Help → Search Commands…**, or press **Ctrl+Shift+/** (**Cmd+Shift+/** on macOS).
-2. Type part of the name of a command or a tool, for example "align".
+2. Type part of the name of a command or a tool, for example `align`.
 3. Press the Up and Down arrow keys to highlight a result, then press Enter, or click a result.
 
 The box searches every command and tool, shows up to 14 matches, and shows each match's keyboard shortcut beside it. Choosing a tool selects it, and choosing a command runs it.
@@ -21,14 +21,14 @@ The box searches every command and tool, shows up to 14 matches, and shows each 
 ## Change keyboard shortcuts
 
 1. Choose **Edit → Keyboard Shortcuts…**, or press **Ctrl+Alt+Shift+K** (**Cmd+Option+Shift+K** on macOS).
-2. Under **Set:**, choose **VectorCraft Defaults** or **Classic Defaults**.
+2. Under **Set**, choose **VectorCraft Defaults** or **Classic Defaults**.
 3. Choose the **Tools** tab or the **Menu Commands** tab, and type in the **Search** box to narrow the list. Panels are listed under Window on the **Menu Commands** tab.
 4. Click the shortcut next to an entry, then press the new keys. Press Esc to cancel.
 5. Click **OK** to keep the changes, or **Cancel** to discard them.
 
 ![The Keyboard Shortcuts dialog over a night market scene. The Tools tab is filtered by "selection", the Set list shows Custom, and Group Selection Tool is selected with its new shortcut, Shift+A.](/assets/uploads/vectorcraft/keyboard-shortcuts-custom.webp)
 
-When you change a shortcut, the **Set:** list shows **Custom**. The dialog also has these buttons:
+When you change a shortcut, the **Set** list shows **Custom**. The dialog also has these buttons:
 
 | Button | What it does |
 |---|---|
@@ -37,6 +37,7 @@ When you change a shortcut, the **Set:** list shows **Custom**. The dialog also 
 | **Go to Conflict** | Selects the entry that the keys you pressed were taken from |
 | **Import…** | Reads a saved shortcut set into the dialog; press **OK** to keep it |
 | **Export…** | Saves the current set as a `.json` file |
+| **Export Text…** | Saves the current set's tools and menu commands, with their shortcuts, as a text file |
 | **Reset to Defaults** | Returns every shortcut to the **VectorCraft Defaults** set |
 
 :::note
@@ -51,7 +52,7 @@ An action is a list of recorded steps. Each step is a VectorCraft command with t
 
 1. Choose **Window → Actions**.
 2. Click **Create New Set** at the bottom of the panel, type a name and click **OK**.
-3. Click **Create New Action**. In **New Action**, type a **Name:**, choose the **Action Set:**, and click **Record**. The panel shows **● Recording**.
+3. Click **Create New Action**. In **New Action**, type a **Name**, choose the **Action Set**, and click **Record**. The panel shows **● Recording**.
 4. Do the steps you want to record.
 5. Click **Stop Playing/Recording**.
 6. To play the action, select it in the panel and click **Play Current Selection**.
@@ -62,7 +63,7 @@ An action is a list of recorded steps. Each step is a VectorCraft command with t
 
 Expand an action to see its steps. Each step has a check box: clear it to leave that step out when the action plays, and select it again to include it.
 
-In **New Action** and **Action Options…**, the **Function Key:** list assigns a key from F1 to F15 that plays the action. You can add **Ctrl** (**Cmd** on macOS) and **Shift** to the key. On Windows, F1, Ctrl+F4 and Ctrl+F6 cannot be used.
+In **New Action** and **Action Options…**, the **Function Key** list assigns a key from F1 to F15 that plays the action. You can add **Ctrl** (**Cmd** on macOS) and **Shift** to the key. On Windows, F1, Ctrl+F4 and Ctrl+F6 cannot be used.
 
 :::tip
 With the default **Accelerated** speed, the whole action plays as one step in the undo history, so one Undo reverses it. **Playback Options…** also offers **Step by Step** and **Pause For**, which play one step at a time and record each step as its own undo step.
@@ -92,47 +93,47 @@ The panel menu holds these commands:
 
 1. In the **Actions** panel, select the action. If the action has no steps, or every step is cleared, **Batch…** shows a message in the status bar and does not open.
 2. Choose **Batch…** from the panel menu. The dialog shows the action's name at the top.
-3. Set **Play:** to **Folder** or **Data Sets**.
-4. For **Folder**, type a **Source Folder:** or click **Choose…**, and select **Include All Subdirectories** to include its subfolders. For **Data Sets**, choose how the files are named in **File Name:**.
-5. Choose one of the **Destination:** options. For **Folder**, type a **Destination Folder:** or click **Choose…**.
+3. Set **Play** to **Folder** or **Data Sets**.
+4. For **Folder**, type a **Source Folder** or click **Choose…**, and select **Include All Subdirectories** to include its subfolders. For **Data Sets**, choose how the files are named in **File Name**.
+5. Choose one of the **Destination** options. For **Folder**, type a **Destination Folder** or click **Choose…**.
 6. Select or clear the options under **Overrides**, and click **OK**.
 
 ![The Batch dialog for the Badge action over a dusk scene with three star badges, with Play set to Folder, Source Folder C:\Art\badges, Include All Subdirectories cleared, Destination set to Folder, Destination Folder C:\Art\badges-out, and all four Overrides options selected. The Actions panel on the right shows the Badge action, with 3 steps, selected in the Studio set.](/assets/uploads/vectorcraft/action-batch.webp)
 
-When the batch ends, the status bar shows how many files or data sets were processed, for example "Batch: 3 processed", and how many failed. If the source holds more than 500 files or data sets, or if **Include All Subdirectories** finds a folder nested more than 8 levels deep, the batch stops with an error before it processes any file. The batch skips files whose names start with a dot and files VectorCraft cannot open.
+When the batch ends, the status bar shows how many files or data sets were processed, for example "Batch: 3 processed," and how many failed. If the source holds more than 500 files or data sets, or if **Include All Subdirectories** finds a folder nested more than 8 levels deep, the batch stops with an error before it processes any file. The batch skips files whose names start with a dot and files VectorCraft cannot open.
 
-If you click **OK** with no **Source Folder:** or no **Destination Folder:**, or with **Data Sets** chosen and no document open, the status bar names what is missing and the dialog stays open. The batch also stops with an error, and the dialog stays open, when the folder holds no file VectorCraft can open or the document has no data sets.
+If you click **OK** with no **Source Folder** or no **Destination Folder**, or with **Data Sets** chosen and no document open, the status bar names what is missing and the dialog stays open. The batch also stops with an error, and the dialog stays open, when the folder holds no file VectorCraft can open or the document has no data sets.
 
 | Destination | What happens to each file |
 |---|---|
 | **None** | The file stays open |
 | **Save and Close** | The file is saved over the source and closed |
-| **Folder** | The file is saved or exported into the **Destination Folder:** and closed |
+| **Folder** | The file is saved or exported into the **Destination Folder** and closed |
 
-With **Folder**, each file keeps its name and its format. With **Data Sets**, VectorCraft applies each data set in turn to the open document, and the document stays open. When **Destination:** is **Folder**, VectorCraft saves one `.vectorcraft` copy for each data set.
+With **Folder**, each file keeps its name and its format. With **Data Sets**, VectorCraft applies each data set in turn to the open document, and the document stays open. When **Destination** is **Folder**, VectorCraft saves one `.vectorcraft` copy for each data set.
 
 | Option | Default | What it does |
 |---|---|---|
 | **Include All Subdirectories** | Off | Also plays the action on the files in the source folder's subfolders |
-| **File Name:** (Data Sets) | **File + Number** | **File + Number** names each file after the document with 001, 002 and so on; **File + Data Set Name** uses the document's name, an underscore and the data set's name; **Data Set Name** uses the data set's name. A name already used gets `-2`, `-3` and so on. |
+| **File Name** (Data Sets) | **File + Number** | **File + Number** names each file after the document with 001, 002 and so on; **File + Data Set Name** uses the document's name, an underscore and the data set's name; **Data Set Name** uses the data set's name. A name already used gets `-2`, `-3` and so on. |
 | **Override Action "Open" Commands** | On | Skips the Open steps recorded in the action. The other steps run on the file the batch opened. With **Data Sets**, Open steps are always skipped. |
-| **Override Action "Save" Commands** | On | The action's recorded Save steps write their files into the **Destination Folder:**, named after the source file |
-| **Override Action "Export" Commands** | On | The action's recorded Export steps write their files into the **Destination Folder:**, named after the source file, with the export format's extension |
+| **Override Action "Save" Commands** | On | The action's recorded Save steps write their files into the **Destination Folder**, named after the source file |
+| **Override Action "Export" Commands** | On | The action's recorded Export steps write their files into the **Destination Folder**, named after the source file, with the export format's extension |
 | **Stop on Errors** | On | Stops the batch at the first file or data set that fails |
 
-The Save and Export overrides apply only when **Destination:** is **Folder**.
+The Save and Export overrides apply only when **Destination** is **Folder**.
 
 ## Set action and playback options
 
-To rename the current set, choose **Set Options…** from the Actions panel menu, type a **Name:** and click **OK**. **New Set…** opens the same dialog with the name **Set 1**, or the next number that no set uses.
+To rename the current set, choose **Set Options…** from the Actions panel menu, type a **Name** and click **OK**. **New Set…** opens the same dialog with the name **Set 1**, or the next number that no set uses.
 
 To change an action, select it and choose **Action Options…**:
 
 | Option | What it does |
 |---|---|
-| **Name:** | Renames the action. **OK** is unavailable while the name is empty. |
-| **Function Key:** | **None**, or a key from F1 to F15 that plays the action, with **Ctrl** (**Cmd** on macOS) and **Shift** check boxes. The action's key takes priority over a command shortcut on the same keys. |
-| **Color:** | **None**, **Red**, **Yellow**, **Green**, **Blue** or **Violet**. VectorCraft saves the color with the action, and the Actions panel does not display it. |
+| **Name** | Renames the action. **OK** is unavailable while the name is empty. |
+| **Function Key** | **None**, or a key from F1 to F15 that plays the action, with **Ctrl** (**Cmd** on macOS) and **Shift** check boxes. The action's key takes priority over a command shortcut on the same keys. |
+| **Color** | **None**, **Red**, **Yellow**, **Green**, **Blue** or **Violet**. VectorCraft saves the color with the action, and the Actions panel does not display it. |
 
 ![The Action Options dialog for the Lantern Glow action over the night market's lanterns, with the Name Lantern Glow, the Function Key F5 with Shift selected, and the Color Yellow](/assets/uploads/vectorcraft/action-options-dialog.webp)
 
@@ -169,7 +170,7 @@ The report lists what the script needs, then these sections. A section appears o
 | **Includes** | The files the script's `#include` lines name, and whether each one was checked | The line, or the file and line |
 | **Problems** | Strings, comments, regular expressions, template literals, XML literals or brackets left open; a closing bracket with no opening one; syntax newer than ES3; unknown directives; invalid UTF-8; mixed line endings; and nesting too deep to follow | The line, or the file and line |
 
-VectorCraft also checks the files that `#include` lines name, and reads them only from inside the script's folder. It checks up to 8 MiB in each file, 32 MiB in all and 64 included files. For a script file larger than 8 MiB, the report shows "Too large to check". An included file that VectorCraft skips because a limit was reached is listed under **Includes** as "Not read: a limit was reached". VectorCraft cannot read a compiled `.jsxbin` file. For one, the report shows "Compiled script: ask its author for the .jsx file".
+VectorCraft also checks the files that `#include` lines name, and reads them only from inside the script's folder. It checks up to 8 MiB in each file, 32 MiB in all and 64 included files. For a script file larger than 8 MiB, the report shows "Too large to check." An included file that VectorCraft skips because a limit was reached is listed under **Includes** as "Not read: a limit was reached." VectorCraft cannot read a compiled `.jsxbin` file. For one, the report shows "Compiled script: ask its author for the .jsx file."
 
 ## Run commands from the command line
 
@@ -213,9 +214,9 @@ Put long parameters in a steps file and pass it with `--commands`. `--commands -
 
 | Mode | Start it with | What it drives |
 |---|---|---|
-| **Connected** | `vectorcraft-cli mcp --connect 127.0.0.1:7979`, with the app started as `vectorcraft --control 7979` | The open VectorCraft window. You see each change as it happens. |
-| **Headless** | `vectorcraft-cli mcp --headless` | Its own session with no window. Tools that work only with the desktop app, such as opening a panel, are not available. |
-| **Automatic** | `vectorcraft-cli mcp` | Tries `127.0.0.1:7979` once when it starts, and runs headless when no app answers |
+| Connected | `vectorcraft-cli mcp --connect 127.0.0.1:7979`, with the app started as `vectorcraft --control 7979` | The open VectorCraft window. You see each change as it happens. |
+| Headless | `vectorcraft-cli mcp --headless` | Its own session with no window. Tools that work only with the desktop app, such as opening a panel, are not available. |
+| Automatic | `vectorcraft-cli mcp` | Tries `127.0.0.1:7979` once when it starts, and runs headless when no app answers |
 
 To use the connected mode:
 

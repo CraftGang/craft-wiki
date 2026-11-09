@@ -46,7 +46,7 @@ Every format also has an ARM64 build (`aarch64` in place of `x86_64`). RISC-V (`
 
 On Arch Linux, besides the `.pkg.tar.zst` above, community members maintain AUR packages. `wordcraft-bin` is the quickest, for example `yay -S wordcraft-bin`. `wordcraft` builds the latest release from source, and `wordcraft-git` builds the newest unreleased code.
 
-**Gentoo:** the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `app-office/wordcraft-bin` and `app-office/wordcraft`.
+**Gentoo**: the community [::snakebyte overlay](https://github.com/switch87/snakebyte-overlay) has `app-office/wordcraft-bin` and `app-office/wordcraft`.
 
 Community packages are not maintained by the WordCraft team.
 
@@ -60,7 +60,7 @@ Download `wordcraft-<ver>-freebsd-x86_64.tar.gz` (or `freebsd-aarch64` for ARM64
 
 ## Update
 
-WordCraft checks for updates when it starts, and tells you when one is out. To check yourself, choose **Help › Check for Updates…**. Your settings are kept outside the app's folder, so updating keeps them.
+WordCraft checks for updates when it starts, and tells you when one is out. To check yourself, choose **Help › Check for Updates**. Your settings are kept outside the app's folder, so updating keeps them.
 
 - **ArtCraft Launcher**: tells you about new versions and updates WordCraft for you.
 - **Installer, DMG, `.deb`, `.rpm`**: install the new version over the old one, or update through the [Linux repositories](https://getartcraft.com/linux).

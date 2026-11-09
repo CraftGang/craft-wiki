@@ -25,9 +25,9 @@ These keep your layers.
 | Affinity | `.af`, `.afphoto`, `.afdesign`, `.afpub` | Yes | No |
 | SVG | `.svg`, `.svgz` | Yes, as shape layers | No |
 
-**PSD and PSB.** PhotoCraft opens and saves layered PSD and PSB files, including 16-bit, 32-bit, CMYK and Lab documents. Text layers stay editable. When it saves a PSD again, it keeps the parts it doesn't understand yet instead of dropping them. The saved file looks the same, but it isn't byte for byte the same as the one you opened.
+PhotoCraft opens and saves layered PSD and PSB files, including 16-bit, 32-bit, CMYK and Lab documents. Text layers stay editable. When it saves a PSD again, it keeps the parts it doesn't understand yet instead of dropping them. The saved file looks the same, but it isn't byte for byte the same as the one you opened.
 
-**Files from other editors.** GIMP, Krita, Paint.NET and Affinity files open with their layers. PhotoCraft can't save them. To keep editing a Krita or GIMP file in both apps, save it as OpenRaster (`.ora`), which they open with its layers. If a file uses something PhotoCraft can't match, such as some Affinity effects, PhotoCraft tells you what it left out or approximated.
+GIMP, Krita, Paint.NET and Affinity files open with their layers. PhotoCraft can't save them. To keep editing a Krita or GIMP file in both apps, save it as OpenRaster (`.ora`), which they open with its layers. If a file uses something PhotoCraft can't match, such as some Affinity effects, PhotoCraft tells you what it left out or approximated.
 
 ## Flat images
 
@@ -58,7 +58,7 @@ JPEG XL is saved lossless. JPEG, WebP and other 8-bit formats can't hold 16 or 3
 
 When you save over a JPEG you opened with **File › Save**, PhotoCraft keeps its quality. A WebP stays lossy or lossless, as it was.
 
-Camera raw files open in a Camera Raw window first. See [Open camera raw files](/apps/photocraft/workflows/#open-camera-raw-files).
+Camera raw files open in a **RAW Develop** window first. See [Open camera raw files](/apps/photocraft/workflows/#open-camera-raw-files).
 
 ## Brushes, swatches and other presets
 

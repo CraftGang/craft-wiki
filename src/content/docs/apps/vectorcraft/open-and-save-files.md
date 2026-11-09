@@ -47,19 +47,19 @@ Save As writes these formats: VectorCraft, VectorCraft Template, PDF, SVG, SVG C
 
 | Format | Open | Save As | Export | Notes |
 |---|---|---|---|---|
-| **VectorCraft** (`.vectorcraft`) | Yes | Yes | Yes | Keeps the whole document |
-| **VectorCraft Template** (`.vctemplate`) | Yes, as a new untitled document | Save as Template… | Yes | |
-| **PDF** | Yes, one artboard per page | Yes, and Save as PDF… | Yes | Reopens as the full document when saved with **Preserve editing capabilities** |
-| **.ai** | Yes | Yes | Yes | Written as a PDF-compatible file of every artboard that carries the full document |
-| **.ait** | Yes, as a new untitled document | Save as Template… | No | Written as a PDF-compatible `.ai` template |
-| **SVG** and **SVGZ** | Yes | Yes | Yes | Reopens as the full document when saved with **Preserve Editing Capabilities** |
-| **EPS** | Yes | Yes | Yes | Save writes one artboard, the first unless you choose another. Transparency is flattened in the printed appearance. An EPS file VectorCraft wrote reopens as the full document. |
-| **DXF** (ASCII) | Yes, each DXF layer as a layer | No | Yes | |
-| **EMF** and **WMF** | Yes, on one artboard | No | Yes | |
-| **PNG, JPEG, GIF, WebP, TIFF, BMP** | Yes, as an image document | No | Yes | |
-| **PSD** | Yes, as its merged image | No | Yes, with layers | |
-| **Targa** (`.tga`) | Yes | No | Yes | |
-| **Affinity** (`.af`, `.afdesign`, `.afpub`) | Yes | No | No | Keeps layers, artboards, shapes and text; a warning lists anything VectorCraft could not bring in |
+| VectorCraft (`.vectorcraft`) | Yes | Yes | Yes | Keeps the whole document |
+| VectorCraft Template (`.vctemplate`) | Yes, as a new untitled document | Save as Template… | Yes | |
+| PDF | Yes, one artboard per page | Yes, and Save as PDF… | Yes | Reopens as the full document when saved with **Preserve editing capabilities** |
+| `.ai` | Yes | Yes | Yes | Written as a PDF-compatible file of every artboard that carries the full document |
+| `.ait` | Yes, as a new untitled document | Save as Template… | No | Written as a PDF-compatible `.ai` template |
+| SVG and SVGZ | Yes | Yes | Yes | Reopens as the full document when saved with **Preserve Editing Capabilities** |
+| EPS | Yes | Yes | Yes | Save writes one artboard, the first unless you choose another. Transparency is flattened in the printed appearance. An EPS file VectorCraft wrote reopens as the full document. |
+| DXF (ASCII) | Yes, each DXF layer as a layer | No | Yes | |
+| EMF and WMF | Yes, on one artboard | No | Yes | |
+| PNG, JPEG, GIF, WebP, TIFF, BMP | Yes, as an image document | No | Yes | |
+| PSD | Yes, as its merged image | No | Yes, with layers | |
+| Targa (`.tga`) | Yes | No | Yes | |
+| Affinity (`.af`, `.afdesign`, `.afpub`) | Yes | No | No | Keeps layers, artboards, shapes and text; a warning lists anything VectorCraft could not bring in |
 
 :::tip
 A `.ai` file that VectorCraft wrote, and a PDF or SVG file saved with its preserve editing option on, reopens in VectorCraft as the full VectorCraft document it carries. If the file was changed in another program since, VectorCraft opens its artwork instead, and the first warning gives the reason.

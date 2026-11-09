@@ -46,7 +46,7 @@ The command-line tool, `lightcraft-cli`, is a separate download on a Mac: `light
 
 Every format also has an ARM64 build (`aarch64` in place of `x86_64`). There are RISC-V builds too (`riscv64`), as a tarball, `.deb` and `.rpm`, for Ubuntu 24.04, Debian 13 and newer.
 
-**Nix:** `nix run github:storytold/lightcraft` runs the desktop app. The repository's README explains how to add it to a NixOS or home-manager configuration.
+Nix: `nix run github:storytold/lightcraft` runs the desktop app. The repository's README explains how to add it to a NixOS or home-manager configuration.
 
 ### FreeBSD
 

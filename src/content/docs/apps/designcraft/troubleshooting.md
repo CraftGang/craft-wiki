@@ -59,7 +59,7 @@ Many pages and large pictures slow down drawing. **View › Display Performance*
 - **Typical Display** (**Ctrl+Alt+Z**) shows low-resolution previews.
 - **High Quality Display** (**Ctrl+Alt+H**) shows pictures at full resolution.
 
-Switch to **Fast Display** while you lay out pages, and back to **Typical Display** to check the result. The tickets in [Known problems](#known-problems-not-fixed-yet) track the lag that remains.
+Switch to **Fast Display** while you lay out pages, and back to **Typical Display** to check the result. [Known problems](#known-problems-not-fixed-yet) lists the lag that remains.
 
 ## On Linux, Open and Save do nothing
 
@@ -102,7 +102,7 @@ DesignCraft checks the files in **File › Open Recent** at startup. A very larg
 
 Open DesignCraft again. It saves recovery data in the background, and reopens your unsaved documents when it next starts. The status bar says how many it recovered. Save them right away.
 
-To change how often it saves recovery data, choose **Edit › Preferences… › File Handling** (on a Mac, **DesignCraft › Settings…**) and set **Save recovery data every:**.
+To change how often it saves recovery data, choose **Edit › Preferences… › File Handling** (on a Mac, **DesignCraft › Settings…**) and set **Save recovery data every**.
 
 ## The portable version doesn't keep my settings
 

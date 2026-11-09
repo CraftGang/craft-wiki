@@ -52,7 +52,7 @@ The dock runs down the right edge of the window. Its outer column holds the Prop
 
 1. Arrange the bars, the Tools panel and the panels the way you want them.
 2. Choose **Window → Workspace → New Workspace…**.
-3. Type a name and click **OK**. VectorCraft suggests "Workspace 1", "Workspace 2" and so on.
+3. Type a name and click **OK**. VectorCraft suggests "Workspace 1," "Workspace 2" and so on.
 
 ![The New Workspace dialog over the Harbor Lights poster, with Poster Layout typed in the Name field above the note that the dialog saves the current bars, toolbar and panel layout. The Cancel and OK buttons sit below an empty area of the dialog](/assets/uploads/vectorcraft/new-workspace-dialog.webp)
 
@@ -149,7 +149,7 @@ To dock one floating document again, drag its window onto the tab strip. VectorC
 A saved view stores the position, zoom and rotation of the canvas in the document.
 
 1. Zoom, scroll and rotate the canvas to the view you want.
-2. Choose **View → New View…**. The dialog suggests the first free name of the form "View 1", "View 2" and so on. Type a name and click **OK**.
+2. Choose **View → New View…**. The dialog suggests the first free name of the form "View 1," "View 2" and so on. Type a name and click **OK**.
 3. To go back to the view later, choose its name at the bottom of the **View** menu.
 
 ![The bottom of the View menu over a 160% close-up of the heron, with New View… and Edit Views… above three saved views: Whole Scene, Heron Close-up and Reeds and Sun. The pointer rests on Whole Scene](/assets/uploads/vectorcraft/saved-views-menu.webp)
@@ -160,7 +160,7 @@ To rename or delete views, choose **View → Edit Views…**. This command is av
 
 ![The Edit Views dialog with Whole Scene, Heron Close-up and Reeds at Sunset in the Saved Views list. Reeds at Sunset is selected, the Name field shows the new name, and a Delete button sits below the field](/assets/uploads/vectorcraft/edit-views-dialog.webp)
 
-To set up and move between artboards, see [Set up documents and artboards](/apps/vectorcraft/set-up-documents-and-artboards/).
+To set up and move between artboards, see [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/).
 
 ## Move around with the Navigator and rotate the view
 
@@ -263,5 +263,5 @@ To change these shortcuts, choose **Edit → Keyboard Shortcuts…**. The full l
 - [Workflows](/apps/vectorcraft/workflows/)
 - [Preferences](/apps/vectorcraft/preferences/)
 - [Keyboard shortcuts](/apps/vectorcraft/keyboard-shortcuts/)
-- [Set up documents and artboards](/apps/vectorcraft/set-up-documents-and-artboards/)
+- [Set up a document and artboards](/apps/vectorcraft/set-up-documents-and-artboards/)
 - [Cut, join and refine paths](/apps/vectorcraft/cut-join-and-refine-paths/)

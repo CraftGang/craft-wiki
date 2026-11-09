@@ -92,8 +92,8 @@ A repeat shows copies of one piece of art in an arrangement. When you change the
 
 A selected grid or mirror repeat also has controls on the canvas. Each drag of a control is one undo step.
 
-- **Grid:** drag the handle below the grid to add or remove rows, the handle to the right to add or remove columns, and the handle past the corner to change both. Drag the short bars between the first columns or rows to change the spacing.
-- **Mirror:** drag the middle of the axis to move it, and drag an end of the axis to turn it.
+- **Grid**: drag the handle below the grid to add or remove rows, the handle to the right to add or remove columns, and the handle past the corner to change both. Drag the short bars between the first columns or rows to change the spacing.
+- **Mirror**: drag the middle of the axis to move it, and drag an end of the axis to turn it.
 
 ![A dusk tower in tower-windows.vectorcraft with a grid repeat of lit windows in five rows and four columns, selected with the Selection tool. Round handles sit below the grid, to its right and past its corner, two short spacing bars sit between the first window and its neighbors, and the Properties panel shows Grid Repeat](/assets/uploads/vectorcraft/repeat-grid-handles.webp)
 

@@ -116,7 +116,7 @@ On the **Page Layout** tab, set **Margins**, orientation, paper **Size**, the **
 ### Print
 
 1. Choose **File › Print** (**Ctrl+P**).
-2. Pick your printer under **Printer**. If you just plugged it in, choose **Refresh printers**.
+2. Pick your printer under **Printer**. If you've only now plugged it in, choose **Refresh printers**.
 3. Set **Copies**, **Two-sided printing** and **Grayscale** if you need them.
 4. Choose **Print Active Sheets** or **Print Entire Workbook**.
 5. To squeeze each sheet onto one page, select **Fit Sheet on One Page**.
@@ -146,10 +146,10 @@ With **Use Relative References** on (the default), the macro works on whatever c
 
 A macro runs as a single step, so one **Ctrl+Z** undoes all of it. If a step fails, GridCraft puts the workbook back as it was. Before a macro writes over cells that already hold data, it asks whether to overwrite them or shift them down or right.
 
-A macro is a list of GridCraft steps, not VBA. A VBA project in an .xlsm file is kept when you save, but it never runs. You can record a macro, or choose **New Macro** or **Macros** to edit its steps. To run a macro from the sheet, draw a **Button** on the **Insert** tab and choose the macro when it asks what to run.
+To run a macro from the sheet, draw a **Button** on the **Insert** tab and choose the macro when it asks what to run.
 
 :::caution
-GridCraft's macros are its own kind, not VBA. A workbook from Excel keeps its VBA macros when you save it as .xlsm, but GridCraft doesn't run them. Macros that came with a workbook you opened ask before they run.
+A macro is a list of GridCraft steps, not VBA. A workbook from Excel keeps its VBA macros when you save it as .xlsm, but GridCraft doesn't run them. Macros that came with a workbook you opened ask before they run.
 :::
 
 ## Change how GridCraft looks

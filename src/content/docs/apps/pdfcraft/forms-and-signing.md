@@ -15,7 +15,7 @@ The **Fields** panel on the right lists every field and what's in it. **Edit ›
 
 ## Fill and sign a form that has no fields
 
-Many forms are just printed pages, with nowhere to type. Choose **Fill & Sign** in the tools panel, or the **E-Sign** tab at the top, then:
+Many forms are printed pages with nowhere to type. Choose **Fill & Sign** in the tools panel, or the **E-Sign** tab at the top, then:
 
 - **Add text** types wherever you click.
 - **Checkmark**, **Cross**, **Dot** and **Line** mark boxes and lines.

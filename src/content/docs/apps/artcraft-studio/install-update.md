@@ -1,6 +1,6 @@
 ---
 title: Install and update
-description: Download ArtCraft Studio for Windows or macOS, and keep it up to date.
+description: Download ArtCraft Studio for Windows, macOS or Linux, and keep it up to date.
 sidebar:
   order: 2
 ---

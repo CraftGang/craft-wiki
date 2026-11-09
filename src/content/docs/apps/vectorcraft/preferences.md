@@ -106,8 +106,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Highlight anchors on mouse over** | On | On or off |
 | **Show handles when multiple anchors are selected** | On | On or off |
 | **Hide Corner Widget for angles greater than** | 177° | 0° to 180° |
-| **Enable Rubber Band for: Pen Tool** | On | On or off |
-| **Enable Rubber Band for: Curvature Tool** | On | On or off |
+| **Enable Rubber Band for** → **Pen Tool** | On | On or off |
+| **Enable Rubber Band for** → **Curvature Tool** | On | On or off |
 
 ![The Selection & Anchor Display page with Tolerance 3 px, Snap to Point 2 px, the anchor Size slider at 3, Handles set to Solid and the corner widget angle at 177°](/assets/uploads/vectorcraft/preferences-selection-anchors.webp)
 
@@ -119,7 +119,7 @@ Under **Appearance Panel** and **Transform Panel**:
 - **Highlight anchors on mouse over** marks the anchor under the pointer while you use the Direct Selection tool.
 - While **Show handles when multiple anchors are selected** is off, the Direct Selection tool shows handles only while one anchor is selected.
 - A corner whose angle is greater than the **Hide Corner Widget for angles greater than** value shows no Live Corners widget.
-- **Enable Rubber Band for: Pen Tool** shows a preview of the next segment from the last anchor to the pointer.
+- **Enable Rubber Band for** → **Pen Tool** shows a preview of the next segment from the last anchor to the pointer.
 
 ## Type
 
@@ -178,15 +178,15 @@ Under **Appearance Panel** and **Transform Panel**:
 | Setting | Default | Range or choices |
 |---|---|---|
 | **Snap to Grid** | Off | On or off |
-| **Guides: Color** | #4affff | Any color |
-| **Guides: Style** | Lines | Lines, Dots |
-| **Grid: Color** | #c8c8c8 | Any color |
-| **Grid: Style** | Lines | Lines, Dots |
+| **Guides** → **Color** | #4affff | Any color |
+| **Guides** → **Style** | Lines | Lines, Dots |
+| **Grid** → **Color** | #c8c8c8 | Any color |
+| **Grid** → **Style** | Lines | Lines, Dots |
 | **Gridline every** | 72 pt | 1 to 16383 pt |
 | **Subdivisions** | 8 | 1 to 1000 |
 | **Grids In Back** | On | On or off |
 | **Show Pixel Grid (Above 600% Zoom)** | On | On or off |
-| **Pattern Editing: Tile Edge Color** | #4f80ff | Any color |
+| **Pattern Editing** → **Tile Edge Color** | #4f80ff | Any color |
 
 ![The Guides & Grid page with the guide color #4affff, the grid color #c8c8c8, both styles set to Lines, Gridline every 72 pt, Subdivisions 8 and the tile edge color #4f80ff under Pattern Editing](/assets/uploads/vectorcraft/preferences-guides-grid-page.webp)
 
@@ -218,7 +218,7 @@ Under **Appearance Panel** and **Transform Panel**:
 - **Alignment Guides** shows the lines along the edges and centers that the artwork lines up with. While it is off, the artwork still snaps into line.
 - **Transform Tools** shows readouts while you scale, rotate and shear.
 - While **Construction Guides** is on, guide lines run through the point you draw from at the angles that **Angles** sets. A point you draw near one of those lines lands on it.
-- **Anchor/Path Labels** shows labels such as "anchor", "center" and "path". **Measurement Labels** shows size and offset readouts while you draw and move.
+- **Anchor/Path Labels** shows labels such as "anchor," "center" and "path." **Measurement Labels** shows size and offset readouts while you draw and move.
 - While **Spacing Guides** is on, a moved selection snaps to the same gap as two other objects in its row or column, or to the middle between its two neighbors, and the equal gaps show.
 - While **Invoke Distance Guides** is on, holding Alt (Option on macOS) with the Selection tool over another object shows how far the selection is from it. Over an empty part of an artboard, it shows the distance to the artboard's edges.
 - **Snapping Tolerance** is how close a smart guide target must be to pull the pointer, a dragged edge or a drawn point to it.
@@ -250,8 +250,8 @@ Under **Appearance Panel** and **Transform Panel**:
 | Setting | Default | Range or choices |
 |---|---|---|
 | **Additional Plug-ins Folder** | Empty | A folder path |
-| **Scratch Disks: Primary** | Startup | Text |
-| **Scratch Disks: Secondary** | None | Text |
+| **Scratch Disks** → **Primary** | Startup | Text |
+| **Scratch Disks** → **Secondary** | None | Text |
 
 ![The Plug-ins & Scratch Disks page with an empty Additional Plug-ins Folder field beside its Choose… button, the primary scratch disk set to Startup and the secondary scratch disk set to None](/assets/uploads/vectorcraft/preferences-plugins-scratch-page.webp)
 
@@ -271,7 +271,7 @@ Under **Appearance Panel** and **Transform Panel**:
 | **Open Documents As Tabs** | On | On or off |
 | **Large Tabs** | Off | On or off |
 | **System Title Bar** | Off | On or off (Windows and Linux) |
-| **UI Scaling: Scale** | 1.0× | 0.75× to 2.0×, on a slider in steps of 0.05 |
+| **UI Scaling** → **Scale** | 1.0× | 0.75× to 2.0×, on a slider in steps of 0.05 |
 | **Scale Cursor Proportional to UI** | Off | On or off |
 | **Language** | Auto | Auto, English, Bahasa Indonesia, Bosanski, Català, Čeština, Dansk, Deutsch, Español, Français, Italiano, Magyar, Nederlands, Polski, Português (Brasil), Suomi, Svenska, Tiếng Việt, Türkçe, Ελληνικά, Български, Русский, Українська, हिन्दी, ქართული, 日本語, 简体中文, 繁體中文, 한국어 |
 
@@ -295,7 +295,7 @@ To change the workspace, panels and toolbars, see [Customize the workspace](/app
 | **History States** | 500 | 5 to 1000 |
 | **Real-time Drawing and Editing** | On | On or off |
 | **Render Threads (-1 = Automatic)** | -1 | -1 to 64 |
-| **Linux Display Server** | Automatic | Automatic, X11 (XWayland), X11 (XWayland) When a Pen Is Attached (Linux) |
+| **Linux Display Server** | Automatic | Automatic, X11 (XWayland), X11 (XWayland) When a Pen Is Attached |
 
 ![The Performance page on Windows with GPU Performance and Animated Zoom turned on, Graphics Processor set to Automatic, History States 500, Real-time Drawing and Editing on and Render Threads -1](/assets/uploads/vectorcraft/preferences-performance-page.webp)
 
