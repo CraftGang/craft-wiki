@@ -1,7 +1,7 @@
 export const apps = [
   ['artcraft-studio', 'ArtCraft Studio', 'svg'], ['photocraft', 'PhotoCraft'],
   ['vectorcraft', 'VectorCraft'], ['filmcraft', 'FilmCraft'], ['lightcraft', 'LightCraft'],
-  ['pdfcraft', 'PdfCraft'], ['effectcraft', 'EffectCraft'], ['designcraft', 'DesignCraft'],
+  ['pdfcraft', 'PdfCraft'], ['effectcraft', 'EffectCraft'], ['anicraft', 'AniCraft'], ['designcraft', 'DesignCraft'],
   ['figcraft', 'FigCraft'], ['texturecraft', 'TextureCraft'], ['materialcraft', 'MaterialCraft'],
   ['wordcraft', 'WordCraft'], ['soundcraft', 'SoundCraft'], ['deckcraft', 'DeckCraft'],
   ['cadcraft', 'CADCraft'], ['gridcraft', 'GridCraft'], ['craft-anything', 'Craft Anything'],
@@ -11,7 +11,7 @@ export const apps = [
 export const appCategories = [
   ['AI and generative media', ['artcraft-studio']],
   ['Graphics and design', ['photocraft', 'vectorcraft', 'lightcraft', 'designcraft', 'figcraft', 'texturecraft', 'materialcraft']],
-  ['Video and effects', ['filmcraft', 'effectcraft']],
+  ['Video and effects', ['filmcraft', 'effectcraft', 'anicraft']],
   ['Audio', ['soundcraft']],
   ['CAD and drafting', ['cadcraft']],
   ['Office', ['wordcraft', 'gridcraft', 'deckcraft', 'pdfcraft']],

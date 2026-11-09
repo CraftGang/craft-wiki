@@ -105,6 +105,19 @@ collections:
       - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
       - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
       - { label: Body, name: body, widget: markdown }
+  - name: anicraft
+    label: AniCraft
+    folder: src/content/docs/apps/anicraft
+    publish_mode: simple
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Sidebar section, name: parent, widget: select, options: [{ label: Workflows, value: workflows }], required: false, hint: "Choose Workflows to list this page under Workflows in the sidebar. Leave it empty to list the page at the top level." }
+      - { label: Sidebar, name: sidebar, widget: object, required: false, fields: [{ label: Order, name: order, widget: number, value_type: float, required: false, hint: "The sidebar and the previous and next links sort pages by this number. Pick a number between those of the pages before and after this one. A page without a number is listed after the numbered pages." }] }
+      - { label: Body, name: body, widget: markdown }
   - name: designcraft
     label: DesignCraft
     folder: src/content/docs/apps/designcraft

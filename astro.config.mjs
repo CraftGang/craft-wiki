@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 const apps = [
   ['ArtCraft Studio', 'artcraft-studio'], ['PhotoCraft', 'photocraft'],
   ['VectorCraft', 'vectorcraft'], ['FilmCraft', 'filmcraft'], ['LightCraft', 'lightcraft'],
-  ['PdfCraft', 'pdfcraft'], ['EffectCraft', 'effectcraft'], ['DesignCraft', 'designcraft'],
+  ['PdfCraft', 'pdfcraft'], ['EffectCraft', 'effectcraft'], ['AniCraft', 'anicraft'], ['DesignCraft', 'designcraft'],
   ['FigCraft', 'figcraft'], ['TextureCraft', 'texturecraft'], ['MaterialCraft', 'materialcraft'],
   ['WordCraft', 'wordcraft'], ['SoundCraft', 'soundcraft'], ['DeckCraft', 'deckcraft'],
   ['CADCraft', 'cadcraft'], ['GridCraft', 'gridcraft'], ['Craft Anything', 'craft-anything'],
