@@ -37,7 +37,7 @@ To add more clips, drag them from the **Project** panel onto the timeline.
 
 ## 5. Cut
 
-- Press **Space** to play and stop. **J**, **K** and **L** play backwards, stop and play forward.
+- Press **Space** to play and stop. **J**, **K** and **L** play backward, stop and play forward.
 - Press **C** for the **Razor Tool** and click a clip to cut it in two. Press **V** to go back to the **Selection Tool**.
 - Select a clip and press **Backspace** to remove it and leave a gap (**Edit › Clear**), or **Shift+Delete** to remove it and close the gap (**Edit › Ripple Delete**).
 - **Edit › Undo** (**Ctrl+Z**, or **⌘Z** on a Mac) undoes a mistake.

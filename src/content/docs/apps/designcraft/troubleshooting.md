@@ -100,7 +100,7 @@ DesignCraft checks the files in **File › Open Recent** at startup. A very larg
 
 ## DesignCraft closed and I lost my work
 
-Open DesignCraft again. It saves recovery data in the background, and reopens your unsaved documents when it next starts. The status bar says how many it recovered. Save them straight away.
+Open DesignCraft again. It saves recovery data in the background, and reopens your unsaved documents when it next starts. The status bar says how many it recovered. Save them right away.
 
 To change how often it saves recovery data, choose **Edit › Preferences… › File Handling** (on a Mac, **DesignCraft › Settings…**) and set **Save recovery data every**.
 

@@ -20,7 +20,7 @@ TextureCraft opens with a sample project, and a start window over it. From the s
 
 To skip the start window next time, clear **Show at startup**.
 
-You can also start TextureCraft from a terminal. Give it a project or a model to open it straight away, or add `--empty` to start without the sample project:
+You can also start TextureCraft from a terminal. Give it a project or a model to open it right away, or add `--empty` to start without the sample project:
 
 ```bash
 texturecraft my-project.tcraft

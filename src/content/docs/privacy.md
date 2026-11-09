@@ -3,7 +3,7 @@ title: Privacy policy
 description: What information Craft Wiki collects and how it is used.
 ---
 
-_Last updated: 7 November 2026_
+_Last updated: November 7, 2026_
 
 This policy explains what information craft.wiki ("the wiki") handles. ArtCraft ("we", "us") runs the wiki and is responsible for this information. Contact: [hello@storyteller.ai](mailto:hello@storyteller.ai).
 

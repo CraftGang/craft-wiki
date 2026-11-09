@@ -40,7 +40,7 @@ Choose **Edit a PDF**:
 
 - **Protect a PDF › Protect with password** sets a password to open the document, or one to change it, and chooses what people can do: print, change pages, copy text and so on. The password is applied when you save. To open a PDF that has one, enter the password when PdfCraft asks for it.
 - **Remove hidden information** lists things in the file you can't see on the page, such as metadata, so you can pick what to remove.
-- **Redact a PDF** blacks out text, pictures or whole pages. Mark what to remove with **Redact text and images**, or use **Find text and redact** to mark every match, then choose **Apply redactions**. **Sanitize document** removes everything hidden: metadata, attachments, comments, hidden text and layers, bookmarks, links and scripts. Form fields are flattened, so their values stay visible. Save afterwards: saving rewrites the whole file, so nothing removed stays in it.
+- **Redact a PDF** blacks out text, pictures or whole pages. Mark what to remove with **Redact text and images**, or use **Find text and redact** to mark every match, then choose **Apply redactions**. **Sanitize document** removes everything hidden: metadata, attachments, comments, hidden text and layers, bookmarks, links and scripts. Form fields are flattened, so their values stay visible. Save afterward: saving rewrites the whole file, so nothing removed stays in it.
 
 :::caution
 Applied redactions remove the text, pictures and drawings under the marks for good, along with comments and form fields that overlap them. Redaction can't find text inside pictures: recognize the text with OCR first. Keep a copy of the original.

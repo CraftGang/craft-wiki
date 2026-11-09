@@ -115,7 +115,7 @@ Model space is where you draw, at full size. A layout is a sheet of paper with o
 2. Type `mview` (or `mv`) and drag a rectangle to add a viewport.
 3. Double-click inside a viewport to work in model space through it. Click **PAPER** or **MODEL** on the status bar to switch between the two.
 4. **File › Page Setup Manager...** sets the paper size and plot settings for the layout. See [Print](#print).
-5. **File › Print...** (**Ctrl+P**) opens the Plot dialog. **File › Export to PDF...** saves a PDF straight away.
+5. **File › Print...** (**Ctrl+P**) opens the Plot dialog. **File › Export to PDF...** saves a PDF right away.
 
 ## Print
 

@@ -11,7 +11,7 @@ sidebar:
 - **Shift+F5**, **Slide Show › Play from Current Slide**, or **Present** at the top right of the window starts from the slide you're on.
 - **Esc** ends the show.
 
-Double-clicking a .ppsx file starts its slide show straight away.
+Double-clicking a .ppsx file starts its slide show right away.
 
 ## Use Presenter View
 

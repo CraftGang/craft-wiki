@@ -367,11 +367,11 @@ The settings column has these options. The rows change with the format.
 
 | Option | Formats | Choices |
 |---|---|---|
-| **Preset** | All | The built-in presets for GIF, JPEG, PNG-8 and PNG-24, then the presets you saved. It reads [Unnamed] when the settings match no preset. The disk button shows a **Name** field with **Save**, and the trash icon deletes the saved preset that is shown. |
-| **Format** | All | GIF (the default), JPEG, PNG-8 or PNG-24 |
-| **Reduction** | GIF, PNG-8 | Perceptual, Selective (the default), Adaptive, Web, Black & White or Grayscale |
-| **Colors** | GIF, PNG-8 | 2 to 256 (default 128), from the list or typed |
-| **Dither**, **Amount** | GIF, PNG-8 | No Dither, Diffusion (the default), Pattern or Noise, with an amount from 0% to 100% (default 100%) |
+| **Preset:** | All | The built-in presets for GIF, JPEG, PNG-8 and PNG-24, then the presets you saved. It reads [Unnamed] when the settings match no preset. The disk button shows a **Name:** field with **Save**, and the trash icon deletes the saved preset that is shown. |
+| **Format:** | All | GIF (the default), JPEG, PNG-8 or PNG-24 |
+| **Reduction:** | GIF, PNG-8 | Perceptual, Selective (the default), Adaptive, Web, Black & White or Grayscale |
+| **Colors:** | GIF, PNG-8 | 2 to 256 (default 128), from the list or typed |
+| **Dither:**, **Amount:** | GIF, PNG-8 | No Dither, Diffusion (the default), Pattern or Noise, with an amount from 0% to 100% (default 100%) |
 | **Transparency** | GIF, PNG-8, PNG-24 | Keeps transparent areas transparent. On by default. |
 | **Interlaced** | GIF, PNG-8, PNG-24 | Writes an interlaced image. Off by default. |
 | **Matte** | All | None, White (the default), Black, or Other, which shows a color button |
